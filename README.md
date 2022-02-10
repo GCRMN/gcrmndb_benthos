@@ -1,6 +1,6 @@
 # gcrmndb_benthos 
 
-<img align="right" width="100" height="100" src="https://gcrmn.net/wp-content/uploads/2021/10/GCRMN_Logo_cropped.png">
+<img align="right" width="178" height="73" src="https://gcrmn.net/wp-content/uploads/2021/10/GCRMN_Logo_cropped.png">
 
 ## Introduction
 
