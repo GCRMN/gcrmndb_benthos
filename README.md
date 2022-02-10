@@ -1,4 +1,6 @@
-# gcrmndb_benthos <img src="figs/logo-gcrmn.png" width = 100 alt="gcrmn logo"/>
+# gcrmndb_benthos 
+
+<img src="figs/logo-gcrmn.png" width = 100/>
 
 ## Introduction
 
