@@ -1,0 +1,462 @@
+---
+title: "Benthic cover. Data integration - Grouping & QAQC"
+author : "Jeremy Wicquart"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: "cosmo"
+    highlight: tango
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+# Load packages
+
+```{r base}
+
+# 1. Source functions ----
+
+source("00_functions/graphical_par.R")
+source("00_functions/theme_graph.R")
+
+# 2. Required packages ----
+
+library(tidyverse) # Core tidyverse packages
+library(formattable) # Interactive HTML tables
+library(DT) # Interactive HTML tables
+library(leaflet) # Interactive HTML map
+library(taxize) # For taxonomy
+
+# 3. Set theme_graph() as the default ggplot theme ----
+
+theme_set(theme_graph())
+
+```
+
+# Data grouping
+
+```{r warning=FALSE}
+
+# 1. Get list of csv file ----
+
+files_list <- list.files(path = "./../data/02_standardized-data", full.names = TRUE)
+
+# 2. Bind all files together ----
+
+synthetic_data <- map_dfr(files_list, ~read_csv(.))
+
+# 3. Remove useless data sets and variables ----
+
+rm(files_list)
+
+```
+
+# Taxonomical re-categorisation
+
+```{r}
+
+# 1. Find upper tax. levels and manually complete those not found ----
+
+# 1.A If older file exist --
+
+if(file.exists("./../data/03_tax-recategorisation.csv")){
+  
+  # 1.A.1 Import it -
+  
+  current_unique_taxid <- synthetic_data %>% select(taxid) %>% distinct() %>% pull() # vector
+
+  old_unique_taxid <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
+    filter(taxid %in% current_unique_taxid) # Remove taxid that have been deleted
+  
+  current_unique_taxid <- synthetic_data %>% select(taxid) %>% distinct() # tibble
+  
+  # 1.A.2 Find rows absent in the older file (old_unique_taxid) but present 
+  # in the current one (current_unique_taxid) and complete it -
+  
+  missing_taxid <- anti_join(current_unique_taxid, old_unique_taxid, by = c("taxid")) %>% 
+    pull(.) %>% 
+    tax_name(sci = ., 
+             get = c("phylum", "class", "subclass", "order", "family", "genus", "species"), 
+             db = "ncbi",
+             messages = FALSE,
+             ask = FALSE) # Disable choice if "more than one UID found"
+
+  if(nrow(missing_taxid) > 0){
+    
+      missing_taxid %>%
+        select(-db) %>% 
+        rename(taxid = query) %>% 
+        mutate(category = NA, subcategory = NA, bleaching = NA, .after = "taxid") %>% 
+        mutate(checked = FALSE) %>% 
+        bind_rows(old_unique_taxid, .) %>%
+        arrange(taxid) %>%  
+        write.csv2(., "./../data/03_tax-recategorisation.csv", row.names = FALSE)
+    
+  }
+  
+  rm(current_unique_taxid, old_unique_taxid, missing_taxid)
+
+}else{
+  
+  # 1.B Else export it --
+  
+  synthetic_data %>% 
+    select(taxid) %>% 
+    distinct() %>% 
+    pull(.) %>% 
+    tax_name(sci = ., 
+             get = c("phylum", "class", "subclass", "order", "family", "genus", "species"), 
+             db = "ncbi",
+             messages = FALSE, 
+             ask = FALSE) %>% # Disable choice if "more than one UID found"
+    select(-db) %>% 
+    rename(taxid = query) %>% 
+    mutate(category = NA, subcategory = NA, bleaching = NA, .after = "taxid") %>% 
+    mutate(checked = FALSE) %>% 
+    arrange(taxid) %>% 
+    write.csv2(., "./../data/03_tax-recategorisation.csv", row.names = FALSE)
+  
+}
+
+# ----------------------------------------------------------------------------------------- #
+# /!\          Before to run the next chunk code, fill the exported csv file:           /!\ #
+# /!\          Manually complete empty tax. variables for each unique taxid             /!\ #
+# /!\  The text of the column "taxid" must not be changed: it's the grouping variable   /!\ #
+# ----------------------------------------------------------------------------------------- #
+
+```
+
+# Join taxonomy
+
+```{r}
+
+# 1. Add "category" and "subcategory" ----
+
+unique_taxid <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
+  # Remove eventual white spaces
+  mutate_at(c("category", "subcategory", "bleaching", "phylum", "class", "subclass", "order", 
+              "family", "genus", "species", "bleaching"), ~str_squish(str_trim(., side = "both"))) %>% 
+  # Assign "subcategory"
+  mutate(subcategory = case_when(phylum == "Cyanobacteria" ~ "Cyanobacteria",
+                                 order == "Corallinales" ~ "Coralline algae",
+                                 TRUE ~ subcategory)) %>% 
+  # Assign "category"
+  mutate(category = case_when(phylum == "Porifera" ~ "Other fauna",
+                              phylum == "Cyanobacteria" ~ "Algae",
+                              class %in% c("Ascidiacea", "Hydrozoa", "Crinoidea", 
+                                           "Bivalvia", "Echinoidea", "Anthozoa") ~ "Other fauna",
+                              order %in% c("Actiniaria", "Alcyonacea", "Zoantharia", 
+                                           "Corallimorpharia", "Antipatharia") ~ "Other fauna",
+                              subclass %in% c("Octocorallia") ~ "Other fauna",
+                              phylum %in% c("Annelida") ~ "Other fauna",
+                              order == "Scleractinia" ~ "Hard coral",
+                              family %in% c("Milleporidae", "Helioporidae") ~ "Hard coral",
+                              class %in% c("Ulvophyceae", "Florideophyceae", "Phaeophyceae") ~ "Algae",
+                              phylum %in% c("Chlorophyta", "Rhodophyta", "Ochrophyta") ~ "Algae",
+                              TRUE ~ category)) %>% 
+  select(-checked)
+
+# 2. Join main data and recategorized taxid ----
+
+synthetic_data <- left_join(synthetic_data, unique_taxid, by = "taxid")
+
+# 3. Check if 'genus' is correct (i.e. if it correspond to the first word of 'species') ----
+
+genus_check <- unique_taxid %>%
+  filter(!is.na(species))
+
+if(all(str_split_fixed(genus_check$species, " ", 2)[,1] == genus_check$genus, na.rm = TRUE) == FALSE){
+  stop("All genus names contained in the 'Species' variable are NOT identical to those in the 'Genus' variable")
+}
+
+# 4. Control the filled categories ----
+
+synthetic_data %>% 
+  drop_na(category) %>% 
+  select(taxid, category, phylum, class, subclass, order, family, genus, species) %>% 
+  distinct(.) %>% 
+  formattable(.) %>% 
+  as.datatable(., rownames = FALSE)
+
+# 5. Control the unfilled categories (which will be removed) ----
+
+synthetic_data %>% 
+  filter(is.na(category)) %>% 
+  select(taxid, category, phylum, class, subclass, order, family, genus, species) %>% 
+  distinct(.) %>% 
+  formattable(.) %>% 
+  as.datatable(., rownames = FALSE)
+
+# 6. Control levels of factor ----
+
+sort(unique(synthetic_data$category))
+sort(unique(synthetic_data$subcategory))
+sort(unique(synthetic_data$phylum))
+sort(unique(synthetic_data$class))
+sort(unique(synthetic_data$subclass))
+sort(unique(synthetic_data$order))
+sort(unique(synthetic_data$family))
+
+# 7. Remove useless data sets and variables ----
+
+rm(genus_check, unique_taxid)
+
+```
+
+```{r}
+
+# 8. Make the sum of percentage cover for identical levels ----
+
+synthetic_data <- synthetic_data %>% 
+  group_by(dataset_id, location, site, replicate, quadrat,
+           zone, lat, long, depth, year, date, method, 
+           observer, category, bleaching, phylum, class, subclass, 
+           order, family, genus, species, cover) %>% 
+  summarise(cover = sum(cover)) %>% 
+  ungroup()
+
+# 9. Remove rows ----
+
+synthetic_data <- synthetic_data %>% 
+  filter(!is.na(category), # Remove rows containing NA for 'category'
+         !is.na(cover)) # Remove rows containing NA for 'cover'
+
+# 10. Duplicate the synthetic_data to compare removed rows ----
+
+synthetic_data_before <- synthetic_data
+
+```
+
+# QAQC
+
+## Missing variables
+
+```{r}
+
+# 1. Missing variables* by dataset ----
+# * variables present but only filled with NA
+
+synthetic_data %>% 
+  group_by(dataset_id) %>% 
+  summarise_all(~(all(is.na(.)))) %>%
+  pivot_longer(2:ncol(.), names_to = "variable", values_to = "state") %>% 
+  filter(state == TRUE) %>% 
+  select(-state) %>% 
+  group_by(dataset_id) %>% 
+  mutate(variable = paste(variable, collapse = ", ")) %>% 
+  unique(.) %>% # Remove duplicates
+  arrange(dataset_id) %>% 
+  formattable(.) %>% 
+  as.datatable(., rownames = FALSE)
+
+```
+
+## Check errors
+
+### Quanti. variables
+
+```{r fig.height=15, fig.width=10}
+
+# 1. Histogram of (some) quantitative variables by dataset_id ----
+
+# 1.1 Vector of variables names to plot --
+
+quanti_var <- c("date", "year", "depth", "quadrat", "replicate")
+
+# 1.2 Make a for loop to plot each variable --
+
+for (i in 1:length(quanti_var)) {
+    
+  plot_i <- ggplot() +
+    geom_histogram(data = synthetic_data, aes_string(x = quanti_var[i]), 
+                   color = "#16a085", fill = "#2abb9b") +
+    labs(title = quanti_var[i]) +
+    facet_wrap(~dataset_id, ncol = 3, scales = "free")
+    
+  print(plot_i)
+    
+}
+
+```
+
+### Site coordinates
+
+```{r}
+
+# 1. Map of all sites locations ----
+
+synthetic_data %>% 
+  select(dataset_id, long, lat) %>% 
+  unique() %>% 
+  leaflet(data = .) %>%
+  addTiles() %>%
+  addMarkers(~long, ~lat, popup = ~as.character(dataset_id), 
+             label = ~as.character(dataset_id))
+
+# 2. Check distribution of Latitude and Longitude ----
+
+# 2.1 Latitude --
+
+ggplot() +
+  geom_histogram(data = synthetic_data, aes_string(x = "lat"), 
+                 color = "#16a085", fill = "#2abb9b") + 
+  annotate("segment", x = -30, xend = -30, y = -Inf, yend = Inf, 
+           colour = "#d91e18", size = 1, linetype = "dashed") +
+  annotate("segment", x = 30, xend = 30, y = -Inf, yend = Inf, 
+           colour = "#d91e18", size = 1, linetype = "dashed") +
+  labs(x = "Latitude")
+
+# 2.2 Longitude --
+
+ggplot() +
+  geom_histogram(data = synthetic_data, aes_string(x = "long"), 
+                 color = "#16a085", fill = "#2abb9b") + 
+  annotate("segment", x = -180, xend = -180, y = -Inf, yend = Inf, 
+           colour = "#d91e18", size = 1, linetype = "dashed") +
+  annotate("segment", x = 180, xend = 180, y = -Inf, yend = Inf, 
+           colour = "#d91e18", size = 1, linetype = "dashed") +
+  labs(x = "Longitude")
+
+```
+
+### Metric variable
+
+```{r}
+
+# 1. First check of the total cover ----
+
+# 1.1 Make the sum of percentage cover by sampling unit --
+
+total_cover <- synthetic_data %>% 
+  group_by(dataset_id, location, site, zone, quadrat,
+           lat, long, year, date, replicate, observer, depth) %>% 
+  summarise(total = sum(cover),
+            total = round(total, 3)) # Round total to remove impact of small digits on filtering
+
+# 1.2 Table of number of sampling units in the different categories, by dataset_id --
+
+total_cover %>% 
+  select(dataset_id, total) %>% 
+  group_by(dataset_id) %>% 
+  summarise(Less_0 = length(which(total < 0)), 
+            Between_0_100 = length(which(total > 0 & total < 100)), 
+            Equal_100 = length(which(total == 100)), 
+            More_100 = length(which(total > 100)),
+            Min = round(min(total, na.rm = TRUE), 2),
+            Max = round(max(total, na.rm = TRUE), 2)) %>% 
+  datatable(., rownames = FALSE,
+            colnames = c("Dataset", "Cover < 0", 
+                         "0 < Cover < 100", 
+                         "Cover = 100", 
+                         "Cover > 100", "Min", "Max")) %>% 
+  formatStyle("Less_0", backgroundColor = "#e74c3c") %>% 
+  formatStyle("Between_0_100", backgroundColor = "#f4b350") %>% 
+  formatStyle("Equal_100", backgroundColor = "#16a085") %>% 
+  formatStyle("More_100", backgroundColor = "#e74c3c")
+
+# 1.3 Join the total cover with main data --
+
+synthetic_data <- synthetic_data %>%
+  left_join(., total_cover)
+
+# 2. Adjust the cover (using the rule of three) ----
+
+treshold <- 101 # Define the threshold
+
+synthetic_data <- synthetic_data %>% 
+  mutate(cover = ifelse(total > 100 & total < treshold, (cover*100)/total, cover))
+
+# 3. First check of the total cover ----
+
+# 3.1 Make the sum of percentage cover by sampling unit --
+
+total_cover <- synthetic_data %>% 
+  group_by(dataset_id, location, site, zone, quadrat,
+           lat, long, year, date, replicate, observer, depth) %>% 
+  summarise(total = sum(cover),
+            total = round(total, 3)) # Round total to remove impact of small digits on filtering
+
+# 3.2 Table of number of sampling units in the different categories, by dataset_id --
+
+total_cover %>% 
+  select(dataset_id, total) %>% 
+  group_by(dataset_id) %>% 
+  summarise(Less_0 = length(which(total < 0)), 
+            Between_0_100 = length(which(total > 0 & total < 100)), 
+            Equal_100 = length(which(total == 100)), 
+            More_100 = length(which(total > 100)),
+            Min = round(min(total, na.rm = TRUE), 2),
+            Max = round(max(total, na.rm = TRUE), 2)) %>% 
+  datatable(., rownames = FALSE,
+            colnames = c("Dataset", "Cover < 0", 
+                         "0 < Cover < 100", 
+                         "Cover = 100", 
+                         "Cover > 100", "Min", "Max")) %>% 
+  formatStyle("Less_0", backgroundColor = "#e74c3c") %>% 
+  formatStyle("Between_0_100", backgroundColor = "#f4b350") %>% 
+  formatStyle("Equal_100", backgroundColor = "#16a085") %>% 
+  formatStyle("More_100", backgroundColor = "#e74c3c")
+
+# 3.3 Join the total cover with main data --
+
+synthetic_data <- synthetic_data %>%
+  select(-total) %>% 
+  left_join(., total_cover)
+
+```
+
+## Remove errors
+
+```{r}
+
+# 1. Remove rows with errors ----
+
+synthetic_data <- synthetic_data %>% 
+  filter(total > 0 & total <= 100) %>% 
+  filter(cover > 0 & cover <= 100) %>% 
+  drop_na(lat, long)
+
+# 2. Number and percentage of rows removed by dataset_id ----
+
+left_join(synthetic_data_before %>% group_by(dataset_id) %>% count(name = "n_before"),
+          synthetic_data %>% group_by(dataset_id) %>% count(name = "n_after")) %>% 
+  mutate(n_removed_abs = n_before - n_after,
+         n_removed_rel = (n_removed_abs/n_before)*100) %>% 
+  formattable(., list(Removed = color_bar("#e74c3c"))) %>% 
+  as.datatable(., rownames = FALSE, colnames = c("dataset_id", "n rows before", 
+                                                 "n rows after", "n rows removed", 
+                                                 "n rows removed (%)"))
+
+```
+
+# Export data
+
+```{r}
+
+# 1. Export the data ----
+
+save(synthetic_data, file = "./../data/04_benthic-cover_synthetic-dataset.RData")
+
+```
+
+# Reproducibility
+
+```{r reprod}
+
+# 1. Reproducibility ----
+
+sessionInfo()
+
+```
+
+---
+Jeremy WICQUART | jeremywicquart@gmail.com | `r format(Sys.time())`

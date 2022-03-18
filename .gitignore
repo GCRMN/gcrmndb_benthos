@@ -37,3 +37,12 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# misc folder
+misc/
+
+# data folder
+data/
+
+# HTML files
+*.html

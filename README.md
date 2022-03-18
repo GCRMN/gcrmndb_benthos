@@ -1,7 +1,5 @@
 # gcrmndb_benthos 
 
-<img align="right" width="178" height="73" src="https://gcrmn.net/wp-content/uploads/2021/10/GCRMN_Logo_cropped.png">
-
 ## 1. Introduction
 
 
@@ -17,6 +15,9 @@
 
 | datasetID      | rightsHolder      | accessRights   | type           | status         | aggregator    | modified      |
 |----------------|-------------------|----------------|----------------|----------------|---------------|---------------|
-| 000001         | CRIOBE            |                |                |                |               |               |
-| 000002         | NCRMP             |                |                |                |               |               |
+| 000001         | USVI            |                |                |                |               |               |
+| 000002         | USVI             |                |                |                |               |               |
 | 000003         | AIMS LTMP         |                |                |                |               |               |
+| 000004         | MPA Moorea         |                |                |                |               |               |
+| 000005         | Polynesia Mana         |                |                |                |               |               |
+| 000006         | Tiahura         |                |                |                |               |               |
