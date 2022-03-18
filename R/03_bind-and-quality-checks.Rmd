@@ -1,5 +1,5 @@
 ---
-title: "Benthic cover. Data integration - Grouping & QAQC"
+title: "Grouping and quality checks"
 author : "Jeremy Wicquart"
 date: "`r Sys.Date()`"
 output: 
@@ -236,7 +236,7 @@ synthetic_data_before <- synthetic_data
 
 ```
 
-# QAQC
+# Quality checks
 
 ## Missing variables
 
