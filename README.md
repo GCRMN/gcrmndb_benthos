@@ -9,7 +9,7 @@
 ## 3. List of individual datasets
 
 
-**Table 1.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (excepth *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+**Table 1.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
 | datasetID   | rightsHolder                                                                                 | accessRights   | aggregator    |
 |-------------|----------------------------------------------------------------------------------------------|----------------|---------------|
