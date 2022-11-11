@@ -57,6 +57,8 @@ Coral reef benthic monitoring have started in different places of the world base
 | 5  | :globe_with_meridians:     | `depth`         | Is the depth value between 0 and 100?                                           |  
 | 6  | :globe_with_meridians:     | `depth`         | Is the depth value between 0 and 100?                                           |  
 | 7  | :chart_with_upwards_trend: | `cover`         | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |                                    
+| 8  | :chart_with_upwards_trend: | `cover`         | Is the percentage cover of a given benthic category (*i.e.* a row) is greater than 0 and lower than 100? |                                    
+
 
 ## 5. List of individual datasets
 
