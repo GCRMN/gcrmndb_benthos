@@ -32,12 +32,15 @@ Coral reef benthic monitoring have started in different places of the world base
 ## 4. Quality checks
 
 
-**Table 2.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125).
+**Table 2.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables.
 
-| #  | Cat.          | Variable        | Question                                                                        |
-|----|---------------|-----------------|---------------------------------------------------------------------------------|
-| 1  |               | lat             | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
-| 2  |               | long            | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
+| #  | Cat.                   | Variables       | Questions                                                                       |
+|----|------------------------|-----------------|---------------------------------------------------------------------------------|
+| 1  | :globe_with_meridians: | `lat`           | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
+| 2  | :globe_with_meridians: | `long`          | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
+| 3  | :globe_with_meridians: | `lat` `long`    | Is the site within the coral reef distribution area?                            |  
+| 4  | :globe_with_meridians: | `lat` `long`    | Is the site located in sea or along the coastline (5 km buffer)?                |  
+| 5  | :globe_with_meridians: | `depth`         | Is the depth value between 0 and 100?                                           |  
 
 
 ## 5. List of individual datasets
