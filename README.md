@@ -4,7 +4,7 @@
 
 Coral reef benthic monitoring have started in different places of the world based on different methods.
 
-`gcrmndb_benthos` is one of the synthetic dataset (the other is `[gcrmndb_fish](https://github.com/JWicquart/gcrmndb_fish)`) created and maintained by the GCRMN.
+`gcrmndb_benthos` is one of the synthetic dataset (the other is `gcrmndb_fish`) created and maintained by the GCRMN.
 
 ## 2. How to contribute?
 
@@ -12,21 +12,35 @@ Coral reef benthic monitoring have started in different places of the world base
 ## 3. Description of variables
 
 
-**Table 1.** List of individual da
+**Table 1.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables.
 
-| #  | Variable          | Cat.   | Description                                              |
-|----|-------------------|--------|----------------------------------------------------------|
-| 1  | dataset_id        |        |                                                          |  
-| 1  | gcrmn_region      |        |                                                          |  
-| 1  | country           |        |                                                          |  
-| 1  | territory         |        |                                                          |  
-| 1  | lat               |        |                                                          |  
-| 1  | long              |        |                                                          |  
-| 1  | depth             |        |                                                          |  
-| 1  | year              |        |                                                          |  
-| 1  | month             |        |                                                          |  
-| 1  | day               |        |                                                          |  
-| 1  | date              |        |                                                          |  
+|     | Variable    | Cat.                       | Description                                              |
+|----:|-------------|:--------------------------:|----------------------------------------------------------|
+| 1   | dataset_id  | :memo:                     |                                                          |  
+| 2   | region      | :globe_with_meridians:     |                                                          |  
+| 3   | country     | :globe_with_meridians:     |                                                          |  
+| 4   | territory   | :globe_with_meridians:     |                                                          |  
+| 5   | location    | :globe_with_meridians:     |                                                          |  
+| 6   | site        | :globe_with_meridians:     |                                                          |  
+| 7   | zone        | :globe_with_meridians:     |                                                          |  
+| 8   | transect    | :globe_with_meridians:     |                                                          |  
+| 9   | quadrat     | :globe_with_meridians:     |                                                          |  
+| 10  | lat         | :globe_with_meridians:     |                                                          |  
+| 11  | long        | :globe_with_meridians:     |                                                          |  
+| 12  | depth       | :globe_with_meridians:     |                                                          |  
+| 13  | year        | :calendar:                 |                                                          |  
+| 14  | month       | :calendar:                 |                                                          |  
+| 15  | day         | :calendar:                 |                                                          |  
+| 16  | date        | :calendar:                 |                                                          |  
+| 17  | method      | :straight_ruler:           |                                                          |  
+| 18  | observer    | :straight_ruler:           |                                                          |  
+| 19  | category    | :crab:                     |                                                          |  
+| 20  | subcategory | :crab:                     |                                                          |  
+| 21  | condition   | :crab:                     |                                                          |  
+| 22  | family      | :crab:                     |                                                          |  
+| 23  | genus       | :crab:                     |                                                          |  
+| 24  | species     | :crab:                     |                                                          |  
+| 25  | cover       | :chart_with_upwards_trend: |                                                          |  
 
 
 ## 4. Quality checks
@@ -34,15 +48,15 @@ Coral reef benthic monitoring have started in different places of the world base
 
 **Table 2.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables.
 
-| #  | Cat.                     | Variables       | Questions                                                                       |
-|:--:|:------------------------:|-----------------|:--------------------------------------------------------------------------------|
-| 1  | :globe_with_meridians:   | `lat`           | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
-| 2  | :globe_with_meridians:   | `long`          | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
-| 3  | :globe_with_meridians:   | `lat` `long`    | Is the site within the coral reef distribution area?                            |  
-| 4  | :globe_with_meridians:   | `lat` `long`    | Is the site located in sea or along the coastline (5 km buffer)?                |  
-| 5  | :globe_with_meridians:   | `depth`         | Is the depth value between 0 and 100?                                           |  
-| 6  | :globe_with_meridians:   | `depth`         | Is the depth value between 0 and 100?                                           |  
-| 7  | :globe_with_meridians:   | `cover`         | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |                                    
+| #  | Cat.                       | Variables       | Questions                                                                       |
+|:--:|:--------------------------:|-----------------|:--------------------------------------------------------------------------------|
+| 1  | :globe_with_meridians:     | `lat`           | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
+| 2  | :globe_with_meridians:     | `long`          | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
+| 3  | :globe_with_meridians:     | `lat` `long`    | Is the site within the coral reef distribution area?                            |  
+| 4  | :globe_with_meridians:     | `lat` `long`    | Is the site located in sea or along the coastline (5 km buffer)?                |  
+| 5  | :globe_with_meridians:     | `depth`         | Is the depth value between 0 and 100?                                           |  
+| 6  | :globe_with_meridians:     | `depth`         | Is the depth value between 0 and 100?                                           |  
+| 7  | :chart_with_upwards_trend: | `cover`         | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |                                    
 
 ## 5. List of individual datasets
 
