@@ -4,7 +4,7 @@
 
 Coral reef benthic monitoring have started in different places of the world based on different methods.
 
-`gcrmndb_benthos` is one of the synthetic dataset (the other is `gcrmndb_fish`) created and maintained by the GCRMN.
+`gcrmndb_benthos` is one of the synthetic dataset (the other is `[gcrmndb_fish](https://github.com/JWicquart/gcrmndb_fish)`) created and maintained by the GCRMN.
 
 ## 2. How to contribute?
 
@@ -34,22 +34,23 @@ Coral reef benthic monitoring have started in different places of the world base
 
 **Table 2.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables.
 
-| #  | Cat.                   | Variables       | Questions                                                                       |
-|----|------------------------|-----------------|---------------------------------------------------------------------------------|
-| 1  | :globe_with_meridians: | `lat`           | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
-| 2  | :globe_with_meridians: | `long`          | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
-| 3  | :globe_with_meridians: | `lat` `long`    | Is the site within the coral reef distribution area?                            |  
-| 4  | :globe_with_meridians: | `lat` `long`    | Is the site located in sea or along the coastline (5 km buffer)?                |  
-| 5  | :globe_with_meridians: | `depth`         | Is the depth value between 0 and 100?                                           |  
-
+| #  | Cat.                     | Variables       | Questions                                                                       |
+|:--:|:------------------------:|-----------------|:--------------------------------------------------------------------------------|
+| 1  | :globe_with_meridians:   | `lat`           | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
+| 2  | :globe_with_meridians:   | `long`          | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
+| 3  | :globe_with_meridians:   | `lat` `long`    | Is the site within the coral reef distribution area?                            |  
+| 4  | :globe_with_meridians:   | `lat` `long`    | Is the site located in sea or along the coastline (5 km buffer)?                |  
+| 5  | :globe_with_meridians:   | `depth`         | Is the depth value between 0 and 100?                                           |  
+| 6  | :globe_with_meridians:   | `depth`         | Is the depth value between 0 and 100?                                           |  
+| 7  | :globe_with_meridians:   | `cover`         | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |                                    
 
 ## 5. List of individual datasets
 
 
 **Table 3.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
-| datasetID   | rightsHolder                                                                                 | accessRights   | aggregator    |
-|-------------|----------------------------------------------------------------------------------------------|----------------|---------------|
+| datasetID     | rightsHolder                                                                                 | accessRights   | aggregator    |
+|:-------------:|----------------------------------------------------------------------------------------------|----------------|---------------|
 | 0001        | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |         
 | 0002        | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |                          
 | 0003        | AIMS LTMP                                                                                    | upon request   | Wicquart, J.  |                          
