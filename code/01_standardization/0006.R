@@ -17,7 +17,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   read.csv2(file = .) %>% 
   rename(site = Site, lat = Latitude, long = Longitude, zone = Zone, depth = Depth)
 
-# 2.2 code data --
+# 2.2 Code data --
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(dataset_id == dataset & data_type == "code") %>% 
