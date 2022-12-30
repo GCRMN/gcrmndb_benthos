@@ -1,4 +1,4 @@
-# gcrmndb_benthos <img src='figs/hex_logo.svg' align="right" height="138.5" />
+# gcrmndb_benthos <img src='figs/hex_logo.png' align="right" height="138.5" />
 
 ## 1. Introduction
 
