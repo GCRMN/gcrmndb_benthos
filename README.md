@@ -1,4 +1,4 @@
-# gcrmndb_benthos 
+# gcrmndb_benthos <img src='figs/hex_logo.svg' align="right" height="138.5" />
 
 ## 1. Introduction
 
@@ -46,7 +46,7 @@ Coral reef benthic monitoring have started in different places of the world base
 ## 4. Quality checks
 
 
-**Table 2.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables.
+**Table 2.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables.
 
 | #  | Cat.                       | Variables       | Questions                                                                       |
 |:--:|:--------------------------:|-----------------|:--------------------------------------------------------------------------------|
@@ -55,9 +55,8 @@ Coral reef benthic monitoring have started in different places of the world base
 | 3  | :globe_with_meridians:     | `lat` `long`    | Is the site within the coral reef distribution area?                            |  
 | 4  | :globe_with_meridians:     | `lat` `long`    | Is the site located in sea or along the coastline (5 km buffer)?                |  
 | 5  | :globe_with_meridians:     | `depth`         | Is the depth value between 0 and 100?                                           |  
-| 6  | :globe_with_meridians:     | `depth`         | Is the depth value between 0 and 100?                                           |  
-| 7  | :chart_with_upwards_trend: | `cover`         | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |                                    
-| 8  | :chart_with_upwards_trend: | `cover`         | Is the percentage cover of a given benthic category (*i.e.* a row) is greater than 0 and lower than 100? |                                    
+| 7  | :chart_with_upwards_trend: | `cover`         | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
+| 8  | :chart_with_upwards_trend: | `cover`         | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100? |                                    
 
 
 ## 5. List of individual datasets
@@ -67,10 +66,12 @@ Coral reef benthic monitoring have started in different places of the world base
 
 | datasetID     | rightsHolder                                                                                 | accessRights   | aggregator    |
 |:-------------:|----------------------------------------------------------------------------------------------|----------------|---------------|
-| 0001        | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |         
-| 0002        | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |                          
-| 0003        | AIMS LTMP                                                                                    | upon request   | Wicquart, J.  |                          
-| 0004        | MPA Moorea                                                                                   | upon request   | Wicquart, J.  |                              
-| 0005        | Polynesia Mana                                                                               | upon request   | Wicquart, J.  |                               
-| 0006        | Tiahura                                                                                      | upon request   | Wicquart, J.  |
-| 0007        | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                 | open           | Wicquart, J.  |
+| 0001          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |         
+| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |                          
+| 0003          | AIMS LTMP                                                                                    | upon request   | Wicquart, J.  |                          
+| 0004          | MPA Moorea                                                                                   | upon request   | Wicquart, J.  |                              
+| 0005          | Polynesia Mana                                                                               | upon request   | Wicquart, J.  |                               
+| 0006          | Tiahura                                                                                      | upon request   | Wicquart, J.  |
+| 0007          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                 | open           | Wicquart, J.  |
+| 0008          | [data-mermaid](https://github.com/data-mermaid/mermaidr)                                     | upon request   | Wicquart, J.  |
+
