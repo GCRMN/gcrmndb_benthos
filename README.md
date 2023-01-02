@@ -1,4 +1,6 @@
 # gcrmndb_benthos <img src='figs/hex_logo.png' align="right" height="138.5" />
+![status](https://img.shields.io/badge/status-in%20dev.-blue)
+![version](https://img.shields.io/badge/version-0.0.0-blue)
 
 ## 1. Introduction
 
