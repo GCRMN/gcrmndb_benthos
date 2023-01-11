@@ -14,15 +14,38 @@ The [*Global Coral Reef Monitoring Network*](https://gcrmn.net/) (GCRMN) is an o
 
 ### Why this repository?
 
-This repository aims to . The `gcrmndb_benthos` is a synthetic dataset (*i.e.* resulting from the integration of multiple individual datasets) and a thematic dataset (*i.e.* focusing on a particular type of data, benthic cover of organisms living in coral reefs). The `gcrmndb_benthos` is one of the two synthetic datasets created and maintained by the GCRMN, the other one is the `gcrmndb_fish`.
+This repository aims to . The `gcrmndb_benthos` is a synthetic dataset dedicated to benthic cover monitoring data gathered in coral reefs.
 
-## 2. How to contribute?
+* Data are lost
+* Data are heterogeneous
+* Data are not findable
+
+The `gcrmndb_benthos` is one of the two synthetic datasets created and maintained by the GCRMN, the other one is the `gcrmndb_fish`.
+
+### How to contribute?
+
+## 2. Data integration
+
+### Definitions
+
+**Table 1.** Definition of main terms used in this README.
+
+| Term                   | Definition                                                                                    | 
+|-----------------------:|-----------------------------------------------------------------------------------------------|
+| Dataset                | A collection of related sets of information that is composed of separate elements (data files) but can be manipulated as a unit by a computer.         |
+| Data aggregator        | Data analyst responsible for the data integration process. |
+| Data integration       | Process of combining, merging, or joining data together, in order to make what were distinct, multiple data objects, into a single, unified data object ([Schildhauer, 2018](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8)).|
+| Data provider          | A person or an institution sharing a dataset for which they have been or are involved in the acquisition of the data contained in the dataset. |
+| Synthetic dataset      | A dataset resulting from the integration of multiple existing datasets ([Poisot *et al*., 2016](https://onlinelibrary.wiley.com/doi/10.1111/ecog.01941)). |
+
+### Workflow
+
 
 
 ## 3. Description of variables
 
 
-**Table 1.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables.
+**Table 2.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables.
 
 |     | Variable    | Cat.                       | Description                                              |
 |----:|-------------|:--------------------------:|----------------------------------------------------------|
@@ -56,7 +79,7 @@ This repository aims to . The `gcrmndb_benthos` is a synthetic dataset (*i.e.* r
 ## 4. Quality checks
 
 
-**Table 2.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables.
+**Table 3.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables.
 
 | #  | Cat.                       | Variables       | Questions                                                                       |
 |:--:|:--------------------------:|-----------------|:--------------------------------------------------------------------------------|
@@ -72,7 +95,7 @@ This repository aims to . The `gcrmndb_benthos` is a synthetic dataset (*i.e.* r
 ## 5. List of individual datasets
 
 
-**Table 3.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+**Table 4.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
 | datasetID     | rightsHolder                                                                                 | accessRights   | aggregator    |
 |:-------------:|----------------------------------------------------------------------------------------------|----------------|---------------|
@@ -94,6 +117,10 @@ The following organizations have funded the realization of the `gcrmndb_benthos`
 * French Ministry of Ecological Transition
 
 ## 7. References
+
+* Poisot, T., Gravel, D., Leroux, S., Wood, S. A., Fortin, M. J., Baiser, B., ... & Stouffer, D. B. (**2016**). [Synthetic datasets and community tools for the rapid testing of ecological hypotheses](https://onlinelibrary.wiley.com/doi/10.1111/ecog.01941). *Ecography*, 39(4), 402-408.
+
+* Schildhauer, M. (**2018**). [Data integration: Principles and practice](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8). In: Recknagel, F., Michener, W.K. (Eds.), *Ecological Informatics*. Springer, pp. 129–157.
 
 * Vandepitte, L., Bosch, S., Tyberghein, L., Waumans, F., Vanhoorne, B., Hernandez, F., [...] and Mees, J. (**2015**). [Fishing for data and sorting the catch: assessing the data quality, completeness and fitness for use of data in marine biogeographic databases](https://doi.org/10.1093/database/bau125). *Database*.
 
