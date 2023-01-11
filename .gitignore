@@ -1,15 +1,13 @@
 # Base #
 ########
-
 .Rproj.user
 .Rproj
 .Rhistory
 .RData
 .Ruserdata
 *.html
-
 # folder #
 ##########
-
 data/
 misc/
+figs/hex_logo.svg

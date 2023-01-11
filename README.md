@@ -4,9 +4,17 @@
 
 ## 1. Introduction
 
+### Coral reef monitoring
+
 Coral reef benthic monitoring have started in different places of the world based on different methods.
 
-`gcrmndb_benthos` is one of the synthetic dataset (the other is `gcrmndb_fish`) created and maintained by the GCRMN.
+### What is the GCRMN?
+
+The [*Global Coral Reef Monitoring Network*](https://gcrmn.net/) (GCRMN) is an operational network of the *International Coral Reef Initiative* (ICRI) aiming to provide the best available scientific information on the status and trends of coral reef ecosystems for their conservation and management. The GCRMN is a global network of scientists, managers and organisations that monitor the condition of coral reefs throughout the world, operating through ten regional nodes.
+
+### Why this repository?
+
+This repository aims to . The `gcrmndb_benthos` is a synthetic dataset (*i.e.* resulting from the integration of multiple individual datasets) and a thematic dataset (*i.e.* focusing on a particular type of data, benthic cover of organisms living in coral reefs). The `gcrmndb_benthos` is one of the two synthetic datasets created and maintained by the GCRMN, the other one is the `gcrmndb_fish`.
 
 ## 2. How to contribute?
 
@@ -77,3 +85,16 @@ Coral reef benthic monitoring have started in different places of the world base
 | 0007          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                 | open           | Wicquart, J.  |
 | 0008          | [data-mermaid](https://github.com/data-mermaid/mermaidr)                                     | upon request   | Wicquart, J.  |
 
+
+## 6. Sponsors
+
+The following organizations have funded the realization of the `gcrmndb_benthos` synthetic dataset:
+
+* The Prince Albert II of Monaco Foundation
+* French Ministry of Ecological Transition
+
+## 7. References
+
+* Vandepitte, L., Bosch, S., Tyberghein, L., Waumans, F., Vanhoorne, B., Hernandez, F., [...] and Mees, J. (**2015**). [Fishing for data and sorting the catch: assessing the data quality, completeness and fitness for use of data in marine biogeographic databases](https://doi.org/10.1093/database/bau125). *Database*.
+
+* Wicquart, J., Gudka, M., Obura, D., Logan, M., Staub, F., Souter, D., & Planes, S. (**2022**). [A workflow to integrate ecological monitoring data from different sources](https://www.sciencedirect.com/science/article/pii/S1574954121003344). *Ecological Informatics*, 68, 101543.
