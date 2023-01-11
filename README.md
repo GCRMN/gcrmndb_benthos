@@ -10,7 +10,7 @@ Coral reef benthic monitoring have started in different places of the world base
 
 ### What is the GCRMN?
 
-The [*Global Coral Reef Monitoring Network*](https://gcrmn.net/) (GCRMN) is an operational network of the *International Coral Reef Initiative* (ICRI) aiming to provide the best available scientific information on the status and trends of coral reef ecosystems for their conservation and management. The GCRMN is a global network of scientists, managers and organisations that monitor the condition of coral reefs throughout the world, operating through ten regional nodes.
+The [*Global Coral Reef Monitoring Network*](https://gcrmn.net/) (GCRMN) is an operational network of the [*International Coral Reef Initiative*](https://icriforum.org/) (ICRI) aiming to provide the best available scientific information on the status and trends of coral reef ecosystems for their conservation and management. The GCRMN is a global network of scientists, managers and organisations that monitor the condition of coral reefs throughout the world, operating through ten regional nodes.
 
 ### Why this repository?
 
@@ -31,7 +31,7 @@ The `gcrmndb_benthos` is one of the two synthetic datasets created and maintaine
 **Table 1.** Definition of main terms used in this README.
 
 | Term                   | Definition                                                                                    | 
-|-----------------------:|-----------------------------------------------------------------------------------------------|
+|-----------------------:|:----------------------------------------------------------------------------------------------|
 | Dataset                | A collection of related sets of information that is composed of separate elements (data files) but can be manipulated as a unit by a computer.         |
 | Data aggregator        | Data analyst responsible for the data integration process. |
 | Data integration       | Process of combining, merging, or joining data together, in order to make what were distinct, multiple data objects, into a single, unified data object ([Schildhauer, 2018](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8)).|
@@ -47,7 +47,7 @@ The `gcrmndb_benthos` is one of the two synthetic datasets created and maintaine
 
 **Table 2.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables.
 
-|     | Variable    | Cat.                       | Description                                              |
+|  #  | Variable    | Cat.                       | Description                                              |
 |----:|-------------|:--------------------------:|----------------------------------------------------------|
 | 1   | dataset_id  | :memo:                     |                                                          |  
 | 2   | region      | :globe_with_meridians:     |                                                          |  
