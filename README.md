@@ -6,7 +6,7 @@
 
 ### Coral reef monitoring
 
-Coral reef benthic monitoring have started in different places of the world based on different methods.
+While coral reefs provide many ecosystem services to human populations and host immense biodiversity, they are directly or indirectly threatened by human activities. To understand what are the main drivers of coral reefs' resilience in the Anthropocene, and to appropriately inform environmental policies that aim to protect these ecosystems, it is necessary to have data describing how coral reef integrity is changing over space and time. Such data are acquired from ecological monitoring, which consist of repetitive measurements of a specified set of ecological variables at one or more locations over an extended period of time ([Vos *et al.*, 2000](https://link.springer.com/article/10.1023/A:1006139412372)). 
 
 ### What is the GCRMN?
 
@@ -20,7 +20,7 @@ This repository aims to . The `gcrmndb_benthos` is a synthetic dataset dedicated
 * Data are heterogeneous
 * Data are not findable
 
-The `gcrmndb_benthos` is one of the two synthetic datasets created and maintained by the GCRMN, the other one is the `gcrmndb_fish`.
+The `gcrmndb_benthos` is one of the two synthetic datasets developed and maintained by the GCRMN, the other one is the `gcrmndb_fish`.
 
 ### How to contribute?
 
@@ -123,5 +123,7 @@ The following organizations have funded the realization of the `gcrmndb_benthos`
 * Schildhauer, M. (**2018**). [Data integration: Principles and practice](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8). In: Recknagel, F., Michener, W.K. (Eds.), *Ecological Informatics*. Springer, pp. 129–157.
 
 * Vandepitte, L., Bosch, S., Tyberghein, L., Waumans, F., Vanhoorne, B., Hernandez, F., [...] and Mees, J. (**2015**). [Fishing for data and sorting the catch: assessing the data quality, completeness and fitness for use of data in marine biogeographic databases](https://doi.org/10.1093/database/bau125). *Database*.
+
+* Vos, P., E. Meelis, and W. J. Ter Keurs (**2000**). [A Framework for the Design of Ecological Monitoring Programs as a Tool for Environmental and Nature Management](https://link.springer.com/article/10.1023/A:1006139412372). **Environmental Monitoring and Assessment** 61(3): 317–44.
 
 * Wicquart, J., Gudka, M., Obura, D., Logan, M., Staub, F., Souter, D., & Planes, S. (**2022**). [A workflow to integrate ecological monitoring data from different sources](https://www.sciencedirect.com/science/article/pii/S1574954121003344). *Ecological Informatics*, 68, 101543.
