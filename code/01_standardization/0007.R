@@ -3,21 +3,11 @@
 library(tidyverse) # Core tidyverse packages
 library(readxl) # To read excel files
 
-dataset <- "0006" # Define the dataset_id
+dataset <- "0007" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-# 2.1 Site data --
-
-data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(dataset_id == dataset & data_type == "site") %>% 
-  select(data_path) %>% 
-  pull() %>% 
-  # Read the file
-  read.csv2(file = .) %>% 
-  rename(site = Site, lat = Latitude, long = Longitude, zone = Zone, depth = Depth)
-
-# 2.2 Code data --
+# 2.1 Code data --
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(dataset_id == dataset & data_type == "code") %>% 
@@ -26,19 +16,16 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   # Read the file
   read.csv2(file = .)
 
-# 2.3 Main data --
+# 2.2 Main data --
 
 read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(dataset_id == dataset & data_type == "main") %>% 
   select(data_path) %>% 
   pull() %>% 
   # Read the file
-  read_xlsx(path = ., 
-            sheet = "Brut", 
-            col_types = c("numeric", "text", "date", "text", "text", 
-                          "numeric", "numeric", "text", "text")) %>% 
+  read_xlsx(path = ., sheet = 3) %>% 
   left_join(., data_code) %>% # Merge main data with substrates codes
-  select(-Season, -Substrate, -Remarques) %>% # Delete useless variables
+  select(-Substrate, -Observations) %>% # Delete useless variables
   rename(year = Year, date = Date, zone = Habitat, observer = Observer, 
          replicate = Station, taxid = Tax_ID) %>% # Rename variables
   group_by(year, date, observer, zone, replicate, taxid) %>% 
@@ -50,12 +37,13 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(dataset_id = dataset,
          location = "Moorea", 
          cover = (cover/total)*100,
-         method = "Point intersect transect, 50 m transect length, every 1 m",
+         latitude = -149.901167,
+         longitude = -17.470833,
+         method = "Point intersect transect, 50 m transect length, every 50 cm",
          taxid = str_to_sentence(str_squish(str_trim(taxid, side = "both")))) %>% 
   select(-total) %>% 
-  left_join(., data_site) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
 
-rm(data_site, data_code)
+rm(data_code)

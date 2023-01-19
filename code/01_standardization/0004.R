@@ -27,7 +27,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   pull() %>% 
   # Read the file
   read_xlsx(path = ., sheet = 4) %>% 
-  select(-Campaign, -Season, -observations, -`...12`) %>% 
+  select(-Campaign, -Season, -observations) %>% 
   rename(year = Year, date = Date, site = "Marine Area", zone = Habitat, observer = Observer,
          replicate = Transect, taxid = Substrate, cover = proportion) %>% 
   left_join(., data_site) %>% 

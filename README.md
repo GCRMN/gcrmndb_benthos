@@ -44,7 +44,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 ### Workflow
 
-The data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset includes four main steps [see Wicquart *et al.*, 2022](https://www.sciencedirect.com/science/article/pii/S1574954121003344).
+The data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset includes four main steps (see [Wicquart *et al.*, 2022](https://www.sciencedirect.com/science/article/pii/S1574954121003344)).
 
 1. A
 2. A
@@ -108,13 +108,14 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | datasetID     | rightsHolder                                                                                 | accessRights   | aggregator    |
 |:-------------:|----------------------------------------------------------------------------------------------|----------------|---------------|
 | 0001          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |         
-| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |                          
-| 0003          | AIMS LTMP                                                                                    | upon request   | Wicquart, J.  |                          
-| 0004          | MPA Moorea                                                                                   | upon request   | Wicquart, J.  |                              
-| 0005          | Polynesia Mana                                                                               | upon request   | Wicquart, J.  |                               
-| 0006          | Tiahura                                                                                      | upon request   | Wicquart, J.  |
-| 0007          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                 | open           | Wicquart, J.  |
-| 0008          | [data-mermaid](https://github.com/data-mermaid/mermaidr)                                     | upon request   | Wicquart, J.  |
+| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |                 
+| 0003          | AIMS LTMP                                                                                    | upon request   | Wicquart, J.  |                 
+| 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                                                 | upon request   | Wicquart, J.  |               
+| 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)                                                                      | upon request   | Wicquart, J.  |        
+| 0006          | [CRIOBE - Tiahura](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1)                                                                             | upon request   | Wicquart, J.  |
+| 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)                                                                   | upon request   | Wicquart, J.  |
+| 0008          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                 | open           | Wicquart, J.  |
+| 0009          | [data-mermaid](https://github.com/data-mermaid/mermaidr)                                     | upon request   | Wicquart, J.  |
 
 
 ## 6. Sponsors
