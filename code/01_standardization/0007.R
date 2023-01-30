@@ -39,6 +39,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          cover = (cover/total)*100,
          latitude = -149.901167,
          longitude = -17.470833,
+         replicate = str_extract(replicate, "[1-9]"),
          method = "Point intersect transect, 50 m transect length, every 50 cm",
          taxid = str_to_sentence(str_squish(str_trim(taxid, side = "both")))) %>% 
   select(-total) %>% 

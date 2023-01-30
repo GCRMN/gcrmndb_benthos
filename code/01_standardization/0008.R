@@ -25,6 +25,11 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(dataset_id = dataset,
          location = "Moorea", 
          depth = 12,
+         replicate = str_replace_all(replicate, c("1-2" = "1",
+                                                  "3-4" = "2",
+                                                  "5-6" = "3",
+                                                  "7-8" = "4")),
+         replicate = as.numeric(replicate),
          method = "Point intersect transect, 50 m transect length, every 50 cm",
          taxid = str_to_sentence(str_squish(str_trim(taxid, side = "both")))) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
