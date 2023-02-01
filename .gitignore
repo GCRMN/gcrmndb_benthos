@@ -4,6 +4,7 @@
 .Rproj
 .Rhistory
 .RData
+.Rprofile
 .Ruserdata
 *.html
 # folder #

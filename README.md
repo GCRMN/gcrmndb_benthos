@@ -55,33 +55,33 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 
 **Table 2.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables.
 
-|  #  | Variable    | Cat.                       | Description                                              |
-|----:|-------------|:--------------------------:|----------------------------------------------------------|
-| 1   | dataset_id  | :memo:                     |                                                          |  
-| 2   | region      | :globe_with_meridians:     |                                                          |  
-| 3   | country     | :globe_with_meridians:     |                                                          |  
-| 4   | territory   | :globe_with_meridians:     |                                                          |  
-| 5   | location    | :globe_with_meridians:     |                                                          |  
-| 6   | site        | :globe_with_meridians:     |                                                          |  
-| 7   | zone        | :globe_with_meridians:     |                                                          |  
-| 8   | transect    | :globe_with_meridians:     |                                                          |  
-| 9   | quadrat     | :globe_with_meridians:     |                                                          |  
-| 10  | lat         | :globe_with_meridians:     |                                                          |  
-| 11  | long        | :globe_with_meridians:     |                                                          |  
-| 12  | depth       | :globe_with_meridians:     |                                                          |  
-| 13  | year        | :calendar:                 |                                                          |  
-| 14  | month       | :calendar:                 |                                                          |  
-| 15  | day         | :calendar:                 |                                                          |  
-| 16  | date        | :calendar:                 |                                                          |  
-| 17  | method      | :straight_ruler:           |                                                          |  
-| 18  | observer    | :straight_ruler:           |                                                          |  
-| 19  | category    | :crab:                     |                                                          |  
-| 20  | subcategory | :crab:                     |                                                          |  
-| 21  | condition   | :crab:                     |                                                          |  
-| 22  | family      | :crab:                     |                                                          |  
-| 23  | genus       | :crab:                     |                                                          |  
-| 24  | species     | :crab:                     |                                                          |  
-| 25  | cover       | :chart_with_upwards_trend: |                                                          |  
+|  #  | Variable    | Cat.                       | Type      | Description                                                                     |
+|----:|:------------|:--------------------------:|:----------|:--------------------------------------------------------------------------------|
+| 1   | dataset_id  | :memo:                     | Factor    | ID of the dataset                                                               |  
+| 2   | region      | :globe_with_meridians:     | Factor    | GCRMN region (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))  |  
+| 3   | country     | :globe_with_meridians:     | Factor    | Country                                                                         |  
+| 4   | territory   | :globe_with_meridians:     | Character |                                                                                 |  
+| 5   | location    | :globe_with_meridians:     | Character |                                                                                 |  
+| 6   | site        | :globe_with_meridians:     | Character |                                                                                 |  
+| 7   | zone        | :globe_with_meridians:     | Factor    |                                                                                 |  
+| 8   | replicate   | :globe_with_meridians:     | Numeric   |                                                                                 |  
+| 9   | quadrat     | :globe_with_meridians:     | Numeric   |                                                                                 |  
+| 10  | lat         | :globe_with_meridians:     | Numeric   | Latitude (*decimal, EPSG:4326*)                                                 |  
+| 11  | long        | :globe_with_meridians:     | Numeric   | Longitude (*decimal, EPSG:4326*)                                                |  
+| 12  | depth       | :globe_with_meridians:     | Numeric   | Depth (*m*)                                                                     |  
+| 13  | year        | :calendar:                 | Integer   | Year                                                                            |  
+| 14  | month       | :calendar:                 | Integer   | Month                                                                           |  
+| 15  | day         | :calendar:                 | Integer   | Day                                                                             |  
+| 16  | date        | :calendar:                 | Date      | Date (*YYYY-MM-DD*)                                                             |  
+| 17  | method      | :straight_ruler:           |           |                                                                                 |  
+| 18  | observer    | :straight_ruler:           |           |                                                                                 |  
+| 19  | category    | :crab:                     |           |                                                                                 |  
+| 20  | subcategory | :crab:                     |           |                                                                                 |   
+| 21  | condition   | :crab:                     |           |                                                                                 |  
+| 22  | family      | :crab:                     |           |                                                                                 |  
+| 23  | genus       | :crab:                     |           |                                                                                 |  
+| 24  | species     | :crab:                     | Factor    |                                                                                 |  
+| 25  | cover       | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                |  
 
 
 ## 4. Quality checks
@@ -116,7 +116,7 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)                                                                   | upon request   | Wicquart, J.  |
 | 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                                 | upon request           | Wicquart, J.  |
 | 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                 | open           | Wicquart, J.  |
-| 0010          | [data-mermaid](https://github.com/data-mermaid/mermaidr)                                     | upon request   | Wicquart, J.  |
+| 0010          | [MERMAID](https://github.com/data-mermaid/mermaidr)                                     | upon request   | Wicquart, J.  |
 
 
 ## 6. Sponsors
