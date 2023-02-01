@@ -25,6 +25,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(dataset_id = dataset,
          location = "Moorea", 
          depth = 12,
+         long = -149.901167,
+         lat = -17.470833,
          replicate = str_replace_all(replicate, c("1-2" = "1",
                                                   "3-4" = "2",
                                                   "5-6" = "3",
