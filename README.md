@@ -103,20 +103,20 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 ## 5. List of individual datasets
 
 
-**Table 4.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+**Table 4.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
-| datasetID     | rightsHolder                                                                                 | accessRights   | aggregator    |
-|:-------------:|----------------------------------------------------------------------------------------------|----------------|---------------|
-| 0001          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |         
-| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)  | open           | Wicquart, J.  |                 
-| 0003          | AIMS LTMP                                                                                    | upon request   | Wicquart, J.  |                 
-| 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                                                 | upon request   | Wicquart, J.  |               
-| 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)                                                                      | upon request   | Wicquart, J.  |        
-| 0006          | [CRIOBE - Tiahura](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1)                                                                             | upon request   | Wicquart, J.  |
-| 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)                                                                   | upon request   | Wicquart, J.  |
-| 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                                 | upon request           | Wicquart, J.  |
-| 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                 | open           | Wicquart, J.  |
-| 0010          | [MERMAID](https://github.com/data-mermaid/mermaidr)                                     | upon request   | Wicquart, J.  |
+| datasetID     | rightsHolder                                                                                                                                             | accessRights   | modified   | aggregator    |
+|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------|---------------|
+| 0001          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2021-04-01 | Wicquart, J.  |         
+| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2021-04-01 | Wicquart, J.  |                 
+| 0003          | AIMS LTMP                                                                                                                                                | upon request   |            | Wicquart, J.  |                 
+| 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                    | upon request   | 2022-09-08 | Wicquart, J.  |               
+| 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)      | upon request   |            | Wicquart, J.  |        
+| 0006          | [CRIOBE - Tiahura](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1)   | upon request   | 2022-12-31 | Wicquart, J.  |
+| 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)          | upon request   |            | Wicquart, J.  |
+| 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                      | upon request   |            | Wicquart, J.  |
+| 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                                                                             | open           |            | Wicquart, J.  |
+| 0010          | [MERMAID](https://github.com/data-mermaid/mermaidr)                                                                                                      | upon request   |            | Wicquart, J.  |
 
 
 ## 6. Sponsors
