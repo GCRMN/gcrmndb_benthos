@@ -25,8 +25,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # 1. Source functions ----
 
+source("../.Rprofile") # Rprofile with NCBI API key for taxize
 source("00_functions/graphical_par.R")
 source("00_functions/theme_graph.R")
+source("00_functions/render_rmd.R")
 
 # 2. Required packages ----
 
@@ -35,6 +37,10 @@ library(formattable) # Interactive HTML tables
 library(DT) # Interactive HTML tables
 library(leaflet) # Interactive HTML map
 library(taxize) # For taxonomy
+library(sf)
+library(rmarkdown)
+library(plotly)
+library(kableExtra)
 
 # 3. Set theme_graph() as the default ggplot theme ----
 
@@ -61,6 +67,23 @@ rm(files_list)
 ```
 
 # Taxonomical re-categorisation
+
+```{r}
+
+# 1. Misc. corrections on taxid levels ----
+
+synthetic_data <- synthetic_data %>% 
+  # Homogenize taxid
+  mutate(taxid = str_to_lower(taxid), # To lowercase
+         taxid = gsub("[()]", "", taxid), # Remove parentheses
+         taxid = iconv(taxid, from = 'UTF-8', to = 'ASCII//TRANSLIT'), # Convert accent letters
+         taxid = str_replace_all(taxid, c("&" = "and",
+                                          "_" = " ",
+                                          "," = " ")), # Convert some special characters
+         taxid = str_squish(taxid), 
+         taxid = str_trim(taxid)) # Remove duplicated space and space before and after
+
+```
 
 ```{r}
 
@@ -99,7 +122,7 @@ if(file.exists("./../data/03_tax-recategorisation.csv")){
         mutate(checked = FALSE) %>% 
         bind_rows(old_unique_taxid, .) %>%
         arrange(taxid) %>%  
-        write.csv2(., "./../data/03_tax-recategorisation.csv", row.names = FALSE)
+        write.csv2(., file = "./../data/03_tax-recategorisation.csv", row.names = FALSE)
     
   }
   
@@ -123,7 +146,7 @@ if(file.exists("./../data/03_tax-recategorisation.csv")){
     mutate(category = NA, subcategory = NA, bleaching = NA, .after = "taxid") %>% 
     mutate(checked = FALSE) %>% 
     arrange(taxid) %>% 
-    write.csv2(., "./../data/03_tax-recategorisation.csv", row.names = FALSE)
+    write.csv2(., file = "./../data/03_tax-recategorisation.csv", row.names = FALSE)
   
 }
 
@@ -236,6 +259,59 @@ synthetic_data_before <- synthetic_data
 
 ```
 
+# Spatial assignation
+
+```{r}
+
+synthetic_data_coords <- synthetic_data %>% 
+  drop_na(lat, long) %>%
+  select(dataset_id, lat, long) %>% 
+  distinct() %>% 
+  st_as_sf(coords = c("long", "lat"), crs = 4326)
+
+```
+
+## GCRMN region
+
+```{r}
+
+load("../data/06_gcrmn-regions.RData")
+
+synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>% 
+  bind_cols(., st_coordinates(.)) %>% 
+  rename(lat = Y, long = X, region = gcrmn_region) %>% 
+  st_drop_geometry() %>% 
+  left_join(synthetic_data, .)
+
+```
+
+## EEZ
+
+```{r}
+
+data_eez <- st_read("../data/07_data-eez/eez_v11.shp") %>% 
+  select(SOVEREIGN1, TERRITORY1) %>% 
+  st_transform(crs = 4326) %>% 
+  st_make_valid()
+
+data_eez <- nngeo::st_remove_holes(data_eez)
+
+synthetic_data <- st_join(synthetic_data_coords, data_eez) %>% 
+  bind_cols(., st_coordinates(.)) %>% 
+  rename(lat = Y, long = X, country = SOVEREIGN1, territory = TERRITORY1) %>% 
+  st_drop_geometry() %>% 
+  left_join(synthetic_data, .)
+
+```
+
+# Individual checks
+
+```{r}
+
+map(unique(synthetic_data$dataset_id), ~render_rmd(.))
+
+```
+
 # Quality checks
 
 ## Missing variables
@@ -257,6 +333,8 @@ synthetic_data %>%
   arrange(dataset_id) %>% 
   formattable(.) %>% 
   as.datatable(., rownames = FALSE)
+
+
 
 ```
 

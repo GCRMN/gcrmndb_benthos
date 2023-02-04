@@ -1,0 +1,164 @@
+---
+title: "gcrmndb_benthos"
+author: "Individual dataset summary"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+
+# General description 
+
+```{r echo=FALSE}
+
+
+synthetic_data_i <- synthetic_data %>% 
+  filter(dataset_id == i)
+
+sites <- synthetic_data_i %>% 
+  drop_na(lat, long) %>% 
+  select(lat, long) %>% 
+  distinct() %>% 
+  count() %>% 
+  pull()
+
+surveys <- synthetic_data_i %>% 
+  drop_na(lat, long) %>% 
+  select(lat, long, year, date) %>% 
+  distinct() %>% 
+  count() %>% 
+  pull()
+
+tibble(dataset_id = i,
+       observations = nrow(synthetic_data_i),
+       sites = sites,
+       surveys = surveys,
+       start_year = min(unique(synthetic_data_i$year), na.rm = TRUE),
+       end_year = max(unique(synthetic_data_i$year), na.rm = TRUE)) %>% 
+  mutate_all(~as.character(.)) %>% 
+  pivot_longer(1:ncol(.), names_to = "variable", values_to = "value") %>% 
+  kbl(col.names = NULL, align = c("r", "l")) %>% 
+  kable_paper("hover") %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, html_font = "arial") %>% 
+  column_spec(1, bold = TRUE)
+
+```
+
+# Variable
+
+```{r echo=FALSE, message=FALSE}
+
+data_variable <- synthetic_data %>% 
+  group_by(dataset_id) %>% 
+  summarise_all(~(sum(is.na(.)))) %>% 
+  ungroup() %>% 
+  pivot_longer(2:ncol(.), names_to = "variable", values_to = "na") %>% 
+  left_join(., synthetic_data %>% group_by(dataset_id) %>% count()) %>% 
+  mutate(na_percent = round((na*100)/n, 2)) %>% 
+  filter(dataset_id == i) %>% 
+  select(-dataset_id, -n) %>% 
+  mutate(type = if_else(na_percent == 100, "Missing", "NA")) %>% 
+  mutate(type = cell_spec(type, color = ifelse(type == "Missing", "red", "white")))
+
+data_variable$na_percent <- color_bar("#d64541")(data_variable$na_percent)
+
+kbl(data_variable, escape = F, col.names = c("Variable", "NA (number)", "NA (%)", "Type")) %>%
+  kable_paper("hover", full_width = T) %>%
+  column_spec(1, bold = TRUE) %>%
+  column_spec(3, color = "#bfbfbf") %>%
+  row_spec(0, color = "white")
+
+```
+
+# Taxonomy
+
+```{r echo=FALSE, message=FALSE, fig.width=8.75}
+
+data_taxo <- synthetic_data %>%
+  group_by(dataset_id, category) %>% 
+  count() %>% 
+  ungroup() %>% 
+  complete(dataset_id, category, fill = list(n = 0)) %>% 
+  filter(dataset_id == i) %>% 
+  mutate(percent = n*100/sum(n),
+         category = fct_rev(category))
+
+plot_i <- ggplot(data = data_taxo, aes(x = category, y = percent, label = n)) +
+  geom_bar(stat = "identity", fill = "#2c82c9") +
+  theme(panel.background = element_rect(fill = "transparent"),
+        plot.background = element_rect(fill = "transparent")) +
+  coord_flip() +
+  lims(y = c(0, 100)) +
+  labs(y = "Percentage of observations", x = NULL)
+
+ggplotly(plot_i)
+
+```
+
+```{r echo=FALSE, message=FALSE, fig.width=8.75}
+
+data_taxo <- synthetic_data %>%
+  filter(dataset_id == "0002") %>%
+  select(category, phylum, family, genus, species) %>% 
+  map2_df(., colnames(.), ~if_else(is.na(.x), NA_character_, .y)) %>% 
+  mutate(level = coalesce(species, genus, family, phylum, category)) %>% 
+  group_by(level) %>% 
+  count() %>% 
+  ungroup() %>% 
+  mutate(percent = n*100/sum(n),
+         level = fct_relevel(level))
+
+plot_i <- ggplot(data = data_taxo, aes(x = level, y = percent, label = n)) +
+  geom_bar(stat = "identity", fill = "#2c82c9") +
+  theme(panel.background = element_rect(fill = "transparent"),
+        plot.background = element_rect(fill = "transparent")) +
+  coord_flip() +
+  lims(y = c(0, 100)) +
+  labs(y = "Percentage of observations", x = NULL)
+
+ggplotly(plot_i)
+
+```
+
+# Spatial
+
+```{r fig.width=8.75, echo=FALSE}
+
+synthetic_data_i %>% 
+  select(long, lat) %>% 
+  unique() %>% 
+  leaflet(data = .) %>%
+  addTiles() %>%
+  addMarkers(~long, ~lat)
+
+```
+
+# Temporal
+
+```{r fig.width=8.75, echo=FALSE}
+
+data_temporal <- synthetic_data_i %>% 
+  group_by(year) %>% 
+  count()
+
+plot_i <- ggplot(data = data_temporal, aes(x = year, y = n)) +
+  geom_bar(stat = "identity", fill = "#2c82c9") +
+  theme(panel.background = element_rect(fill = "transparent"),
+        plot.background = element_rect(fill = "transparent")) +
+  labs(x = "Year", y = "Number of observations") +
+  lims(x = c(1975, 2025))
+
+ggplotly(plot_i)
+
+rm(data_temporal)
+
+```
+
+# Quality checks
+
+
+
+
+
+
