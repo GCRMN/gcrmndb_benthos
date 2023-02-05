@@ -53,35 +53,36 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 ## 3. Description of variables
 
 
-**Table 2.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables.
+**Table 2.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables. Variables names, except *category* and *subcategory*, correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
-|  #  | Variable    | Cat.                       | Type      | Description                                                                     |
-|----:|:------------|:--------------------------:|:----------|:--------------------------------------------------------------------------------|
-| 1   | dataset_id  | :memo:                     | Factor    | ID of the dataset                                                               |  
-| 2   | region      | :globe_with_meridians:     | Factor    | GCRMN region (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))  |  
-| 3   | country     | :globe_with_meridians:     | Factor    | Country                                                                         |  
-| 4   | territory   | :globe_with_meridians:     | Character |                                                                                 |  
-| 5   | location    | :globe_with_meridians:     | Character |                                                                                 |  
-| 6   | site        | :globe_with_meridians:     | Character |                                                                                 |  
-| 7   | zone        | :globe_with_meridians:     | Factor    |                                                                                 |  
-| 8   | replicate   | :globe_with_meridians:     | Numeric   |                                                                                 |  
-| 9   | quadrat     | :globe_with_meridians:     | Numeric   |                                                                                 |  
-| 10  | lat         | :globe_with_meridians:     | Numeric   | Latitude (*decimal, EPSG:4326*)                                                 |  
-| 11  | long        | :globe_with_meridians:     | Numeric   | Longitude (*decimal, EPSG:4326*)                                                |  
-| 12  | depth       | :globe_with_meridians:     | Numeric   | Depth (*m*)                                                                     |  
-| 13  | year        | :calendar:                 | Integer   | Year                                                                            |  
-| 14  | month       | :calendar:                 | Integer   | Month                                                                           |  
-| 15  | day         | :calendar:                 | Integer   | Day                                                                             |  
-| 16  | date        | :calendar:                 | Date      | Date (*YYYY-MM-DD*)                                                             |  
-| 17  | method      | :straight_ruler:           |           |                                                                                 |  
-| 18  | observer    | :straight_ruler:           |           |                                                                                 |  
-| 19  | category    | :crab:                     |           |                                                                                 |  
-| 20  | subcategory | :crab:                     |           |                                                                                 |   
-| 21  | condition   | :crab:                     |           |                                                                                 |  
-| 22  | family      | :crab:                     |           |                                                                                 |  
-| 23  | genus       | :crab:                     |           |                                                                                 |  
-| 24  | species     | :crab:                     | Factor    |                                                                                 |  
-| 25  | cover       | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                |  
+|  #  | Variable              | Cat.                       | Type      | Description                                                                                            |
+|----:|:----------------------|:--------------------------:|:----------|:-------------------------------------------------------------------------------------------------------|
+| 1   | datasetID             | :memo:                     | Factor    | ID of the dataset                                                                                      |  
+| 2   | higherGeography       | :globe_with_meridians:     | Factor    | GCRMN region (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))                         |  
+| 3   | country               | :globe_with_meridians:     | Factor    | Country (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))    |  
+| 4   | territory             | :globe_with_meridians:     | Character | Territory (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*TERRITORY1*))  |  
+| 5   | locality              | :globe_with_meridians:     | Character | Site name                                                                                              |  
+| 6   | habitat               | :globe_with_meridians:     | Factor    |                                                                                                        |  
+| 7   | parentEventID         | :globe_with_meridians:     | Numeric   | Transect ID                                                                                            |  
+| 8   | eventID               | :globe_with_meridians:     | Numeric   | Quadrat ID                                                                                             |  
+| 9   | decimalLatitude       | :globe_with_meridians:     | Numeric   | Latitude (*decimal, EPSG:4326*)                                                                        |  
+| 10  | decimalLongitude      | :globe_with_meridians:     | Numeric   | Longitude (*decimal, EPSG:4326*)                                                                       |  
+| 11  | verbatimDepth         | :globe_with_meridians:     | Numeric   | Depth (*m*)                                                                                            |  
+| 12  | year                  | :calendar:                 | Integer   | Four-digit year                                                                                        |  
+| 13  | month                 | :calendar:                 | Integer   | Integer month                                                                                          |  
+| 14  | day                   | :calendar:                 | Integer   | Integer day                                                                                            |  
+| 15  | eventDate             | :calendar:                 | Date      | Date (*YYYY-MM-DD*, ISO 8601)                                                                          |  
+| 16  | samplingProtocol      | :straight_ruler:           |           |                                                                                                        |  
+| 17  | recordedBy            | :straight_ruler:           |           |                                                                                                        |  
+| 18  | category              | :crab:                     |           |                                                                                                        |  
+| 19  | subcategory           | :crab:                     |           |                                                                                                        |   
+| 20  | condition             | :crab:                     |           |                                                                                                        |  
+| 21  | phylum                | :crab:                     |           |                                                                                                        |  
+| 22  | class                 | :crab:                     |           |                                                                                                        |  
+| 23  | family                | :crab:                     |           |                                                                                                        |  
+| 24  | genus                 | :crab:                     |           |                                                                                                        |  
+| 25  | scientificName        | :crab:                     | Factor    |                                                                                                        |  
+| 26  | measurementValue      | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                                       |  
 
 
 ## 4. Quality checks
@@ -107,8 +108,8 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 
 | datasetID     | rightsHolder                                                                                                                                             | accessRights   | modified   | aggregator    |
 |:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------|---------------|
-| 0001          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2021-04-01 | Wicquart, J.  |         
-| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2021-04-01 | Wicquart, J.  |                 
+| 0001          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2022-02-21 | Wicquart, J.  |         
+| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2022-02-21 | Wicquart, J.  |                 
 | 0003          | AIMS LTMP                                                                                                                                                | upon request   |            | Wicquart, J.  |                 
 | 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                    | upon request   | 2022-09-08 | Wicquart, J.  |               
 | 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)      | upon request   |            | Wicquart, J.  |        
@@ -137,5 +138,7 @@ The following organizations have funded the realization of the `gcrmndb_benthos`
 * Vos, P., E. Meelis, and W. J. Ter Keurs (**2000**). [A Framework for the Design of Ecological Monitoring Programs as a Tool for Environmental and Nature Management](https://link.springer.com/article/10.1023/A:1006139412372). Environmental Monitoring and Assessment* 61(3): 317–44.
 
 * Wicquart, J., Gudka, M., Obura, D., Logan, M., Staub, F., Souter, D., & Planes, S. (**2022**). [A workflow to integrate ecological monitoring data from different sources](https://www.sciencedirect.com/science/article/pii/S1574954121003344). *Ecological Informatics*, 68, 101543.
+
+* Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, et al. (**2012**). [Darwin Core: An Evolving Community-Developed Biodiversity Data Standard](https://doi.org/10.1371/journal.pone.0029715). *PLoS ONE* 7(1): e29715.
 
 * Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., ... & Mons, B. (**2016**). [The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618). *Scientific data*, 3(1), 1-9.
