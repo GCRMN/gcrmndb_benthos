@@ -96,11 +96,12 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | 1  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Are the latitude and longitude available?                                       |  
 | 2  | :globe_with_meridians:     | `decimalLatitude`                    | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
 | 3  | :globe_with_meridians:     | `decimalLongitude`                   | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
-| 4  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Is the site within the coral reef distribution area?                            |  
-| 5  | :globe_with_meridians:     | `verbatimDepth`                      | Is the depth between 0 and 100 meters?                                          |  
-| 6  | :calendar:                 | `year`                               | Is the year available?                                                          |  
-| 7  | :chart_with_upwards_trend: | `measurementValue`    | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
-| 8  | :chart_with_upwards_trend: | `measurementValue`    | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100? |                                    
+| 4  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Is the site within the coral reef distribution area (100 km buffer)?            |  
+| 5  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Is the site within lands (5 km buffer)?                                         |  
+| 6  | :globe_with_meridians:     | `verbatimDepth`                      | Is the depth between 0 and 100 meters?                                          |  
+| 7  | :calendar:                 | `year`                               | Is the year available?                                                          |  
+| 8  | :chart_with_upwards_trend: | `measurementValue`    | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
+| 9  | :chart_with_upwards_trend: | `measurementValue`    | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100? |                                    
 
 
 ## 5. List of individual datasets
