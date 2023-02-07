@@ -2,6 +2,7 @@
 
 library(tidyverse) # Core tidyverse packages
 library(readxl) # To read excel files
+library(lubridate) # For dates format
 
 dataset <- "0006" # Define the dataset_id
 
@@ -10,17 +11,16 @@ dataset <- "0006" # Define the dataset_id
 # 2.1 Site data --
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(dataset_id == dataset & data_type == "site") %>% 
+  filter(datasetID == dataset & data_type == "site") %>% 
   select(data_path) %>% 
   pull() %>% 
   # Read the file
-  read.csv2(file = .) %>% 
-  rename(site = Site, lat = Latitude, long = Longitude, zone = Zone, depth = Depth)
+  read.csv2(file = .)
 
 # 2.2 Code data --
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(dataset_id == dataset & data_type == "code") %>% 
+  filter(datasetID == dataset & data_type == "code") %>% 
   select(data_path) %>% 
   pull() %>%
   # Read the file
@@ -29,7 +29,7 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 # 2.3 Main data --
 
 read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(dataset_id == dataset & data_type == "main") %>% 
+  filter(datasetID == dataset & data_type == "main") %>% 
   select(data_path) %>% 
   pull() %>% 
   # Read the file
@@ -37,21 +37,22 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
             sheet = "Brut", 
             col_types = c("numeric", "text", "date", "text", "text", 
                           "numeric", "numeric", "text", "text")) %>% 
-  left_join(., data_code) %>% # Merge main data with substrates codes
-  select(-Season, -Substrate, -Remarques) %>% # Delete useless variables
-  rename(year = Year, date = Date, zone = Habitat, observer = Observer, 
-         replicate = Station, taxid = Tax_ID) %>% # Rename variables
-  group_by(year, date, observer, zone, replicate, taxid) %>% 
-  count(name = "cover") %>% 
+  select(-Year, -Season, -Remarques) %>% # Delete useless variables
+  rename(eventDate = Date, recordedBy = Observer, habitat = Habitat, 
+         code = Substrate, eventID = Station) %>% 
+  left_join(., data_code) %>% 
+  group_by(eventDate, recordedBy, habitat, eventID, organismID) %>% 
+  count(name = "measurementValue") %>% 
   ungroup() %>% 
-  group_by(year, date, observer, zone, replicate) %>% 
-  mutate(total = sum(cover)) %>% 
+  group_by(eventDate, recordedBy, habitat, eventID) %>% 
+  mutate(total = sum(measurementValue)) %>% 
   ungroup() %>% 
-  mutate(dataset_id = dataset,
-         location = "Moorea", 
-         cover = (cover/total)*100,
-         method = "Point intersect transect, 50 m transect length, every 1 m",
-         taxid = str_to_sentence(str_squish(str_trim(taxid, side = "both")))) %>% 
+  mutate(datasetID = dataset,
+         measurementValue = (measurementValue/total)*100,
+         year = year(eventDate),
+         month = month(eventDate),
+         day = day(eventDate),
+         samplingProtocol = "Point intersect transect, 50 m transect length, every 1 m") %>% 
   select(-total) %>% 
   left_join(., data_site) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
