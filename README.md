@@ -53,7 +53,7 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 ## 3. Description of variables
 
 
-**Table 2.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables. Variables names, except *category* and *subcategory*, correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+**Table 2.** Description of variables included in the `gcrmndb_benthos` synthetic dataset. The icons for the variables categories (`Cat.`) represents :memo: = description variables, :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :straight_ruler: = methodological variables, :crab: = taxonomic variables, :chart_with_upwards_trend: = metric variables. Variables names (except *category*, *subcategory*, and *condition*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
 |  #  | Variable              | Cat.                       | Type      | Description                                                                                            |
 |----:|:----------------------|:--------------------------:|:----------|:-------------------------------------------------------------------------------------------------------|
@@ -62,9 +62,9 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | 3   | country               | :globe_with_meridians:     | Factor    | Country (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))    |  
 | 4   | territory             | :globe_with_meridians:     | Character | Territory (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*TERRITORY1*))  |  
 | 5   | locality              | :globe_with_meridians:     | Character | Site name                                                                                              |  
-| 6   | habitat               | :globe_with_meridians:     | Factor    |                                                                                                        |  
-| 7   | parentEventID         | :globe_with_meridians:     | Numeric   | Transect ID                                                                                            |  
-| 8   | eventID               | :globe_with_meridians:     | Numeric   | Quadrat ID                                                                                             |  
+| 6   | habitat               | :globe_with_meridians:     | Factor    | Habitat                                                                                                |  
+| 7   | parentEventID         | :globe_with_meridians:     | Integer   | Transect ID                                                                                            |  
+| 8   | eventID               | :globe_with_meridians:     | Integer   | Quadrat ID                                                                                             |  
 | 9   | decimalLatitude       | :globe_with_meridians:     | Numeric   | Latitude (*decimal, EPSG:4326*)                                                                        |  
 | 10  | decimalLongitude      | :globe_with_meridians:     | Numeric   | Longitude (*decimal, EPSG:4326*)                                                                       |  
 | 11  | verbatimDepth         | :globe_with_meridians:     | Numeric   | Depth (*m*)                                                                                            |  
@@ -72,17 +72,18 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | 13  | month                 | :calendar:                 | Integer   | Integer month                                                                                          |  
 | 14  | day                   | :calendar:                 | Integer   | Integer day                                                                                            |  
 | 15  | eventDate             | :calendar:                 | Date      | Date (*YYYY-MM-DD*, ISO 8601)                                                                          |  
-| 16  | samplingProtocol      | :straight_ruler:           |           |                                                                                                        |  
-| 17  | recordedBy            | :straight_ruler:           |           |                                                                                                        |  
-| 18  | category              | :crab:                     |           |                                                                                                        |  
-| 19  | subcategory           | :crab:                     |           |                                                                                                        |   
-| 20  | condition             | :crab:                     |           |                                                                                                        |  
-| 21  | phylum                | :crab:                     |           |                                                                                                        |  
-| 22  | class                 | :crab:                     |           |                                                                                                        |  
-| 23  | family                | :crab:                     |           |                                                                                                        |  
-| 24  | genus                 | :crab:                     |           |                                                                                                        |  
-| 25  | scientificName        | :crab:                     | Factor    |                                                                                                        |  
-| 26  | measurementValue      | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                                       |  
+| 16  | samplingProtocol      | :straight_ruler:           | Character | Description of the method used to acquire the measurement                                              |  
+| 17  | recordedBy            | :straight_ruler:           | Character | Name of the person who acquired the measurement                                                        |  
+| 18  | category              | :crab:                     | Character |                                                                                                        |  
+| 19  | subcategory           | :crab:                     | Character |                                                                                                        |   
+| 20  | condition             | :crab:                     | Character |                                                                                                        |  
+| 21  | phylum                | :crab:                     | Character | Phylum                                                                                                 |  
+| 22  | class                 | :crab:                     | Character | Class                                                                                                  |  
+| 23  | order                 | :crab:                     | Character | Order                                                                                                  |  
+| 24  | family                | :crab:                     | Character | Family                                                                                                 |  
+| 25  | genus                 | :crab:                     | Character | Genus                                                                                                  |  
+| 26  | scientificName        | :crab:                     | Character | Species                                                                                                |  
+| 27  | measurementValue      | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                                       |  
 
 
 ## 4. Quality checks
@@ -90,21 +91,22 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 
 **Table 3.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables.
 
-| #  | Cat.                       | Variables       | Questions                                                                       |
-|:--:|:--------------------------:|-----------------|:--------------------------------------------------------------------------------|
-| 1  | :globe_with_meridians:     | `lat`           | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
-| 2  | :globe_with_meridians:     | `long`          | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
-| 3  | :globe_with_meridians:     | `lat` `long`    | Is the site within the coral reef distribution area?                            |  
-| 4  | :globe_with_meridians:     | `lat` `long`    | Is the site located in sea or along the coastline (5 km buffer)?                |  
-| 5  | :globe_with_meridians:     | `depth`         | Is the depth value between 0 and 100?                                           |  
-| 7  | :chart_with_upwards_trend: | `cover`         | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
-| 8  | :chart_with_upwards_trend: | `cover`         | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100? |                                    
+| #  | Cat.                       | Variables                            | Questions                                                                       |
+|:--:|:--------------------------:|--------------------------------------|:--------------------------------------------------------------------------------|
+| 1  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Are the latitude and longitude available?                                       |  
+| 2  | :globe_with_meridians:     | `decimalLatitude`                    | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
+| 3  | :globe_with_meridians:     | `decimalLongitude`                   | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
+| 4  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Is the site within the coral reef distribution area?                            |  
+| 5  | :globe_with_meridians:     | `verbatimDepth`                      | Is the depth between 0 and 100 meters?                                          |  
+| 6  | :calendar:                 | `year`                               | Is the year available?                                                          |  
+| 7  | :chart_with_upwards_trend: | `measurementValue`    | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
+| 8  | :chart_with_upwards_trend: | `measurementValue`    | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100? |                                    
 
 
 ## 5. List of individual datasets
 
 
-**Table 4.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The names of column headers (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+**Table 4.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The column names (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
 | datasetID     | rightsHolder                                                                                                                                             | accessRights   | modified   | aggregator    |
 |:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------|---------------|
