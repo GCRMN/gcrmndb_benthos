@@ -46,9 +46,11 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 The data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset includes four main steps (see [Wicquart *et al.*, 2022](https://www.sciencedirect.com/science/article/pii/S1574954121003344)).
 
-1. A
-2. A
-3. A
+
+**Figure 1.** Illustration of the data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset.
+
+<img src='figs/workflow.png' align="center" width="400"/>
+
 
 ## 3. Description of variables
 
