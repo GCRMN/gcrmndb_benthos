@@ -74,8 +74,8 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | 15  | eventDate             | :calendar:                 | Date      | Date (*YYYY-MM-DD*, ISO 8601)                                                                          |  
 | 16  | samplingProtocol      | :straight_ruler:           | Character | Description of the method used to acquire the measurement                                              |  
 | 17  | recordedBy            | :straight_ruler:           | Character | Name of the person who acquired the measurement                                                        |  
-| 18  | category              | :crab:                     | Character |                                                                                                        |  
-| 19  | subcategory           | :crab:                     | Character |                                                                                                        |   
+| 18  | category              | :crab:                     | Factor    | Benthic category                                                                                       |  
+| 19  | subcategory           | :crab:                     | Factor    | Benthic subcategory                                                                                    |   
 | 20  | condition             | :crab:                     | Character |                                                                                                        |  
 | 21  | phylum                | :crab:                     | Character | Phylum                                                                                                 |  
 | 22  | class                 | :crab:                     | Character | Class                                                                                                  |  
@@ -86,10 +86,27 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | 27  | measurementValue      | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                                       |  
 
 
+**Table 3.** Description of levels for variables `category` and `subcategory` (see **Table 2**).
+
+| category     | subcategory         | Description                                                        |
+|:------------:|:--------------------|:-------------------------------------------------------------------|
+| Abiotic      | Rock                |                                                                    | 
+|              | Rubble              |                                                                    |
+|              | Sand                |                                                                    |
+|              | Silt                |                                                                    |
+| Algae        | Coralline algae     |                                                                    |
+|              | Cyanobacteria       |                                                                    |
+|              | Macroalgae          |                                                                    |
+|              | Turf algae          |                                                                    |
+| Hard coral   |                     |                                                                    |
+| Other fauna  |                     |                                                                    |
+| Seagrass     |                     |                                                                    | 
+
+
 ## 4. Quality checks
 
 
-**Table 3.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables.
+**Table 4.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables.
 
 | #  | Cat.                       | Variables                            | Questions                                                                       |
 |:--:|:--------------------------:|--------------------------------------|:--------------------------------------------------------------------------------|
@@ -101,26 +118,26 @@ The data integration workflow used for the creation of the `gcrmndb_benthos` syn
 | 6  | :globe_with_meridians:     | `verbatimDepth`                      | Is the depth between 0 and 100 meters?                                          |  
 | 7  | :calendar:                 | `year`                               | Is the year available?                                                          |  
 | 8  | :chart_with_upwards_trend: | `measurementValue`    | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
-| 9  | :chart_with_upwards_trend: | `measurementValue`    | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100? |                                    
+| 9  | :chart_with_upwards_trend: | `measurementValue`    | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100? |                                  
 
 
 ## 5. List of individual datasets
 
 
-**Table 4.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The column names (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+**Table 5.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *type* is the type of individual dataset storage and/or acquisition (*Sh.* = data sharing, *Pa.* = data paper, *Rp.* = data repository, *Db.* = database, *Ar.* = article), *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The column names (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
-| datasetID     | rightsHolder                                                                                                                                             | accessRights   | modified   | aggregator    |
-|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------------|---------------|
-| 0001          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2022-02-21 | Wicquart, J.  |         
-| 0002          | [CSUN](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | 2022-02-21 | Wicquart, J.  |                 
-| 0003          | AIMS LTMP                                                                                                                                                | upon request   |            | Wicquart, J.  |                 
-| 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                    | upon request   | 2022-09-08 | Wicquart, J.  |               
-| 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)      | upon request   |            | Wicquart, J.  |        
-| 0006          | [CRIOBE - Tiahura](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1)   | upon request   | 2022-12-31 | Wicquart, J.  |
-| 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)          | upon request   |            | Wicquart, J.  |
-| 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                      | upon request   |            | Wicquart, J.  |
-| 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                                                                             | open           |            | Wicquart, J.  |
-| 0010          | [MERMAID](https://github.com/data-mermaid/mermaidr)                                                                                                      | upon request   |            | Wicquart, J.  |
+| datasetID     | rightsHolder                                                                                                                                             | accessRights   | type | modified   | aggregator    |
+|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|:----:|------------|---------------|
+| 0001          | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | Rp.  | 2022-02-21 | Wicquart, J.  |         
+| 0002          | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | Rp.  | 2022-02-21 | Wicquart, J.  |                 
+| 0003          | AIMS LTMP                                                                                                                                                | upon request   |      |            | Wicquart, J.  |                 
+| 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                    | upon request   | Sh.  | 2022-09-08 | Wicquart, J.  |               
+| 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)      | upon request   | Sh.  |            | Wicquart, J.  |        
+| 0006          | [CRIOBE - Tiahura](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1)   | upon request   | Sh.  | 2022-12-31 | Wicquart, J.  |
+| 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)          | upon request   | Sh.  |            | Wicquart, J.  |
+| 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                      | upon request   | Sh.  |            | Wicquart, J.  |
+| 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                                                                             | open           | Pa.  |            | Wicquart, J.  |
+| 0010          | [MERMAID](https://github.com/data-mermaid/mermaidr)                                                                                                      | upon request   |      |            | Wicquart, J.  |
 
 
 ## 6. Sponsors
