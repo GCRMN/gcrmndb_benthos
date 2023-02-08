@@ -44,11 +44,8 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 ### 2.2 Workflow
 
-<p align="center">
 
-<img src='figs/workflow.png' width="500"/>
-
-</p>
+![workflow](figs/workflow.png)
 
 **Figure 1.** Illustration of the data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset (see [Wicquart *et al.*, 2022](https://www.sciencedirect.com/science/article/pii/S1574954121003344)). *EEZ* = Economic Exclusive Zone, *NCBI* = National Center for Biotechnology Information.
 
