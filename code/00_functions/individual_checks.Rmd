@@ -124,14 +124,20 @@ ggplotly(plot_i)
 
 # Spatial
 
-```{r eval=FALSE, fig.width=8.75, include=FALSE}
+```{r echo=FALSE, fig.width=8.75, message=FALSE}
 
-synthetic_data_i %>% 
-  select(decimalLongitude, decimalLatitude) %>% 
-  unique() %>% 
-  leaflet(data = .) %>%
-  addTiles() %>%
-  addMarkers(~decimalLongitude, ~decimalLatitude)
+if(sites > 100){
+  
+}else{
+  
+  synthetic_data_i %>% 
+    select(decimalLongitude, decimalLatitude) %>% 
+    unique() %>% 
+    leaflet(data = .) %>%
+    addTiles() %>%
+    addMarkers(~decimalLongitude, ~decimalLatitude)
+  
+}
 
 ```
 
@@ -158,19 +164,25 @@ rm(data_temporal)
 
 # Quality checks
 
-```{r fig.width=8.75, echo=FALSE}
+```{r fig.width=8.75, echo=FALSE, message=FALSE}
 
 data_qc <- quality_checks %>%
   filter(datasetID == i) %>% 
   mutate(QC = fct_rev(QC),
-         percent = round(percent, 2))
+         percent = round(percent, 2),
+         type = as.character(type),
+         type = if_else(is.na(type), "NA", type),
+         type = as.factor(type),
+         type = fct_relevel(type, "NA", "FALSE", "TRUE"))
 
 plot_i <- ggplot(data = data_qc, aes(x = QC, y = percent, fill = type, label = question)) +
   geom_bar(stat = "identity", show.legend = FALSE) +
   coord_flip() +
   labs(y = "Percentage of rows", x = NULL) +
   theme(panel.background = element_rect(fill = "transparent"),
-        plot.background = element_rect(fill = "transparent"))
+        plot.background = element_rect(fill = "transparent"),
+        legend.position = "none") +
+  scale_fill_manual(values = c("FALSE" = "#d24d57", "TRUE" = "#2c82c9", "NA" = "#bdc3c7"))
 
 ggplotly(plot_i)
 
