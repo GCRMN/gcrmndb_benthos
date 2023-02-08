@@ -38,6 +38,7 @@ library(DT) # Interactive HTML tables
 library(leaflet) # Interactive HTML map
 library(taxize) # For taxonomy
 library(sf)
+sf_use_s2(FALSE)
 library(rmarkdown)
 library(plotly)
 library(kableExtra)
@@ -60,7 +61,11 @@ files_list <- list.files(path = "./../data/02_standardized-data", full.names = T
 
 synthetic_data <- map_dfr(files_list, ~read_csv(.))
 
-# 3. Remove useless data sets and variables ----
+# 3. Check incorrect variable names ----
+
+setdiff(colnames(synthetic_data), c(var_names, "organismID"))
+
+# 4. Remove useless data sets and variables ----
 
 rm(files_list)
 
@@ -70,18 +75,18 @@ rm(files_list)
 
 ```{r}
 
-# 1. Misc. corrections on taxid levels ----
+# 1. Misc. corrections on organismID levels ----
 
 synthetic_data <- synthetic_data %>% 
-  # Homogenize taxid
-  mutate(taxid = str_to_lower(taxid), # To lowercase
-         taxid = gsub("[()]", "", taxid), # Remove parentheses
-         taxid = iconv(taxid, from = 'UTF-8', to = 'ASCII//TRANSLIT'), # Convert accent letters
-         taxid = str_replace_all(taxid, c("&" = "and",
+  # Homogenize organismID
+  mutate(organismID = str_to_lower(organismID), # To lowercase
+         organismID = gsub("[()]", "", organismID), # Remove parentheses
+         organismID = iconv(organismID, from = 'UTF-8', to = 'ASCII//TRANSLIT'), # Convert accent letters
+         organismID = str_replace_all(organismID, c("&" = "and",
                                           "_" = " ",
                                           "," = " ")), # Convert some special characters
-         taxid = str_squish(taxid), 
-         taxid = str_trim(taxid)) # Remove duplicated space and space before and after
+         organismID = str_squish(organismID), 
+         organismID = str_trim(organismID)) # Remove duplicated space and space before and after
 
 ```
 
@@ -95,17 +100,17 @@ if(file.exists("./../data/03_tax-recategorisation.csv")){
   
   # 1.A.1 Import it -
   
-  current_unique_taxid <- synthetic_data %>% select(taxid) %>% distinct() %>% pull() # vector
+  current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() %>% pull() # vector
 
-  old_unique_taxid <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
-    filter(taxid %in% current_unique_taxid) # Remove taxid that have been deleted
+  old_unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
+    filter(organismID %in% current_unique_organismID) # Remove organismID that have been deleted
   
-  current_unique_taxid <- synthetic_data %>% select(taxid) %>% distinct() # tibble
+  current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() # tibble
   
-  # 1.A.2 Find rows absent in the older file (old_unique_taxid) but present 
-  # in the current one (current_unique_taxid) and complete it -
+  # 1.A.2 Find rows absent in the older file (old_unique_organismID) but present 
+  # in the current one (current_unique_organismID) and complete it -
   
-  missing_taxid <- anti_join(current_unique_taxid, old_unique_taxid, by = c("taxid")) %>% 
+  missing_organismID <- anti_join(current_unique_organismID, old_unique_organismID, by = c("organismID")) %>% 
     pull(.) %>% 
     tax_name(sci = ., 
              get = c("phylum", "class", "subclass", "order", "family", "genus", "species"), 
@@ -113,27 +118,27 @@ if(file.exists("./../data/03_tax-recategorisation.csv")){
              messages = FALSE,
              ask = FALSE) # Disable choice if "more than one UID found"
 
-  if(nrow(missing_taxid) > 0){
+  if(nrow(missing_organismID) > 0){
     
-      missing_taxid %>%
+      missing_organismID %>%
         select(-db) %>% 
-        rename(taxid = query) %>% 
-        mutate(category = NA, subcategory = NA, bleaching = NA, .after = "taxid") %>% 
+        rename(organismID = query) %>% 
+        mutate(category = NA, subcategory = NA, condition = NA, .after = "organismID") %>% 
         mutate(checked = FALSE) %>% 
-        bind_rows(old_unique_taxid, .) %>%
-        arrange(taxid) %>%  
+        bind_rows(old_unique_organismID, .) %>%
+        arrange(organismID) %>%  
         write.csv2(., file = "./../data/03_tax-recategorisation.csv", row.names = FALSE)
     
   }
   
-  rm(current_unique_taxid, old_unique_taxid, missing_taxid)
+  rm(current_unique_organismID, old_unique_organismID, missing_organismID)
 
 }else{
   
   # 1.B Else export it --
   
   synthetic_data %>% 
-    select(taxid) %>% 
+    select(organismID) %>% 
     distinct() %>% 
     pull(.) %>% 
     tax_name(sci = ., 
@@ -142,18 +147,18 @@ if(file.exists("./../data/03_tax-recategorisation.csv")){
              messages = FALSE, 
              ask = FALSE) %>% # Disable choice if "more than one UID found"
     select(-db) %>% 
-    rename(taxid = query) %>% 
-    mutate(category = NA, subcategory = NA, bleaching = NA, .after = "taxid") %>% 
+    rename(organismID = query) %>% 
+    mutate(category = NA, subcategory = NA, condition = NA, .after = "organismID") %>% 
     mutate(checked = FALSE) %>% 
-    arrange(taxid) %>% 
+    arrange(organismID) %>% 
     write.csv2(., file = "./../data/03_tax-recategorisation.csv", row.names = FALSE)
   
 }
 
 # ----------------------------------------------------------------------------------------- #
 # /!\          Before to run the next chunk code, fill the exported csv file:           /!\ #
-# /!\          Manually complete empty tax. variables for each unique taxid             /!\ #
-# /!\  The text of the column "taxid" must not be changed: it's the grouping variable   /!\ #
+# /!\          Manually complete empty tax. variables for each unique organismID             /!\ #
+# /!\  The text of the column "organismID" must not be changed: it's the grouping variable   /!\ #
 # ----------------------------------------------------------------------------------------- #
 
 ```
@@ -164,16 +169,17 @@ if(file.exists("./../data/03_tax-recategorisation.csv")){
 
 # 1. Add "category" and "subcategory" ----
 
-unique_taxid <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
+unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
   # Remove eventual white spaces
-  mutate_at(c("category", "subcategory", "bleaching", "phylum", "class", "subclass", "order", 
-              "family", "genus", "species", "bleaching"), ~str_squish(str_trim(., side = "both"))) %>% 
+  mutate_at(c("category", "subcategory", "condition", "phylum", "class", "subclass", "order", 
+              "family", "genus", "species"), ~str_squish(str_trim(., side = "both"))) %>% 
   # Assign "subcategory"
   mutate(subcategory = case_when(phylum == "Cyanobacteria" ~ "Cyanobacteria",
                                  order == "Corallinales" ~ "Coralline algae",
                                  TRUE ~ subcategory)) %>% 
   # Assign "category"
-  mutate(category = case_when(phylum == "Porifera" ~ "Other fauna",
+  mutate(category = case_when(order == "Scleractinia" ~ "Hard coral",
+                              phylum %in% c("Porifera", "Chordata", "Echinodermata") ~ "Other fauna",
                               phylum == "Cyanobacteria" ~ "Algae",
                               class %in% c("Ascidiacea", "Hydrozoa", "Crinoidea", 
                                            "Bivalvia", "Echinoidea", "Anthozoa") ~ "Other fauna",
@@ -181,20 +187,19 @@ unique_taxid <- read.csv2("./../data/03_tax-recategorisation.csv") %>%
                                            "Corallimorpharia", "Antipatharia") ~ "Other fauna",
                               subclass %in% c("Octocorallia") ~ "Other fauna",
                               phylum %in% c("Annelida") ~ "Other fauna",
-                              order == "Scleractinia" ~ "Hard coral",
                               family %in% c("Milleporidae", "Helioporidae") ~ "Hard coral",
                               class %in% c("Ulvophyceae", "Florideophyceae", "Phaeophyceae") ~ "Algae",
                               phylum %in% c("Chlorophyta", "Rhodophyta", "Ochrophyta") ~ "Algae",
                               TRUE ~ category)) %>% 
   select(-checked)
 
-# 2. Join main data and recategorized taxid ----
+# 2. Join main data and recategorized organismID ----
 
-synthetic_data <- left_join(synthetic_data, unique_taxid, by = "taxid")
+synthetic_data <- left_join(synthetic_data, unique_organismID, by = "organismID")
 
 # 3. Check if 'genus' is correct (i.e. if it correspond to the first word of 'species') ----
 
-genus_check <- unique_taxid %>%
+genus_check <- unique_organismID %>%
   filter(!is.na(species))
 
 if(all(str_split_fixed(genus_check$species, " ", 2)[,1] == genus_check$genus, na.rm = TRUE) == FALSE){
@@ -205,7 +210,8 @@ if(all(str_split_fixed(genus_check$species, " ", 2)[,1] == genus_check$genus, na
 
 synthetic_data %>% 
   drop_na(category) %>% 
-  select(taxid, category, phylum, class, subclass, order, family, genus, species) %>% 
+  select(organismID, category, subcategory, condition, phylum, 
+         class, subclass, order, family, genus, species) %>% 
   distinct(.) %>% 
   formattable(.) %>% 
   as.datatable(., rownames = FALSE)
@@ -214,46 +220,34 @@ synthetic_data %>%
 
 synthetic_data %>% 
   filter(is.na(category)) %>% 
-  select(taxid, category, phylum, class, subclass, order, family, genus, species) %>% 
+  select(organismID, category, subcategory, condition, phylum,
+         class, subclass, order, family, genus, species) %>% 
   distinct(.) %>% 
   formattable(.) %>% 
   as.datatable(., rownames = FALSE)
 
-# 6. Control levels of factor ----
+# 6. Remove useless data sets and variables ----
 
-sort(unique(synthetic_data$category))
-sort(unique(synthetic_data$subcategory))
-sort(unique(synthetic_data$phylum))
-sort(unique(synthetic_data$class))
-sort(unique(synthetic_data$subclass))
-sort(unique(synthetic_data$order))
-sort(unique(synthetic_data$family))
-
-# 7. Remove useless data sets and variables ----
-
-rm(genus_check, unique_taxid)
+rm(genus_check, unique_organismID)
 
 ```
 
 ```{r}
 
-# 8. Make the sum of percentage cover for identical levels ----
+# 7. Make the sum of percentage cover for identical levels ----
 
 synthetic_data <- synthetic_data %>% 
-  group_by(dataset_id, location, site, replicate, quadrat,
-           zone, lat, long, depth, year, date, method, 
-           observer, category, bleaching, phylum, class, subclass, 
-           order, family, genus, species, cover) %>% 
-  summarise(cover = sum(cover)) %>% 
+  group_by(across(c(-measurementValue))) %>% 
+  summarise(measurementValue = sum(measurementValue)) %>% 
   ungroup()
 
-# 9. Remove rows ----
+# 8. Remove rows ----
 
 synthetic_data <- synthetic_data %>% 
   filter(!is.na(category), # Remove rows containing NA for 'category'
-         !is.na(cover)) # Remove rows containing NA for 'cover'
+         !is.na(measurementValue)) # Remove rows containing NA for 'cover'
 
-# 10. Duplicate the synthetic_data to compare removed rows ----
+# 9. Duplicate the synthetic_data to compare removed rows ----
 
 synthetic_data_before <- synthetic_data
 
@@ -263,11 +257,13 @@ synthetic_data_before <- synthetic_data
 
 ```{r}
 
+# 1. Extract site coordinates and transform to sf format ----
+
 synthetic_data_coords <- synthetic_data %>% 
-  drop_na(lat, long) %>%
-  select(dataset_id, lat, long) %>% 
+  drop_na(decimalLatitude, decimalLongitude) %>%
+  select(datasetID, decimalLatitude, decimalLongitude) %>% 
   distinct() %>% 
-  st_as_sf(coords = c("long", "lat"), crs = 4326)
+  st_as_sf(coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
 
 ```
 
@@ -275,11 +271,15 @@ synthetic_data_coords <- synthetic_data %>%
 
 ```{r}
 
+# 1. Load data ----
+
 load("../data/06_gcrmn-regions.RData")
+
+# 2. Make the spatial join ----
 
 synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>% 
   bind_cols(., st_coordinates(.)) %>% 
-  rename(lat = Y, long = X, region = gcrmn_region) %>% 
+  rename(decimalLatitude = Y, decimalLongitude = X, higherGeography = gcrmn_region) %>% 
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
@@ -289,122 +289,153 @@ synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>%
 
 ```{r}
 
+# 1. Load data ----
+
 data_eez <- st_read("../data/07_data-eez/eez_v11.shp") %>% 
   select(SOVEREIGN1, TERRITORY1) %>% 
   st_transform(crs = 4326) %>% 
   st_make_valid()
 
+# 2. Remove holes in EEZ polygons ----
+
 data_eez <- nngeo::st_remove_holes(data_eez)
+
+# 3. Make the spatial join ----
 
 synthetic_data <- st_join(synthetic_data_coords, data_eez) %>% 
   bind_cols(., st_coordinates(.)) %>% 
-  rename(lat = Y, long = X, country = SOVEREIGN1, territory = TERRITORY1) %>% 
+  rename(decimalLatitude = Y, decimalLongitude = X, 
+         country = SOVEREIGN1, territory = TERRITORY1) %>% 
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
+# 6. Remove useless data sets and variables ----
+
+rm(data_gcrmn_regions, data_eez)
+
 ```
 
-# Individual checks
+# Re-order variables
 
 ```{r}
 
-map(unique(synthetic_data$dataset_id), ~render_rmd(.))
+synthetic_data <- synthetic_data %>% 
+  rename(scientificName = species) %>% 
+  select(datasetID, higherGeography, country, territory, locality, habitat, parentEventID,
+         eventID, decimalLatitude, decimalLongitude, verbatimDepth, year, month, day, 
+         eventDate, samplingProtocol, recordedBy, category, subcategory, condition, 
+         phylum, class, order, family, genus, scientificName, measurementValue)
 
 ```
 
 # Quality checks
 
-## Missing variables
+```{r}
+
+# 1. Quality checks number 1, 2, 3, 6, 7, and 9 ----
+
+synthetic_data <- synthetic_data %>% 
+  mutate(qc1 = if_else(!(is.na(decimalLatitude)) & !(is.na(decimalLongitude)), TRUE, FALSE),
+         qc2 = if_else(decimalLatitude >= -90 & decimalLatitude <= 90, TRUE, FALSE),
+         qc3 = if_else(decimalLongitude >= -180 & decimalLongitude <= 180, TRUE, FALSE),
+         qc6 = if_else(verbatimDepth >= 0 & verbatimDepth < 100, TRUE, FALSE),
+         qc7 = if_else(!(is.na(year)), TRUE, FALSE),
+         qc9 = if_else(measurementValue >= 0 & measurementValue <= 100, TRUE, FALSE))
+
+# 2. Quality check number 4 ----
+
+reef_buffer <- st_read("../data/08_quality-checks-buffer/buffer-reef.shp")
+
+synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FALSE) %>% 
+  as_tibble() %>% 
+  rename(qc4 = 1) %>% 
+  bind_cols(synthetic_data_coords, .) %>% 
+  bind_cols(., st_coordinates(.)) %>% 
+  rename(decimalLatitude = Y, decimalLongitude = X) %>% 
+  st_drop_geometry() %>% 
+  left_join(synthetic_data, .)
+
+# 3. Quality check number 5 ----
+
+land_buffer <- st_read("../data/08_quality-checks-buffer/buffer-land.shp") %>% 
+  st_transform(crs = 4326) %>% 
+  st_wrap_dateline(options = "WRAPDATELINE=YES") %>% 
+  st_make_valid()
+
+synthetic_data <- st_intersects(synthetic_data_coords, land_buffer, sparse = FALSE) %>% 
+  as_tibble() %>% 
+  mutate(qc5 = if_any(.cols = contains('V'), ~ isTRUE(.))) %>% 
+  select(qc5) %>% 
+  mutate(qc5 = !qc5) %>% # Reverse False/True statement 
+  bind_cols(synthetic_data_coords, .) %>% 
+  bind_cols(., st_coordinates(.)) %>% 
+  rename(decimalLatitude = Y, decimalLongitude = X) %>% 
+  st_drop_geometry() %>% 
+  left_join(synthetic_data, .)
+
+# 4. Quality check number 8 ----
+
+synthetic_data <- synthetic_data %>% 
+  group_by(datasetID, locality, habitat, parentEventID,
+         eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
+         year, month, day, eventDate) %>% 
+  summarise(qc8 = sum(measurementValue)) %>% 
+  ungroup() %>% 
+  mutate(qc8 = if_else(qc8 >= 0 & qc8 <= 100, TRUE, FALSE)) %>% 
+  left_join(synthetic_data, .)
+
+# 5. Combine and transform data ----
+
+quality_checks <- synthetic_data %>% 
+  select(datasetID, starts_with("qc")) %>% 
+  pivot_longer(2:ncol(.), values_to = "type", names_to = "QC") %>% 
+  group_by(datasetID, QC, type) %>% 
+  count() %>% 
+  ungroup() %>% 
+  group_by(datasetID, QC) %>% 
+  mutate(percent = (n*100)/sum(n)) %>% 
+  ungroup() %>% 
+  mutate(question = case_when(QC == "qc1" ~ "Are the latitude and longitude available?",
+                              QC == "qc2" ~ "Is the latitude within its possible boundaries?",
+                              QC == "qc3" ~ "Is the longitude within its possible boundaries?",
+                              QC == "qc4" ~ "Is the site within the coral reef distribution area?",
+                              QC == "qc5" ~ "Is the site located off lands?",
+                              QC == "qc6" ~ "Is the depth between 0 and 100 meters?",
+                              QC == "qc7" ~ "Is the year available?",
+                              QC == "qc8" ~ "Is the sum of the percentage cover of benthic categories within\
+                              the sampling unit greater than 0 and lower than 100?",
+                              QC == "qc9" ~ "Is the percentage cover of a given benthic category\
+                              greater than 0 and lower than 100?"),
+         QC = str_replace_all(QC, "qc", "Quality check #"))
+
+# 6. Remove useless data sets and variables ----
+
+rm(reef_buffer, land_buffer, synthetic_data_coords)
+
+```
+
+# Individual summary
 
 ```{r}
 
-# 1. Missing variables* by dataset ----
-# * variables present but only filled with NA
-
-synthetic_data %>% 
-  group_by(dataset_id) %>% 
-  summarise_all(~(all(is.na(.)))) %>%
-  pivot_longer(2:ncol(.), names_to = "variable", values_to = "state") %>% 
-  filter(state == TRUE) %>% 
-  select(-state) %>% 
-  group_by(dataset_id) %>% 
-  mutate(variable = paste(variable, collapse = ", ")) %>% 
-  unique(.) %>% # Remove duplicates
-  arrange(dataset_id) %>% 
-  formattable(.) %>% 
-  as.datatable(., rownames = FALSE)
-
-
+map(unique(synthetic_data$datasetID), ~render_rmd(.))
 
 ```
 
-## Check errors
 
-### Quanti. variables
 
-```{r fig.height=15, fig.width=10}
 
-# 1. Histogram of (some) quantitative variables by dataset_id ----
 
-# 1.1 Vector of variables names to plot --
 
-quanti_var <- c("date", "year", "depth", "quadrat", "replicate")
 
-# 1.2 Make a for loop to plot each variable --
 
-for (i in 1:length(quanti_var)) {
-    
-  plot_i <- ggplot() +
-    geom_histogram(data = synthetic_data, aes_string(x = quanti_var[i]), 
-                   color = "#16a085", fill = "#2abb9b") +
-    labs(title = quanti_var[i]) +
-    facet_wrap(~dataset_id, ncol = 3, scales = "free")
-    
-  print(plot_i)
-    
-}
 
-```
 
-### Site coordinates
 
-```{r}
 
-# 1. Map of all sites locations ----
 
-synthetic_data %>% 
-  select(dataset_id, long, lat) %>% 
-  unique() %>% 
-  leaflet(data = .) %>%
-  addTiles() %>%
-  addMarkers(~long, ~lat, popup = ~as.character(dataset_id), 
-             label = ~as.character(dataset_id))
 
-# 2. Check distribution of Latitude and Longitude ----
 
-# 2.1 Latitude --
-
-ggplot() +
-  geom_histogram(data = synthetic_data, aes_string(x = "lat"), 
-                 color = "#16a085", fill = "#2abb9b") + 
-  annotate("segment", x = -30, xend = -30, y = -Inf, yend = Inf, 
-           colour = "#d91e18", size = 1, linetype = "dashed") +
-  annotate("segment", x = 30, xend = 30, y = -Inf, yend = Inf, 
-           colour = "#d91e18", size = 1, linetype = "dashed") +
-  labs(x = "Latitude")
-
-# 2.2 Longitude --
-
-ggplot() +
-  geom_histogram(data = synthetic_data, aes_string(x = "long"), 
-                 color = "#16a085", fill = "#2abb9b") + 
-  annotate("segment", x = -180, xend = -180, y = -Inf, yend = Inf, 
-           colour = "#d91e18", size = 1, linetype = "dashed") +
-  annotate("segment", x = 180, xend = 180, y = -Inf, yend = Inf, 
-           colour = "#d91e18", size = 1, linetype = "dashed") +
-  labs(x = "Longitude")
-
-```
 
 ### Metric variable
 

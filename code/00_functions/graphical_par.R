@@ -24,3 +24,11 @@ col_fill_ts <- "#2abb9b"
 # 4. Number of facets by plot ----
 
 facets_by_plot <- 20 
+
+# 5. Variable names ----
+
+var_names <- c("datasetID", "higherGeography", "country", "territory", "locality",
+               "habitat", "parentEventID", "eventID", "decimalLatitude", "decimalLongitude",
+               "verbatimDepth", "year", "month", "day", "eventDate", "samplingProtocol",
+               "recordedBy", "category", "subcategory", "condition", "phylum", "class",
+               "order", "family", "genus", "scientificName", "measurementValue")

@@ -12,25 +12,25 @@ output:
 
 ```{r echo=FALSE}
 
-
 synthetic_data_i <- synthetic_data %>% 
-  filter(dataset_id == i)
+  filter(datasetID == i) %>% 
+  select(-starts_with("qc"))
 
 sites <- synthetic_data_i %>% 
-  drop_na(lat, long) %>% 
-  select(lat, long) %>% 
+  drop_na(decimalLatitude, decimalLongitude) %>% 
+  select(decimalLatitude, decimalLongitude) %>% 
   distinct() %>% 
   count() %>% 
   pull()
 
 surveys <- synthetic_data_i %>% 
-  drop_na(lat, long) %>% 
-  select(lat, long, year, date) %>% 
+  drop_na(decimalLatitude, decimalLongitude) %>% 
+  select(decimalLatitude, decimalLongitude, year, eventDate) %>% 
   distinct() %>% 
   count() %>% 
   pull()
 
-tibble(dataset_id = i,
+tibble(datasetID = i,
        observations = nrow(synthetic_data_i),
        sites = sites,
        surveys = surveys,
@@ -50,14 +50,15 @@ tibble(dataset_id = i,
 ```{r echo=FALSE, message=FALSE}
 
 data_variable <- synthetic_data %>% 
-  group_by(dataset_id) %>% 
+  select(-starts_with("qc")) %>% 
+  group_by(datasetID) %>% 
   summarise_all(~(sum(is.na(.)))) %>% 
   ungroup() %>% 
   pivot_longer(2:ncol(.), names_to = "variable", values_to = "na") %>% 
-  left_join(., synthetic_data %>% group_by(dataset_id) %>% count()) %>% 
+  left_join(., synthetic_data %>% group_by(datasetID) %>% count()) %>% 
   mutate(na_percent = round((na*100)/n, 2)) %>% 
-  filter(dataset_id == i) %>% 
-  select(-dataset_id, -n) %>% 
+  filter(datasetID == i) %>% 
+  select(-datasetID, -n) %>% 
   mutate(type = if_else(na_percent == 100, "Missing", "NA")) %>% 
   mutate(type = cell_spec(type, color = ifelse(type == "Missing", "red", "white")))
 
@@ -76,11 +77,12 @@ kbl(data_variable, escape = F, col.names = c("Variable", "NA (number)", "NA (%)"
 ```{r echo=FALSE, message=FALSE, fig.width=8.75}
 
 data_taxo <- synthetic_data %>%
-  group_by(dataset_id, category) %>% 
+  select(-starts_with("qc")) %>% 
+  group_by(datasetID, category) %>% 
   count() %>% 
   ungroup() %>% 
-  complete(dataset_id, category, fill = list(n = 0)) %>% 
-  filter(dataset_id == i) %>% 
+  complete(datasetID, category, fill = list(n = 0)) %>% 
+  filter(datasetID == i) %>% 
   mutate(percent = n*100/sum(n),
          category = fct_rev(category))
 
@@ -98,11 +100,10 @@ ggplotly(plot_i)
 
 ```{r echo=FALSE, message=FALSE, fig.width=8.75}
 
-data_taxo <- synthetic_data %>%
-  filter(dataset_id == "0002") %>%
-  select(category, phylum, family, genus, species) %>% 
+data_taxo <- synthetic_data_i %>%
+  select(category, subcategory, phylum, class, order, family, genus, scientificName) %>% 
   map2_df(., colnames(.), ~if_else(is.na(.x), NA_character_, .y)) %>% 
-  mutate(level = coalesce(species, genus, family, phylum, category)) %>% 
+  mutate(level = coalesce(scientificName, genus, family, order, class, phylum, subcategory, category)) %>% 
   group_by(level) %>% 
   count() %>% 
   ungroup() %>% 
@@ -123,14 +124,14 @@ ggplotly(plot_i)
 
 # Spatial
 
-```{r fig.width=8.75, echo=FALSE}
+```{r eval=FALSE, fig.width=8.75, include=FALSE}
 
 synthetic_data_i %>% 
-  select(long, lat) %>% 
+  select(decimalLongitude, decimalLatitude) %>% 
   unique() %>% 
   leaflet(data = .) %>%
   addTiles() %>%
-  addMarkers(~long, ~lat)
+  addMarkers(~decimalLongitude, ~decimalLatitude)
 
 ```
 
@@ -157,8 +158,20 @@ rm(data_temporal)
 
 # Quality checks
 
+```{r fig.width=8.75, echo=FALSE}
 
+data_qc <- quality_checks %>%
+  filter(datasetID == i) %>% 
+  mutate(QC = fct_rev(QC),
+         percent = round(percent, 2))
 
+plot_i <- ggplot(data = data_qc, aes(x = QC, y = percent, fill = type, label = question)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  coord_flip() +
+  labs(y = "Percentage of rows", x = NULL) +
+  theme(panel.background = element_rect(fill = "transparent"),
+        plot.background = element_rect(fill = "transparent"))
 
+ggplotly(plot_i)
 
-
+```
