@@ -30,7 +30,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 ## 2. Data integration
 
-### Definitions
+### 2.1 Definitions
 
 **Table 1.** Definition of main terms used in this README.
 
@@ -42,11 +42,15 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | Data provider          | A person or an institution sharing a dataset for which they have been or are involved in the acquisition of the data contained in the dataset. |
 | Synthetic dataset      | A dataset resulting from the integration of multiple existing datasets ([Poisot *et al*., 2016](https://onlinelibrary.wiley.com/doi/10.1111/ecog.01941)). |
 
-### Workflow
+### 2.2 Workflow
 
-<img src='figs/workflow.png' align="center" width="500"/>
+<p align="center">
 
-**Figure 1.** Illustration of the data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset (see [Wicquart *et al.*, 2022](https://www.sciencedirect.com/science/article/pii/S1574954121003344)).
+<img src='figs/workflow.png' width="500"/>
+
+</p>
+
+**Figure 1.** Illustration of the data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset (see [Wicquart *et al.*, 2022](https://www.sciencedirect.com/science/article/pii/S1574954121003344)). *EEZ* = Economic Exclusive Zone, *NCBI* = National Center for Biotechnology Information.
 
 
 ## 3. Description of variables
