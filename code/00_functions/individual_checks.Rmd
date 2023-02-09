@@ -12,9 +12,13 @@ output:
 
 ```{r echo=FALSE}
 
+# 1. Remove quality check columns ----
+
 synthetic_data_i <- synthetic_data %>% 
   filter(datasetID == i) %>% 
   select(-starts_with("qc"))
+
+# 2. Get the number of sites ----
 
 sites <- synthetic_data_i %>% 
   drop_na(decimalLatitude, decimalLongitude) %>% 
@@ -23,6 +27,8 @@ sites <- synthetic_data_i %>%
   count() %>% 
   pull()
 
+# 3. Get the number of surveys ----
+
 surveys <- synthetic_data_i %>% 
   drop_na(decimalLatitude, decimalLongitude) %>% 
   select(decimalLatitude, decimalLongitude, year, eventDate) %>% 
@@ -30,10 +36,12 @@ surveys <- synthetic_data_i %>%
   count() %>% 
   pull()
 
+# 4. Create the table ----
+
 tibble(datasetID = i,
-       observations = nrow(synthetic_data_i),
-       sites = sites,
-       surveys = surveys,
+       observations = format(nrow(synthetic_data_i), big.mark = ","),
+       sites = format(sites, big.mark = ","),
+       surveys = format(surveys, big.mark = ","),
        start_year = min(unique(synthetic_data_i$year), na.rm = TRUE),
        end_year = max(unique(synthetic_data_i$year), na.rm = TRUE)) %>% 
   mutate_all(~as.character(.)) %>% 
@@ -59,8 +67,12 @@ data_variable <- synthetic_data %>%
   mutate(na_percent = round((na*100)/n, 2)) %>% 
   filter(datasetID == i) %>% 
   select(-datasetID, -n) %>% 
-  mutate(type = if_else(na_percent == 100, "Missing", "NA")) %>% 
-  mutate(type = cell_spec(type, color = ifelse(type == "Missing", "red", "white")))
+  mutate(type = case_when(na_percent == 100 ~ "Missing",
+                          na_percent == 0 ~ "Complete",
+                          TRUE ~ "NA")) %>% 
+  mutate(type = cell_spec(type, color = case_when(type == "Missing" ~ "red",
+                                                  type == "Complete" ~ "#2c82c9",
+                                                  type == "NA" ~ "white")))
 
 data_variable$na_percent <- color_bar("#d64541")(data_variable$na_percent)
 
@@ -108,7 +120,14 @@ data_taxo <- synthetic_data_i %>%
   count() %>% 
   ungroup() %>% 
   mutate(percent = n*100/sum(n),
-         level = fct_relevel(level))
+         level = as.factor(level))
+
+data_taxo <- tibble(level = factor(c("category", "subcategory", "phylum",
+                                     "class", "order", "family", "genus", "scientificName"),
+                                   rev(c("category", "subcategory", "phylum", "class", "order", 
+                                         "family", "genus", "scientificName")))) %>% 
+  left_join(., data_taxo) %>% 
+  mutate_at(c("n", "percent"), ~replace_na(., 0))
 
 plot_i <- ggplot(data = data_taxo, aes(x = level, y = percent, label = n)) +
   geom_bar(stat = "identity", fill = "#2c82c9") +
@@ -162,6 +181,47 @@ rm(data_temporal)
 
 ```
 
+# Benthic cover
+
+```{r fig.width=8.75, fig.height=2, echo=FALSE, message=FALSE, warning=FALSE}
+
+data_cover <- synthetic_data_i %>% 
+  group_by(datasetID, locality, habitat, parentEventID,
+         eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
+         year, month, day, eventDate) %>% 
+  summarise(total = sum(measurementValue)) %>% 
+  ungroup() %>% 
+  mutate(type = case_when(total < 0 ~ "Less than 0",
+                          total > 0 & total < 100 ~ "Between 0 and 100",
+                          total == 100 ~ "Equal 100",
+                          total > 100 ~ "Greater than 100")) %>% 
+  group_by(type) %>% 
+  count() %>% 
+  ungroup() %>% 
+  mutate(percent = round((n*100)/sum(n), 2),
+         n = round(n, 2),
+         type = as.factor(type),
+         type = fct_relevel(type, "Less than 0", "Between 0 and 100", "Equal 100", "Greater than 100"),
+         type = fct_rev(type))
+
+plot_i <- ggplot(data = data_cover, aes(x = 1, y = percent, fill = type, label = n)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  coord_flip() +
+  theme(axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        legend.position = "none",
+        panel.background = element_rect(fill = "transparent"),
+        plot.background = element_rect(fill = "transparent")) +
+  labs(y = "Percentage of observations", x = NULL) +
+  scale_fill_manual(values = c("Less than 0" = "#d24d57", 
+                               "Between 0 and 100" = "#bdc3c7", 
+                               "Equal 100" = "#2c82c9",
+                               "Greater than 100" = "#d24d57"))
+
+ggplotly(plot_i)
+
+```
+
 # Quality checks
 
 ```{r fig.width=8.75, echo=FALSE, message=FALSE}
@@ -178,12 +238,69 @@ data_qc <- quality_checks %>%
 plot_i <- ggplot(data = data_qc, aes(x = QC, y = percent, fill = type, label = question)) +
   geom_bar(stat = "identity", show.legend = FALSE) +
   coord_flip() +
-  labs(y = "Percentage of rows", x = NULL) +
+  labs(y = "Percentage of observations", x = NULL) +
   theme(panel.background = element_rect(fill = "transparent"),
         plot.background = element_rect(fill = "transparent"),
         legend.position = "none") +
   scale_fill_manual(values = c("FALSE" = "#d24d57", "TRUE" = "#2c82c9", "NA" = "#bdc3c7"))
 
 ggplotly(plot_i)
+
+```
+
+```{r echo=FALSE, message=FALSE}
+
+synthetic_data_i <- synthetic_data %>% 
+  filter(datasetID == i)
+
+data_results <- synthetic_data_i %>% 
+  # QC1
+  filter(qc1 == TRUE | is.na(qc1)) %>% 
+  mutate(n_qc1 = nrow(synthetic_data_i) - nrow(.)) %>% 
+  # QC2
+  filter(qc2 == TRUE) %>% 
+  mutate(sum_prev = n_qc1,
+         n_qc2 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  # QC3
+  filter(qc3 == TRUE) %>% 
+  mutate(sum_prev = n_qc1 + n_qc2,
+         n_qc3 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  # QC4
+  filter(qc4 == TRUE) %>% 
+  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3,
+         n_qc4 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  # QC5
+  filter(qc5 == TRUE) %>% 
+  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4,
+         n_qc5 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  # QC6
+  filter(qc6 == TRUE | is.na(qc6)) %>% 
+  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5,
+         n_qc6 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  # QC7
+  filter(qc7 == TRUE) %>% 
+  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5 + n_qc6,
+         n_qc7 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  # QC8
+  filter(qc8 == TRUE) %>% 
+  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5 + n_qc6 + n_qc7,
+         n_qc8 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  # QC9
+  filter(qc9 == TRUE) %>% 
+  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5 + n_qc6 + n_qc7 + n_qc8,
+         n_qc9 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
+  select(starts_with("n_qc")) %>% 
+  distinct() %>% 
+  pivot_longer(1:ncol(.), names_to = "QC", values_to = "n") %>% 
+  mutate(QC = str_remove_all(QC, "n_"),
+         QC = str_to_upper(QC),
+         percent = round((n*100)/nrow(synthetic_data_i), 2))
+
+data_results %>% 
+  add_row(QC = "TOTAL", n = sum(data_results$n), percent = sum(data_results$percent)) %>% 
+  kbl(booktabs = T, col.names = c("Quality check", "Obs. removed (number)", "Obs. removed (%)"), align = "c") %>% 
+  kable_paper("hover", full_width = T) %>%
+  column_spec(1, bold = TRUE) %>%
+  row_spec(c(0,10), bold = TRUE, background = "lightgrey")
 
 ```

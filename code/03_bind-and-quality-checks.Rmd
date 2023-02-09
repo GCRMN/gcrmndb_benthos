@@ -237,19 +237,11 @@ rm(genus_check, unique_organismID)
 # 7. Make the sum of percentage cover for identical levels ----
 
 synthetic_data <- synthetic_data %>% 
+  drop_na(category, measurementValue) %>% 
+  filter(measurementValue != 0) %>% 
   group_by(across(c(-measurementValue))) %>% 
   summarise(measurementValue = sum(measurementValue)) %>% 
   ungroup()
-
-# 8. Remove rows ----
-
-synthetic_data <- synthetic_data %>% 
-  filter(!is.na(category), # Remove rows containing NA for 'category'
-         !is.na(measurementValue)) # Remove rows containing NA for 'cover'
-
-# 9. Duplicate the synthetic_data to compare removed rows ----
-
-synthetic_data_before <- synthetic_data
 
 ```
 
@@ -422,128 +414,30 @@ map(unique(synthetic_data$datasetID), ~render_rmd(.))
 
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Metric variable
+# Adjust measurementValue
 
 ```{r}
 
-# 1. First check of the total cover ----
-
-# 1.1 Make the sum of percentage cover by sampling unit --
-
-total_cover <- synthetic_data %>% 
-  group_by(dataset_id, location, site, zone, quadrat,
-           lat, long, year, date, replicate, observer, depth) %>% 
-  summarise(total = sum(cover),
-            total = round(total, 3)) # Round total to remove impact of small digits on filtering
-
-# 1.2 Table of number of sampling units in the different categories, by dataset_id --
-
-total_cover %>% 
-  select(dataset_id, total) %>% 
-  group_by(dataset_id) %>% 
-  summarise(Less_0 = length(which(total < 0)), 
-            Between_0_100 = length(which(total > 0 & total < 100)), 
-            Equal_100 = length(which(total == 100)), 
-            More_100 = length(which(total > 100)),
-            Min = round(min(total, na.rm = TRUE), 2),
-            Max = round(max(total, na.rm = TRUE), 2)) %>% 
-  datatable(., rownames = FALSE,
-            colnames = c("Dataset", "Cover < 0", 
-                         "0 < Cover < 100", 
-                         "Cover = 100", 
-                         "Cover > 100", "Min", "Max")) %>% 
-  formatStyle("Less_0", backgroundColor = "#e74c3c") %>% 
-  formatStyle("Between_0_100", backgroundColor = "#f4b350") %>% 
-  formatStyle("Equal_100", backgroundColor = "#16a085") %>% 
-  formatStyle("More_100", backgroundColor = "#e74c3c")
-
-# 1.3 Join the total cover with main data --
-
 synthetic_data <- synthetic_data %>%
-  left_join(., total_cover)
-
-# 2. Adjust the cover (using the rule of three) ----
-
-treshold <- 101 # Define the threshold
-
-synthetic_data <- synthetic_data %>% 
-  mutate(cover = ifelse(total > 100 & total < treshold, (cover*100)/total, cover))
-
-# 3. First check of the total cover ----
-
-# 3.1 Make the sum of percentage cover by sampling unit --
-
-total_cover <- synthetic_data %>% 
-  group_by(dataset_id, location, site, zone, quadrat,
-           lat, long, year, date, replicate, observer, depth) %>% 
-  summarise(total = sum(cover),
-            total = round(total, 3)) # Round total to remove impact of small digits on filtering
-
-# 3.2 Table of number of sampling units in the different categories, by dataset_id --
-
-total_cover %>% 
-  select(dataset_id, total) %>% 
-  group_by(dataset_id) %>% 
-  summarise(Less_0 = length(which(total < 0)), 
-            Between_0_100 = length(which(total > 0 & total < 100)), 
-            Equal_100 = length(which(total == 100)), 
-            More_100 = length(which(total > 100)),
-            Min = round(min(total, na.rm = TRUE), 2),
-            Max = round(max(total, na.rm = TRUE), 2)) %>% 
-  datatable(., rownames = FALSE,
-            colnames = c("Dataset", "Cover < 0", 
-                         "0 < Cover < 100", 
-                         "Cover = 100", 
-                         "Cover > 100", "Min", "Max")) %>% 
-  formatStyle("Less_0", backgroundColor = "#e74c3c") %>% 
-  formatStyle("Between_0_100", backgroundColor = "#f4b350") %>% 
-  formatStyle("Equal_100", backgroundColor = "#16a085") %>% 
-  formatStyle("More_100", backgroundColor = "#e74c3c")
-
-# 3.3 Join the total cover with main data --
-
-synthetic_data <- synthetic_data %>%
-  select(-total) %>% 
-  left_join(., total_cover)
+  group_by(datasetID, locality, habitat, parentEventID,
+         eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
+         year, month, day, eventDate) %>% 
+  mutate(total = sum(measurementValue)) %>% 
+  ungroup() %>% 
+  mutate(measurementValue = ifelse(total > 100 & total < 101, # Threshold = 101
+                                   (measurementValue*100)/total, 
+                                   measurementValue)) %>% 
+  select(-total)
 
 ```
 
-## Remove errors
+# Remove rows based on quality check values
 
 ```{r}
 
-# 1. Remove rows with errors ----
-
-synthetic_data <- synthetic_data %>% 
-  filter(total > 0 & total <= 100) %>% 
-  filter(cover > 0 & cover <= 100) %>% 
-  drop_na(lat, long)
-
-# 2. Number and percentage of rows removed by dataset_id ----
-
-left_join(synthetic_data_before %>% group_by(dataset_id) %>% count(name = "n_before"),
-          synthetic_data %>% group_by(dataset_id) %>% count(name = "n_after")) %>% 
-  mutate(n_removed_abs = n_before - n_after,
-         n_removed_rel = (n_removed_abs/n_before)*100) %>% 
-  formattable(., list(Removed = color_bar("#e74c3c"))) %>% 
-  as.datatable(., rownames = FALSE, colnames = c("dataset_id", "n rows before", 
-                                                 "n rows after", "n rows removed", 
-                                                 "n rows removed (%)"))
+synthetic_data <- synthetic_data %>%
+  filter_at(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), ~.x == TRUE) %>% 
+  select(-starts_with("qc"))
 
 ```
 
@@ -551,17 +445,13 @@ left_join(synthetic_data_before %>% group_by(dataset_id) %>% count(name = "n_bef
 
 ```{r}
 
-# 1. Export the data ----
-
-save(synthetic_data, file = "./../data/04_benthic-cover_synthetic-dataset.RData")
+save(synthetic_data, file = "../data/09_gcrmndb_benthos.RData")
 
 ```
 
 # Reproducibility
 
-```{r reprod}
-
-# 1. Reproducibility ----
+```{r}
 
 sessionInfo()
 
