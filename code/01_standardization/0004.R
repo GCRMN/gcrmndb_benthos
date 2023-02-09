@@ -15,7 +15,8 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(data_path) %>% 
   pull() %>% 
   # Read the file
-  read.csv2(file = .)
+  read.csv2(file = .) %>% 
+  mutate(habitat = str_to_sentence(habitat))
 
 # 2.2 Main data --
 
