@@ -128,8 +128,8 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 | datasetID     | rightsHolder                                                                                                                                             | accessRights   | type | modified   | aggregator    |
 |:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|:----:|------------|---------------|
-| 0001          | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | Rp.  | 2022-02-21 | Wicquart, J.  |         
-| 0002          | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                              | open           | Rp.  | 2022-02-21 | Wicquart, J.  |                 
+| 0001          | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                          | open           | Rp.  | 2022-02-21 | Wicquart, J.  |         
+| 0002          | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                     | open           | Rp.  | 2022-02-21 | Wicquart, J.  |                 
 | 0003          | AIMS LTMP                                                                                                                                                | upon request   |      |            | Wicquart, J.  |                 
 | 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                    | upon request   | Sh.  | 2022-09-08 | Wicquart, J.  |               
 | 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)      | upon request   | Sh.  |            | Wicquart, J.  |        
@@ -138,6 +138,10 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                      | upon request   | Sh.  |            | Wicquart, J.  |
 | 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                                                                             | open           | Pa.  |            | Wicquart, J.  |
 | 0010          | [MERMAID](https://github.com/data-mermaid/mermaidr)                                                                                                      | upon request   |      |            | Wicquart, J.  |
+| 0011          | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                        | open           | Rp.  | 2021-09-14 | Wicquart, J.  |
+| 0012          | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                      | open           | Rp.  | 2018-10-12 | Wicquart, J.  |
+| 0013          | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                   | open           | Rp.  | 2022-11-11 | Wicquart, J.  |
+| 0014          | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                   | open           | Rp.  | 2021-07-30 | Wicquart, J.  |
 
 
 ## 6. Sponsors

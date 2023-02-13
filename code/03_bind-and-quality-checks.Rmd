@@ -155,11 +155,11 @@ if(file.exists("./../data/03_tax-recategorisation.csv")){
   
 }
 
-# ----------------------------------------------------------------------------------------- #
-# /!\          Before to run the next chunk code, fill the exported csv file:           /!\ #
+# ---------------------------------------------------------------------------------------------- #
+# /!\          Before to run the next chunk code, fill the exported csv file:                /!\ #
 # /!\          Manually complete empty tax. variables for each unique organismID             /!\ #
 # /!\  The text of the column "organismID" must not be changed: it's the grouping variable   /!\ #
-# ----------------------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------------------------- #
 
 ```
 
@@ -179,7 +179,7 @@ unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>%
                                  TRUE ~ subcategory)) %>% 
   # Assign "category"
   mutate(category = case_when(order == "Scleractinia" ~ "Hard coral",
-                              phylum %in% c("Porifera", "Chordata", "Echinodermata") ~ "Other fauna",
+                              phylum %in% c("Porifera", "Chordata", "Echinodermata", "Bryozoa") ~ "Other fauna",
                               phylum == "Cyanobacteria" ~ "Algae",
                               class %in% c("Ascidiacea", "Hydrozoa", "Crinoidea", 
                                            "Bivalvia", "Echinoidea", "Anthozoa") ~ "Other fauna",
