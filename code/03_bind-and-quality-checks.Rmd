@@ -83,8 +83,8 @@ synthetic_data <- synthetic_data %>%
          organismID = gsub("[()]", "", organismID), # Remove parentheses
          organismID = iconv(organismID, from = 'UTF-8', to = 'ASCII//TRANSLIT'), # Convert accent letters
          organismID = str_replace_all(organismID, c("&" = "and",
-                                          "_" = " ",
-                                          "," = " ")), # Convert some special characters
+                                                    "_" = " ",
+                                                    "," = " ")), # Convert some special characters
          organismID = str_squish(organismID), 
          organismID = str_trim(organismID)) # Remove duplicated space and space before and after
 
