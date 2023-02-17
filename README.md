@@ -144,6 +144,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0014          | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                   | open           | Rp.  | 2021-07-30 | Wicquart, J.  |
 | 0015          | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/)                                                  | upon request   | Db.  |            | Wicquart, J.  |
 | 0016          | Biosphere Foundation                                                                                                                                     | upon request   | Sh.  |            | Wicquart, J.  |
+| 0017          | KNS                                                                                                                                                      | upon request   | Sh.  | 2022-12-27 | Wicquart, J.  |
 
 
 ## 6. Sponsors
