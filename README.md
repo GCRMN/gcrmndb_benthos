@@ -145,6 +145,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0015          | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/)                                                  | upon request   | Db.  |            | Wicquart, J.  |
 | 0016          | Biosphere Foundation                                                                                                                                     | upon request   | Sh.  |            | Wicquart, J.  |
 | 0017          | KNS                                                                                                                                                      | upon request   | Sh.  | 2022-12-27 | Wicquart, J.  |
+| 0018          | Kiribati                                                                                                                                                 | upon request   | Sh.  | 2020-03-05 | Wicquart, J.  |
 
 
 ## 6. Sponsors
