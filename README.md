@@ -2,6 +2,14 @@
 ![status](https://img.shields.io/badge/status-in%20dev.-blue)
 ![version](https://img.shields.io/badge/version-0.0.0-blue)
 
+## Table of Contents
+
+* [1. Introduction](#1.-introduction)
+  * [What is the GCRMN?](#what-is-the-gcrmn)
+
+
+
+
 ## 1. Introduction
 
 ### What is the GCRMN?
