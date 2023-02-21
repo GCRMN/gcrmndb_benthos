@@ -7,8 +7,8 @@
 * [1. Introduction](#1.-introduction)
   * [What is the GCRMN?](#what-is-the-gcrmn)
   * [Coral reef monitoring](#coral-reef-monitoring)
-* [2. Data integration](#2-.-data-integration)
-  * [2.1 Definitions](#2.1-definitions)
+* [2. Data integration](#2-data-integration)
+  * [2.1 Definitions](#definitions)
 
 
 
