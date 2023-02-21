@@ -4,29 +4,33 @@
 
 ## Table of Contents
 
-* [1. Introduction](#1.-introduction)
-  * [What is the GCRMN?](#what-is-the-gcrmn)
-  * [Coral reef monitoring](#coral-reef-monitoring)
+* [1. Introduction](#1-introduction)
+  * [1.1 What is the GCRMN?](#11-what-is-the-gcrmn)
+  * [1.2 Coral reef monitoring](#12-coral-reef-monitoring)
+  * [1.3 Why this repository?](#13-why-this-repository?)
+  * [1.4 How to contribute?](#14-how-to-contribute?)
 * [2. Data integration](#2-data-integration)
-  * [2.1 Definitions](#definitions)
-
-
-
-
+  * [2.1 Definitions](#21-definitions)
+  * [2.2 Workflow](#22-workflow)
+* [3. Description of variables](#3-description-of-variables)
+* [4. Quality checks](#4-quality-checks)
+* [5. List of individual datasets](#5-list-of-individual-datasets)
+* [6. Sponsors](#6-sponsors)
+* [7. References](#7-references)
 
 ## 1. Introduction
 
-### What is the GCRMN?
+### 1.1 What is the GCRMN?
 
 The [*Global Coral Reef Monitoring Network*](https://gcrmn.net/) (GCRMN) is an operational network of the [*International Coral Reef Initiative*](https://icriforum.org/) (ICRI) aiming to provide the best available scientific information on the status and trends of coral reef ecosystems for their conservation and management. The GCRMN is a global network of scientists, managers and organisations that monitor the condition of coral reefs throughout the world, operating through ten regional nodes.
 
-### Coral reef monitoring
+### 1.2 Coral reef monitoring
 
 While coral reefs provide many ecosystem services to human populations and host immense biodiversity, they are directly or indirectly threatened by human activities. To understand what are the main drivers of coral reefs' resilience in the Anthropocene, and to appropriately inform environmental policies that aim to protect these ecosystems, it is necessary to have data describing how coral reef integrity is changing over space and time.
 
 Such data are acquired from ecological monitoring, which consist of repetitive measurements of a specified set of ecological variables at one or more locations over an extended period of time ([Vos *et al.*, 2000](https://link.springer.com/article/10.1023/A:1006139412372)). Coral reef monitoring is usually assessed at local scale by different actors (*e.g.* research institutes, governments, NGOs), using different data standards (*i.e.* using different variable names and units). Hence, it exist numerous heterogeneous datasets based on coral reef monitoring in the world, which represent a major challenge to assess status and trends of coral reefs at larger spatial scales.
 
-### Why this repository?
+### 1.3 Why this repository?
 
 This repository aims to gather individual datasets on benthic cover that have been acquired in the world's coral reefs over the last decades and to integrate them into a unique synthetic dataset. This dataset, named `gcrmndb_benthos`, is used to produce GCRMN reports on status and trends of coral reefs. In addition to its use for the production of GCRMN reports, this dataset can possibly be used for macroecological analyses, although this utilization is restricted to open access individual datasets integrated. Finally, this repository constitutes an inventory of existing data on benthic cover in coral reefs (see **Table 4**), and represents a means to change the culture around data towards the FAIR principles ([Wilkinson *et al.*, 2016](https://www.nature.com/articles/sdata201618)), and to preserve these data for future generations. 
 
@@ -34,7 +38,7 @@ It is important to note that the `gcrmndb_benthos` is a code repository, which c
 
 The `gcrmndb_benthos` is one of the two synthetic datasets developed and maintained by the GCRMN, the other one is the `gcrmndb_fish`.
 
-### How to contribute?
+### 1.4 How to contribute?
 
 If you would like to contribute to this initiative by providing a dataset on benthic cover monitoring data acquired in coral reefs, you can contact Jérémy Wicquart.
 
