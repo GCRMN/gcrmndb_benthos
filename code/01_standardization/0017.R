@@ -60,3 +60,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   drop_na(measurementValue) %>% 
   filter(measurementValue != 0) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
+
+# 3. Remove useless objects ----
+
+rm(data_code, data_site)

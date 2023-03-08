@@ -4,7 +4,7 @@ library(tidyverse)
 
 # 2. List of individual data standardization scripts ----
 
-list_path <- list.files("R/01_standardization/", full.names = TRUE)
+list_path <- list.files("code/01_standardization/", full.names = TRUE)
 
 # 3. Run all scripts ---- 
 

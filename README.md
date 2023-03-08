@@ -32,7 +32,7 @@ Such data are acquired from ecological monitoring, which consist of repetitive m
 
 ### 1.3 Why this repository?
 
-This repository aims to gather individual datasets on benthic cover that have been acquired in the world's coral reefs over the last decades and to integrate them into a unique synthetic dataset. This dataset, named `gcrmndb_benthos`, is used to produce GCRMN reports on status and trends of coral reefs. In addition to its use for the production of GCRMN reports, this dataset can possibly be used for macroecological analyses, although this utilization is restricted to open access individual datasets integrated. Finally, this repository constitutes an inventory of existing data on benthic cover in coral reefs (see **Table 4**), and represents a means to change the culture around data towards the FAIR principles ([Wilkinson *et al.*, 2016](https://www.nature.com/articles/sdata201618)), and to preserve these data for future generations. 
+This repository aims to gather individual datasets on benthic cover that have been acquired in the world's coral reefs over the last decades and to integrate them into a unique synthetic dataset. This dataset, named `gcrmndb_benthos`, is used to produce GCRMN reports on status and trends of coral reefs. In addition to its use for the production of GCRMN reports, this dataset can possibly be used for macroecological analyses, although this utilization is restricted to open access individual datasets integrated. Finally, this repository constitutes an inventory of existing data on benthic cover in coral reefs (see **Table 5**), and represents a means to change the culture around data towards the FAIR principles ([Wilkinson *et al.*, 2016](https://www.nature.com/articles/sdata201618)), and to preserve these data for future generations. 
 
 It is important to note that the `gcrmndb_benthos` is a code repository, which consist of a hub to store the code used for data integration, and not a data repository.
 
@@ -162,6 +162,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0016          | Biosphere Foundation                                                                                                                                     | upon request   | Sh.  |            | Wicquart, J.  |
 | 0017          | KNS                                                                                                                                                      | upon request   | Sh.  | 2022-12-27 | Wicquart, J.  |
 | 0018          | Kiribati                                                                                                                                                 | upon request   | Sh.  | 2020-03-05 | Wicquart, J.  |
+| 0019          | SLN                                                                                                                                                      | upon request   | Sh.  | 2022-05-12 | Wicquart, J.  |
 
 
 ## 6. Sponsors
