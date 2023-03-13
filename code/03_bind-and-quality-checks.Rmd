@@ -349,7 +349,7 @@ synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FAL
 
 # 3. Quality check number 5 ----
 
-land_buffer <- st_read("../data/08_quality-checks-buffer/buffer-land.shp") %>% 
+land_buffer <- st_read("../data/08_quality-checks-buffer/ne_10m_land/ne_10m_land.shp") %>% 
   st_transform(crs = 4326) %>% 
   st_wrap_dateline(options = "WRAPDATELINE=YES") %>% 
   st_make_valid()
