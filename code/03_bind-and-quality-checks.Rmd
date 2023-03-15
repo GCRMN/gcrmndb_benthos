@@ -290,7 +290,7 @@ data_eez <- st_read("../data/07_data-eez/eez_v11.shp") %>%
 
 # 2. Remove holes in EEZ polygons ----
 
-data_eez <- nngeo::st_remove_holes(data_eez)
+#data_eez <- nngeo::st_remove_holes(data_eez)
 
 # 3. Make the spatial join ----
 
@@ -349,21 +349,8 @@ synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FAL
 
 # 3. Quality check number 5 ----
 
-land_buffer <- st_read("../data/08_quality-checks-buffer/ne_10m_land/ne_10m_land.shp") %>% 
-  st_transform(crs = 4326) %>% 
-  st_wrap_dateline(options = "WRAPDATELINE=YES") %>% 
-  st_make_valid()
-
-synthetic_data <- st_intersects(synthetic_data_coords, land_buffer, sparse = FALSE) %>% 
-  as_tibble() %>% 
-  mutate(qc5 = if_any(.cols = contains('V'), ~ isTRUE(.))) %>% 
-  select(qc5) %>% 
-  mutate(qc5 = !qc5) %>% # Reverse False/True statement 
-  bind_cols(synthetic_data_coords, .) %>% 
-  bind_cols(., st_coordinates(.)) %>% 
-  rename(decimalLatitude = Y, decimalLongitude = X) %>% 
-  st_drop_geometry() %>% 
-  left_join(synthetic_data, .)
+synthetic_data <- synthetic_data %>% 
+  mutate(qc5 = if_else(is.na(territory), FALSE, TRUE))
 
 # 4. Quality check number 8 ----
 
@@ -402,7 +389,7 @@ quality_checks <- synthetic_data %>%
 
 # 6. Remove useless data sets and variables ----
 
-rm(reef_buffer, land_buffer, synthetic_data_coords)
+rm(reef_buffer, synthetic_data_coords)
 
 ```
 

@@ -122,7 +122,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 ## 4. Quality checks
 
 
-**Table 4.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables.
+**Table 4.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables. EEZ = Economic Exclusive Zone.
 
 | #  | Cat.                       | Variables                            | Questions                                                                       |
 |:--:|:--------------------------:|--------------------------------------|:--------------------------------------------------------------------------------|
@@ -130,7 +130,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 2  | :globe_with_meridians:     | `decimalLatitude`                    | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?     |  
 | 3  | :globe_with_meridians:     | `decimalLongitude`                   | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?  |  
 | 4  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Is the site within the coral reef distribution area (100 km buffer)?            |  
-| 5  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Is the site located off lands?                                         |  
+| 5  | :globe_with_meridians:     | `decimalLatitude` `decimalLongitude` | Is the site located within an EEZ?                                         |  
 | 6  | :globe_with_meridians:     | `verbatimDepth`                      | Is the depth between 0 and 100 meters?                                          |  
 | 7  | :calendar:                 | `year`                               | Is the year available?                                                          |  
 | 8  | :chart_with_upwards_trend: | `measurementValue`    | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
