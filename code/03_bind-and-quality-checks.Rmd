@@ -85,8 +85,7 @@ synthetic_data <- synthetic_data %>%
          organismID = str_replace_all(organismID, c("&" = "and",
                                                     "_" = " ",
                                                     "," = " ")), # Convert some special characters
-         organismID = str_squish(organismID), 
-         organismID = str_trim(organismID)) # Remove duplicated space and space before and after
+         organismID = str_squish(organismID)) # Remove duplicated space and space before and after
 
 ```
 
