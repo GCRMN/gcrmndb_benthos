@@ -2,7 +2,6 @@
 
 library(tidyverse) # Core tidyverse packages
 library(readxl) # To read excel files
-library(lubridate) # For dates format
 
 dataset <- "0012" # Define the dataset_id
 

@@ -2,7 +2,6 @@
 
 library(tidyverse) # Core tidyverse packages
 library(readxl) # To read excel files
-library(lubridate) # For dates format
 source("code/00_functions/convert_coords.R")
 
 dataset <- "0021" # Define the dataset_id
