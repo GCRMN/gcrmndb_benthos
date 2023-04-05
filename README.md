@@ -165,6 +165,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0019          | SLN                                                                                                                                                      | upon request   | Sh.  | 2022-05-12 | Wicquart, J.  |
 | 0020          | [PACN](https://www.nps.gov/im/pacn/benthic.htm)                                                                                                          | upon request   | Sh.  |            | Wicquart, J.  |
 | 0021          | RORC                                                                                                                                                     | upon request   | Sh.  |            | Wicquart, J.  |
+| 0022          | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                           | upon request   | Sh.  |            | Wicquart, J.  |
 
 ## 6. Sponsors
 
