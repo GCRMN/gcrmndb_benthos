@@ -14,3 +14,4 @@ misc/
 output/
 figs/hex_logo.svg
 figs/workflow.svg
+.httr-oauth

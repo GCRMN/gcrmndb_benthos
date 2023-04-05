@@ -84,7 +84,8 @@ synthetic_data <- synthetic_data %>%
          organismID = iconv(organismID, from = 'UTF-8', to = 'ASCII//TRANSLIT'), # Convert accent letters
          organismID = str_replace_all(organismID, c("&" = "and",
                                                     "_" = " ",
-                                                    "," = " ")), # Convert some special characters
+                                                    "," = " ",
+                                                    "\\." = " ")), # Convert some special characters
          organismID = str_squish(organismID)) # Remove duplicated space and space before and after
 
 ```
