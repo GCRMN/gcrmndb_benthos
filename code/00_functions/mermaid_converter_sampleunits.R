@@ -1,4 +1,4 @@
-mermaid_converter <- function(data){
+mermaid_converter_sampleunits <- function(data){
   
   split_benthic_categories <- function(data){
     
