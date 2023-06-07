@@ -153,7 +153,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)          | upon request   | Sh.  |            | Wicquart, J.  |
 | 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                      | upon request   | Sh.  |            | Wicquart, J.  |
 | 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                                                                             | open           | Pa.  |            | Wicquart, J.  |
-| 0010          | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                                | open (summary) | Db.  | 2021-06-08 | Wicquart, J.  |
+| 0010          | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                                | open (summary) | Me.  | 2021-06-08 | Wicquart, J.  |
 | 0011          | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                        | open           | Rp.  | 2021-09-14 | Wicquart, J.  |
 | 0012          | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                      | open           | Rp.  | 2018-10-12 | Wicquart, J.  |
 | 0013          | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                   | open           | Rp.  | 2022-11-11 | Wicquart, J.  |
@@ -168,9 +168,9 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0022          | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                           | upon request   | Sh.  |            | Wicquart, J.  |
 | 0023          | PA-NC                                                                                                                                                    | upon request   | Sh.  |            | Wicquart, J.  |
 | 0024          | Laurent WANTIEZ                                                                                                                                          | upon request   | Sh.  |            | Wicquart, J.  |
-| 0025          | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                      | open (summary) | Db.  | 2021-09-08 | Wicquart, J.  |
-| 0026          | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                        | open (summary) | Db.  | 2021-09-10 | Wicquart, J.  |
-| 0027          | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                        | open (summary) | Db.  | 2021-09-08 | Wicquart, J.  |
+| 0025          | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                      | open (summary) | Me.  | 2021-09-08 | Wicquart, J.  |
+| 0026          | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                        | open (summary) | Me.  | 2021-09-10 | Wicquart, J.  |
+| 0027          | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                        | open (summary) | Me.  | 2021-09-08 | Wicquart, J.  |
 
 
 ## 6. Sponsors
