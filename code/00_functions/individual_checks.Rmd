@@ -226,16 +226,25 @@ ggplotly(plot_i)
 
 ```{r fig.width=8.75, echo=FALSE, message=FALSE}
 
-data_qc <- quality_checks %>%
-  filter(datasetID == i) %>% 
-  mutate(QC = fct_rev(QC),
-         percent = round(percent, 2),
-         type = as.character(type),
-         type = if_else(is.na(type), "NA", type),
-         type = as.factor(type),
-         type = fct_relevel(type, "NA", "FALSE", "TRUE"))
-
-plot_i <- ggplot(data = data_qc, aes(x = QC, y = percent, fill = type, label = question)) +
+plot_i <- quality_checks %>% 
+  filter(datasetID == i) %>%
+  mutate("TRUE" = 100-percent,
+         "FALSE" = percent,
+         qc = fct_rev(qc)) %>% 
+  drop_na(qc) %>% 
+  select(-n, -percent) %>% 
+  pivot_longer("TRUE":"FALSE", values_to = "percent", names_to = "type") %>% 
+  mutate(question = case_when(qc == "qc1" ~ "Are the latitude and longitude available?",
+                              qc == "qc2" ~ "Is the latitude within its possible boundaries?",
+                              qc == "qc3" ~ "Is the longitude within its possible boundaries?",
+                              qc == "qc4" ~ "Is the site within the coral reef distribution area?",
+                              qc == "qc5" ~ "Is the site located within an EEZ?",
+                              qc == "qc6" ~ "Is the year available?",
+                              qc == "qc7" ~ "Is the sum of the percentage cover of benthic categories within\
+                              the sampling unit greater than 0 and lower than 100?",
+                              qc == "qc8" ~ "Is the percentage cover of a given benthic category\
+                              greater than 0 and lower than 100?")) %>% 
+  ggplot(data = ., aes(x = qc, y = percent, fill = type, label = question)) +
   geom_bar(stat = "identity", show.legend = FALSE) +
   coord_flip() +
   labs(y = "Percentage of observations", x = NULL) +
@@ -250,57 +259,16 @@ ggplotly(plot_i)
 
 ```{r echo=FALSE, message=FALSE}
 
-synthetic_data_i <- synthetic_data %>% 
+data_qc <- quality_checks %>% 
   filter(datasetID == i)
 
-data_results <- synthetic_data_i %>% 
-  # QC1
-  filter(qc1 == TRUE | is.na(qc1)) %>% 
-  mutate(n_qc1 = nrow(synthetic_data_i) - nrow(.)) %>% 
-  # QC2
-  filter(qc2 == TRUE) %>% 
-  mutate(sum_prev = n_qc1,
-         n_qc2 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  # QC3
-  filter(qc3 == TRUE) %>% 
-  mutate(sum_prev = n_qc1 + n_qc2,
-         n_qc3 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  # QC4
-  filter(qc4 == TRUE) %>% 
-  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3,
-         n_qc4 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  # QC5
-  filter(qc5 == TRUE) %>% 
-  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4,
-         n_qc5 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  # QC6
-  filter(qc6 == TRUE | is.na(qc6)) %>% 
-  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5,
-         n_qc6 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  # QC7
-  filter(qc7 == TRUE) %>% 
-  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5 + n_qc6,
-         n_qc7 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  # QC8
-  filter(qc8 == TRUE) %>% 
-  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5 + n_qc6 + n_qc7,
-         n_qc8 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  # QC9
-  filter(qc9 == TRUE) %>% 
-  mutate(sum_prev = n_qc1 + n_qc2 + n_qc3 + n_qc4 + n_qc5 + n_qc6 + n_qc7 + n_qc8,
-         n_qc9 = nrow(synthetic_data_i) - (nrow(.) + sum_prev)) %>% 
-  select(starts_with("n_qc")) %>% 
-  distinct() %>% 
-  pivot_longer(1:ncol(.), names_to = "QC", values_to = "n") %>% 
-  mutate(QC = str_remove_all(QC, "n_"),
-         QC = str_to_upper(QC),
-         percent = round((n*100)/nrow(synthetic_data_i), 2))
-
-data_results %>% 
-  add_row(QC = "TOTAL", n = sum(data_results$n), percent = sum(data_results$percent)) %>% 
+data_qc %>%
+  drop_na(qc) %>% 
+  select(-datasetID) %>% 
+  add_row(qc = "TOTAL", n = sum(data_qc$n), percent = sum(data_qc$percent)) %>% 
   kbl(booktabs = T, col.names = c("Quality check", "Obs. removed (number)", "Obs. removed (%)"), align = "c") %>% 
   kable_paper("hover", full_width = T) %>%
   column_spec(1, bold = TRUE) %>%
-  row_spec(c(0,10), bold = TRUE, background = "lightgrey")
+  row_spec(c(0,9), bold = TRUE, background = "lightgrey")
 
 ```
