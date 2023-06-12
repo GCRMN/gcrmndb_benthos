@@ -275,24 +275,26 @@ synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>%
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
+# 3. Remove useless data sets and variables ----
+
+rm(data_gcrmn_regions)
+
 ```
 
 ## EEZ
 
 ```{r}
 
-# 1. Load data ----
+# 1. First assignation ----
+
+# 1.1 Load EEZ data --
 
 data_eez <- st_read("../data/07_data-eez/eez_v11.shp") %>% 
   select(SOVEREIGN1, TERRITORY1) %>% 
   st_transform(crs = 4326) %>% 
   st_make_valid()
 
-# 2. Remove holes in EEZ polygons ----
-
-#data_eez <- nngeo::st_remove_holes(data_eez)
-
-# 3. Make the spatial join ----
+# 1.2 Make the spatial join --
 
 synthetic_data <- st_join(synthetic_data_coords, data_eez) %>% 
   bind_cols(., st_coordinates(.)) %>% 
@@ -301,9 +303,54 @@ synthetic_data <- st_join(synthetic_data_coords, data_eez) %>%
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
-# 6. Remove useless data sets and variables ----
+# 2. Second assignation ----
 
-rm(data_gcrmn_regions, data_eez)
+# 2.1 Load EEZ buffer data (5 km) --
+
+data_eez_buffer <- st_read("../data/07_data-eez/eez_v11_buffer_5km.shp") %>% 
+  select(SOVEREIGN1, TERRITORY1)
+
+# 2.2 Extract sites with missing assignations (country and territory) --
+
+synthetic_data_coords_buffer <- synthetic_data %>% 
+  filter(is.na(country) | is.na(territory)) %>% 
+  drop_na(decimalLatitude, decimalLongitude) %>%
+  select(datasetID, decimalLatitude, decimalLongitude) %>% 
+  distinct() %>% 
+  st_as_sf(coords = c("decimalLongitude", "decimalLatitude"), crs = 4326)
+
+# 2.3 Make the spatial join --
+
+synthetic_data_buffer <- st_join(synthetic_data_coords_buffer, data_eez_buffer) %>% 
+  bind_cols(., st_coordinates(.)) %>% 
+  rename(decimalLatitude = Y, decimalLongitude = X, 
+         country = SOVEREIGN1, territory = TERRITORY1) %>% 
+  st_drop_geometry() %>% 
+  group_by(decimalLongitude, decimalLatitude) %>% 
+  mutate(n = n()) %>% 
+  ungroup() %>% 
+  mutate(country = if_else(n == 1, country, NA_character_),
+         territory = if_else(n == 1, territory, NA_character_)) %>% 
+  distinct() %>% 
+  select(-n)
+
+# 2.4 Join with other data --
+
+synthetic_data_buffer <- synthetic_data %>% 
+  filter(is.na(country) | is.na(territory)) %>% 
+  drop_na(decimalLatitude, decimalLongitude) %>%
+  select(-country, -territory) %>% 
+  left_join(synthetic_data_buffer, .)
+
+# 3. Group data from first and second assignation --
+
+synthetic_data <- synthetic_data %>% 
+  filter(!(is.na(country) | is.na(territory)) | is.na(decimalLatitude) | is.na(decimalLongitude)) %>% 
+  bind_rows(., synthetic_data_buffer)
+
+# 4. Remove useless data sets and variables ----
+
+rm(data_eez, data_eez_buffer, synthetic_data_coords_buffer, synthetic_data_buffer)
 
 ```
 
@@ -324,15 +371,15 @@ synthetic_data <- synthetic_data %>%
 
 ```{r}
 
-# 1. Quality checks number 1, 2, 3, 6, 7, and 9 ----
+# 1. Quality checks number 1, 2, 3, 5, 6, and 8 ----
 
 synthetic_data <- synthetic_data %>% 
-  mutate(qc1 = if_else(!(is.na(decimalLatitude)) & !(is.na(decimalLongitude)), TRUE, FALSE),
+  mutate(qc1 = if_else(!(is.na(decimalLatitude)) | !(is.na(decimalLongitude)), TRUE, FALSE),
          qc2 = if_else(decimalLatitude >= -90 & decimalLatitude <= 90, TRUE, FALSE),
          qc3 = if_else(decimalLongitude >= -180 & decimalLongitude <= 180, TRUE, FALSE),
-         qc6 = if_else(verbatimDepth >= 0 & verbatimDepth < 100, TRUE, FALSE),
-         qc7 = if_else(!(is.na(year)), TRUE, FALSE),
-         qc9 = if_else(measurementValue >= 0 & measurementValue <= 100, TRUE, FALSE))
+         qc5 = if_else(is.na(territory), FALSE, TRUE),
+         qc6 = if_else(!(is.na(year)), TRUE, FALSE),
+         qc8 = if_else(measurementValue >= 0 & measurementValue <= 100, TRUE, FALSE))
 
 # 2. Quality check number 4 ----
 
@@ -347,45 +394,36 @@ synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FAL
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
-# 3. Quality check number 5 ----
-
-synthetic_data <- synthetic_data %>% 
-  mutate(qc5 = if_else(is.na(territory), FALSE, TRUE))
-
-# 4. Quality check number 8 ----
+# 4. Quality check number 7 ----
 
 synthetic_data <- synthetic_data %>% 
   group_by(datasetID, locality, habitat, parentEventID,
-         eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
-         year, month, day, eventDate) %>% 
-  summarise(qc8 = sum(measurementValue)) %>% 
+           eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
+           year, month, day, eventDate) %>% 
+  summarise(qc7 = sum(measurementValue)) %>% 
   ungroup() %>% 
-  mutate(qc8 = if_else(qc8 >= 0 & qc8 <= 100, TRUE, FALSE)) %>% 
+  mutate(qc7 = if_else(qc7 >= 0 & qc7 <= 100, TRUE, FALSE)) %>% 
   left_join(synthetic_data, .)
 
-# 5. Combine and transform data ----
+# 5. Transform data ----
 
 quality_checks <- synthetic_data %>% 
-  select(datasetID, starts_with("qc")) %>% 
-  pivot_longer(2:ncol(.), values_to = "type", names_to = "QC") %>% 
-  group_by(datasetID, QC, type) %>% 
+  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), 
+                ~as.character(.))) %>% 
+  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), 
+                ~str_replace_all(., 
+                                 c("FALSE" = cur_column(), 
+                                   "TRUE" = NA_character_)))) %>% 
+  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8)) %>% 
+  group_by(datasetID, qc) %>% 
   count() %>% 
   ungroup() %>% 
-  group_by(datasetID, QC) %>% 
-  mutate(percent = (n*100)/sum(n)) %>% 
-  ungroup() %>% 
-  mutate(question = case_when(QC == "qc1" ~ "Are the latitude and longitude available?",
-                              QC == "qc2" ~ "Is the latitude within its possible boundaries?",
-                              QC == "qc3" ~ "Is the longitude within its possible boundaries?",
-                              QC == "qc4" ~ "Is the site within the coral reef distribution area?",
-                              QC == "qc5" ~ "Is the site located off lands?",
-                              QC == "qc6" ~ "Is the depth between 0 and 100 meters?",
-                              QC == "qc7" ~ "Is the year available?",
-                              QC == "qc8" ~ "Is the sum of the percentage cover of benthic categories within\
-                              the sampling unit greater than 0 and lower than 100?",
-                              QC == "qc9" ~ "Is the percentage cover of a given benthic category\
-                              greater than 0 and lower than 100?"),
-         QC = str_replace_all(QC, "qc", "Quality check #"))
+  bind_rows(., tibble(datasetID = NA, qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), n = NA)) %>% 
+  complete(datasetID, qc, fill = list(n = 0)) %>% 
+  drop_na(datasetID) %>% 
+  group_by(datasetID) %>% 
+  mutate(percent = round(n*100/sum(n), 2)) %>% 
+  ungroup()
 
 # 6. Remove useless data sets and variables ----
 
@@ -423,7 +461,7 @@ synthetic_data <- synthetic_data %>%
 ```{r}
 
 synthetic_data <- synthetic_data %>%
-  filter_at(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), ~.x == TRUE) %>% 
+  filter_at(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), ~.x == TRUE) %>% 
   select(-starts_with("qc"))
 
 ```
