@@ -13,7 +13,7 @@ data_eez <- st_read("data/07_data-eez/eez_v11.shp") %>%
   st_transform(crs = 4326) %>% 
   st_make_valid() %>% 
   st_transform(crs = 7801) %>% # CRS in meters
-  st_buffer(., dist = 5000) %>% # 5 km buffer
+  st_buffer(., dist = 1000) %>% # 1 km buffer
   st_transform(crs = 4326) %>% 
   st_wrap_dateline() %>% 
   st_make_valid()
@@ -40,4 +40,4 @@ ggplot() +
 
 # 5. Export the data ----
 
-st_write(data_eez, "data/07_data-eez/eez_v11_buffer_5km.shp", append = FALSE)
+st_write(data_eez, "data/07_data-eez/eez_v11_buffer_1km.shp", append = FALSE)

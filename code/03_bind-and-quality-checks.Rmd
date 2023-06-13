@@ -307,7 +307,7 @@ synthetic_data <- st_join(synthetic_data_coords, data_eez) %>%
 
 # 2.1 Load EEZ buffer data (5 km) --
 
-data_eez_buffer <- st_read("../data/07_data-eez/eez_v11_buffer_5km.shp") %>% 
+data_eez_buffer <- st_read("../data/07_data-eez/eez_v11_buffer_1km.shp") %>% 
   select(SOVEREIGN1, TERRITORY1)
 
 # 2.2 Extract sites with missing assignations (country and territory) --
