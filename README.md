@@ -171,15 +171,21 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | 0026          | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                        | open (summary) | Me.  | 2021-09-10 | Wicquart, J.  |
 | 0027          | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                        | open (summary) | Me.  | 2021-09-08 | Wicquart, J.  |
 
+## 6. Description of the synthetic dataset
 
-## 6. Sponsors
+![workflow](figs/map_sites.png)
+
+**Figure 2.** Map of the distribution of benthic cover monitoring sites (in red) for which data are included within the `gcrmndb_benthos` synthetic dataset. Light grey polygons represents economic exclusive zones.
+
+
+## 7. Sponsors
 
 The following organizations have funded the realization of the `gcrmndb_benthos` synthetic dataset:
 
 * The Prince Albert II of Monaco Foundation
 * French Ministry of Ecological Transition
 
-## 7. References
+## 8. References
 
 * Poisot, T., Gravel, D., Leroux, S., Wood, S. A., Fortin, M. J., Baiser, B., ... & Stouffer, D. B. (**2016**). [Synthetic datasets and community tools for the rapid testing of ecological hypotheses](https://onlinelibrary.wiley.com/doi/10.1111/ecog.01941). *Ecography*, 39(4), 402-408.
 
