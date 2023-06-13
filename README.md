@@ -15,8 +15,9 @@
 * [3. Description of variables](#3-description-of-variables)
 * [4. Quality checks](#4-quality-checks)
 * [5. List of individual datasets](#5-list-of-individual-datasets)
-* [6. Sponsors](#6-sponsors)
-* [7. References](#7-references)
+* [6. Description of the synthetic dataset](#6-description-of-the-synthetic-dataset)
+* [7. Sponsors](#7-sponsors)
+* [8. References](#8-references)
 
 ## 1. Introduction
 
