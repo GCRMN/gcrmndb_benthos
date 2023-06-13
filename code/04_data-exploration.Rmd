@@ -27,6 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 source("00_functions/graphical_par.R")
 source("00_functions/theme_graph.R")
+source("00_functions/data_descriptors.R")
 
 # 2. Required packages ----
 
@@ -48,69 +49,30 @@ rm(synthetic_data)
 
 ```
 
+# Data descriptors
+
 ```{r}
 
-# Number of sites ----
+# 1. For the entire gcrmndb_benthos synthetic dataset ----
 
 data_benthos %>% 
-  select(decimalLongitude, decimalLatitude) %>%
-  distinct() %>% 
-  count() %>% 
-  pull()
+  data_descriptors()
 
-# Number of surveys ----
-
-data_benthos %>% 
-  select(decimalLongitude, decimalLatitude, year, month, eventDate) %>%
-  distinct() %>% 
-  count() %>% 
-  pull()
-
-# Number of individual datasets ----
-
-data_benthos %>% 
-  select(datasetID) %>%
-  distinct() %>% 
-  count() %>% 
-  pull()
-
-# First survey ----
-
-data_benthos %>% 
-  select(year) %>% 
-  distinct() %>% 
-  filter(year == min(year)) %>% 
-  pull()
-
-# Last survey ----
-
-data_benthos %>% 
-  select(year) %>% 
-  distinct() %>% 
-  filter(year == max(year)) %>% 
-  pull()
-
-
-
-
-
-indLastSurvey <- function(data){
-  
-  data %>% 
-  select(year) %>% 
-  distinct() %>% 
-  filter(year == max(year)) %>% 
-  pull()
-  
-}
-
+# 2. Per GCRMN region ----
 
 data_benthos %>% 
   group_by(higherGeography) %>% 
-  indLastSurvey()
+  data_descriptors()
 
+# 3. Per country and territory ----
+
+data_benthos %>% 
+  group_by(country, territory) %>% 
+  data_descriptors()
 
 ```
+
+
 
 ```{r}
 
@@ -200,26 +162,6 @@ ggplot() +
 # 5. Save the plot ----
 
 ggsave("../figs/map_sites.png", dpi = 600, width = 10, height = 3)
-
-```
-
-# Table of descriptors
-
-## Per country
-
-```{r}
-
-
-
-
-```
-
-## Per GCRMN region
-
-```{r}
-
-
-
 
 ```
 
