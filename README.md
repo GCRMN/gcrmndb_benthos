@@ -218,35 +218,35 @@ is the name of the person in charge of the data integration for the
 individual dataset considered. The column names (except *aggregator*)
 correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
-| datasetID |                                                                                                                                            rightsHolder |   accessRights | type |  modified  | aggregator |
-|:---------:|--------------------------------------------------------------------------------------------------------------------------------------------------------:|---------------:|:----:|:----------:|:----------:|
-|   0001    |                                         [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1) |           open | Rp.  | 2022-02-21 |     JW     |
-|   0002    |                                                    [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1) |           open | Rp.  | 2022-02-21 |     JW     |
-|   0003    |                                                                                                                                           [AIMS LTMP]() |                |      |            |     JW     |
-|   0004    |                                                  [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL) |   upon request | Sh.  | 2022-09-08 |     JW     |
-|   0005    |    [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1) |   upon request | Sh.  |            |     JW     |
-|   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) |   upon request | Sh.  | 2022-12-31 |     JW     |
-|   0007    |        [CRIOBE - ATPP barrier reef](https://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1) |   upon request | Sh.  |            |     JW     |
-|   0008    |                    [CRIOBE - ATPP outer slope](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1) |   upon request | Sh.  |            |     JW     |
-|   0009    |                                                                                    [Seaview Survey](https://www.nature.com/articles/s41597-020-00698-6) |           open | Pa.  |            |     JW     |
-|   0010    |                                               [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji) | open (summary) | Me.  | 2021-06-08 |     JW     |
-|   0011    |                       [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam) |           open | Rp.  | 2021-09-14 |     JW     |
-|   0012    |                     [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas) |           open | Rp.  | 2018-10-12 |     JW     |
-|   0013    |                                  [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI) |           open | Rp.  | 2022-11-11 |     JW     |
-|   0014    |                                  [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA) |           open | Rp.  | 2021-07-30 |     JW     |
-|   0015    |                                                 [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/) |   upon request | Db.  |            |     JW     |
-|   0016    |                                                                                                                                [Biosphere Foundation]() |   upon request | Sh.  |            |     JW     |
-|   0017    |                                                                                                                                                 [KNS]() |   upon request | Sh.  | 2022-12-27 |     JW     |
-|   0018    |                                                                                                                                            [Kiribati]() |   upon request | Sh.  | 2020-03-05 |     JW     |
-|   0019    |                                                                                                                                                 [SLN]() |   upon request | Sh.  | 2022-05-12 |     JW     |
-|   0020    |                                                                                                         [PACN](https://www.nps.gov/im/pacn/benthic.htm) |   upon request | Sh.  |            |     JW     |
-|   0021    |                                                                                                                                                [RORC]() |   upon request | Sh.  |            |     JW     |
-|   0022    |                                                                                                          [MCRMP](https://micronesiareefmonitoring.com/) |   upon request | Sh.  |            |     JW     |
-|   0023    |                                                                                                                                               [PA-NC]() |   upon request | Sh.  |            |     JW     |
-|   0024    |                                                                                                                                     [Laurent WANTIEZ]() |   upon request | Sh.  |            |     JW     |
-|   0025    |                                                                     [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua) | open (summary) | Me.  | 2021-09-08 |     JW     |
-|   0026    |                                                                       [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua) | open (summary) | Me.  | 2021-09-10 |     JW     |
-|   0027    |                                                                       [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau) | open (summary) | Me.  | 2021-09-08 |     JW     |
+| datasetID | rightsHolder                                                                                                                                            | accessRights   | type |  modified  | aggregator |
+|:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------|:----:|:----------:|:----------:|
+|   0001    | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                         | open           | Rp.  | 2022-02-21 |     JW     |
+|   0002    | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                    | open           | Rp.  | 2022-02-21 |     JW     |
+|   0003    | AIMS LTMP                                                                                                                                               |                |      |            |     JW     |
+|   0004    | [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                  | upon request   | Sh.  | 2022-09-08 |     JW     |
+|   0005    | [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)    | upon request   | Sh.  |            |     JW     |
+|   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request   | Sh.  | 2022-12-31 |     JW     |
+|   0007    | [CRIOBE - ATPP barrier reef](https://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)        | upon request   | Sh.  |            |     JW     |
+|   0008    | [CRIOBE - ATPP outer slope](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                    | upon request   | Sh.  |            |     JW     |
+|   0009    | [Seaview Survey](https://www.nature.com/articles/s41597-020-00698-6)                                                                                    | open           | Pa.  |            |     JW     |
+|   0010    | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                               | open (summary) | Me.  | 2021-06-08 |     JW     |
+|   0011    | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                       | open           | Rp.  | 2021-09-14 |     JW     |
+|   0012    | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                     | open           | Rp.  | 2018-10-12 |     JW     |
+|   0013    | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                  | open           | Rp.  | 2022-11-11 |     JW     |
+|   0014    | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                  | open           | Rp.  | 2021-07-30 |     JW     |
+|   0015    | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/)                                                 | upon request   | Db.  |            |     JW     |
+|   0016    | Biosphere Foundation                                                                                                                                    | upon request   | Sh.  |            |     JW     |
+|   0017    | KNS                                                                                                                                                     | upon request   | Sh.  | 2022-12-27 |     JW     |
+|   0018    | Kiribati                                                                                                                                                | upon request   | Sh.  | 2020-03-05 |     JW     |
+|   0019    | SLN                                                                                                                                                     | upon request   | Sh.  | 2022-05-12 |     JW     |
+|   0020    | [PACN](https://www.nps.gov/im/pacn/benthic.htm)                                                                                                         | upon request   | Sh.  |            |     JW     |
+|   0021    | RORC                                                                                                                                                    | upon request   | Sh.  |            |     JW     |
+|   0022    | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                          | upon request   | Sh.  |            |     JW     |
+|   0023    | PA-NC                                                                                                                                                   | upon request   | Sh.  |            |     JW     |
+|   0024    | Laurent WANTIEZ                                                                                                                                         | upon request   | Sh.  |            |     JW     |
+|   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 2021-09-08 |     JW     |
+|   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 2021-09-10 |     JW     |
+|   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 2021-09-08 |     JW     |
 
 ## 6. Description of the synthetic dataset
 

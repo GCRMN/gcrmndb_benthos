@@ -190,18 +190,18 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-read.csv2("data/05_data-sources.csv") %>% 
+read.csv2("data/05_data-sources.csv") %>%
+  mutate_all(., ~replace_na(., "")) %>% 
   mutate(datasetID = str_pad(datasetID, width = 4, side = "left", pad = "0"),
-         rightsHolder = if_else(is.na(dataset_link), 
-                                rightsHolder, 
-                                paste0("[", rightsHolder, "](", dataset_link, ")")),
+         rightsHolder = ifelse(dataset_link == "", 
+                               rightsHolder, 
+                               paste0("[", rightsHolder, "](", dataset_link, ")")),
          type = str_replace_all(type, c("article" = "Ar.",
                                         "database" = "Db.",
                                         "mermaid" = "Me.",
                                         "data paper" = "Pa.",
                                         "data repository" = "Rp.",
                                         "data sharing" = "Sh."))) %>% 
-  mutate_all(., ~replace_na(., "")) %>% 
   select(datasetID, rightsHolder, accessRights, type, modified, aggregator) %>% 
   distinct() %>% 
   kable(align = c("c", "l", "l", "c", "c", "c"))
