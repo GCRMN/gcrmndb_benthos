@@ -8,10 +8,38 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-",
   out.width = "100%"
 )
 options(tibble.print_min = 5, tibble.print_max = 5)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# 1. Source functions ----
+
+source("code/00_functions/graphical_par.R")
+source("code/00_functions/theme_graph.R")
+source("code/00_functions/data_descriptors.R")
+
+# 2. Required packages ----
+
+library(tidyverse) # Core tidyverse packages
+library(sf)
+library(knitr)
+
+# 3. Set theme_graph() as the default ggplot theme ----
+
+theme_set(theme_graph())
+
+# 4. Load data ----
+
+load("data/09_gcrmndb_benthos.RData")
+
+data_benthos <- synthetic_data %>% 
+  filter(datasetID != "0009") # Remove XL Catlin Seaview Survey
+
+rm(synthetic_data)
+
 ```
 
 # gcrmndb_benthos <img src='figs/hex_logo.png' align="right" height="138.5" />
@@ -79,7 +107,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 ### 2.2 Workflow
 
 
-![workflow](figs/workflow.png)
+![](figs/workflow.png)
 
 **Figure 1.** Illustration of the data integration workflow used for the creation of the `gcrmndb_benthos` synthetic dataset (see [Wicquart *et al.*, 2022](https://www.sciencedirect.com/science/article/pii/S1574954121003344)). *EEZ* = Economic Exclusive Zone, *NCBI* = National Center for Biotechnology Information.
 
@@ -140,7 +168,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 ## 4. Quality checks
 
 
-**Table 4.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :chart_with_upwards_trend: = metric variables. EEZ = Economic Exclusive Zone.
+**Table 4.** List of quality checks used for the `gcrmndb_benthos` synthetic dataset. Inspired by [Vandepitte *et al*, 2015](https://doi.org/10.1093/database/bau125). The icons for the variables categories (`Cat.`) represents: :globe_with_meridians: = spatial variables, :calendar: = temporal variables, :chart_with_upwards_trend: = metric variables. EEZ = Economic Exclusive Zone.
 
 | #  | Cat.                       | Variables                            | Questions                                                                       |
 |:--:|:--------------------------:|--------------------------------------|:--------------------------------------------------------------------------------|
@@ -159,64 +187,152 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 **Table 5.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *type* is the type of individual dataset storage and/or acquisition (*Ar.* = article, *Db.* = database, *Me.* = [MERMAID](https://dashboard.datamermaid.org/), *Pa.* = data paper, *Rp.* = data repository, *Sh.* = data sharing), *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The column names (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
-| datasetID     | rightsHolder                                                                                                                                             | accessRights   | type | modified   | aggregator    |
-|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|:----:|------------|---------------|
-| 0001          | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                          | open           | Rp.  | 2022-02-21 | Wicquart, J.  |         
-| 0002          | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                     | open           | Rp.  | 2022-02-21 | Wicquart, J.  |                 
-| 0003          | AIMS LTMP                                                                                                                                                | upon request   |      |            | Wicquart, J.  |                 
-| 0004          | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                    | upon request   | Sh.  | 2022-09-08 | Wicquart, J.  |               
-| 0005          | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)      | upon request   | Sh.  |            | Wicquart, J.  |        
-| 0006          | [CRIOBE - Tiahura](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1)   | upon request   | Sh.  | 2022-12-31 | Wicquart, J.  |
-| 0007          | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)          | upon request   | Sh.  |            | Wicquart, J.  |
-| 0008          | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                      | upon request   | Sh.  |            | Wicquart, J.  |
-| 0009          | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                                                                             | open           | Pa.  |            | Wicquart, J.  |
-| 0010          | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                                | open (summary) | Me.  | 2021-06-08 | Wicquart, J.  |
-| 0011          | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                        | open           | Rp.  | 2021-09-14 | Wicquart, J.  |
-| 0012          | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                      | open           | Rp.  | 2018-10-12 | Wicquart, J.  |
-| 0013          | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                   | open           | Rp.  | 2022-11-11 | Wicquart, J.  |
-| 0014          | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                   | open           | Rp.  | 2021-07-30 | Wicquart, J.  |
-| 0015          | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/)                                                  | upon request   | Db.  |            | Wicquart, J.  |
-| 0016          | Biosphere Foundation                                                                                                                                     | upon request   | Sh.  |            | Wicquart, J.  |
-| 0017          | KNS                                                                                                                                                      | upon request   | Sh.  | 2022-12-27 | Wicquart, J.  |
-| 0018          | Kiribati                                                                                                                                                 | upon request   | Sh.  | 2020-03-05 | Wicquart, J.  |
-| 0019          | SLN                                                                                                                                                      | upon request   | Sh.  | 2022-05-12 | Wicquart, J.  |
-| 0020          | [PACN](https://www.nps.gov/im/pacn/benthic.htm)                                                                                                          | upon request   | Sh.  |            | Wicquart, J.  |
-| 0021          | RORC                                                                                                                                                     | upon request   | Sh.  |            | Wicquart, J.  |
-| 0022          | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                           | upon request   | Sh.  |            | Wicquart, J.  |
-| 0023          | PA-NC                                                                                                                                                    | upon request   | Sh.  |            | Wicquart, J.  |
-| 0024          | Laurent WANTIEZ                                                                                                                                          | upon request   | Sh.  |            | Wicquart, J.  |
-| 0025          | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                      | open (summary) | Me.  | 2021-09-08 | Wicquart, J.  |
-| 0026          | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                        | open (summary) | Me.  | 2021-09-10 | Wicquart, J.  |
-| 0027          | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                        | open (summary) | Me.  | 2021-09-08 | Wicquart, J.  |
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+read.csv2("data/05_data-sources.csv") %>% 
+  mutate(datasetID = str_pad(datasetID, width = 4, side = "left", pad = "0"),
+         rightsHolder = if_else(is.na(dataset_link), 
+                                rightsHolder, 
+                                paste0("[", rightsHolder, "](", dataset_link, ")")),
+         type = str_replace_all(type, c("article" = "Ar.",
+                                        "database" = "Db.",
+                                        "mermaid" = "Me.",
+                                        "data paper" = "Pa.",
+                                        "data repository" = "Rp.",
+                                        "data sharing" = "Sh."))) %>% 
+  mutate_all(., ~replace_na(., "")) %>% 
+  select(datasetID, rightsHolder, accessRights, type, modified, aggregator) %>% 
+  distinct() %>% 
+  kable(align = c("c", "l", "l", "c", "c", "c"))
+
+```
+
 
 ## 6. Description of the synthetic dataset
 
-![map](figs/map_sites.png)
+On the `r lubridate::as_date(Sys.time())`, the `gcrmndb_benthos` synthetic dataset contains a total of `r format(nrow(data_benthos), big.mark = ",")` observations (*i.e* rows) representing `r format(as.numeric(data_descriptors(data_benthos)[1,"nb_sites"]), big.mark = ",")` sites and `r format(as.numeric(data_descriptors(data_benthos)[1,"nb_surveys"]), big.mark = ",")` surveys.
 
-**Figure 2.** Map of the distribution of benthic cover monitoring sites (in red) for which data are included within the `gcrmndb_benthos` synthetic dataset. Light grey polygons represents economic exclusive zones.
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+# 1. Define a CRS to center the map on 160° meridian line ----
+
+crs_selected <- "+proj=eqc +lat_ts=0 +lat_0=0 +lon_0=160 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs"
+
+# 2. Load data ----
+
+# 2.1 Land data --
+
+data_land <- st_read("data/10_background-shp/ne_10m_land/ne_10m_land.shp") %>% 
+  st_transform(crs = crs_selected)
+
+# 2.2 Country boundaries data --
+
+data_country <- st_read("data/10_background-shp/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp") %>% 
+  st_transform(crs = crs_selected)
+
+# 2.3 EEZ --
+
+# 2.3.1 Define the correction offset --
+
+correction_offset <- 180 - 160 # Here 160 is the same value than +lon_0 from crs_selected
+
+# 2.3.2 Define a long and slim polygon that overlaps the meridian line --
+
+correction_polygon <- st_polygon(x = list(rbind(c(-0.0001 - correction_offset, 90),
+                                                c(0 - correction_offset, 90),
+                                                c(0 - correction_offset, -90),
+                                                c(-0.0001 - correction_offset, -90),
+                                                c(-0.0001 - correction_offset, 90)))) %>%
+  st_sfc() %>%
+  st_set_crs(4326)
+
+# 2.3.3 Load and transform data --
+
+data_eez <- st_read("data/07_data-eez/eez_v11.shp") %>% 
+  st_transform(crs = 4326) %>% 
+  st_make_valid() %>% 
+  st_difference(correction_polygon) %>% 
+  st_transform(crs_selected)
+
+# 3. Extract site coordinates ----
+
+data_benthos_coords <- data_benthos %>% 
+  select(decimalLatitude, decimalLongitude, year) %>% 
+  distinct() %>% 
+  group_by(decimalLatitude, decimalLongitude) %>% 
+  summarise(interval_years = max(year) - min(year)) %>%
+  ungroup() %>% 
+  mutate(interval_class = cut(interval_years, 
+                              breaks = c(-Inf, 1, 5, 10, 15, Inf),
+                              labels = c("1", "2-5", "6-10", "11-15", ">15"))) %>%
+  arrange(interval_class) %>% 
+  st_as_sf(coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) %>% 
+  st_transform(., crs = crs_selected)
+  
+# 4. Make the plot ----
+
+plot_map <- ggplot() +
+  geom_sf(data = data_eez, fill = NA, col = "lightgrey") +
+  geom_sf(data = data_land) +
+  geom_sf(data = data_country) +
+  geom_sf(data = data_benthos_coords, aes(color = interval_class), size = 1) +
+  # Graphical aspects
+  coord_sf(ylim = c(-5000000, 5000000), expand = FALSE) +
+  guides(colour = guide_legend(title.position = "top", title.hjust = 0.5, override.aes = list(size = 5))) +
+  scale_color_manual(values = c("#2c7bb6", "#91bfdb", "#f7ca18", "#fc8d59", "#d73027")) +
+  theme(text = element_text(family = font_choose_map),
+        panel.border = element_rect(fill = NA, color = "black", linewidth = 1),
+        axis.title = element_blank(),
+        axis.text.x.top = element_text(),
+        legend.position = "top", 
+        legend.direction = "horizontal", 
+        legend.justification = "center",
+        legend.box = NULL, 
+        legend.box.margin = margin(0, 0, 0, 0, "cm"), 
+        legend.box.background = element_blank(),
+        legend.background = element_rect(colour = NA, fill = "white"), 
+        legend.key = element_rect(fill = NA, colour = NA), 
+        legend.key.size = unit(1.2, "lines"), 
+        legend.key.height = NULL, 
+        legend.key.width = NULL) +
+  labs(col = "Monitoring duration (years)")
+
+# 5. Save the plot ----
+
+ggsave(filename = "figs/map_sites.png", plot = plot_map, dpi = 600, width = 10, height = 3.5)
+
+```
+
+![](figs/map_sites.png)
+
+**Figure 2.** Map of the distribution of benthic cover monitoring sites for which data are included within the `gcrmndb_benthos` synthetic dataset. Light grey polygons represents economic exclusive zones. Colours corresponds to monitoring duration which is the difference, for each site, between the first and last years with data.
 
 
 **Table 6.** Summary of the content of the `gcrmndb_benthos` synthetic dataset per GCRMN region. EAS = East Asian Seas, ETP = Eastern Tropical Pacific, WIO = Western Indian Ocean. The total number of datasets integrated within the `gcrmndb_benthos` can differ from the sum of the column `Datasets (n)`, as some datasets includes sites in different GCRMN regions.
 
 ```{r echo=FALSE, message=FALSE}
 
-library(tidyverse)
-
-source("code/00_functions/data_descriptors.R")
-
-load("data/09_gcrmndb_benthos.RData")
-
-data_benthos <- synthetic_data %>% 
-  filter(datasetID != "0009") # Remove XL Catlin Seaview Survey
-
-rm(synthetic_data)
-
 data_benthos %>% 
   group_by(higherGeography) %>% 
   data_descriptors() %>% 
-  knitr::kable(., 
-               col.names = c("GCRMN region", "Sites (n)", "Surveys (n)", "Datasets (n)", "First year", "Last year"),
-               align = c("r", "r", "r", "r", "c", "c"))
+  kable(., 
+        col.names = c("GCRMN region", "Sites (n)", "Surveys (n)", "Datasets (n)", "First year", "Last year"),
+        align = c("r", "r", "r", "r", "c", "c"))
+
+```
+
+
+**Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic dataset per country and territory. The total number of datasets integrated within the `gcrmndb_benthos` can differ from the sum of the column `Datasets (n)`, as some datasets includes sites in different territories.
+
+```{r echo=FALSE, message=FALSE}
+
+data_benthos %>% 
+  group_by(country, territory) %>% 
+  data_descriptors() %>% 
+  kable(., 
+        col.names = c("Country", "Territory", "Sites (n)", "Surveys (n)", "Datasets (n)", "First year", "Last year"),
+        align = c("r", "l", "r", "r", "r", "c", "c"))
 
 ```
 

@@ -114,10 +114,7 @@ individual datasets.
 
 ### 2.2 Workflow
 
-<figure>
-<img src="figs/workflow.png" alt="workflow" />
-<figcaption aria-hidden="true">workflow</figcaption>
-</figure>
+![](figs/workflow.png)
 
 **Figure 1.** Illustration of the data integration workflow used for the
 creation of the `gcrmndb_benthos` synthetic dataset (see [Wicquart *et
@@ -190,8 +187,9 @@ terms](https://dwc.tdwg.org/terms).
 synthetic dataset. Inspired by [Vandepitte *et al*,
 2015](https://doi.org/10.1093/database/bau125). The icons for the
 variables categories (`Cat.`) represents: :globe_with_meridians: =
-spatial variables, :chart_with_upwards_trend: = metric variables. EEZ =
-Economic Exclusive Zone.
+spatial variables, :calendar: = temporal variables,
+:chart_with_upwards_trend: = metric variables. EEZ = Economic Exclusive
+Zone.
 
 | \#  |            Cat.            | Variables                            | Questions                                                                                                            |
 |:---:|:--------------------------:|--------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
@@ -220,47 +218,49 @@ is the name of the person in charge of the data integration for the
 individual dataset considered. The column names (except *aggregator*)
 correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
-| datasetID | rightsHolder                                                                                                                                           | accessRights   | type | modified   | aggregator   |
-|:---------:|--------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|:----:|------------|--------------|
-|   0001    | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                        | open           | Rp.  | 2022-02-21 | Wicquart, J. |
-|   0002    | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                   | open           | Rp.  | 2022-02-21 | Wicquart, J. |
-|   0003    | AIMS LTMP                                                                                                                                              | upon request   |      |            | Wicquart, J. |
-|   0004    | [CRIOBE - MPA](http://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                  | upon request   | Sh.  | 2022-09-08 | Wicquart, J. |
-|   0005    | [CRIOBE - Polynesia Mana](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)    | upon request   | Sh.  |            | Wicquart, J. |
-|   0006    | [CRIOBE - Tiahura](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request   | Sh.  | 2022-12-31 | Wicquart, J. |
-|   0007    | [CRIOBE - ATPP barrier reef](http://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)        | upon request   | Sh.  |            | Wicquart, J. |
-|   0008    | [CRIOBE - ATPP outer slope](http://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                    | upon request   | Sh.  |            | Wicquart, J. |
-|   0009    | [Seaview Survey](https://doi.org/10.1038/s41597-020-00698-6)                                                                                           | open           | Pa.  |            | Wicquart, J. |
-|   0010    | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                              | open (summary) | Me.  | 2021-06-08 | Wicquart, J. |
-|   0011    | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                      | open           | Rp.  | 2021-09-14 | Wicquart, J. |
-|   0012    | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                    | open           | Rp.  | 2018-10-12 | Wicquart, J. |
-|   0013    | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                 | open           | Rp.  | 2022-11-11 | Wicquart, J. |
-|   0014    | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                 | open           | Rp.  | 2021-07-30 | Wicquart, J. |
-|   0015    | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/)                                                | upon request   | Db.  |            | Wicquart, J. |
-|   0016    | Biosphere Foundation                                                                                                                                   | upon request   | Sh.  |            | Wicquart, J. |
-|   0017    | KNS                                                                                                                                                    | upon request   | Sh.  | 2022-12-27 | Wicquart, J. |
-|   0018    | Kiribati                                                                                                                                               | upon request   | Sh.  | 2020-03-05 | Wicquart, J. |
-|   0019    | SLN                                                                                                                                                    | upon request   | Sh.  | 2022-05-12 | Wicquart, J. |
-|   0020    | [PACN](https://www.nps.gov/im/pacn/benthic.htm)                                                                                                        | upon request   | Sh.  |            | Wicquart, J. |
-|   0021    | RORC                                                                                                                                                   | upon request   | Sh.  |            | Wicquart, J. |
-|   0022    | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                         | upon request   | Sh.  |            | Wicquart, J. |
-|   0023    | PA-NC                                                                                                                                                  | upon request   | Sh.  |            | Wicquart, J. |
-|   0024    | Laurent WANTIEZ                                                                                                                                        | upon request   | Sh.  |            | Wicquart, J. |
-|   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                    | open (summary) | Me.  | 2021-09-08 | Wicquart, J. |
-|   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                      | open (summary) | Me.  | 2021-09-10 | Wicquart, J. |
-|   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                      | open (summary) | Me.  | 2021-09-08 | Wicquart, J. |
+| datasetID |                                                                                                                                            rightsHolder |   accessRights | type |  modified  | aggregator |
+|:---------:|--------------------------------------------------------------------------------------------------------------------------------------------------------:|---------------:|:----:|:----------:|:----------:|
+|   0001    |                                         [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1) |           open | Rp.  | 2022-02-21 |     JW     |
+|   0002    |                                                    [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1) |           open | Rp.  | 2022-02-21 |     JW     |
+|   0003    |                                                                                                                                           [AIMS LTMP]() |                |      |            |     JW     |
+|   0004    |                                                  [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL) |   upon request | Sh.  | 2022-09-08 |     JW     |
+|   0005    |    [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1) |   upon request | Sh.  |            |     JW     |
+|   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) |   upon request | Sh.  | 2022-12-31 |     JW     |
+|   0007    |        [CRIOBE - ATPP barrier reef](https://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1) |   upon request | Sh.  |            |     JW     |
+|   0008    |                    [CRIOBE - ATPP outer slope](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1) |   upon request | Sh.  |            |     JW     |
+|   0009    |                                                                                    [Seaview Survey](https://www.nature.com/articles/s41597-020-00698-6) |           open | Pa.  |            |     JW     |
+|   0010    |                                               [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji) | open (summary) | Me.  | 2021-06-08 |     JW     |
+|   0011    |                       [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam) |           open | Rp.  | 2021-09-14 |     JW     |
+|   0012    |                     [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas) |           open | Rp.  | 2018-10-12 |     JW     |
+|   0013    |                                  [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI) |           open | Rp.  | 2022-11-11 |     JW     |
+|   0014    |                                  [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA) |           open | Rp.  | 2021-07-30 |     JW     |
+|   0015    |                                                 [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/) |   upon request | Db.  |            |     JW     |
+|   0016    |                                                                                                                                [Biosphere Foundation]() |   upon request | Sh.  |            |     JW     |
+|   0017    |                                                                                                                                                 [KNS]() |   upon request | Sh.  | 2022-12-27 |     JW     |
+|   0018    |                                                                                                                                            [Kiribati]() |   upon request | Sh.  | 2020-03-05 |     JW     |
+|   0019    |                                                                                                                                                 [SLN]() |   upon request | Sh.  | 2022-05-12 |     JW     |
+|   0020    |                                                                                                         [PACN](https://www.nps.gov/im/pacn/benthic.htm) |   upon request | Sh.  |            |     JW     |
+|   0021    |                                                                                                                                                [RORC]() |   upon request | Sh.  |            |     JW     |
+|   0022    |                                                                                                          [MCRMP](https://micronesiareefmonitoring.com/) |   upon request | Sh.  |            |     JW     |
+|   0023    |                                                                                                                                               [PA-NC]() |   upon request | Sh.  |            |     JW     |
+|   0024    |                                                                                                                                     [Laurent WANTIEZ]() |   upon request | Sh.  |            |     JW     |
+|   0025    |                                                                     [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua) | open (summary) | Me.  | 2021-09-08 |     JW     |
+|   0026    |                                                                       [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua) | open (summary) | Me.  | 2021-09-10 |     JW     |
+|   0027    |                                                                       [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau) | open (summary) | Me.  | 2021-09-08 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-<figure>
-<img src="figs/map_sites.png" alt="map" />
-<figcaption aria-hidden="true">map</figcaption>
-</figure>
+On the 2023-06-14, the `gcrmndb_benthos` synthetic dataset contains a
+total of 791,526 observations (*i.e* rows) representing 8,810 sites and
+20,816 surveys.
+
+![](figs/map_sites.png)
 
 **Figure 2.** Map of the distribution of benthic cover monitoring sites
-(in red) for which data are included within the `gcrmndb_benthos`
-synthetic dataset. Light grey polygons represents economic exclusive
-zones.
+for which data are included within the `gcrmndb_benthos` synthetic
+dataset. Light grey polygons represents economic exclusive zones.
+Colours corresponds to monitoring duration which is the difference, for
+each site, between the first and last years with data.
 
 **Table 6.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per GCRMN region. EAS = East Asian Seas, ETP = Eastern Tropical
@@ -278,6 +278,70 @@ GCRMN regions.
 |      Pacific |      5577 |       10610 |           19 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       145 |         341 |            1 |    1997    |   2019    |
+
+**Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
+dataset per country and territory. The total number of datasets
+integrated within the `gcrmndb_benthos` can differ from the sum of the
+column `Datasets (n)`, as some datasets includes sites in different
+territories.
+
+|               Country | Territory                    | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
+|----------------------:|:-----------------------------|----------:|------------:|-------------:|:----------:|:---------:|
+|             Australia | Australia                    |       524 |        4113 |            2 |    1995    |   2019    |
+|             Australia | Christmas Island             |         2 |          13 |            1 |    2003    |   2007    |
+|             Australia | Cocos Islands                |        20 |          49 |            1 |    1997    |   2008    |
+|            Bangladesh | Bangladesh                   |         2 |           2 |            1 |    2005    |   2006    |
+|                Brunei | Brunei                       |        38 |          45 |            1 |    1997    |   2016    |
+|              Cambodia | Cambodia                     |        91 |          98 |            1 |    1998    |   2013    |
+|                 China | China                        |       100 |         366 |            1 |    1997    |   2012    |
+|              Colombia | Colombia                     |         4 |           4 |            1 |    1998    |   1999    |
+|            Costa Rica | Costa Rica                   |         1 |           1 |            1 |    2004    |   2004    |
+|            East Timor | East Timor                   |        10 |          12 |            1 |    2004    |   2017    |
+|                  Fiji | Fiji                         |        10 |          17 |            1 |    1999    |   2019    |
+|                France | Europa Island                |         1 |           1 |            1 |    2002    |   2002    |
+|                France | French Polynesia             |       150 |        2000 |            6 |    1987    |   2022    |
+|                France | Mayotte                      |        20 |          87 |            1 |    2003    |   2017    |
+|                France | New Caledonia                |       721 |        3056 |            6 |    1997    |   2023    |
+|                France | Réunion                      |        32 |         133 |            1 |    2003    |   2016    |
+|                 India | India                        |         1 |           1 |            1 |    1998    |   1998    |
+|             Indonesia | Indonesia                    |       547 |         907 |            1 |    1997    |   2022    |
+|                 Japan | Japan                        |        44 |         102 |            1 |    1997    |   2015    |
+|                 Kenya | Kenya                        |         6 |           6 |            1 |    2003    |   2004    |
+|              Kiribati | Gilbert Islands              |        18 |          18 |            2 |    2011    |   2018    |
+|            Madagascar | Madagascar                   |        42 |          54 |            1 |    2001    |   2019    |
+|              Malaysia | Malaysia                     |       621 |        2174 |            2 |    1997    |   2021    |
+|              Maldives | Maldives                     |       145 |         211 |            1 |    1997    |   2022    |
+|      Marshall Islands | Marshall Islands             |        71 |          85 |            2 |    2002    |   2020    |
+|            Micronesia | Micronesia                   |       168 |         385 |            2 |    2000    |   2020    |
+|            Mozambique | Mozambique                   |        13 |          14 |            1 |    1997    |   2006    |
+|               Myanmar | Myanmar                      |        22 |          29 |            1 |    2001    |   2013    |
+|           New Zealand | Cook Islands                 |         2 |           7 |            2 |    2005    |   2019    |
+|                 Palau | Palau                        |         6 |          16 |            1 |    1997    |   2006    |
+|      Papua New Guinea | Papua New Guinea             |        54 |          70 |            1 |    1998    |   2009    |
+|           Philippines | Philippines                  |       472 |         703 |            1 |    1997    |   2020    |
+| Republic of Mauritius | Republic of Mauritius        |        10 |          12 |            1 |    1999    |   2003    |
+|                 Samoa | Samoa                        |         1 |           3 |            1 |    2013    |   2019    |
+|            Seychelles | Seychelles                   |         7 |           7 |            1 |    1997    |   2001    |
+|       Solomon Islands | Solomon Islands              |        67 |         164 |            2 |    2005    |   2013    |
+|          South Africa | South Africa                 |         5 |           6 |            1 |    2001    |   2005    |
+|             Sri Lanka | Sri Lanka                    |         3 |           3 |            1 |    2003    |   2003    |
+|                Taiwan | Taiwan                       |       103 |         195 |            1 |    1997    |   2020    |
+|              Tanzania | Tanzania                     |         9 |          21 |            1 |    1997    |   2008    |
+|              Thailand | Thailand                     |       148 |         245 |            1 |    1998    |   2022    |
+|                 Tonga | Tonga                        |         4 |           9 |            2 |    2002    |   2019    |
+|        United Kingdom | Pitcairn                     |         1 |           5 |            1 |    2009    |   2018    |
+|         United States | American Samoa               |       826 |         886 |            3 |    1997    |   2019    |
+|         United States | Guam                         |       301 |         353 |            4 |    1997    |   2021    |
+|         United States | Hawaii                       |      1725 |        1915 |            3 |    1997    |   2021    |
+|         United States | Howland and Baker islands    |       150 |         150 |            1 |    2015    |   2017    |
+|         United States | Jarvis Island                |       222 |         222 |            1 |    2015    |   2017    |
+|         United States | Johnston Atoll               |        46 |          46 |            1 |    2015    |   2015    |
+|         United States | Northern Mariana Islands     |       679 |         840 |            3 |    1999    |   2020    |
+|         United States | Palmyra Atoll                |       186 |         186 |            1 |    2015    |   2015    |
+|         United States | United States Virgin Islands |         8 |         236 |            2 |    1987    |   2021    |
+|         United States | Wake Island                  |       146 |         146 |            1 |    2014    |   2017    |
+|               Vanuatu | Vanuatu                      |        23 |          31 |            1 |    2004    |   2012    |
+|               Vietnam | Vietnam                      |       182 |         356 |            1 |    1998    |   2011    |
 
 ## 7. Sponsors
 
@@ -347,27 +411,29 @@ The following organizations have funded the realization of the
     #> [1] stats     graphics  grDevices utils     datasets  methods   base     
     #> 
     #> other attached packages:
-    #>  [1] kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.22    knitr_1.43       
-    #>  [5] sf_1.0-13         taxize_0.9.100    leaflet_2.1.2     DT_0.28          
-    #>  [9] formattable_0.2.1 lubridate_1.9.2   forcats_1.0.0     stringr_1.5.0    
+    #>  [1] kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.22    taxize_0.9.100   
+    #>  [5] leaflet_2.1.2     DT_0.28           formattable_0.2.1 knitr_1.43       
+    #>  [9] sf_1.0-13         lubridate_1.9.2   forcats_1.0.0     stringr_1.5.0    
     #> [13] dplyr_1.1.2       purrr_1.0.1       readr_2.1.4       tidyr_1.3.0      
-    #> [17] tibble_3.2.1      ggplot2_3.4.2     tidyverse_2.0.0  
+    #> [17] tibble_3.2.1      ggplot2_3.4.2     tidyverse_2.0.0   extrafont_0.19   
     #> 
     #> loaded via a namespace (and not attached):
-    #>  [1] httr_1.4.6         jsonlite_1.8.5     viridisLite_0.4.2  foreach_1.5.2     
-    #>  [5] bold_1.3.0         yaml_2.3.7         pillar_1.9.0       lattice_0.21-8    
-    #>  [9] glue_1.6.2         uuid_1.1-0         digest_0.6.31      rvest_1.0.3       
-    #> [13] colorspace_2.1-0   htmltools_0.5.5    pkgconfig_2.0.3    httpcode_0.3.0    
-    #> [17] webshot_0.5.4      scales_1.2.1       svglite_2.1.1      tzdb_0.4.0        
-    #> [21] timechange_0.2.0   proxy_0.4-27       generics_0.1.3     withr_2.5.0       
-    #> [25] lazyeval_0.2.2     cli_3.6.1          magrittr_2.0.3     crayon_1.5.2      
-    #> [29] evaluate_0.21      fansi_1.0.4        nlme_3.1-162       xml2_1.3.4        
-    #> [33] class_7.3-22       tools_4.2.3        data.table_1.14.8  hms_1.1.3         
-    #> [37] lifecycle_1.0.3    munsell_0.5.0      compiler_4.2.3     e1071_1.7-13      
-    #> [41] systemfonts_1.0.4  rlang_1.1.1        classInt_0.4-9     units_0.8-2       
-    #> [45] grid_4.2.3         conditionz_0.1.0   iterators_1.0.14   rstudioapi_0.14   
-    #> [49] htmlwidgets_1.6.2  crosstalk_1.2.0    gtable_0.3.3       codetools_0.2-19  
-    #> [53] DBI_1.1.3          curl_5.0.1         R6_2.5.1           zoo_1.8-12        
-    #> [57] fastmap_1.1.1      utf8_1.2.3         KernSmooth_2.23-21 ape_5.7-1         
-    #> [61] stringi_1.7.12     parallel_4.2.3     crul_1.4.0         Rcpp_1.0.10       
-    #> [65] vctrs_0.6.2        tidyselect_1.2.0   xfun_0.39
+    #>  [1] nlme_3.1-162       bold_1.3.0         webshot_0.5.4      httr_1.4.6        
+    #>  [5] tools_4.2.3        utf8_1.2.3         R6_2.5.1           KernSmooth_2.23-21
+    #>  [9] DBI_1.1.3          lazyeval_0.2.2     colorspace_2.1-0   withr_2.5.0       
+    #> [13] tidyselect_1.2.0   curl_5.0.1         compiler_4.2.3     extrafontdb_1.0   
+    #> [17] textshaping_0.3.6  cli_3.6.1          rvest_1.0.3        xml2_1.3.4        
+    #> [21] scales_1.2.1       classInt_0.4-9     proxy_0.4-27       systemfonts_1.0.4 
+    #> [25] digest_0.6.31      svglite_2.1.1      pkgconfig_2.0.3    htmltools_0.5.5   
+    #> [29] fastmap_1.1.1      htmlwidgets_1.6.2  rlang_1.1.1        rstudioapi_0.14   
+    #> [33] httpcode_0.3.0     farver_2.1.1       generics_0.1.3     zoo_1.8-12        
+    #> [37] jsonlite_1.8.5     crosstalk_1.2.0    magrittr_2.0.3     s2_1.1.4          
+    #> [41] Rcpp_1.0.10        munsell_0.5.0      fansi_1.0.4        ape_5.7-1         
+    #> [45] lifecycle_1.0.3    stringi_1.7.12     yaml_2.3.7         grid_4.2.3        
+    #> [49] parallel_4.2.3     crayon_1.5.2       lattice_0.21-8     conditionz_0.1.0  
+    #> [53] hms_1.1.3          pillar_1.9.0       uuid_1.1-0         codetools_0.2-19  
+    #> [57] crul_1.4.0         wk_0.7.3           glue_1.6.2         evaluate_0.21     
+    #> [61] data.table_1.14.8  vctrs_0.6.2        tzdb_0.4.0         foreach_1.5.2     
+    #> [65] Rttf2pt1_1.3.12    gtable_0.3.3       xfun_0.39          e1071_1.7-13      
+    #> [69] ragg_1.2.5         class_7.3-22       viridisLite_0.4.2  iterators_1.0.14  
+    #> [73] units_0.8-2        timechange_0.2.0
