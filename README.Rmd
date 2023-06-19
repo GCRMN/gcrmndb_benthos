@@ -7,7 +7,7 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
+  comment = "",
   out.width = "100%"
 )
 options(tibble.print_min = 5, tibble.print_max = 5)
@@ -102,6 +102,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 | Data aggregator        | Data analyst responsible for the data integration process. |
 | Data integration       | Process of combining, merging, or joining data together, in order to make what were distinct, multiple data objects, into a single, unified data object ([Schildhauer, 2018](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8)).|
 | Data provider          | A person or an institution sharing a dataset for which they have been or are involved in the acquisition of the data contained in the dataset. |
+| Data standardization   | Process of converting the data format of a given dataset to a common data format (*i.e.* variables names and units). Data standardization is the preliminary step of data integration. |
 | Synthetic dataset      | A dataset resulting from the integration of multiple existing datasets ([Poisot *et al*., 2016](https://onlinelibrary.wiley.com/doi/10.1111/ecog.01941)). |
 
 ### 2.2 Workflow
@@ -376,6 +377,7 @@ library(knitr)
 library(rmarkdown)
 library(plotly)
 library(kableExtra)
+library(mermaidr)
 
 # 2. Print session info ----
 

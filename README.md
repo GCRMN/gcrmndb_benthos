@@ -104,13 +104,14 @@ individual datasets.
 
 **Table 1.** Definition of main terms used in this README.
 
-|              Term | Definition                                                                                                                                                                                                                                    |
-|------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           Dataset | A collection of related sets of information that is composed of separate elements (data files) but can be manipulated as a unit by a computer.                                                                                                |
-|   Data aggregator | Data analyst responsible for the data integration process.                                                                                                                                                                                    |
-|  Data integration | Process of combining, merging, or joining data together, in order to make what were distinct, multiple data objects, into a single, unified data object ([Schildhauer, 2018](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8)). |
-|     Data provider | A person or an institution sharing a dataset for which they have been or are involved in the acquisition of the data contained in the dataset.                                                                                                |
-| Synthetic dataset | A dataset resulting from the integration of multiple existing datasets ([Poisot *et al*., 2016](https://onlinelibrary.wiley.com/doi/10.1111/ecog.01941)).                                                                                     |
+|                 Term | Definition                                                                                                                                                                                                                                    |
+|---------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              Dataset | A collection of related sets of information that is composed of separate elements (data files) but can be manipulated as a unit by a computer.                                                                                                |
+|      Data aggregator | Data analyst responsible for the data integration process.                                                                                                                                                                                    |
+|     Data integration | Process of combining, merging, or joining data together, in order to make what were distinct, multiple data objects, into a single, unified data object ([Schildhauer, 2018](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8)). |
+|        Data provider | A person or an institution sharing a dataset for which they have been or are involved in the acquisition of the data contained in the dataset.                                                                                                |
+| Data standardization | Process of converting the data format of a given dataset to a common data format (*i.e.* variables names and units). Data standardization is the preliminary step of data integration.                                                        |
+|    Synthetic dataset | A dataset resulting from the integration of multiple existing datasets ([Poisot *et al*., 2016](https://onlinelibrary.wiley.com/doi/10.1111/ecog.01941)).                                                                                     |
 
 ### 2.2 Workflow
 
@@ -250,7 +251,7 @@ correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-06-14, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2023-06-19, the `gcrmndb_benthos` synthetic dataset contains a
 total of 791,526 observations (*i.e* rows) representing 8,810 sites and
 20,816 surveys.
 
@@ -396,44 +397,48 @@ The following organizations have funded the realization of the
 
 ## 9. Reproducibility parameters
 
-    #> R version 4.2.3 (2023-03-15 ucrt)
-    #> Platform: x86_64-w64-mingw32/x64 (64-bit)
-    #> Running under: Windows 10 x64 (build 18363)
-    #> 
-    #> Matrix products: default
-    #> 
-    #> locale:
-    #> [1] LC_COLLATE=French_France.utf8  LC_CTYPE=French_France.utf8   
-    #> [3] LC_MONETARY=French_France.utf8 LC_NUMERIC=C                  
-    #> [5] LC_TIME=French_France.utf8    
-    #> 
-    #> attached base packages:
-    #> [1] stats     graphics  grDevices utils     datasets  methods   base     
-    #> 
-    #> other attached packages:
-    #>  [1] kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.22    taxize_0.9.100   
-    #>  [5] leaflet_2.1.2     DT_0.28           formattable_0.2.1 knitr_1.43       
-    #>  [9] sf_1.0-13         lubridate_1.9.2   forcats_1.0.0     stringr_1.5.0    
-    #> [13] dplyr_1.1.2       purrr_1.0.1       readr_2.1.4       tidyr_1.3.0      
-    #> [17] tibble_3.2.1      ggplot2_3.4.2     tidyverse_2.0.0   extrafont_0.19   
-    #> 
-    #> loaded via a namespace (and not attached):
-    #>  [1] nlme_3.1-162       bold_1.3.0         webshot_0.5.4      httr_1.4.6        
-    #>  [5] tools_4.2.3        utf8_1.2.3         R6_2.5.1           KernSmooth_2.23-21
-    #>  [9] DBI_1.1.3          lazyeval_0.2.2     colorspace_2.1-0   withr_2.5.0       
-    #> [13] tidyselect_1.2.0   curl_5.0.1         compiler_4.2.3     extrafontdb_1.0   
-    #> [17] textshaping_0.3.6  cli_3.6.1          rvest_1.0.3        xml2_1.3.4        
-    #> [21] scales_1.2.1       classInt_0.4-9     proxy_0.4-27       systemfonts_1.0.4 
-    #> [25] digest_0.6.31      svglite_2.1.1      pkgconfig_2.0.3    htmltools_0.5.5   
-    #> [29] fastmap_1.1.1      htmlwidgets_1.6.2  rlang_1.1.1        rstudioapi_0.14   
-    #> [33] httpcode_0.3.0     farver_2.1.1       generics_0.1.3     zoo_1.8-12        
-    #> [37] jsonlite_1.8.5     crosstalk_1.2.0    magrittr_2.0.3     s2_1.1.4          
-    #> [41] Rcpp_1.0.10        munsell_0.5.0      fansi_1.0.4        ape_5.7-1         
-    #> [45] lifecycle_1.0.3    stringi_1.7.12     yaml_2.3.7         grid_4.2.3        
-    #> [49] parallel_4.2.3     crayon_1.5.2       lattice_0.21-8     conditionz_0.1.0  
-    #> [53] hms_1.1.3          pillar_1.9.0       uuid_1.1-0         codetools_0.2-19  
-    #> [57] crul_1.4.0         wk_0.7.3           glue_1.6.2         evaluate_0.21     
-    #> [61] data.table_1.14.8  vctrs_0.6.2        tzdb_0.4.0         foreach_1.5.2     
-    #> [65] Rttf2pt1_1.3.12    gtable_0.3.3       xfun_0.39          e1071_1.7-13      
-    #> [69] ragg_1.2.5         class_7.3-22       viridisLite_0.4.2  iterators_1.0.14  
-    #> [73] units_0.8-2        timechange_0.2.0
+    R version 4.3.1 (2023-06-16 ucrt)
+    Platform: x86_64-w64-mingw32/x64 (64-bit)
+    Running under: Windows 10 x64 (build 18363)
+
+    Matrix products: default
+
+
+    locale:
+    [1] LC_COLLATE=French_France.utf8  LC_CTYPE=French_France.utf8   
+    [3] LC_MONETARY=French_France.utf8 LC_NUMERIC=C                  
+    [5] LC_TIME=French_France.utf8    
+
+    time zone: Europe/Paris
+    tzcode source: internal
+
+    attached base packages:
+    [1] stats     graphics  grDevices utils     datasets  methods   base     
+
+    other attached packages:
+     [1] mermaidr_0.6.4    kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.22   
+     [5] taxize_0.9.100    leaflet_2.1.2     DT_0.28           formattable_0.2.1
+     [9] knitr_1.43        sf_1.0-13         lubridate_1.9.2   forcats_1.0.0    
+    [13] stringr_1.5.0     dplyr_1.1.2       purrr_1.0.1       readr_2.1.4      
+    [17] tidyr_1.3.0       tibble_3.2.1      ggplot2_3.4.2     tidyverse_2.0.0  
+
+    loaded via a namespace (and not attached):
+     [1] tidyselect_1.2.0   viridisLite_0.4.2  farver_2.1.1       fastmap_1.1.1     
+     [5] lazyeval_0.2.2     promises_1.2.0.1   digest_0.6.31      timechange_0.2.0  
+     [9] lifecycle_1.0.3    magrittr_2.0.3     compiler_4.3.1     rlang_1.1.1       
+    [13] tools_4.3.1        utf8_1.2.3         yaml_2.3.7         data.table_1.14.8 
+    [17] conditionz_0.1.0   htmlwidgets_1.6.2  classInt_0.4-9     curl_5.0.1        
+    [21] xml2_1.3.4         KernSmooth_2.23-21 httpcode_0.3.0     withr_2.5.0       
+    [25] grid_4.3.1         fansi_1.0.4        e1071_1.7-13       colorspace_2.1-0  
+    [29] scales_1.2.1       iterators_1.0.14   crul_1.4.0         cli_3.6.1         
+    [33] crayon_1.5.2       ragg_1.2.5         generics_0.1.3     rstudioapi_0.14   
+    [37] httr_1.4.6         tzdb_0.4.0         DBI_1.1.3          ape_5.7-1         
+    [41] proxy_0.4-27       rvest_1.0.3        parallel_4.3.1     s2_1.1.4          
+    [45] vctrs_0.6.3        webshot_0.5.4      jsonlite_1.8.5     hms_1.1.3         
+    [49] systemfonts_1.0.4  crosstalk_1.2.0    foreach_1.5.2      units_0.8-2       
+    [53] glue_1.6.2         codetools_0.2-19   stringi_1.7.12     gtable_0.3.3      
+    [57] later_1.3.1        munsell_0.5.0      pillar_1.9.0       htmltools_0.5.5   
+    [61] R6_2.5.1           wk_0.7.3           textshaping_0.3.6  bold_1.3.0        
+    [65] evaluate_0.21      lattice_0.21-8     httpuv_1.6.11      class_7.3-22      
+    [69] Rcpp_1.0.10        uuid_1.1-0         svglite_2.1.1      nlme_3.1-162      
+    [73] xfun_0.39          zoo_1.8-12         pkgconfig_2.0.3   
