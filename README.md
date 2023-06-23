@@ -221,39 +221,40 @@ correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
 | datasetID | rightsHolder                                                                                                                                            | accessRights   | type |  modified  | aggregator |
 |:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------|:----:|:----------:|:----------:|
-|   0001    | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                         | open           | Rp.  | 2022-02-21 |     JW     |
-|   0002    | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                    | open           | Rp.  | 2022-02-21 |     JW     |
+|   0001    | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                         | open           | Rp.  | 21/02/2022 |     JW     |
+|   0002    | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                    | open           | Rp.  | 21/02/2022 |     JW     |
 |   0003    | AIMS LTMP                                                                                                                                               |                |      |            |     JW     |
-|   0004    | [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                  | upon request   | Sh.  | 2022-09-08 |     JW     |
+|   0004    | [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                  | upon request   | Sh.  | 08/09/2022 |     JW     |
 |   0005    | [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)    | upon request   | Sh.  |            |     JW     |
-|   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request   | Sh.  | 2022-12-31 |     JW     |
+|   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request   | Sh.  | 31/12/2022 |     JW     |
 |   0007    | [CRIOBE - ATPP barrier reef](https://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)        | upon request   | Sh.  |            |     JW     |
 |   0008    | [CRIOBE - ATPP outer slope](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                    | upon request   | Sh.  |            |     JW     |
 |   0009    | [Seaview Survey](https://www.nature.com/articles/s41597-020-00698-6)                                                                                    | open           | Pa.  |            |     JW     |
-|   0010    | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                               | open (summary) | Me.  | 2021-06-08 |     JW     |
-|   0011    | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                       | open           | Rp.  | 2021-09-14 |     JW     |
-|   0012    | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                     | open           | Rp.  | 2018-10-12 |     JW     |
-|   0013    | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                  | open           | Rp.  | 2022-11-11 |     JW     |
-|   0014    | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                  | open           | Rp.  | 2021-07-30 |     JW     |
+|   0010    | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                               | open (summary) | Me.  | 08/06/2021 |     JW     |
+|   0011    | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                       | open           | Rp.  | 14/09/2021 |     JW     |
+|   0012    | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                     | open           | Rp.  | 12/10/2018 |     JW     |
+|   0013    | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                  | open           | Rp.  | 11/11/2022 |     JW     |
+|   0014    | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                  | open           | Rp.  | 30/07/2021 |     JW     |
 |   0015    | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/)                                                 | upon request   | Db.  |            |     JW     |
 |   0016    | Biosphere Foundation                                                                                                                                    | upon request   | Sh.  |            |     JW     |
-|   0017    | KNS                                                                                                                                                     | upon request   | Sh.  | 2022-12-27 |     JW     |
-|   0018    | Kiribati                                                                                                                                                | upon request   | Sh.  | 2020-03-05 |     JW     |
-|   0019    | SLN                                                                                                                                                     | upon request   | Sh.  | 2022-05-12 |     JW     |
+|   0017    | KNS                                                                                                                                                     | upon request   | Sh.  | 27/12/2022 |     JW     |
+|   0018    | Kiribati                                                                                                                                                | upon request   | Sh.  | 05/03/2020 |     JW     |
+|   0019    | SLN                                                                                                                                                     | upon request   | Sh.  | 12/05/2022 |     JW     |
 |   0020    | [PACN](https://www.nps.gov/im/pacn/benthic.htm)                                                                                                         | upon request   | Sh.  |            |     JW     |
 |   0021    | RORC                                                                                                                                                    | upon request   | Sh.  |            |     JW     |
 |   0022    | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                          | upon request   | Sh.  |            |     JW     |
 |   0023    | PA-NC                                                                                                                                                   | upon request   | Sh.  |            |     JW     |
 |   0024    | Laurent WANTIEZ                                                                                                                                         | upon request   | Sh.  |            |     JW     |
-|   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 2021-09-08 |     JW     |
-|   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 2021-09-10 |     JW     |
-|   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 2021-09-08 |     JW     |
+|   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 08/09/2021 |     JW     |
+|   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 10/09/2021 |     JW     |
+|   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 08/09/2021 |     JW     |
+|   0028    | [C<sub>2</sub>O Pacific](https://c2o.net.au/our-work-in-the-pacific/)                                                                                   | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-06-19, the `gcrmndb_benthos` synthetic dataset contains a
-total of 791,526 observations (*i.e* rows) representing 8,810 sites and
-20,816 surveys.
+On the 2023-06-23, the `gcrmndb_benthos` synthetic dataset contains a
+total of 791,791 observations (*i.e* rows) representing 8,838 sites and
+20,862 surveys.
 
 ![](figs/map_sites.png)
 
@@ -276,7 +277,7 @@ GCRMN regions.
 |    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
 |          EAS |      2378 |        5232 |            2 |    1997    |   2022    |
 |          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      5577 |       10610 |           19 |    1987    |   2023    |
+|      Pacific |      5605 |       10656 |           20 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       145 |         341 |            1 |    1997    |   2019    |
 
@@ -341,7 +342,7 @@ territories.
 |         United States | Palmyra Atoll                |       186 |         186 |            1 |    2015    |   2015    |
 |         United States | United States Virgin Islands |         8 |         236 |            2 |    1987    |   2021    |
 |         United States | Wake Island                  |       146 |         146 |            1 |    2014    |   2017    |
-|               Vanuatu | Vanuatu                      |        23 |          31 |            1 |    2004    |   2012    |
+|               Vanuatu | Vanuatu                      |        51 |          77 |            2 |    2004    |   2019    |
 |               Vietnam | Vietnam                      |       182 |         356 |            1 |    1998    |   2011    |
 
 ## 7. Sponsors
@@ -421,6 +422,7 @@ The following organizations have funded the realization of the
      [9] knitr_1.43        sf_1.0-13         lubridate_1.9.2   forcats_1.0.0    
     [13] stringr_1.5.0     dplyr_1.1.2       purrr_1.0.1       readr_2.1.4      
     [17] tidyr_1.3.0       tibble_3.2.1      ggplot2_3.4.2     tidyverse_2.0.0  
+    [21] extrafont_0.19   
 
     loaded via a namespace (and not attached):
      [1] tidyselect_1.2.0   viridisLite_0.4.2  farver_2.1.1       fastmap_1.1.1     
@@ -430,15 +432,16 @@ The following organizations have funded the realization of the
     [17] conditionz_0.1.0   htmlwidgets_1.6.2  classInt_0.4-9     curl_5.0.1        
     [21] xml2_1.3.4         KernSmooth_2.23-21 httpcode_0.3.0     withr_2.5.0       
     [25] grid_4.3.1         fansi_1.0.4        e1071_1.7-13       colorspace_2.1-0  
-    [29] scales_1.2.1       iterators_1.0.14   crul_1.4.0         cli_3.6.1         
-    [33] crayon_1.5.2       ragg_1.2.5         generics_0.1.3     rstudioapi_0.14   
-    [37] httr_1.4.6         tzdb_0.4.0         DBI_1.1.3          ape_5.7-1         
-    [41] proxy_0.4-27       rvest_1.0.3        parallel_4.3.1     s2_1.1.4          
-    [45] vctrs_0.6.3        webshot_0.5.4      jsonlite_1.8.5     hms_1.1.3         
-    [49] systemfonts_1.0.4  crosstalk_1.2.0    foreach_1.5.2      units_0.8-2       
-    [53] glue_1.6.2         codetools_0.2-19   stringi_1.7.12     gtable_0.3.3      
-    [57] later_1.3.1        munsell_0.5.0      pillar_1.9.0       htmltools_0.5.5   
-    [61] R6_2.5.1           wk_0.7.3           textshaping_0.3.6  bold_1.3.0        
-    [65] evaluate_0.21      lattice_0.21-8     httpuv_1.6.11      class_7.3-22      
-    [69] Rcpp_1.0.10        uuid_1.1-0         svglite_2.1.1      nlme_3.1-162      
-    [73] xfun_0.39          zoo_1.8-12         pkgconfig_2.0.3   
+    [29] extrafontdb_1.0    scales_1.2.1       iterators_1.0.14   crul_1.4.0        
+    [33] cli_3.6.1          crayon_1.5.2       ragg_1.2.5         generics_0.1.3    
+    [37] rstudioapi_0.14    httr_1.4.6         tzdb_0.4.0         DBI_1.1.3         
+    [41] ape_5.7-1          proxy_0.4-27       rvest_1.0.3        parallel_4.3.1    
+    [45] s2_1.1.4           vctrs_0.6.3        webshot_0.5.4      jsonlite_1.8.5    
+    [49] hms_1.1.3          systemfonts_1.0.4  crosstalk_1.2.0    foreach_1.5.2     
+    [53] units_0.8-2        glue_1.6.2         codetools_0.2-19   stringi_1.7.12    
+    [57] gtable_0.3.3       later_1.3.1        munsell_0.5.0      pillar_1.9.0      
+    [61] htmltools_0.5.5    R6_2.5.1           wk_0.7.3           textshaping_0.3.6 
+    [65] bold_1.3.0         evaluate_0.21      lattice_0.21-8     httpuv_1.6.11     
+    [69] class_7.3-22       Rcpp_1.0.10        uuid_1.1-0         svglite_2.1.1     
+    [73] nlme_3.1-162       Rttf2pt1_1.3.12    xfun_0.39          zoo_1.8-12        
+    [77] pkgconfig_2.0.3   

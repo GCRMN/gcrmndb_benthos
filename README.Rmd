@@ -203,6 +203,7 @@ read.csv2("data/05_data-sources.csv") %>%
                                         "data paper" = "Pa.",
                                         "data repository" = "Rp.",
                                         "data sharing" = "Sh."))) %>% 
+  mutate(rightsHolder = str_replace_all(rightsHolder, "C2O Pacific", "C~2~O Pacific")) %>% 
   select(datasetID, rightsHolder, accessRights, type, modified, aggregator) %>% 
   distinct() %>% 
   kable(align = c("c", "l", "l", "c", "c", "c"))
