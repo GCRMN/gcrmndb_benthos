@@ -481,7 +481,7 @@ save(synthetic_data, file = "../data/09_gcrmndb_benthos.RData")
 
 ```{r}
 
-rmarkdown::render("../README.Rmd")
+rmarkdown::render(input = "../README.Rmd", output_format = "github_document")
 file.remove("../README.html")
 
 ```
