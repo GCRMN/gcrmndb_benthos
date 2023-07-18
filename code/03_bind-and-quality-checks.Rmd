@@ -383,7 +383,10 @@ synthetic_data <- synthetic_data %>%
 
 # 2. Quality check number 4 ----
 
-reef_buffer <- st_read("../data/08_quality-checks-buffer/buffer-reef.shp")
+reef_buffer <- st_read("../data/08_quality-checks-buffer/reefs-buffer_gee/reef_buffer.shp") %>% 
+  st_transform(crs = 4326) %>% 
+  st_wrap_dateline() %>% 
+  st_make_valid()
 
 synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FALSE) %>% 
   as_tibble() %>% 
@@ -474,11 +477,12 @@ save(synthetic_data, file = "../data/09_gcrmndb_benthos.RData")
 
 ```
 
-# Reproducibility
+# Update the README
 
 ```{r}
 
-sessionInfo()
+rmarkdown::render("../README.Rmd")
+file.remove("../README.html")
 
 ```
 
