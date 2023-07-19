@@ -213,7 +213,7 @@ read.csv2("data/05_data-sources.csv") %>%
 
 ## 6. Description of the synthetic dataset
 
-On the `r lubridate::as_date(Sys.time())`, the `gcrmndb_benthos` synthetic dataset contains a total of `r format(nrow(data_benthos), big.mark = ",")` observations (*i.e* rows) representing `r format(as.numeric(data_descriptors(data_benthos)[1,"nb_sites"]), big.mark = ",")` sites and `r format(as.numeric(data_descriptors(data_benthos)[1,"nb_surveys"]), big.mark = ",")` surveys.
+On the `r lubridate::as_date(Sys.time())`, the `gcrmndb_benthos` synthetic dataset contains a total of **`r format(nrow(data_benthos), big.mark = ",")` observations** (*i.e* rows) representing **`r format(as.numeric(data_descriptors(data_benthos)[1,"nb_sites"]), big.mark = ",")` sites** and **`r format(as.numeric(data_descriptors(data_benthos)[1,"nb_surveys"]), big.mark = ",")` surveys**.
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 
