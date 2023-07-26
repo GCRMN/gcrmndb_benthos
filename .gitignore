@@ -9,9 +9,10 @@
 *.html
 # folder #
 ##########
-data/
 misc/
 output/
+data/*
+!*data/03_tax-recategorisation.csv
 figs/hex_logo.svg
 figs/workflow.svg
 .httr-oauth
