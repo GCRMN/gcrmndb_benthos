@@ -249,7 +249,7 @@ considered. The column names (except *aggregator*) correspond to
 |   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 08/09/2021 |     JW     |
 |   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 10/09/2021 |     JW     |
 |   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 08/09/2021 |     JW     |
-|   0028    | [C<sub>2</sub>O Pacific](https://c2o.net.au/our-work-in-the-pacific/)                                                                                   | upon request   | Sh.  |            |     JW     |
+|   0028    | [C<sub>2</sub>O Pacific](https://c2o.net.au/our-work-in-the-pacific/)                                                                                   | open (summary) | Rc.  |            |     JW     |
 |   0029    | [2022_BAF and WISH](https://dashboard.datamermaid.org/?project=2022_BAF%20and%20WISH%20coral%20reef%20surveys%20in%20Tailevu_Ovalau)                    | open (summary) | Me.  | 06/06/2022 |     JW     |
 |   0030    | [PNG BAF 2019](https://dashboard.datamermaid.org/?project=PNG%20BAF%202019)                                                                             | open (summary) | Me.  | 31/10/2019 |     JW     |
 |   0031    | [2017_Northern Lau](https://dashboard.datamermaid.org/?project=2017_Northern%20Lau)                                                                     | open (summary) | Me.  | 08/02/2021 |     JW     |
@@ -262,8 +262,8 @@ considered. The column names (except *aggregator*) correspond to
 ## 6. Description of the synthetic dataset
 
 On the 2023-07-26, the `gcrmndb_benthos` synthetic dataset contains a
-total of **809,666 observations** (*i.e* rows) representing **9,438
-sites** and **21,793 surveys**.
+total of **822,267 observations** (*i.e* rows) representing **9,431
+sites** and **21,775 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -286,7 +286,7 @@ GCRMN regions.
 |    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
 |          EAS |      2378 |        5232 |            2 |    1997    |   2022    |
 |          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      6205 |       11587 |           32 |    1987    |   2023    |
+|      Pacific |      6198 |       11569 |           32 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       145 |         341 |            1 |    1997    |   2019    |
 
@@ -351,7 +351,7 @@ territories.
 |         United States | Palmyra Atoll                |       186 |         186 |            1 |    2015    |   2015    |
 |         United States | United States Virgin Islands |         8 |         236 |            2 |    1987    |   2021    |
 |         United States | Wake Island                  |       146 |         146 |            1 |    2014    |   2017    |
-|               Vanuatu | Vanuatu                      |        51 |          77 |            2 |    2004    |   2019    |
+|               Vanuatu | Vanuatu                      |        44 |          59 |            2 |    2004    |   2019    |
 |               Vietnam | Vietnam                      |       182 |         356 |            1 |    1998    |   2011    |
 
 ## 7. Sponsors
