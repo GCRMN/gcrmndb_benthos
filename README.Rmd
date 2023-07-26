@@ -186,7 +186,7 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 ## 5. List of individual datasets
 
 
-**Table 5.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *type* is the type of individual dataset storage and/or acquisition (*Ar.* = article, *Db.* = database, *Me.* = [MERMAID](https://dashboard.datamermaid.org/), *Pa.* = data paper, *Rp.* = data repository, *Sh.* = data sharing), *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The column names (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+**Table 5.** List of individual datasets integrated in the `gcrmndb_benthos` synthetic dataset. The column *datasetID* is the identifier of individual datasets integrated, *rightsHolder* is the person or organization owning or managing rights over the resource, *accessRights* is the indication of the security status of the resource, *type* is the type of individual dataset storage and/or acquisition (*Ar.* = article, *Db.* = database, *Me.* = [MERMAID](https://dashboard.datamermaid.org/), *Pa.* = data paper, *Rc.* = [ReefCloud](https://reefcloud.ai/dashboard/), *Rp.* = data repository, *Sh.* = data sharing), *modified* is the date (YYYY-MM-DD) of the last version of the individual dataset, *aggregator* is the name of the person in charge of the data integration for the individual dataset considered. The column names (except *aggregator*) correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -200,6 +200,7 @@ read.csv2("data/05_data-sources.csv") %>%
          type = str_replace_all(type, c("article" = "Ar.",
                                         "database" = "Db.",
                                         "mermaid" = "Me.",
+                                        "reefcloud" = "Rc.",
                                         "data paper" = "Pa.",
                                         "data repository" = "Rp.",
                                         "data sharing" = "Sh."))) %>% 

@@ -212,12 +212,13 @@ person or organization owning or managing rights over the resource,
 *accessRights* is the indication of the security status of the resource,
 *type* is the type of individual dataset storage and/or acquisition
 (*Ar.* = article, *Db.* = database, *Me.* =
-[MERMAID](https://dashboard.datamermaid.org/), *Pa.* = data paper, *Rp.*
-= data repository, *Sh.* = data sharing), *modified* is the date
-(YYYY-MM-DD) of the last version of the individual dataset, *aggregator*
-is the name of the person in charge of the data integration for the
-individual dataset considered. The column names (except *aggregator*)
-correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
+[MERMAID](https://dashboard.datamermaid.org/), *Pa.* = data paper, *Rc.*
+= [ReefCloud](https://reefcloud.ai/dashboard/), *Rp.* = data repository,
+*Sh.* = data sharing), *modified* is the date (YYYY-MM-DD) of the last
+version of the individual dataset, *aggregator* is the name of the
+person in charge of the data integration for the individual dataset
+considered. The column names (except *aggregator*) correspond to
+[DarwinCore terms](https://dwc.tdwg.org/terms).
 
 | datasetID | rightsHolder                                                                                                                                            | accessRights   | type |  modified  | aggregator |
 |:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------|:----:|:----------:|:----------:|
@@ -244,7 +245,7 @@ correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 |   0021    | RORC                                                                                                                                                    | upon request   | Sh.  |            |     JW     |
 |   0022    | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                          | upon request   | Sh.  |            |     JW     |
 |   0023    | PA-NC                                                                                                                                                   | upon request   | Sh.  |            |     JW     |
-|   0024    | Laurent WANTIEZ                                                                                                                                         | upon request   | Sh.  |            |     JW     |
+|   0024    | [Laurent WANTIEZ](https://scholar.google.fr/citations?user=4H_FTE0AAAAJ&hl=fr&oi=ao)                                                                    | upon request   | Sh.  |            |     JW     |
 |   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 08/09/2021 |     JW     |
 |   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 10/09/2021 |     JW     |
 |   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 08/09/2021 |     JW     |
@@ -256,12 +257,13 @@ correspond to [DarwinCore terms](https://dwc.tdwg.org/terms).
 |   0033    | [2019_Dama Bureta](https://dashboard.datamermaid.org/?project=2019_Dama%20Bureta%20Waibula%20and%20Dawasamu-WISH%20ecological%20survey)                 | open (summary) | Me.  | 12/08/2020 |     JW     |
 |   0034    | [2020_NamenaAndVatuira](https://dashboard.datamermaid.org/?project=2020_NamenaAndVatuira%20coral%20reef%20surveys)                                      | open (summary) | Me.  | 12/10/2020 |     JW     |
 |   0035    | [Lau Seascape Surveys](https://dashboard.datamermaid.org/?project=Lau%20Seascape%20Surveys%20March%202022)                                              | open (summary) | Me.  | 18/04/2022 |     JW     |
+|   0036    | SI_Munda                                                                                                                                                | open (summary) | Rc.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-07-19, the `gcrmndb_benthos` synthetic dataset contains a
-total of **805,539 observations** (*i.e* rows) representing **9,432
-sites** and **21,786 surveys**.
+On the 2023-07-26, the `gcrmndb_benthos` synthetic dataset contains a
+total of **809,666 observations** (*i.e* rows) representing **9,438
+sites** and **21,793 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -284,7 +286,7 @@ GCRMN regions.
 |    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
 |          EAS |      2378 |        5232 |            2 |    1997    |   2022    |
 |          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      6199 |       11580 |           31 |    1987    |   2023    |
+|      Pacific |      6205 |       11587 |           32 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       145 |         341 |            1 |    1997    |   2019    |
 
@@ -331,7 +333,7 @@ territories.
 | Republic of Mauritius | Republic of Mauritius        |        10 |          12 |            1 |    1999    |   2003    |
 |                 Samoa | Samoa                        |         1 |           3 |            1 |    2013    |   2019    |
 |            Seychelles | Seychelles                   |         7 |           7 |            1 |    1997    |   2001    |
-|       Solomon Islands | Solomon Islands              |        67 |         164 |            2 |    2005    |   2013    |
+|       Solomon Islands | Solomon Islands              |        73 |         171 |            3 |    2005    |   2021    |
 |          South Africa | South Africa                 |         5 |           6 |            1 |    2001    |   2005    |
 |             Sri Lanka | Sri Lanka                    |         3 |           3 |            1 |    2003    |   2003    |
 |                Taiwan | Taiwan                       |       103 |         195 |            1 |    1997    |   2020    |
