@@ -263,8 +263,8 @@ considered. The column names (except *aggregator*) correspond to
 ## 6. Description of the synthetic dataset
 
 On the 2023-08-21, the `gcrmndb_benthos` synthetic dataset contains a
-total of **822,549 observations** (*i.e* rows) representing **9,439
-sites** and **21,887 surveys**.
+total of **822,756 observations** (*i.e* rows) representing **9,439
+sites** and **21,883 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -287,7 +287,7 @@ GCRMN regions.
 |    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
 |          EAS |      2378 |        5232 |            2 |    1997    |   2022    |
 |          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      6206 |       11681 |           33 |    1987    |   2023    |
+|      Pacific |      6206 |       11677 |           33 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       145 |         341 |            1 |    1997    |   2019    |
 
@@ -349,7 +349,7 @@ territories.
 |         United States | Jarvis Island                |       222 |         222 |            1 |    2015    |   2017    |
 |         United States | Johnston Atoll               |        46 |          46 |            1 |    2015    |   2015    |
 |         United States | Northern Mariana Islands     |       679 |         840 |            3 |    1999    |   2020    |
-|         United States | Palmyra Atoll                |       194 |         298 |            2 |    2009    |   2019    |
+|         United States | Palmyra Atoll                |       194 |         294 |            2 |    2009    |   2019    |
 |         United States | United States Virgin Islands |         8 |         236 |            2 |    1987    |   2021    |
 |         United States | Wake Island                  |       146 |         146 |            1 |    2014    |   2017    |
 |               Vanuatu | Vanuatu                      |        44 |          59 |            2 |    2004    |   2019    |
