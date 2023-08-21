@@ -258,12 +258,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0034    | [2020_NamenaAndVatuira](https://dashboard.datamermaid.org/?project=2020_NamenaAndVatuira%20coral%20reef%20surveys)                                      | open (summary) | Me.  | 12/10/2020 |     JW     |
 |   0035    | [Lau Seascape Surveys](https://dashboard.datamermaid.org/?project=Lau%20Seascape%20Surveys%20March%202022)                                              | open (summary) | Me.  | 18/04/2022 |     JW     |
 |   0036    | SI_Munda                                                                                                                                                | open (summary) | Rc.  |            |     JW     |
+|   0037    | [Khen et al, 2022](https://link.springer.com/article/10.1007/s00338-022-02271-6)                                                                        | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-07-26, the `gcrmndb_benthos` synthetic dataset contains a
-total of **822,267 observations** (*i.e* rows) representing **9,431
-sites** and **21,775 surveys**.
+On the 2023-08-21, the `gcrmndb_benthos` synthetic dataset contains a
+total of **822,549 observations** (*i.e* rows) representing **9,439
+sites** and **21,887 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -286,7 +287,7 @@ GCRMN regions.
 |    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
 |          EAS |      2378 |        5232 |            2 |    1997    |   2022    |
 |          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      6198 |       11569 |           32 |    1987    |   2023    |
+|      Pacific |      6206 |       11681 |           33 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       145 |         341 |            1 |    1997    |   2019    |
 
@@ -348,7 +349,7 @@ territories.
 |         United States | Jarvis Island                |       222 |         222 |            1 |    2015    |   2017    |
 |         United States | Johnston Atoll               |        46 |          46 |            1 |    2015    |   2015    |
 |         United States | Northern Mariana Islands     |       679 |         840 |            3 |    1999    |   2020    |
-|         United States | Palmyra Atoll                |       186 |         186 |            1 |    2015    |   2015    |
+|         United States | Palmyra Atoll                |       194 |         298 |            2 |    2009    |   2019    |
 |         United States | United States Virgin Islands |         8 |         236 |            2 |    1987    |   2021    |
 |         United States | Wake Island                  |       146 |         146 |            1 |    2014    |   2017    |
 |               Vanuatu | Vanuatu                      |        44 |          59 |            2 |    2004    |   2019    |

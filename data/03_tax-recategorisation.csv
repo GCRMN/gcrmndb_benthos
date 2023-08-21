@@ -147,6 +147,7 @@ cantharellus;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Cant
 caulastrea massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Caulastraea;NA;TRUE
 caulerpa;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Caulerpaceae;Caulerpa;NA;TRUE
 caulerpa sp;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Caulerpaceae;Caulerpa;NA;TRUE
+cca;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 cca growing on hard substrate;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 cca growing on rubble;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 chlorodesmis sp;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Udoteaceae;Chlorodesmis;NA;TRUE
@@ -396,6 +397,7 @@ hard coral - tfp: visible round corallites;NA;NA;NA;Cnidaria;Anthozoa;Hexacorall
 hard coral - undaria tenuifoila;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Agaricia;Agaricia tenuifolia;TRUE
 hard coral bleached;Hard coral;NA;Bleached;NA;NA;NA;NA;NA;NA;NA;TRUE
 hard coral dead;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+hard corals;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 hard substrate;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 hardcoral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 heliopora;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Scleralcyonacea;Helioporidae;Heliopora;NA;TRUE
@@ -764,6 +766,7 @@ soft coral briareidae and rhytisma;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA
 soft coral neptheidae;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 soft coral other;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 soft coral xeniidae;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Malacalcyonacea;Xeniidae;NA;NA;TRUE
+soft corals;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 softcoral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 solitary coral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 sponge;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
