@@ -249,7 +249,7 @@ considered. The column names (except *aggregator*) correspond to
 |   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 08/09/2021 |     JW     |
 |   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 10/09/2021 |     JW     |
 |   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 08/09/2021 |     JW     |
-|   0028    | [C<sub>2</sub>O Pacific](https://c2o.net.au/our-work-in-the-pacific/)                                                                                   | open (summary) | Rc.  |            |     JW     |
+|   0028    | [C<sub>2</sub>O Pacific](https://c2o.net.au/our-work-in-the-pacific/)                                                                                   | upon request   | Rc.  |            |     JW     |
 |   0029    | [2022_BAF and WISH](https://dashboard.datamermaid.org/?project=2022_BAF%20and%20WISH%20coral%20reef%20surveys%20in%20Tailevu_Ovalau)                    | open (summary) | Me.  | 06/06/2022 |     JW     |
 |   0030    | [PNG BAF 2019](https://dashboard.datamermaid.org/?project=PNG%20BAF%202019)                                                                             | open (summary) | Me.  | 31/10/2019 |     JW     |
 |   0031    | [2017_Northern Lau](https://dashboard.datamermaid.org/?project=2017_Northern%20Lau)                                                                     | open (summary) | Me.  | 08/02/2021 |     JW     |
@@ -259,12 +259,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0035    | [Lau Seascape Surveys](https://dashboard.datamermaid.org/?project=Lau%20Seascape%20Surveys%20March%202022)                                              | open (summary) | Me.  | 18/04/2022 |     JW     |
 |   0036    | SI_Munda                                                                                                                                                | open (summary) | Rc.  |            |     JW     |
 |   0037    | [Khen et al, 2022](https://link.springer.com/article/10.1007/s00338-022-02271-6)                                                                        | upon request   | Sh.  |            |     JW     |
+|   0038    | [Reef Life Survey](https://doi.org/10.1016/j.biocon.2020.108855)                                                                                        | upon request   | Sh.  | 13/09/2023 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-08-21, the `gcrmndb_benthos` synthetic dataset contains a
-total of **822,756 observations** (*i.e* rows) representing **9,439
-sites** and **21,883 surveys**.
+On the 2023-09-15, the `gcrmndb_benthos` synthetic dataset contains a
+total of **858,670 observations** (*i.e* rows) representing **10,820
+sites** and **23,810 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -283,13 +284,15 @@ GCRMN regions.
 
 | GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |-------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|    Australia |       546 |        4175 |            2 |    1995    |   2019    |
-|    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
-|          EAS |      2378 |        5232 |            2 |    1997    |   2022    |
-|          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      6206 |       11677 |           33 |    1987    |   2023    |
-|   South Asia |       151 |         217 |            1 |    1997    |   2022    |
-|          WIO |       145 |         341 |            1 |    1997    |   2019    |
+|    Australia |      1237 |        5314 |            3 |    1995    |   2023    |
+|       Brazil |        10 |          11 |            1 |    2012    |   2012    |
+|    Caribbean |        97 |         347 |            3 |    1987    |   2022    |
+|          EAS |      2510 |        5386 |            3 |    1997    |   2022    |
+|          ETP |       239 |         283 |            2 |    1998    |   2018    |
+|       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
+|      Pacific |      6385 |       11865 |           34 |    1987    |   2023    |
+|   South Asia |       163 |         229 |            2 |    1997    |   2022    |
+|          WIO |       167 |         363 |            2 |    1997    |   2019    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -299,57 +302,70 @@ territories.
 
 |               Country | Territory                    | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |----------------------:|:-----------------------------|----------:|------------:|-------------:|:----------:|:---------:|
-|             Australia | Australia                    |       524 |        4113 |            2 |    1995    |   2019    |
-|             Australia | Christmas Island             |         2 |          13 |            1 |    2003    |   2007    |
+|             Australia | Australia                    |      1208 |        5248 |            3 |    1995    |   2023    |
+|             Australia | Christmas Island             |        16 |          30 |            2 |    2003    |   2010    |
 |             Australia | Cocos Islands                |        20 |          49 |            1 |    1997    |   2008    |
 |            Bangladesh | Bangladesh                   |         2 |           2 |            1 |    2005    |   2006    |
+|                Belize | Belize                       |        12 |          22 |            1 |    2015    |   2018    |
+|                Brazil | Brazil                       |        10 |          11 |            1 |    2012    |   2012    |
 |                Brunei | Brunei                       |        38 |          45 |            1 |    1997    |   2016    |
-|              Cambodia | Cambodia                     |        91 |          98 |            1 |    1998    |   2013    |
+|              Cambodia | Cambodia                     |        96 |         103 |            2 |    1998    |   2013    |
 |                 China | China                        |       100 |         366 |            1 |    1997    |   2012    |
-|              Colombia | Colombia                     |         4 |           4 |            1 |    1998    |   1999    |
-|            Costa Rica | Costa Rica                   |         1 |           1 |            1 |    2004    |   2004    |
-|            East Timor | East Timor                   |        10 |          12 |            1 |    2004    |   2017    |
+|              Colombia | Colombia                     |        20 |          20 |            2 |    1998    |   2011    |
+|              Colombia | Serrana Bank                 |         6 |           6 |            1 |    2016    |   2016    |
+|            Costa Rica | Costa Rica                   |        51 |          64 |            2 |    2004    |   2011    |
+|            East Timor | East Timor                   |        11 |          13 |            2 |    2004    |   2017    |
+|               Ecuador | Galapagos                    |        62 |          62 |            1 |    2008    |   2012    |
+|                 Egypt | Egypt                        |        12 |          12 |            1 |    2011    |   2011    |
 |                  Fiji | Fiji                         |       584 |         921 |           11 |    1997    |   2022    |
 |                France | Europa Island                |         1 |           1 |            1 |    2002    |   2002    |
-|                France | French Polynesia             |       150 |        2000 |            6 |    1987    |   2022    |
+|                France | French Polynesia             |       223 |        2075 |            7 |    1987    |   2022    |
 |                France | Mayotte                      |        20 |          87 |            1 |    2003    |   2017    |
 |                France | New Caledonia                |       721 |        3056 |            6 |    1997    |   2023    |
 |                France | Réunion                      |        32 |         133 |            1 |    2003    |   2016    |
 |                 India | India                        |         1 |           1 |            1 |    1998    |   1998    |
-|             Indonesia | Indonesia                    |       547 |         907 |            1 |    1997    |   2022    |
-|                 Japan | Japan                        |        44 |         102 |            1 |    1997    |   2015    |
+|             Indonesia | Indonesia                    |       665 |        1047 |            2 |    1997    |   2022    |
+|                 Japan | Japan                        |        52 |         110 |            2 |    1997    |   2015    |
 |                 Kenya | Kenya                        |         6 |           6 |            1 |    2003    |   2004    |
 |              Kiribati | Gilbert Islands              |        18 |          18 |            2 |    2011    |   2018    |
 |            Madagascar | Madagascar                   |        42 |          54 |            1 |    2001    |   2019    |
 |              Malaysia | Malaysia                     |       621 |        2174 |            2 |    1997    |   2021    |
-|              Maldives | Maldives                     |       145 |         211 |            1 |    1997    |   2022    |
-|      Marshall Islands | Marshall Islands             |        71 |          85 |            2 |    2002    |   2020    |
+|              Maldives | Maldives                     |       157 |         223 |            2 |    1997    |   2022    |
+|      Marshall Islands | Marshall Islands             |        84 |          98 |            3 |    2002    |   2020    |
+|                Mexico | Mexico                       |         9 |          10 |            1 |    2018    |   2018    |
 |            Micronesia | Micronesia                   |       168 |         385 |            2 |    2000    |   2020    |
-|            Mozambique | Mozambique                   |        13 |          14 |            1 |    1997    |   2006    |
+|            Mozambique | Mozambique                   |        14 |          15 |            2 |    1997    |   2012    |
 |               Myanmar | Myanmar                      |        22 |          29 |            1 |    2001    |   2013    |
-|           New Zealand | Cook Islands                 |         2 |           7 |            2 |    2005    |   2019    |
+|           Netherlands | Bonaire                      |        14 |          14 |            1 |    2012    |   2012    |
+|           New Zealand | Cook Islands                 |        14 |          19 |            3 |    2005    |   2019    |
+|           New Zealand | Niue                         |         7 |           7 |            1 |    2011    |   2011    |
+|             Nicaragua | Nicaragua                    |        23 |          23 |            1 |    2011    |   2015    |
 |                 Palau | Palau                        |         6 |          16 |            1 |    1997    |   2006    |
-|      Papua New Guinea | Papua New Guinea             |        74 |          90 |            2 |    1998    |   2019    |
+|                Panama | Panama                       |       109 |         140 |            1 |    2007    |   2015    |
+|      Papua New Guinea | Papua New Guinea             |        82 |          98 |            3 |    1998    |   2019    |
 |           Philippines | Philippines                  |       472 |         703 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius        |        10 |          12 |            1 |    1999    |   2003    |
-|                 Samoa | Samoa                        |         1 |           3 |            1 |    2013    |   2019    |
-|            Seychelles | Seychelles                   |         7 |           7 |            1 |    1997    |   2001    |
-|       Solomon Islands | Solomon Islands              |        73 |         171 |            3 |    2005    |   2021    |
+|                 Samoa | Samoa                        |         2 |           4 |            2 |    2012    |   2019    |
+|            Seychelles | Seychelles                   |        19 |          19 |            2 |    1997    |   2012    |
+|       Solomon Islands | Solomon Islands              |        75 |         173 |            4 |    2005    |   2021    |
 |          South Africa | South Africa                 |         5 |           6 |            1 |    2001    |   2005    |
 |             Sri Lanka | Sri Lanka                    |         3 |           3 |            1 |    2003    |   2003    |
 |                Taiwan | Taiwan                       |       103 |         195 |            1 |    1997    |   2020    |
-|              Tanzania | Tanzania                     |         9 |          21 |            1 |    1997    |   2008    |
+|              Tanzania | Tanzania                     |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                     |       148 |         245 |            1 |    1998    |   2022    |
-|                 Tonga | Tonga                        |         4 |           9 |            2 |    2002    |   2019    |
-|        United Kingdom | Pitcairn                     |         1 |           5 |            1 |    2009    |   2018    |
-|         United States | American Samoa               |       826 |         886 |            3 |    1997    |   2019    |
+|                 Tonga | Tonga                        |        29 |          34 |            3 |    2002    |   2019    |
+|        United Kingdom | Cayman Islands               |         1 |           1 |            1 |    2011    |   2011    |
+|        United Kingdom | Pitcairn                     |         6 |          11 |            2 |    2009    |   2018    |
+|        United Kingdom | Turks and Caicos Islands     |         4 |           4 |            1 |    2015    |   2015    |
+|         United States | American Samoa               |       843 |         903 |            4 |    1997    |   2019    |
 |         United States | Guam                         |       301 |         353 |            4 |    1997    |   2021    |
-|         United States | Hawaii                       |      1725 |        1915 |            3 |    1997    |   2021    |
+|         United States | Hawaii                       |      1734 |        1924 |            4 |    1997    |   2021    |
 |         United States | Howland and Baker islands    |       150 |         150 |            1 |    2015    |   2017    |
 |         United States | Jarvis Island                |       222 |         222 |            1 |    2015    |   2017    |
 |         United States | Johnston Atoll               |        46 |          46 |            1 |    2015    |   2015    |
 |         United States | Northern Mariana Islands     |       679 |         840 |            3 |    1999    |   2020    |
 |         United States | Palmyra Atoll                |       194 |         294 |            2 |    2009    |   2019    |
+|         United States | United States                |        17 |          28 |            1 |    2010    |   2022    |
 |         United States | United States Virgin Islands |         8 |         236 |            2 |    1987    |   2021    |
 |         United States | Wake Island                  |       146 |         146 |            1 |    2014    |   2017    |
 |               Vanuatu | Vanuatu                      |        44 |          59 |            2 |    2004    |   2019    |
@@ -427,31 +443,31 @@ The following organizations have funded the realization of the
     [1] stats     graphics  grDevices utils     datasets  methods   base     
 
     other attached packages:
-     [1] mermaidr_0.6.4    kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.23   
-     [5] taxize_0.9.100    leaflet_2.1.2     DT_0.28           formattable_0.2.1
+     [1] mermaidr_0.6.4    kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.24   
+     [5] taxize_0.9.100    leaflet_2.2.0     DT_0.29           formattable_0.2.1
      [9] knitr_1.43        sf_1.0-14         lubridate_1.9.2   forcats_1.0.0    
-    [13] stringr_1.5.0     dplyr_1.1.2       purrr_1.0.1       readr_2.1.4      
-    [17] tidyr_1.3.0       tibble_3.2.1      ggplot2_3.4.2     tidyverse_2.0.0  
+    [13] stringr_1.5.0     dplyr_1.1.3       purrr_1.0.2       readr_2.1.4      
+    [17] tidyr_1.3.0       tibble_3.2.1      ggplot2_3.4.3     tidyverse_2.0.0  
     [21] extrafont_0.19   
 
     loaded via a namespace (and not attached):
      [1] tidyselect_1.2.0   viridisLite_0.4.2  farver_2.1.1       fastmap_1.1.1     
-     [5] lazyeval_0.2.2     promises_1.2.0.1   digest_0.6.33      timechange_0.2.0  
+     [5] lazyeval_0.2.2     promises_1.2.1     digest_0.6.33      timechange_0.2.0  
      [9] lifecycle_1.0.3    magrittr_2.0.3     compiler_4.3.1     rlang_1.1.1       
     [13] tools_4.3.1        utf8_1.2.3         yaml_2.3.7         data.table_1.14.8 
-    [17] conditionz_0.1.0   htmlwidgets_1.6.2  classInt_0.4-9     curl_5.0.1        
-    [21] xml2_1.3.5         KernSmooth_2.23-21 httpcode_0.3.0     withr_2.5.0       
+    [17] conditionz_0.1.0   htmlwidgets_1.6.2  classInt_0.4-10    curl_5.0.2        
+    [21] xml2_1.3.5         KernSmooth_2.23-22 httpcode_0.3.0     withr_2.5.0       
     [25] grid_4.3.1         fansi_1.0.4        e1071_1.7-13       colorspace_2.1-0  
     [29] extrafontdb_1.0    scales_1.2.1       iterators_1.0.14   crul_1.4.0        
     [33] cli_3.6.1          crayon_1.5.2       ragg_1.2.5         generics_0.1.3    
-    [37] rstudioapi_0.15.0  httr_1.4.6         tzdb_0.4.0         DBI_1.1.3         
+    [37] rstudioapi_0.15.0  httr_1.4.7         tzdb_0.4.0         DBI_1.1.3         
     [41] ape_5.7-1          proxy_0.4-27       rvest_1.0.3        parallel_4.3.1    
     [45] s2_1.1.4           vctrs_0.6.3        webshot_0.5.5      jsonlite_1.8.7    
     [49] hms_1.1.3          systemfonts_1.0.4  crosstalk_1.2.0    foreach_1.5.2     
-    [53] units_0.8-2        glue_1.6.2         codetools_0.2-19   stringi_1.7.12    
-    [57] gtable_0.3.3       later_1.3.1        munsell_0.5.0      pillar_1.9.0      
-    [61] htmltools_0.5.5    R6_2.5.1           wk_0.7.3           textshaping_0.3.6 
+    [53] units_0.8-3        glue_1.6.2         codetools_0.2-19   stringi_1.7.12    
+    [57] gtable_0.3.4       later_1.3.1        munsell_0.5.0      pillar_1.9.0      
+    [61] htmltools_0.5.6    R6_2.5.1           wk_0.8.0           textshaping_0.3.6 
     [65] bold_1.3.0         evaluate_0.21      lattice_0.21-8     httpuv_1.6.11     
-    [69] class_7.3-22       Rcpp_1.0.11        uuid_1.1-0         svglite_2.1.1     
-    [73] nlme_3.1-162       Rttf2pt1_1.3.12    xfun_0.39          zoo_1.8-12        
+    [69] class_7.3-22       Rcpp_1.0.11        uuid_1.1-1         svglite_2.1.1     
+    [73] nlme_3.1-163       Rttf2pt1_1.3.12    xfun_0.40          zoo_1.8-12        
     [77] pkgconfig_2.0.3   

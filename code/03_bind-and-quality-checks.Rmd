@@ -186,7 +186,7 @@ unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>%
                               order %in% c("Actiniaria", "Alcyonacea", "Zoantharia", 
                                            "Corallimorpharia", "Antipatharia") ~ "Other fauna",
                               subclass %in% c("Octocorallia") ~ "Other fauna",
-                              phylum %in% c("Annelida") ~ "Other fauna",
+                              phylum %in% c("Annelida", "Mollusca") ~ "Other fauna",
                               family %in% c("Milleporidae", "Helioporidae") ~ "Hard coral",
                               class %in% c("Ulvophyceae", "Florideophyceae", "Phaeophyceae") ~ "Algae",
                               phylum %in% c("Chlorophyta", "Rhodophyta", "Ochrophyta") ~ "Algae",
