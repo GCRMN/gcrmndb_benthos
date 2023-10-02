@@ -95,6 +95,7 @@ all soft coral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Alcyonacea;NA;NA;NA;TRUE
 alveopora sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Alveopora;NA;TRUE
 amansia sp;NA;NA;NA;Rhodophyta;Florideophyceae;Rhodymeniophycidae;Ceramiales;Rhodomelaceae;Amansia;NA;TRUE
 anemone;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Actiniaria;NA;NA;NA;TRUE
+animal;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 ascidians stalked;NA;NA;NA;NA;Ascidiacea;NA;NA;NA;NA;NA;TRUE
 ascidians unstalked;NA;NA;NA;NA;Ascidiacea;NA;NA;NA;NA;NA;TRUE
 asparagopsis;NA;NA;NA;Rhodophyta;Florideophyceae;Rhodymeniophycidae;Bonnemaisoniales;Bonnemaisoniaceae;Asparagopsis;NA;TRUE
@@ -650,8 +651,10 @@ other invertebrates - sponges: hollow sponge forms/cups/barrels/tub;NA;NA;NA;Por
 other invertebrates - tripneustes;NA;NA;NA;Echinodermata;Echinoidea;Euechinoidea;Temnopleuroida;Toxopneustidae;Tripneustes;NA;TRUE
 other invertebrates - tube sponges;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
 other invertebrates - xestospongia muta;NA;NA;NA;Porifera;Demospongiae;Heteroscleromorpha;Haplosclerida;Petrosiidae;Xestospongia;Xestospongia muta;TRUE
+other live coral;Hard coral;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
 other macroalgae;Algae;Macroalgae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 other organisms;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+other substrate;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 others;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 oulophyllia sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Oulophyllia;NA;TRUE
 oxipora encroutant;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Oxypora;NA;TRUE
@@ -831,6 +834,7 @@ soft coral other;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 soft coral xeniidae;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Malacalcyonacea;Xeniidae;NA;NA;TRUE
 soft corals;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 soft corals and gorgonians;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+soft substrate;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 softcoral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 solitary anemones;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Actiniaria;NA;NA;NA;TRUE
 solitary coral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -854,6 +858,7 @@ stylophora sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporida
 stylophora submassif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Stylophora;NA;TRUE
 sub-massive corals;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 sub-massive corals bleached;Hard coral;NA;Bleached;NA;NA;NA;NA;NA;NA;NA;TRUE
+substrate;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 symphillia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Lobophyllia;NA;TRUE
 symphyllia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Lobophyllia;NA;TRUE
 symphyllia massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Lobophyllia;NA;TRUE
@@ -893,6 +898,7 @@ unclassified/unknown;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 unknown;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 unknown coral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 unknown coral bleached;Hard coral;NA;Bleached;NA;NA;NA;NA;NA;NA;NA;TRUE
+unknowns;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 upright macroalga;Algae;Macroalgae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 vase;Abiotic;Silt;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 wand;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE

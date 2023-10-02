@@ -477,14 +477,5 @@ save(synthetic_data, file = "../data/09_gcrmndb_benthos.RData")
 
 ```
 
-# Update the README
-
-```{r}
-
-rmarkdown::render(input = "../README.Rmd", output_format = "github_document")
-file.remove("../README.html")
-
-```
-
 ---
 Jeremy WICQUART | jeremywicquart@gmail.com | `r format(Sys.time())`

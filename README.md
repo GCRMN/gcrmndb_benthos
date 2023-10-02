@@ -260,12 +260,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0036    | SI_Munda                                                                                                                                                | open (summary) | Rc.  |            |     JW     |
 |   0037    | [Khen et al, 2022](https://link.springer.com/article/10.1007/s00338-022-02271-6)                                                                        | upon request   | Sh.  |            |     JW     |
 |   0038    | [Reef Life Survey](https://doi.org/10.1016/j.biocon.2020.108855)                                                                                        | upon request   | Sh.  | 13/09/2023 |     JW     |
+|   0039    | [MMR](https://www.mmr.gov.ck/)                                                                                                                          | upon request   | Sh.  | 12/09/2023 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-09-15, the `gcrmndb_benthos` synthetic dataset contains a
-total of **858,670 observations** (*i.e* rows) representing **10,820
-sites** and **23,810 surveys**.
+On the 2023-10-02, the `gcrmndb_benthos` synthetic dataset contains a
+total of **865,693 observations** (*i.e* rows) representing **10,978
+sites** and **24,005 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -290,7 +291,7 @@ GCRMN regions.
 |          EAS |      2510 |        5386 |            3 |    1997    |   2022    |
 |          ETP |       239 |         283 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      6385 |       11865 |           34 |    1987    |   2023    |
+|      Pacific |      6543 |       12060 |           35 |    1987    |   2023    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       167 |         363 |            2 |    1997    |   2019    |
 
@@ -337,7 +338,7 @@ territories.
 |            Mozambique | Mozambique                   |        14 |          15 |            2 |    1997    |   2012    |
 |               Myanmar | Myanmar                      |        22 |          29 |            1 |    2001    |   2013    |
 |           Netherlands | Bonaire                      |        14 |          14 |            1 |    2012    |   2012    |
-|           New Zealand | Cook Islands                 |        14 |          19 |            3 |    2005    |   2019    |
+|           New Zealand | Cook Islands                 |       172 |         214 |            4 |    2005    |   2023    |
 |           New Zealand | Niue                         |         7 |           7 |            1 |    2011    |   2011    |
 |             Nicaragua | Nicaragua                    |        23 |          23 |            1 |    2011    |   2015    |
 |                 Palau | Palau                        |         6 |          16 |            1 |    1997    |   2006    |
@@ -443,9 +444,9 @@ The following organizations have funded the realization of the
     [1] stats     graphics  grDevices utils     datasets  methods   base     
 
     other attached packages:
-     [1] mermaidr_0.6.4    kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.24   
+     [1] mermaidr_0.6.4    kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.25   
      [5] taxize_0.9.100    leaflet_2.2.0     DT_0.29           formattable_0.2.1
-     [9] knitr_1.43        sf_1.0-14         lubridate_1.9.2   forcats_1.0.0    
+     [9] knitr_1.44        sf_1.0-14         lubridate_1.9.3   forcats_1.0.0    
     [13] stringr_1.5.0     dplyr_1.1.3       purrr_1.0.2       readr_2.1.4      
     [17] tidyr_1.3.0       tibble_3.2.1      ggplot2_3.4.3     tidyverse_2.0.0  
     [21] extrafont_0.19   
@@ -456,7 +457,7 @@ The following organizations have funded the realization of the
      [9] lifecycle_1.0.3    magrittr_2.0.3     compiler_4.3.1     rlang_1.1.1       
     [13] tools_4.3.1        utf8_1.2.3         yaml_2.3.7         data.table_1.14.8 
     [17] conditionz_0.1.0   htmlwidgets_1.6.2  classInt_0.4-10    curl_5.0.2        
-    [21] xml2_1.3.5         KernSmooth_2.23-22 httpcode_0.3.0     withr_2.5.0       
+    [21] xml2_1.3.5         KernSmooth_2.23-22 httpcode_0.3.0     withr_2.5.1       
     [25] grid_4.3.1         fansi_1.0.4        e1071_1.7-13       colorspace_2.1-0  
     [29] extrafontdb_1.0    scales_1.2.1       iterators_1.0.14   crul_1.4.0        
     [33] cli_3.6.1          crayon_1.5.2       ragg_1.2.5         generics_0.1.3    
@@ -464,10 +465,10 @@ The following organizations have funded the realization of the
     [41] ape_5.7-1          proxy_0.4-27       rvest_1.0.3        parallel_4.3.1    
     [45] s2_1.1.4           vctrs_0.6.3        webshot_0.5.5      jsonlite_1.8.7    
     [49] hms_1.1.3          systemfonts_1.0.4  crosstalk_1.2.0    foreach_1.5.2     
-    [53] units_0.8-3        glue_1.6.2         codetools_0.2-19   stringi_1.7.12    
+    [53] units_0.8-4        glue_1.6.2         codetools_0.2-19   stringi_1.7.12    
     [57] gtable_0.3.4       later_1.3.1        munsell_0.5.0      pillar_1.9.0      
     [61] htmltools_0.5.6    R6_2.5.1           wk_0.8.0           textshaping_0.3.6 
-    [65] bold_1.3.0         evaluate_0.21      lattice_0.21-8     httpuv_1.6.11     
+    [65] bold_1.3.0         evaluate_0.22      lattice_0.21-8     httpuv_1.6.11     
     [69] class_7.3-22       Rcpp_1.0.11        uuid_1.1-1         svglite_2.1.1     
     [73] nlme_3.1-163       Rttf2pt1_1.3.12    xfun_0.40          zoo_1.8-12        
     [77] pkgconfig_2.0.3   
