@@ -194,6 +194,8 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 read.csv2("data/05_data-sources.csv") %>%
   mutate_all(., ~replace_na(., "")) %>% 
   mutate(datasetID = str_pad(datasetID, width = 4, side = "left", pad = "0"),
+         modified = as.character(as_date(modified, format = "%d/%m/%Y")),
+         modified = replace_na(modified, ""),
          rightsHolder = ifelse(dataset_link == "", 
                                rightsHolder, 
                                paste0("[", rightsHolder, "](", dataset_link, ")")),

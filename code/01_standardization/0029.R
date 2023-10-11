@@ -1,33 +1,44 @@
 # 1. Required packages ----
 
 library(tidyverse) # Core tidyverse packages
-library(mermaidr) # API to mermaid data. To install -> remotes::install_github("data-mermaid/mermaidr")
-source("code/00_functions/mermaid_converter_sampleevents.R")
+library(readxl) # To read excel files
 
 dataset <- "0029" # Define the dataset_id
 
-# 2. Get the MERMAID project ID ----
+# 2. Import, standardize and export the data ----
 
-project_id <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset) %>% 
-  select(project_id) %>% 
-  pull()
+# 2.1 Site data --
 
-# 3. Get data from the mermaidr API ----
+data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+  filter(datasetID == dataset & data_type == "site") %>% 
+  select(data_path) %>% 
+  pull() %>% 
+  # Read the file
+  read.csv2()
 
-data <- mermaid_get_project_data(project = project_id, 
-                                 method = "benthicpit", data = "sampleevents", token = NULL)
+# 2.2 Main data --
 
-# 4. Save raw data ----
-
-write.csv(data, file = paste0("data/01_raw-data/", dataset, "/mermaid_", project_id, "_", lubridate::date(Sys.time()), ".csv"),
-          row.names = FALSE)
-
-# 5. Standardize data ----
-
-mermaid_converter_sampleevents(data, dataset, method = "Point intersect transect") %>% 
+read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+  filter(datasetID == dataset & data_type == "main") %>% 
+  select(data_path) %>% 
+  pull() %>% 
+  # Read the file
+  read_xlsx(path = ., sheet = 1, skip = 2) %>% 
+  select(-Status, -TOTAL) %>% 
+  pivot_longer("Anacropora":"Tubipora", names_to = "organismID", values_to = "measurementValue") %>%
+  rename(locality = Reef, year = Year, parentEventID = Transect, verbatimDepth = Depth) %>% 
+  select(locality, year, verbatimDepth, parentEventID, organismID, measurementValue) %>% 
+  left_join(., data_site) %>% 
+  mutate(datasetID = dataset,
+         samplingProtocol = "Point intersect transect, 50 m transect length, every 50 cm", # See email
+         habitat = "Reef flat",
+         organismID = str_replace_all(organismID, c("Turbinaria" = "Turbinaria coral",
+                                                    "TOTAL SOFT CORALS" = "Soft corals",
+                                                    "Ouloastrea?" = "Ouloastrea"))) %>% 
+  filter(measurementValue != 0) %>% 
+  drop_na(measurementValue) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
-# 6. Remove useless objects ----
-
-rm(data, project_id, mermaid_converter_sampleevents)
+# 3. Remove useless objects ----
+  
+rm(data_site)

@@ -222,51 +222,51 @@ considered. The column names (except *aggregator*) correspond to
 
 | datasetID | rightsHolder                                                                                                                                            | accessRights   | type |  modified  | aggregator |
 |:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------|:----:|:----------:|:----------:|
-|   0001    | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                         | open           | Rp.  | 21/02/2022 |     JW     |
-|   0002    | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                    | open           | Rp.  | 21/02/2022 |     JW     |
+|   0001    | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                         | open           | Rp.  | 2022-02-21 |     JW     |
+|   0002    | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                    | open           | Rp.  | 2022-02-21 |     JW     |
 |   0003    | AIMS LTMP                                                                                                                                               |                |      |            |     JW     |
-|   0004    | [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                  | upon request   | Sh.  | 08/09/2022 |     JW     |
+|   0004    | [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                  | upon request   | Sh.  | 2022-09-08 |     JW     |
 |   0005    | [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)    | upon request   | Sh.  |            |     JW     |
-|   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request   | Sh.  | 31/12/2022 |     JW     |
+|   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request   | Sh.  | 2022-12-31 |     JW     |
 |   0007    | [CRIOBE - ATPP barrier reef](https://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)        | upon request   | Sh.  |            |     JW     |
 |   0008    | [CRIOBE - ATPP outer slope](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                    | upon request   | Sh.  |            |     JW     |
 |   0009    | [Seaview Survey](https://www.nature.com/articles/s41597-020-00698-6)                                                                                    | open           | Pa.  |            |     JW     |
-|   0010    | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                               | open (summary) | Me.  | 08/06/2021 |     JW     |
-|   0011    | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                       | open           | Rp.  | 14/09/2021 |     JW     |
-|   0012    | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                     | open           | Rp.  | 12/10/2018 |     JW     |
-|   0013    | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                  | open           | Rp.  | 11/11/2022 |     JW     |
-|   0014    | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                  | open           | Rp.  | 30/07/2021 |     JW     |
+|   0010    | [2013-2014_Koro Island, Fiji](https://dashboard.datamermaid.org/?project=2013-2014_Koro%20Island,%20Fiji)                                               | open (summary) | Me.  | 2021-06-08 |     JW     |
+|   0011    | [NCRMP - American Samoa](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-AmSam)                       | open           | Rp.  | 2021-09-14 |     JW     |
+|   0012    | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas)                     | open           | Rp.  | 2018-10-12 |     JW     |
+|   0013    | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI)                                  | open           | Rp.  | 2022-11-11 |     JW     |
+|   0014    | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA)                                  | open           | Rp.  | 2021-07-30 |     JW     |
 |   0015    | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/)                                                 | upon request   | Db.  |            |     JW     |
 |   0016    | Biosphere Foundation                                                                                                                                    | upon request   | Sh.  |            |     JW     |
-|   0017    | KNS                                                                                                                                                     | upon request   | Sh.  | 27/12/2022 |     JW     |
-|   0018    | Kiribati                                                                                                                                                | upon request   | Sh.  | 05/03/2020 |     JW     |
-|   0019    | SLN                                                                                                                                                     | upon request   | Sh.  | 12/05/2022 |     JW     |
+|   0017    | KNS                                                                                                                                                     | upon request   | Sh.  | 2022-12-27 |     JW     |
+|   0018    | Kiribati                                                                                                                                                | upon request   | Sh.  | 2020-03-05 |     JW     |
+|   0019    | SLN                                                                                                                                                     | upon request   | Sh.  | 2022-05-12 |     JW     |
 |   0020    | [PACN](https://www.nps.gov/im/pacn/benthic.htm)                                                                                                         | upon request   | Sh.  |            |     JW     |
 |   0021    | RORC                                                                                                                                                    | upon request   | Sh.  |            |     JW     |
 |   0022    | [MCRMP](https://micronesiareefmonitoring.com/)                                                                                                          | upon request   | Sh.  |            |     JW     |
 |   0023    | PA-NC                                                                                                                                                   | upon request   | Sh.  |            |     JW     |
 |   0024    | [Laurent WANTIEZ](https://scholar.google.fr/citations?user=4H_FTE0AAAAJ&hl=fr&oi=ao)                                                                    | upon request   | Sh.  |            |     JW     |
-|   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 08/09/2021 |     JW     |
-|   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 10/09/2021 |     JW     |
-|   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 08/09/2021 |     JW     |
+|   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 2021-09-08 |     JW     |
+|   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 2021-09-10 |     JW     |
+|   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 2021-09-08 |     JW     |
 |   0028    | [C<sub>2</sub>O Pacific](https://c2o.net.au/our-work-in-the-pacific/)                                                                                   | upon request   | Rc.  |            |     JW     |
-|   0029    | [2022_BAF and WISH](https://dashboard.datamermaid.org/?project=2022_BAF%20and%20WISH%20coral%20reef%20surveys%20in%20Tailevu_Ovalau)                    | open (summary) | Me.  | 06/06/2022 |     JW     |
-|   0030    | [PNG BAF 2019](https://dashboard.datamermaid.org/?project=PNG%20BAF%202019)                                                                             | open (summary) | Me.  | 31/10/2019 |     JW     |
-|   0031    | [2017_Northern Lau](https://dashboard.datamermaid.org/?project=2017_Northern%20Lau)                                                                     | open (summary) | Me.  | 08/02/2021 |     JW     |
-|   0032    | [2013-2014_Vatu-i-Ra](https://dashboard.datamermaid.org/?project=2013-2014_Vatu-i-Ra)                                                                   | open (summary) | Me.  | 08/02/2021 |     JW     |
-|   0033    | [2019_Dama Bureta](https://dashboard.datamermaid.org/?project=2019_Dama%20Bureta%20Waibula%20and%20Dawasamu-WISH%20ecological%20survey)                 | open (summary) | Me.  | 12/08/2020 |     JW     |
-|   0034    | [2020_NamenaAndVatuira](https://dashboard.datamermaid.org/?project=2020_NamenaAndVatuira%20coral%20reef%20surveys)                                      | open (summary) | Me.  | 12/10/2020 |     JW     |
-|   0035    | [Lau Seascape Surveys](https://dashboard.datamermaid.org/?project=Lau%20Seascape%20Surveys%20March%202022)                                              | open (summary) | Me.  | 18/04/2022 |     JW     |
+|   0029    | Kimbe Bay                                                                                                                                               | upon request   | Sh.  | 2019-09-11 |     JW     |
+|   0030    | [PNG BAF 2019](https://dashboard.datamermaid.org/?project=PNG%20BAF%202019)                                                                             | open (summary) | Me.  | 2019-10-31 |     JW     |
+|   0031    | [2017_Northern Lau](https://dashboard.datamermaid.org/?project=2017_Northern%20Lau)                                                                     | open (summary) | Me.  | 2021-02-08 |     JW     |
+|   0032    | [2013-2014_Vatu-i-Ra](https://dashboard.datamermaid.org/?project=2013-2014_Vatu-i-Ra)                                                                   | open (summary) | Me.  | 2021-02-08 |     JW     |
+|   0033    | [2019_Dama Bureta](https://dashboard.datamermaid.org/?project=2019_Dama%20Bureta%20Waibula%20and%20Dawasamu-WISH%20ecological%20survey)                 | open (summary) | Me.  | 2020-08-12 |     JW     |
+|   0034    | [2020_NamenaAndVatuira](https://dashboard.datamermaid.org/?project=2020_NamenaAndVatuira%20coral%20reef%20surveys)                                      | open (summary) | Me.  | 2020-10-12 |     JW     |
+|   0035    | [Lau Seascape Surveys](https://dashboard.datamermaid.org/?project=Lau%20Seascape%20Surveys%20March%202022)                                              | open (summary) | Me.  | 2022-04-18 |     JW     |
 |   0036    | SI_Munda                                                                                                                                                | open (summary) | Rc.  |            |     JW     |
 |   0037    | [Khen et al, 2022](https://link.springer.com/article/10.1007/s00338-022-02271-6)                                                                        | upon request   | Sh.  |            |     JW     |
-|   0038    | [Reef Life Survey](https://doi.org/10.1016/j.biocon.2020.108855)                                                                                        | upon request   | Sh.  | 13/09/2023 |     JW     |
-|   0039    | [MMR](https://www.mmr.gov.ck/)                                                                                                                          | upon request   | Sh.  | 12/09/2023 |     JW     |
+|   0038    | [Reef Life Survey](https://doi.org/10.1016/j.biocon.2020.108855)                                                                                        | upon request   | Sh.  | 2023-09-13 |     JW     |
+|   0039    | [MMR](https://www.mmr.gov.ck/)                                                                                                                          | upon request   | Sh.  | 2023-09-12 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-10-02, the `gcrmndb_benthos` synthetic dataset contains a
-total of **865,693 observations** (*i.e* rows) representing **10,978
-sites** and **24,005 surveys**.
+On the 2023-10-11, the `gcrmndb_benthos` synthetic dataset contains a
+total of **911,231 observations** (*i.e* rows) representing **10,969
+sites** and **24,141 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -291,7 +291,7 @@ GCRMN regions.
 |          EAS |      2510 |        5386 |            3 |    1997    |   2022    |
 |          ETP |       239 |         283 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      6543 |       12060 |           35 |    1987    |   2023    |
+|      Pacific |      6534 |       12196 |           35 |    1987    |   2023    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       167 |         363 |            2 |    1997    |   2019    |
 
@@ -318,7 +318,7 @@ territories.
 |            East Timor | East Timor                   |        11 |          13 |            2 |    2004    |   2017    |
 |               Ecuador | Galapagos                    |        62 |          62 |            1 |    2008    |   2012    |
 |                 Egypt | Egypt                        |        12 |          12 |            1 |    2011    |   2011    |
-|                  Fiji | Fiji                         |       584 |         921 |           11 |    1997    |   2022    |
+|                  Fiji | Fiji                         |       567 |         889 |           10 |    1997    |   2022    |
 |                France | Europa Island                |         1 |           1 |            1 |    2002    |   2002    |
 |                France | French Polynesia             |       223 |        2075 |            7 |    1987    |   2022    |
 |                France | Mayotte                      |        20 |          87 |            1 |    2003    |   2017    |
@@ -343,7 +343,7 @@ territories.
 |             Nicaragua | Nicaragua                    |        23 |          23 |            1 |    2011    |   2015    |
 |                 Palau | Palau                        |         6 |          16 |            1 |    1997    |   2006    |
 |                Panama | Panama                       |       109 |         140 |            1 |    2007    |   2015    |
-|      Papua New Guinea | Papua New Guinea             |        82 |          98 |            3 |    1998    |   2019    |
+|      Papua New Guinea | Papua New Guinea             |        90 |         266 |            4 |    1998    |   2019    |
 |           Philippines | Philippines                  |       472 |         703 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius        |        10 |          12 |            1 |    1999    |   2003    |
 |                 Samoa | Samoa                        |         2 |           4 |            2 |    2012    |   2019    |

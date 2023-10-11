@@ -1,5 +1,14 @@
 organismID;category;subcategory;condition;phylum;class;subclass;order;family;genus;species;checked
 abiotic;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+ac bottlebrush;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac bushy;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac corymbose;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac digitate;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac isopora brug;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac isopora palif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac plate;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac staghorn large;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
+ac staghorn small;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Acropora;NA;TRUE
 acanthastrea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Acanthastrea;NA;TRUE
 acanthastrea brevis;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Acanthastrea;Acanthastrea brevis;TRUE
 acanthastrea brevis bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Acanthastrea;Acanthastrea brevis;TRUE
@@ -60,6 +69,21 @@ agaricia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Agaric
 agariciidae encrusting and submassive;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;NA;NA;TRUE
 agariciidae foliose;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;NA;NA;TRUE
 ahermatypic corals;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
+al algae assemblage;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al caulerpa;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Caulerpaceae;Caulerpa;NA;TRUE
+al coralline;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al coralline crustose complex;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al coralline crustose flat;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al dictyota;NA;NA;NA;NA;Phaeophyceae;NA;Dictyotales;Dictyotaceae;Dictyota;NA;TRUE
+al encrusting complex;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al encrusting flat;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al halimeda;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Halimedaceae;Halimeda;NA;TRUE
+al other macroalgae;Algae;Macroalgae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al padina;NA;NA;NA;NA;Phaeophyceae;NA;Dictyotales;Dictyotaceae;Padina;NA;TRUE
+al sargassum;Algae;NA;NA;Ochrophyta;Phaeophyceae;Fucophycidae;Fucales;Sargassaceae;Sargassum;NA;TRUE
+al turbinaria coral;Algae;NA;NA;Ochrophyta;Phaeophyceae;Fucophycidae;Fucales;Sargassaceae;Turbinaria;NA;TRUE
+al turf complex;Algae;Turf algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+al turf flat;Algae;Turf algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 algae - algae: large visible globules;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 algae - calcifying algae: halimeda;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Halimedaceae;Halimeda;NA;TRUE
 algae - calcifying calcareous crustose algae: dhc;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -92,10 +116,15 @@ algal turf;Algae;Turf algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 algues encroutantes calcaires;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 all hardcoral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 all soft coral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Alcyonacea;NA;NA;NA;TRUE
+alveopora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Alveopora;NA;TRUE
 alveopora sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Alveopora;NA;TRUE
 amansia sp;NA;NA;NA;Rhodophyta;Florideophyceae;Rhodymeniophycidae;Ceramiales;Rhodomelaceae;Amansia;NA;TRUE
+anacropora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Anacropora;NA;TRUE
 anemone;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Actiniaria;NA;NA;NA;TRUE
+anemones;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Actiniaria;NA;NA;NA;TRUE
 animal;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+antipatharians;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Antipatharia;NA;NA;NA;TRUE
+ascidians;NA;NA;NA;NA;Ascidiacea;NA;NA;NA;NA;NA;TRUE
 ascidians stalked;NA;NA;NA;NA;Ascidiacea;NA;NA;NA;NA;NA;TRUE
 ascidians unstalked;NA;NA;NA;NA;Ascidiacea;NA;NA;NA;NA;NA;TRUE
 asparagopsis;NA;NA;NA;Rhodophyta;Florideophyceae;Rhodymeniophycidae;Bonnemaisoniales;Bonnemaisoniaceae;Asparagopsis;NA;TRUE
@@ -124,7 +153,10 @@ autres;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 autres coraux;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 autres organismes vivants;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 avrainvillea sp;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Dichotomosiphonaceae;Avrainvillea;NA;TRUE
+barabattoia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Dipsastraea;NA;TRUE
 barabattoia massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Dipsastraea;NA;TRUE
+bare complex;Abiotic;Rock;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+bare flat;Abiotic;Rock;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 bare rock;Abiotic;Rock;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 bare substrate;Abiotic;Rock;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 barnacles;Other fauna;NA;NA;Arthropoda;Thecostraca;Cirripedia;NA;NA;NA;NA;TRUE
@@ -162,6 +194,7 @@ bushy coral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 calcareous algae;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 calcerous macroalgae;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 cantharellus;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Cantharellus;NA;TRUE
+caulastrea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Caulastraea;NA;TRUE
 caulastrea massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Caulastraea;NA;TRUE
 caulerpa;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Caulerpaceae;Caulerpa;NA;TRUE
 caulerpa sp;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Caulerpaceae;Caulerpa;NA;TRUE
@@ -171,6 +204,7 @@ cca growing on rubble;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 chlorodesmis sp;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Udoteaceae;Chlorodesmis;NA;TRUE
 chrysophyte;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 cladiela;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Malacalcyonacea;Cladiellidae;Cladiella;NA;TRUE
+clams;NA;NA;NA;Mollusca;Bivalvia;NA;NA;NA;NA;NA;TRUE
 cnidaria;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 cobble;Abiotic;Rock;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 coeloseris;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Coeloseris;NA;TRUE
@@ -212,6 +246,7 @@ coscinaraea columna;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Coscina
 coscinaraea columna bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Coscinaraeidae;Coscinaraea;Coscinaraea columna;TRUE
 coscinaraea encroutant;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Coscinaraeidae;Coscinaraea;NA;TRUE
 coscinaraea sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Coscinaraeidae;Coscinaraea;NA;TRUE
+coscinarea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Coscinaraeidae;Coscinaraea;NA;TRUE
 crevasse;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 crustose coralline algae;Algae;Coralline algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 ctenactis;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Ctenactis;NA;TRUE
@@ -235,6 +270,7 @@ dead coral covered in blue-green algae;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 dead coral with algae;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 debris;Abiotic;Rubble;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 dendrogyra;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Meandrinidae;Dendrogyra;NA;TRUE
+dendrophyllidae;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;NA;NA;TRUE
 dendrophyllidae foliose;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;NA;NA;TRUE
 dendrophyllidae massive and encrusting;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;NA;NA;TRUE
 dichocoenia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Meandrinidae;Dichocoenia;NA;TRUE
@@ -243,6 +279,7 @@ dictyosphaeria sp;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Cladophorales;Siphonoclada
 dictyota;NA;NA;NA;NA;Phaeophyceae;NA;Dictyotales;Dictyotaceae;Dictyota;NA;TRUE
 digitate corals;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 digitate corals bleached;Hard coral;NA;Bleached;NA;NA;NA;NA;NA;NA;NA;TRUE
+diploastrea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Diploastreidae;Diploastrea;NA;TRUE
 diploastrea blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Diploastraeidae;Diploastrea;NA;TRUE
 diploastrea heliopora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Diploastreidae;Diploastrea;Diploastrea heliopora;TRUE
 diploastrea massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Diploastraeidae;Diploastrea;NA;TRUE
@@ -262,6 +299,7 @@ dipsastraea sp bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractin
 dipsastrea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Dipsastraea;NA;TRUE
 dipsastrea blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Dipsastraea;NA;TRUE
 dipsastrea massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Dipsastraea;NA;TRUE
+distichopora;NA;NA;NA;Cnidaria;Hydrozoa;Hydroidolina;Anthoathecata;Stylasteridae;Distichopora;NA;TRUE
 divers autres;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 echinophyllia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Echinophyllia;NA;TRUE
 echinophyllia encroutant;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Echinophyllia;NA;TRUE
@@ -269,6 +307,7 @@ echinophyllia sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylli
 echinopora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Echinopora;NA;TRUE
 echinopora blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Echinopora;NA;TRUE
 echinopora branching;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Echinopora;NA;TRUE
+echinopora foliose/encr;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Echinopora;NA;TRUE
 echinopora lamellosa;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Echinopora;Echinopora lamellosa;TRUE
 echinopora other;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Echinopora;NA;TRUE
 echinopora sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Echinopora;NA;TRUE
@@ -279,6 +318,7 @@ encrusting hard coral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 encrusting leathery algae;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 encrusting macroalga;Algae;Macroalgae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 eponges;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
+euphyllia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Euphyllidae;Euphyllia;NA;TRUE
 euphyllia sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Euphyllidae;Euphyllia;NA;TRUE
 euphyllidae;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Euphyllidae;NA;NA;TRUE
 eusmilia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Meandrinidae;Eusmilia;NA;TRUE
@@ -332,6 +372,7 @@ galaxea sub-massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Euphylli
 ganonema/liagora;NA;NA;NA;Rhodophyta;Florideophyceae;Nemaliophycidae;Nemaliales;Liagoraceae;NA;NA;TRUE
 gardineroseris;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Gardineroseris;NA;TRUE
 gardineroseris planulata bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Gardineroseris;Gardineroseris planulata;TRUE
+gardinoseris;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Gardineroseris;NA;TRUE
 gardinoseris sub-massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Gardineroseris;NA;TRUE
 gardneroseris;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Gardineroseris;NA;TRUE
 gelidiopsis;NA;NA;NA;Rhodophyta;Florideophyceae;Rhodymeniophycidae;Rhodymeniales;Lomentariaceae;Gelidiopsis;NA;TRUE
@@ -357,6 +398,7 @@ goniopora fruticosa;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritid
 goniopora massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Goniopora;NA;TRUE
 goniopora sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Goniopora;NA;TRUE
 goniopora/alveopora sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
+gorgonians;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 green calcified algae halimeda;Algae;Macroalgae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 green macroalgae;Algae;Macroalgae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 halimeda;NA;NA;NA;Chlorophyta;Ulvophyceae;NA;Bryopsidales;Halimedaceae;Halimeda;NA;TRUE
@@ -441,7 +483,9 @@ hard coral dead;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 hard corals;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 hard substrate;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 hardcoral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+heliofungia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Heliofungia;NA;TRUE
 heliopora;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Scleralcyonacea;Helioporidae;Heliopora;NA;TRUE
+heliopora blue coral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Scleralcyonacea;Helioporidae;Heliopora;Heliopora coerulea;TRUE
 heliopora coerulea;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Scleralcyonacea;Helioporidae;Heliopora;Heliopora coerulea;TRUE
 heliopora coerulea blue coral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Scleralcyonacea;Helioporidae;Heliopora;Heliopora coerulea;TRUE
 heliopora sp;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Scleralcyonacea;Helioporidae;Heliopora;NA;TRUE
@@ -449,10 +493,12 @@ herpolitha;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Herpol
 herpolitha limax;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Herpolitha;Herpolitha limax;TRUE
 hydnophora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
 hydnophora blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
+hydnophora branching;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
 hydnophora branching and paraclavarina;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
 hydnophora branchu;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
 hydnophora encroutant;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
 hydnophora exesa;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;Hydnophora exesa;TRUE
+hydnophora massive/encr;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
 hydnophora microconos;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;Hydnophora microconos;TRUE
 hydnophora microconos bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;Hydnophora microconos;TRUE
 hydnophora other;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Hydnophora;NA;TRUE
@@ -538,6 +584,9 @@ millepora branching;NA;NA;NA;Cnidaria;Hydrozoa;Hydroidolina;Anthoathecata;Millep
 millepora encrusting;NA;NA;NA;Cnidaria;Hydrozoa;Hydroidolina;Anthoathecata;Milleporidae;Millepora;NA;TRUE
 millepora exaesa;NA;NA;NA;Cnidaria;Hydrozoa;Hydroidolina;Anthoathecata;Milleporidae;Millepora;Millepora exaesa;TRUE
 millepora sp;NA;NA;NA;Cnidaria;Hydrozoa;Hydroidolina;Anthoathecata;Milleporidae;Millepora;NA;TRUE
+mo encrusting;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Montipora;NA;TRUE
+mo encrusting dig;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Montipora;NA;TRUE
+mo encrusting fans;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Acroporidae;Montipora;NA;TRUE
 mobile fauna;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 molluscs;NA;NA;NA;Mollusca;NA;NA;NA;NA;NA;NA;TRUE
 montastraea sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Montastraeidae;Montastraea;NA;TRUE
@@ -601,6 +650,7 @@ non-acropora submassive;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 non-scleractinian hard coral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 nutrient indicator algae;Algae;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 octocoral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
+octocorals;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 oculinidae;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Oculinidae;NA;NA;TRUE
 orbicella;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Orbicella;NA;TRUE
 organ-pipe coral tubipora;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Malacalcyonacea;Tubiporidae;Tubipora;NA;TRUE
@@ -618,6 +668,8 @@ other - transect hardware;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 other - trash: human origin;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 other - unknown;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 other - volcanic sediment;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+other favid;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Faviidae;NA;NA;TRUE
+other fungid;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;NA;NA;TRUE
 other invertebrate;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 other invertebrates;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 other invertebrates - aplysina fistularis;NA;NA;NA;Porifera;Demospongiae;Verongimorpha;Verongiida;Aplysinidae;Aplysina;Aplysina fistularis;TRUE
@@ -653,11 +705,14 @@ other invertebrates - tube sponges;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
 other invertebrates - xestospongia muta;NA;NA;NA;Porifera;Demospongiae;Heteroscleromorpha;Haplosclerida;Petrosiidae;Xestospongia;Xestospongia muta;TRUE
 other live coral;Hard coral;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
 other macroalgae;Algae;Macroalgae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+other mussid;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Faviidae;NA;NA;TRUE
 other organisms;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 other substrate;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 others;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+ouloastrea?;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Oulastreidae;Oulastrea;NA;TRUE
 oulophyllia sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Oulophyllia;NA;TRUE
 oxipora encroutant;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Oxypora;NA;TRUE
+oxypora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Lobophylliidae;Oxypora;NA;TRUE
 pachyseris;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Pachyseris;NA;TRUE
 pachyseris blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;Pachyseris;NA;TRUE
 pachyseris encroutant;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;Pachyseris;NA;TRUE
@@ -680,6 +735,7 @@ pavona sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Pavon
 pavona sub-massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Pavona;NA;TRUE
 pavona varians;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Pavona;Pavona varians;TRUE
 pavona varians bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Pavona;Pavona varians;TRUE
+pavonafoliose;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Pavona;NA;TRUE
 pebbles/gravel/shell;Abiotic;Rubble;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 pectinia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Pectinia;NA;TRUE
 pectinia sub-massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Pectinia;NA;TRUE
@@ -690,6 +746,7 @@ peyssonnelia sp;NA;NA;NA;Rhodophyta;Florideophyceae;Rhodymeniophycidae;Peyssonne
 phanerogames;Seagrass;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 phymastrea massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Favites;NA;TRUE
 phymastrea sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Favites;NA;TRUE
+physogyra;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Plerogyridae;Physogyra;NA;TRUE
 platygyra;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Platygyra;NA;TRUE
 platygyra blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Platygyra;NA;TRUE
 platygyra daedalea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Platygyra;Platygyra daedalea;TRUE
@@ -700,10 +757,18 @@ platygyra pini bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractin
 platygyra sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Platygyra;NA;TRUE
 platygyra sp bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Platygyra;NA;TRUE
 platygyra/leptoria sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;NA;NA;TRUE
+plerogyra;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Plerogyridae;Plerogyra;NA;TRUE
 plerogyra sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Plerogyridae;Plerogyra;NA;TRUE
+plesiastrea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Plesiastreidae;Plesiastrea;NA;TRUE
 plesiastrea versipora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Plesiastreidae;Plesiastrea;Plesiastrea versipora;TRUE
 plesiastrea versipora bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Plesiastreidae;Plesiastrea;Plesiastrea versipora;TRUE
 pleuractis granulosa;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Pleuractis;Pleuractis granulosa;TRUE
+po encrusting;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Porites;NA;TRUE
+po encrusting columnar;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Porites;NA;TRUE
+po encrusting cylindrica;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Porites;NA;TRUE
+po encrusting dig;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Porites;NA;TRUE
+po encrusting fans;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Porites;NA;TRUE
+po massive;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Porites;NA;TRUE
 pocillopora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Pocillopora;NA;TRUE
 pocillopora blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Pocillopora;NA;TRUE
 pocillopora damicornis;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Pocillopora;Pocillopora damicornis;TRUE
@@ -765,7 +830,9 @@ porites sp forme massive;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Po
 porites synarea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;Porites;NA;TRUE
 poritidae;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Poritidae;NA;NA;TRUE
 psammocora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;NA;TRUE
+psammocora branching/foliose;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;NA;TRUE
 psammocora digitata;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;Psammocora digitata;TRUE
+psammocora encrusting;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;NA;TRUE
 psammocora haimiana;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;Psammocora haimiana;TRUE
 psammocora haimiana bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;Psammocora haimiana;TRUE
 psammocora nierstraszi;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;Psammocora nierstraszi;TRUE
@@ -776,6 +843,7 @@ psammocora sp bleached;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Side
 psammocora stellata;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;Psammocora stellata;TRUE
 psammocora stellata bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;Psammocora stellata;TRUE
 psammocora submassif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Psammocora;NA;TRUE
+pseudosiderastrea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Rhizangiidae;Pseudosiderastrea;NA;TRUE
 pseudosiderastrea massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Rhizangiidae;Pseudosiderastrea;NA;TRUE
 recently dead coral;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 recently killed coral;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -794,6 +862,7 @@ sandalolitha robusta;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungii
 sarcophyton;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Malacalcyonacea;Sarcophytidae;Sarcophyton;NA;TRUE
 sarcophytum;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Malacalcyonacea;Sarcophytidae;Sarcophyton;NA;TRUE
 sargassum;NA;NA;NA;NA;Phaeophyceae;NA;Fucales;Sargassaceae;Sargassum;NA;TRUE
+scapophyllia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Merulina;NA;TRUE
 scolymia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Mussidae;Scolymia;NA;TRUE
 seagrass;Seagrass;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 seagrass halophila;Seagrass;NA;NA;Tracheophyta;Magnoliopsida;NA;Alismatales;Hydrocharitaceae;Halophila;NA;TRUE
@@ -802,9 +871,11 @@ seagrasses;Seagrass;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 seriatopora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Seriatopora;NA;TRUE
 seriatopora blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Seriatopora;NA;TRUE
 seriatopota sub-massif;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Seriatopora;NA;TRUE
+seriatpora;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Pocilloporidae;Seriatopora;NA;TRUE
 sessile bivalves;NA;NA;NA;Mollusca;Bivalvia;NA;NA;NA;NA;NA;TRUE
 sessile gastropods;NA;NA;NA;Mollusca;Gastropoda;NA;NA;NA;NA;NA;TRUE
 shadow;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+shells/rock fragments;Abiotic;Rubble;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 siderastrea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;Siderastrea;NA;TRUE
 siderastreidae;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Siderastreidae;NA;NA;TRUE
 silt;Abiotic;Silt;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -838,6 +909,10 @@ soft substrate;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 softcoral;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;NA;NA;NA;NA;TRUE
 solitary anemones;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Actiniaria;NA;NA;NA;TRUE
 solitary coral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+sp branching;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
+sp encrusting complex;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
+sp encrusting flat;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
+sp whorls or barrel;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
 sponge;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
 sponge - other;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
 sponges;NA;NA;NA;Porifera;NA;NA;NA;NA;NA;NA;TRUE
@@ -871,12 +946,14 @@ tape;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 tapes/camera/fish;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 terpios sponge;NA;NA;NA;Porifera;Demospongiae;Heteroscleromorpha;Suberitida;Suberitidae;Terpios;NA;TRUE
 trachyphyllia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Merulinidae;Trachyphyllia;NA;TRUE
+tubipora;NA;NA;NA;Cnidaria;Anthozoa;Octocorallia;Malacalcyonacea;Tubiporidae;Tubipora;NA;TRUE
 tuff;Algae;Turf algae;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 tunicate;NA;NA;NA;Chordata;NA;NA;NA;NA;NA;NA;TRUE
 turbinara coral;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;Turbinaria;NA;TRUE
 turbinaria;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 turbinaria blanchi;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;Turbinaria;NA;TRUE
 turbinaria branchu;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;Turbinaria;NA;TRUE
+turbinaria coral;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;Turbinaria;NA;TRUE
 turbinaria foliaire;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;Turbinaria;NA;TRUE
 turbinaria sp;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 turbinaria sp bleached;NA;NA;Bleached;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Dendrophylliidae;Turbinaria;NA;TRUE
