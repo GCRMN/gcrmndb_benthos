@@ -361,6 +361,7 @@ fungia solitaire;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;
 fungia sp;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Fungia;NA;TRUE
 fungia sp bleached;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;Fungia;NA;TRUE
 fungiid;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;NA;NA;TRUE
+fungiidae;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;NA;NA;TRUE
 fungiidae encrusting and foliose;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Fungiidae;NA;NA;TRUE
 galaxaura sp;NA;NA;NA;Rhodophyta;Florideophyceae;Nemaliophycidae;Nemaliales;Galaxauraceae;Galaxaura;NA;TRUE
 galaxea;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Euphylliidae;Galaxea;NA;TRUE
@@ -480,6 +481,11 @@ hard coral - tfp: visible round corallites;NA;NA;NA;Cnidaria;Anthozoa;Hexacorall
 hard coral - undaria tenuifoila;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;Agariciidae;Agaricia;Agaricia tenuifolia;TRUE
 hard coral bleached;Hard coral;NA;Bleached;NA;NA;NA;NA;NA;NA;NA;TRUE
 hard coral dead;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+hard coral non acropora branching;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
+hard coral non acropora encrusting;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
+hard coral non acropora foliose;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
+hard coral non acropora massive;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
+hard coral non acropora submassive;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Scleractinia;NA;NA;NA;TRUE
 hard corals;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 hard substrate;Abiotic;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 hardcoral;Hard coral;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -982,6 +988,7 @@ wand;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 water;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 wire and black coral;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Antipatharia;NA;NA;NA;TRUE
 worms;Other fauna;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+zoantharia;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Zoantharia;NA;NA;NA;TRUE
 zoanthid;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Zoantharia;NA;NA;NA;TRUE
 zoanthidae;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Zoantharia;Zoanthidae;NA;NA;TRUE
 zoanthids;NA;NA;NA;Cnidaria;Anthozoa;Hexacorallia;Zoantharia;NA;NA;NA;TRUE
