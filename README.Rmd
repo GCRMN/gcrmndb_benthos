@@ -25,6 +25,7 @@ source("code/00_functions/data_descriptors.R")
 
 library(tidyverse) # Core tidyverse packages
 library(sf)
+sf_use_s2(FALSE)
 library(knitr)
 
 # 3. Set theme_graph() as the default ggplot theme ----
@@ -122,8 +123,8 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 |----:|:----------------------|:--------------------------:|:----------|:-------------------------------------------------------------------------------------------------------|
 | 1   | datasetID             | :memo:                     | Factor    | ID of the dataset                                                                                      |  
 | 2   | higherGeography       | :globe_with_meridians:     | Factor    | GCRMN region (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))                         |  
-| 3   | country               | :globe_with_meridians:     | Factor    | Country (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))    |  
-| 4   | territory             | :globe_with_meridians:     | Character | Territory (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*TERRITORY1*))  |  
+| 3   | country               | :globe_with_meridians:     | Factor    | Country (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))    |  
+| 4   | territory             | :globe_with_meridians:     | Character | Territory (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*TERRITORY1*))  |  
 | 5   | locality              | :globe_with_meridians:     | Character | Site name                                                                                              |  
 | 6   | habitat               | :globe_with_meridians:     | Factor    | Habitat                                                                                                |  
 | 7   | parentEventID         | :globe_with_meridians:     | Integer   | Transect ID                                                                                            |  
@@ -254,7 +255,7 @@ correction_polygon <- st_polygon(x = list(rbind(c(-0.0001 - correction_offset, 9
 
 # 2.3.3 Load and transform data --
 
-data_eez <- st_read("data/07_data-eez/eez_v11.shp") %>% 
+data_eez <- st_read("data/07_data-eez/02_clean/eez_v12.shp") %>% 
   st_transform(crs = 4326) %>% 
   st_make_valid() %>% 
   st_difference(correction_polygon) %>% 
@@ -369,22 +370,9 @@ The following organizations have funded the realization of the `gcrmndb_benthos`
 
 ```{r echo=FALSE, message=FALSE}
 
-# 1. Packages used in most R scripts ----
+# 1. Print session info ----
 
-library(tidyverse) # Core tidyverse packages
-library(formattable) # Interactive HTML tables
-library(DT) # Interactive HTML tables
-library(leaflet) # Interactive HTML map
-library(taxize) # For taxonomy
-library(sf)
-library(knitr)
-library(rmarkdown)
-library(plotly)
-library(kableExtra)
-library(mermaidr)
-
-# 2. Print session info ----
-
-sessionInfo()
+devtools::session_info(c("tidyverse", "formattable", "DT", "leaflet",
+                         "taxize", "sf", "knitr", "rmarkdown", "plotly", "kableExtra", "mermaidr"))
 
 ```

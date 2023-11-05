@@ -139,8 +139,8 @@ terms](https://dwc.tdwg.org/terms).
 |----:|:-----------------|:--------------------------:|:----------|:------------------------------------------------------------------------------------------------------|
 |   1 | datasetID        |           :memo:           | Factor    | ID of the dataset                                                                                     |
 |   2 | higherGeography  |   :globe_with_meridians:   | Factor    | GCRMN region (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))                        |
-|   3 | country          |   :globe_with_meridians:   | Factor    | Country (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))   |
-|   4 | territory        |   :globe_with_meridians:   | Character | Territory (obtained from [World EEZ v11](https://www.marineregions.org/downloads.php) (*TERRITORY1*)) |
+|   3 | country          |   :globe_with_meridians:   | Factor    | Country (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))   |
+|   4 | territory        |   :globe_with_meridians:   | Character | Territory (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*TERRITORY1*)) |
 |   5 | locality         |   :globe_with_meridians:   | Character | Site name                                                                                             |
 |   6 | habitat          |   :globe_with_meridians:   | Factor    | Habitat                                                                                               |
 |   7 | parentEventID    |   :globe_with_meridians:   | Integer   | Transect ID                                                                                           |
@@ -262,13 +262,14 @@ considered. The column names (except *aggregator*) correspond to
 |   0038    | [Reef Life Survey](https://doi.org/10.1016/j.biocon.2020.108855)                                                                                        | upon request   | Sh.  | 2023-09-13 |     JW     |
 |   0039    | [MMR](https://www.mmr.gov.ck/)                                                                                                                          | upon request   | Sh.  | 2023-09-12 |     JW     |
 |   0040    |                                                                                                                                                         | upon request   | Sh.  |            |     JW     |
-|   0041    | Pouebo                                                                                                                                                  | upon request   | Sh.  |            |     JW     |
+|   0041    | Pouebo                                                                                                                                                  | upon request   | Sh.  | 2022-12-16 |     JW     |
+|   0042    | [Living Ocean Foundation](https://www.livingoceansfoundation.org/)                                                                                      | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-10-18, the `gcrmndb_benthos` synthetic dataset contains a
-total of **911,885 observations** (*i.e* rows) representing **10,973
-sites** and **24,165 surveys**.
+On the 2023-11-05, the `gcrmndb_benthos` synthetic dataset contains a
+total of **878,922 observations** (*i.e* rows) representing **9,641
+sites** and **22,392 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -287,15 +288,13 @@ GCRMN regions.
 
 | GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |-------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|    Australia |      1237 |        5314 |            3 |    1995    |   2023    |
-|       Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|    Caribbean |        97 |         347 |            3 |    1987    |   2022    |
-|          EAS |      2510 |        5386 |            3 |    1997    |   2022    |
-|          ETP |       239 |         283 |            2 |    1998    |   2018    |
-|       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      6538 |       12220 |           36 |    1987    |   2023    |
-|   South Asia |       163 |         229 |            2 |    1997    |   2022    |
-|          WIO |       167 |         363 |            2 |    1997    |   2019    |
+|    Australia |       546 |        4175 |            2 |    1995    |   2019    |
+|    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
+|          EAS |      2386 |        5247 |            2 |    1997    |   2022    |
+|          ETP |         5 |           5 |            1 |    1998    |   2004    |
+|      Pacific |      6399 |       12170 |           35 |    1987    |   2023    |
+|   South Asia |       151 |         217 |            1 |    1997    |   2022    |
+|          WIO |       146 |         342 |            1 |    1997    |   2019    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -305,72 +304,59 @@ territories.
 
 |               Country | Territory                    | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |----------------------:|:-----------------------------|----------:|------------:|-------------:|:----------:|:---------:|
-|             Australia | Australia                    |      1208 |        5248 |            3 |    1995    |   2023    |
-|             Australia | Christmas Island             |        16 |          30 |            2 |    2003    |   2010    |
+|             Australia | Australia                    |       524 |        4113 |            2 |    1995    |   2019    |
+|             Australia | Christmas Island             |         2 |          13 |            1 |    2003    |   2007    |
 |             Australia | Cocos Islands                |        20 |          49 |            1 |    1997    |   2008    |
 |            Bangladesh | Bangladesh                   |         2 |           2 |            1 |    2005    |   2006    |
-|                Belize | Belize                       |        12 |          22 |            1 |    2015    |   2018    |
-|                Brazil | Brazil                       |        10 |          11 |            1 |    2012    |   2012    |
 |                Brunei | Brunei                       |        38 |          45 |            1 |    1997    |   2016    |
-|              Cambodia | Cambodia                     |        96 |         103 |            2 |    1998    |   2013    |
+|              Cambodia | Cambodia                     |        91 |          98 |            1 |    1998    |   2013    |
 |                 China | China                        |       100 |         366 |            1 |    1997    |   2012    |
-|              Colombia | Colombia                     |        20 |          20 |            2 |    1998    |   2011    |
-|              Colombia | Serrana Bank                 |         6 |           6 |            1 |    2016    |   2016    |
-|            Costa Rica | Costa Rica                   |        51 |          64 |            2 |    2004    |   2011    |
-|            East Timor | East Timor                   |        11 |          13 |            2 |    2004    |   2017    |
-|               Ecuador | Galapagos                    |        62 |          62 |            1 |    2008    |   2012    |
-|                 Egypt | Egypt                        |        12 |          12 |            1 |    2011    |   2011    |
-|                  Fiji | Fiji                         |       567 |         889 |           10 |    1997    |   2022    |
+|              Colombia | Colombia                     |         4 |           4 |            1 |    1998    |   1999    |
+|            Costa Rica | Costa Rica                   |         1 |           1 |            1 |    2004    |   2004    |
+|            East Timor | East Timor                   |        10 |          12 |            1 |    2004    |   2017    |
+|                  Fiji | Fiji                         |       568 |         890 |           10 |    1997    |   2022    |
 |                France | Europa Island                |         1 |           1 |            1 |    2002    |   2002    |
-|                France | French Polynesia             |       223 |        2075 |            7 |    1987    |   2022    |
+|                France | French Polynesia             |       150 |        2000 |            6 |    1987    |   2022    |
 |                France | Mayotte                      |        20 |          87 |            1 |    2003    |   2017    |
-|                France | New Caledonia                |       725 |        3080 |            7 |    1997    |   2023    |
+|                France | New Caledonia                |       753 |        3200 |            7 |    1997    |   2023    |
 |                France | Réunion                      |        32 |         133 |            1 |    2003    |   2016    |
 |                 India | India                        |         1 |           1 |            1 |    1998    |   1998    |
-|             Indonesia | Indonesia                    |       665 |        1047 |            2 |    1997    |   2022    |
-|                 Japan | Japan                        |        52 |         110 |            2 |    1997    |   2015    |
+|             Indonesia | Indonesia                    |       549 |         908 |            1 |    1997    |   2022    |
+|                 Japan | Japan                        |        44 |         102 |            1 |    1997    |   2015    |
 |                 Kenya | Kenya                        |         6 |           6 |            1 |    2003    |   2004    |
 |              Kiribati | Gilbert Islands              |        18 |          18 |            2 |    2011    |   2018    |
-|            Madagascar | Madagascar                   |        42 |          54 |            1 |    2001    |   2019    |
-|              Malaysia | Malaysia                     |       621 |        2174 |            2 |    1997    |   2021    |
-|              Maldives | Maldives                     |       157 |         223 |            2 |    1997    |   2022    |
-|      Marshall Islands | Marshall Islands             |        84 |          98 |            3 |    2002    |   2020    |
-|                Mexico | Mexico                       |         9 |          10 |            1 |    2018    |   2018    |
-|            Micronesia | Micronesia                   |       168 |         385 |            2 |    2000    |   2020    |
-|            Mozambique | Mozambique                   |        14 |          15 |            2 |    1997    |   2012    |
+|            Madagascar | Madagascar                   |        43 |          55 |            1 |    2001    |   2019    |
+|              Malaysia | Malaysia                     |       626 |        2195 |            2 |    1997    |   2021    |
+|              Maldives | Maldives                     |       145 |         211 |            1 |    1997    |   2022    |
+|      Marshall Islands | Marshall Islands             |        77 |          91 |            2 |    2002    |   2020    |
+|            Micronesia | Micronesia                   |       172 |         395 |            2 |    2000    |   2020    |
+|            Mozambique | Mozambique                   |        13 |          14 |            1 |    1997    |   2006    |
 |               Myanmar | Myanmar                      |        22 |          29 |            1 |    2001    |   2013    |
-|           Netherlands | Bonaire                      |        14 |          14 |            1 |    2012    |   2012    |
-|           New Zealand | Cook Islands                 |       172 |         214 |            4 |    2005    |   2023    |
-|           New Zealand | Niue                         |         7 |           7 |            1 |    2011    |   2011    |
-|             Nicaragua | Nicaragua                    |        23 |          23 |            1 |    2011    |   2015    |
+|           New Zealand | Cook Islands                 |       160 |         202 |            3 |    2005    |   2023    |
 |                 Palau | Palau                        |         6 |          16 |            1 |    1997    |   2006    |
-|                Panama | Panama                       |       109 |         140 |            1 |    2007    |   2015    |
-|      Papua New Guinea | Papua New Guinea             |        90 |         266 |            4 |    1998    |   2019    |
-|           Philippines | Philippines                  |       472 |         703 |            1 |    1997    |   2020    |
+|      Papua New Guinea | Papua New Guinea             |        83 |         259 |            3 |    1998    |   2019    |
+|           Philippines | Philippines                  |       472 |         695 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius        |        10 |          12 |            1 |    1999    |   2003    |
-|                 Samoa | Samoa                        |         2 |           4 |            2 |    2012    |   2019    |
-|            Seychelles | Seychelles                   |        19 |          19 |            2 |    1997    |   2012    |
-|       Solomon Islands | Solomon Islands              |        75 |         173 |            4 |    2005    |   2021    |
+|                 Samoa | Samoa                        |         1 |           3 |            1 |    2013    |   2019    |
+|            Seychelles | Seychelles                   |         7 |           7 |            1 |    1997    |   2001    |
+|       Solomon Islands | Solomon Islands              |        73 |         171 |            3 |    2005    |   2021    |
 |          South Africa | South Africa                 |         5 |           6 |            1 |    2001    |   2005    |
 |             Sri Lanka | Sri Lanka                    |         3 |           3 |            1 |    2003    |   2003    |
 |                Taiwan | Taiwan                       |       103 |         195 |            1 |    1997    |   2020    |
-|              Tanzania | Tanzania                     |        18 |          30 |            2 |    1997    |   2012    |
-|              Thailand | Thailand                     |       148 |         245 |            1 |    1998    |   2022    |
-|                 Tonga | Tonga                        |        29 |          34 |            3 |    2002    |   2019    |
-|        United Kingdom | Cayman Islands               |         1 |           1 |            1 |    2011    |   2011    |
-|        United Kingdom | Pitcairn                     |         6 |          11 |            2 |    2009    |   2018    |
-|        United Kingdom | Turks and Caicos Islands     |         4 |           4 |            1 |    2015    |   2015    |
-|         United States | American Samoa               |       843 |         903 |            4 |    1997    |   2019    |
+|              Tanzania | Tanzania                     |         9 |          21 |            1 |    1997    |   2008    |
+|              Thailand | Thailand                     |       149 |         246 |            1 |    1998    |   2022    |
+|                 Tonga | Tonga                        |         4 |           9 |            2 |    2002    |   2019    |
+|        United Kingdom | Pitcairn                     |         1 |           5 |            1 |    2009    |   2018    |
+|         United States | American Samoa               |       826 |         886 |            3 |    1997    |   2019    |
 |         United States | Guam                         |       301 |         353 |            4 |    1997    |   2021    |
-|         United States | Hawaii                       |      1734 |        1924 |            4 |    1997    |   2021    |
-|         United States | Howland and Baker islands    |       150 |         150 |            1 |    2015    |   2017    |
+|         United States | Hawaii                       |      1725 |        1915 |            3 |    1997    |   2021    |
+|         United States | Howland and Baker Islands    |       150 |         150 |            1 |    2015    |   2017    |
 |         United States | Jarvis Island                |       222 |         222 |            1 |    2015    |   2017    |
 |         United States | Johnston Atoll               |        46 |          46 |            1 |    2015    |   2015    |
 |         United States | Northern Mariana Islands     |       679 |         840 |            3 |    1999    |   2020    |
 |         United States | Palmyra Atoll                |       194 |         294 |            2 |    2009    |   2019    |
-|         United States | United States                |        17 |          28 |            1 |    2010    |   2022    |
 |         United States | United States Virgin Islands |         8 |         236 |            2 |    1987    |   2021    |
-|         United States | Wake Island                  |       146 |         146 |            1 |    2014    |   2017    |
+|         United States | Wake Island / Enenkio        |       146 |         146 |            1 |    2014    |   2017    |
 |               Vanuatu | Vanuatu                      |        44 |          59 |            2 |    2004    |   2019    |
 |               Vietnam | Vietnam                      |       182 |         356 |            1 |    1998    |   2011    |
 
@@ -427,50 +413,214 @@ The following organizations have funded the realization of the
 
 ## 9. Reproducibility parameters
 
-    R version 4.3.1 (2023-06-16 ucrt)
-    Platform: x86_64-w64-mingw32/x64 (64-bit)
-    Running under: Windows 10 x64 (build 18363)
+    ─ Session info ───────────────────────────────────────────────────────────────
+     setting  value
+     version  R version 4.3.1 (2023-06-16 ucrt)
+     os       Windows 10 x64 (build 18363)
+     system   x86_64, mingw32
+     ui       RTerm
+     language (EN)
+     collate  French_France.utf8
+     ctype    French_France.utf8
+     tz       Europe/Paris
+     date     2023-11-05
+     pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
-    Matrix products: default
+    ─ Packages ───────────────────────────────────────────────────────────────────
+     package               * version   date (UTC) lib source
+     ape                     5.7-1     2023-03-13 [1] CRAN (R 4.3.1)
+     askpass                 1.2.0     2023-09-03 [1] CRAN (R 4.3.1)
+     assertthat              0.2.1     2019-03-21 [1] CRAN (R 4.3.1)
+     backports               1.4.1     2021-12-13 [1] CRAN (R 4.3.0)
+     base64enc               0.1-3     2015-07-28 [1] CRAN (R 4.3.0)
+     bit                     4.0.5     2022-11-15 [1] CRAN (R 4.3.0)
+     bit64                   4.0.5     2020-08-30 [1] CRAN (R 4.3.0)
+     blob                    1.2.4     2023-03-17 [1] CRAN (R 4.3.0)
+     bold                    1.3.0     2023-05-02 [1] CRAN (R 4.3.1)
+     broom                   1.0.5     2023-06-09 [1] CRAN (R 4.3.0)
+     bslib                   0.5.1     2023-08-11 [1] CRAN (R 4.3.1)
+     cachem                  1.0.8     2023-05-01 [1] CRAN (R 4.3.0)
+     callr                   3.7.3     2022-11-02 [1] CRAN (R 4.3.0)
+     cellranger              1.1.0     2016-07-27 [1] CRAN (R 4.3.0)
+     checkmate               2.3.0     2023-10-25 [1] CRAN (R 4.3.1)
+     class                   7.3-22    2023-05-03 [1] CRAN (R 4.3.1)
+     classInt                0.4-10    2023-09-05 [1] CRAN (R 4.3.1)
+     cli                     3.6.1     2023-03-23 [1] CRAN (R 4.3.0)
+     clipr                   0.8.0     2022-02-22 [1] CRAN (R 4.3.0)
+     cluster                 2.1.4     2022-08-22 [1] CRAN (R 4.3.1)
+     codetools               0.2-19    2023-02-01 [1] CRAN (R 4.3.1)
+     colorspace              2.1-0     2023-01-23 [1] CRAN (R 4.3.0)
+     conditionz              0.1.0     2019-04-24 [1] CRAN (R 4.3.1)
+     conflicted              1.2.0     2023-02-01 [1] CRAN (R 4.3.0)
+     cpp11                   0.4.6     2023-08-10 [1] CRAN (R 4.3.1)
+     crayon                  1.5.2     2022-09-29 [1] CRAN (R 4.3.0)
+     credentials             2.0.1     2023-09-06 [1] CRAN (R 4.3.1)
+     crosstalk               1.2.0     2021-11-04 [1] CRAN (R 4.3.1)
+     crul                    1.4.0     2023-05-17 [1] CRAN (R 4.3.1)
+     curl                    5.1.0     2023-10-02 [1] CRAN (R 4.3.1)
+     data.table              1.14.8    2023-02-17 [1] CRAN (R 4.3.0)
+     DBI                     1.1.3     2022-06-18 [1] CRAN (R 4.3.0)
+     dbplyr                  2.4.0     2023-10-26 [1] CRAN (R 4.3.1)
+     desc                    1.4.2     2022-09-08 [1] CRAN (R 4.3.1)
+     digest                  0.6.33    2023-07-07 [1] CRAN (R 4.3.1)
+     dplyr                 * 1.1.3     2023-09-03 [1] CRAN (R 4.3.1)
+     DT                      0.30      2023-10-05 [1] CRAN (R 4.3.1)
+     dtplyr                  1.3.1     2023-03-22 [1] CRAN (R 4.3.0)
+     e1071                   1.7-13    2023-02-01 [1] CRAN (R 4.3.1)
+     ellipsis                0.3.2     2021-04-29 [1] CRAN (R 4.3.0)
+     evaluate                0.22      2023-09-29 [1] CRAN (R 4.3.1)
+     fansi                   1.0.5     2023-10-08 [1] CRAN (R 4.3.1)
+     farver                  2.1.1     2022-07-06 [1] CRAN (R 4.3.0)
+     fastmap                 1.1.1     2023-02-24 [1] CRAN (R 4.3.0)
+     fastmatch               1.1-4     2023-08-18 [1] CRAN (R 4.3.1)
+     fontawesome             0.5.2     2023-08-19 [1] CRAN (R 4.3.1)
+     forcats               * 1.0.0     2023-01-29 [1] CRAN (R 4.3.0)
+     foreach                 1.5.2     2022-02-02 [1] CRAN (R 4.3.1)
+     foreign                 0.8-85    2023-09-09 [1] CRAN (R 4.3.1)
+     formattable             0.2.1     2021-01-07 [1] CRAN (R 4.3.1)
+     Formula                 1.2-5     2023-02-24 [1] CRAN (R 4.3.0)
+     fs                      1.6.3     2023-07-20 [1] CRAN (R 4.3.1)
+     gargle                  1.5.2     2023-07-20 [1] CRAN (R 4.3.1)
+     generics                0.1.3     2022-07-05 [1] CRAN (R 4.3.0)
+     gert                    2.0.0     2023-09-26 [1] CRAN (R 4.3.1)
+     ggplot2               * 3.4.4     2023-10-12 [1] CRAN (R 4.3.1)
+     gh                      1.4.0     2023-02-22 [1] CRAN (R 4.3.1)
+     gitcreds                0.1.2     2022-09-08 [1] CRAN (R 4.3.1)
+     glue                    1.6.2     2022-02-24 [1] CRAN (R 4.3.0)
+     googledrive             2.1.1     2023-06-11 [1] CRAN (R 4.3.0)
+     googlesheets4           1.1.1     2023-06-11 [1] CRAN (R 4.3.0)
+     gridExtra               2.3       2017-09-09 [1] CRAN (R 4.3.1)
+     gtable                  0.3.4     2023-08-21 [1] CRAN (R 4.3.1)
+     haven                   2.5.3     2023-06-30 [1] CRAN (R 4.3.1)
+     highr                   0.10      2022-12-22 [1] CRAN (R 4.3.0)
+     Hmisc                   5.1-1     2023-09-12 [1] CRAN (R 4.3.1)
+     hms                     1.1.3     2023-03-21 [1] CRAN (R 4.3.0)
+     htmlTable               2.4.1     2022-07-07 [1] CRAN (R 4.3.1)
+     htmltools               0.5.6.1   2023-10-06 [1] CRAN (R 4.3.1)
+     htmlwidgets             1.6.2     2023-03-17 [1] CRAN (R 4.3.1)
+     httpcode                0.3.0     2020-04-10 [1] CRAN (R 4.3.1)
+     httpuv                  1.6.12    2023-10-23 [1] CRAN (R 4.3.1)
+     httr                    1.4.7     2023-08-15 [1] CRAN (R 4.3.1)
+     httr2                   0.2.3     2023-05-08 [1] CRAN (R 4.3.1)
+     ids                     1.0.1     2017-05-31 [1] CRAN (R 4.3.0)
+     igraph                  1.5.1     2023-08-10 [1] CRAN (R 4.3.1)
+     ini                     0.3.1     2018-05-20 [1] CRAN (R 4.3.1)
+     isoband                 0.2.7     2022-12-20 [1] CRAN (R 4.3.0)
+     iterators               1.0.14    2022-02-05 [1] CRAN (R 4.3.1)
+     jquerylib               0.1.4     2021-04-26 [1] CRAN (R 4.3.0)
+     jsonlite                1.8.7     2023-06-29 [1] CRAN (R 4.3.1)
+     kableExtra              1.3.4     2021-02-20 [1] CRAN (R 4.3.1)
+     KernSmooth              2.23-22   2023-07-10 [1] CRAN (R 4.3.1)
+     knitr                 * 1.44      2023-09-11 [1] CRAN (R 4.3.1)
+     labeling                0.4.3     2023-08-29 [1] CRAN (R 4.3.1)
+     later                   1.3.1     2023-05-02 [1] CRAN (R 4.3.1)
+     lattice                 0.21-9    2023-10-01 [1] CRAN (R 4.3.1)
+     lazyeval                0.2.2     2019-03-15 [1] CRAN (R 4.3.1)
+     leaflet                 2.2.0     2023-08-31 [1] CRAN (R 4.3.1)
+     leaflet.providers       2.0.0     2023-10-17 [1] CRAN (R 4.3.1)
+     lifecycle               1.0.3     2022-10-07 [1] CRAN (R 4.3.0)
+     lubridate             * 1.9.3     2023-09-27 [1] CRAN (R 4.3.1)
+     magrittr                2.0.3     2022-03-30 [1] CRAN (R 4.3.0)
+     MASS                    7.3-60    2023-05-04 [1] CRAN (R 4.3.1)
+     Matrix                  1.6-1.1   2023-09-18 [1] CRAN (R 4.3.1)
+     memoise                 2.0.1     2021-11-26 [1] CRAN (R 4.3.0)
+     mermaidr                0.6.4     2023-06-19 [1] Github (data-mermaid/mermaidr@47ca889)
+     mgcv                    1.9-0     2023-07-11 [1] CRAN (R 4.3.1)
+     mime                    0.12      2021-09-28 [1] CRAN (R 4.3.0)
+     modelr                  0.1.11    2023-03-22 [1] CRAN (R 4.3.0)
+     munsell                 0.5.0     2018-06-12 [1] CRAN (R 4.3.0)
+     natserv                 1.0.0     2020-05-16 [1] CRAN (R 4.3.1)
+     nlme                    3.1-163   2023-08-09 [1] CRAN (R 4.3.1)
+     nnet                    7.3-19    2023-05-03 [1] CRAN (R 4.3.1)
+     openssl                 2.1.1     2023-09-25 [1] CRAN (R 4.3.1)
+     openxlsx                4.2.5.2   2023-02-06 [1] CRAN (R 4.3.1)
+     pbapply                 1.7-2     2023-06-27 [1] CRAN (R 4.3.1)
+     phangorn                2.11.1    2023-01-23 [1] CRAN (R 4.3.1)
+     pillar                  1.9.0     2023-03-22 [1] CRAN (R 4.3.0)
+     pkgconfig               2.0.3     2019-09-22 [1] CRAN (R 4.3.0)
+     plotly                  4.10.3    2023-10-21 [1] CRAN (R 4.3.1)
+     plyr                    1.8.9     2023-10-02 [1] CRAN (R 4.3.1)
+     png                     0.1-8     2022-11-29 [1] CRAN (R 4.3.0)
+     prettyunits             1.2.0     2023-09-24 [1] CRAN (R 4.3.1)
+     processx                3.8.2     2023-06-30 [1] CRAN (R 4.3.1)
+     progress                1.2.2     2019-05-16 [1] CRAN (R 4.3.0)
+     promises                1.2.1     2023-08-10 [1] CRAN (R 4.3.1)
+     proxy                   0.4-27    2022-06-09 [1] CRAN (R 4.3.1)
+     ps                      1.7.5     2023-04-18 [1] CRAN (R 4.3.0)
+     purrr                 * 1.0.2     2023-08-10 [1] CRAN (R 4.3.1)
+     quadprog                1.5-8     2019-11-20 [1] CRAN (R 4.3.0)
+     R6                      2.5.1     2021-08-19 [1] CRAN (R 4.3.0)
+     ragg                    1.2.6     2023-10-10 [1] CRAN (R 4.3.1)
+     rappdirs                0.3.3     2021-01-31 [1] CRAN (R 4.3.0)
+     raster                  3.6-26    2023-10-14 [1] CRAN (R 4.3.1)
+     ratelimitr              0.4.1     2018-10-07 [1] CRAN (R 4.3.1)
+     RColorBrewer            1.1-3     2022-04-03 [1] CRAN (R 4.3.0)
+     Rcpp                    1.0.11    2023-07-06 [1] CRAN (R 4.3.1)
+     readr                 * 2.1.4     2023-02-10 [1] CRAN (R 4.3.0)
+     readxl                  1.4.3     2023-07-06 [1] CRAN (R 4.3.1)
+     rematch                 2.0.0     2023-08-30 [1] CRAN (R 4.3.1)
+     rematch2                2.1.2     2020-05-01 [1] CRAN (R 4.3.0)
+     rentrez                 1.2.3     2020-11-10 [1] CRAN (R 4.3.1)
+     reprex                  2.0.2     2022-08-17 [1] CRAN (R 4.3.0)
+     rex                     1.2.1     2021-11-26 [1] CRAN (R 4.3.1)
+     ritis                   1.0.0     2021-02-02 [1] CRAN (R 4.3.1)
+     rlang                   1.1.1     2023-04-28 [1] CRAN (R 4.3.0)
+     rmarkdown               2.25      2023-09-18 [1] CRAN (R 4.3.1)
+     rncl                    0.8.7     2023-01-08 [1] CRAN (R 4.3.1)
+     rotl                    3.1.0     2023-06-15 [1] CRAN (R 4.3.1)
+     rpart                   4.1.21    2023-10-09 [1] CRAN (R 4.3.1)
+     rprojroot               2.0.3     2022-04-02 [1] CRAN (R 4.3.1)
+     rredlist                0.7.1     2022-11-11 [1] CRAN (R 4.3.1)
+     rstudioapi              0.15.0    2023-07-07 [1] CRAN (R 4.3.1)
+     rvest                   1.0.3     2022-08-19 [1] CRAN (R 4.3.0)
+     s2                      1.1.4     2023-05-17 [1] CRAN (R 4.3.1)
+     sass                    0.4.7     2023-07-15 [1] CRAN (R 4.3.1)
+     scales                  1.2.1     2022-08-20 [1] CRAN (R 4.3.0)
+     selectr                 0.4-2     2019-11-20 [1] CRAN (R 4.3.0)
+     sf                    * 1.0-14    2023-07-11 [1] CRAN (R 4.3.1)
+     solrium                 1.2.0     2021-05-19 [1] CRAN (R 4.3.1)
+     sp                      2.1-1     2023-10-16 [1] CRAN (R 4.3.1)
+     stringi                 1.7.12    2023-01-11 [1] CRAN (R 4.3.0)
+     stringr               * 1.5.0     2022-12-02 [1] CRAN (R 4.3.0)
+     svglite                 2.1.2     2023-10-11 [1] CRAN (R 4.3.1)
+     sys                     3.4.2     2023-05-23 [1] CRAN (R 4.3.0)
+     systemfonts             1.0.5     2023-10-09 [1] CRAN (R 4.3.1)
+     taxize                  0.9.100   2022-04-22 [1] CRAN (R 4.3.1)
+     terra                   1.7-55    2023-10-13 [1] CRAN (R 4.3.1)
+     textshaping             0.3.7     2023-10-09 [1] CRAN (R 4.3.1)
+     tibble                * 3.2.1     2023-03-20 [1] CRAN (R 4.3.0)
+     tidyr                 * 1.3.0     2023-01-24 [1] CRAN (R 4.3.0)
+     tidyselect              1.2.0     2022-10-10 [1] CRAN (R 4.3.0)
+     tidyverse             * 2.0.0     2023-02-22 [1] CRAN (R 4.3.0)
+     timechange              0.2.0     2023-01-11 [1] CRAN (R 4.3.0)
+     tinytex                 0.48      2023-10-13 [1] CRAN (R 4.3.1)
+     triebeard               0.4.1     2023-03-04 [1] CRAN (R 4.3.1)
+     tzdb                    0.4.0     2023-05-12 [1] CRAN (R 4.3.0)
+     units                   0.8-4     2023-09-13 [1] CRAN (R 4.3.1)
+     urltools                1.7.3     2019-04-14 [1] CRAN (R 4.3.1)
+     usethis                 2.2.2     2023-07-06 [1] CRAN (R 4.3.1)
+     utf8                    1.2.4     2023-10-22 [1] CRAN (R 4.3.1)
+     uuid                    1.1-1     2023-08-17 [1] CRAN (R 4.3.1)
+     vctrs                   0.6.4     2023-10-12 [1] CRAN (R 4.3.1)
+     viridis                 0.6.4     2023-07-22 [1] CRAN (R 4.3.1)
+     viridisLite             0.4.2     2023-05-02 [1] CRAN (R 4.3.0)
+     vroom                   1.6.4     2023-10-02 [1] CRAN (R 4.3.1)
+     webshot                 0.5.5     2023-06-26 [1] CRAN (R 4.3.1)
+     whisker                 0.4.1     2022-12-05 [1] CRAN (R 4.3.1)
+     WikidataQueryServiceR   1.0.0     2020-06-16 [1] CRAN (R 4.3.1)
+     WikidataR               2.3.3     2021-11-16 [1] CRAN (R 4.3.1)
+     WikipediR               1.5.0     2017-02-05 [1] CRAN (R 4.3.1)
+     wikitaxa                0.4.0     2020-06-29 [1] CRAN (R 4.3.1)
+     withr                   2.5.1     2023-09-26 [1] CRAN (R 4.3.1)
+     wk                      0.9.0     2023-10-22 [1] CRAN (R 4.3.1)
+     worrms                  0.4.3     2023-06-20 [1] CRAN (R 4.3.1)
+     xfun                    0.40      2023-08-09 [1] CRAN (R 4.3.1)
+     XML                     3.99-0.14 2023-03-19 [1] CRAN (R 4.3.0)
+     xml2                    1.3.5     2023-07-06 [1] CRAN (R 4.3.1)
+     yaml                    2.3.7     2023-01-23 [1] CRAN (R 4.3.0)
+     zip                     2.3.0     2023-04-17 [1] CRAN (R 4.3.1)
+     zoo                     1.8-12    2023-04-13 [1] CRAN (R 4.3.1)
 
+     [1] C:/Users/jwicquart/AppData/Local/Programs/R/R-4.3.1/library
 
-    locale:
-    [1] LC_COLLATE=French_France.utf8  LC_CTYPE=French_France.utf8   
-    [3] LC_MONETARY=French_France.utf8 LC_NUMERIC=C                  
-    [5] LC_TIME=French_France.utf8    
-
-    time zone: Europe/Paris
-    tzcode source: internal
-
-    attached base packages:
-    [1] stats     graphics  grDevices utils     datasets  methods   base     
-
-    other attached packages:
-     [1] mermaidr_0.6.4    kableExtra_1.3.4  plotly_4.10.2     rmarkdown_2.25   
-     [5] taxize_0.9.100    leaflet_2.2.0     DT_0.30           formattable_0.2.1
-     [9] knitr_1.44        sf_1.0-14         lubridate_1.9.3   forcats_1.0.0    
-    [13] stringr_1.5.0     dplyr_1.1.3       purrr_1.0.2       readr_2.1.4      
-    [17] tidyr_1.3.0       tibble_3.2.1      ggplot2_3.4.4     tidyverse_2.0.0  
-    [21] extrafont_0.19   
-
-    loaded via a namespace (and not attached):
-     [1] tidyselect_1.2.0   viridisLite_0.4.2  farver_2.1.1       fastmap_1.1.1     
-     [5] lazyeval_0.2.2     promises_1.2.1     digest_0.6.33      timechange_0.2.0  
-     [9] lifecycle_1.0.3    magrittr_2.0.3     compiler_4.3.1     rlang_1.1.1       
-    [13] tools_4.3.1        utf8_1.2.3         yaml_2.3.7         data.table_1.14.8 
-    [17] conditionz_0.1.0   htmlwidgets_1.6.2  classInt_0.4-10    curl_5.1.0        
-    [21] xml2_1.3.5         KernSmooth_2.23-22 httpcode_0.3.0     withr_2.5.1       
-    [25] grid_4.3.1         fansi_1.0.4        e1071_1.7-13       colorspace_2.1-0  
-    [29] extrafontdb_1.0    scales_1.2.1       iterators_1.0.14   crul_1.4.0        
-    [33] cli_3.6.1          crayon_1.5.2       ragg_1.2.6         generics_0.1.3    
-    [37] rstudioapi_0.15.0  httr_1.4.7         tzdb_0.4.0         DBI_1.1.3         
-    [41] ape_5.7-1          proxy_0.4-27       rvest_1.0.3        parallel_4.3.1    
-    [45] s2_1.1.4           vctrs_0.6.4        webshot_0.5.5      jsonlite_1.8.7    
-    [49] hms_1.1.3          systemfonts_1.0.5  crosstalk_1.2.0    foreach_1.5.2     
-    [53] units_0.8-4        glue_1.6.2         codetools_0.2-19   stringi_1.7.12    
-    [57] gtable_0.3.4       later_1.3.1        munsell_0.5.0      pillar_1.9.0      
-    [61] htmltools_0.5.6.1  R6_2.5.1           wk_0.8.0           textshaping_0.3.7 
-    [65] bold_1.3.0         evaluate_0.22      lattice_0.21-9     httpuv_1.6.11     
-    [69] class_7.3-22       Rcpp_1.0.11        uuid_1.1-1         svglite_2.1.2     
-    [73] nlme_3.1-163       Rttf2pt1_1.3.12    xfun_0.40          zoo_1.8-12        
-    [77] pkgconfig_2.0.3   
+    ──────────────────────────────────────────────────────────────────────────────

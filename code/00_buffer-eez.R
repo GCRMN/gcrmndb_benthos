@@ -1,43 +1,67 @@
 # 1. Load packages ----
 
-library(tidyverse)
+library(tidyverse) # Core tidyverse packages
 library(sf)
-sf_use_s2(FALSE)
+sf_use_s2(FALSE) # Switch from S2 to GEOS
 
-# 2. Load data ----
+# 2. Load and change CRS ----
 
-data_eez <- st_read("data/07_data-eez/eez_v11.shp") %>% 
-  select(SOVEREIGN1, TERRITORY1) %>% 
-  #filter(TERRITORY1 %in% c("French Polynesia", "Hawaii", "Fiji", "Tuvalu", "Gilbert Islands")) %>% 
-  st_make_valid() %>% 
+data_eez <- st_read("data/07_data-eez/01_raw/eez_v12.shp") %>% 
   st_transform(crs = 4326) %>% 
   st_make_valid() %>% 
+  select(SOVEREIGN1, TERRITORY1)
+
+# 3. Remove holes within polygons ----
+
+## 3.1 For all territory (except Micronesia and Palau) ----
+
+data_eez <- nngeo::st_remove_holes(data_eez)
+
+## 3.2 For Micronesia and Palau (particular cases) ----
+
+data_eez_micronesia <- data_eez %>% 
+  filter(TERRITORY1 == "Micronesia") %>% 
+  # Transform MULTIPOLYGON to POLYGON
+  st_cast(., "POLYGON") %>% 
+  # Extract larger POLYGON
+  mutate(area = st_area(.)) %>% 
+  filter(area == max(area)) %>% 
+  select(-area)
+
+data_eez_palau <- data_eez %>% 
+  filter(TERRITORY1 == "Palau") %>% 
+  # Transform MULTIPOLYGON to POLYGON
+  st_cast(., "POLYGON") %>% 
+  # Extract larger POLYGON
+  mutate(area = st_area(.)) %>% 
+  filter(area == max(area)) %>% 
+  select(-area)
+
+## 3.3 Bind data ---- 
+
+data_eez <- data_eez %>%
+  filter(!(TERRITORY1 %in% c("Micronesia", "Palau"))) %>% 
+  bind_rows(., data_eez_micronesia) %>% 
+  bind_rows(., data_eez_palau)
+
+rm(data_eez_micronesia, data_eez_palau)
+
+# 4. Dataviz ----
+
+ggplot() +
+  geom_sf(data = data_eez)
+
+# 5. Save data ----
+
+st_write(data_eez, "data/07_data-eez/02_clean/eez_v12.shp", append = FALSE)
+
+# 6. Create the buffer ----
+
+data_eez %>% 
+  filter(TERRITORY1 != "Alaska") %>% # Issue TopologyException for Alaska
   st_transform(crs = 7801) %>% # CRS in meters
   st_buffer(., dist = 1000) %>% # 1 km buffer
   st_transform(crs = 4326) %>% 
   st_wrap_dateline() %>% 
-  st_make_valid()
-
-ggplot() +
-  geom_sf(data = data_eez) +
-  coord_sf(xlim = c(170, 180))
-
-# 3. Correct issue for Hawaii EEZ ----
-
-data_eez_hawaii <- data_eez %>% 
-  filter(TERRITORY1 == "Hawaii") %>% 
-  st_wrap_dateline(options = c("WRAPDATELINE=YES", "DATELINEOFFSET=180"))
-  
-# 4. Add correction to other EEZ ----
-
-data_eez <- data_eez %>% 
-  filter(TERRITORY1 != "Hawaii") %>% 
-  bind_rows(., data_eez_hawaii)
-
-ggplot() +
-  geom_sf(data = data_eez) +
-  coord_sf(xlim = c(170, 180))
-
-# 5. Export the data ----
-
-st_write(data_eez, "data/07_data-eez/eez_v11_buffer_1km.shp", append = FALSE)
+  st_make_valid() %>% 
+  st_write(., "data/07_data-eez/03_buffer/eez_v12_buffer.shp", append = FALSE)
