@@ -264,12 +264,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0040    |                                                                                                                                                         | upon request   | Sh.  |            |     JW     |
 |   0041    | Pouebo                                                                                                                                                  | upon request   | Sh.  | 2022-12-16 |     JW     |
 |   0042    | [Living Ocean Foundation](https://www.livingoceansfoundation.org/)                                                                                      | upon request   | Sh.  |            |     JW     |
+|   0043    | [100 Island Challenge](https://sandinlab.ucsd.edu/100-island-challenge/)                                                                                | upon request   | Sh.  | 2023-11-06 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-11-05, the `gcrmndb_benthos` synthetic dataset contains a
-total of **878,922 observations** (*i.e* rows) representing **9,641
-sites** and **22,392 surveys**.
+On the 2023-11-07, the `gcrmndb_benthos` synthetic dataset contains a
+total of **958,491 observations** (*i.e* rows) representing **9,839
+sites** and **22,713 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -292,7 +293,7 @@ GCRMN regions.
 |    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
 |          EAS |      2386 |        5247 |            2 |    1997    |   2022    |
 |          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      6399 |       12170 |           35 |    1987    |   2023    |
+|      Pacific |      6597 |       12491 |           36 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       146 |         342 |            1 |    1997    |   2019    |
 
@@ -325,19 +326,20 @@ territories.
 |                 Japan | Japan                        |        44 |         102 |            1 |    1997    |   2015    |
 |                 Kenya | Kenya                        |         6 |           6 |            1 |    2003    |   2004    |
 |              Kiribati | Gilbert Islands              |        18 |          18 |            2 |    2011    |   2018    |
+|              Kiribati | Line Group                   |        47 |          66 |            1 |    2017    |   2021    |
 |            Madagascar | Madagascar                   |        43 |          55 |            1 |    2001    |   2019    |
 |              Malaysia | Malaysia                     |       626 |        2195 |            2 |    1997    |   2021    |
 |              Maldives | Maldives                     |       145 |         211 |            1 |    1997    |   2022    |
 |      Marshall Islands | Marshall Islands             |        77 |          91 |            2 |    2002    |   2020    |
-|            Micronesia | Micronesia                   |       172 |         395 |            2 |    2000    |   2020    |
+|            Micronesia | Micronesia                   |       203 |         445 |            3 |    2000    |   2020    |
 |            Mozambique | Mozambique                   |        13 |          14 |            1 |    1997    |   2006    |
 |               Myanmar | Myanmar                      |        22 |          29 |            1 |    2001    |   2013    |
-|           New Zealand | Cook Islands                 |       160 |         202 |            3 |    2005    |   2023    |
-|                 Palau | Palau                        |         6 |          16 |            1 |    1997    |   2006    |
+|           New Zealand | Cook Islands                 |       172 |         226 |            4 |    2005    |   2023    |
+|                 Palau | Palau                        |        89 |         149 |            2 |    1997    |   2022    |
 |      Papua New Guinea | Papua New Guinea             |        83 |         259 |            3 |    1998    |   2019    |
 |           Philippines | Philippines                  |       472 |         695 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius        |        10 |          12 |            1 |    1999    |   2003    |
-|                 Samoa | Samoa                        |         1 |           3 |            1 |    2013    |   2019    |
+|                 Samoa | Samoa                        |        26 |          51 |            2 |    2013    |   2019    |
 |            Seychelles | Seychelles                   |         7 |           7 |            1 |    1997    |   2001    |
 |       Solomon Islands | Solomon Islands              |        73 |         171 |            3 |    2005    |   2021    |
 |          South Africa | South Africa                 |         5 |           6 |            1 |    2001    |   2005    |
@@ -423,7 +425,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2023-11-05
+     date     2023-11-07
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -468,7 +470,7 @@ The following organizations have funded the realization of the
      dtplyr                  1.3.1     2023-03-22 [1] CRAN (R 4.3.0)
      e1071                   1.7-13    2023-02-01 [1] CRAN (R 4.3.1)
      ellipsis                0.3.2     2021-04-29 [1] CRAN (R 4.3.0)
-     evaluate                0.22      2023-09-29 [1] CRAN (R 4.3.1)
+     evaluate                0.23      2023-11-01 [1] CRAN (R 4.3.2)
      fansi                   1.0.5     2023-10-08 [1] CRAN (R 4.3.1)
      farver                  2.1.1     2022-07-06 [1] CRAN (R 4.3.0)
      fastmap                 1.1.1     2023-02-24 [1] CRAN (R 4.3.0)
@@ -495,8 +497,8 @@ The following organizations have funded the realization of the
      highr                   0.10      2022-12-22 [1] CRAN (R 4.3.0)
      Hmisc                   5.1-1     2023-09-12 [1] CRAN (R 4.3.1)
      hms                     1.1.3     2023-03-21 [1] CRAN (R 4.3.0)
-     htmlTable               2.4.1     2022-07-07 [1] CRAN (R 4.3.1)
-     htmltools               0.5.6.1   2023-10-06 [1] CRAN (R 4.3.1)
+     htmlTable               2.4.2     2023-10-29 [1] CRAN (R 4.3.2)
+     htmltools               0.5.7     2023-11-03 [1] CRAN (R 4.3.2)
      htmlwidgets             1.6.2     2023-03-17 [1] CRAN (R 4.3.1)
      httpcode                0.3.0     2020-04-10 [1] CRAN (R 4.3.1)
      httpuv                  1.6.12    2023-10-23 [1] CRAN (R 4.3.1)
@@ -511,14 +513,14 @@ The following organizations have funded the realization of the
      jsonlite                1.8.7     2023-06-29 [1] CRAN (R 4.3.1)
      kableExtra              1.3.4     2021-02-20 [1] CRAN (R 4.3.1)
      KernSmooth              2.23-22   2023-07-10 [1] CRAN (R 4.3.1)
-     knitr                 * 1.44      2023-09-11 [1] CRAN (R 4.3.1)
+     knitr                 * 1.45      2023-10-30 [1] CRAN (R 4.3.2)
      labeling                0.4.3     2023-08-29 [1] CRAN (R 4.3.1)
      later                   1.3.1     2023-05-02 [1] CRAN (R 4.3.1)
-     lattice                 0.21-9    2023-10-01 [1] CRAN (R 4.3.1)
+     lattice                 0.22-5    2023-10-24 [1] CRAN (R 4.3.2)
      lazyeval                0.2.2     2019-03-15 [1] CRAN (R 4.3.1)
      leaflet                 2.2.0     2023-08-31 [1] CRAN (R 4.3.1)
      leaflet.providers       2.0.0     2023-10-17 [1] CRAN (R 4.3.1)
-     lifecycle               1.0.3     2022-10-07 [1] CRAN (R 4.3.0)
+     lifecycle               1.0.4     2023-11-07 [1] CRAN (R 4.3.1)
      lubridate             * 1.9.3     2023-09-27 [1] CRAN (R 4.3.1)
      magrittr                2.0.3     2022-03-30 [1] CRAN (R 4.3.0)
      MASS                    7.3-60    2023-05-04 [1] CRAN (R 4.3.1)
@@ -564,12 +566,12 @@ The following organizations have funded the realization of the
      reprex                  2.0.2     2022-08-17 [1] CRAN (R 4.3.0)
      rex                     1.2.1     2021-11-26 [1] CRAN (R 4.3.1)
      ritis                   1.0.0     2021-02-02 [1] CRAN (R 4.3.1)
-     rlang                   1.1.1     2023-04-28 [1] CRAN (R 4.3.0)
+     rlang                   1.1.2     2023-11-04 [1] CRAN (R 4.3.2)
      rmarkdown               2.25      2023-09-18 [1] CRAN (R 4.3.1)
      rncl                    0.8.7     2023-01-08 [1] CRAN (R 4.3.1)
      rotl                    3.1.0     2023-06-15 [1] CRAN (R 4.3.1)
      rpart                   4.1.21    2023-10-09 [1] CRAN (R 4.3.1)
-     rprojroot               2.0.3     2022-04-02 [1] CRAN (R 4.3.1)
+     rprojroot               2.0.4     2023-11-05 [1] CRAN (R 4.3.2)
      rredlist                0.7.1     2022-11-11 [1] CRAN (R 4.3.1)
      rstudioapi              0.15.0    2023-07-07 [1] CRAN (R 4.3.1)
      rvest                   1.0.3     2022-08-19 [1] CRAN (R 4.3.0)
@@ -611,11 +613,11 @@ The following organizations have funded the realization of the
      WikidataR               2.3.3     2021-11-16 [1] CRAN (R 4.3.1)
      WikipediR               1.5.0     2017-02-05 [1] CRAN (R 4.3.1)
      wikitaxa                0.4.0     2020-06-29 [1] CRAN (R 4.3.1)
-     withr                   2.5.1     2023-09-26 [1] CRAN (R 4.3.1)
+     withr                   2.5.2     2023-10-30 [1] CRAN (R 4.3.2)
      wk                      0.9.0     2023-10-22 [1] CRAN (R 4.3.1)
      worrms                  0.4.3     2023-06-20 [1] CRAN (R 4.3.1)
-     xfun                    0.40      2023-08-09 [1] CRAN (R 4.3.1)
-     XML                     3.99-0.14 2023-03-19 [1] CRAN (R 4.3.0)
+     xfun                    0.41      2023-11-01 [1] CRAN (R 4.3.2)
+     XML                     3.99-0.15 2023-11-02 [1] CRAN (R 4.3.2)
      xml2                    1.3.5     2023-07-06 [1] CRAN (R 4.3.1)
      yaml                    2.3.7     2023-01-23 [1] CRAN (R 4.3.0)
      zip                     2.3.0     2023-04-17 [1] CRAN (R 4.3.1)
