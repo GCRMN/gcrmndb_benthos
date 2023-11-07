@@ -26,7 +26,6 @@ options(knitr.duplicate.label = "allow")
 
 # 1. Source functions ----
 
-source("../.Rprofile") # Rprofile with NCBI API key for taxize
 source("00_functions/graphical_par.R")
 source("00_functions/theme_graph.R")
 source("00_functions/render_rmd.R")
@@ -37,7 +36,6 @@ library(tidyverse) # Core tidyverse packages
 library(formattable) # Interactive HTML tables
 library(DT) # Interactive HTML tables
 library(leaflet) # Interactive HTML map
-library(taxize) # For taxonomy
 library(sf)
 sf_use_s2(FALSE)
 library(rmarkdown)
@@ -89,72 +87,22 @@ synthetic_data <- synthetic_data %>%
                                                     "\\." = " ")), # Convert some special characters
          organismID = str_squish(organismID)) # Remove duplicated space and space before and after
 
-```
+# 2. Add new organismID levels to the tax-recategorisation file ----
 
-```{r}
+current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() %>% pull() # vector
 
-# 1. Find upper tax. levels and manually complete those not found ----
+old_unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
+  filter(organismID %in% current_unique_organismID) # Remove organismID that have been deleted
+  
+current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() # tibble
+  
+anti_join(current_unique_organismID, old_unique_organismID, by = c("organismID")) %>% 
+  mutate(checked = FALSE) %>% 
+  bind_rows(old_unique_organismID, .) %>% 
+  arrange(organismID) %>%  
+  write.csv2(., file = "./../data/03_tax-recategorisation.csv", row.names = FALSE)
 
-# 1.A If older file exist --
-
-if(file.exists("./../data/03_tax-recategorisation.csv")){
-  
-  # 1.A.1 Import it -
-  
-  current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() %>% pull() # vector
-
-  old_unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
-    filter(organismID %in% current_unique_organismID) # Remove organismID that have been deleted
-  
-  current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() # tibble
-  
-  # 1.A.2 Find rows absent in the older file (old_unique_organismID) but present 
-  # in the current one (current_unique_organismID) and complete it -
-  
-  missing_organismID <- anti_join(current_unique_organismID, old_unique_organismID, by = c("organismID")) %>% 
-    pull(.) %>% 
-    tax_name(sci = ., 
-             get = c("phylum", "class", "subclass", "order", "family", "genus", "species"), 
-             db = "ncbi",
-             messages = FALSE,
-             ask = FALSE) # Disable choice if "more than one UID found"
-
-  if(nrow(missing_organismID) > 0){
-    
-      missing_organismID %>%
-        select(-db) %>% 
-        rename(organismID = query) %>% 
-        mutate(category = NA, subcategory = NA, condition = NA, .after = "organismID") %>% 
-        mutate(checked = FALSE) %>% 
-        bind_rows(old_unique_organismID, .) %>%
-        arrange(organismID) %>%  
-        write.csv2(., file = "./../data/03_tax-recategorisation.csv", row.names = FALSE)
-    
-  }
-  
-  rm(current_unique_organismID, old_unique_organismID, missing_organismID)
-
-}else{
-  
-  # 1.B Else export it --
-  
-  synthetic_data %>% 
-    select(organismID) %>% 
-    distinct() %>% 
-    pull(.) %>% 
-    tax_name(sci = ., 
-             get = c("phylum", "class", "subclass", "order", "family", "genus", "species"), 
-             db = "ncbi",
-             messages = FALSE, 
-             ask = FALSE) %>% # Disable choice if "more than one UID found"
-    select(-db) %>% 
-    rename(organismID = query) %>% 
-    mutate(category = NA, subcategory = NA, condition = NA, .after = "organismID") %>% 
-    mutate(checked = FALSE) %>% 
-    arrange(organismID) %>% 
-    write.csv2(., file = "./../data/03_tax-recategorisation.csv", row.names = FALSE)
-  
-}
+rm(current_unique_organismID, old_unique_organismID)
 
 # ---------------------------------------------------------------------------------------------- #
 # /!\          Before to run the next chunk code, fill the exported csv file:                /!\ #
