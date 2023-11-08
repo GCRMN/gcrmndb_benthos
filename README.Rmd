@@ -373,6 +373,6 @@ The following organizations have funded the realization of the `gcrmndb_benthos`
 # 1. Print session info ----
 
 devtools::session_info(c("tidyverse", "formattable", "DT", "leaflet",
-                         "taxize", "sf", "knitr", "rmarkdown", "plotly", "kableExtra", "mermaidr"))
+                         "sf", "knitr", "rmarkdown", "plotly", "kableExtra", "mermaidr"))
 
 ```
