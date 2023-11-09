@@ -269,9 +269,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-11-08, the `gcrmndb_benthos` synthetic dataset contains a
-total of **982,822 observations** (*i.e* rows) representing **9,859
-sites** and **22,912 surveys**.
+On the 2023-11-09, the `gcrmndb_benthos` synthetic dataset contains a
+total of **986,529 observations** (*i.e* rows) representing **9,862
+sites** and **22,945 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -294,7 +294,7 @@ GCRMN regions.
 |    Caribbean |         8 |         236 |            2 |    1987    |   2021    |
 |          EAS |      2386 |        5247 |            2 |    1997    |   2022    |
 |          ETP |         5 |           5 |            1 |    1998    |   2004    |
-|      Pacific |      6617 |       12690 |           37 |    1987    |   2023    |
+|      Pacific |      6620 |       12723 |           37 |    1987    |   2023    |
 |   South Asia |       151 |         217 |            1 |    1997    |   2022    |
 |          WIO |       146 |         342 |            1 |    1997    |   2019    |
 
@@ -336,7 +336,7 @@ territories.
 |            Mozambique | Mozambique                   |        13 |          14 |            1 |    1997    |   2006    |
 |               Myanmar | Myanmar                      |        22 |          29 |            1 |    2001    |   2013    |
 |           New Zealand | Cook Islands                 |       172 |         226 |            4 |    2005    |   2023    |
-|                 Palau | Palau                        |       109 |         348 |            3 |    1997    |   2022    |
+|                 Palau | Palau                        |       112 |         381 |            3 |    1997    |   2022    |
 |      Papua New Guinea | Papua New Guinea             |        83 |         259 |            3 |    1998    |   2019    |
 |           Philippines | Philippines                  |       472 |         695 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius        |        10 |          12 |            1 |    1999    |   2003    |
@@ -426,7 +426,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2023-11-08
+     date     2023-11-09
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────

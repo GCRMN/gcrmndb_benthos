@@ -43,9 +43,13 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          month = month(eventDate),
          day = day(eventDate),
          # Site names were replaced (see data site)
-         locality = str_replace_all(locality, c("Nikko_1" = "Ngermid_1",
-                                                "Nikko_2" = "Ngermid_2",
-                                                "Nikko_3" = "Ngermid_3"))) %>% 
+         locality = str_replace_all(locality, c("Ngermid_1" = "Nikko_1",
+                                                "Ngermid_2" = "Nikko_2",
+                                                "Ngermid_3" = "Nikko_3",
+                                                "Ngeremlengui_Patch_Reefs" = "Ngaremlengui_Patch_Reefs")),
+         locality = case_when(locality == "Ngarchelong_Patch_Reef" ~ "Ngarchelong_Patch_Reefs",
+                              locality == "Ngeremlengui_Patch" ~ "Ngaremlengui_Patch_Reefs",
+                              TRUE ~ locality)) %>% 
   left_join(., data_site) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
