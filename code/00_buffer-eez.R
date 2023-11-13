@@ -9,8 +9,9 @@ sf_use_s2(FALSE) # Switch from S2 to GEOS
 data_eez <- st_read("data/07_data-eez/01_raw/eez_v12.shp") %>% 
   st_transform(crs = 4326) %>% 
   st_make_valid() %>% 
-  select(SOVEREIGN1, TERRITORY1)
-
+  select(SOVEREIGN1, TERRITORY1) %>% 
+  mutate(TERRITORY1 = str_remove_all(TERRITORY1, " / Enenkio"))
+  
 # 3. Remove holes within polygons ----
 
 ## 3.1 For all territory (except Micronesia and Palau) ----
