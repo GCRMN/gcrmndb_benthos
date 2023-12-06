@@ -7,9 +7,7 @@ sf_use_s2(FALSE)
 
 dataset <- "0038" # Define the dataset_id
 
-# 2. Import, standardize and export the data ----
-
-# 2.1 Load data --
+# 2. Load data ----
 
 data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -18,41 +16,65 @@ data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   # Read the file
   read.csv()
 
-# 2.2 Filter sites within coral reefs --
+# 3. Extract data from coral reefs (monitoring is not restricted to coral reefs for RLS) ----
 
-reef_buffer <- st_read("data/08_quality-checks-buffer/reefs-buffer_gee/reef_buffer.shp") %>% 
-  st_transform(crs = 4326) %>% 
-  st_wrap_dateline() %>% 
-  st_make_valid()
+# 3.1 Check if site is within coral reef distribution shapefile (100 km buffer) --
+
+# 3.1.1 Extract site coordinates --
 
 data_main_sites <- data_main %>% 
   select(site_name, dataset_id, latitude, longitude) %>% 
   distinct() %>% 
   st_as_sf(coords = c("longitude", "latitude"), crs = 4326)
 
-ggplot() +
-  geom_sf(data = reef_buffer) +
-  geom_sf(data = data_main_sites)
+# 3.1.2 Load coral reef distribution 100 km buffer --
 
-data_main_reefs <- st_intersection(data_main_sites, reef_buffer)
+reef_buffer <- st_read("data/08_quality-checks-buffer/reefs-buffer_gee/reef_buffer.shp") %>% 
+  st_transform(crs = 4326) %>% 
+  st_wrap_dateline() %>% 
+  st_make_valid()
 
-data_main_reefs <- data_main_reefs %>% 
-  bind_rows(data_main_sites %>% filter(!(dataset_id %in% unique(data_main_reefs$dataset_id)))) %>% 
-  rename(coral_reefs = GRIDCODE) %>% 
-  mutate(coral_reefs = replace_na(coral_reefs, 0),
-         coral_reefs = if_else(coral_reefs == 1, TRUE, FALSE))
+# 3.1.3 Check if sites are within or outside the buffer --
 
-ggplot() +
-  geom_sf(data = reef_buffer) +
-  geom_sf(data = data_main_reefs, aes(color = coral_reefs))
-
-data_main <- left_join(data_main_reefs, data_main) %>% 
-  st_drop_geometry()
-
-# 2.3 Standardize the data --
+data_main <- data_main_sites %>% 
+  mutate(check_buffer = st_intersects(data_main_sites, reef_buffer, sparse = FALSE)[,1]) %>% 
+  mutate(latitude = st_coordinates(data_main_sites)[,2],
+         longitude = st_coordinates(data_main_sites)[,1]) %>%
+  st_drop_geometry() %>% 
+  left_join(data_main, .)
+  
+# 3.2 Check if non-coral reefs algae are present within a quadrat --
 
 data_main <- data_main %>% 
-  filter(coral_reefs == TRUE) %>% 
+  group_by(survey_id, site_name, latitude, longitude, dataset_id) %>% 
+  mutate(check_algae = any(RLS_category %in% c("Phyllospora",
+                                               "Ecklonia radiata",
+                                               "Large brown laminarian kelps"))) %>% 
+  ungroup()
+
+# 3.3 Check if hard corals are present within a quadrat --
+
+data_main <- data_main %>% 
+  group_by(survey_id, site_name, latitude, longitude, dataset_id) %>% 
+  mutate(check_coral = any(RLE_category %in% c("Coral", "Dead coral"))) %>% 
+  ungroup()
+
+# 3.4 Use the (pre-) quality checks to subset the data --
+
+data_checks <- data_main %>% 
+  select(survey_id, site_name, latitude, longitude, dataset_id, check_buffer, check_algae, check_coral) %>% 
+  distinct() %>% 
+  group_by(check_buffer, check_algae, check_coral) %>% 
+  count()
+
+# 4. Standardize the data ----
+
+data_main %>% 
+  # Remove data based and (pre-)quality checks
+  filter(check_buffer == TRUE) %>% 
+  filter(check_algae == FALSE & check_coral == FALSE | 
+           check_algae == FALSE & check_coral == TRUE |
+           check_algae == TRUE & check_coral == TRUE) %>% 
   rename(locality = site_name,
          parentEventID = dataset_id,
          decimalLatitude = latitude,
@@ -69,20 +91,10 @@ data_main <- data_main %>%
          eventDate = as_date(eventDate, format = "%d/%m/%Y"),
          year = year(eventDate),
          month = month(eventDate),
-         day = day(eventDate))
-
-# 2.4 Remove sites with non coral reefs benthic categories --
-
-uncorrect_sites <- data_main %>% 
-  filter(organismID %in% c("Other fucoids", "Ecklonia radiata", "Large brown laminarian kelps")) %>% 
-  select(parentEventID) %>% 
-  distinct() %>% 
-  pull()
-
-data_main %>% 
-  filter(!(parentEventID %in% uncorrect_sites)) %>% 
+         day = day(eventDate)) %>% 
+  filter(measurementValue != 0) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
-# 3. Remove useless objects ----
+# 5. Remove useless objects ----
 
-rm(data_main, data_main_reefs, data_main_sites, reef_buffer, uncorrect_sites)
+rm(reef_buffer, data_main_sites, data_checks, data_main)
