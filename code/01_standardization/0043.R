@@ -1,7 +1,6 @@
 # 1. Required packages ----
 
 library(tidyverse) # Core tidyverse packages
-library(readxl) # To read excel files
 
 dataset <- "0043" # Define the dataset_id
 

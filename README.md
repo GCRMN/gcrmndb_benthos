@@ -261,7 +261,7 @@ considered. The column names (except *aggregator*) correspond to
 |   0037    | [Khen et al, 2022](https://link.springer.com/article/10.1007/s00338-022-02271-6)                                                                        | upon request   | Sh.  |            |     JW     |
 |   0038    | [Reef Life Survey](https://doi.org/10.1016/j.biocon.2020.108855)                                                                                        | upon request   | Sh.  | 2023-09-13 |     JW     |
 |   0039    | [MMR](https://www.mmr.gov.ck/)                                                                                                                          | upon request   | Sh.  | 2023-09-12 |     JW     |
-|   0040    |                                                                                                                                                         | upon request   | Sh.  |            |     JW     |
+|   0040    | [Smallhorn-West et al, 2019](https://doi.pangaea.de/10.1594/PANGAEA.904800)                                                                             | upon request   | Sh.  |            |     JW     |
 |   0041    | Pouebo                                                                                                                                                  | upon request   | Sh.  | 2022-12-16 |     JW     |
 |   0042    | [Living Ocean Foundation](https://www.livingoceansfoundation.org/)                                                                                      | upon request   | Sh.  |            |     JW     |
 |   0043    | [100 Island Challenge](https://sandinlab.ucsd.edu/100-island-challenge/)                                                                                | upon request   | Sh.  | 2023-11-06 |     JW     |
@@ -269,9 +269,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2023-12-06, the `gcrmndb_benthos` synthetic dataset contains a
-total of **1,024,515 observations** (*i.e* rows) representing **11,281
-sites** and **24,966 surveys**.
+On the 2023-12-08, the `gcrmndb_benthos` synthetic dataset contains a
+total of **1,031,851 observations** (*i.e* rows) representing **11,644
+sites** and **25,330 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -296,7 +296,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       243 |         287 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      6799 |       12911 |           38 |    1987    |   2023    |
+|      Pacific |      7162 |       13275 |           39 |    1987    |   2023    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -359,7 +359,7 @@ territories.
 |                Taiwan | Taiwan                         |       103 |         195 |            1 |    1997    |   2020    |
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
-|                 Tonga | Tonga                          |        29 |          34 |            3 |    2002    |   2019    |
+|                 Tonga | Tonga                          |       392 |         398 |            4 |    2002    |   2019    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          11 |            2 |    2009    |   2018    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
@@ -440,7 +440,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2023-12-06
+     date     2023-12-08
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
