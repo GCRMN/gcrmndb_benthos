@@ -268,12 +268,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0044    | [PICRC](https://picrc.org/work/coral/)                                                                                                                  | upon request   | Sh.  |            |     JW     |
 |   0045    | [SRMR and Combe Reef](https://dashboard.datamermaid.org/?project=SRMR%20and%20Combe%20reef%20comparison)                                                | open (summary) | Me.  | 2024-01-09 |     JW     |
 |   0046    | [2023-24 Fiji GCRMN sites](https://dashboard.datamermaid.org/?project=2023-24%20Fiji%20GCRMN%20sites)                                                   | open (summary) | Me.  | 2024-01-09 |     JW     |
+|   0047    | Kayal and Dromard                                                                                                                                       | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-01-09, the `gcrmndb_benthos` synthetic dataset contains a
-total of **1,033,003 observations** (*i.e* rows) representing **11,661
-sites** and **25,349 surveys**.
+On the 2024-01-11, the `gcrmndb_benthos` synthetic dataset contains a
+total of **1,033,261 observations** (*i.e* rows) representing **11,671
+sites** and **25,359 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -294,7 +295,7 @@ GCRMN regions.
 |-------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |    Australia |      1276 |        5409 |            3 |    1995    |   2023    |
 |       Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|    Caribbean |        91 |         341 |            3 |    1987    |   2022    |
+|    Caribbean |       101 |         351 |            4 |    1987    |   2023    |
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -327,6 +328,7 @@ territories.
 |                  Fiji | Fiji                           |       587 |         911 |           12 |    1997    |   2024    |
 |                France | Europa Island                  |         1 |           1 |            1 |    2002    |   2002    |
 |                France | French Polynesia               |       223 |        2075 |            7 |    1987    |   2022    |
+|                France | Guadeloupe                     |        10 |          10 |            1 |    2023    |   2023    |
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
 |                France | New Caledonia                  |       753 |        3200 |            7 |    1997    |   2023    |
 |                France | Réunion                        |        32 |         133 |            1 |    2003    |   2016    |
@@ -442,7 +444,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-01-09
+     date     2024-01-11
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
