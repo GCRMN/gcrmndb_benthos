@@ -269,12 +269,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0045    | [SRMR and Combe Reef](https://dashboard.datamermaid.org/?project=SRMR%20and%20Combe%20reef%20comparison)                                                | open (summary) | Me.  | 2024-01-09 |     JW     |
 |   0046    | [2023-24 Fiji GCRMN sites](https://dashboard.datamermaid.org/?project=2023-24%20Fiji%20GCRMN%20sites)                                                   | open (summary) | Me.  | 2024-01-09 |     JW     |
 |   0047    | Kayal and Dromard                                                                                                                                       | upon request   | Sh.  |            |     JW     |
+|   0048    | Kayal, Penin, and Adjeroud                                                                                                                              | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-01-11, the `gcrmndb_benthos` synthetic dataset contains a
-total of **1,033,261 observations** (*i.e* rows) representing **11,671
-sites** and **25,359 surveys**.
+On the 2024-01-19, the `gcrmndb_benthos` synthetic dataset contains a
+total of **1,035,105 observations** (*i.e* rows) representing **11,696
+sites** and **25,466 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -299,7 +300,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7181 |       13296 |           41 |    1987    |   2024    |
+|      Pacific |      7206 |       13403 |           42 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -325,12 +326,12 @@ territories.
 |            East Timor | East Timor                     |        11 |          13 |            2 |    2004    |   2017    |
 |               Ecuador | Galapagos                      |        64 |          64 |            1 |    2008    |   2012    |
 |                 Egypt | Egypt                          |        12 |          12 |            1 |    2011    |   2011    |
-|                  Fiji | Fiji                           |       587 |         911 |           12 |    1997    |   2024    |
+|                  Fiji | Fiji                           |       589 |         913 |           12 |    1997    |   2024    |
 |                France | Europa Island                  |         1 |           1 |            1 |    2002    |   2002    |
 |                France | French Polynesia               |       223 |        2075 |            7 |    1987    |   2022    |
 |                France | Guadeloupe                     |        10 |          10 |            1 |    2023    |   2023    |
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
-|                France | New Caledonia                  |       753 |        3200 |            7 |    1997    |   2023    |
+|                France | New Caledonia                  |       776 |        3305 |            8 |    1997    |   2023    |
 |                France | Réunion                        |        32 |         133 |            1 |    2003    |   2016    |
 |                 India | India                          |         1 |           1 |            1 |    1998    |   1998    |
 |             Indonesia | Indonesia                      |       668 |        1049 |            2 |    1997    |   2022    |
@@ -444,7 +445,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-01-11
+     date     2024-01-19
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
