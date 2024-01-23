@@ -189,7 +189,6 @@ rm(genus_check, unique_organismID)
 
 synthetic_data <- synthetic_data %>% 
   drop_na(category, measurementValue) %>% 
-  filter(measurementValue != 0) %>% 
   group_by(across(c(-measurementValue))) %>% 
   summarise(measurementValue = sum(measurementValue)) %>% 
   ungroup()
@@ -350,7 +349,7 @@ synthetic_data <- synthetic_data %>%
   group_by(datasetID, locality, habitat, parentEventID,
            eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
            year, month, day, eventDate) %>% 
-  summarise(qc7 = sum(measurementValue)) %>% 
+  summarise(qc7 = round(sum(measurementValue), 5)) %>% 
   ungroup() %>% 
   mutate(qc7 = if_else(qc7 >= 0 & qc7 <= 100, TRUE, FALSE)) %>% 
   left_join(synthetic_data, .)

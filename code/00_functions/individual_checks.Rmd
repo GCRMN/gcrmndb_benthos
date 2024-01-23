@@ -189,7 +189,7 @@ data_cover <- synthetic_data_i %>%
   group_by(datasetID, locality, habitat, parentEventID,
          eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
          year, month, day, eventDate) %>% 
-  summarise(total = sum(measurementValue)) %>% 
+  summarise(total = round(sum(measurementValue), 5)) %>% 
   ungroup() %>% 
   mutate(type = case_when(total < 0 ~ "Less than 0",
                           total > 0 & total < 100 ~ "Between 0 and 100",
