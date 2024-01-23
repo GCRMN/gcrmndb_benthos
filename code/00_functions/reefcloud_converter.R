@@ -2,7 +2,6 @@ reefcloud_converter <- function(data, datasetID = dataset){
   
   result <- data %>% 
     pivot_longer(24:ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
-    filter(measurementValue != 0) %>% 
     rename(eventDate = date, verbatimDepth = depth_m, decimalLongitude = site_longitude,
            decimalLatitude = site_latitude, eventID = unique_id, parentEventID = transect,
            habitat = site_reef_type, locality = site) %>% 

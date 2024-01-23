@@ -35,7 +35,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   # Read the file
   read_xlsx(., sheet = 1) %>% 
   pivot_longer("Acanthastrea":ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
-  filter(measurementValue != 0) %>% 
   rename(verbatimDepth = Depth, eventDate = Date, parentEventID	= Transect, locality = Site) %>% 
   select(-Year, -YearGroup, -Project, -Habitat) %>% 
   mutate(datasetID = dataset,

@@ -34,7 +34,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          day = day(eventDate),
          datasetID = dataset,
          samplingProtocol = "Photo-quadrat, 50 m transect length, every 5 m") %>% 
-  filter(measurementValue != 0) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----

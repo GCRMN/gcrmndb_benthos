@@ -60,7 +60,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   drop_na(Site) %>% 
   select(-"...121", -"# points") %>% 
   pivot_longer(2:ncol(.), names_to = "code", values_to = "measurementValue") %>% 
-  filter(measurementValue != 0) %>% 
   group_by(Site) %>% 
   mutate(n_points = sum(measurementValue)) %>% 
   ungroup() %>% 
@@ -75,3 +74,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   left_join(., data_code) %>% 
   select(-code, -n_points) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
+
+# 3. Remove useless objects ----
+
+rm(data_code, data_site)

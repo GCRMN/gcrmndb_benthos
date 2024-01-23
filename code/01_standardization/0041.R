@@ -47,7 +47,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   left_join(., data_code) %>% 
   left_join(., data_site) %>% 
   select(-id, -date, -code, -station) %>% 
-  filter(measurementValue != 0) %>% 
   drop_na(measurementValue) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 

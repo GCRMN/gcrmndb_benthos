@@ -47,7 +47,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          day = day(eventDate),
          datasetID = dataset) %>% 
   select(-picname, -island, -functional_group, -label, -count, -point_count) %>% 
-  filter(measurementValue != 0) %>% 
   left_join(., data_site) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 

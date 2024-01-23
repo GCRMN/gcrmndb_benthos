@@ -40,7 +40,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(-"RCK+CA+CYA") %>% 
   rename(year = "Année", locality = Station) %>% 
   pivot_longer("DC":"WA", names_to = "code", values_to = "measurementValue") %>% 
-  filter(measurementValue != 0) %>% 
   # Correct site names
   mutate(locality = str_replace_all(locality, c("CE29b" = "CE29B",
                                                 "CE30b" = "CE30B",

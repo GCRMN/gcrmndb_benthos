@@ -92,7 +92,6 @@ data_main %>%
          year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate)) %>% 
-  filter(measurementValue != 0) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 5. Remove useless objects ----

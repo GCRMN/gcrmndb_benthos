@@ -57,7 +57,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   left_join(., data_code) %>% 
   select(-Code_LIT_SOPRONER) %>% 
   drop_na(measurementValue) %>% 
-  filter(measurementValue != 0) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----

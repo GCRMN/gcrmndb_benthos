@@ -35,7 +35,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          organismID = str_replace_all(organismID, c("Turbinaria" = "Turbinaria coral",
                                                     "TOTAL SOFT CORALS" = "Soft corals",
                                                     "Ouloastrea?" = "Ouloastrea"))) %>% 
-  filter(measurementValue != 0) %>% 
   drop_na(measurementValue) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 

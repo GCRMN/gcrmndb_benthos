@@ -16,7 +16,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(-Sum, -Station, -"Photo Name", -"Island", -"No. Points") %>% 
   pivot_longer("Hard Coral":"TWS", values_to = "measurementValue", names_to = "organismID") %>% 
   drop_na(measurementValue) %>% 
-  filter(measurementValue != 0) %>% 
   # Remove Tapes, wands and shadow as not included in the sum (see metadata)
   filter(!(organismID %in% c("Cyanobacteria", "TWS"))) %>%
   rename(year = Year, decimalLatitude = Latitude, decimalLongitude = Longitude,

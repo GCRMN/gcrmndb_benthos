@@ -13,8 +13,7 @@ mermaid_converter_sampleevents <- function(data, dataset, method){
            day = day(eventDate),
            datasetID = dataset,
            samplingProtocol = method,
-           organismID = str_to_sentence(str_replace_all(organismID, "_", " "))) %>% 
-    filter(measurementValue != 0)
+           organismID = str_to_sentence(str_replace_all(organismID, "_", " ")))
   
   return(result)
   

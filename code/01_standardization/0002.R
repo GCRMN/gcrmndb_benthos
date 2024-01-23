@@ -26,7 +26,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   read_csv(file = ., na = c("NA", "", "nd", "999", "unk")) %>% 
   select(-percentCover_all, -percentCover_CTB) %>% # CTB combine categories of CCA, Turf and bare, non recategorisable
   pivot_longer(percentCover_macroalgae:Millepora, names_to = "organismID", values_to = "measurementValue") %>% 
-  filter(measurementValue != 0) %>% 
   rename(locality = site, eventID = quadrat) %>% 
   # Convert photoquadrat image name to quadrat number (for some of the rows)
   group_by(locality, year) %>% 

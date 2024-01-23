@@ -28,7 +28,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   rename(locality = Site, parentEventID = Transect, decimalLatitude = Lat,
          decimalLongitude = Long, verbatimDepth = Depth, year = Year, recordedBy = Surveyor) %>% 
   pivot_longer("Acr_br":"Turf", names_to = "code", values_to = "measurementValue") %>% 
-  filter(measurementValue != 0) %>% 
   drop_na(measurementValue) %>% 
   mutate(datasetID = dataset) %>% 
   left_join(., data_code) %>% 

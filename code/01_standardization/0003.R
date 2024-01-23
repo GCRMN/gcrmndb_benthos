@@ -24,5 +24,4 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          year = year(eventDate),
          month = month(eventDate), 
          day = day(eventDate)) %>% 
-  filter(measurementValue != 0) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)

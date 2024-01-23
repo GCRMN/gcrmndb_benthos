@@ -56,7 +56,6 @@ data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 map_dfr(data_main$data_path, ~read_csv(file = .x), .id = "region_id") %>% 
   pivot_longer(7:ncol(.), values_to = "measurementValue", names_to = "label") %>% 
   drop_na(measurementValue) %>% 
-  filter(measurementValue != 0) %>% 
   left_join(., data_code) %>% 
   left_join(., data_site) %>% 
   select(-region_id, -region, -label, -surveyid, -imageid) %>% 

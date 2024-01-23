@@ -14,7 +14,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   read.csv(.) %>% 
   rename(decimalLatitude = x, decimalLongitude = y, verbatimDepth = depth, locality = site_code, habitat = reeftype) %>% 
   pivot_longer("BRANCHING.CORALLINE.ALGAE":"TURF.ALGAE", values_to = "measurementValue", names_to = "organismID") %>% 
-  filter(measurementValue != 0) %>% 
   mutate(datasetID = dataset,
          year = str_split_fixed(event_date, "/", 3)[,3],
          month = str_split_fixed(event_date, "/", 3)[,1],

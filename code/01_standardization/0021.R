@@ -102,7 +102,6 @@ map_dfr(list_sheets$value, ~read_xls(file_path, sheet = ., col_types = "text", n
          year = str_replace_all(year, c("2021 post-cyclones" = "2021",
                                         "2019-1" = "2019",
                                         "2019-2" = "2019"))) %>% 
-  filter(measurementValue != 0) %>% 
   left_join(., data_site) %>% 
   group_by(year, month, locality, parentEventID) %>% 
   mutate(total = sum(measurementValue)) %>% 

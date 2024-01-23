@@ -31,7 +31,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   rename(eventDate = "date", locality = "île x site", recordedBy = "identificateur", eventID = "n° quadrat",
          organismID = "genre", measurementValue = "recouvrement %") %>% 
   select(eventDate, locality, recordedBy, eventID, organismID, measurementValue) %>% 
-  filter(measurementValue != 0) %>% 
   mutate(datasetID = dataset,
          eventDate = as.Date(eventDate),
          year = year(eventDate),
