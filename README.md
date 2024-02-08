@@ -226,7 +226,7 @@ considered. The column names (except *aggregator*) correspond to
 |   0002    | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1)                                                    | open           | Rp.  | 2022-02-21 |     JW     |
 |   0003    | AIMS LTMP                                                                                                                                               |                |      |            |     JW     |
 |   0004    | [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL)                                                  | upon request   | Sh.  | 2022-09-08 |     JW     |
-|   0005    | [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)    | upon request   | Sh.  |            |     JW     |
+|   0005    | [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1)    | upon request   | Sh.  | 2024-02-06 |     JW     |
 |   0006    | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request   | Sh.  | 2022-12-31 |     JW     |
 |   0007    | [CRIOBE - ATPP barrier reef](https://observatoire.criobe.pf/wiki/tiki-index.php?page=R%C3%A9cif+Barri%C3%A8re+ATPP&structure=SO+CORAIL&latest=1)        | upon request   | Sh.  |            |     JW     |
 |   0008    | [CRIOBE - ATPP outer slope](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Pente+externe+ATPP&structure=SO+CORAIL&latest=1)                    | upon request   | Sh.  |            |     JW     |
@@ -274,9 +274,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-01-23, the `gcrmndb_benthos` synthetic dataset contains a
-total of **3,251,612 observations** (*i.e* rows) representing **11,809
-sites** and **25,998 surveys**.
+On the 2024-02-08, the `gcrmndb_benthos` synthetic dataset contains a
+total of **3,259,842 observations** (*i.e* rows) representing **11,812
+sites** and **26,020 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -301,7 +301,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7318 |       13916 |           43 |    1987    |   2024    |
+|      Pacific |      7321 |       13938 |           43 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -329,7 +329,7 @@ territories.
 |                 Egypt | Egypt                          |        12 |          12 |            1 |    2011    |   2011    |
 |                  Fiji | Fiji                           |       589 |         913 |           12 |    1997    |   2024    |
 |                France | Europa Island                  |         1 |           1 |            1 |    2002    |   2002    |
-|                France | French Polynesia               |       226 |        2096 |            8 |    1987    |   2022    |
+|                France | French Polynesia               |       228 |        2107 |            8 |    1987    |   2023    |
 |                France | Guadeloupe                     |        10 |          10 |            1 |    2023    |   2023    |
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
 |                France | New Caledonia                  |       798 |        3542 |            8 |    1997    |   2023    |
@@ -339,7 +339,7 @@ territories.
 |                 Japan | Japan                          |        52 |         110 |            2 |    1997    |   2015    |
 |                 Kenya | Kenya                          |         6 |           6 |            1 |    2003    |   2004    |
 |              Kiribati | Gilbert Islands                |        18 |          18 |            2 |    2011    |   2018    |
-|              Kiribati | Line Group                     |        47 |          66 |            1 |    2017    |   2021    |
+|              Kiribati | Line Group                     |        48 |          72 |            2 |    2010    |   2023    |
 |            Madagascar | Madagascar                     |        43 |          55 |            1 |    2001    |   2019    |
 |              Malaysia | Malaysia                       |       626 |        2195 |            2 |    1997    |   2021    |
 |              Maldives | Maldives                       |       157 |         223 |            2 |    1997    |   2022    |
@@ -349,7 +349,7 @@ territories.
 |            Mozambique | Mozambique                     |        14 |          15 |            2 |    1997    |   2012    |
 |               Myanmar | Myanmar                        |        22 |          29 |            1 |    2001    |   2013    |
 |           Netherlands | Bonaire                        |        14 |          14 |            1 |    2012    |   2012    |
-|           New Zealand | Cook Islands                   |       184 |         238 |            5 |    2005    |   2023    |
+|           New Zealand | Cook Islands                   |       184 |         239 |            5 |    2005    |   2023    |
 |           New Zealand | Niue                           |         7 |           7 |            1 |    2011    |   2011    |
 |             Nicaragua | Nicaragua                      |        23 |          23 |            1 |    2011    |   2015    |
 |                 Palau | Palau                          |       112 |         381 |            3 |    1997    |   2022    |
@@ -357,7 +357,7 @@ territories.
 |      Papua New Guinea | Papua New Guinea               |        91 |         267 |            4 |    1998    |   2019    |
 |           Philippines | Philippines                    |       472 |         695 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius          |        10 |          12 |            1 |    1999    |   2003    |
-|                 Samoa | Samoa                          |        27 |          52 |            3 |    2012    |   2019    |
+|                 Samoa | Samoa                          |        27 |          54 |            3 |    2012    |   2022    |
 |            Seychelles | Seychelles                     |        19 |          19 |            2 |    1997    |   2012    |
 |       Solomon Islands | Solomon Islands                |        75 |         173 |            4 |    2005    |   2021    |
 |          South Africa | South Africa                   |         5 |           6 |            1 |    2001    |   2005    |
@@ -365,9 +365,9 @@ territories.
 |                Taiwan | Taiwan                         |       103 |         195 |            1 |    1997    |   2020    |
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
-|                 Tonga | Tonga                          |       403 |         409 |            4 |    2002    |   2019    |
+|                 Tonga | Tonga                          |       403 |         410 |            4 |    2002    |   2022    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
-|        United Kingdom | Pitcairn                       |         6 |          11 |            2 |    2009    |   2018    |
+|        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
 |         United States | American Samoa                 |       843 |         903 |            4 |    1997    |   2019    |
 |         United States | Guam                           |       305 |         357 |            4 |    1997    |   2021    |
@@ -446,7 +446,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-01-23
+     date     2024-02-08
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────

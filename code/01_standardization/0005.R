@@ -27,7 +27,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   read_xlsx(path = ., 
             sheet = 1, 
             col_types = c("date", "numeric", "text", "text", "text", "text", "numeric", "text", 
-                          "numeric", "text", "text", "text")) %>%
+                          "numeric", "text", "text", "text", "text", "text", "text")) %>%
   rename(eventDate = "date", locality = "île x site", recordedBy = "identificateur", eventID = "n° quadrat",
          organismID = "genre", measurementValue = "recouvrement %") %>% 
   select(eventDate, locality, recordedBy, eventID, organismID, measurementValue) %>% 
