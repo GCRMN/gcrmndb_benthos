@@ -597,12 +597,15 @@
 "hard coral - turbinaria-coral";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Turbinaria";NA;TRUE
 "hard coral - zoopilus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Zoopilus";NA;TRUE
 "hard coral bleached";"Hard coral";NA;"Bleached";NA;NA;NA;NA;NA;NA;NA;TRUE
+"hard coral branching";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "hard coral dead";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"hard coral massive";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "hard coral non acropora branching";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "hard coral non acropora encrusting";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "hard coral non acropora foliose";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "hard coral non acropora massive";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "hard coral non acropora submassive";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
+"hard coral tabular";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "hard corals";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "hard substrate";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "hardcoral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -889,6 +892,7 @@
 "other invertebrates - tunicate";NA;NA;NA;"Chordata";NA;NA;NA;NA;NA;NA;TRUE
 "other invertebrates - zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "other live coral";"Hard coral";NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
+"other living organisms";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other macroalgae";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other mussid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Faviidae";NA;NA;TRUE
 "other organisms";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE

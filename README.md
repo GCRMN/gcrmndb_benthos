@@ -271,12 +271,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0047    | Kayal and Dromard                                                                                                                                       | upon request   | Sh.  |            |     JW     |
 |   0048    | Kayal, Penin, and Adjeroud (NC)                                                                                                                         | upon request   | Sh.  |            |     JW     |
 |   0049    | Kayal, Penin, and Adjeroud (Mo.)                                                                                                                        | upon request   | Sh.  |            |     JW     |
+|   0050    | WF 2019                                                                                                                                                 | upon request   | Sh.  | 2020-02-12 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-02-08, the `gcrmndb_benthos` synthetic dataset contains a
-total of **3,259,842 observations** (*i.e* rows) representing **11,812
-sites** and **26,020 surveys**.
+On the 2024-02-13, the `gcrmndb_benthos` synthetic dataset contains a
+total of **3,260,466 observations** (*i.e* rows) representing **11,824
+sites** and **26,032 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -301,7 +302,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7321 |       13938 |           43 |    1987    |   2024    |
+|      Pacific |      7333 |       13950 |           44 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -334,6 +335,7 @@ territories.
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
 |                France | New Caledonia                  |       798 |        3542 |            8 |    1997    |   2023    |
 |                France | Réunion                        |        32 |         133 |            1 |    2003    |   2016    |
+|                France | Wallis and Futuna              |        12 |          12 |            1 |    2019    |   2019    |
 |                 India | India                          |         1 |           1 |            1 |    1998    |   1998    |
 |             Indonesia | Indonesia                      |       668 |        1049 |            2 |    1997    |   2022    |
 |                 Japan | Japan                          |        52 |         110 |            2 |    1997    |   2015    |
@@ -446,7 +448,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-02-08
+     date     2024-02-13
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
