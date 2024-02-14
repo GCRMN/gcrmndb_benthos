@@ -275,9 +275,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-02-13, the `gcrmndb_benthos` synthetic dataset contains a
-total of **3,260,466 observations** (*i.e* rows) representing **11,824
-sites** and **26,032 surveys**.
+On the 2024-02-14, the `gcrmndb_benthos` synthetic dataset contains a
+total of **3,279,396 observations** (*i.e* rows) representing **12,027
+sites** and **26,235 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -302,7 +302,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7333 |       13950 |           44 |    1987    |   2024    |
+|      Pacific |      7536 |       14153 |           45 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -333,7 +333,7 @@ territories.
 |                France | French Polynesia               |       228 |        2107 |            8 |    1987    |   2023    |
 |                France | Guadeloupe                     |        10 |          10 |            1 |    2023    |   2023    |
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
-|                France | New Caledonia                  |       798 |        3542 |            8 |    1997    |   2023    |
+|                France | New Caledonia                  |       873 |        3617 |            9 |    1997    |   2023    |
 |                France | Réunion                        |        32 |         133 |            1 |    2003    |   2016    |
 |                France | Wallis and Futuna              |        12 |          12 |            1 |    2019    |   2019    |
 |                 India | India                          |         1 |           1 |            1 |    1998    |   1998    |
@@ -361,13 +361,13 @@ territories.
 | Republic of Mauritius | Republic of Mauritius          |        10 |          12 |            1 |    1999    |   2003    |
 |                 Samoa | Samoa                          |        27 |          54 |            3 |    2012    |   2022    |
 |            Seychelles | Seychelles                     |        19 |          19 |            2 |    1997    |   2012    |
-|       Solomon Islands | Solomon Islands                |        75 |         173 |            4 |    2005    |   2021    |
+|       Solomon Islands | Solomon Islands                |       144 |         242 |            5 |    2005    |   2021    |
 |          South Africa | South Africa                   |         5 |           6 |            1 |    2001    |   2005    |
 |             Sri Lanka | Sri Lanka                      |         3 |           3 |            1 |    2003    |   2003    |
 |                Taiwan | Taiwan                         |       103 |         195 |            1 |    1997    |   2020    |
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
-|                 Tonga | Tonga                          |       403 |         410 |            4 |    2002    |   2022    |
+|                 Tonga | Tonga                          |       462 |         469 |            5 |    2002    |   2022    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
@@ -448,7 +448,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-02-13
+     date     2024-02-14
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────

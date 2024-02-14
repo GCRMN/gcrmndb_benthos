@@ -306,7 +306,7 @@ plot_map <- ggplot() +
 
 # 5. Save the plot ----
 
-ggsave(filename = "figs/map_sites.png", plot = plot_map, dpi = 600, width = 10, height = 3.5)
+ggsave(filename = "figs/map_sites.png", plot = plot_map, width = 10, height = 3.5)
 
 ```
 
