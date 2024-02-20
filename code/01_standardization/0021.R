@@ -48,7 +48,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 # 2.2 Code data --
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "main") %>% 
+  filter(datasetID == dataset & data_type == "code") %>% 
   select(data_path) %>% 
   pull() %>% 
   # Read the file
@@ -69,7 +69,7 @@ list_sheets <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   pull() %>% 
   excel_sheets() %>% 
   as_tibble() %>% 
-  filter(!(value %in% c("2022", "CODES")))
+  filter(!(value %in% c("2023")))
   
 # 2.3.2 Get the path of the file -
 
@@ -82,10 +82,11 @@ file_path <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 
 map_dfr(list_sheets$value, ~read_xls(file_path, sheet = ., col_types = "text", na = "NI")) %>% 
   drop_na(Site) %>% 
-  select(-"CV", -"...19", -"...20") %>% 
+  select(-"CV", -starts_with("...")) %>% 
   pivot_longer("HCB":"OT", names_to = "Code", values_to = "measurementValue") %>% 
   left_join(., data_code) %>% 
   select(-Code, -Site) %>% 
+  drop_na(measurementValue) %>% 
   rename(locality = Station, parentEventID = Transect, year = Campagne) %>% 
   mutate(datasetID = dataset,
          measurementValue = as.numeric(measurementValue),
@@ -96,12 +97,19 @@ map_dfr(list_sheets$value, ~read_xls(file_path, sheet = ., col_types = "text", n
          locality = str_replace_all(locality, c("N'goni" = "Ngoni",
                                                 "Bordure faille de poe" = "Faille de poe",
                                                 "Signal" = "Ilot signal")),
+         date = case_when(str_length(year) == 5 ~ as.Date(as.numeric(year), origin = "1899-12-31"),
+                          TRUE ~ NA),
          month = case_when(year == "2021 post-cyclones" ~ 5,
-                           year == "2019-1" ~ 1,
-                           year == "2019-1" ~ 2),
+                           year == "2018-1" ~ 1,
+                           year == "2018-1" ~ 2,
+                           !is.na(date) ~ month(date)),
          year = str_replace_all(year, c("2021 post-cyclones" = "2021",
-                                        "2019-1" = "2019",
-                                        "2019-2" = "2019"))) %>% 
+                                        "2018-1" = "2018",
+                                        "2018-2" = "2018")),
+         year = as.numeric(year),
+         year = case_when(!is.na(date) ~ year(date),
+                          TRUE ~ year)) %>% 
+  select(-date) %>% 
   left_join(., data_site) %>% 
   group_by(year, month, locality, parentEventID) %>% 
   mutate(total = sum(measurementValue)) %>% 
