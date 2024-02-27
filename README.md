@@ -274,12 +274,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0050    | WF 2019                                                                                                                                                 | upon request   | Sh.  | 2020-02-12 |     JW     |
 |   0051    | Phoenix Islands                                                                                                                                         | upon request   | Sh.  |            |     JW     |
 |   0052    | [Vava’u Ocean Initiative 2017](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/)                                                          | upon request   | Sh.  |            |     JW     |
+|   0054    | [100 Island Challenge (SLI)](https://sandinlab.ucsd.edu/100-island-challenge/)                                                                          | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-02-27, the `gcrmndb_benthos` synthetic dataset contains a
-total of **4,003,546 observations** (*i.e* rows) representing **12,115
-sites** and **26,414 surveys**.
+total of **4,032,876 observations** (*i.e* rows) representing **12,164
+sites** and **26,467 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -304,7 +305,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7624 |       14332 |           47 |    1987    |   2024    |
+|      Pacific |      7673 |       14385 |           48 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -343,7 +344,7 @@ territories.
 |                 Japan | Japan                          |        52 |         110 |            2 |    1997    |   2015    |
 |                 Kenya | Kenya                          |         6 |           6 |            1 |    2003    |   2004    |
 |              Kiribati | Gilbert Islands                |        18 |          18 |            2 |    2011    |   2018    |
-|              Kiribati | Line Group                     |        48 |          72 |            2 |    2010    |   2023    |
+|              Kiribati | Line Group                     |        97 |         125 |            3 |    2009    |   2023    |
 |              Kiribati | Phoenix Group                  |        58 |         123 |            1 |    2009    |   2018    |
 |            Madagascar | Madagascar                     |        43 |          55 |            1 |    2001    |   2019    |
 |              Malaysia | Malaysia                       |       626 |        2195 |            2 |    1997    |   2021    |

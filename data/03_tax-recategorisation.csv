@@ -191,6 +191,7 @@
 "bleached millepora encrusting";NA;NA;"Bleached";"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
 "bleached soft coral";NA;NA;"Bleached";"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "bleached tabulate coral";"Hard coral";NA;"Bleached";NA;NA;NA;NA;NA;NA;NA;TRUE
+"blk peys";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "bloc";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "blue-green macroalga";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "bluecoral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -218,6 +219,7 @@
 "bryozoan";NA;NA;NA;"Bryozoa";NA;NA;NA;NA;NA;NA;TRUE
 "bryozoan hard";NA;NA;NA;"Bryozoa";NA;NA;NA;NA;NA;NA;TRUE
 "bryozoan soft";NA;NA;NA;"Bryozoa";NA;NA;NA;NA;NA;NA;TRUE
+"bsp";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "bushy coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "c rotundata cr";NA;NA;NA;"Tracheophyta";"Magnoliopsida";NA;"Alismatales";"Cymodoceaceae";"Cymodocea";"Cymodocea rotundata";TRUE
 "c serrulata cs";NA;NA;NA;"Tracheophyta";"Magnoliopsida";NA;"Alismatales";"Cymodoceaceae";"Oceana";"Oceana serrulata";TRUE
@@ -250,6 +252,7 @@
 "cca";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "cca - cca";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "cca - sick cca";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cca bfd";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "cca growing on hard substrate";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "cca growing on rubble";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "cespitularia";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Xeniidae";"Conglomeratusclera";NA;TRUE
@@ -371,7 +374,9 @@
 "dictyopteris/dictyota";NA;NA;NA;NA;"Phaeophyceae";NA;"Dictyotales";"Dictyotaceae";NA;NA;TRUE
 "dictyosphaeria";NA;NA;NA;"Chlorophyta";"Ulvophyceae";NA;"Cladophorales";"Siphonocladaceae";"Dictyosphaeria";NA;TRUE
 "dictyosphaeria sp";NA;NA;NA;"Chlorophyta";"Ulvophyceae";NA;"Cladophorales";"Siphonocladaceae";"Dictyosphaeria";NA;TRUE
+"dictyosphaeria verslusii";NA;NA;NA;"Chlorophyta";"Ulvophyceae";NA;"Cladophorales";"Siphonocladaceae";"Dictyosphaeria";"Dictyosphaeria versluysii";TRUE
 "dictyota";NA;NA;NA;NA;"Phaeophyceae";NA;"Dictyotales";"Dictyotaceae";"Dictyota";NA;TRUE
+"dictyota sp";NA;NA;NA;NA;"Phaeophyceae";NA;"Dictyotales";"Dictyotaceae";"Dictyota";NA;TRUE
 "didemnum molle";NA;NA;NA;"Tunicata";"Ascidiacea";NA;"Aplousobranchia";"Didemnidae";"Didemnum";"Didemnum molle";TRUE
 "digitate corals";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "digitate corals bleached";"Hard coral";NA;"Bleached";NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1094,6 +1099,7 @@
 "psammocoridae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Psammocoridae";NA;NA;TRUE
 "pseudosiderastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Rhizangiidae";"Pseudosiderastrea";NA;TRUE
 "pseudosiderastrea massif";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Rhizangiidae";"Pseudosiderastrea";NA;TRUE
+"reb branching";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently dead coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently killed coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "reckilledcoral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
