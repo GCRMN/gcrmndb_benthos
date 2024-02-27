@@ -119,10 +119,10 @@ rm(current_unique_organismID, old_unique_organismID)
 
 # 1. Add "category" and "subcategory" ----
 
-unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>% 
+unique_organismID <- read.csv("./../data/03_tax-recategorisation.csv", sep = ";") %>% 
   # Remove eventual white spaces
   mutate_at(c("category", "subcategory", "condition", "phylum", "class", "subclass", "order", 
-              "family", "genus", "species"), ~str_squish(str_trim(., side = "both"))) %>% 
+              "family", "genus", "species"), ~str_squish(.)) %>% 
   # Assign "subcategory"
   mutate(subcategory = case_when(phylum == "Cyanobacteria" ~ "Cyanobacteria",
                                  order == "Corallinales" ~ "Coralline algae",
