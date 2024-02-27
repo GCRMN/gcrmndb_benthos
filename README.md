@@ -273,12 +273,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0049    | Kayal, Penin, and Adjeroud (Mo.)                                                                                                                        | upon request   | Sh.  |            |     JW     |
 |   0050    | WF 2019                                                                                                                                                 | upon request   | Sh.  | 2020-02-12 |     JW     |
 |   0051    | Phoenix Islands                                                                                                                                         | upon request   | Sh.  |            |     JW     |
+|   0052    | [Vava’u Ocean Initiative 2017](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/)                                                          | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-02-27, the `gcrmndb_benthos` synthetic dataset contains a
-total of **3,624,246 observations** (*i.e* rows) representing **12,085
-sites** and **26,358 surveys**.
+total of **4,003,546 observations** (*i.e* rows) representing **12,115
+sites** and **26,414 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -303,7 +304,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7594 |       14276 |           46 |    1987    |   2024    |
+|      Pacific |      7624 |       14332 |           47 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -369,7 +370,7 @@ territories.
 |                Taiwan | Taiwan                         |       103 |         195 |            1 |    1997    |   2020    |
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
-|                 Tonga | Tonga                          |       462 |         469 |            5 |    2002    |   2022    |
+|                 Tonga | Tonga                          |       492 |         525 |            6 |    2002    |   2022    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
