@@ -48,6 +48,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          datasetID = dataset) %>% 
   select(-picname, -island, -functional_group, -label, -count, -point_count) %>% 
   left_join(., data_site) %>% 
+  # Remove data from Pheonix Islands (only data in 2015), the full dataset is 0051
+  filter(year != 2015) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
