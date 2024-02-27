@@ -274,13 +274,14 @@ considered. The column names (except *aggregator*) correspond to
 |   0050    | WF 2019                                                                                                                                                 | upon request   | Sh.  | 2020-02-12 |     JW     |
 |   0051    | Phoenix Islands                                                                                                                                         | upon request   | Sh.  |            |     JW     |
 |   0052    | [Vava’u Ocean Initiative 2017](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/)                                                          | upon request   | Sh.  |            |     JW     |
+|   0053    | [Vava’u Ocean Initiative 2022](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/)                                                          | upon request   | Sh.  |            |     JW     |
 |   0054    | [100 Island Challenge (SLI)](https://sandinlab.ucsd.edu/100-island-challenge/)                                                                          | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-02-27, the `gcrmndb_benthos` synthetic dataset contains a
-total of **4,032,876 observations** (*i.e* rows) representing **12,164
-sites** and **26,467 surveys**.
+total of **4,194,552 observations** (*i.e* rows) representing **12,198
+sites** and **26,514 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -305,7 +306,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7673 |       14385 |           48 |    1987    |   2024    |
+|      Pacific |      7707 |       14432 |           49 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -371,7 +372,7 @@ territories.
 |                Taiwan | Taiwan                         |       103 |         195 |            1 |    1997    |   2020    |
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
-|                 Tonga | Tonga                          |       492 |         525 |            6 |    2002    |   2022    |
+|                 Tonga | Tonga                          |       526 |         572 |            7 |    2002    |   2022    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
