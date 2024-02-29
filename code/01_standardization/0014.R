@@ -1,7 +1,6 @@
 # 1. Required packages ----
 
 library(tidyverse) # Core tidyverse packages
-library(readxl) # To read excel files
 
 dataset <- "0014" # Define the dataset_id
 
@@ -29,7 +28,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          eventID, organismID, verbatimDepth) %>% 
   mutate(year = year(eventDate),
          month = month(eventDate),
-         day = day(eventDate)) %>% 
+         day = day(eventDate),
+         samplingProtocol = "Photo-quadrat") %>% 
   # Calculate the number of points per image
   group_by(across(c(-organismID))) %>% 
   mutate(total_points = n()) %>% 
@@ -41,4 +41,10 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   # Calculate percentage cover
   mutate(measurementValue = (n_points/total_points)*100) %>% 
   select(-total_points, -n_points) %>% 
+  # Add 0 values for un-observed categories
+  tidyr::complete(organismID,
+                  nesting(datasetID, eventDate, locality, habitat, decimalLatitude, 
+                          decimalLongitude, parentEventID, eventID, verbatimDepth,
+                          year, month, day, samplingProtocol),
+                  fill = list(measurementValue = 0)) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)

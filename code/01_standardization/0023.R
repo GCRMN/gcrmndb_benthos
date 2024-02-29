@@ -42,10 +42,18 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(-genre_corallien, -famille_corallienne, -categorie_detaillee, -categorie_intermediaire,
          -categorie_generale, -morpho_corallienne, -distance, -lineaire, -campagne) %>% 
   # Correct a wrong date for a transect
-  mutate(eventDate = ifelse(eventDate == as_date("2022-02-18") & locality == "UARE" & parentEventID == 2, 
+  mutate(eventDate = ifelse(eventDate == as_date("2022-02-18") & locality == "Uare" & parentEventID == 2, 
                             as_date("2022-02-17"), 
                             eventDate),
          eventDate = as_date(eventDate)) %>% 
+  group_by(across(c(-measurementValue))) %>% 
+  summarise(measurementValue = sum(measurementValue)) %>% 
+  ungroup() %>% 
+  # Add 0 values for un-observed categories
+  tidyr::complete(organismID,
+                  nesting(eventDate, locality, parentEventID, decimalLatitude, decimalLongitude,
+                          year, month, day, datasetID, samplingProtocol, verbatimDepth),
+                  fill = list(measurementValue = 0)) %>% 
   # Export data
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
