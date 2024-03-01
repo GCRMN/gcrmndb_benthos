@@ -276,12 +276,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0052    | [Vava’u Ocean Initiative 2017](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/)                                                          | upon request   | Sh.  |            |     JW     |
 |   0053    | [Vava’u Ocean Initiative 2022](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/)                                                          | upon request   | Sh.  |            |     JW     |
 |   0054    | [100 Island Challenge (SLI)](https://sandinlab.ucsd.edu/100-island-challenge/)                                                                          | upon request   | Sh.  |            |     JW     |
+|   0055    | [Samoa Ocean Strategy](https://www.samoaocean.org/)                                                                                                     | upon request   | Sh.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-02-27, the `gcrmndb_benthos` synthetic dataset contains a
-total of **4,194,552 observations** (*i.e* rows) representing **12,198
-sites** and **26,514 surveys**.
+On the 2024-03-01, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,000,271 observations** (*i.e* rows) representing **12,220
+sites** and **26,548 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -306,7 +307,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7707 |       14432 |           49 |    1987    |   2024    |
+|      Pacific |      7729 |       14466 |           50 |    1987    |   2024    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -337,7 +338,7 @@ territories.
 |                France | French Polynesia               |       228 |        2107 |            8 |    1987    |   2023    |
 |                France | Guadeloupe                     |        10 |          10 |            1 |    2023    |   2023    |
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
-|                France | New Caledonia                  |       873 |        3617 |            9 |    1997    |   2023    |
+|                France | New Caledonia                  |       873 |        3616 |            9 |    1997    |   2023    |
 |                France | Réunion                        |        32 |         133 |            1 |    2003    |   2016    |
 |                France | Wallis and Futuna              |        12 |          12 |            1 |    2019    |   2019    |
 |                 India | India                          |         1 |           1 |            1 |    1998    |   1998    |
@@ -364,7 +365,7 @@ territories.
 |      Papua New Guinea | Papua New Guinea               |        91 |         267 |            4 |    1998    |   2019    |
 |           Philippines | Philippines                    |       472 |         695 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius          |        10 |          12 |            1 |    1999    |   2003    |
-|                 Samoa | Samoa                          |        27 |          54 |            3 |    2012    |   2022    |
+|                 Samoa | Samoa                          |        49 |          89 |            4 |    2012    |   2022    |
 |            Seychelles | Seychelles                     |        19 |          19 |            2 |    1997    |   2012    |
 |       Solomon Islands | Solomon Islands                |       144 |         242 |            5 |    2005    |   2021    |
 |          South Africa | South Africa                   |         5 |           6 |            1 |    2001    |   2005    |
@@ -453,7 +454,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-02-27
+     date     2024-03-01
      pandoc   3.1.1 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
