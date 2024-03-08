@@ -24,8 +24,9 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   pull() %>% 
   # Read the file
   read_xlsx(path = ., sheet = 1, skip = 2) %>% 
-  select(-Status, -TOTAL) %>% 
-  pivot_longer("Anacropora":"Tubipora", names_to = "organismID", values_to = "measurementValue") %>%
+  select(-Status, -TOTAL, -"TOTAL SOFT CORALS") %>% 
+  select(-starts_with("BL ")) %>% # Remove bleached % (that are included in non bleached %)
+  pivot_longer("Anacropora":ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
   rename(locality = Reef, year = Year, parentEventID = Transect, verbatimDepth = Depth) %>% 
   select(locality, year, verbatimDepth, parentEventID, organismID, measurementValue) %>% 
   left_join(., data_site) %>% 
