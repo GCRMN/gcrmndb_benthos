@@ -16,7 +16,7 @@ project_id <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 # 3. Get data from the mermaidr API ----
 
 data <- mermaid_get_project_data(project = project_id, method = "benthicpit",
-                                 data = "observations", token = mermaid_token())
+                                 data = "observations")
 
 # 4. Save raw data ----
 
@@ -26,9 +26,7 @@ write.csv(data, file = paste0("data/01_raw-data/", dataset, "/mermaid_",
 
 # 5. Standardize data ----
 
-mermaid_converter_observations(data) %>% 
-  mutate(datasetID = dataset,
-         samplingProtocol	= "Point intersect transect, 20 m transect length, every 50 cm") %>% 
+mermaid_converter_observations(data, dataset = dataset, method = "Point intersect transect") %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 6. Remove useless objects ----
