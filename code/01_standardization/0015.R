@@ -43,7 +43,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   group_by(locality, parentEventID, eventID, decimalLongitude, decimalLatitude, verbatimDepth, eventDate) %>% 
   mutate(total = sum(measurementValue)) %>% 
   ungroup() %>% 
-  filter(total != 0) %>% 
+  # Remove site falling in the middle of lands
+  filter(locality != "Garden Eel Cove") %>% 
   mutate(measurementValue = (measurementValue*100)/total) %>% 
   left_join(., data_code) %>% 
   select(-code, -coordinates_in_decimal_degree_format, -total) %>% 
