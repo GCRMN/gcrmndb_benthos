@@ -75,12 +75,9 @@ principles ([Wilkinson *et al.*,
 2016](https://www.nature.com/articles/sdata201618)), and to preserve
 these data for future generations.
 
-It is important to note that the `gcrmndb_benthos` is a code repository,
-which consist of a hub to store the code used for data integration, and
-not a data repository.
-
-The `gcrmndb_benthos` is one of the two synthetic datasets developed and
-maintained by the GCRMN, the other one is the `gcrmndb_fish`.
+**It is important to note that the `gcrmndb_benthos` is a code
+repository, which consist of a hub to store the code used for data
+integration, and not a data repository.**
 
 ### 1.4 How to contribute?
 
@@ -281,12 +278,14 @@ considered. The column names (except *aggregator*) correspond to
 |   0057    | [Kuwait_2010](https://dashboard.datamermaid.org/?project=Kuwait_2010)                                                                                   | open (summary) | Me.  |            |     JW     |
 |   0058    | [Kuwait_2014](https://dashboard.datamermaid.org/?project=Kuwait_2014)                                                                                   | open (summary) | Me.  |            |     JW     |
 |   0059    | [Bahrain_2011](https://dashboard.datamermaid.org/?project=Bahrain_2011)                                                                                 | open (summary) | Me.  |            |     JW     |
+|   0060    | [Ankay Conservation](https://ankayconservation.com)                                                                                                     | upon request   | Sh.  | 2024-07-08 |     JW     |
+|   0061    | [RESCUE](https://c2o.net.au/our-work-in-the-pacific/)                                                                                                   | upon request   | Sh.  | 2024-07-09 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-07-01, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,003,280 observations** (*i.e* rows) representing **12,239
-sites** and **26,576 surveys**.
+On the 2024-07-09, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,038,918 observations** (*i.e* rows) representing **12,270
+sites** and **26,630 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -311,7 +310,7 @@ GCRMN regions.
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7729 |       14466 |           50 |    1987    |   2024    |
+|      Pacific |      7760 |       14520 |           51 |    1987    |   2024    |
 |        ROPME |        19 |          28 |            4 |    2010    |   2023    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
@@ -387,7 +386,7 @@ territories.
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
 |         United States | American Samoa                 |       843 |         903 |            4 |    1997    |   2019    |
 |         United States | Guam                           |       305 |         357 |            4 |    1997    |   2021    |
-|         United States | Hawaii                         |      1734 |        1924 |            4 |    1997    |   2021    |
+|         United States | Hawaii                         |      1733 |        1923 |            4 |    1997    |   2021    |
 |         United States | Howland and Baker Islands      |       150 |         150 |            1 |    2015    |   2017    |
 |         United States | Jarvis Island                  |       222 |         222 |            1 |    2015    |   2017    |
 |         United States | Johnston Atoll                 |        46 |          46 |            1 |    2015    |   2015    |
@@ -396,7 +395,7 @@ territories.
 |         United States | United States                  |        17 |          28 |            1 |    2010    |   2022    |
 |         United States | United States Virgin Islands   |         8 |         236 |            2 |    1987    |   2021    |
 |         United States | Wake Island                    |       146 |         146 |            1 |    2014    |   2017    |
-|               Vanuatu | Vanuatu                        |        44 |          59 |            2 |    2004    |   2019    |
+|               Vanuatu | Vanuatu                        |        76 |         114 |            3 |    2004    |   2023    |
 |               Vietnam | Vietnam                        |       182 |         356 |            1 |    1998    |   2011    |
 
 ## 7. Sponsors
@@ -462,7 +461,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-07-01
+     date     2024-07-09
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
