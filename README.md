@@ -246,7 +246,7 @@ considered. The column names (except *aggregator*) correspond to
 |   0025    | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua)                                                                     | open (summary) | Me.  | 2021-09-08 |     JW     |
 |   0026    | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua)                                                                       | open (summary) | Me.  | 2021-09-10 |     JW     |
 |   0027    | [2009-2011_Kubulau](https://dashboard.datamermaid.org/?project=2009-2011_Kubulau)                                                                       | open (summary) | Me.  | 2021-09-08 |     JW     |
-|   0028    | [C<sub>2</sub>O Pacific](https://c2o.net.au/our-work-in-the-pacific/)                                                                                   | upon request   | Rc.  |            |     JW     |
+|   0028    | [C<sub>2</sub>O Pacific (a)](https://c2o.net.au/our-work-in-the-pacific/)                                                                               | upon request   | Rc.  |            |     JW     |
 |   0029    | Kimbe Bay                                                                                                                                               | upon request   | Sh.  | 2019-09-11 |     JW     |
 |   0030    | [PNG BAF 2019](https://dashboard.datamermaid.org/?project=PNG%20BAF%202019)                                                                             | open (summary) | Me.  | 2019-10-31 |     JW     |
 |   0031    | [2017_Northern Lau](https://dashboard.datamermaid.org/?project=2017_Northern%20Lau)                                                                     | open (summary) | Me.  | 2021-02-08 |     JW     |
@@ -279,13 +279,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0058    | [Kuwait_2014](https://dashboard.datamermaid.org/?project=Kuwait_2014)                                                                                   | open (summary) | Me.  |            |     JW     |
 |   0059    | [Bahrain_2011](https://dashboard.datamermaid.org/?project=Bahrain_2011)                                                                                 | open (summary) | Me.  |            |     JW     |
 |   0060    | [Ankay Conservation](https://ankayconservation.com)                                                                                                     | upon request   | Sh.  | 2024-07-08 |     JW     |
-|   0061    | [RESCUE](https://c2o.net.au/our-work-in-the-pacific/)                                                                                                   | upon request   | Sh.  | 2024-07-09 |     JW     |
+|   0061    | [C<sub>2</sub>O Pacific (b)](https://c2o.net.au/our-work-in-the-pacific/)                                                                               | upon request   | Sh.  | 2024-07-09 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-07-09, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,038,918 observations** (*i.e* rows) representing **12,270
-sites** and **26,630 surveys**.
+On the 2024-07-10, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,044,160 observations** (*i.e* rows) representing **12,275
+sites** and **26,725 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -306,7 +306,7 @@ GCRMN regions.
 |-------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |    Australia |      1277 |        5428 |            3 |    1995    |   2023    |
 |       Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|    Caribbean |       101 |         351 |            4 |    1987    |   2023    |
+|    Caribbean |       106 |         446 |            5 |    1987    |   2024    |
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -367,7 +367,7 @@ territories.
 |           New Zealand | Niue                           |         7 |           7 |            1 |    2011    |   2011    |
 |             Nicaragua | Nicaragua                      |        23 |          23 |            1 |    2011    |   2015    |
 |                 Palau | Palau                          |       112 |         381 |            3 |    1997    |   2022    |
-|                Panama | Panama                         |       109 |         140 |            1 |    2007    |   2015    |
+|                Panama | Panama                         |       114 |         235 |            2 |    2007    |   2024    |
 |      Papua New Guinea | Papua New Guinea               |        91 |         267 |            4 |    1998    |   2019    |
 |           Philippines | Philippines                    |       472 |         695 |            1 |    1997    |   2020    |
 | Republic of Mauritius | Republic of Mauritius          |        10 |          12 |            1 |    1999    |   2003    |
@@ -461,7 +461,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-07-09
+     date     2024-07-10
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
