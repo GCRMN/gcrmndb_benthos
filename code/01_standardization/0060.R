@@ -20,7 +20,9 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          decimalLongitude = as.numeric(str_split_fixed(Coordinates, ", ", 2)[,2]),
          locality = str_replace_all(locality, c("Bouy Line" = "Buoy Line",
                                                 "Casablanca" = "Casa Blanca"))) %>% 
-  select(-Coordinates)
+  select(-Coordinates) %>% 
+  mutate(decimalLatitude = ifelse(locality == "Grandmas Garden", 9.32424, decimalLatitude),
+         decimalLongitude = ifelse(locality == "Grandmas Garden", -82.21962, decimalLongitude))
 
 ## 2.2 Code data ----
 
