@@ -15,5 +15,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   read_csv(.) %>% 
   # Convert from ReefCloud format to gcrmndb_benthos format
   reefcloud_converter(.) %>% 
+  mutate(decimalLatitude = ifelse(locality == "Cooks Rock", -19.546029, decimalLatitude),
+         decimalLongitude = ifelse(locality == "Cooks Rock", 169.499078, decimalLongitude)) %>% 
   # Export the data
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)

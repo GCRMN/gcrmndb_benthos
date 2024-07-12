@@ -31,7 +31,9 @@ map_dfr(1:5, ~read_xlsx(path = data_path, sheet = ., col_types = "text")) %>%
   pivot_longer("Hard coral":"Macroalgae", names_to = "organismID", values_to = "measurementValue") %>% 
   select(year, date, recordedBy, locality, parentEventID, habitat, verbatimDepth, decimalLatitude,
          decimalLongitude, organismID, measurementValue) %>% 
-  mutate(datasetID = dataset,
+  mutate(decimalLatitude = ifelse(locality == "Cooks Rock", -19.546029, decimalLatitude),
+         decimalLongitude = ifelse(locality == "Cooks Rock", 169.499078, decimalLongitude),
+         datasetID = dataset,
          day = day(date),
          decimalLatitude = if_else(decimalLatitude > 0, -decimalLatitude, decimalLatitude),
          month = month(date)) %>% 
