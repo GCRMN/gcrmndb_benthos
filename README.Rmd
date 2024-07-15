@@ -27,6 +27,7 @@ library(tidyverse) # Core tidyverse packages
 library(sf)
 sf_use_s2(FALSE)
 library(knitr)
+library(readxl)
 
 # 3. Set theme_graph() as the default ggplot theme ----
 
@@ -190,11 +191,10 @@ Because the GCRMN is a network based on trust, we are very vigilant regarding da
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-read.csv2("data/05_data-sources.csv") %>%
-  mutate_all(., ~replace_na(., "")) %>% 
-  mutate(datasetID = str_pad(datasetID, width = 4, side = "left", pad = "0"),
-         modified = as.character(as_date(modified, format = "%d/%m/%Y")),
-         modified = replace_na(modified, ""),
+read_xlsx(path = "data/05_data-sources.xlsx", sheet = 1) %>%
+  select(datasetID, rightsHolder, dataset_link, accessRights, type, modified, aggregator) %>% 
+  mutate(modified = as.character(modified),
+         across(c("accessRights", "dataset_link", "type", "modified"), ~replace_na(.x, "")),
          rightsHolder = ifelse(dataset_link == "", 
                                rightsHolder, 
                                paste0("[", rightsHolder, "](", dataset_link, ")")),
@@ -204,8 +204,8 @@ read.csv2("data/05_data-sources.csv") %>%
                                         "reefcloud" = "Rc.",
                                         "data paper" = "Pa.",
                                         "data repository" = "Rp.",
-                                        "data sharing" = "Sh."))) %>% 
-  mutate(rightsHolder = str_replace_all(rightsHolder, "C2O Pacific", "C~2~O Pacific")) %>% 
+                                        "data sharing" = "Sh.")),
+         rightsHolder = str_replace_all(rightsHolder, "C2O Pacific", "C~2~O Pacific")) %>% 
   select(datasetID, rightsHolder, accessRights, type, modified, aggregator) %>% 
   distinct() %>% 
   kable(align = c("c", "l", "l", "c", "c", "c"))
