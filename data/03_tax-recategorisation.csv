@@ -599,6 +599,7 @@
 "hard coral - acropora arabensis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Acropora";"Acropora arabensis";TRUE
 "hard coral - acropora clathrata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Acropora";"Acropora clathrata";TRUE
 "hard coral - acropora downingi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Acropora";"Acropora downingi";TRUE
+"hard coral - acropora pharaonis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Acropora";"Acropora pharaonis";TRUE
 "hard coral - acropora tortuosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Acropora";"Acropora tortuosa";TRUE
 "hard coral - alveopora tizardi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Alveopora";"Alveopora tizardi";TRUE
 "hard coral - anomastraea irregularis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Coscinaraeidae";"Anomastraea";"Anomastraea irregularis";TRUE
@@ -651,11 +652,14 @@
 "hard coral - leptoria";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Leptoria";NA;TRUE
 "hard coral - leptoseris";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Agariciidae";"Leptoseris";NA;TRUE
 "hard coral - lobophyllia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Lobophylliidae";"Lobophyllia";NA;TRUE
+"hard coral - lobophyllia radians";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Lobophylliidae";"Lobophyllia";"Lobophyllia radians";TRUE
 "hard coral - madracis kirbyi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis kirbyi";TRUE
 "hard coral - merulina";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Merulina";NA;TRUE
 "hard coral - millepora";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
 "hard coral - millipora";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
 "hard coral - montipora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Montipora";NA;TRUE
+"hard coral - montipora aequituberculata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Montipora";"Montipora aequituberculata";TRUE
+"hard coral - montipora informis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Montipora";"Montipora informis";TRUE
 "hard coral - mycedium";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Mycedium";NA;TRUE
 "hard coral - other coral";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";NA;NA;NA;NA;TRUE
 "hard coral - oulophyllia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Oulophyllia";NA;TRUE
@@ -676,6 +680,8 @@
 "hard coral - plesiastrea versipora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Plesiastreidae";"Plesiastrea";"Plesiastrea versipora";TRUE
 "hard coral - pocillopora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Pocillopora";NA;TRUE
 "hard coral - pocillopora aliciae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Pocillopora";"Pocillopora aliciae";TRUE
+"hard coral - pocillopora damicornis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Pocillopora";"Pocillopora damicornis";TRUE
+"hard coral - pocillopora verrucosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Pocillopora";"Pocillopora verrucosa";TRUE
 "hard coral - pocilloporidae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";NA;NA;TRUE
 "hard coral - podobacia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Podabacia";NA;TRUE
 "hard coral - porites";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";NA;TRUE
@@ -692,6 +698,7 @@
 "hard coral - psammocora profundacella";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Siderastreidae";"Psammocora";"Psammocora profundacella";TRUE
 "hard coral - psammocora stellata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Siderastreidae";"Psammocora";"Psammocora stellata";TRUE
 "hard coral - psammocoridae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Psammocoridae";NA;NA;TRUE
+"hard coral - pseudosiderastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Rhizangiidae";"Pseudosiderastrea";NA;TRUE
 "hard coral - sandolitha";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Sandalolitha";NA;TRUE
 "hard coral - sclerophyllia maxima";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Lobophylliidae";"Sclerophyllia";"Sclerophyllia maxima";TRUE
 "hard coral - seriatopora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Seriatopora";NA;TRUE
@@ -1257,6 +1264,7 @@
 "s isoetifolium si";NA;NA;NA;"Tracheophyta";"Magnoliopsida";NA;"Alismatales";"Cymodoceaceae";"Syringodium";"Syringodium isoetifolium";TRUE
 "sable";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sand";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"sand - silt";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sand and rubble";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sandalolitha";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Sandalolitha";NA;TRUE
 "sandalolitha dentata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Sandalolitha";"Sandalolitha dentata";TRUE
