@@ -283,12 +283,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0060    | [Ankay Conservation](https://ankayconservation.com)                                                                                                     | upon request   | Sh.  | 2024-07-08 |     JW     |
 |   0061    | [C<sub>2</sub>O Pacific (b)](https://c2o.net.au/our-work-in-the-pacific/)                                                                               | upon request   | Sh.  | 2024-07-09 |     JW     |
 |   0062    | [Reef Renewal Bonaire](https://www.reefrenewalbonaire.org/)                                                                                             | upon request   | Sh.  | 2024-07-16 |     JW     |
+|   0063    | [Qatar_2015-2017](https://dashboard.datamermaid.org/?project=Qatar_2015-2017)                                                                           | open (summary) | Me.  |            |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-07-16, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,044,382 observations** (*i.e* rows) representing **12,277
-sites** and **26,728 surveys**.
+On the 2024-07-24, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,050,089 observations** (*i.e* rows) representing **12,293
+sites** and **26,744 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -314,7 +315,7 @@ GCRMN regions.
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |      Pacific |      7759 |       14520 |           51 |    1987    |   2024    |
-|        ROPME |        19 |          28 |            4 |    2010    |   2023    |
+|        ROPME |        35 |          44 |            5 |    2010    |   2023    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -373,6 +374,7 @@ territories.
 |                Panama | Panama                         |       114 |         235 |            2 |    2007    |   2024    |
 |      Papua New Guinea | Papua New Guinea               |        91 |         267 |            4 |    1998    |   2019    |
 |           Philippines | Philippines                    |       472 |         695 |            1 |    1997    |   2020    |
+|                 Qatar | Qatar                          |        16 |          16 |            1 |    2015    |   2017    |
 | Republic of Mauritius | Republic of Mauritius          |        10 |          12 |            1 |    1999    |   2003    |
 |                 Samoa | Samoa                          |        49 |          89 |            4 |    2012    |   2022    |
 |            Seychelles | Seychelles                     |        19 |          19 |            2 |    1997    |   2012    |
@@ -464,7 +466,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-07-16
+     date     2024-07-24
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -525,7 +527,7 @@ The following organizations have funded the realization of the
      htmlwidgets         1.6.4   2023-12-06 [1] CRAN (R 4.4.1)
      httpuv              1.6.15  2024-03-26 [1] CRAN (R 4.4.1)
      httr                1.4.7   2023-08-15 [1] CRAN (R 4.4.1)
-     httr2               1.0.1   2024-04-01 [1] CRAN (R 4.4.1)
+     httr2               1.0.2   2024-07-16 [1] CRAN (R 4.4.1)
      ids                 1.0.1   2017-05-31 [1] CRAN (R 4.4.1)
      ini                 0.3.1   2018-05-20 [1] CRAN (R 4.4.1)
      isoband             0.2.7   2022-12-20 [1] CRAN (R 4.4.1)
@@ -601,7 +603,7 @@ The following organizations have funded the realization of the
      tidyselect          1.2.1   2024-03-11 [1] CRAN (R 4.4.1)
      tidyverse         * 2.0.0   2023-02-22 [1] CRAN (R 4.4.1)
      timechange          0.3.0   2024-01-18 [1] CRAN (R 4.4.1)
-     tinytex             0.51    2024-05-06 [1] CRAN (R 4.4.1)
+     tinytex             0.52    2024-07-18 [1] CRAN (R 4.4.1)
      tzdb                0.4.0   2023-05-12 [1] CRAN (R 4.4.1)
      units               0.8-5   2023-11-28 [1] CRAN (R 4.4.1)
      usethis             2.2.3   2024-02-19 [1] CRAN (R 4.4.1)
