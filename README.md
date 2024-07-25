@@ -286,12 +286,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0063    | [Qatar_2015-2017](https://dashboard.datamermaid.org/?project=Qatar_2015-2017)                                                                           | open (summary) | Me.  | 2024-07-24 |     JW     |
 |   0064    | [UAE_Musandam](https://dashboard.datamermaid.org/?project=UAE_Musandam_Multiproject_2019-2020)                                                          | open (summary) | Me.  | 2024-07-24 |     JW     |
 |   0065    | [SBNvsKF_UAE_2021-2022](https://dashboard.datamermaid.org/?project=SBNvsKF_UAE_2021-2022)                                                               | open (summary) | Me.  | 2024-07-25 |     JW     |
+|   0066    | [Nature Foundation SXM](https://naturefoundationsxm.org/)                                                                                               | upon request   | Sh.  | 2024-07-25 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-07-25, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,062,490 observations** (*i.e* rows) representing **12,305
-sites** and **26,771 surveys**.
+total of **14,066,720 observations** (*i.e* rows) representing **12,312
+sites** and **26,816 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -312,7 +313,7 @@ GCRMN regions.
 |-------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |    Australia |      1277 |        5428 |            3 |    1995    |   2023    |
 |       Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|    Caribbean |       109 |         449 |            6 |    1987    |   2024    |
+|    Caribbean |       116 |         494 |            7 |    1987    |   2024    |
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -369,6 +370,7 @@ territories.
 |            Mozambique | Mozambique                     |        14 |          15 |            2 |    1997    |   2012    |
 |               Myanmar | Myanmar                        |        22 |          29 |            1 |    2001    |   2013    |
 |           Netherlands | Bonaire                        |        17 |          17 |            2 |    2012    |   2023    |
+|           Netherlands | Sint-Maarten                   |         7 |          45 |            1 |    2016    |   2023    |
 |           New Zealand | Cook Islands                   |       184 |         239 |            5 |    2005    |   2023    |
 |           New Zealand | Niue                           |         7 |           7 |            1 |    2011    |   2011    |
 |             Nicaragua | Nicaragua                      |        23 |          23 |            1 |    2011    |   2015    |
