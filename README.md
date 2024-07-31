@@ -288,12 +288,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0065    | [SBNvsKF_UAE_2021-2022](https://dashboard.datamermaid.org/?project=SBNvsKF_UAE_2021-2022)                                                               | open (summary) | Me.  | 2024-07-25 |     JW     |
 |   0066    | [Nature Foundation SXM](https://naturefoundationsxm.org/)                                                                                               | upon request   | Sh.  | 2024-07-25 |     JW     |
 |   0067    | [ODE Martinique](https://www.eaumartinique.fr/oe-accueil)                                                                                               | upon request   | Sh.  | 2024-07-31 |     JW     |
+|   0068    | [AlHiel_UAE_2023](https://dashboard.datamermaid.org/?project=AlHiel_UAE_2023)                                                                           | open (summary) | Me.  | 2024-07-25 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-07-31, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,067,913 observations** (*i.e* rows) representing **12,327
-sites** and **26,831 surveys**.
+total of **14,068,240 observations** (*i.e* rows) representing **12,327
+sites** and **26,832 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -319,7 +320,7 @@ GCRMN regions.
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |      Pacific |      7759 |       14520 |           51 |    1987    |   2024    |
-|        ROPME |        47 |          71 |            7 |    2010    |   2023    |
+|        ROPME |        47 |          72 |            8 |    2010    |   2023    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -392,7 +393,7 @@ territories.
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
 |                 Tonga | Tonga                          |       526 |         572 |            7 |    2002    |   2022    |
-|  United Arab Emirates | United Arab Emirates           |        12 |          27 |            3 |    2019    |   2023    |
+|  United Arab Emirates | United Arab Emirates           |        12 |          28 |            4 |    2019    |   2023    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |

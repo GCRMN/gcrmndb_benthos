@@ -908,6 +908,7 @@
 "macroalgae - other algae";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "macroalgae - padina";NA;NA;NA;NA;"Phaeophyceae";NA;"Dictyotales";"Dictyotaceae";"Padina";NA;TRUE
 "macroalgae - palmophyllum";"Algae";"Macroalgae";NA;"Prasinodermatophyta";"Palmophyllophyceae";NA;"Palmophyllales";"Palmophyllaceae";"Palmophyllum";NA;TRUE
+"macroalgae - peyssonnelia";NA;NA;NA;"Rhodophyta";"Florideophyceae";NA;"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";NA;TRUE
 "macroalgae - red fleshy macro";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "macroalgae - rhipilia";"Algae";"Macroalgae";NA;"Chlorophyta";"Ulvophyceae";NA;"Bryopsidales";"Halimedaceae";"Rhipilia";NA;TRUE
 "macroalgae - sargassum";NA;NA;NA;NA;"Phaeophyceae";NA;"Fucales";"Sargassaceae";"Sargassum";NA;TRUE
@@ -1074,6 +1075,7 @@
 "other - bfd";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - limestone";"Abiotic";"Silt";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - sand";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"other - tape";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - unknown";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other algae";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1089,6 +1091,7 @@
 "other invertebrates - bryozoan";NA;NA;NA;"Bryozoa";NA;NA;NA;NA;NA;NA;TRUE
 "other invertebrates - diadema setosum";NA;NA;NA;"Echinodermata";"Echinoidea";"Euechinoidea";"Diadematoida";"Diadematidae";"Diadema";"Diadema setosum";TRUE
 "other invertebrates - discosoma";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";"Discosomidae";"Discosoma";NA;TRUE
+"other invertebrates - echinometra mathaei";NA;NA;NA;"Echinodermata";"Echinoidea";"Euechinoidea";"Camarodonta";"Echinometridae";"Echinometra";"Echinometra mathaei";TRUE
 "other invertebrates - holothuria";NA;NA;NA;"Echinodermata";"Holothuroidea";"Actinopoda";"Holothuriida";"Holothuriidae";"Holothuria";NA;TRUE
 "other invertebrates - hydroid";NA;NA;NA;"Cnidaria";"Hydrozoa";NA;NA;NA;NA;NA;TRUE
 "other invertebrates - hydrozoa";NA;NA;NA;"Cnidaria";"Hydrozoa";NA;NA;NA;NA;NA;TRUE
