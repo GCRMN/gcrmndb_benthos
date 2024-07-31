@@ -287,12 +287,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0064    | [UAE_Musandam](https://dashboard.datamermaid.org/?project=UAE_Musandam_Multiproject_2019-2020)                                                          | open (summary) | Me.  | 2024-07-24 |     JW     |
 |   0065    | [SBNvsKF_UAE_2021-2022](https://dashboard.datamermaid.org/?project=SBNvsKF_UAE_2021-2022)                                                               | open (summary) | Me.  | 2024-07-25 |     JW     |
 |   0066    | [Nature Foundation SXM](https://naturefoundationsxm.org/)                                                                                               | upon request   | Sh.  | 2024-07-25 |     JW     |
+|   0067    | [ODE Martinique](https://www.eaumartinique.fr/oe-accueil)                                                                                               | upon request   | Sh.  | 2024-07-31 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-07-25, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,066,720 observations** (*i.e* rows) representing **12,312
-sites** and **26,816 surveys**.
+On the 2024-07-31, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,067,913 observations** (*i.e* rows) representing **12,327
+sites** and **26,831 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -313,7 +314,7 @@ GCRMN regions.
 |-------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |    Australia |      1277 |        5428 |            3 |    1995    |   2023    |
 |       Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|    Caribbean |       116 |         494 |            7 |    1987    |   2024    |
+|    Caribbean |       131 |         509 |            8 |    1987    |   2024    |
 |          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -349,6 +350,7 @@ territories.
 |                France | Europa Island                  |         1 |           1 |            1 |    2002    |   2002    |
 |                France | French Polynesia               |       228 |        2107 |            8 |    1987    |   2023    |
 |                France | Guadeloupe                     |        10 |          10 |            1 |    2023    |   2023    |
+|                France | Martinique                     |        15 |          15 |            1 |    2022    |   2022    |
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
 |                France | New Caledonia                  |       873 |        3616 |            9 |    1997    |   2023    |
 |                France | Réunion                        |        32 |         133 |            1 |    2003    |   2016    |
@@ -471,7 +473,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-07-25
+     date     2024-07-31
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -483,7 +485,7 @@ The following organizations have funded the realization of the
      bit64               4.0.5   2020-08-30 [1] CRAN (R 4.4.1)
      blob                1.2.4   2023-03-17 [1] CRAN (R 4.4.1)
      broom               1.0.6   2024-05-17 [1] CRAN (R 4.4.1)
-     bslib               0.7.0   2024-03-29 [1] CRAN (R 4.4.1)
+     bslib               0.8.0   2024-07-29 [1] CRAN (R 4.4.1)
      cachem              1.1.0   2024-05-16 [1] CRAN (R 4.4.1)
      callr               3.7.6   2024-03-25 [1] CRAN (R 4.4.1)
      cellranger          1.1.0   2016-07-27 [1] CRAN (R 4.4.1)
@@ -491,7 +493,7 @@ The following organizations have funded the realization of the
      classInt            0.4-10  2023-09-05 [1] CRAN (R 4.4.1)
      cli                 3.6.3   2024-06-21 [1] CRAN (R 4.4.1)
      clipr               0.8.0   2022-02-22 [1] CRAN (R 4.4.1)
-     colorspace          2.1-0   2023-01-23 [1] CRAN (R 4.4.1)
+     colorspace          2.1-1   2024-07-26 [1] CRAN (R 4.4.1)
      conflicted          1.2.0   2023-02-01 [1] CRAN (R 4.4.1)
      cpp11               0.4.7   2023-12-02 [1] CRAN (R 4.4.1)
      crayon              1.5.3   2024-06-20 [1] CRAN (R 4.4.1)
@@ -517,7 +519,7 @@ The following organizations have funded the realization of the
      fs                  1.6.4   2024-04-25 [1] CRAN (R 4.4.1)
      gargle              1.5.2   2023-07-20 [1] CRAN (R 4.4.1)
      generics            0.1.3   2022-07-05 [1] CRAN (R 4.4.1)
-     gert                2.0.1   2023-12-04 [1] CRAN (R 4.4.1)
+     gert                2.1.0   2024-07-19 [1] CRAN (R 4.4.1)
      ggplot2           * 3.5.1   2024-04-23 [1] CRAN (R 4.4.1)
      gh                  1.4.1   2024-03-28 [1] CRAN (R 4.4.1)
      gitcreds            0.1.2   2022-09-08 [1] CRAN (R 4.4.1)
@@ -560,7 +562,7 @@ The following organizations have funded the realization of the
      munsell             0.5.1   2024-04-01 [1] CRAN (R 4.4.1)
      nlme                3.1-165 2024-06-06 [1] CRAN (R 4.4.1)
      openssl             2.2.0   2024-05-16 [1] CRAN (R 4.4.1)
-     openxlsx            4.2.5.2 2023-02-06 [1] CRAN (R 4.4.1)
+     openxlsx            4.2.6.1 2024-07-23 [1] CRAN (R 4.4.1)
      pillar              1.9.0   2023-03-22 [1] CRAN (R 4.4.1)
      pkgconfig           2.0.3   2019-09-22 [1] CRAN (R 4.4.1)
      plotly              4.10.4  2024-01-13 [1] CRAN (R 4.4.1)
@@ -589,7 +591,7 @@ The following organizations have funded the realization of the
      rprojroot           2.0.4   2023-11-05 [1] CRAN (R 4.4.1)
      rstudioapi          0.16.0  2024-03-24 [1] CRAN (R 4.4.1)
      rvest               1.0.4   2024-02-12 [1] CRAN (R 4.4.1)
-     s2                  1.1.6   2023-12-19 [1] CRAN (R 4.4.1)
+     s2                  1.1.7   2024-07-17 [1] CRAN (R 4.4.1)
      sass                0.4.9   2024-03-15 [1] CRAN (R 4.4.1)
      scales              1.3.0   2023-11-28 [1] CRAN (R 4.4.1)
      selectr             0.4-2   2019-11-20 [1] CRAN (R 4.4.1)
@@ -611,7 +613,7 @@ The following organizations have funded the realization of the
      tinytex             0.52    2024-07-18 [1] CRAN (R 4.4.1)
      tzdb                0.4.0   2023-05-12 [1] CRAN (R 4.4.1)
      units               0.8-5   2023-11-28 [1] CRAN (R 4.4.1)
-     usethis             2.2.3   2024-02-19 [1] CRAN (R 4.4.1)
+     usethis             3.0.0   2024-07-29 [1] CRAN (R 4.4.1)
      utf8                1.2.4   2023-10-22 [1] CRAN (R 4.4.1)
      uuid                1.2-0   2024-01-14 [1] CRAN (R 4.4.0)
      vctrs               0.6.5   2023-12-01 [1] CRAN (R 4.4.1)
@@ -620,9 +622,9 @@ The following organizations have funded the realization of the
      whisker             0.4.1   2022-12-05 [1] CRAN (R 4.4.1)
      withr               3.0.0   2024-01-16 [1] CRAN (R 4.4.1)
      wk                  0.9.2   2024-07-09 [1] CRAN (R 4.4.1)
-     xfun                0.45    2024-06-16 [1] CRAN (R 4.4.1)
+     xfun                0.46    2024-07-18 [1] CRAN (R 4.4.1)
      xml2                1.3.6   2023-12-04 [1] CRAN (R 4.4.1)
-     yaml                2.3.9   2024-07-05 [1] CRAN (R 4.4.1)
+     yaml                2.3.10  2024-07-26 [1] CRAN (R 4.4.1)
      zip                 2.3.1   2024-01-27 [1] CRAN (R 4.4.1)
 
      [1] C:/Users/jwicquart/AppData/Local/Programs/R/R-4.4.1/library
