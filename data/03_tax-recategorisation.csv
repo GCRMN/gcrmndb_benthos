@@ -627,6 +627,7 @@
 "hard coral - acropora pharaonis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Acropora";"Acropora pharaonis";TRUE
 "hard coral - acropora tortuosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Acropora";"Acropora tortuosa";TRUE
 "hard coral - alveopora tizardi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Alveopora";"Alveopora tizardi";TRUE
+"hard coral - anomastraea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Coscinaraeidae";"Anomastraea";NA;TRUE
 "hard coral - anomastraea irregularis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Coscinaraeidae";"Anomastraea";"Anomastraea irregularis";TRUE
 "hard coral - astrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Astrea";NA;TRUE
 "hard coral - astreopora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Astreopora";NA;TRUE
@@ -683,6 +684,7 @@
 "hard coral - merulina";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Merulina";NA;TRUE
 "hard coral - millepora";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
 "hard coral - millipora";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
+"hard coral - montigyra";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Euphylliidae";"Montigyra";NA;TRUE
 "hard coral - montipora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Montipora";NA;TRUE
 "hard coral - montipora aequituberculata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Montipora";"Montipora aequituberculata";TRUE
 "hard coral - montipora informis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Acroporidae";"Montipora";"Montipora informis";TRUE
@@ -1074,6 +1076,7 @@
 "other - basalt";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - bfd";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - limestone";"Abiotic";"Silt";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"other - obscured";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - sand";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - tape";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other - unknown";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE

@@ -289,12 +289,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0066    | [Nature Foundation SXM](https://naturefoundationsxm.org/)                                                                                               | upon request   | Sh.  | 2024-07-25 |     JW     |
 |   0067    | [ODE Martinique](https://www.eaumartinique.fr/oe-accueil)                                                                                               | upon request   | Sh.  | 2024-07-31 |     JW     |
 |   0068    | [AlHiel_UAE_2023](https://dashboard.datamermaid.org/?project=AlHiel_UAE_2023)                                                                           | open (summary) | Me.  | 2024-07-25 |     JW     |
+|   0069    | [UAE_Musandam_2022](https://dashboard.datamermaid.org/?project=UAE_Musandam_2022)                                                                       | open (summary) | Me.  | 2024-08-02 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-07-31, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,068,240 observations** (*i.e* rows) representing **12,327
-sites** and **26,832 surveys**.
+On the 2024-08-02, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,071,324 observations** (*i.e* rows) representing **12,331
+sites** and **26,842 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -320,7 +321,7 @@ GCRMN regions.
 |          ETP |       241 |         285 |            2 |    1998    |   2018    |
 |       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |      Pacific |      7759 |       14520 |           51 |    1987    |   2024    |
-|        ROPME |        47 |          72 |            8 |    2010    |   2023    |
+|        ROPME |        51 |          82 |            9 |    2010    |   2023    |
 |   South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |          WIO |       168 |         364 |            2 |    1997    |   2019    |
 
@@ -377,7 +378,7 @@ territories.
 |           New Zealand | Cook Islands                   |       184 |         239 |            5 |    2005    |   2023    |
 |           New Zealand | Niue                           |         7 |           7 |            1 |    2011    |   2011    |
 |             Nicaragua | Nicaragua                      |        23 |          23 |            1 |    2011    |   2015    |
-|                  Oman | Oman                           |         3 |           3 |            1 |    2019    |   2019    |
+|                  Oman | Oman                           |         5 |           7 |            2 |    2019    |   2022    |
 |                 Palau | Palau                          |       112 |         381 |            3 |    1997    |   2022    |
 |                Panama | Panama                         |       114 |         235 |            2 |    2007    |   2024    |
 |      Papua New Guinea | Papua New Guinea               |        91 |         267 |            4 |    1998    |   2019    |
@@ -393,7 +394,7 @@ territories.
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
 |                 Tonga | Tonga                          |       526 |         572 |            7 |    2002    |   2022    |
-|  United Arab Emirates | United Arab Emirates           |        12 |          28 |            4 |    2019    |   2023    |
+|  United Arab Emirates | United Arab Emirates           |        14 |          34 |            5 |    2019    |   2023    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
@@ -474,7 +475,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-07-31
+     date     2024-08-02
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
