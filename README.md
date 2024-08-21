@@ -129,38 +129,41 @@ represents :memo: = description variables, :globe_with_meridians: =
 spatial variables, :calendar: = temporal variables, :straight_ruler: =
 methodological variables, :crab: = taxonomic variables,
 :chart_with_upwards_trend: = metric variables. Variables names (except
-*category*, *subcategory*, and *condition*) correspond to [DarwinCore
+*region*, *subregion*, *ecoregion*, *category*, *subcategory*, and
+*condition*) correspond to [DarwinCore
 terms](https://dwc.tdwg.org/terms).
 
 |  \# | Variable         |            Cat.            | Type      | Description                                                                                           |
 |----:|:-----------------|:--------------------------:|:----------|:------------------------------------------------------------------------------------------------------|
 |   1 | datasetID        |           :memo:           | Factor    | ID of the dataset                                                                                     |
-|   2 | higherGeography  |   :globe_with_meridians:   | Factor    | GCRMN region (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))                        |
-|   3 | country          |   :globe_with_meridians:   | Factor    | Country (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))   |
-|   4 | territory        |   :globe_with_meridians:   | Character | Territory (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*TERRITORY1*)) |
-|   5 | locality         |   :globe_with_meridians:   | Character | Site name                                                                                             |
-|   6 | habitat          |   :globe_with_meridians:   | Factor    | Habitat                                                                                               |
-|   7 | parentEventID    |   :globe_with_meridians:   | Integer   | Transect ID                                                                                           |
-|   8 | eventID          |   :globe_with_meridians:   | Integer   | Quadrat ID                                                                                            |
-|   9 | decimalLatitude  |   :globe_with_meridians:   | Numeric   | Latitude (*decimal, EPSG:4326*)                                                                       |
-|  10 | decimalLongitude |   :globe_with_meridians:   | Numeric   | Longitude (*decimal, EPSG:4326*)                                                                      |
-|  11 | verbatimDepth    |   :globe_with_meridians:   | Numeric   | Depth (*m*)                                                                                           |
-|  12 | year             |         :calendar:         | Integer   | Four-digit year                                                                                       |
-|  13 | month            |         :calendar:         | Integer   | Integer month                                                                                         |
-|  14 | day              |         :calendar:         | Integer   | Integer day                                                                                           |
-|  15 | eventDate        |         :calendar:         | Date      | Date (*YYYY-MM-DD*, ISO 8601)                                                                         |
-|  16 | samplingProtocol |      :straight_ruler:      | Character | Description of the method used to acquire the measurement                                             |
-|  17 | recordedBy       |      :straight_ruler:      | Character | Name of the person who acquired the measurement                                                       |
-|  18 | category         |           :crab:           | Factor    | Benthic category                                                                                      |
-|  19 | subcategory      |           :crab:           | Factor    | Benthic subcategory                                                                                   |
-|  20 | condition        |           :crab:           | Character |                                                                                                       |
-|  21 | phylum           |           :crab:           | Character | Phylum                                                                                                |
-|  22 | class            |           :crab:           | Character | Class                                                                                                 |
-|  23 | order            |           :crab:           | Character | Order                                                                                                 |
-|  24 | family           |           :crab:           | Character | Family                                                                                                |
-|  25 | genus            |           :crab:           | Character | Genus                                                                                                 |
-|  26 | scientificName   |           :crab:           | Character | Species                                                                                               |
-|  27 | measurementValue | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                                      |
+|   2 | region           |   :globe_with_meridians:   | Factor    | GCRMN region (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))                        |
+|   3 | subregion        |   :globe_with_meridians:   | Factor    | GCRMN subregion (see [gcrmn_regions](https://github.com/JWicquart/gcrmn_regions))                     |
+|   4 | ecoregion        |   :globe_with_meridians:   | Factor    | Marine Ecoregion of the World (see [Spalding et al, 2007](https://doi.org/10.1641/B570707))           |
+|   5 | country          |   :globe_with_meridians:   | Factor    | Country (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*SOVEREIGN1*))   |
+|   6 | territory        |   :globe_with_meridians:   | Character | Territory (obtained from [World EEZ v12](https://www.marineregions.org/downloads.php) (*TERRITORY1*)) |
+|   7 | locality         |   :globe_with_meridians:   | Character | Site name                                                                                             |
+|   8 | habitat          |   :globe_with_meridians:   | Factor    | Habitat                                                                                               |
+|   9 | parentEventID    |   :globe_with_meridians:   | Integer   | Transect ID                                                                                           |
+|  10 | eventID          |   :globe_with_meridians:   | Integer   | Quadrat ID                                                                                            |
+|  11 | decimalLatitude  |   :globe_with_meridians:   | Numeric   | Latitude (*decimal, EPSG:4326*)                                                                       |
+|  12 | decimalLongitude |   :globe_with_meridians:   | Numeric   | Longitude (*decimal, EPSG:4326*)                                                                      |
+|  13 | verbatimDepth    |   :globe_with_meridians:   | Numeric   | Depth (*m*)                                                                                           |
+|  14 | year             |         :calendar:         | Integer   | Four-digit year                                                                                       |
+|  15 | month            |         :calendar:         | Integer   | Integer month                                                                                         |
+|  16 | day              |         :calendar:         | Integer   | Integer day                                                                                           |
+|  17 | eventDate        |         :calendar:         | Date      | Date (*YYYY-MM-DD*, ISO 8601)                                                                         |
+|  18 | samplingProtocol |      :straight_ruler:      | Character | Description of the method used to acquire the measurement                                             |
+|  19 | recordedBy       |      :straight_ruler:      | Character | Name of the person who acquired the measurement                                                       |
+|  20 | category         |           :crab:           | Factor    | Benthic category                                                                                      |
+|  21 | subcategory      |           :crab:           | Factor    | Benthic subcategory                                                                                   |
+|  22 | condition        |           :crab:           | Character |                                                                                                       |
+|  23 | phylum           |           :crab:           | Character | Phylum                                                                                                |
+|  24 | class            |           :crab:           | Character | Class                                                                                                 |
+|  25 | order            |           :crab:           | Character | Order                                                                                                 |
+|  26 | family           |           :crab:           | Character | Family                                                                                                |
+|  27 | genus            |           :crab:           | Character | Genus                                                                                                 |
+|  28 | scientificName   |           :crab:           | Character | Species                                                                                               |
+|  29 | measurementValue | :chart_with_upwards_trend: | Numeric   | Percentage cover                                                                                      |
 
 **Table 3.** Description of levels for variables `category` and
 `subcategory` (see **Table 2**).
@@ -314,7 +317,7 @@ GCRMN regions.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,277 |       5,428 |            3 |    1995    |   2023    |
+|            Australia |     1,252 |       5,362 |            3 |    1995    |   2023    |
 |               Brazil |        10 |          11 |            1 |    2012    |   2012    |
 |            Caribbean |       131 |         509 |            8 |    1987    |   2024    |
 |                  EAS |     2,519 |       5,402 |            3 |    1997    |   2022    |
@@ -324,6 +327,7 @@ GCRMN regions.
 |                ROPME |        51 |          82 |            9 |    2010    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
+|                   NA |        25 |          66 |            1 |    2008    |   2021    |
 | Global (all regions) |    12,331 |      26,842 |           68 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
@@ -334,7 +338,7 @@ territories.
 
 |               Country | Territory                      | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |----------------------:|:-------------------------------|----------:|------------:|-------------:|:----------:|:---------:|
-|             Australia | Australia                      |      1248 |        5362 |            3 |    1995    |   2023    |
+|             Australia | Australia                      |     1,248 |       5,362 |            3 |    1995    |   2023    |
 |             Australia | Christmas Island               |        16 |          30 |            2 |    2003    |   2010    |
 |             Australia | Cocos Islands                  |        20 |          49 |            1 |    1997    |   2008    |
 |               Bahrain | Bahrain                        |         6 |           6 |            1 |    2011    |   2011    |
@@ -351,15 +355,15 @@ territories.
 |                 Egypt | Egypt                          |        12 |          12 |            1 |    2011    |   2011    |
 |                  Fiji | Fiji                           |       589 |         913 |           12 |    1997    |   2024    |
 |                France | Europa Island                  |         1 |           1 |            1 |    2002    |   2002    |
-|                France | French Polynesia               |       228 |        2107 |            8 |    1987    |   2023    |
+|                France | French Polynesia               |       228 |       2,107 |            8 |    1987    |   2023    |
 |                France | Guadeloupe                     |        10 |          10 |            1 |    2023    |   2023    |
 |                France | Martinique                     |        15 |          15 |            1 |    2022    |   2022    |
 |                France | Mayotte                        |        20 |          87 |            1 |    2003    |   2017    |
-|                France | New Caledonia                  |       873 |        3616 |            9 |    1997    |   2023    |
+|                France | New Caledonia                  |       873 |       3,616 |            9 |    1997    |   2023    |
 |                France | Réunion                        |        32 |         133 |            1 |    2003    |   2016    |
 |                France | Wallis and Futuna              |        12 |          12 |            1 |    2019    |   2019    |
 |                 India | India                          |         1 |           1 |            1 |    1998    |   1998    |
-|             Indonesia | Indonesia                      |       668 |        1049 |            2 |    1997    |   2022    |
+|             Indonesia | Indonesia                      |       668 |       1,049 |            2 |    1997    |   2022    |
 |                 Japan | Japan                          |        52 |         110 |            2 |    1997    |   2015    |
 |                 Kenya | Kenya                          |         6 |           6 |            1 |    2003    |   2004    |
 |              Kiribati | Gilbert Islands                |        18 |          18 |            2 |    2011    |   2018    |
@@ -367,7 +371,7 @@ territories.
 |              Kiribati | Phoenix Group                  |        58 |         123 |            1 |    2009    |   2018    |
 |                Kuwait | Kuwait                         |        10 |          19 |            2 |    2010    |   2014    |
 |            Madagascar | Madagascar                     |        43 |          55 |            1 |    2001    |   2019    |
-|              Malaysia | Malaysia                       |       626 |        2195 |            2 |    1997    |   2021    |
+|              Malaysia | Malaysia                       |       626 |       2,195 |            2 |    1997    |   2021    |
 |              Maldives | Maldives                       |       157 |         223 |            2 |    1997    |   2022    |
 |      Marshall Islands | Marshall Islands               |       147 |         174 |            3 |    2002    |   2020    |
 |                Mexico | Mexico                         |         9 |          10 |            1 |    2018    |   2018    |
@@ -401,7 +405,7 @@ territories.
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
 |         United States | American Samoa                 |       843 |         903 |            4 |    1997    |   2019    |
 |         United States | Guam                           |       305 |         357 |            4 |    1997    |   2021    |
-|         United States | Hawaii                         |      1733 |        1923 |            4 |    1997    |   2021    |
+|         United States | Hawaii                         |     1,733 |       1,923 |            4 |    1997    |   2021    |
 |         United States | Howland and Baker Islands      |       150 |         150 |            1 |    2015    |   2017    |
 |         United States | Jarvis Island                  |       222 |         222 |            1 |    2015    |   2017    |
 |         United States | Johnston Atoll                 |        46 |          46 |            1 |    2015    |   2015    |
@@ -433,6 +437,11 @@ The following organizations have funded the realization of the
   practice](https://link.springer.com/chapter/10.1007/978-3-319-59928-1_8).
   In: Recknagel, F., Michener, W.K. (Eds.), *Ecological Informatics*.
   Springer, pp. 129–157.
+
+- Spalding, M. D., Fox, H. E., Allen, G. R., Davidson, N., Ferdaña, Z.
+  A., Finlayson, M. A. X., \[…\] & Robertson, J. (**2007**). [Marine
+  ecoregions of the world: a bioregionalization of coastal and shelf
+  areas](https://doi.org/10.1641/B570707). *BioScience*, 57(7), 573-583.
 
 - Vandepitte, L., Bosch, S., Tyberghein, L., Waumans, F., Vanhoorne, B.,
   Hernandez, F., \[…\] and Mees, J. (**2015**). [Fishing for data and

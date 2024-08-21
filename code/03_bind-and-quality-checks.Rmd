@@ -211,25 +211,30 @@ synthetic_data_coords <- synthetic_data %>%
 
 ```
 
-## GCRMN region
+## GCRMN spatial layers
 
 ```{r}
 
 # 1. Load data ----
 
-load("../data/06_gcrmn-regions.RData")
+load("../data/gcrmn_regions.RData")
+load("../data/gcrmn_subregions.RData")
+load("../data/gcrmn_ecoregions.RData")
 
 # 2. Make the spatial join ----
 
 synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>% 
+  st_join(., data_gcrmn_subregions %>% select(-region)) %>% 
+  mutate(subregion = paste(region, subregion, sep = " ")) %>% 
+  st_join(., data_gcrmn_ecoregions) %>% 
   bind_cols(., st_coordinates(.)) %>% 
-  rename(decimalLatitude = Y, decimalLongitude = X, higherGeography = gcrmn_region) %>% 
+  rename(decimalLatitude = Y, decimalLongitude = X) %>% 
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
 # 3. Remove useless data sets and variables ----
 
-rm(data_gcrmn_regions)
+rm(data_gcrmn_region, data_gcrmn_subregions, data_gcrmn_ecoregions)
 
 ```
 
@@ -308,7 +313,7 @@ rm(data_eez, data_eez_buffer, synthetic_data_coords_buffer, synthetic_data_buffe
 
 synthetic_data <- synthetic_data %>% 
   rename(scientificName = species) %>% 
-  select(datasetID, higherGeography, country, territory, locality, habitat, parentEventID,
+  select(datasetID, region, subregion, ecoregion, country, territory, locality, habitat, parentEventID,
          eventID, decimalLatitude, decimalLongitude, verbatimDepth, year, month, day, 
          eventDate, samplingProtocol, recordedBy, category, subcategory, condition, 
          phylum, class, order, family, genus, scientificName, measurementValue)
