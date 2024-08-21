@@ -320,6 +320,10 @@ ggsave(filename = "figs/map_sites.png", plot = plot_map, width = 10, height = 3.
 data_benthos %>% 
   group_by(higherGeography) %>% 
   data_descriptors() %>% 
+  bind_rows(., data_benthos %>% 
+    data_descriptors() %>% 
+    mutate(higherGeography = "Global (all regions)", .before = nb_sites)) %>% 
+  mutate(across(c(nb_sites, nb_surveys), ~format(.x, big.mark = ",", scientific = FALSE))) %>% 
   kable(., 
         col.names = c("GCRMN region", "Sites (n)", "Surveys (n)", "Datasets (n)", "First year", "Last year"),
         align = c("r", "r", "r", "r", "c", "c"))

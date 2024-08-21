@@ -293,7 +293,7 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-08-02, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2024-08-21, the `gcrmndb_benthos` synthetic dataset contains a
 total of **14,071,324 observations** (*i.e* rows) representing **12,331
 sites** and **26,842 surveys**.
 
@@ -312,18 +312,19 @@ integrated within the `gcrmndb_benthos` can differ from the sum of the
 column `Datasets (n)`, as some datasets includes sites in different
 GCRMN regions.
 
-| GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
-|-------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|    Australia |      1277 |        5428 |            3 |    1995    |   2023    |
-|       Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|    Caribbean |       131 |         509 |            8 |    1987    |   2024    |
-|          EAS |      2519 |        5402 |            3 |    1997    |   2022    |
-|          ETP |       241 |         285 |            2 |    1998    |   2018    |
-|       PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|      Pacific |      7759 |       14520 |           51 |    1987    |   2024    |
-|        ROPME |        51 |          82 |            9 |    2010    |   2023    |
-|   South Asia |       163 |         229 |            2 |    1997    |   2022    |
-|          WIO |       168 |         364 |            2 |    1997    |   2019    |
+|         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
+|---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
+|            Australia |     1,277 |       5,428 |            3 |    1995    |   2023    |
+|               Brazil |        10 |          11 |            1 |    2012    |   2012    |
+|            Caribbean |       131 |         509 |            8 |    1987    |   2024    |
+|                  EAS |     2,519 |       5,402 |            3 |    1997    |   2022    |
+|                  ETP |       241 |         285 |            2 |    1998    |   2018    |
+|               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
+|              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
+|                ROPME |        51 |          82 |            9 |    2010    |   2023    |
+|           South Asia |       163 |         229 |            2 |    1997    |   2022    |
+|                  WIO |       168 |         364 |            2 |    1997    |   2019    |
+| Global (all regions) |    12,331 |      26,842 |           68 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -475,7 +476,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-08-02
+     date     2024-08-21
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -521,7 +522,7 @@ The following organizations have funded the realization of the
      fs                  1.6.4   2024-04-25 [1] CRAN (R 4.4.1)
      gargle              1.5.2   2023-07-20 [1] CRAN (R 4.4.1)
      generics            0.1.3   2022-07-05 [1] CRAN (R 4.4.1)
-     gert                2.1.0   2024-07-19 [1] CRAN (R 4.4.1)
+     gert                2.1.1   2024-08-16 [1] CRAN (R 4.4.1)
      ggplot2           * 3.5.1   2024-04-23 [1] CRAN (R 4.4.1)
      gh                  1.4.1   2024-03-28 [1] CRAN (R 4.4.1)
      gitcreds            0.1.2   2022-09-08 [1] CRAN (R 4.4.1)
@@ -562,8 +563,8 @@ The following organizations have funded the realization of the
      mime                0.12    2021-09-28 [1] CRAN (R 4.4.0)
      modelr              0.1.11  2023-03-22 [1] CRAN (R 4.4.1)
      munsell             0.5.1   2024-04-01 [1] CRAN (R 4.4.1)
-     nlme                3.1-165 2024-06-06 [1] CRAN (R 4.4.1)
-     openssl             2.2.0   2024-05-16 [1] CRAN (R 4.4.1)
+     nlme                3.1-166 2024-08-14 [1] CRAN (R 4.4.1)
+     openssl             2.2.1   2024-08-16 [1] CRAN (R 4.4.1)
      openxlsx            4.2.6.1 2024-07-23 [1] CRAN (R 4.4.1)
      pillar              1.9.0   2023-03-22 [1] CRAN (R 4.4.1)
      pkgconfig           2.0.3   2019-09-22 [1] CRAN (R 4.4.1)
@@ -582,14 +583,14 @@ The following organizations have funded the realization of the
      rappdirs            0.3.3   2021-01-31 [1] CRAN (R 4.4.1)
      raster              3.6-26  2023-10-14 [1] CRAN (R 4.4.1)
      RColorBrewer        1.1-3   2022-04-03 [1] CRAN (R 4.4.0)
-     Rcpp                1.0.12  2024-01-09 [1] CRAN (R 4.4.1)
+     Rcpp                1.0.13  2024-07-17 [1] CRAN (R 4.4.1)
      readr             * 2.1.5   2024-01-10 [1] CRAN (R 4.4.1)
      readxl            * 1.4.3   2023-07-06 [1] CRAN (R 4.4.1)
      rematch             2.0.0   2023-08-30 [1] CRAN (R 4.4.1)
      rematch2            2.1.2   2020-05-01 [1] CRAN (R 4.4.1)
      reprex              2.1.1   2024-07-06 [1] CRAN (R 4.4.1)
      rlang               1.1.4   2024-06-04 [1] CRAN (R 4.4.1)
-     rmarkdown           2.27    2024-05-17 [1] CRAN (R 4.4.1)
+     rmarkdown           2.28    2024-08-17 [1] CRAN (R 4.4.1)
      rprojroot           2.0.4   2023-11-05 [1] CRAN (R 4.4.1)
      rstudioapi          0.16.0  2024-03-24 [1] CRAN (R 4.4.1)
      rvest               1.0.4   2024-02-12 [1] CRAN (R 4.4.1)
@@ -617,14 +618,14 @@ The following organizations have funded the realization of the
      units               0.8-5   2023-11-28 [1] CRAN (R 4.4.1)
      usethis             3.0.0   2024-07-29 [1] CRAN (R 4.4.1)
      utf8                1.2.4   2023-10-22 [1] CRAN (R 4.4.1)
-     uuid                1.2-0   2024-01-14 [1] CRAN (R 4.4.0)
+     uuid                1.2-1   2024-07-29 [1] CRAN (R 4.4.1)
      vctrs               0.6.5   2023-12-01 [1] CRAN (R 4.4.1)
      viridisLite         0.4.2   2023-05-02 [1] CRAN (R 4.4.1)
      vroom               1.6.5   2023-12-05 [1] CRAN (R 4.4.1)
      whisker             0.4.1   2022-12-05 [1] CRAN (R 4.4.1)
-     withr               3.0.0   2024-01-16 [1] CRAN (R 4.4.1)
+     withr               3.0.1   2024-07-31 [1] CRAN (R 4.4.1)
      wk                  0.9.2   2024-07-09 [1] CRAN (R 4.4.1)
-     xfun                0.46    2024-07-18 [1] CRAN (R 4.4.1)
+     xfun                0.47    2024-08-17 [1] CRAN (R 4.4.1)
      xml2                1.3.6   2023-12-04 [1] CRAN (R 4.4.1)
      yaml                2.3.10  2024-07-26 [1] CRAN (R 4.4.1)
      zip                 2.3.1   2024-01-27 [1] CRAN (R 4.4.1)
