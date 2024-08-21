@@ -225,7 +225,6 @@ load("../data/gcrmn_ecoregions.RData")
 
 synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>% 
   st_join(., data_gcrmn_subregions %>% select(-region)) %>% 
-  mutate(subregion = paste(region, subregion, sep = " ")) %>% 
   st_join(., data_gcrmn_ecoregions) %>% 
   bind_cols(., st_coordinates(.)) %>% 
   rename(decimalLatitude = Y, decimalLongitude = X) %>% 
