@@ -150,11 +150,11 @@ if(sites > 100){
 }else{
   
   synthetic_data_i %>% 
-    select(decimalLongitude, decimalLatitude) %>% 
+    select(decimalLongitude, decimalLatitude, locality) %>% 
     unique() %>% 
     leaflet(data = .) %>%
     addTiles() %>%
-    addMarkers(~decimalLongitude, ~decimalLatitude)
+    addMarkers(~decimalLongitude, ~decimalLatitude, popup = ~locality)
   
 }
 
