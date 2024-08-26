@@ -293,14 +293,15 @@ considered. The column names (except *aggregator*) correspond to
 |   0067    | [ODE Martinique](https://www.eaumartinique.fr/oe-accueil)                                                                                               | upon request   | Sh.  | 2024-07-31 |     JW     |
 |   0068    | [AlHiel_UAE_2023](https://dashboard.datamermaid.org/?project=AlHiel_UAE_2023)                                                                           | open (summary) | Me.  | 2024-07-25 |     JW     |
 |   0069    | [UAE_Musandam_2022](https://dashboard.datamermaid.org/?project=UAE_Musandam_2022)                                                                       | open (summary) | Me.  | 2024-08-02 |     JW     |
-|   0070    | Claereboudt                                                                                                                                             | upon request   | Sh.  | 2024-08-25 |     JW     |
+|   0070    | Claereboudt, 2015                                                                                                                                       | upon request   | Sh.  | 2024-08-25 |     JW     |
 |   0071    | Disease surveys Oman                                                                                                                                    | upon request   | Sh.  | 2024-08-25 |     JW     |
+|   0072    | Al Mealla, 2018                                                                                                                                         | upon request   | Sh.  | 2024-08-26 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-08-25, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,201,343 observations** (*i.e* rows) representing **12,352
-sites** and **26,966 surveys**.
+On the 2024-08-26, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,201,482 observations** (*i.e* rows) representing **12,352
+sites** and **26,970 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -326,11 +327,11 @@ GCRMN regions.
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
-|                ROPME |        72 |         206 |           11 |    2003    |   2023    |
+|                ROPME |        72 |         210 |           12 |    2003    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
 |                   NA |        25 |          66 |            1 |    2008    |   2021    |
-| Global (all regions) |    12,352 |      26,966 |           70 |    1987    |   2024    |
+| Global (all regions) |    12,352 |      26,970 |           71 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -343,7 +344,7 @@ territories.
 |             Australia | Australia                      |     1,248 |       5,362 |            3 |    1995    |   2023    |
 |             Australia | Christmas Island               |        16 |          30 |            2 |    2003    |   2010    |
 |             Australia | Cocos Islands                  |        20 |          49 |            1 |    1997    |   2008    |
-|               Bahrain | Bahrain                        |         6 |           6 |            1 |    2011    |   2011    |
+|               Bahrain | Bahrain                        |         6 |          10 |            2 |    2011    |   2018    |
 |            Bangladesh | Bangladesh                     |         2 |           2 |            1 |    2005    |   2006    |
 |                Belize | Belize                         |        12 |          22 |            1 |    2015    |   2018    |
 |                Brazil | Brazil                         |        10 |          11 |            1 |    2012    |   2012    |
@@ -487,7 +488,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-08-25
+     date     2024-08-26
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────

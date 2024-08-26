@@ -57,6 +57,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   left_join(., data_site) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
-# 6. Remove useless objects ----
+# 3. Remove useless objects ----
 
 rm(data_site, convert_coords)
