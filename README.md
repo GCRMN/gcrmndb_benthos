@@ -296,12 +296,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0070    | Claereboudt, 2015                                                                                                                                       | upon request   | Sh.  | 2024-08-25 |     JW     |
 |   0071    | Disease surveys Oman                                                                                                                                    | upon request   | Sh.  | 2024-08-25 |     JW     |
 |   0072    | Al Mealla, 2018                                                                                                                                         | upon request   | Sh.  | 2024-08-26 |     JW     |
+|   0073    | [Howells et al, 2020](https://doi.org/10.1007/s00338-020-01946-2)                                                                                       | upon request   | Sh.  | 2024-08-26 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-08-26, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,201,482 observations** (*i.e* rows) representing **12,352
-sites** and **26,970 surveys**.
+total of **14,201,809 observations** (*i.e* rows) representing **12,356
+sites** and **26,976 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -327,11 +328,11 @@ GCRMN regions.
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
-|                ROPME |        72 |         210 |           12 |    2003    |   2023    |
+|                ROPME |        76 |         216 |           13 |    2003    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
 |                   NA |        25 |          66 |            1 |    2008    |   2021    |
-| Global (all regions) |    12,352 |      26,970 |           71 |    1987    |   2024    |
+| Global (all regions) |    12,356 |      26,976 |           72 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -402,7 +403,7 @@ territories.
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
 |                 Tonga | Tonga                          |       526 |         572 |            7 |    2002    |   2022    |
-|  United Arab Emirates | United Arab Emirates           |        14 |          34 |            5 |    2019    |   2023    |
+|  United Arab Emirates | United Arab Emirates           |        18 |          40 |            6 |    2015    |   2023    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
