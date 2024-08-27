@@ -298,12 +298,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0072    | Al Mealla, 2018                                                                                                                                         | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0073    | [Howells et al, 2020](https://doi.org/10.1007/s00338-020-01946-2)                                                                                       | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0074    | Shokri, 2021                                                                                                                                            | upon request   | Sh.  | 2024-08-26 |     JW     |
+|   0075    | [Aeby et al, 2020](https://doi.org/10.1007/s00338-020-01928-4)                                                                                          | upon request   | Sh.  | 2024-08-25 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-08-26, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,202,392 observations** (*i.e* rows) representing **12,384
-sites** and **27,025 surveys**.
+On the 2024-08-27, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,203,514 observations** (*i.e* rows) representing **12,400
+sites** and **27,042 surveys**.
 
 ![](figs/map_sites.png)
 
@@ -329,11 +330,11 @@ GCRMN regions.
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
-|                ROPME |       104 |         265 |           14 |    1999    |   2023    |
+|                ROPME |       120 |         282 |           15 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
 |                   NA |        25 |          66 |            1 |    2008    |   2021    |
-| Global (all regions) |    12,384 |      27,025 |           73 |    1987    |   2024    |
+| Global (all regions) |    12,400 |      27,042 |           74 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -389,7 +390,7 @@ territories.
 |           New Zealand | Cook Islands                   |       184 |         239 |            5 |    2005    |   2023    |
 |           New Zealand | Niue                           |         7 |           7 |            1 |    2011    |   2011    |
 |             Nicaragua | Nicaragua                      |        23 |          23 |            1 |    2011    |   2015    |
-|                  Oman | Oman                           |        26 |         131 |            4 |    2003    |   2022    |
+|                  Oman | Oman                           |        31 |         136 |            5 |    2003    |   2022    |
 |                 Palau | Palau                          |       112 |         381 |            3 |    1997    |   2022    |
 |                Panama | Panama                         |       114 |         235 |            2 |    2007    |   2024    |
 |      Papua New Guinea | Papua New Guinea               |        91 |         267 |            4 |    1998    |   2019    |
@@ -405,7 +406,7 @@ territories.
 |              Tanzania | Tanzania                       |        18 |          30 |            2 |    1997    |   2012    |
 |              Thailand | Thailand                       |       149 |         246 |            1 |    1998    |   2022    |
 |                 Tonga | Tonga                          |       526 |         572 |            7 |    2002    |   2022    |
-|  United Arab Emirates | United Arab Emirates           |        18 |          40 |            6 |    2015    |   2023    |
+|  United Arab Emirates | United Arab Emirates           |        29 |          52 |            7 |    2015    |   2023    |
 |        United Kingdom | Cayman Islands                 |         1 |           1 |            1 |    2011    |   2011    |
 |        United Kingdom | Pitcairn                       |         6 |          12 |            2 |    2009    |   2023    |
 |        United Kingdom | Turks and Caicos Islands       |         4 |           4 |            1 |    2015    |   2015    |
@@ -491,7 +492,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-08-26
+     date     2024-08-27
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
