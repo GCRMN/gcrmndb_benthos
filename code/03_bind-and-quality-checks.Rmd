@@ -425,7 +425,21 @@ synthetic_data <- synthetic_data %>%
 
 ```{r}
 
+# 1. All data ----
+
 save(synthetic_data, file = "../data/09_gcrmndb_benthos.RData")
+
+# 2. Site coordinates ----
+
+synthetic_data %>% 
+  select(datasetID, decimalLatitude, decimalLongitude) %>% 
+  distinct() %>% 
+  st_as_sf(coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) %>% 
+  # Use getwd to get the directory because gdal use a different relative path
+  st_write(.,
+           dsn = paste0(str_remove(getwd(), "/code"),
+                        "/data/11_site-coords/gcrmndb-benthos_site-coords.shp"),
+           append = FALSE)
 
 ```
 
