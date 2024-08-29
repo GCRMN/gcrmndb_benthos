@@ -217,7 +217,7 @@ read_xlsx(path = "data/05_data-sources.xlsx", sheet = 1) %>%
 
 ## 6. Description of the synthetic dataset
 
-On the `r lubridate::as_date(Sys.time())`, the `gcrmndb_benthos` synthetic dataset contains a total of **`r format(nrow(data_benthos), big.mark = ",")` observations** (*i.e* rows) representing **`r format(as.numeric(data_descriptors(data_benthos)[1,"nb_sites"]), big.mark = ",")` sites** and **`r format(as.numeric(data_descriptors(data_benthos)[1,"nb_surveys"]), big.mark = ",")` surveys**.
+On the `r lubridate::as_date(Sys.time())`, the `gcrmndb_benthos` synthetic dataset contains a total of **`r format(nrow(data_benthos), big.mark = ",")` observations** (*i.e* rows) representing **`r format(as.numeric(data_descriptors(data_benthos)[1,"nb_sites"]), big.mark = ",")` sites** and **`r format(as.numeric(data_descriptors(data_benthos)[1,"nb_surveys"]), big.mark = ",")` surveys**. The distribution of monitoring sites in time and space is shown in **Figure 2**. An interactive version of this map is available on [Google Earth Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 
@@ -286,7 +286,7 @@ plot_map <- ggplot() +
   # Graphical aspects
   coord_sf(ylim = c(-5000000, 5000000), expand = FALSE) +
   guides(colour = guide_legend(title.position = "top", title.hjust = 0.5, override.aes = list(size = 5))) +
-  scale_color_manual(values = c("#2c7bb6", "#91bfdb", "#f7ca18", "#fc8d59", "#d73027")) +
+  scale_color_manual(values = c("#fac484", "#f8a07e", "#ce6693", "#a059a0", "#5c53a5")) +
   theme(text = element_text(family = font_choose_map),
         panel.border = element_rect(fill = NA, color = "black", linewidth = 1),
         axis.title = element_blank(),
@@ -312,10 +312,10 @@ ggsave(filename = "figs/map_sites.png", plot = plot_map, width = 10, height = 3.
 
 ![](figs/map_sites.png)
 
-**Figure 2.** Map of the distribution of benthic cover monitoring sites for which data are included within the `gcrmndb_benthos` synthetic dataset. Light grey polygons represents economic exclusive zones. Colours corresponds to monitoring duration which is the difference, for each site, between the first and last years with data.
+**Figure 2.** Map of the distribution of benthic cover monitoring sites for which data are included within the `gcrmndb_benthos` synthetic dataset. Light grey polygons represents economic exclusive zones. Colours corresponds to monitoring duration which is the difference, for each site, between the first and last years with data. Note that the datasetID 0009 is not included in this map, due to the very large number of sites and a monitoring method that differs from those of the other datasets.
 
 
-**Table 6.** Summary of the content of the `gcrmndb_benthos` synthetic dataset per GCRMN region. EAS = East Asian Seas, ETP = Eastern Tropical Pacific, WIO = Western Indian Ocean. The total number of datasets integrated within the `gcrmndb_benthos` can differ from the sum of the column `Datasets (n)`, as some datasets includes sites in different GCRMN regions.
+**Table 6.** Summary of the content of the `gcrmndb_benthos` synthetic dataset per GCRMN region. EAS = East Asian Seas, ETP = Eastern Tropical Pacific, WIO = Western Indian Ocean. The total number of datasets integrated within the `gcrmndb_benthos` can differ from the sum of the column `Datasets (n)`, as some datasets includes sites in different GCRMN regions. Note that the datasetID 0009 is not included in this table, due to the very large number of sites and a monitoring method that differs from those of the other datasets.
 
 ```{r echo=FALSE, message=FALSE}
 
@@ -333,7 +333,7 @@ data_benthos %>%
 ```
 
 
-**Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic dataset per country and territory. The total number of datasets integrated within the `gcrmndb_benthos` can differ from the sum of the column `Datasets (n)`, as some datasets includes sites in different territories.
+**Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic dataset per country and territory. The total number of datasets integrated within the `gcrmndb_benthos` can differ from the sum of the column `Datasets (n)`, as some datasets includes sites in different territories. Note that the datasetID 0009 is not included in this table, due to the very large number of sites and a monitoring method that differs from those of the other datasets.
 
 ```{r echo=FALSE, message=FALSE}
 

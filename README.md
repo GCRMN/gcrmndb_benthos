@@ -300,9 +300,12 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-08-27, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2024-08-29, the `gcrmndb_benthos` synthetic dataset contains a
 total of **14,203,514 observations** (*i.e* rows) representing **12,400
-sites** and **27,042 surveys**.
+sites** and **27,042 surveys**. The distribution of monitoring sites in
+time and space is shown in **Figure 2**. An interactive version of this
+map is available on [Google Earth
+Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
 
 ![](figs/map_sites.png)
 
@@ -310,14 +313,19 @@ sites** and **27,042 surveys**.
 for which data are included within the `gcrmndb_benthos` synthetic
 dataset. Light grey polygons represents economic exclusive zones.
 Colours corresponds to monitoring duration which is the difference, for
-each site, between the first and last years with data.
+each site, between the first and last years with data. Note that the
+datasetID 0009 is not included in this map, due to the very large number
+of sites and a monitoring method that differs from those of the other
+datasets.
 
 **Table 6.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per GCRMN region. EAS = East Asian Seas, ETP = Eastern Tropical
 Pacific, WIO = Western Indian Ocean. The total number of datasets
 integrated within the `gcrmndb_benthos` can differ from the sum of the
 column `Datasets (n)`, as some datasets includes sites in different
-GCRMN regions.
+GCRMN regions. Note that the datasetID 0009 is not included in this
+table, due to the very large number of sites and a monitoring method
+that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
@@ -338,7 +346,9 @@ GCRMN regions.
 dataset per country and territory. The total number of datasets
 integrated within the `gcrmndb_benthos` can differ from the sum of the
 column `Datasets (n)`, as some datasets includes sites in different
-territories.
+territories. Note that the datasetID 0009 is not included in this table,
+due to the very large number of sites and a monitoring method that
+differs from those of the other datasets.
 
 |               Country | Territory                      | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |----------------------:|:-------------------------------|----------:|------------:|-------------:|:----------:|:---------:|
@@ -490,7 +500,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-08-27
+     date     2024-08-29
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -512,12 +522,12 @@ The following organizations have funded the realization of the
      clipr               0.8.0   2022-02-22 [1] CRAN (R 4.4.1)
      colorspace          2.1-1   2024-07-26 [1] CRAN (R 4.4.1)
      conflicted          1.2.0   2023-02-01 [1] CRAN (R 4.4.1)
-     cpp11               0.4.7   2023-12-02 [1] CRAN (R 4.4.1)
+     cpp11               0.5.0   2024-08-27 [1] CRAN (R 4.4.1)
      crayon              1.5.3   2024-06-20 [1] CRAN (R 4.4.1)
      credentials         2.0.1   2023-09-06 [1] CRAN (R 4.4.1)
      crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.4.1)
-     curl                5.2.1   2024-03-01 [1] CRAN (R 4.4.1)
-     data.table          1.15.4  2024-03-30 [1] CRAN (R 4.4.1)
+     curl                5.2.2   2024-08-26 [1] CRAN (R 4.4.1)
+     data.table          1.16.0  2024-08-27 [1] CRAN (R 4.4.1)
      DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.4.1)
      dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.4.1)
      desc                1.4.3   2023-12-10 [1] CRAN (R 4.4.1)
@@ -551,7 +561,7 @@ The following organizations have funded the realization of the
      htmlwidgets         1.6.4   2023-12-06 [1] CRAN (R 4.4.1)
      httpuv              1.6.15  2024-03-26 [1] CRAN (R 4.4.1)
      httr                1.4.7   2023-08-15 [1] CRAN (R 4.4.1)
-     httr2               1.0.2   2024-07-16 [1] CRAN (R 4.4.1)
+     httr2               1.0.3   2024-08-22 [1] CRAN (R 4.4.1)
      ids                 1.0.1   2017-05-31 [1] CRAN (R 4.4.1)
      ini                 0.3.1   2018-05-20 [1] CRAN (R 4.4.1)
      isoband             0.2.7   2022-12-20 [1] CRAN (R 4.4.1)

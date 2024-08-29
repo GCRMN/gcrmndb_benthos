@@ -1,12 +1,15 @@
-// 1. Import and show WRI coral reef distribution data ----
+// 1. Define background map style ----
+
+Map.setOptions('TERRAIN');
+
+// 2. Import and show WRI coral reef distribution data ----
 
 var reef = ee.FeatureCollection("users/jeremywicquart/data_reefs");
-
 Map.addLayer(reef, {color: '#2c82c9'}, 'Coral reefs');
 
-// 2. Import and show gcrmndb_benthos monitoring sites ----
+// 3. Import and show gcrmndb_benthos monitoring sites ----
 
-// 2.1 Add the layers ----
+// 3.1 Add the layers ----
 
 var site_coords = ee.FeatureCollection("users/jeremywicquart/gcrmndb-benthos_site-coords");
 
@@ -25,7 +28,7 @@ Map.addLayer(site_coords_4, {color: '#a059a0'}, '11-15 years');
 var site_coords_5 = site_coords.filter("int_class == '>15 years'");
 Map.addLayer(site_coords_5, {color: '#5c53a5'}, '>15 years');
 
-// 2.2 Add the legend ----
+// 3.2 Add the legend ----
 
 // set position of panel
 var legend = ui.Panel({
@@ -37,7 +40,7 @@ var legend = ui.Panel({
  
 // Create legend title
 var legendTitle = ui.Label({
-  value: 'Number of years',
+  value: 'Monitoring years',
   style: {
     fontWeight: 'bold',
     fontSize: '18px',
@@ -89,7 +92,7 @@ for (var i = 0; i < 5; i++) {
 // add legend to map (alternatively you can also print the legend to the console)
 Map.add(legend);
 
-// 3. Import and show gcrmndb_benthos monitoring sites for a given datasetID ----
+// 4. Import and show gcrmndb_benthos monitoring sites for a given datasetID ----
 
 //var site_coords_i = ee.FeatureCollection("users/jeremywicquart/gcrmndb-benthos_site-coords").filter("datasetID == '0047'");
 
