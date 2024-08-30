@@ -59,7 +59,7 @@ files_list <- list.files(path = "./../data/02_standardized-data", full.names = T
 
 # 2. Bind all files together ----
 
-synthetic_data <- map_dfr(files_list, ~read_csv(.))
+synthetic_data <- map_dfr(files_list, ~read_csv(., show_col_types = FALSE))
 
 # 3. Check incorrect variable names ----
 
@@ -329,9 +329,10 @@ synthetic_data <- synthetic_data %>%
   mutate(qc1 = if_else(!(is.na(decimalLatitude)) | !(is.na(decimalLongitude)), TRUE, FALSE),
          qc2 = if_else(decimalLatitude >= -90 & decimalLatitude <= 90, TRUE, FALSE),
          qc3 = if_else(decimalLongitude >= -180 & decimalLongitude <= 180, TRUE, FALSE),
-         qc5 = if_else(is.na(territory), FALSE, TRUE),
-         qc6 = if_else(!(is.na(year)), TRUE, FALSE),
-         qc8 = if_else(measurementValue >= 0 & measurementValue <= 100, TRUE, FALSE))
+         qc5 = if_else(!(is.na(region)), TRUE, FALSE),
+         qc6 = if_else(is.na(territory), FALSE, TRUE),
+         qc7 = if_else(!(is.na(year)), TRUE, FALSE),
+         qc9 = if_else(measurementValue >= 0 & measurementValue <= 100, TRUE, FALSE))
 
 # 2. Quality check number 4 ----
 
@@ -349,31 +350,31 @@ synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FAL
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
-# 4. Quality check number 7 ----
+# 4. Quality check number 8 ----
 
 synthetic_data <- synthetic_data %>% 
   group_by(datasetID, locality, habitat, parentEventID,
            eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
            year, month, day, eventDate) %>% 
-  summarise(qc7 = round(sum(measurementValue), 5)) %>% 
+  summarise(qc8 = round(sum(measurementValue), 5)) %>% 
   ungroup() %>% 
-  mutate(qc7 = if_else(qc7 >= 0 & qc7 <= 100, TRUE, FALSE)) %>% 
+  mutate(qc8 = if_else(qc8 >= 0 & qc8 <= 100, TRUE, FALSE)) %>% 
   left_join(synthetic_data, .)
 
 # 5. Transform data ----
 
 quality_checks <- synthetic_data %>% 
-  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), 
+  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), 
                 ~as.character(.))) %>% 
-  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), 
+  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), 
                 ~str_replace_all(., 
                                  c("FALSE" = cur_column(), 
                                    "TRUE" = NA_character_)))) %>% 
-  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8)) %>% 
+  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8, qc9)) %>% 
   group_by(datasetID, qc) %>% 
   count() %>% 
   ungroup() %>% 
-  bind_rows(., tibble(datasetID = NA, qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), n = NA)) %>% 
+  bind_rows(., tibble(datasetID = NA, qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), n = NA)) %>% 
   complete(datasetID, qc, fill = list(n = 0)) %>% 
   drop_na(datasetID) %>% 
   group_by(datasetID) %>% 

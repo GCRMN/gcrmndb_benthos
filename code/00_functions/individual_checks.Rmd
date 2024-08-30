@@ -238,11 +238,12 @@ plot_i <- quality_checks %>%
                               qc == "qc2" ~ "Is the latitude within its possible boundaries?",
                               qc == "qc3" ~ "Is the longitude within its possible boundaries?",
                               qc == "qc4" ~ "Is the site within the coral reef distribution area?",
-                              qc == "qc5" ~ "Is the site located within an EEZ?",
-                              qc == "qc6" ~ "Is the year available?",
-                              qc == "qc7" ~ "Is the sum of the percentage cover of benthic categories within\
+                              qc == "qc5" ~ "Is the site located within a GCRMN region?",
+                              qc == "qc6" ~ "Is the site located within an EEZ?",
+                              qc == "qc7" ~ "Is the year available?",
+                              qc == "qc8" ~ "Is the sum of the percentage cover of benthic categories within\
                               the sampling unit greater than 0 and lower than 100?",
-                              qc == "qc8" ~ "Is the percentage cover of a given benthic category\
+                              qc == "qc9" ~ "Is the percentage cover of a given benthic category\
                               greater than 0 and lower than 100?")) %>% 
   ggplot(data = ., aes(x = qc, y = percent, fill = type, label = question)) +
   geom_bar(stat = "identity", show.legend = FALSE) +

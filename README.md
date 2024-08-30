@@ -198,10 +198,11 @@ Zone.
 |  2  |   :globe_with_meridians:   | `decimalLatitude`                    | Is the latitude within its possible boundaries (*i.e.* between -90 and 90)?                                          |
 |  3  |   :globe_with_meridians:   | `decimalLongitude`                   | Is the longitude within its possible boundaries (*i.e.* between -180 and 180)?                                       |
 |  4  |   :globe_with_meridians:   | `decimalLatitude` `decimalLongitude` | Is the site within the coral reef distribution area (100 km buffer)?                                                 |
-|  5  |   :globe_with_meridians:   | `decimalLatitude` `decimalLongitude` | Is the site located within an EEZ (1 km buffer)?                                                                     |
-|  6  |         :calendar:         | `year`                               | Is the year available?                                                                                               |
-|  7  | :chart_with_upwards_trend: | `measurementValue`                   | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
-|  8  | :chart_with_upwards_trend: | `measurementValue`                   | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100?                |
+|  5  |   :globe_with_meridians:   | `decimalLatitude` `decimalLongitude` | Is the site located within a GCRMN region?                                                                           |
+|  6  |   :globe_with_meridians:   | `decimalLatitude` `decimalLongitude` | Is the site located within an EEZ (1 km buffer)?                                                                     |
+|  7  |         :calendar:         | `year`                               | Is the year available?                                                                                               |
+|  8  | :chart_with_upwards_trend: | `measurementValue`                   | Is the sum of the percentage cover of benthic categories within the sampling unit greater than 0 and lower than 100? |
+|  9  | :chart_with_upwards_trend: | `measurementValue`                   | Is the percentage cover of a given benthic category (*i.e.* a row) greater than 0 and lower than 100?                |
 
 ## 5. List of individual datasets
 
@@ -301,8 +302,8 @@ considered. The column names (except *aggregator*) correspond to
 ## 6. Description of the synthetic dataset
 
 On the 2024-08-30, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,204,078 observations** (*i.e* rows) representing **12,400
-sites** and **27,048 surveys**. The distribution of monitoring sites in
+total of **14,202,971 observations** (*i.e* rows) representing **12,375
+sites** and **26,982 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -339,8 +340,7 @@ that differs from those of the other datasets.
 |                ROPME |       120 |         282 |           15 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-|                   NA |        25 |          66 |            1 |    2008    |   2021    |
-| Global (all regions) |    12,400 |      27,048 |           74 |    1987    |   2024    |
+| Global (all regions) |    12,375 |      26,982 |           74 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -352,7 +352,7 @@ differs from those of the other datasets.
 
 |               Country | Territory                      | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |----------------------:|:-------------------------------|----------:|------------:|-------------:|:----------:|:---------:|
-|             Australia | Australia                      |     1,248 |       5,362 |            3 |    1995    |   2023    |
+|             Australia | Australia                      |     1,223 |       5,296 |            3 |    1995    |   2023    |
 |             Australia | Christmas Island               |        16 |          30 |            2 |    2003    |   2010    |
 |             Australia | Cocos Islands                  |        20 |          49 |            1 |    1997    |   2008    |
 |               Bahrain | Bahrain                        |         6 |          10 |            2 |    2011    |   2018    |
