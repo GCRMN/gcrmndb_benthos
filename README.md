@@ -298,12 +298,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0073    | [Howells et al, 2020](https://doi.org/10.1007/s00338-020-01946-2)                                                                                       | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0074    | Shokri, 2021                                                                                                                                            | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0075    | [Aeby et al, 2020](https://doi.org/10.1007/s00338-020-01928-4)                                                                                          | upon request   | Sh.  | 2024-08-25 |     JW     |
+|   0076    | KFUPM                                                                                                                                                   | upon request   | Sh.  | 2024-09-11 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-08-30, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,202,971 observations** (*i.e* rows) representing **12,375
-sites** and **26,982 surveys**. The distribution of monitoring sites in
+On the 2024-09-11, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,203,814 observations** (*i.e* rows) representing **12,379
+sites** and **26,994 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -337,10 +338,10 @@ that differs from those of the other datasets.
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
-|                ROPME |       120 |         282 |           15 |    1999    |   2023    |
+|                ROPME |       124 |         294 |           16 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    12,375 |      26,982 |           74 |    1987    |   2024    |
+| Global (all regions) |    12,379 |      26,994 |           75 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -406,6 +407,7 @@ differs from those of the other datasets.
 |                 Qatar | Qatar                          |        16 |          16 |            1 |    2015    |   2017    |
 | Republic of Mauritius | Republic of Mauritius          |        10 |          12 |            1 |    1999    |   2003    |
 |                 Samoa | Samoa                          |        49 |          89 |            4 |    2012    |   2022    |
+|          Saudi Arabia | Saudi Arabia                   |         4 |          12 |            1 |    2018    |   2023    |
 |            Seychelles | Seychelles                     |        19 |          19 |            2 |    1997    |   2012    |
 |       Solomon Islands | Solomon Islands                |       144 |         242 |            5 |    2005    |   2021    |
 |          South Africa | South Africa                   |         5 |           6 |            1 |    2001    |   2005    |
@@ -500,7 +502,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-08-30
+     date     2024-09-11
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -589,7 +591,7 @@ The following organizations have funded the realization of the
      munsell             0.5.1   2024-04-01 [1] CRAN (R 4.4.1)
      nlme                3.1-166 2024-08-14 [1] CRAN (R 4.4.1)
      openssl             2.2.1   2024-08-16 [1] CRAN (R 4.4.1)
-     openxlsx            4.2.6.1 2024-07-23 [1] CRAN (R 4.4.1)
+     openxlsx            4.2.7   2024-08-30 [1] CRAN (R 4.4.1)
      pillar              1.9.0   2023-03-22 [1] CRAN (R 4.4.1)
      pkgconfig           2.0.3   2019-09-22 [1] CRAN (R 4.4.1)
      plotly              4.10.4  2024-01-13 [1] CRAN (R 4.4.1)
@@ -648,7 +650,7 @@ The following organizations have funded the realization of the
      vroom               1.6.5   2023-12-05 [1] CRAN (R 4.4.1)
      whisker             0.4.1   2022-12-05 [1] CRAN (R 4.4.1)
      withr               3.0.1   2024-07-31 [1] CRAN (R 4.4.1)
-     wk                  0.9.2   2024-07-09 [1] CRAN (R 4.4.1)
+     wk                  0.9.3   2024-09-06 [1] CRAN (R 4.4.1)
      xfun                0.47    2024-08-17 [1] CRAN (R 4.4.1)
      xml2                1.3.6   2023-12-04 [1] CRAN (R 4.4.1)
      yaml                2.3.10  2024-07-26 [1] CRAN (R 4.4.1)
