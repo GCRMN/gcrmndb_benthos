@@ -298,11 +298,11 @@ considered. The column names (except *aggregator*) correspond to
 |   0073    | [Howells et al, 2020](https://doi.org/10.1007/s00338-020-01946-2)                                                                                       | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0074    | Shokri, 2021                                                                                                                                            | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0075    | [Aeby et al, 2020](https://doi.org/10.1007/s00338-020-01928-4)                                                                                          | upon request   | Sh.  | 2024-08-25 |     JW     |
-|   0076    | KFUPM                                                                                                                                                   | upon request   | Sh.  | 2024-09-11 |     JW     |
+|   0076    | [KFUPM - Saudi Aramco](https://kfupm.edu.sa/)                                                                                                           | upon request   | Sh.  | 2024-09-11 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-09-11, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2024-09-12, the `gcrmndb_benthos` synthetic dataset contains a
 total of **14,203,814 observations** (*i.e* rows) representing **12,379
 sites** and **26,994 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
@@ -502,7 +502,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-09-11
+     date     2024-09-12
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
