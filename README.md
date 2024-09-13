@@ -294,7 +294,7 @@ considered. The column names (except *aggregator*) correspond to
 |   0069    | [UAE_Musandam_2022](https://dashboard.datamermaid.org/?project=UAE_Musandam_2022)                                                                       | open (summary) | Me.  | 2024-08-02 |     JW     |
 |   0070    | Claereboudt, 2015                                                                                                                                       | upon request   | Sh.  | 2024-08-25 |     JW     |
 |   0071    | Aeby et al, 2022                                                                                                                                        | upon request   | Sh.  | 2024-08-25 |     JW     |
-|   0072    | Al Mealla, 2018                                                                                                                                         | upon request   | Sh.  | 2024-08-26 |     JW     |
+|   0072    | Al Mealla, 2022                                                                                                                                         | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0073    | [Howells et al, 2020](https://doi.org/10.1007/s00338-020-01946-2)                                                                                       | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0074    | Shokri, 2021                                                                                                                                            | upon request   | Sh.  | 2024-08-26 |     JW     |
 |   0075    | [Aeby et al, 2020](https://doi.org/10.1007/s00338-020-01928-4)                                                                                          | upon request   | Sh.  | 2024-08-25 |     JW     |
@@ -304,8 +304,8 @@ considered. The column names (except *aggregator*) correspond to
 ## 6. Description of the synthetic dataset
 
 On the 2024-09-13, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,204,535 observations** (*i.e* rows) representing **12,413
-sites** and **27,028 surveys**. The distribution of monitoring sites in
+total of **14,204,935 observations** (*i.e* rows) representing **12,422
+sites** and **27,037 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -339,10 +339,10 @@ that differs from those of the other datasets.
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
-|                ROPME |       124 |         294 |           16 |    1999    |   2023    |
+|                ROPME |       133 |         303 |           16 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    12,413 |      27,028 |           76 |    1987    |   2024    |
+| Global (all regions) |    12,422 |      27,037 |           76 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -357,7 +357,7 @@ differs from those of the other datasets.
 |             Australia | Australia                      |     1,223 |       5,296 |            3 |    1995    |   2023    |
 |             Australia | Christmas Island               |        16 |          30 |            2 |    2003    |   2010    |
 |             Australia | Cocos Islands                  |        20 |          49 |            1 |    1997    |   2008    |
-|               Bahrain | Bahrain                        |         6 |          10 |            2 |    2011    |   2018    |
+|               Bahrain | Bahrain                        |        15 |          19 |            2 |    2011    |   2022    |
 |            Bangladesh | Bangladesh                     |         2 |           2 |            1 |    2005    |   2006    |
 |                Belize | Belize                         |        12 |          22 |            1 |    2015    |   2018    |
 |                Brazil | Brazil                         |        10 |          11 |            1 |    2012    |   2012    |
