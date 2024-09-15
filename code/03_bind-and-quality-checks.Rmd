@@ -417,7 +417,7 @@ synthetic_data <- synthetic_data %>%
 ```{r}
 
 synthetic_data <- synthetic_data %>%
-  filter_at(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8"), ~.x == TRUE) %>% 
+  filter_at(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), ~.x == TRUE) %>% 
   select(-starts_with("qc"))
 
 ```
