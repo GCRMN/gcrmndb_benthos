@@ -300,12 +300,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0075    | [Aeby et al, 2020](https://doi.org/10.1007/s00338-020-01928-4)                                                                                          | upon request   | Sh.  | 2024-08-25 |     JW     |
 |   0076    | [KFUPM - Saudi Aramco](https://kfupm.edu.sa/)                                                                                                           | upon request   | Sh.  | 2024-09-11 |     JW     |
 |   0077    | [Sulubaaï (Shark Fin Bay project)](https://dashboard.datamermaid.org/?project=Shark%20Fin%20Bay%20Project)                                              | open (summary) | Me.  | 2024-09-13 |     JW     |
+|   0078    | [Puntacana Foundation](https://puntacana.org/)                                                                                                          | upon request   | Sh.  | 2024-09-17 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-09-13, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,204,935 observations** (*i.e* rows) representing **12,422
-sites** and **27,037 surveys**. The distribution of monitoring sites in
+On the 2024-09-18, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,215,493 observations** (*i.e* rows) representing **12,677
+sites** and **27,328 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -334,7 +335,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,252 |       5,362 |            3 |    1995    |   2023    |
 |               Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|            Caribbean |       131 |         515 |            8 |    1987    |   2024    |
+|            Caribbean |       386 |         806 |            9 |    1987    |   2024    |
 |                  EAS |     2,553 |       5,436 |            4 |    1997    |   2023    |
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -342,7 +343,7 @@ that differs from those of the other datasets.
 |                ROPME |       133 |         303 |           16 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    12,422 |      27,037 |           76 |    1987    |   2024    |
+| Global (all regions) |    12,677 |      27,328 |           77 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -366,6 +367,7 @@ differs from those of the other datasets.
 |                 China | China                          |       100 |         366 |            1 |    1997    |   2012    |
 |              Colombia | Colombia                       |        20 |          20 |            2 |    1998    |   2011    |
 |            Costa Rica | Costa Rica                     |        51 |          64 |            2 |    2004    |   2011    |
+|    Dominican Republic | Dominican Republic             |       255 |         291 |            1 |    2021    |   2024    |
 |            East Timor | East Timor                     |        11 |          13 |            2 |    2004    |   2017    |
 |               Ecuador | Galapagos                      |        64 |          64 |            1 |    2008    |   2012    |
 |                 Egypt | Egypt                          |        12 |          12 |            1 |    2011    |   2011    |
@@ -503,7 +505,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-09-13
+     date     2024-09-18
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
