@@ -303,12 +303,13 @@ considered. The column names (except *aggregator*) correspond to
 |   0078    | [Puntacana Foundation](https://puntacana.org/)                                                                                                          | upon request   | Sh.  | 2024-09-17 |     JW     |
 |   0079    | [TCRMP](https://www.vitcrmp.org/)                                                                                                                       | upon request   | Sh.  | 2024-09-19 |     JW     |
 |   0080    | [FUNDEMAR](https://www.fundemardr.org/)                                                                                                                 | upon request   | Sh.  | 2024-09-23 |     JW     |
+|   0081    | UWI DBML                                                                                                                                                | upon request   | Sh.  | 2024-09-24 |     JW     |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-09-23, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,708,067 observations** (*i.e* rows) representing **12,726
-sites** and **28,116 surveys**. The distribution of monitoring sites in
+On the 2024-09-24, the `gcrmndb_benthos` synthetic dataset contains a
+total of **14,809,067 observations** (*i.e* rows) representing **12,733
+sites** and **28,213 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -337,7 +338,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,252 |       5,362 |            3 |    1995    |   2023    |
 |               Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|            Caribbean |       435 |       1,594 |           11 |    1987    |   2024    |
+|            Caribbean |       442 |       1,691 |           12 |    1987    |   2024    |
 |                  EAS |     2,553 |       5,436 |            4 |    1997    |   2023    |
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -345,7 +346,7 @@ that differs from those of the other datasets.
 |                ROPME |       133 |         303 |           16 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    12,726 |      28,116 |           79 |    1987    |   2024    |
+| Global (all regions) |    12,733 |      28,213 |           80 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -369,7 +370,7 @@ differs from those of the other datasets.
 |                 China | China                          |       100 |         366 |            1 |    1997    |   2012    |
 |              Colombia | Colombia                       |        20 |          20 |            2 |    1998    |   2011    |
 |            Costa Rica | Costa Rica                     |        51 |          64 |            2 |    2004    |   2011    |
-|    Dominican Republic | Dominican Republic             |       270 |         307 |            2 |    2020    |   2024    |
+|    Dominican Republic | Dominican Republic             |       270 |         396 |            2 |    2020    |   2024    |
 |            East Timor | East Timor                     |        11 |          13 |            2 |    2004    |   2017    |
 |               Ecuador | Galapagos                      |        64 |          64 |            1 |    2008    |   2012    |
 |                 Egypt | Egypt                          |        12 |          12 |            1 |    2011    |   2011    |
@@ -385,6 +386,7 @@ differs from those of the other datasets.
 |                 India | India                          |         1 |           1 |            1 |    1998    |   1998    |
 |             Indonesia | Indonesia                      |       668 |       1,049 |            2 |    1997    |   2022    |
 |                  Iran | Iran                           |        28 |          49 |            1 |    1999    |   2021    |
+|               Jamaica | Jamaica                        |         7 |           8 |            1 |    2019    |   2020    |
 |                 Japan | Japan                          |        52 |         110 |            2 |    1997    |   2015    |
 |                 Kenya | Kenya                          |         6 |           6 |            1 |    2003    |   2004    |
 |              Kiribati | Gilbert Islands                |        18 |          18 |            2 |    2011    |   2018    |
@@ -507,7 +509,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-09-23
+     date     2024-09-24
      pandoc   3.1.11 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
