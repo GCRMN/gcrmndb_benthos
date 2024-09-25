@@ -2,6 +2,7 @@
 
 library(tidyverse)
 library(readxl)
+source("code/00_functions/convert_coords.R")
 
 dataset <- "0081" # Define the dataset_id
 
@@ -14,10 +15,12 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(data_path) %>% 
   pull() %>% 
   read_xlsx() %>% 
-  select(Site, Depth_ft, LatDD, LonDD, VerbatimDate, "Site Code") %>% 
-  rename(locality = Site, locality_code = "Site Code", decimalLatitude = LatDD, decimalLongitude = LonDD,
-         verbatimDepth = Depth_ft, eventDate = VerbatimDate) %>% 
-  mutate(year = year(eventDate),
+  select(Site, Depth_ft, verbatimLatitude, verbatimLongitude, VerbatimDate, "Site Code") %>% 
+  rename(locality = Site, locality_code = "Site Code", decimalLatitude = verbatimLatitude,
+         decimalLongitude = verbatimLongitude, verbatimDepth = Depth_ft, eventDate = VerbatimDate) %>% 
+  mutate(decimalLatitude = convert_coords(decimalLatitude),
+         decimalLongitude = -convert_coords(decimalLongitude),
+         year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate),
          verbatimDepth = str_replace_all(verbatimDepth, c("20-30" = "25",
