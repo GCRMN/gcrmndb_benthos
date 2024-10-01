@@ -304,12 +304,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0079 | [TCRMP](https://www.vitcrmp.org/) | upon request | Sh. | 2024-09-19 | JW |
 | 0080 | [FUNDEMAR](https://www.fundemardr.org/) | upon request | Sh. | 2024-09-23 | JW |
 | 0081 | UWI DBML | upon request | Sh. | 2024-09-24 | JW |
+| 0082 | Saba | upon request | Sh. | 2024-09-30 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-09-25, the `gcrmndb_benthos` synthetic dataset contains a
-total of **14,809,067 observations** (*i.e* rows) representing **12,734
-sites** and **28,213 surveys**. The distribution of monitoring sites in
+On the 2024-10-01, the `gcrmndb_benthos` synthetic dataset contains a
+total of **15,077,536 observations** (*i.e* rows) representing **12,752
+sites** and **28,259 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -338,7 +339,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,252 |       5,362 |            3 |    1995    |   2023    |
 |               Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|            Caribbean |       443 |       1,691 |           12 |    1987    |   2024    |
+|            Caribbean |       461 |       1,737 |           13 |    1987    |   2024    |
 |                  EAS |     2,553 |       5,436 |            4 |    1997    |   2023    |
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -346,7 +347,7 @@ that differs from those of the other datasets.
 |                ROPME |       133 |         303 |           16 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    12,734 |      28,213 |           80 |    1987    |   2024    |
+| Global (all regions) |    12,752 |      28,259 |           81 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -402,6 +403,7 @@ differs from those of the other datasets.
 | Mozambique | Mozambique | 14 | 15 | 2 | 1997 | 2012 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
 | Netherlands | Bonaire | 17 | 17 | 2 | 2012 | 2023 |
+| Netherlands | Saba | 18 | 46 | 1 | 2021 | 2024 |
 | Netherlands | Sint-Maarten | 7 | 51 | 1 | 2016 | 2024 |
 | New Zealand | Cook Islands | 184 | 239 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
@@ -509,7 +511,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-09-25
+     date     2024-10-01
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -517,10 +519,10 @@ The following organizations have funded the realization of the
      askpass             1.2.0   2023-09-03 [1] CRAN (R 4.4.1)
      backports           1.5.0   2024-05-23 [1] CRAN (R 4.4.0)
      base64enc           0.1-3   2015-07-28 [1] CRAN (R 4.4.0)
-     bit                 4.0.5   2022-11-15 [1] CRAN (R 4.4.1)
-     bit64               4.0.5   2020-08-30 [1] CRAN (R 4.4.1)
+     bit                 4.5.0   2024-09-20 [1] CRAN (R 4.4.1)
+     bit64               4.5.2   2024-09-22 [1] CRAN (R 4.4.1)
      blob                1.2.4   2023-03-17 [1] CRAN (R 4.4.1)
-     broom               1.0.6   2024-05-17 [1] CRAN (R 4.4.1)
+     broom               1.0.7   2024-09-26 [1] CRAN (R 4.4.1)
      bslib               0.8.0   2024-07-29 [1] CRAN (R 4.4.1)
      cachem              1.1.0   2024-05-16 [1] CRAN (R 4.4.1)
      callr               3.7.6   2024-03-25 [1] CRAN (R 4.4.1)
@@ -535,17 +537,17 @@ The following organizations have funded the realization of the
      crayon              1.5.3   2024-06-20 [1] CRAN (R 4.4.1)
      credentials         2.0.1   2023-09-06 [1] CRAN (R 4.4.1)
      crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.4.1)
-     curl                5.2.2   2024-08-26 [1] CRAN (R 4.4.1)
+     curl                5.2.3   2024-09-20 [1] CRAN (R 4.4.1)
      data.table          1.16.0  2024-08-27 [1] CRAN (R 4.4.1)
      DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.4.1)
      dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.4.1)
      desc                1.4.3   2023-12-10 [1] CRAN (R 4.4.1)
-     digest              0.6.36  2024-06-23 [1] CRAN (R 4.4.1)
+     digest              0.6.37  2024-08-19 [1] CRAN (R 4.4.1)
      dplyr             * 1.1.4   2023-11-17 [1] CRAN (R 4.4.1)
      DT                  0.33    2024-04-04 [1] CRAN (R 4.4.1)
      dtplyr              1.3.1   2023-03-22 [1] CRAN (R 4.4.1)
-     e1071               1.7-14  2023-12-06 [1] CRAN (R 4.4.1)
-     evaluate            0.24.0  2024-06-10 [1] CRAN (R 4.4.1)
+     e1071               1.7-16  2024-09-16 [1] CRAN (R 4.4.1)
+     evaluate            1.0.0   2024-09-17 [1] CRAN (R 4.4.1)
      fansi               1.0.6   2023-12-08 [1] CRAN (R 4.4.1)
      farver              2.1.2   2024-05-13 [1] CRAN (R 4.4.1)
      fastmap             1.2.0   2024-05-15 [1] CRAN (R 4.4.1)
@@ -555,7 +557,7 @@ The following organizations have funded the realization of the
      fs                  1.6.4   2024-04-25 [1] CRAN (R 4.4.1)
      gargle              1.5.2   2023-07-20 [1] CRAN (R 4.4.1)
      generics            0.1.3   2022-07-05 [1] CRAN (R 4.4.1)
-     gert                2.1.1   2024-08-16 [1] CRAN (R 4.4.1)
+     gert                2.1.2   2024-09-20 [1] CRAN (R 4.4.1)
      ggplot2           * 3.5.1   2024-04-23 [1] CRAN (R 4.4.1)
      gh                  1.4.1   2024-03-28 [1] CRAN (R 4.4.1)
      gitcreds            0.1.2   2022-09-08 [1] CRAN (R 4.4.1)
@@ -575,7 +577,7 @@ The following organizations have funded the realization of the
      ini                 0.3.1   2018-05-20 [1] CRAN (R 4.4.1)
      isoband             0.2.7   2022-12-20 [1] CRAN (R 4.4.1)
      jquerylib           0.1.4   2021-04-26 [1] CRAN (R 4.4.1)
-     jsonlite            1.8.8   2023-12-04 [1] CRAN (R 4.4.1)
+     jsonlite            1.8.9   2024-09-20 [1] CRAN (R 4.4.1)
      kableExtra          1.4.0   2024-01-24 [1] CRAN (R 4.4.1)
      KernSmooth          2.23-24 2024-05-17 [1] CRAN (R 4.4.1)
      knitr             * 1.48    2024-07-07 [1] CRAN (R 4.4.1)
@@ -597,8 +599,8 @@ The following organizations have funded the realization of the
      modelr              0.1.11  2023-03-22 [1] CRAN (R 4.4.1)
      munsell             0.5.1   2024-04-01 [1] CRAN (R 4.4.1)
      nlme                3.1-166 2024-08-14 [1] CRAN (R 4.4.1)
-     openssl             2.2.1   2024-08-16 [1] CRAN (R 4.4.1)
-     openxlsx            4.2.7   2024-08-30 [1] CRAN (R 4.4.1)
+     openssl             2.2.2   2024-09-20 [1] CRAN (R 4.4.1)
+     openxlsx            4.2.7.1 2024-09-20 [1] CRAN (R 4.4.1)
      pillar              1.9.0   2023-03-22 [1] CRAN (R 4.4.1)
      pkgconfig           2.0.3   2019-09-22 [1] CRAN (R 4.4.1)
      plotly              4.10.4  2024-01-13 [1] CRAN (R 4.4.1)
@@ -609,10 +611,10 @@ The following organizations have funded the realization of the
      progress            1.2.3   2023-12-06 [1] CRAN (R 4.4.1)
      promises            1.3.0   2024-04-05 [1] CRAN (R 4.4.1)
      proxy               0.4-27  2022-06-09 [1] CRAN (R 4.4.1)
-     ps                  1.7.7   2024-07-02 [1] CRAN (R 4.4.1)
+     ps                  1.8.0   2024-09-12 [1] CRAN (R 4.4.1)
      purrr             * 1.0.2   2023-08-10 [1] CRAN (R 4.4.1)
      R6                  2.5.1   2021-08-19 [1] CRAN (R 4.4.1)
-     ragg                1.3.2   2024-05-15 [1] CRAN (R 4.4.1)
+     ragg                1.3.3   2024-09-11 [1] CRAN (R 4.4.1)
      rappdirs            0.3.3   2021-01-31 [1] CRAN (R 4.4.1)
      raster              3.6-26  2023-10-14 [1] CRAN (R 4.4.1)
      RColorBrewer        1.1-3   2022-04-03 [1] CRAN (R 4.4.0)
@@ -631,7 +633,7 @@ The following organizations have funded the realization of the
      sass                0.4.9   2024-03-15 [1] CRAN (R 4.4.1)
      scales              1.3.0   2023-11-28 [1] CRAN (R 4.4.1)
      selectr             0.4-2   2019-11-20 [1] CRAN (R 4.4.1)
-     sf                * 1.0-16  2024-03-24 [1] CRAN (R 4.4.1)
+     sf                * 1.0-17  2024-09-06 [1] CRAN (R 4.4.1)
      snakecase           0.11.1  2023-08-27 [1] CRAN (R 4.4.1)
      sp                  2.1-4   2024-04-30 [1] CRAN (R 4.4.1)
      stringi             1.8.4   2024-05-06 [1] CRAN (R 4.4.0)
@@ -646,7 +648,7 @@ The following organizations have funded the realization of the
      tidyselect          1.2.1   2024-03-11 [1] CRAN (R 4.4.1)
      tidyverse         * 2.0.0   2023-02-22 [1] CRAN (R 4.4.1)
      timechange          0.3.0   2024-01-18 [1] CRAN (R 4.4.1)
-     tinytex             0.52    2024-07-18 [1] CRAN (R 4.4.1)
+     tinytex             0.53    2024-09-15 [1] CRAN (R 4.4.1)
      tzdb                0.4.0   2023-05-12 [1] CRAN (R 4.4.1)
      units               0.8-5   2023-11-28 [1] CRAN (R 4.4.1)
      usethis             3.0.0   2024-07-29 [1] CRAN (R 4.4.1)
