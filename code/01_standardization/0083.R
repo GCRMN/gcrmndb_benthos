@@ -30,7 +30,8 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   filter(datasetID == dataset & data_type == "code") %>% 
   select(data_path) %>% 
   pull() %>% 
-  read.csv2()
+  read.csv2() %>% 
+  select(-description)
 
 ## 2.3 List of files and path to combine ----
 
@@ -89,7 +90,7 @@ convert_data_083 <- function(index_i){
   
 ### 2.5 Map over the function ----
 
-B <- map_dfr(1:nrow(data_paths), ~convert_data_083(index_i = .)) %>% 
+map_dfr(1:nrow(data_paths), ~convert_data_083(index_i = .)) %>% 
   # Transform points to percentage cover
   group_by(date, path, code, parentEventID) %>% 
   summarise(measurementValue = n()) %>% 
@@ -123,8 +124,9 @@ B <- map_dfr(1:nrow(data_paths), ~convert_data_083(index_i = .)) %>%
   rename(eventDate = date) %>% 
   left_join(., data_site) %>% 
   left_join(., data_code) %>% 
-  select(-code)
+  select(-code) %>% 
+  write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
 
-rm(data_site, data_paths, data_code, convert_data_083)
+rm(data_site, data_paths, data_code, convert_data_083, convert_coords)
