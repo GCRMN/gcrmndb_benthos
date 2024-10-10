@@ -308,12 +308,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0083 | [RNSM](https://reservenaturelle-saint-martin.com/) | upon request | Sh. | 2024-10-06 | JW |
 | 0084 | [Curacao](https://www.researchstationcarmabi.org/) | upon request | Sh. | 2024-10-10 | JW |
 | 0085 | [BREAM](https://www.bermudabream.com/) | upon request | Sh. | 2024-10-10 | JW |
+| 0086 | [Fundacion Cap Cana](https://www.fundacioncapcana.org/) | upon request | Sh. | 2024-10-10 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-10-10, the `gcrmndb_benthos` synthetic dataset contains a
-total of **15,124,670 observations** (*i.e* rows) representing **12,921
-sites** and **28,653 surveys**. The distribution of monitoring sites in
+total of **15,133,457 observations** (*i.e* rows) representing **12,927
+sites** and **28,689 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -342,7 +343,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,252 |       5,362 |            3 |    1995    |   2023    |
 |               Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|            Caribbean |       630 |       2,131 |           16 |    1987    |   2024    |
+|            Caribbean |       636 |       2,167 |           17 |    1987    |   2024    |
 |                  EAS |     2,553 |       5,436 |            4 |    1997    |   2023    |
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
@@ -350,7 +351,7 @@ that differs from those of the other datasets.
 |                ROPME |       133 |         303 |           16 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    12,921 |      28,653 |           84 |    1987    |   2024    |
+| Global (all regions) |    12,927 |      28,689 |           85 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -374,7 +375,7 @@ differs from those of the other datasets.
 | China | China | 100 | 366 | 1 | 1997 | 2012 |
 | Colombia | Colombia | 20 | 20 | 2 | 1998 | 2011 |
 | Costa Rica | Costa Rica | 51 | 64 | 2 | 2004 | 2011 |
-| Dominican Republic | Dominican Republic | 270 | 396 | 2 | 2020 | 2024 |
+| Dominican Republic | Dominican Republic | 276 | 432 | 3 | 2020 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
 | Ecuador | Galapagos | 64 | 64 | 1 | 2008 | 2012 |
 | Egypt | Egypt | 12 | 12 | 1 | 2011 | 2011 |
