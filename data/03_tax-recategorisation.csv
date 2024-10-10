@@ -297,6 +297,7 @@
 "bushy coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "c rotundata cr";NA;NA;NA;"Tracheophyta";"Magnoliopsida";NA;"Alismatales";"Cymodoceaceae";"Cymodocea";"Cymodocea rotundata";TRUE
 "c serrulata cs";NA;NA;NA;"Tracheophyta";"Magnoliopsida";NA;"Alismatales";"Cymodoceaceae";"Oceana";"Oceana serrulata";TRUE
+"cal macroalgae";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "calathiscus tantillus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Goniopora";"Goniopora tantillus";TRUE
 "calcareous algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "calcareous encruting algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -441,6 +442,7 @@
 "ctenactis sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Ctenactis";NA;TRUE
 "ctenella";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Euphylliidae";"Ctenella";NA;TRUE
 "cup sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"cyano";NA;NA;NA;"Cyanobacteria";NA;NA;NA;NA;NA;NA;TRUE
 "cyanobaceria";NA;NA;NA;"Cyanobacteria";NA;NA;NA;NA;NA;NA;TRUE
 "cyanobacteria";NA;NA;NA;"Cyanobacteria";NA;NA;NA;NA;NA;NA;TRUE
 "cyanobacteria - microbial mats";NA;NA;NA;"Cyanobacteria";NA;NA;NA;NA;NA;NA;TRUE
@@ -1330,6 +1332,7 @@
 "other invertebrates - tridacna giant clam";NA;NA;NA;"Mollusca";"Bivalvia";"Autobranchia";"Cardiida";"Cardiidae";"Tridacna";NA;TRUE
 "other invertebrates - tunicate";NA;NA;NA;"Chordata";NA;NA;NA;NA;NA;NA;TRUE
 "other invertebrates - zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
+"other inverts";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other lifeforms non coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other live coral";"Hard coral";NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "other living organisms";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1625,6 +1628,7 @@
 "sand";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sand - silt";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sand and rubble";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"sand pavement rubble";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sand/caprock";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sand/gravel";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "sand/silt/clay";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
