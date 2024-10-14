@@ -310,12 +310,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0085 | [BREAM](https://www.bermudabream.com/) | upon request | Sh. | 2024-10-10 | JW |
 | 0086 | [Fundacion Cap Cana](https://www.fundacioncapcana.org/) | upon request | Sh. | 2024-10-10 | JW |
 | 0087 | Petite-Terre | upon request | Sh. | 2024-10-10 | JW |
+| 0088 | Grand Cayman | upon request | Sh. | 2024-10-11 | JW |
+| 0089 | [Coral Cay Conservation](https://www.coralcay.org/) | upon request | Sh. | 2024-10-14 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-10-10, the `gcrmndb_benthos` synthetic dataset contains a
-total of **15,134,489 observations** (*i.e* rows) representing **12,929
-sites** and **28,715 surveys**. The distribution of monitoring sites in
+On the 2024-10-14, the `gcrmndb_benthos` synthetic dataset contains a
+total of **15,173,738 observations** (*i.e* rows) representing **13,332
+sites** and **29,141 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -344,15 +346,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,252 |       5,362 |            3 |    1995    |   2023    |
 |               Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|            Caribbean |       638 |       2,193 |           18 |    1987    |   2024    |
-|                  EAS |     2,553 |       5,436 |            4 |    1997    |   2023    |
+|            Caribbean |       719 |       2,293 |           19 |    1987    |   2024    |
+|                  EAS |     2,875 |       5,762 |            5 |    1997    |   2023    |
 |                  ETP |       241 |         285 |            2 |    1998    |   2018    |
 |               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
 |              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
 |                ROPME |       133 |         303 |           16 |    1999    |   2023    |
 |           South Asia |       163 |         229 |            2 |    1997    |   2022    |
 |                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    12,929 |      28,715 |           86 |    1987    |   2024    |
+| Global (all regions) |    13,332 |      29,141 |           87 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -419,7 +421,7 @@ differs from those of the other datasets.
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
 | Panama | Panama | 114 | 235 | 2 | 2007 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
-| Philippines | Philippines | 506 | 729 | 2 | 1997 | 2023 |
+| Philippines | Philippines | 828 | 1,055 | 3 | 1997 | 2023 |
 | Qatar | Qatar | 16 | 16 | 1 | 2015 | 2017 |
 | Republic of Mauritius | Republic of Mauritius | 10 | 12 | 1 | 1999 | 2003 |
 | Samoa | Samoa | 49 | 89 | 4 | 2012 | 2022 |
@@ -435,6 +437,7 @@ differs from those of the other datasets.
 | United Arab Emirates | United Arab Emirates | 29 | 52 | 7 | 2015 | 2023 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
 | United Kingdom | Cayman Islands | 1 | 1 | 1 | 2011 | 2011 |
+| United Kingdom | Montserrat | 81 | 100 | 1 | 2013 | 2017 |
 | United Kingdom | Pitcairn | 6 | 12 | 2 | 2009 | 2023 |
 | United Kingdom | Turks and Caicos Islands | 4 | 4 | 1 | 2015 | 2015 |
 | United States | American Samoa | 843 | 903 | 4 | 1997 | 2019 |
@@ -519,7 +522,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-10-10
+     date     2024-10-14
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
