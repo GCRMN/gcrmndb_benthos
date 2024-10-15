@@ -62,8 +62,11 @@ data_main_a <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
                                                     "SI" = "Silt")),
          samplingProtocol = "Point-Intercept Transect",
          eventDate = as.Date(eventDate),
-         decimalLatitude = as.numeric(paste0(str_sub(decimalLatitude, 1, 2), ".", str_sub(decimalLatitude, 3, 6))),
-         decimalLongitude = -as.numeric(paste0(str_sub(decimalLongitude, 1, 2), ".", str_sub(decimalLongitude, 3, 6))))
+         decimalLatitude = as.numeric(paste0(str_sub(decimalLatitude, 1, 2), ".",
+                                             str_sub(decimalLatitude, 3, 6))),
+         decimalLongitude = -as.numeric(paste0(str_sub(decimalLongitude, 1, 2), ".",
+                                               str_sub(decimalLongitude, 3, 6)))) %>% 
+  drop_na(locality)
 
 ## 2.2 Philippines data (file 1) ----
 
@@ -105,7 +108,8 @@ data_main_b <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(total = sum(measurementValue)) %>% 
   ungroup() %>% 
   mutate(measurementValue = (measurementValue*100)/total) %>% 
-  select(-total)
+  select(-total) %>% 
+  drop_na(locality)
 
 ## 2.3 Philippines data (file 2) ----
 
@@ -147,7 +151,9 @@ data_main_c <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(total = sum(measurementValue)) %>% 
   ungroup() %>% 
   mutate(measurementValue = (measurementValue*100)/total) %>% 
-  select(-total)
+  select(-total) %>% 
+  drop_na(locality) %>% 
+  filter(!(locality %in% c("SFRNAP", "P001", "L201", "I001"))) # Duplicated sites
 
 ## 2.4 Merge data ----
 
