@@ -23,7 +23,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(data_path) %>% 
   pull() %>% 
   # Read the file
-  read_csv(., na = c("", "NA", "NaN")) %>% 
+  read_csv(., na = c("", "NA", "NaN", "No data")) %>% 
   select(site_id, reef_name, coordinates_in_decimal_degree_format, date, 
          "depth (m)", substrate_code, segment_code, total, substrate_recorded_by) %>% 
   rename(verbatimDepth = "depth (m)", eventDate = date, parentEventID	= site_id, recordedBy = substrate_recorded_by,

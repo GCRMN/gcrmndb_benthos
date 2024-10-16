@@ -237,7 +237,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0012 | [NCRMP - CNMI and Guam](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-Marianas) | open | Rp. | 2018-10-12 | JW |
 | 0013 | [NCRMP - Hawaii](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-HI) | open | Rp. | 2022-11-11 | JW |
 | 0014 | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA) | open | Rp. | 2021-07-30 | JW |
-| 0015 | [ReefCheck - Indo-Pacific](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/) | upon request | Db. |  | JW |
+| 0015 | [Reef Check Foundation](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/) | upon request | Db. | 2024-10-16 | JW |
 | 0016 | Biosphere Foundation | upon request | Sh. |  | JW |
 | 0017 | KNS | upon request | Sh. | 2022-12-27 | JW |
 | 0018 | Kiribati | upon request | Sh. | 2020-03-05 | JW |
@@ -309,16 +309,16 @@ considered. The column names (except *aggregator*) correspond to
 | 0084 | [Curacao](https://www.researchstationcarmabi.org/) | upon request | Sh. | 2024-10-10 | JW |
 | 0085 | [BREAM](https://www.bermudabream.com/) | upon request | Sh. | 2024-10-10 | JW |
 | 0086 | [Fundacion Cap Cana](https://www.fundacioncapcana.org/) | upon request | Sh. | 2024-10-10 | JW |
-| 0087 | Petite-Terre | upon request | Sh. | 2024-10-10 | JW |
+| 0087 | Titè - ONF | upon request | Sh. | 2024-10-10 | JW |
 | 0088 | Grand Cayman | upon request | Sh. | 2024-10-11 | JW |
 | 0089 | [Coral Cay Conservation](https://www.coralcay.org/) | upon request | Sh. | 2024-10-14 | JW |
 | 0090 | [Montilla et al, 2021](https://doi.org/10.1016/j.dib.2021.107235) | open | Pa. | 2024-10-15 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-10-15, the `gcrmndb_benthos` synthetic dataset contains a
-total of **15,193,568 observations** (*i.e* rows) representing **13,382
-sites** and **29,258 surveys**. The distribution of monitoring sites in
+On the 2024-10-16, the `gcrmndb_benthos` synthetic dataset contains a
+total of **15,420,464 observations** (*i.e* rows) representing **14,959
+sites** and **33,196 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -345,17 +345,17 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,252 |       5,362 |            3 |    1995    |   2023    |
-|               Brazil |        10 |          11 |            1 |    2012    |   2012    |
-|            Caribbean |       755 |       2,329 |           20 |    1987    |   2024    |
-|                  EAS |     2,889 |       5,843 |            5 |    1997    |   2023    |
-|                  ETP |       241 |         285 |            2 |    1998    |   2018    |
-|               PERSGA |        12 |          12 |            1 |    2011    |   2011    |
-|              Pacific |     7,759 |      14,520 |           51 |    1987    |   2024    |
-|                ROPME |       133 |         303 |           16 |    1999    |   2023    |
-|           South Asia |       163 |         229 |            2 |    1997    |   2022    |
-|                  WIO |       168 |         364 |            2 |    1997    |   2019    |
-| Global (all regions) |    13,382 |      29,258 |           88 |    1987    |   2024    |
+|            Australia |     1,268 |       5,579 |            3 |    1995    |   2023    |
+|               Brazil |       138 |         189 |            2 |    2002    |   2012    |
+|            Caribbean |     1,737 |       4,408 |           21 |    1987    |   2024    |
+|                  EAS |     2,998 |       6,496 |            5 |    1997    |   2024    |
+|                  ETP |       246 |         299 |            2 |    1998    |   2018    |
+|               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
+|              Pacific |     7,761 |      14,604 |           51 |    1987    |   2024    |
+|                ROPME |       229 |         455 |           17 |    1997    |   2024    |
+|           South Asia |       165 |         237 |            2 |    1997    |   2023    |
+|                  WIO |       168 |         365 |            2 |    1997    |   2023    |
+| Global (all regions) |    14,959 |      33,196 |           88 |    1987    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -367,94 +367,121 @@ differs from those of the other datasets.
 
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
-| Australia | Australia | 1,223 | 5,296 | 3 | 1995 | 2023 |
+| Antigua and Barbuda | Antigua and Barbuda | 4 | 4 | 1 | 2003 | 2004 |
+| Australia | Australia | 1,239 | 5,513 | 3 | 1995 | 2023 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
-| Bahrain | Bahrain | 15 | 19 | 2 | 2011 | 2022 |
+| Bahamas | Bahamas | 36 | 72 | 1 | 1999 | 2024 |
+| Bahrain | Bahrain | 23 | 33 | 3 | 1997 | 2022 |
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
-| Belize | Belize | 12 | 22 | 1 | 2015 | 2018 |
-| Brazil | Brazil | 10 | 11 | 1 | 2012 | 2012 |
+| Barbados | Barbados | 26 | 45 | 1 | 1997 | 2005 |
+| Belize | Belize | 85 | 133 | 2 | 1997 | 2024 |
+| Brazil | Brazil | 138 | 189 | 2 | 2002 | 2012 |
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
 | Cambodia | Cambodia | 96 | 103 | 2 | 1998 | 2013 |
 | China | China | 100 | 366 | 1 | 1997 | 2012 |
-| Colombia | Colombia | 20 | 20 | 2 | 1998 | 2011 |
-| Costa Rica | Costa Rica | 51 | 64 | 2 | 2004 | 2011 |
-| Dominican Republic | Dominican Republic | 276 | 432 | 3 | 2020 | 2024 |
+| Colombia | Colombia | 91 | 120 | 2 | 1997 | 2024 |
+| Costa Rica | Costa Rica | 56 | 78 | 2 | 2004 | 2011 |
+| Cuba | Cuba | 16 | 25 | 1 | 2001 | 2005 |
+| Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
+| Dominica | Dominica | 19 | 33 | 1 | 2004 | 2018 |
+| Dominican Republic | Dominican Republic | 352 | 566 | 4 | 2004 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
 | Ecuador | Galapagos | 64 | 64 | 1 | 2008 | 2012 |
-| Egypt | Egypt | 12 | 12 | 1 | 2011 | 2011 |
+| Egypt | Egypt | 181 | 487 | 2 | 1997 | 2024 |
+| Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
+| Federal Republic of Somalia | Federal Republic of Somalia | 1 | 1 | 1 | 2005 | 2005 |
 | Fiji | Fiji | 589 | 913 | 12 | 1997 | 2024 |
-| France | Collectivity of Saint Martin | 8 | 65 | 1 | 2007 | 2022 |
+| France | Collectivity of Saint Martin | 12 | 83 | 2 | 2007 | 2022 |
 | France | Europa Island | 1 | 1 | 1 | 2002 | 2002 |
-| France | French Polynesia | 228 | 2,107 | 8 | 1987 | 2023 |
-| France | Guadeloupe | 12 | 36 | 2 | 2007 | 2023 |
-| France | Martinique | 15 | 15 | 1 | 2022 | 2022 |
+| France | French Polynesia | 229 | 2,190 | 8 | 1987 | 2024 |
+| France | Guadeloupe | 23 | 111 | 3 | 2003 | 2023 |
+| France | Martinique | 22 | 38 | 2 | 2003 | 2024 |
 | France | Mayotte | 20 | 87 | 1 | 2003 | 2017 |
 | France | New Caledonia | 873 | 3,616 | 9 | 1997 | 2023 |
 | France | Réunion | 32 | 133 | 1 | 2003 | 2016 |
+| France | Saint-Barthélemy | 2 | 2 | 1 | 2018 | 2018 |
 | France | Wallis and Futuna | 12 | 12 | 1 | 2019 | 2019 |
+| Grenada | Grenada | 10 | 33 | 1 | 2004 | 2024 |
+| Guatemala | Guatemala | 4 | 4 | 1 | 2006 | 2006 |
+| Haiti | Haiti | 73 | 74 | 1 | 2003 | 2016 |
+| Honduras | Honduras | 79 | 159 | 1 | 1997 | 2016 |
 | India | India | 1 | 1 | 1 | 1998 | 1998 |
-| Indonesia | Indonesia | 668 | 1,049 | 2 | 1997 | 2022 |
-| Iran | Iran | 28 | 49 | 1 | 1999 | 2021 |
-| Jamaica | Jamaica | 8 | 8 | 1 | 2019 | 2020 |
+| Indonesia | Indonesia | 673 | 1,082 | 2 | 1997 | 2024 |
+| Iran | Iran | 42 | 67 | 2 | 1999 | 2021 |
+| Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
+| Jamaica | Jamaica | 124 | 406 | 2 | 1998 | 2021 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
+| Jordan | Jordan | 3 | 3 | 1 | 2008 | 2008 |
 | Kenya | Kenya | 6 | 6 | 1 | 2003 | 2004 |
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
-| Kuwait | Kuwait | 10 | 19 | 2 | 2010 | 2014 |
+| Kuwait | Kuwait | 13 | 23 | 3 | 2006 | 2014 |
 | Madagascar | Madagascar | 43 | 55 | 1 | 2001 | 2019 |
-| Malaysia | Malaysia | 626 | 2,195 | 2 | 1997 | 2021 |
-| Maldives | Maldives | 157 | 223 | 2 | 1997 | 2022 |
+| Malaysia | Malaysia | 729 | 2,814 | 2 | 1997 | 2023 |
+| Maldives | Maldives | 159 | 231 | 2 | 1997 | 2023 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 9 | 10 | 1 | 2018 | 2018 |
+| Mexico | Mexico | 40 | 75 | 2 | 1997 | 2018 |
 | Micronesia | Federated States of Micronesia | 217 | 548 | 3 | 2000 | 2020 |
-| Mozambique | Mozambique | 14 | 15 | 2 | 1997 | 2012 |
+| Mozambique | Mozambique | 14 | 16 | 2 | 1997 | 2023 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
-| Netherlands | Bonaire | 17 | 17 | 2 | 2012 | 2023 |
-| Netherlands | Curaçao | 121 | 241 | 1 | 2015 | 2023 |
+| Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
+| Netherlands | Bonaire | 20 | 24 | 3 | 1997 | 2023 |
+| Netherlands | Curaçao | 143 | 380 | 2 | 1998 | 2023 |
 | Netherlands | Saba | 18 | 46 | 1 | 2021 | 2024 |
-| Netherlands | Sint-Maarten | 7 | 51 | 1 | 2016 | 2024 |
+| Netherlands | Sint-Eustatius | 3 | 13 | 1 | 2005 | 2010 |
+| Netherlands | Sint-Maarten | 12 | 56 | 2 | 2005 | 2024 |
 | New Zealand | Cook Islands | 184 | 239 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 23 | 23 | 1 | 2011 | 2015 |
-| Oman | Oman | 31 | 136 | 5 | 2003 | 2022 |
+| Oman | Oman | 81 | 217 | 6 | 2003 | 2022 |
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
-| Panama | Panama | 114 | 235 | 2 | 2007 | 2024 |
+| Panama | Panama | 123 | 245 | 3 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
 | Philippines | Philippines | 842 | 1,136 | 3 | 1997 | 2023 |
 | Qatar | Qatar | 16 | 16 | 1 | 2015 | 2017 |
 | Republic of Mauritius | Republic of Mauritius | 10 | 12 | 1 | 1999 | 2003 |
+| Saint Kitts and Nevis | Saint Kitts and Nevis | 13 | 30 | 1 | 2004 | 2024 |
+| Saint Lucia | Saint Lucia | 21 | 61 | 1 | 1999 | 2014 |
+| Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 13 | 21 | 1 | 2004 | 2007 |
 | Samoa | Samoa | 49 | 89 | 4 | 2012 | 2022 |
-| Saudi Arabia | Saudi Arabia | 4 | 12 | 1 | 2018 | 2023 |
+| Saudi Arabia | Saudi Arabia | 26 | 40 | 2 | 1997 | 2024 |
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
 | Solomon Islands | Solomon Islands | 144 | 242 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 5 | 6 | 1 | 2001 | 2005 |
 | Sri Lanka | Sri Lanka | 3 | 3 | 1 | 2003 | 2003 |
+| Sudan | Sudan | 11 | 14 | 1 | 2004 | 2009 |
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
 | Tanzania | Tanzania | 18 | 30 | 2 | 1997 | 2012 |
-| Thailand | Thailand | 149 | 246 | 1 | 1998 | 2022 |
+| Thailand | Thailand | 150 | 247 | 1 | 1998 | 2023 |
 | Tonga | Tonga | 526 | 572 | 7 | 2002 | 2022 |
-| United Arab Emirates | United Arab Emirates | 29 | 52 | 7 | 2015 | 2023 |
+| Trinidad and Tobago | Trinidad and Tobago | 27 | 90 | 1 | 2007 | 2023 |
+| United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
+| United Arab Emirates | United Arab Emirates | 40 | 77 | 8 | 2004 | 2024 |
+| United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
-| United Kingdom | Cayman Islands | 1 | 1 | 1 | 2011 | 2011 |
-| United Kingdom | Montserrat | 81 | 100 | 1 | 2013 | 2017 |
+| United Kingdom | British Virgin Islands | 20 | 66 | 1 | 1997 | 2012 |
+| United Kingdom | Cayman Islands | 3 | 3 | 2 | 1997 | 2011 |
+| United Kingdom | Montserrat | 87 | 109 | 2 | 2005 | 2017 |
 | United Kingdom | Pitcairn | 6 | 12 | 2 | 2009 | 2023 |
-| United Kingdom | Turks and Caicos Islands | 4 | 4 | 1 | 2015 | 2015 |
+| United Kingdom | Turks and Caicos Islands | 43 | 54 | 2 | 2004 | 2018 |
 | United States | American Samoa | 843 | 903 | 4 | 1997 | 2019 |
 | United States | Guam | 305 | 357 | 4 | 1997 | 2021 |
-| United States | Hawaii | 1,733 | 1,923 | 4 | 1997 | 2021 |
+| United States | Hawaii | 1,734 | 1,924 | 4 | 1997 | 2021 |
 | United States | Howland and Baker Islands | 150 | 150 | 1 | 2015 | 2017 |
 | United States | Jarvis Island | 222 | 222 | 1 | 2015 | 2017 |
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
 | United States | Northern Mariana Islands | 680 | 907 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 294 | 2 | 2009 | 2019 |
-| United States | United States | 17 | 28 | 1 | 2010 | 2022 |
-| United States | United States Virgin Islands | 42 | 1,008 | 3 | 1987 | 2024 |
+| United States | Puerto Rico | 20 | 34 | 1 | 2014 | 2024 |
+| United States | United States | 106 | 154 | 2 | 1997 | 2024 |
+| United States | United States Virgin Islands | 65 | 1,032 | 4 | 1987 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
-| Venezuela | Venezuela | 36 | 36 | 1 | 2017 | 2018 |
+| Venezuela | Venezuela | 38 | 45 | 2 | 2004 | 2018 |
 | Vietnam | Vietnam | 182 | 356 | 1 | 1998 | 2011 |
+| Yemen | Yemen | 5 | 5 | 1 | 2008 | 2008 |
 
 ## 7. Sponsors
 
@@ -524,7 +551,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-10-15
+     date     2024-10-16
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
