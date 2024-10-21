@@ -141,7 +141,7 @@ unique_organismID <- read.csv("./../data/03_tax-recategorisation.csv", sep = ";"
                               phylum %in% c("Annelida", "Mollusca", "Arthropoda") ~ "Other fauna",
                               family %in% c("Milleporidae", "Helioporidae") ~ "Hard coral",
                               class %in% c("Ulvophyceae", "Florideophyceae", "Phaeophyceae") ~ "Algae",
-                              phylum %in% c("Chlorophyta", "Rhodophyta", "Ochrophyta") ~ "Algae",
+                              phylum %in% c("Chlorophyta", "Rhodophyta", "Ochrophyta", "Foraminifera") ~ "Algae",
                               phylum == "Tracheophyta" ~ "Seagrass",
                               TRUE ~ category)) %>% 
   select(-checked)
