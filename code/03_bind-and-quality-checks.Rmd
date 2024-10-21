@@ -350,31 +350,60 @@ synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FAL
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
-# 4. Quality check number 8 ----
+# 4. Quality check number 8 (A) ----
 
 synthetic_data <- synthetic_data %>% 
   group_by(datasetID, locality, habitat, parentEventID,
            eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
            year, month, day, eventDate) %>% 
-  summarise(qc8 = round(sum(measurementValue), 5)) %>% 
+  summarise(qc8_a = round(sum(measurementValue), 5)) %>% 
   ungroup() %>% 
-  mutate(qc8 = if_else(qc8 >= 0 & qc8 <= 100, TRUE, FALSE)) %>% 
+  mutate(qc8_a = if_else(qc8_a >= 0 & qc8_a <= 100, TRUE, FALSE)) %>% 
+  left_join(synthetic_data, .)
+
+# 5. Quality check number 8 (B) ----
+
+## 5.1 Adjust measurementValue ----
+# To avoid deleting sampling unit whose total is between 100 % and 101 %
+
+synthetic_data <- synthetic_data %>%
+  group_by(datasetID, locality, habitat, parentEventID,
+         eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
+         year, month, day, eventDate) %>% 
+  mutate(total = sum(measurementValue)) %>% 
+  ungroup() %>% 
+  mutate(measurementValue = ifelse(total > 100 & total < 101, # Threshold = 101
+                                   (measurementValue*100)/total, 
+                                   measurementValue)) %>% 
+  select(-total)
+
+## 5.2 Quality check ----
+
+synthetic_data <- synthetic_data %>% 
+  group_by(datasetID, locality, habitat, parentEventID,
+           eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
+           year, month, day, eventDate) %>% 
+  summarise(qc8_b = round(sum(measurementValue), 5)) %>% 
+  ungroup() %>% 
+  mutate(qc8_b = if_else(qc8_b >= 0 & qc8_b <= 100, TRUE, FALSE)) %>% 
   left_join(synthetic_data, .)
 
 # 5. Transform data ----
 
 quality_checks <- synthetic_data %>% 
-  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), 
+  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc8_b", "qc9"), 
                 ~as.character(.))) %>% 
-  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), 
+  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc8_b", "qc9"), 
                 ~str_replace_all(., 
                                  c("FALSE" = cur_column(), 
                                    "TRUE" = NA_character_)))) %>% 
-  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8, qc9)) %>% 
+  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8_a, qc8_b, qc9)) %>% 
   group_by(datasetID, qc) %>% 
   count() %>% 
   ungroup() %>% 
-  bind_rows(., tibble(datasetID = NA, qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), n = NA)) %>% 
+  bind_rows(., tibble(datasetID = NA,
+                      qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc8_b", "qc9"),
+                      n = NA)) %>% 
   complete(datasetID, qc, fill = list(n = 0)) %>% 
   drop_na(datasetID) %>% 
   group_by(datasetID) %>% 
@@ -395,29 +424,12 @@ map(unique(synthetic_data$datasetID), ~render_rmd(.))
 
 ```
 
-# Adjust measurementValue
-
-```{r}
-
-synthetic_data <- synthetic_data %>%
-  group_by(datasetID, locality, habitat, parentEventID,
-         eventID, decimalLatitude, decimalLongitude, verbatimDepth, 
-         year, month, day, eventDate) %>% 
-  mutate(total = sum(measurementValue)) %>% 
-  ungroup() %>% 
-  mutate(measurementValue = ifelse(total > 100 & total < 101, # Threshold = 101
-                                   (measurementValue*100)/total, 
-                                   measurementValue)) %>% 
-  select(-total)
-
-```
-
 # Remove rows based on quality check values
 
 ```{r}
 
 synthetic_data <- synthetic_data %>%
-  filter_at(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8", "qc9"), ~.x == TRUE) %>% 
+  filter_at(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_b", "qc9"), ~.x == TRUE) %>% 
   select(-starts_with("qc"))
 
 ```

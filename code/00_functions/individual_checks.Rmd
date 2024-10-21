@@ -242,8 +242,10 @@ plot_i <- quality_checks %>%
                               qc == "qc5" ~ "Is the site located within a GCRMN region?",
                               qc == "qc6" ~ "Is the site located within an EEZ?",
                               qc == "qc7" ~ "Is the year available?",
-                              qc == "qc8" ~ "Is the sum of the percentage cover of benthic categories within\
-                              the sampling unit greater than 0 and lower than 100?",
+                              qc == "qc8_a" ~ "Is the sum of the percentage cover of benthic categories within\
+                              the sampling unit greater than 0 and lower than 100? (before adjustement)",
+                              qc == "qc8_b" ~ "Is the sum of the percentage cover of benthic categories within\
+                              the sampling unit greater than 0 and lower than 100? (after adjustement)",
                               qc == "qc9" ~ "Is the percentage cover of a given benthic category\
                               greater than 0 and lower than 100?")) %>% 
   ggplot(data = ., aes(x = qc, y = percent, fill = type, label = question)) +
@@ -269,6 +271,6 @@ quality_checks %>%
   kbl(booktabs = T, col.names = c("Quality check", "Obs. removed (number)", "Obs. removed (%)"), align = "c") %>% 
   kable_paper("hover", full_width = T) %>%
   column_spec(1, bold = TRUE) %>%
-  row_spec(c(0,9), bold = TRUE, background = "lightgrey")
+  row_spec(c(0,10), bold = TRUE, background = "lightgrey")
 
 ```
