@@ -315,12 +315,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0090 | [Montilla et al, 2021](https://doi.org/10.1016/j.dib.2021.107235) | open | Pa. | 2024-10-15 | JW |
 | 0091 | [AGRRA](https://www.agrra.org/) | upon request | Db. | 2024-10-17 | JW |
 | 0092 | CZMU | upon request | Sh. | 2024-10-18 | JW |
+| 0093 | [Puerto Rico CRMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0204647) | open | Rp. | 2024-10-18 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-10-18, the `gcrmndb_benthos` synthetic dataset contains a
-total of **16,382,256 observations** (*i.e* rows) representing **16,100
-sites** and **35,244 surveys**. The distribution of monitoring sites in
+On the 2024-10-21, the `gcrmndb_benthos` synthetic dataset contains a
+total of **16,416,192 observations** (*i.e* rows) representing **16,321
+sites** and **35,856 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -347,17 +348,17 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,268 |       5,579 |            3 |    1995    |   2023    |
+|            Australia |     1,302 |       5,654 |            3 |    1995    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     2,878 |       6,456 |           23 |    1982    |   2024    |
-|                  EAS |     2,998 |       6,496 |            5 |    1997    |   2024    |
-|                  ETP |       246 |         299 |            2 |    1998    |   2018    |
+|            Caribbean |     2,966 |       6,838 |           24 |    1982    |   2024    |
+|                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
+|                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
-|              Pacific |     7,761 |      14,604 |           51 |    1987    |   2024    |
-|                ROPME |       229 |         455 |           17 |    1997    |   2024    |
+|              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
+|                ROPME |       232 |         458 |           17 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
-|                  WIO |       168 |         365 |            2 |    1997    |   2023    |
-| Global (all regions) |    16,100 |      35,244 |           90 |    1982    |   2024    |
+|                  WIO |       170 |         367 |            2 |    1997    |   2023    |
+| Global (all regions) |    16,321 |      35,856 |           91 |    1982    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -370,33 +371,33 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,239 | 5,513 | 3 | 1995 | 2023 |
+| Australia | Australia | 1,273 | 5,589 | 3 | 1995 | 2023 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
 | Bahamas | Bahamas | 464 | 680 | 2 | 1999 | 2024 |
 | Bahrain | Bahrain | 23 | 33 | 3 | 1997 | 2022 |
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
-| Barbados | Barbados | 78 | 342 | 2 | 1982 | 2022 |
-| Belize | Belize | 225 | 394 | 3 | 1997 | 2024 |
+| Barbados | Barbados | 78 | 345 | 2 | 1982 | 2022 |
+| Belize | Belize | 225 | 397 | 3 | 1997 | 2024 |
 | Brazil | Brazil | 138 | 189 | 2 | 2002 | 2012 |
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
-| Cambodia | Cambodia | 96 | 103 | 2 | 1998 | 2013 |
+| Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
 | China | China | 100 | 366 | 1 | 1997 | 2012 |
 | Colombia | Colombia | 91 | 120 | 2 | 1997 | 2024 |
-| Costa Rica | Costa Rica | 56 | 78 | 2 | 2004 | 2011 |
+| Costa Rica | Costa Rica | 58 | 80 | 2 | 2004 | 2011 |
 | Cuba | Cuba | 16 | 25 | 1 | 2001 | 2005 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 19 | 33 | 1 | 2004 | 2018 |
 | Dominican Republic | Dominican Republic | 364 | 590 | 5 | 2004 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
-| Ecuador | Galapagos | 64 | 64 | 1 | 2008 | 2012 |
+| Ecuador | Galapagos | 69 | 69 | 1 | 2008 | 2012 |
 | Egypt | Egypt | 181 | 487 | 2 | 1997 | 2024 |
 | Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
 | Federal Republic of Somalia | Federal Republic of Somalia | 1 | 1 | 1 | 2005 | 2005 |
-| Fiji | Fiji | 589 | 913 | 12 | 1997 | 2024 |
+| Fiji | Fiji | 654 | 1,001 | 12 | 1997 | 2024 |
 | France | Collectivity of Saint Martin | 12 | 83 | 2 | 2007 | 2022 |
 | France | Europa Island | 1 | 1 | 1 | 2002 | 2002 |
-| France | French Polynesia | 229 | 2,190 | 8 | 1987 | 2024 |
+| France | French Polynesia | 229 | 2,191 | 8 | 1987 | 2024 |
 | France | Guadeloupe | 23 | 111 | 3 | 2003 | 2023 |
 | France | Martinique | 22 | 38 | 2 | 2003 | 2024 |
 | France | Mayotte | 20 | 87 | 1 | 2003 | 2017 |
@@ -410,8 +411,8 @@ differs from those of the other datasets.
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
 | Honduras | Honduras | 281 | 550 | 2 | 1997 | 2022 |
 | India | India | 1 | 1 | 1 | 1998 | 1998 |
-| Indonesia | Indonesia | 673 | 1,082 | 2 | 1997 | 2024 |
-| Iran | Iran | 42 | 67 | 2 | 1999 | 2021 |
+| Indonesia | Indonesia | 674 | 1,083 | 2 | 1997 | 2024 |
+| Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 183 | 475 | 3 | 1998 | 2021 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
@@ -425,22 +426,22 @@ differs from those of the other datasets.
 | Malaysia | Malaysia | 729 | 2,814 | 2 | 1997 | 2023 |
 | Maldives | Maldives | 159 | 231 | 2 | 1997 | 2023 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 133 | 254 | 3 | 1997 | 2022 |
-| Micronesia | Federated States of Micronesia | 217 | 548 | 3 | 2000 | 2020 |
-| Mozambique | Mozambique | 14 | 16 | 2 | 1997 | 2023 |
+| Mexico | Mexico | 135 | 256 | 3 | 1997 | 2022 |
+| Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
+| Mozambique | Mozambique | 16 | 18 | 2 | 1997 | 2023 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
 | Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Netherlands | Bonaire | 20 | 24 | 3 | 1997 | 2023 |
 | Netherlands | Curaçao | 143 | 380 | 2 | 1998 | 2023 |
 | Netherlands | Saba | 18 | 46 | 1 | 2021 | 2024 |
 | Netherlands | Sint-Eustatius | 3 | 13 | 1 | 2005 | 2010 |
-| Netherlands | Sint-Maarten | 12 | 56 | 2 | 2005 | 2024 |
-| New Zealand | Cook Islands | 184 | 239 | 5 | 2005 | 2023 |
+| Netherlands | Sint-Maarten | 12 | 59 | 2 | 2005 | 2024 |
+| New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 23 | 23 | 1 | 2011 | 2015 |
 | Oman | Oman | 81 | 217 | 6 | 2003 | 2022 |
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
-| Panama | Panama | 123 | 245 | 3 | 1997 | 2024 |
+| Panama | Panama | 125 | 250 | 3 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
 | Philippines | Philippines | 842 | 1,136 | 3 | 1997 | 2023 |
 | Qatar | Qatar | 16 | 16 | 1 | 2015 | 2017 |
@@ -448,17 +449,17 @@ differs from those of the other datasets.
 | Saint Kitts and Nevis | Saint Kitts and Nevis | 38 | 55 | 2 | 2004 | 2024 |
 | Saint Lucia | Saint Lucia | 21 | 61 | 1 | 1999 | 2014 |
 | Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 29 | 46 | 2 | 2004 | 2019 |
-| Samoa | Samoa | 49 | 89 | 4 | 2012 | 2022 |
+| Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 26 | 40 | 2 | 1997 | 2024 |
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
-| Solomon Islands | Solomon Islands | 144 | 242 | 5 | 2005 | 2021 |
+| Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 5 | 6 | 1 | 2001 | 2005 |
 | Sri Lanka | Sri Lanka | 3 | 3 | 1 | 2003 | 2003 |
 | Sudan | Sudan | 11 | 14 | 1 | 2004 | 2009 |
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
 | Tanzania | Tanzania | 18 | 30 | 2 | 1997 | 2012 |
 | Thailand | Thailand | 150 | 247 | 1 | 1998 | 2023 |
-| Tonga | Tonga | 526 | 572 | 7 | 2002 | 2022 |
+| Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 27 | 90 | 1 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
 | United Arab Emirates | United Arab Emirates | 40 | 77 | 8 | 2004 | 2024 |
@@ -469,16 +470,16 @@ differs from those of the other datasets.
 | United Kingdom | Montserrat | 87 | 109 | 2 | 2005 | 2017 |
 | United Kingdom | Pitcairn | 6 | 12 | 2 | 2009 | 2023 |
 | United Kingdom | Turks and Caicos Islands | 43 | 54 | 2 | 2004 | 2018 |
-| United States | American Samoa | 843 | 903 | 4 | 1997 | 2019 |
+| United States | American Samoa | 844 | 904 | 4 | 1997 | 2019 |
 | United States | Guam | 305 | 357 | 4 | 1997 | 2021 |
 | United States | Hawaii | 1,734 | 1,924 | 4 | 1997 | 2021 |
 | United States | Howland and Baker Islands | 150 | 150 | 1 | 2015 | 2017 |
 | United States | Jarvis Island | 222 | 222 | 1 | 2015 | 2017 |
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
-| United States | Northern Mariana Islands | 680 | 907 | 3 | 1999 | 2020 |
-| United States | Palmyra Atoll | 194 | 294 | 2 | 2009 | 2019 |
-| United States | Puerto Rico | 20 | 34 | 1 | 2014 | 2024 |
-| United States | United States | 106 | 154 | 2 | 1997 | 2024 |
+| United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
+| United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
+| United States | Puerto Rico | 108 | 405 | 2 | 1999 | 2024 |
+| United States | United States | 106 | 156 | 2 | 1997 | 2024 |
 | United States | United States Virgin Islands | 65 | 1,032 | 4 | 1987 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
@@ -554,12 +555,12 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-10-18
+     date     2024-10-21
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
      package           * version date (UTC) lib source
-     askpass             1.2.0   2023-09-03 [1] CRAN (R 4.4.1)
+     askpass             1.2.1   2024-10-04 [1] CRAN (R 4.4.1)
      backports           1.5.0   2024-05-23 [1] CRAN (R 4.4.0)
      base64enc           0.1-3   2015-07-28 [1] CRAN (R 4.4.0)
      bit                 4.5.0   2024-09-20 [1] CRAN (R 4.4.1)
@@ -578,10 +579,10 @@ The following organizations have funded the realization of the
      conflicted          1.2.0   2023-02-01 [1] CRAN (R 4.4.1)
      cpp11               0.5.0   2024-08-27 [1] CRAN (R 4.4.1)
      crayon              1.5.3   2024-06-20 [1] CRAN (R 4.4.1)
-     credentials         2.0.1   2023-09-06 [1] CRAN (R 4.4.1)
+     credentials         2.0.2   2024-10-04 [1] CRAN (R 4.4.1)
      crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.4.1)
      curl                5.2.3   2024-09-20 [1] CRAN (R 4.4.1)
-     data.table          1.16.0  2024-08-27 [1] CRAN (R 4.4.1)
+     data.table          1.16.2  2024-10-10 [1] CRAN (R 4.4.1)
      DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.4.1)
      dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.4.1)
      desc                1.4.3   2023-12-10 [1] CRAN (R 4.4.1)
@@ -590,7 +591,7 @@ The following organizations have funded the realization of the
      DT                  0.33    2024-04-04 [1] CRAN (R 4.4.1)
      dtplyr              1.3.1   2023-03-22 [1] CRAN (R 4.4.1)
      e1071               1.7-16  2024-09-16 [1] CRAN (R 4.4.1)
-     evaluate            1.0.0   2024-09-17 [1] CRAN (R 4.4.1)
+     evaluate            1.0.1   2024-10-10 [1] CRAN (R 4.4.1)
      fansi               1.0.6   2023-12-08 [1] CRAN (R 4.4.1)
      farver              2.1.2   2024-05-13 [1] CRAN (R 4.4.1)
      fastmap             1.2.0   2024-05-15 [1] CRAN (R 4.4.1)
@@ -600,11 +601,11 @@ The following organizations have funded the realization of the
      fs                  1.6.4   2024-04-25 [1] CRAN (R 4.4.1)
      gargle              1.5.2   2023-07-20 [1] CRAN (R 4.4.1)
      generics            0.1.3   2022-07-05 [1] CRAN (R 4.4.1)
-     gert                2.1.2   2024-09-20 [1] CRAN (R 4.4.1)
+     gert                2.1.4   2024-10-14 [1] CRAN (R 4.4.1)
      ggplot2           * 3.5.1   2024-04-23 [1] CRAN (R 4.4.1)
      gh                  1.4.1   2024-03-28 [1] CRAN (R 4.4.1)
      gitcreds            0.1.2   2022-09-08 [1] CRAN (R 4.4.1)
-     glue                1.7.0   2024-01-09 [1] CRAN (R 4.4.1)
+     glue                1.8.0   2024-09-30 [1] CRAN (R 4.4.1)
      googledrive         2.1.1   2023-06-11 [1] CRAN (R 4.4.1)
      googlesheets4       1.1.1   2023-06-11 [1] CRAN (R 4.4.1)
      gtable              0.3.5   2024-04-22 [1] CRAN (R 4.4.1)
@@ -615,7 +616,7 @@ The following organizations have funded the realization of the
      htmlwidgets         1.6.4   2023-12-06 [1] CRAN (R 4.4.1)
      httpuv              1.6.15  2024-03-26 [1] CRAN (R 4.4.1)
      httr                1.4.7   2023-08-15 [1] CRAN (R 4.4.1)
-     httr2               1.0.3   2024-08-22 [1] CRAN (R 4.4.1)
+     httr2               1.0.5   2024-09-26 [1] CRAN (R 4.4.1)
      ids                 1.0.1   2017-05-31 [1] CRAN (R 4.4.1)
      ini                 0.3.1   2018-05-20 [1] CRAN (R 4.4.1)
      isoband             0.2.7   2022-12-20 [1] CRAN (R 4.4.1)
@@ -659,7 +660,7 @@ The following organizations have funded the realization of the
      R6                  2.5.1   2021-08-19 [1] CRAN (R 4.4.1)
      ragg                1.3.3   2024-09-11 [1] CRAN (R 4.4.1)
      rappdirs            0.3.3   2021-01-31 [1] CRAN (R 4.4.1)
-     raster              3.6-26  2023-10-14 [1] CRAN (R 4.4.1)
+     raster              3.6-30  2024-10-02 [1] CRAN (R 4.4.1)
      RColorBrewer        1.1-3   2022-04-03 [1] CRAN (R 4.4.0)
      Rcpp                1.0.13  2024-07-17 [1] CRAN (R 4.4.1)
      readr             * 2.1.5   2024-01-10 [1] CRAN (R 4.4.1)
@@ -670,21 +671,21 @@ The following organizations have funded the realization of the
      rlang               1.1.4   2024-06-04 [1] CRAN (R 4.4.1)
      rmarkdown           2.28    2024-08-17 [1] CRAN (R 4.4.1)
      rprojroot           2.0.4   2023-11-05 [1] CRAN (R 4.4.1)
-     rstudioapi          0.16.0  2024-03-24 [1] CRAN (R 4.4.1)
+     rstudioapi          0.17.0  2024-10-16 [1] CRAN (R 4.4.1)
      rvest               1.0.4   2024-02-12 [1] CRAN (R 4.4.1)
      s2                  1.1.7   2024-07-17 [1] CRAN (R 4.4.1)
      sass                0.4.9   2024-03-15 [1] CRAN (R 4.4.1)
      scales              1.3.0   2023-11-28 [1] CRAN (R 4.4.1)
      selectr             0.4-2   2019-11-20 [1] CRAN (R 4.4.1)
-     sf                * 1.0-17  2024-09-06 [1] CRAN (R 4.4.1)
+     sf                * 1.0-18  2024-10-11 [1] CRAN (R 4.4.1)
      snakecase           0.11.1  2023-08-27 [1] CRAN (R 4.4.1)
      sp                  2.1-4   2024-04-30 [1] CRAN (R 4.4.1)
      stringi             1.8.4   2024-05-06 [1] CRAN (R 4.4.0)
      stringr           * 1.5.1   2023-11-14 [1] CRAN (R 4.4.1)
      svglite             2.1.3   2023-12-08 [1] CRAN (R 4.4.1)
-     sys                 3.4.2   2023-05-23 [1] CRAN (R 4.4.1)
+     sys                 3.4.3   2024-10-04 [1] CRAN (R 4.4.1)
      systemfonts         1.1.0   2024-05-15 [1] CRAN (R 4.4.1)
-     terra               1.7-78  2024-05-22 [1] CRAN (R 4.4.1)
+     terra               1.7-83  2024-10-14 [1] CRAN (R 4.4.1)
      textshaping         0.4.0   2024-05-24 [1] CRAN (R 4.4.1)
      tibble            * 3.2.1   2023-03-20 [1] CRAN (R 4.4.1)
      tidyr             * 1.3.1   2024-01-24 [1] CRAN (R 4.4.1)
@@ -702,8 +703,8 @@ The following organizations have funded the realization of the
      vroom               1.6.5   2023-12-05 [1] CRAN (R 4.4.1)
      whisker             0.4.1   2022-12-05 [1] CRAN (R 4.4.1)
      withr               3.0.1   2024-07-31 [1] CRAN (R 4.4.1)
-     wk                  0.9.3   2024-09-06 [1] CRAN (R 4.4.1)
-     xfun                0.47    2024-08-17 [1] CRAN (R 4.4.1)
+     wk                  0.9.4   2024-10-11 [1] CRAN (R 4.4.1)
+     xfun                0.48    2024-10-03 [1] CRAN (R 4.4.1)
      xml2                1.3.6   2023-12-04 [1] CRAN (R 4.4.1)
      yaml                2.3.10  2024-07-26 [1] CRAN (R 4.4.1)
      zip                 2.3.1   2024-01-27 [1] CRAN (R 4.4.1)

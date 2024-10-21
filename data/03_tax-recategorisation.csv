@@ -1376,6 +1376,8 @@
 "octocoral";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "octocorallian holdfast invertebrate";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "octocorals";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
+"octocoralsencrusting";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
+"octocoralserect";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "oculina diffusa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Oculinidae";"Oculina";"Oculina diffusa";TRUE
 "oculina spp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Oculinidae";"Oculina";NA;TRUE
 "oculinidae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Oculinidae";NA;NA;TRUE
@@ -1539,6 +1541,7 @@
 "peyssonellia spp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";NA;TRUE
 "peyssonnelia";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";NA;TRUE
 "peyssonnelia sp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";NA;TRUE
+"peyssonneliaceae";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";NA;NA;TRUE
 "peyssonnelid";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";NA;NA;TRUE
 "phanerogames";"Seagrass";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "phorbas sp";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Poecilosclerida";"Hymedesmiidae";"Phorbas";NA;TRUE
@@ -1955,6 +1958,7 @@
 "tubiporidae";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Tubiporidae";NA;NA;TRUE
 "tubular sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "tuff";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"tunicata";NA;NA;NA;"Chordata";"Ascidiacea";NA;NA;NA;NA;NA;TRUE
 "tunicate";NA;NA;NA;"Chordata";NA;NA;NA;NA;NA;NA;TRUE
 "tunicate invertebrate";NA;NA;NA;"Chordata";NA;NA;NA;NA;NA;NA;TRUE
 "tunicates";NA;NA;NA;"Chordata";NA;NA;NA;NA;NA;NA;TRUE
