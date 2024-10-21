@@ -323,7 +323,7 @@ synthetic_data <- synthetic_data %>%
 
 ```{r}
 
-# 1. Quality checks number 1, 2, 3, 5, 6, and 8 ----
+# 1. Quality checks number 1, 2, 3, 5, 6, 7, and 9 ----
 
 synthetic_data <- synthetic_data %>% 
   mutate(qc1 = if_else(!(is.na(decimalLatitude)) | !(is.na(decimalLongitude)), TRUE, FALSE),
@@ -350,7 +350,7 @@ synthetic_data <- st_intersects(synthetic_data_coords, reef_buffer, sparse = FAL
   st_drop_geometry() %>% 
   left_join(synthetic_data, .)
 
-# 4. Quality check number 8 (A) ----
+# 4. Quality check number 8 (a) ----
 
 synthetic_data <- synthetic_data %>% 
   group_by(datasetID, locality, habitat, parentEventID,
@@ -361,10 +361,10 @@ synthetic_data <- synthetic_data %>%
   mutate(qc8_a = if_else(qc8_a >= 0 & qc8_a <= 100, TRUE, FALSE)) %>% 
   left_join(synthetic_data, .)
 
-# 5. Quality check number 8 (B) ----
+# 5. Quality check number 8 (b) ----
 
 ## 5.1 Adjust measurementValue ----
-# To avoid deleting sampling unit whose total is between 100 % and 101 %
+# To avoid deleting sampling unit whose total perc. cover is between 100 % and 101 %
 
 synthetic_data <- synthetic_data %>%
   group_by(datasetID, locality, habitat, parentEventID,
@@ -372,7 +372,7 @@ synthetic_data <- synthetic_data %>%
          year, month, day, eventDate) %>% 
   mutate(total = sum(measurementValue)) %>% 
   ungroup() %>% 
-  mutate(measurementValue = ifelse(total > 100 & total < 101, # Threshold = 101
+  mutate(measurementValue = ifelse(total > 100 & total <= 101, # Threshold = 101
                                    (measurementValue*100)/total, 
                                    measurementValue)) %>% 
   select(-total)
@@ -388,27 +388,49 @@ synthetic_data <- synthetic_data %>%
   mutate(qc8_b = if_else(qc8_b >= 0 & qc8_b <= 100, TRUE, FALSE)) %>% 
   left_join(synthetic_data, .)
 
-# 5. Transform data ----
+# 5. Calculate percentage of rows removed because of each QC ----
+
+## 5.1 For all quality checks except QC 8 (a) ----
 
 quality_checks <- synthetic_data %>% 
   mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc8_b", "qc9"), 
-                ~as.character(.))) %>% 
-  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc8_b", "qc9"), 
-                ~str_replace_all(., 
+                ~str_replace_all(as.character(.), 
                                  c("FALSE" = cur_column(), 
                                    "TRUE" = NA_character_)))) %>% 
-  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8_a, qc8_b, qc9)) %>% 
+  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8_b, qc9)) %>% 
   group_by(datasetID, qc) %>% 
   count() %>% 
   ungroup() %>% 
   bind_rows(., tibble(datasetID = NA,
-                      qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc8_b", "qc9"),
+                      qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_b", "qc9"),
                       n = NA)) %>% 
   complete(datasetID, qc, fill = list(n = 0)) %>% 
   drop_na(datasetID) %>% 
   group_by(datasetID) %>% 
   mutate(percent = round(n*100/sum(n), 2)) %>% 
   ungroup()
+
+## 5.2 For quality checks QC 8 (b) ----
+
+quality_checks <- synthetic_data %>% 
+  mutate(across(c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc8_b", "qc9"), 
+                ~str_replace_all(as.character(.), 
+                                 c("FALSE" = cur_column(), 
+                                   "TRUE" = NA_character_)))) %>% 
+  mutate(qc = coalesce(qc1, qc2, qc3, qc4, qc5, qc6, qc7, qc8_a, qc9)) %>% 
+  group_by(datasetID, qc) %>% 
+  count() %>% 
+  ungroup() %>% 
+  bind_rows(., tibble(datasetID = NA,
+                      qc = c("qc1", "qc2", "qc3", "qc4", "qc5", "qc6", "qc7", "qc8_a", "qc9"),
+                      n = NA)) %>% 
+  complete(datasetID, qc, fill = list(n = 0)) %>% 
+  drop_na(datasetID) %>% 
+  group_by(datasetID) %>% 
+  mutate(percent = round(n*100/sum(n), 2)) %>% 
+  ungroup() %>% 
+  filter(qc == "qc8_a") %>% 
+  bind_rows(quality_checks, .)
 
 # 6. Remove useless data sets and variables ----
 

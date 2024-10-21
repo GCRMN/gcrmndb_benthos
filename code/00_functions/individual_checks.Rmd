@@ -264,13 +264,13 @@ ggplotly(plot_i)
 ```{r echo=FALSE, message=FALSE}
 
 quality_checks %>% 
-  filter(datasetID == i) %>%
+  filter(datasetID == i & qc != "qc8_a") %>%
   drop_na(qc) %>% 
   select(-datasetID) %>% 
   add_row(qc = "TOTAL", n = sum(.$n), percent = sum(.$percent)) %>% 
   kbl(booktabs = T, col.names = c("Quality check", "Obs. removed (number)", "Obs. removed (%)"), align = "c") %>% 
   kable_paper("hover", full_width = T) %>%
   column_spec(1, bold = TRUE) %>%
-  row_spec(c(0,10), bold = TRUE, background = "lightgrey")
+  row_spec(c(0,9), bold = TRUE, background = "lightgrey")
 
 ```
