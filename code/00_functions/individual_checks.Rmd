@@ -166,14 +166,15 @@ if(sites > 100){
 
 data_temporal <- synthetic_data_i %>% 
   group_by(year) %>% 
-  count()
+  count() %>% 
+  ungroup() %>% 
+  complete(year = seq(1975, 2025, by = 1), fill = list(n = 0))
 
 plot_i <- ggplot(data = data_temporal, aes(x = year, y = n)) +
   geom_bar(stat = "identity", fill = "#2c82c9") +
   theme(panel.background = element_rect(fill = "transparent"),
         plot.background = element_rect(fill = "transparent")) +
-  labs(x = "Year", y = "Number of observations") +
-  lims(x = c(1975, 2025))
+  labs(x = "Year", y = "Number of observations")
 
 ggplotly(plot_i)
 
