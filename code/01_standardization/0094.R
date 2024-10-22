@@ -133,7 +133,10 @@ map_dfr(unique(data_paths$file), ~convert_data_094(file_i = .)) %>%
          year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate),
-         samplingProtocol = "Photo-quadrat, 30 m transect length, every 1 m") %>% 
+         samplingProtocol = "Photo-quadrat, 30 m transect length, every 1 m",
+         # Correct decimalLongitude value
+         decimalLongitude = case_when(decimalLongitude == -162.97100 ~ -81.485500,
+                                      TRUE ~ decimalLongitude)) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
