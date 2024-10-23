@@ -322,8 +322,8 @@ considered. The column names (except *aggregator*) correspond to
 ## 6. Description of the synthetic dataset
 
 On the 2024-10-23, the `gcrmndb_benthos` synthetic dataset contains a
-total of **16,615,598 observations** (*i.e* rows) representing **16,522
-sites** and **36,092 surveys**. The distribution of monitoring sites in
+total of **16,900,994 observations** (*i.e* rows) representing **16,522
+sites** and **36,091 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -352,7 +352,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,302 |       5,654 |            3 |    1995    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     3,167 |       7,074 |           26 |    1982    |   2024    |
+|            Caribbean |     3,167 |       7,073 |           26 |    1982    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -360,7 +360,7 @@ that differs from those of the other datasets.
 |                ROPME |       232 |         458 |           17 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    16,522 |      36,092 |           93 |    1982    |   2024    |
+| Global (all regions) |    16,522 |      36,091 |           93 |    1982    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -480,7 +480,7 @@ differs from those of the other datasets.
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
-| United States | Puerto Rico | 108 | 405 | 2 | 1999 | 2024 |
+| United States | Puerto Rico | 108 | 404 | 2 | 1999 | 2024 |
 | United States | United States | 106 | 156 | 2 | 1997 | 2024 |
 | United States | United States Virgin Islands | 65 | 1,032 | 4 | 1987 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
