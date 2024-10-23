@@ -321,9 +321,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-10-22, the `gcrmndb_benthos` synthetic dataset contains a
-total of **16,440,488 observations** (*i.e* rows) representing **16,390
-sites** and **35,934 surveys**. The distribution of monitoring sites in
+On the 2024-10-23, the `gcrmndb_benthos` synthetic dataset contains a
+total of **16,615,598 observations** (*i.e* rows) representing **16,522
+sites** and **36,092 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -352,7 +352,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,302 |       5,654 |            3 |    1995    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     3,035 |       6,916 |           26 |    1982    |   2024    |
+|            Caribbean |     3,167 |       7,074 |           26 |    1982    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -360,7 +360,7 @@ that differs from those of the other datasets.
 |                ROPME |       232 |         458 |           17 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    16,390 |      35,934 |           93 |    1982    |   2024    |
+| Global (all regions) |    16,522 |      36,092 |           93 |    1982    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -380,7 +380,7 @@ differs from those of the other datasets.
 | Bahrain | Bahrain | 23 | 33 | 3 | 1997 | 2022 |
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
 | Barbados | Barbados | 78 | 345 | 2 | 1982 | 2022 |
-| Belize | Belize | 225 | 397 | 3 | 1997 | 2024 |
+| Belize | Belize | 325 | 515 | 3 | 1997 | 2024 |
 | Brazil | Brazil | 138 | 189 | 2 | 2002 | 2012 |
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
@@ -407,7 +407,7 @@ differs from those of the other datasets.
 | France | Réunion | 32 | 133 | 1 | 2003 | 2016 |
 | France | Saint-Barthélemy | 2 | 2 | 1 | 2018 | 2018 |
 | France | Wallis and Futuna | 12 | 12 | 1 | 2019 | 2019 |
-| Grenada | Grenada | 50 | 86 | 2 | 2004 | 2024 |
+| Grenada | Grenada | 79 | 123 | 2 | 2004 | 2024 |
 | Guatemala | Guatemala | 14 | 38 | 2 | 2006 | 2021 |
 | Haiti | Haiti | 96 | 109 | 2 | 2003 | 2018 |
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
@@ -450,7 +450,7 @@ differs from those of the other datasets.
 | Republic of Mauritius | Republic of Mauritius | 10 | 12 | 1 | 1999 | 2003 |
 | Saint Kitts and Nevis | Saint Kitts and Nevis | 38 | 55 | 2 | 2004 | 2024 |
 | Saint Lucia | Saint Lucia | 21 | 61 | 1 | 1999 | 2014 |
-| Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 29 | 46 | 2 | 2004 | 2019 |
+| Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 32 | 49 | 2 | 2004 | 2024 |
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 26 | 40 | 2 | 1997 | 2024 |
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
@@ -557,7 +557,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-10-22
+     date     2024-10-23
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
