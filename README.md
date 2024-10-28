@@ -319,12 +319,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0094 | CECIMAR | upon request | Sh. | 2024-10-21 | JW |
 | 0095 | CIMAR - UCR | upon request | Sh. | 2024-10-22 | JW |
 | 0096 | Bouchon and Bouchon | upon request | Sh. | 2024-10-28 | JW |
+| 0097 | [SECREMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0280596) | open | Rp. | 2024-10-28 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-10-28, the `gcrmndb_benthos` synthetic dataset contains a
-total of **16,913,820 observations** (*i.e* rows) representing **16,528
-sites** and **36,210 surveys**. The distribution of monitoring sites in
+total of **16,966,740 observations** (*i.e* rows) representing **16,550
+sites** and **36,593 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -353,7 +354,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,302 |       5,654 |            3 |    1995    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     3,173 |       7,192 |           27 |    1982    |   2024    |
+|            Caribbean |     3,195 |       7,575 |           28 |    1982    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -361,7 +362,7 @@ that differs from those of the other datasets.
 |                ROPME |       232 |         458 |           17 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    16,528 |      36,210 |           94 |    1982    |   2024    |
+| Global (all regions) |    16,550 |      36,593 |           95 |    1982    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -482,7 +483,7 @@ differs from those of the other datasets.
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
 | United States | Puerto Rico | 108 | 404 | 2 | 1999 | 2024 |
-| United States | United States | 106 | 156 | 2 | 1997 | 2024 |
+| United States | United States | 128 | 539 | 3 | 1997 | 2024 |
 | United States | United States Virgin Islands | 65 | 1,032 | 4 | 1987 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
