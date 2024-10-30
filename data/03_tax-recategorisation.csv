@@ -2574,6 +2574,7 @@
 "soft corals and gorgonians";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "soft substrate";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "softcoral";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
+"softcorals";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "solenastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;"Solenastrea";NA;TRUE
 "solenastrea bournoni";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;"Solenastrea";"Solenastrea bournoni";TRUE
 "solenastrea hyades";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;"Solenastrea";"Solenastrea hyades";TRUE
