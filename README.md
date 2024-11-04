@@ -323,12 +323,17 @@ considered. The column names (except *aggregator*) correspond to
 | 0098 | Steneck | upon request | Sh. | 2024-10-28 | JW |
 | 0099 | Meesters | upon request | Sh. | 2024-10-30 | JW |
 | 0100 | [Abu Dhabi 2017-2019](https://dashboard.datamermaid.org/?project=Abu%20Dhabi%202017-2019) | open (summary) | Me. | 2024-10-31 | JW |
+| 0101 | [NCRMP - FGB](https://doi.org/10.7289/v5vd6wts) | open | Rp. | 2024-11-04 | JW |
+| 0102 | [NCRMP - Puerto Rico](https://doi.org/10.7289/v5pg1q23) | open | Rp. | 2024-11-04 | JW |
+| 0103 | [NCRMP - USVI](https://doi.org/10.7289/v5ww7fqk) | open | Rp. | 2024-11-04 | JW |
+| 0104 | [NCRMP - Florida](https://doi.org/10.7289/v5xw4h4z) | open | Rp. | 2024-11-04 | JW |
+| 0105 | [UAE_Oman_2008-2012](https://dashboard.datamermaid.org/?project=UAE_Oman_2008-2012) | open (summary) | Me. | 2024-11-04 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-10-31, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,186,666 observations** (*i.e* rows) representing **16,842
-sites** and **37,391 surveys**. The distribution of monitoring sites in
+On the 2024-11-04, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,239,584 observations** (*i.e* rows) representing **21,697
+sites** and **42,269 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -357,15 +362,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,302 |       5,654 |            3 |    1995    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     3,482 |       8,330 |           30 |    1982    |   2024    |
+|            Caribbean |     8,331 |      13,190 |           34 |    1982    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
 |              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
-|                ROPME |       237 |         501 |           18 |    1997    |   2024    |
+|                ROPME |       243 |         519 |           20 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    16,842 |      37,391 |           98 |    1982    |   2024    |
+| Global (all regions) |    21,697 |      42,269 |          104 |    1982    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -446,7 +451,7 @@ differs from those of the other datasets.
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 23 | 23 | 1 | 2011 | 2015 |
-| Oman | Oman | 81 | 217 | 6 | 2003 | 2022 |
+| Oman | Oman | 85 | 227 | 8 | 2003 | 2022 |
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
 | Panama | Panama | 125 | 250 | 3 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
@@ -469,7 +474,7 @@ differs from those of the other datasets.
 | Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 27 | 90 | 1 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
-| United Arab Emirates | United Arab Emirates | 45 | 120 | 9 | 2004 | 2024 |
+| United Arab Emirates | United Arab Emirates | 47 | 128 | 11 | 2004 | 2024 |
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
 | United Kingdom | British Virgin Islands | 20 | 66 | 1 | 1997 | 2012 |
@@ -485,9 +490,9 @@ differs from those of the other datasets.
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
-| United States | Puerto Rico | 108 | 404 | 2 | 1999 | 2024 |
-| United States | United States | 128 | 539 | 3 | 1997 | 2024 |
-| United States | United States Virgin Islands | 65 | 1,032 | 4 | 1987 | 2024 |
+| United States | Puerto Rico | 1,036 | 1,332 | 4 | 1999 | 2024 |
+| United States | United States | 1,582 | 2,003 | 5 | 1997 | 2024 |
+| United States | United States Virgin Islands | 2,532 | 3,500 | 5 | 1987 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
 | Venezuela | Venezuela | 38 | 45 | 2 | 2004 | 2018 |
@@ -562,7 +567,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-10-31
+     date     2024-11-04
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
