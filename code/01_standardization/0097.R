@@ -55,7 +55,8 @@ bind_rows(data_main_a, data_main_b) %>%
          month = month(eventDate),
          day = day(eventDate),
          verbatimDepth = verbatimDepth*0.3048,
-         samplingProtocol = "Photo-quadrat, 22 m transect length",
+         samplingProtocol = case_when(year >= 2011 ~ "Photo-quadrat, 22 m transect length",
+                                      TRUE ~ "Video transect, 22 m transect length"),
          parentEventID = as.numeric(str_sub(parentEventID, -1, -1))) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 

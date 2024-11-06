@@ -52,7 +52,9 @@ left_join(data_main_a, data_main_b) %>%
          year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate),
-         verbatimDepth = verbatimDepth*0.3048) %>% 
+         verbatimDepth = verbatimDepth*0.3048,
+         samplingProtocol = case_when(year >= 2011 ~ "Photo-quadrat, 22 m transect length",
+                                      TRUE ~ "Video transect, 22 m transect length")) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
