@@ -321,7 +321,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0096 | Bouchon and Bouchon | upon request | Sh. | 2024-10-28 | JW |
 | 0097 | [SECREMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0280596) | open | Rp. | 2024-10-28 | JW |
 | 0098 | Steneck | upon request | Sh. | 2024-10-28 | JW |
-| 0099 | Meesters | upon request | Sh. | 2024-10-30 | JW |
+| 0099 | Meesters et al. | upon request | Sh. | 2024-10-30 | JW |
 | 0100 | [Abu Dhabi 2017-2019](https://dashboard.datamermaid.org/?project=Abu%20Dhabi%202017-2019) | open (summary) | Me. | 2024-10-31 | JW |
 | 0101 | [NCRMP - FGB](https://doi.org/10.7289/v5vd6wts) | open | Rp. | 2024-11-04 | JW |
 | 0102 | [NCRMP - Puerto Rico](https://doi.org/10.7289/v5pg1q23) | open | Rp. | 2024-11-04 | JW |
@@ -336,7 +336,7 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-11-09, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2024-11-11, the `gcrmndb_benthos` synthetic dataset contains a
 total of **17,484,227 observations** (*i.e* rows) representing **21,839
 sites** and **44,519 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
@@ -572,7 +572,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-11-09
+     date     2024-11-11
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
