@@ -24,6 +24,7 @@ data_lt <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(data_path) %>% 
   pull() %>% 
   read.csv(., na.strings = c("NA", "")) %>% 
+  select(-BS, -ND) %>% # Remove these categories since the total cover was obtained without them
   pivot_longer(7:ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
   left_join(., data_site) %>% 
   drop_na(measurementValue) %>% 
@@ -42,15 +43,15 @@ data_lt <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          month = as.numeric(month),
          organismID = str_replace_all(organismID, c("HC" = "Hard coral",
                                                     "TF" = "Turf algae",
-                                                    "MA" = "Macroalgae",
-                                                    "OT" = "Other",
+                                                    "MA" = "Fleshy Macroalgae",
+                                                    "OT" = "Other (tape/shadow)",
                                                     "SD" = "Sand",
-                                                    "SP" = "Sponge",
-                                                    "CCA" = "cca",
-                                                    "CYA" = "Cyanobacteria",
-                                                    "MI" = "",
-                                                    "BS" = "",
-                                                    "ND" = "")),
+                                                    "SP" = "Sponges",
+                                                    "CCA" = "Crustose Coralline Algae",
+                                                    "CYA" = "Benthic Cyanobacterial Mat",
+                                                    "MI" = "Millepora",
+                                                    "BS" = "Boring sponges",
+                                                    "ND" = "Not determined")),
          samplingProtocol = "Photo-quadrat",
          datasetID = dataset)
 
@@ -84,4 +85,4 @@ bind_rows(data_lt, data_bonaire) %>%
 
 # 3. Remove useless objects ----
 
-rm(data_site, data_main, data_bonaire)
+rm(data_site, data_lt, data_bonaire)

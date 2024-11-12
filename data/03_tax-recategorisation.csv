@@ -380,6 +380,7 @@
 "batophora";NA;NA;NA;"Chlorophyta";"Ulvophyceae";NA;"Dasycladales";"Dasycladaceae";"Batophora";NA;TRUE
 "batophora sp";NA;NA;NA;"Chlorophyta";"Ulvophyceae";NA;"Dasycladales";"Dasycladaceae";"Batophora";NA;TRUE
 "bedrock";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"benthic cyanobacterial mat";NA;NA;NA;"Cyanobacteria";NA;NA;NA;NA;NA;NA;TRUE
 "benthic cyanobacterial mats";NA;NA;NA;"Cyanobacteria";NA;NA;NA;NA;NA;NA;TRUE
 "bernardpora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Bernardpora";NA;TRUE
 "bfd";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -2145,6 +2146,7 @@
 "other sponge erect";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "other sponge massive";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "other substrate";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"other tape/shadow";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other-calcifiers gypsina calcified worm tubes";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "otherinvert notid";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "others";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
