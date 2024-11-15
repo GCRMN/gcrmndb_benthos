@@ -338,8 +338,8 @@ considered. The column names (except *aggregator*) correspond to
 ## 6. Description of the synthetic dataset
 
 On the 2024-11-15, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,487,131 observations** (*i.e* rows) representing **21,844
-sites** and **44,599 surveys**. The distribution of monitoring sites in
+total of **17,489,192 observations** (*i.e* rows) representing **21,884
+sites** and **44,828 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -368,7 +368,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,302 |       5,654 |            3 |    1995    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     8,477 |      15,518 |           39 |    1973    |   2024    |
+|            Caribbean |     8,517 |      15,747 |           40 |    1973    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -376,7 +376,7 @@ that differs from those of the other datasets.
 |                ROPME |       244 |         521 |           19 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    21,844 |      44,599 |          108 |    1973    |   2024    |
+| Global (all regions) |    21,884 |      44,828 |          109 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -432,7 +432,7 @@ differs from those of the other datasets.
 | Indonesia | Indonesia | 674 | 1,083 | 2 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
-| Jamaica | Jamaica | 183 | 475 | 3 | 1998 | 2021 |
+| Jamaica | Jamaica | 223 | 704 | 4 | 1998 | 2023 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
 | Jordan | Jordan | 3 | 3 | 1 | 2008 | 2008 |
 | Kenya | Kenya | 6 | 6 | 1 | 2003 | 2004 |
