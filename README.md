@@ -335,12 +335,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0110 | [INVEMAR](https://www.invemar.org.co/) | upon request | Sh. | 2024-11-09 | JW |
 | 0111 | [NEPA](https://www.nepa.gov.jm/) | upon request | Sh. | 2024-11-12 | JW |
 | 0112 | [DBCA](https://www.dbca.wa.gov.au/) | upon request | Sh. | 2024-11-25 | JW |
+| 0113 | [Barcolab](https://www.barcolab.org/) | upon request | Sh. | 2024-11-25 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-11-25, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,496,381 observations** (*i.e* rows) representing **21,895
-sites** and **44,861 surveys**. The distribution of monitoring sites in
+total of **17,587,263 observations** (*i.e* rows) representing **21,994
+sites** and **45,346 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -369,7 +370,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,313 |       5,687 |            4 |    1980    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     8,517 |      15,747 |           40 |    1973    |   2024    |
+|            Caribbean |     8,616 |      16,232 |           41 |    1973    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -377,7 +378,7 @@ that differs from those of the other datasets.
 |                ROPME |       244 |         521 |           19 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    21,895 |      44,861 |          110 |    1973    |   2024    |
+| Global (all regions) |    21,994 |      45,346 |          111 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -445,7 +446,7 @@ differs from those of the other datasets.
 | Malaysia | Malaysia | 729 | 2,814 | 2 | 1997 | 2023 |
 | Maldives | Maldives | 159 | 231 | 2 | 1997 | 2023 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 192 | 327 | 3 | 1997 | 2023 |
+| Mexico | Mexico | 291 | 812 | 4 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 16 | 18 | 2 | 1997 | 2023 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
