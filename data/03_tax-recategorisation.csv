@@ -2466,6 +2466,10 @@
 "porolithon";NA;NA;NA;"Rhodophyta";"Florideophyceae";NA;"Corallinales";"Porolithaceae";"Porolithon";NA;TRUE
 "porties furcata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites furcata";TRUE
 "prionocidaris";NA;NA;NA;"Echinodermata";"Echinoidea";"Cidaroidea";"Cidaroida";"Cidaridae";"Prionocidaris";NA;TRUE
+"prop cca";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"prop coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"prop macro";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"prop turf";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "prosuberites laughlini";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Agelasida";"Hymerhabdiidae";"Prosuberites";"Prosuberites laughlini";TRUE
 "psammacora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Siderastreidae";"Psammocora";NA;TRUE
 "psammocora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Siderastreidae";"Psammocora";NA;TRUE

@@ -337,12 +337,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0112 | [DBCA](https://www.dbca.wa.gov.au/) | upon request | Sh. | 2024-11-25 | JW |
 | 0113 | [Barcolab](https://www.barcolab.org/) | upon request | Sh. | 2024-11-25 | JW |
 | 0114 | [STENAPA](https://statiapark.org/) | upon request | Sh. | 2024-11-28 | JW |
+| 0115 | [CCMI](https://reefresearch.org/) | upon request | Sh. | 2024-11-29 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-11-28, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,942,376 observations** (*i.e* rows) representing **22,018
-sites** and **45,395 surveys**. The distribution of monitoring sites in
+On the 2024-11-29, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,945,644 observations** (*i.e* rows) representing **22,030
+sites** and **45,514 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -371,7 +372,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,313 |       5,687 |            4 |    1980    |   2023    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     8,640 |      16,281 |           42 |    1973    |   2024    |
+|            Caribbean |     8,652 |      16,400 |           43 |    1973    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -379,7 +380,7 @@ that differs from those of the other datasets.
 |                ROPME |       244 |         521 |           19 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    22,018 |      45,395 |          112 |    1973    |   2024    |
+| Global (all regions) |    22,030 |      45,514 |          113 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -487,7 +488,7 @@ differs from those of the other datasets.
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
 | United Kingdom | British Virgin Islands | 20 | 66 | 1 | 1997 | 2012 |
-| United Kingdom | Cayman Islands | 3 | 3 | 2 | 1997 | 2011 |
+| United Kingdom | Cayman Islands | 15 | 122 | 3 | 1997 | 2024 |
 | United Kingdom | Montserrat | 87 | 109 | 2 | 2005 | 2017 |
 | United Kingdom | Pitcairn | 6 | 12 | 2 | 2009 | 2023 |
 | United Kingdom | Turks and Caicos Islands | 43 | 54 | 2 | 2004 | 2018 |
@@ -576,7 +577,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-11-28
+     date     2024-11-29
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -602,7 +603,7 @@ The following organizations have funded the realization of the
      crayon              1.5.3    2024-06-20 [1] CRAN (R 4.4.1)
      credentials         2.0.2    2024-10-04 [1] CRAN (R 4.4.2)
      crosstalk           1.2.1    2023-11-23 [1] CRAN (R 4.4.2)
-     curl                5.2.3    2024-09-20 [1] CRAN (R 4.4.1)
+     curl                6.0.1    2024-11-14 [1] CRAN (R 4.4.2)
      data.table          1.16.2   2024-10-10 [1] CRAN (R 4.4.1)
      DBI                 1.2.3    2024-06-02 [1] CRAN (R 4.4.1)
      dbplyr              2.5.0    2024-03-19 [1] CRAN (R 4.4.1)
@@ -616,7 +617,7 @@ The following organizations have funded the realization of the
      fansi               1.0.6    2023-12-08 [1] CRAN (R 4.4.1)
      farver              2.1.2    2024-05-13 [1] CRAN (R 4.4.1)
      fastmap             1.2.0    2024-05-15 [1] CRAN (R 4.4.1)
-     fontawesome         0.5.2    2023-08-19 [1] CRAN (R 4.4.1)
+     fontawesome         0.5.3    2024-11-16 [1] CRAN (R 4.4.2)
      forcats           * 1.0.0    2023-01-29 [1] CRAN (R 4.4.1)
      formattable         0.2.1    2021-01-07 [1] CRAN (R 4.4.2)
      fs                  1.6.5    2024-10-30 [1] CRAN (R 4.4.1)
@@ -645,7 +646,7 @@ The following organizations have funded the realization of the
      jsonlite            1.8.9    2024-09-20 [1] CRAN (R 4.4.1)
      kableExtra          1.4.0    2024-01-24 [1] CRAN (R 4.4.2)
      KernSmooth          2.23-24  2024-05-17 [1] CRAN (R 4.4.2)
-     knitr             * 1.48     2024-07-07 [1] CRAN (R 4.4.1)
+     knitr             * 1.49     2024-11-08 [1] CRAN (R 4.4.2)
      labeling            0.4.3    2023-08-29 [1] CRAN (R 4.4.0)
      later               1.3.2    2023-12-06 [1] CRAN (R 4.4.2)
      lattice             0.22-6   2024-03-20 [1] CRAN (R 4.4.2)
@@ -716,7 +717,7 @@ The following organizations have funded the realization of the
      tinytex             0.54     2024-11-01 [1] CRAN (R 4.4.1)
      tzdb                0.4.0    2023-05-12 [1] CRAN (R 4.4.1)
      units               0.8-5    2023-11-28 [1] CRAN (R 4.4.1)
-     usethis             3.0.0    2024-07-29 [1] CRAN (R 4.4.1)
+     usethis             3.1.0    2024-11-26 [1] CRAN (R 4.4.2)
      utf8                1.2.4    2023-10-22 [1] CRAN (R 4.4.1)
      uuid                1.2-1    2024-07-29 [1] CRAN (R 4.4.1)
      vctrs               0.6.5    2023-12-01 [1] CRAN (R 4.4.1)
