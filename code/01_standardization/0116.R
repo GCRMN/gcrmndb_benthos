@@ -38,7 +38,7 @@ data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 
 colnames(data_main) <- data_main[1,]
 
-data_main <- data_main %>% 
+data_main %>% 
   filter(row_number() != 1) %>% 
   pivot_longer(7:ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
   rename(locality = Site, year = Year, parentEventID = `TRANSECT NAME`) %>% 
