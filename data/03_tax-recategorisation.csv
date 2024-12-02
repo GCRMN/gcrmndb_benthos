@@ -949,6 +949,7 @@
 "discosoma";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";"Discosomidae";"Discosoma";NA;TRUE
 "discosoma sanctithomae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";"Discosomidae";"Rhodactis";"Rhodactis osculifera";TRUE
 "diseased coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"diseased corals";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "disidea ethera";NA;NA;NA;"Porifera";"Demospongiae";"Keratosa";"Dictyoceratida";"Dysideidae";"Dysidea";"Dysidea etheria";TRUE
 "distichopora";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Stylasteridae";"Distichopora";NA;TRUE
 "dityota pulchella";NA;NA;NA;NA;"Phaeophyceae";NA;"Dictyotales";"Dictyotaceae";"Dictyota";"Dictyota pulchella";TRUE
@@ -2163,6 +2164,7 @@
 "other invertebrates - zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "other inverts";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other lifeforms non coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"other live";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other live coral";"Hard coral";NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "other living organisms";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other macroalgae";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -2857,6 +2859,7 @@
 "talg error cdg sin definir";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "taonia";NA;NA;NA;"Ochrophyta";"Phaeophyceae";"Dictyotophycidae";"Dictyotales";"Dictyotaceae";"Taonia";NA;TRUE
 "tape";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"tape wand shadow";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "tapes/camera/fish";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "tedania tedania klausi";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Poecilosclerida";"Tedaniidae";"Tedania";"Tedania klausi";TRUE
 "terpios sponge";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Suberitida";"Suberitidae";"Terpios";NA;TRUE
