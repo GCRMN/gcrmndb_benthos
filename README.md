@@ -225,7 +225,7 @@ considered. The column names (except *aggregator*) correspond to
 |:--:|:---|:---|:--:|:--:|:--:|
 | 0001 | [USVI - Yawzi and Tektite](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1) | open | Rp. | 2022-02-21 | JW |
 | 0002 | [USVI - Random](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1091&revision=1) | open | Rp. | 2022-02-21 | JW |
-| 0003 | AIMS LTMP |  |  |  | JW |
+| 0003 | [AIMS](https://www.aims.gov.au/) | upon request | Sh. | 2024-12-04 | JW |
 | 0004 | [CRIOBE - MPA](https://observatoire.criobe.pf/wiki/tiki-index.php?page=AMP+Moorea&structure=SO+CORAIL) | upon request | Sh. | 2022-09-08 | JW |
 | 0005 | [CRIOBE - Polynesia Mana](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Transect+corallien+par+photo-quadrat&structure=SO+CORAIL&latest=1) | upon request | Sh. | 2024-02-06 | JW |
 | 0006 | [CRIOBE - Tiahura](https://observatoire.criobe.pf/wiki/tiki-index.php?page=Technique+d%27%C3%A9chantillonnage+Benthos+LTT&structure=SO+CORAIL&latest=1) | upon request | Sh. | 2022-12-31 | JW |
@@ -343,9 +343,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-02, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,961,372 observations** (*i.e* rows) representing **22,059
-sites** and **45,589 surveys**. The distribution of monitoring sites in
+On the 2024-12-04, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,759,961 observations** (*i.e* rows) representing **22,093
+sites** and **47,493 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -372,7 +372,7 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,313 |       5,687 |            4 |    1980    |   2023    |
+|            Australia |     1,347 |       7,591 |            4 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
 |            Caribbean |     8,681 |      16,475 |           45 |    1973    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
@@ -382,7 +382,7 @@ that differs from those of the other datasets.
 |                ROPME |       244 |         521 |           19 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    22,059 |      45,589 |          115 |    1973    |   2024    |
+| Global (all regions) |    22,093 |      47,493 |          115 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -395,7 +395,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,284 | 5,622 | 4 | 1980 | 2023 |
+| Australia | Australia | 1,318 | 7,526 | 4 | 1980 | 2024 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
 | Bahamas | Bahamas | 464 | 680 | 2 | 1999 | 2024 |
@@ -579,7 +579,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-02
+     date     2024-12-04
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
@@ -640,7 +640,7 @@ The following organizations have funded the realization of the
      htmlwidgets         1.6.4    2023-12-06 [1] CRAN (R 4.4.2)
      httpuv              1.6.15   2024-03-26 [1] CRAN (R 4.4.2)
      httr                1.4.7    2023-08-15 [1] CRAN (R 4.4.1)
-     httr2               1.0.6    2024-11-04 [1] CRAN (R 4.4.2)
+     httr2               1.0.7    2024-11-26 [1] CRAN (R 4.4.2)
      ids                 1.0.1    2017-05-31 [1] CRAN (R 4.4.1)
      ini                 0.3.1    2018-05-20 [1] CRAN (R 4.4.2)
      isoband             0.2.7    2022-12-20 [1] CRAN (R 4.4.1)
@@ -650,7 +650,7 @@ The following organizations have funded the realization of the
      KernSmooth          2.23-24  2024-05-17 [1] CRAN (R 4.4.2)
      knitr             * 1.49     2024-11-08 [1] CRAN (R 4.4.2)
      labeling            0.4.3    2023-08-29 [1] CRAN (R 4.4.0)
-     later               1.3.2    2023-12-06 [1] CRAN (R 4.4.2)
+     later               1.4.1    2024-11-27 [1] CRAN (R 4.4.2)
      lattice             0.22-6   2024-03-20 [1] CRAN (R 4.4.2)
      lazyeval            0.2.2    2019-03-15 [1] CRAN (R 4.4.2)
      leaflet             2.2.2    2024-03-26 [1] CRAN (R 4.4.2)
@@ -677,7 +677,7 @@ The following organizations have funded the realization of the
      prettyunits         1.2.0    2023-09-24 [1] CRAN (R 4.4.1)
      processx            3.8.4    2024-03-16 [1] CRAN (R 4.4.1)
      progress            1.2.3    2023-12-06 [1] CRAN (R 4.4.1)
-     promises            1.3.0    2024-04-05 [1] CRAN (R 4.4.2)
+     promises            1.3.2    2024-11-28 [1] CRAN (R 4.4.2)
      proxy               0.4-27   2022-06-09 [1] CRAN (R 4.4.1)
      ps                  1.8.1    2024-10-28 [1] CRAN (R 4.4.1)
      purrr             * 1.0.2    2023-08-10 [1] CRAN (R 4.4.1)
@@ -701,7 +701,7 @@ The following organizations have funded the realization of the
      sass                0.4.9    2024-03-15 [1] CRAN (R 4.4.1)
      scales              1.3.0    2023-11-28 [1] CRAN (R 4.4.1)
      selectr             0.4-2    2019-11-20 [1] CRAN (R 4.4.1)
-     sf                * 1.0-18   2024-10-11 [1] CRAN (R 4.4.1)
+     sf                * 1.0-19   2024-11-05 [1] CRAN (R 4.4.2)
      snakecase           0.11.1   2023-08-27 [1] CRAN (R 4.4.2)
      sp                  2.1-4    2024-04-30 [1] CRAN (R 4.4.2)
      stringi             1.8.4    2024-05-06 [1] CRAN (R 4.4.0)
