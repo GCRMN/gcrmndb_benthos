@@ -341,12 +341,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0116 | [SFS](https://fieldstudies.org/center/tci/) | upon request | Sh. | 2024-12-02 | JW |
 | 0117 | González Díaz et al. | upon request | Sh. | 2024-12-02 | JW |
 | 0118 | [Tebbett et al, 2022](https://doi.org/10.1016/j.marenvres.2021.105537) | upon request | Sh. | 2024-12-05 | JW |
+| 0119 | [UAE_2019_Mateos](https://dashboard.datamermaid.org/?project=UAE_2019_Mateos) | upon request | Me. | 2024-12-05 | JW |
+| 0120 | [Oman_2017_2020](https://dashboard.datamermaid.org/?project=Oman_2017_2020) | upon request | Me. | 2024-12-05 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-12-05, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,807,076 observations** (*i.e* rows) representing **22,112
-sites** and **47,588 surveys**. The distribution of monitoring sites in
+total of **19,807,725 observations** (*i.e* rows) representing **22,160
+sites** and **47,647 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -380,10 +382,10 @@ that differs from those of the other datasets.
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
 |              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
-|                ROPME |       244 |         521 |           19 |    1997    |   2024    |
+|                ROPME |       292 |         580 |           21 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
 |                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    22,112 |      47,588 |          116 |    1973    |   2024    |
+| Global (all regions) |    22,160 |      47,647 |          118 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -464,7 +466,7 @@ differs from those of the other datasets.
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 23 | 23 | 1 | 2011 | 2015 |
-| Oman | Oman | 86 | 229 | 7 | 2003 | 2022 |
+| Oman | Oman | 123 | 266 | 8 | 2003 | 2022 |
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
 | Panama | Panama | 125 | 250 | 3 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
@@ -487,7 +489,7 @@ differs from those of the other datasets.
 | Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 27 | 90 | 1 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
-| United Arab Emirates | United Arab Emirates | 47 | 128 | 10 | 2004 | 2024 |
+| United Arab Emirates | United Arab Emirates | 58 | 150 | 11 | 2004 | 2024 |
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
 | United Kingdom | British Virgin Islands | 20 | 66 | 1 | 1997 | 2012 |
