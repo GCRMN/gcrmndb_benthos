@@ -343,12 +343,21 @@ considered. The column names (except *aggregator*) correspond to
 | 0118 | [Tebbett et al, 2022](https://doi.org/10.1016/j.marenvres.2021.105537) | upon request | Sh. | 2024-12-05 | JW |
 | 0119 | [UAE_2019_Mateos](https://dashboard.datamermaid.org/?project=UAE_2019_Mateos) | upon request | Me. | 2024-12-05 | JW |
 | 0120 | [Oman_2017_2020](https://dashboard.datamermaid.org/?project=Oman_2017_2020) | upon request | Me. | 2024-12-05 | JW |
+| 0121 | [CORDIO (Kenya)](https://cordioea.net/) | upon request | Sh. | 2024-12-06 | JW |
+| 0122 | [A Rocha Kenya](https://www.arocha.or.ke/) | upon request | Sh. | 2024-12-06 | JW |
+| 0123 | [REEFolution](https://reefolution.org/) | upon request | Sh. | 2024-12-06 | JW |
+| 0124 | [KMFRI](https://kmfri.go.ke/) | upon request | Sh. | 2024-12-06 | JW |
+| 0125 | [WRTI](https://wrti.go.ke/) | upon request | Sh. | 2024-12-06 | JW |
+| 0126 | [Dahari](https://daharicomores.org/) | upon request | Sh. | 2024-12-06 | JW |
+| 0127 | Moheli MPA | upon request | Sh. | 2024-12-06 | JW |
+| 0128 | [AIDE](https://www.aide-comores.org/) | upon request | Sh. | 2024-12-06 | JW |
+| 0129 | [CORDIO (Comoros)](https://cordioea.net/) | upon request | Sh. | 2024-12-06 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-05, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,807,725 observations** (*i.e* rows) representing **22,160
-sites** and **47,647 surveys**. The distribution of monitoring sites in
+On the 2024-12-06, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,820,747 observations** (*i.e* rows) representing **22,296
+sites** and **47,844 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -384,8 +393,8 @@ that differs from those of the other datasets.
 |              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
 |                ROPME |       292 |         580 |           21 |    1997    |   2024    |
 |           South Asia |       165 |         237 |            2 |    1997    |   2023    |
-|                  WIO |       170 |         367 |            2 |    1997    |   2023    |
-| Global (all regions) |    22,160 |      47,647 |          118 |    1973    |   2024    |
+|                  WIO |       306 |         564 |           11 |    1997    |   2024    |
+| Global (all regions) |    22,296 |      47,844 |          127 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -411,6 +420,7 @@ differs from those of the other datasets.
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
 | China | China | 100 | 366 | 1 | 1997 | 2012 |
 | Colombia | Colombia | 188 | 403 | 5 | 1997 | 2024 |
+| Comores | Comores | 50 | 104 | 4 | 2017 | 2024 |
 | Costa Rica | Costa Rica | 85 | 116 | 3 | 2004 | 2023 |
 | Cuba | Cuba | 37 | 46 | 2 | 2001 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
@@ -444,7 +454,7 @@ differs from those of the other datasets.
 | Jamaica | Jamaica | 223 | 704 | 4 | 1998 | 2023 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
 | Jordan | Jordan | 3 | 3 | 1 | 2008 | 2008 |
-| Kenya | Kenya | 6 | 6 | 1 | 2003 | 2004 |
+| Kenya | Kenya | 92 | 99 | 6 | 2003 | 2023 |
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
@@ -582,7 +592,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-05
+     date     2024-12-06
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
