@@ -353,12 +353,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0128 | [AIDE](https://www.aide-comores.org/) | upon request | Sh. | 2024-12-06 | JW |
 | 0129 | [CORDIO (Comoros)](https://cordioea.net/) | upon request | Sh. | 2024-12-06 | JW |
 | 0130 | Alemu I | upon request | Sh. | 2024-12-09 | JW |
+| 0131 | [Maldives Resilient Reefs](https://www.maldivesresilientreefs.com/) | upon request | Sh. | 2024-12-09 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-12-09, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,824,460 observations** (*i.e* rows) representing **22,310
-sites** and **47,858 surveys**. The distribution of monitoring sites in
+total of **19,825,140 observations** (*i.e* rows) representing **22,327
+sites** and **47,894 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -393,9 +394,9 @@ that differs from those of the other datasets.
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
 |              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
 |                ROPME |       292 |         580 |           21 |    1997    |   2024    |
-|           South Asia |       165 |         237 |            2 |    1997    |   2023    |
+|           South Asia |       182 |         273 |            3 |    1997    |   2023    |
 |                  WIO |       306 |         564 |           11 |    1997    |   2024    |
-| Global (all regions) |    22,310 |      47,858 |          128 |    1973    |   2024    |
+| Global (all regions) |    22,327 |      47,894 |          129 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -462,7 +463,7 @@ differs from those of the other datasets.
 | Kuwait | Kuwait | 13 | 23 | 3 | 2006 | 2014 |
 | Madagascar | Madagascar | 43 | 55 | 1 | 2001 | 2019 |
 | Malaysia | Malaysia | 729 | 2,814 | 2 | 1997 | 2023 |
-| Maldives | Maldives | 159 | 231 | 2 | 1997 | 2023 |
+| Maldives | Maldives | 176 | 267 | 3 | 1997 | 2023 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 291 | 812 | 4 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
