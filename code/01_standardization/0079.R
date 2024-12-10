@@ -29,7 +29,7 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 # Data were manually copied from the xlsx file to a csv file because
 # reading xlsx file directly led to changes in percentage cover values
 
-data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
   select(data_path) %>% 
   pull() %>% 
@@ -52,4 +52,4 @@ data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 
 # 3. Remove useless objects ----
 
-rm(data_site, data_code, data_main)
+rm(data_site, data_code)

@@ -45,7 +45,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
                                                 "Sailfin" = "Sailfin Reef",
                                                 "Snapshot" = "Snap Shot",
                                                 "West Point" = "West Point",
-                                                "Westpoint" = "West Point"))) %>% 
+                                                "Westpoint" = "West Point")),
+         verbatimDepth = round(verbatimDepth*0.3048, 1)) %>% # Convert depth from feet to meters
   left_join(., data_site) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
