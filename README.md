@@ -355,12 +355,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0130 | Alemu I | upon request | Sh. | 2024-12-09 | JW |
 | 0131 | [Maldives Resilient Reefs](https://www.maldivesresilientreefs.com/) | upon request | Sh. | 2024-12-09 | JW |
 | 0132 | [Maldives Resilient Reefs (RC)](https://www.maldivesresilientreefs.com/) | upon request | Rc. | 2024-12-10 | JW |
+| 0133 | [Wilkinson et al, 2013](https://doi.org/10.1016/j.marpolbul.2013.02.040) | upon request | Sh. | 2024-12-12 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-10, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,951,828 observations** (*i.e* rows) representing **22,339
-sites** and **47,906 surveys**. The distribution of monitoring sites in
+On the 2024-12-12, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,952,249 observations** (*i.e* rows) representing **22,357
+sites** and **47,932 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -389,7 +390,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,366 |       7,686 |            5 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     8,695 |      16,489 |           46 |    1973    |   2024    |
+|            Caribbean |     8,713 |      16,515 |           47 |    1973    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -397,7 +398,7 @@ that differs from those of the other datasets.
 |                ROPME |       292 |         580 |           21 |    1997    |   2024    |
 |           South Asia |       194 |         285 |            4 |    1997    |   2024    |
 |                  WIO |       306 |         564 |           11 |    1997    |   2024    |
-| Global (all regions) |    22,339 |      47,906 |          130 |    1973    |   2024    |
+| Global (all regions) |    22,357 |      47,932 |          131 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -413,11 +414,11 @@ differs from those of the other datasets.
 | Australia | Australia | 1,337 | 7,621 | 5 | 1980 | 2024 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
-| Bahamas | Bahamas | 464 | 680 | 2 | 1999 | 2024 |
+| Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
 | Bahrain | Bahrain | 23 | 33 | 3 | 1997 | 2022 |
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
-| Barbados | Barbados | 78 | 345 | 2 | 1982 | 2022 |
-| Belize | Belize | 325 | 515 | 3 | 1997 | 2024 |
+| Barbados | Barbados | 80 | 349 | 3 | 1982 | 2022 |
+| Belize | Belize | 328 | 518 | 4 | 1985 | 2024 |
 | Brazil | Brazil | 138 | 189 | 2 | 2002 | 2012 |
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
@@ -454,7 +455,7 @@ differs from those of the other datasets.
 | Indonesia | Indonesia | 674 | 1,083 | 2 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
-| Jamaica | Jamaica | 223 | 704 | 4 | 1998 | 2023 |
+| Jamaica | Jamaica | 225 | 707 | 5 | 1986 | 2023 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
 | Jordan | Jordan | 3 | 3 | 1 | 2008 | 2008 |
 | Kenya | Kenya | 92 | 99 | 6 | 2003 | 2023 |
@@ -518,9 +519,9 @@ differs from those of the other datasets.
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
-| United States | Puerto Rico | 1,036 | 1,332 | 4 | 1999 | 2024 |
-| United States | United States | 1,661 | 3,911 | 7 | 1996 | 2024 |
-| United States | United States Virgin Islands | 2,532 | 3,500 | 5 | 1987 | 2024 |
+| United States | Puerto Rico | 1,038 | 1,336 | 5 | 1986 | 2024 |
+| United States | United States | 1,663 | 3,914 | 8 | 1986 | 2024 |
+| United States | United States Virgin Islands | 2,537 | 3,507 | 6 | 1986 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
 | Venezuela | Venezuela | 38 | 45 | 2 | 2004 | 2018 |
@@ -595,7 +596,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-10
+     date     2024-12-12
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
