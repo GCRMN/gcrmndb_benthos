@@ -356,12 +356,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0131 | [Maldives Resilient Reefs](https://www.maldivesresilientreefs.com/) | upon request | Sh. | 2024-12-09 | JW |
 | 0132 | [Maldives Resilient Reefs (RC)](https://www.maldivesresilientreefs.com/) | upon request | Rc. | 2024-12-10 | JW |
 | 0133 | [Wilkinson et al, 2013](https://doi.org/10.1016/j.marpolbul.2013.02.040) | upon request | Sh. | 2024-12-12 | JW |
+| 0134 | Kimberley Marine Parks | upon request | Sh. | 2024-12-13 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-12, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,952,249 observations** (*i.e* rows) representing **22,357
-sites** and **47,932 surveys**. The distribution of monitoring sites in
+On the 2024-12-13, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,991,090 observations** (*i.e* rows) representing **22,379
+sites** and **48,015 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -388,17 +389,17 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,366 |       7,686 |            5 |    1980    |   2024    |
+|            Australia |     1,387 |       7,765 |            6 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
 |            Caribbean |     8,713 |      16,515 |           47 |    1973    |   2024    |
-|                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
+|                  EAS |     3,002 |       6,503 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
 |              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
 |                ROPME |       292 |         580 |           21 |    1997    |   2024    |
 |           South Asia |       194 |         285 |            4 |    1997    |   2024    |
 |                  WIO |       306 |         564 |           11 |    1997    |   2024    |
-| Global (all regions) |    22,357 |      47,932 |          131 |    1973    |   2024    |
+| Global (all regions) |    22,379 |      48,015 |          132 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -411,7 +412,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,337 | 7,621 | 5 | 1980 | 2024 |
+| Australia | Australia | 1,358 | 7,700 | 6 | 1980 | 2024 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
 | Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
@@ -452,7 +453,7 @@ differs from those of the other datasets.
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
 | Honduras | Honduras | 378 | 668 | 2 | 1997 | 2023 |
 | India | India | 1 | 1 | 1 | 1998 | 1998 |
-| Indonesia | Indonesia | 674 | 1,083 | 2 | 1997 | 2024 |
+| Indonesia | Indonesia | 675 | 1,087 | 3 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 225 | 707 | 5 | 1986 | 2023 |
@@ -596,7 +597,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-12
+     date     2024-12-13
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
