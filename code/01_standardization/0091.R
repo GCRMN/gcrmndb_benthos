@@ -7,75 +7,51 @@ dataset <- "0091" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-## 2.1 AGRRA data version 1.0 ----
+## 2.1 Benthic cover 1.0 ----
 
 ### 2.1.1 Code data ----
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "code") %>% 
-  select(data_path) %>%
+  select(data_path) %>% 
   pull() %>% 
-  read.csv2() %>% 
-  mutate(organismID = str_remove_all(organismID, "% "))
+  read.csv2(.)
 
 ### 2.1.2 Main data ----
 
-data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+data_main_coral <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
-  select(data_path) %>%
   filter(row_number() == 1) %>% 
+  select(data_path) %>% 
   pull() %>% 
-  read_xlsx(., sheet = 2)
+  read_xlsx(., sheet = 2) %>% 
+  pivot_longer("ACER":ncol(.), names_to = "code", values_to = "measurementValue")
 
-### 2.1.3 Data detailed for hard corals ----
-
-data_hc <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+data_main_algae <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
-  select(data_path) %>%
   filter(row_number() == 2) %>% 
+  select(data_path) %>% 
   pull() %>% 
-  read_xlsx(., sheet = 2)
+  read_xlsx(., sheet = 2) %>% 
+  pivot_longer("NQ":ncol(.), names_to = "code", values_to = "measurementValue") %>% 
+  filter(!(code %in% c("NQ", "MH", "MI", "FH", "FMI", "CH", "CMI", "M")))
 
-### 2.1.4 Data detailed for invertebrates ----
-
-data_inv <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "main") %>% 
-  select(data_path) %>%
-  filter(row_number() == 2) %>% 
-  pull() %>% 
-  read_xlsx(., sheet = 3)
-
-### 2.1.5 Data detailed for macroalgae ----
-
-data_malg <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "main") %>% 
-  select(data_path) %>%
-  filter(row_number() == 2) %>% 
-  pull() %>% 
-  read_xlsx(., sheet = 4)
-
-### 2.1.6 Combine and export data ----
-
-data_main_1_0 <- data_main %>% 
-  select(-LC, -TOTAL, -AINV, -OINV, -CMA, -FMA) %>% 
-  left_join(., data_hc) %>% 
-  left_join(., data_inv) %>% 
-  left_join(., data_malg) %>% 
-  pivot_longer(15:ncol(.), values_to = "measurementValue", names_to = "code") %>%
+data_main_1_0 <- bind_rows(data_main_coral, data_main_algae) %>% 
   left_join(., data_code) %>% 
-  select(-code) %>% 
-  rename(locality = Code, parentEventID = Trans, recordedBy = Surveyor, eventDate = Date,
-         decimalLatitude = Latitude, decimalLongitude = Longitude, verbatimDepth = Depth) %>% 
-  select(locality, parentEventID, recordedBy, eventDate, decimalLatitude, decimalLongitude,
-         verbatimDepth, organismID, measurementValue)
+  mutate(locality = ifelse(is.na(Site), Code, Site)) %>% 
+  rename(decimalLatitude = Latitude, decimalLongitude = Longitude, verbatimDepth = Depth, eventDate = Date,
+         parentEventID = Trans, recordedBy = Surveyor, habitat = Zone) %>% 
+  select(-Batch, -Code, -Site, -Subregion, -Shelf, -Ecoregion, -Length, -code)
 
-## 2.2 AGRRA data version 2.0 ----
+rm(data_code, data_main_algae, data_main_coral)
+
+## 2.2 Benthic cover 2.0 ----
 
 ### 2.2.1 Site data ----
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "site") %>% 
-  select(data_path) %>%
+  select(data_path) %>% 
   pull() %>% 
   read_xlsx(.,
             sheet = "Overall") %>% 
@@ -85,19 +61,19 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 ### 2.2.2 Date data ----
 
 data_date <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "main") %>% 
-  select(data_path) %>%
-  filter(row_number() == 3) %>% 
-  pull() %>% 
-  read_xlsx(., sheet = "Overall") %>% 
+  filter(datasetID == dataset & data_type == "date") %>% 
+  select(data_path) %>% 
+  pull() %>%
+  read_xlsx(.,
+            sheet = "Overall") %>% 
   select(`Survey ID`, `Survey Name`, `Transect ID`,`Surveyor`, `Surveyed`)
 
 ### 2.2.3 Code data ----
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
-  select(data_path) %>%
   filter(row_number() == 3) %>% 
+  select(data_path) %>% 
   pull() %>% 
   read_xlsx(.,
             sheet = "Metadata",
@@ -105,26 +81,21 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
             col_names = c("code", "organismID"))
 
 data_code <- bind_rows(data_code, 
-                        # Generate newly dead equivalence codes
-                        data_code %>%
-                          filter(row_number() %in% 111:137) %>% 
-                          mutate(code = paste0("ND-", code),
-                                 organismID = paste0("Newly dead ", organismID))) %>% 
+                       # Generate newly dead equivalence codes
+                       data_code %>%
+                         filter(row_number() %in% 111:137) %>% 
+                         mutate(code = paste0("ND-", code),
+                                organismID = paste0("Newly dead ", organismID))) %>% 
   add_row(code = c("GORG", "SM", "DJOL"),
           organismID = c("Gorgoniidae", "Sand-Mud", NA_character_))
 
 ### 2.2.4 List of sheets to combine ----
 
-data_paths <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "main") %>% 
-  select(data_path) %>%
-  filter(row_number() == 3)
-
-list_sheets <- tibble(sheet = readxl::excel_sheets(as.character(data_paths[1,1])),
-                      path = as.character(data_paths[1,1])) %>% 
+list_sheets <- tibble(sheet = readxl::excel_sheets("data/01_raw-data/0091/2.0 BenthicCoverByTransect.xlsx"),
+                      path = as.character("data/01_raw-data/0091/2.0 BenthicCoverByTransect.xlsx")) %>% 
   filter(!(sheet %in% c("TermsOfUse", "Metadata", "Overall", "tNDCORAL")))
 
-### 2.2.5 Create a function to combine the sheets ----
+### 2.2.5 Create the function ----
 
 convert_data_091 <- function(index_i){
   
@@ -150,16 +121,18 @@ data_main_2_0 <- map_dfr(1:nrow(list_sheets), ~convert_data_091(.)) %>%
   select(-`Survey ID`, -`Transect Name`) %>% 
   mutate(eventDate = as.Date(eventDate))
 
-# 3. Combine 1.0 and 2.0 data ----
+rm(data_code, data_site, data_date, list_sheets, convert_data_091)
 
-bind_rows(data_main_1_0, data_main_2_0) %>%
+## 2.3 Combine and export data ----
+
+bind_rows(data_main_1_0, data_main_2_0) %>% 
   mutate(datasetID = dataset,
          year = year(eventDate),
          month = month(eventDate),
-         day = day(eventDate)) %>% 
+         day = day(eventDate),
+         samplingProtocol = "Point intersect transect, 10 m transect length, every 0.1 m") %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
-# 4. Remove useless objects ----
+# 3. Remove useless objects ----
 
-rm(data_code, data_hc, data_inv, data_main, data_malg, data_main_1_0, data_main_2_0,
-   data_paths, data_site, list_sheets, data_date, convert_data_091)
+rm(data_main_1_0, data_main_2_0)
