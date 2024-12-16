@@ -21,7 +21,11 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(locality = str_squish(locality),
          verbatimDepth = str_replace_all(verbatimDepth, c("Within 4 m of reef crest" = "4",
                                                           "~10 m depth" = "10")),
-         verbatimDepth = as.numeric(verbatimDepth))
+         verbatimDepth = as.numeric(verbatimDepth),
+         decimalLatitude = case_when(locality == "Berthier Is" ~ -14.4954825033352,
+                                     TRUE ~ decimalLatitude),
+         decimalLongitude = case_when(locality == "Berthier Is" ~ 124.994755514999,
+                                      TRUE ~ decimalLongitude))
 
 ## 2.2 Main data ----
 

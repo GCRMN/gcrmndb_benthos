@@ -361,7 +361,7 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-14, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2024-12-16, the `gcrmndb_benthos` synthetic dataset contains a
 total of **19,993,978 observations** (*i.e* rows) representing **22,454
 sites** and **48,090 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
@@ -390,10 +390,10 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,387 |       7,765 |            6 |    1980    |   2024    |
+|            Australia |     1,388 |       7,769 |            6 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
 |            Caribbean |     8,788 |      16,590 |           48 |    1973    |   2024    |
-|                  EAS |     3,002 |       6,503 |            6 |    1997    |   2024    |
+|                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
 |              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
@@ -413,7 +413,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,358 | 7,700 | 6 | 1980 | 2024 |
+| Australia | Australia | 1,359 | 7,704 | 6 | 1980 | 2024 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
 | Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
@@ -454,7 +454,7 @@ differs from those of the other datasets.
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
 | Honduras | Honduras | 378 | 668 | 2 | 1997 | 2023 |
 | India | India | 1 | 1 | 1 | 1998 | 1998 |
-| Indonesia | Indonesia | 675 | 1,087 | 3 | 1997 | 2024 |
+| Indonesia | Indonesia | 674 | 1,083 | 2 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 225 | 707 | 5 | 1986 | 2023 |
@@ -598,7 +598,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-14
+     date     2024-12-16
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
