@@ -358,12 +358,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0133 | [Wilkinson et al, 2013](https://doi.org/10.1016/j.marpolbul.2013.02.040) | upon request | Sh. | 2024-12-12 | JW |
 | 0134 | Kimberley Marine Parks | upon request | Sh. | 2024-12-13 | JW |
 | 0135 | Garza et al, 2022 | upon request | Sh. | 2024-12-14 | JW |
+| 0136 | Coral Sea Marine Park | upon request | Sh. | 2024-12-17 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-16, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,502,593 observations** (*i.e* rows) representing **23,459
-sites** and **49,376 surveys**. The distribution of monitoring sites in
+On the 2024-12-17, the `gcrmndb_benthos` synthetic dataset contains a
+total of **20,743,588 observations** (*i.e* rows) representing **23,697
+sites** and **49,819 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -390,17 +391,17 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,388 |       7,769 |            6 |    1980    |   2024    |
+|            Australia |     1,618 |       8,204 |            7 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
 |            Caribbean |     9,793 |      17,876 |           48 |    1973    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
-|              Pacific |     7,841 |      14,737 |           51 |    1987    |   2024    |
+|              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
 |                ROPME |       292 |         580 |           21 |    1997    |   2024    |
 |           South Asia |       194 |         285 |            4 |    1997    |   2024    |
 |                  WIO |       306 |         564 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,459 |      49,376 |          133 |    1973    |   2024    |
+| Global (all regions) |    23,697 |      49,819 |          134 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -413,7 +414,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 41 | 50 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,359 | 7,704 | 6 | 1980 | 2024 |
+| Australia | Australia | 1,597 | 8,147 | 7 | 1980 | 2024 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
 | Bahamas | Bahamas | 543 | 813 | 3 | 1986 | 2024 |
@@ -598,7 +599,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-16
+     date     2024-12-17
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
