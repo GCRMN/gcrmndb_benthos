@@ -360,12 +360,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0135 | Garza et al, 2022 | upon request | Sh. | 2024-12-14 | JW |
 | 0136 | Coral Sea Marine Park | upon request | Sh. | 2024-12-17 | JW |
 | 0137 | [Qatar_2014](https://dashboard.datamermaid.org/?project=Qatar_2014) | upon request | Me. | 2024-12-18 | JW |
+| 0138 | Hawkins and Roberts, 1995 | upon request | Sh. | 2024-12-18 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2024-12-18, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,743,621 observations** (*i.e* rows) representing **23,700
-sites** and **49,822 surveys**. The distribution of monitoring sites in
+total of **20,799,916 observations** (*i.e* rows) representing **23,700
+sites** and **49,832 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -394,7 +395,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,618 |       8,204 |            7 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     9,793 |      17,876 |           48 |    1973    |   2024    |
+|            Caribbean |     9,793 |      17,886 |           49 |    1973    |   2024    |
 |                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
@@ -402,7 +403,7 @@ that differs from those of the other datasets.
 |                ROPME |       295 |         583 |           22 |    1997    |   2024    |
 |           South Asia |       194 |         285 |            4 |    1997    |   2024    |
 |                  WIO |       306 |         564 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,700 |      49,822 |          135 |    1973    |   2024    |
+| Global (all regions) |    23,700 |      49,832 |          136 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -478,7 +479,7 @@ differs from those of the other datasets.
 | Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Netherlands | Bonaire | 154 | 618 | 6 | 1973 | 2023 |
 | Netherlands | Curaçao | 151 | 444 | 4 | 1973 | 2023 |
-| Netherlands | Saba | 30 | 58 | 2 | 1999 | 2024 |
+| Netherlands | Saba | 30 | 68 | 3 | 1994 | 2024 |
 | Netherlands | Sint-Eustatius | 37 | 72 | 3 | 1999 | 2023 |
 | Netherlands | Sint-Maarten | 14 | 61 | 3 | 1999 | 2024 |
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
@@ -608,7 +609,7 @@ The following organizations have funded the realization of the
      askpass             1.2.1    2024-10-04 [1] CRAN (R 4.4.1)
      backports           1.5.0    2024-05-23 [1] CRAN (R 4.4.0)
      base64enc           0.1-3    2015-07-28 [1] CRAN (R 4.4.0)
-     bit                 4.5.0    2024-09-20 [1] CRAN (R 4.4.1)
+     bit                 4.5.0.1  2024-12-03 [1] CRAN (R 4.4.2)
      bit64               4.5.2    2024-09-22 [1] CRAN (R 4.4.1)
      blob                1.2.4    2023-03-17 [1] CRAN (R 4.4.1)
      broom               1.0.7    2024-09-26 [1] CRAN (R 4.4.1)
@@ -622,12 +623,12 @@ The following organizations have funded the realization of the
      clipr               0.8.0    2022-02-22 [1] CRAN (R 4.4.1)
      colorspace          2.1-1    2024-07-26 [1] CRAN (R 4.4.1)
      conflicted          1.2.0    2023-02-01 [1] CRAN (R 4.4.1)
-     cpp11               0.5.0    2024-08-27 [1] CRAN (R 4.4.1)
+     cpp11               0.5.1    2024-12-04 [1] CRAN (R 4.4.2)
      crayon              1.5.3    2024-06-20 [1] CRAN (R 4.4.1)
      credentials         2.0.2    2024-10-04 [1] CRAN (R 4.4.2)
      crosstalk           1.2.1    2023-11-23 [1] CRAN (R 4.4.2)
      curl                6.0.1    2024-11-14 [1] CRAN (R 4.4.2)
-     data.table          1.16.2   2024-10-10 [1] CRAN (R 4.4.1)
+     data.table          1.16.4   2024-12-06 [1] CRAN (R 4.4.2)
      DBI                 1.2.3    2024-06-02 [1] CRAN (R 4.4.1)
      dbplyr              2.5.0    2024-03-19 [1] CRAN (R 4.4.1)
      desc                1.4.3    2023-12-10 [1] CRAN (R 4.4.2)
@@ -677,7 +678,7 @@ The following organizations have funded the realization of the
      leaflet             2.2.2    2024-03-26 [1] CRAN (R 4.4.2)
      leaflet.providers   2.0.0    2023-10-17 [1] CRAN (R 4.4.2)
      lifecycle           1.0.4    2023-11-07 [1] CRAN (R 4.4.1)
-     lubridate         * 1.9.3    2023-09-27 [1] CRAN (R 4.4.1)
+     lubridate         * 1.9.4    2024-12-08 [1] CRAN (R 4.4.2)
      magrittr            2.0.3    2022-03-30 [1] CRAN (R 4.4.1)
      MASS                7.3-61   2024-06-13 [1] CRAN (R 4.4.2)
      Matrix              1.7-1    2024-10-18 [1] CRAN (R 4.4.2)
@@ -688,9 +689,9 @@ The following organizations have funded the realization of the
      modelr              0.1.11   2023-03-22 [1] CRAN (R 4.4.1)
      munsell             0.5.1    2024-04-01 [1] CRAN (R 4.4.1)
      nlme                3.1-166  2024-08-14 [1] CRAN (R 4.4.2)
-     openssl             2.2.2    2024-09-20 [1] CRAN (R 4.4.1)
+     openssl             2.2.2    2024-09-20 [1] CRAN (R 4.4.2)
      openxlsx            4.2.7.1  2024-09-20 [1] CRAN (R 4.4.1)
-     pillar              1.9.0    2023-03-22 [1] CRAN (R 4.4.1)
+     pillar              1.10.0   2024-12-17 [1] CRAN (R 4.4.2)
      pkgconfig           2.0.3    2019-09-22 [1] CRAN (R 4.4.1)
      plotly              4.10.4   2024-01-13 [1] CRAN (R 4.4.2)
      png                 0.1-8    2022-11-29 [1] CRAN (R 4.4.0)
@@ -731,7 +732,7 @@ The following organizations have funded the realization of the
      sys                 3.4.3    2024-10-04 [1] CRAN (R 4.4.1)
      systemfonts         1.1.0    2024-05-15 [1] CRAN (R 4.4.1)
      terra               1.7-83   2024-10-14 [1] CRAN (R 4.4.2)
-     textshaping         0.4.0    2024-05-24 [1] CRAN (R 4.4.1)
+     textshaping         0.4.1    2024-12-06 [1] CRAN (R 4.4.2)
      tibble            * 3.2.1    2023-03-20 [1] CRAN (R 4.4.1)
      tidyr             * 1.3.1    2024-01-24 [1] CRAN (R 4.4.1)
      tidyselect          1.2.1    2024-03-11 [1] CRAN (R 4.4.1)
