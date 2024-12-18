@@ -359,12 +359,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0134 | Kimberley Marine Parks | upon request | Sh. | 2024-12-13 | JW |
 | 0135 | Garza et al, 2022 | upon request | Sh. | 2024-12-14 | JW |
 | 0136 | Coral Sea Marine Park | upon request | Sh. | 2024-12-17 | JW |
+| 0137 | [Qatar_2014](https://dashboard.datamermaid.org/?project=Qatar_2014) | upon request | Me. | 2024-12-18 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-17, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,743,588 observations** (*i.e* rows) representing **23,697
-sites** and **49,819 surveys**. The distribution of monitoring sites in
+On the 2024-12-18, the `gcrmndb_benthos` synthetic dataset contains a
+total of **20,743,621 observations** (*i.e* rows) representing **23,700
+sites** and **49,822 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -398,10 +399,10 @@ that differs from those of the other datasets.
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
 |              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
-|                ROPME |       292 |         580 |           21 |    1997    |   2024    |
+|                ROPME |       295 |         583 |           22 |    1997    |   2024    |
 |           South Asia |       194 |         285 |            4 |    1997    |   2024    |
 |                  WIO |       306 |         564 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,697 |      49,819 |          134 |    1973    |   2024    |
+| Global (all regions) |    23,700 |      49,822 |          135 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -488,7 +489,7 @@ differs from those of the other datasets.
 | Panama | Panama | 194 | 320 | 4 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
 | Philippines | Philippines | 842 | 1,136 | 3 | 1997 | 2023 |
-| Qatar | Qatar | 16 | 16 | 1 | 2015 | 2017 |
+| Qatar | Qatar | 19 | 19 | 2 | 2014 | 2017 |
 | Republic of Mauritius | Republic of Mauritius | 10 | 12 | 1 | 1999 | 2003 |
 | Saint Kitts and Nevis | Saint Kitts and Nevis | 38 | 55 | 2 | 2004 | 2024 |
 | Saint Lucia | Saint Lucia | 21 | 61 | 1 | 1999 | 2014 |
@@ -599,7 +600,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-17
+     date     2024-12-18
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
