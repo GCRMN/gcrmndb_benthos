@@ -362,12 +362,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0137 | [Qatar_2014](https://dashboard.datamermaid.org/?project=Qatar_2014) | upon request | Me. | 2024-12-18 | JW |
 | 0138 | Hawkins and Roberts, 1995 | upon request | Sh. | 2024-12-18 | JW |
 | 0139 | Raghunathan, 2022 | upon request | Sh. | 2025-01-02 | JW |
+| 0140 | Fairoz | upon request | Sh. | 2025-01-02 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-01-02, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,813,298 observations** (*i.e* rows) representing **23,746
-sites** and **50,096 surveys**. The distribution of monitoring sites in
+total of **20,813,820 observations** (*i.e* rows) representing **23,753
+sites** and **50,112 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -402,9 +403,9 @@ that differs from those of the other datasets.
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
 |              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
 |                ROPME |       295 |         583 |           22 |    1997    |   2024    |
-|           South Asia |       198 |         290 |            4 |    1997    |   2024    |
+|           South Asia |       205 |         306 |            5 |    1997    |   2024    |
 |                  WIO |       307 |         565 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,746 |      50,096 |          137 |    1973    |   2024    |
+| Global (all regions) |    23,753 |      50,112 |          138 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -502,7 +503,7 @@ differs from those of the other datasets.
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
 | Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 5 | 6 | 1 | 2001 | 2005 |
-| Sri Lanka | Sri Lanka | 3 | 3 | 1 | 2003 | 2003 |
+| Sri Lanka | Sri Lanka | 10 | 19 | 2 | 2003 | 2023 |
 | Sudan | Sudan | 11 | 14 | 1 | 2004 | 2009 |
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
 | Tanzania | Tanzania | 18 | 30 | 2 | 1997 | 2012 |
