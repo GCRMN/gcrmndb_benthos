@@ -361,12 +361,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0136 | Coral Sea Marine Park | upon request | Sh. | 2024-12-17 | JW |
 | 0137 | [Qatar_2014](https://dashboard.datamermaid.org/?project=Qatar_2014) | upon request | Me. | 2024-12-18 | JW |
 | 0138 | Hawkins and Roberts, 1995 | upon request | Sh. | 2024-12-18 | JW |
+| 0139 | Raghunathan, 2022 | upon request | Sh. | 2025-01-02 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2024-12-18, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,799,916 observations** (*i.e* rows) representing **23,700
-sites** and **49,832 surveys**. The distribution of monitoring sites in
+On the 2025-01-02, the `gcrmndb_benthos` synthetic dataset contains a
+total of **20,813,298 observations** (*i.e* rows) representing **23,746
+sites** and **50,096 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -393,17 +394,17 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,618 |       8,204 |            7 |    1980    |   2024    |
+|            Australia |     1,618 |       8,229 |            7 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     9,793 |      17,886 |           49 |    1973    |   2024    |
-|                  EAS |     3,001 |       6,499 |            5 |    1997    |   2024    |
+|            Caribbean |     9,794 |      17,901 |           49 |    1973    |   2024    |
+|                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
-|               PERSGA |       249 |         564 |            2 |    1997    |   2024    |
+|               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
 |              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
 |                ROPME |       295 |         583 |           22 |    1997    |   2024    |
-|           South Asia |       194 |         285 |            4 |    1997    |   2024    |
-|                  WIO |       306 |         564 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,700 |      49,832 |          136 |    1973    |   2024    |
+|           South Asia |       198 |         290 |            4 |    1997    |   2024    |
+|                  WIO |       307 |         565 |           11 |    1997    |   2024    |
+| Global (all regions) |    23,746 |      50,096 |          137 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -416,7 +417,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 41 | 50 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,597 | 8,147 | 7 | 1980 | 2024 |
+| Australia | Australia | 1,597 | 8,172 | 7 | 1980 | 2024 |
 | Australia | Christmas Island | 16 | 30 | 2 | 2003 | 2010 |
 | Australia | Cocos Islands | 20 | 49 | 1 | 1997 | 2008 |
 | Bahamas | Bahamas | 543 | 813 | 3 | 1986 | 2024 |
@@ -434,10 +435,10 @@ differs from those of the other datasets.
 | Cuba | Cuba | 196 | 205 | 3 | 1999 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 31 | 46 | 2 | 2004 | 2018 |
-| Dominican Republic | Dominican Republic | 402 | 628 | 5 | 1999 | 2024 |
+| Dominican Republic | Dominican Republic | 402 | 636 | 5 | 1999 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
 | Ecuador | Galapagos | 69 | 69 | 1 | 2008 | 2012 |
-| Egypt | Egypt | 181 | 487 | 2 | 1997 | 2024 |
+| Egypt | Egypt | 182 | 491 | 2 | 1997 | 2024 |
 | Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
 | Federal Republic of Somalia | Federal Republic of Somalia | 1 | 1 | 1 | 2005 | 2005 |
 | Fiji | Fiji | 654 | 1,001 | 12 | 1997 | 2024 |
@@ -445,19 +446,20 @@ differs from those of the other datasets.
 | France | Europa Island | 1 | 1 | 1 | 2002 | 2002 |
 | France | French Polynesia | 229 | 2,191 | 8 | 1987 | 2024 |
 | France | Guadeloupe | 27 | 191 | 4 | 2002 | 2023 |
-| France | Martinique | 22 | 38 | 2 | 2003 | 2024 |
+| France | Martinique | 22 | 41 | 2 | 2003 | 2024 |
 | France | Mayotte | 20 | 87 | 1 | 2003 | 2017 |
 | France | New Caledonia | 873 | 3,616 | 9 | 1997 | 2023 |
 | France | Réunion | 32 | 133 | 1 | 2003 | 2016 |
 | France | Saint-Barthélemy | 4 | 41 | 2 | 2002 | 2020 |
 | France | Wallis and Futuna | 12 | 12 | 1 | 2019 | 2019 |
-| Grenada | Grenada | 99 | 236 | 3 | 2004 | 2024 |
+| Grenada | Grenada | 99 | 239 | 3 | 2004 | 2024 |
 | Guatemala | Guatemala | 24 | 49 | 2 | 2006 | 2023 |
 | Haiti | Haiti | 96 | 109 | 2 | 2003 | 2018 |
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
-| Honduras | Honduras | 389 | 737 | 2 | 1997 | 2023 |
+| Honduras | Honduras | 390 | 738 | 2 | 1997 | 2024 |
+| India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
 | India | India | 1 | 1 | 1 | 1998 | 1998 |
-| Indonesia | Indonesia | 674 | 1,083 | 2 | 1997 | 2024 |
+| Indonesia | Indonesia | 676 | 1,123 | 2 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 303 | 785 | 5 | 1986 | 2023 |
@@ -469,12 +471,12 @@ differs from those of the other datasets.
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
 | Kuwait | Kuwait | 13 | 23 | 3 | 2006 | 2014 |
 | Madagascar | Madagascar | 43 | 55 | 1 | 2001 | 2019 |
-| Malaysia | Malaysia | 729 | 2,814 | 2 | 1997 | 2023 |
-| Maldives | Maldives | 188 | 279 | 4 | 1997 | 2024 |
+| Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
+| Maldives | Maldives | 192 | 284 | 4 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 503 | 1,075 | 5 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
-| Mozambique | Mozambique | 16 | 18 | 2 | 1997 | 2023 |
+| Mozambique | Mozambique | 17 | 19 | 2 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
 | Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Netherlands | Bonaire | 154 | 618 | 6 | 1973 | 2023 |
@@ -496,7 +498,7 @@ differs from those of the other datasets.
 | Saint Lucia | Saint Lucia | 21 | 61 | 1 | 1999 | 2014 |
 | Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 45 | 63 | 2 | 1999 | 2024 |
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
-| Saudi Arabia | Saudi Arabia | 26 | 40 | 2 | 1997 | 2024 |
+| Saudi Arabia | Saudi Arabia | 27 | 42 | 2 | 1997 | 2024 |
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
 | Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 5 | 6 | 1 | 2001 | 2005 |
@@ -504,7 +506,7 @@ differs from those of the other datasets.
 | Sudan | Sudan | 11 | 14 | 1 | 2004 | 2009 |
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
 | Tanzania | Tanzania | 18 | 30 | 2 | 1997 | 2012 |
-| Thailand | Thailand | 150 | 247 | 1 | 1998 | 2023 |
+| Thailand | Thailand | 150 | 248 | 1 | 1998 | 2024 |
 | Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 41 | 104 | 2 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
@@ -594,14 +596,14 @@ The following organizations have funded the realization of the
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.4.2 (2024-10-31 ucrt)
-     os       Windows 10 x64 (build 18363)
+     os       Windows 11 x64 (build 22631)
      system   x86_64, mingw32
      ui       RTerm
      language (EN)
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2024-12-18
+     date     2025-01-02
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
