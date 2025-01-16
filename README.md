@@ -366,12 +366,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0141 | SDMRI | upon request | Sh. | 2025-01-09 | JW |
 | 0142 | [Benkwitt et al. (a)](https://www.science.org/doi/10.1126/sciadv.adj0390) | upon request | Sh. | 2025-01-12 | JW |
 | 0143 | Benkwitt et al. (b) | upon request | Sh. | 2025-01-12 | JW |
+| 0144 | [UAE_2006-2014](https://dashboard.datamermaid.org/?project=UAE_2006-2014) | upon request | Me. | 2025-01-16 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-01-12, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,894,464 observations** (*i.e* rows) representing **23,862
-sites** and **51,655 surveys**. The distribution of monitoring sites in
+On the 2025-01-16, the `gcrmndb_benthos` synthetic dataset contains a
+total of **20,894,970 observations** (*i.e* rows) representing **23,877
+sites** and **51,701 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -405,10 +406,10 @@ that differs from those of the other datasets.
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
 |              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
-|                ROPME |       295 |         583 |           22 |    1997    |   2024    |
+|                ROPME |       310 |         629 |           23 |    1997    |   2024    |
 |           South Asia |       314 |       1,849 |            8 |    1997    |   2024    |
 |                  WIO |       307 |         565 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,862 |      51,655 |          141 |    1973    |   2024    |
+| Global (all regions) |    23,877 |      51,701 |          142 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -515,7 +516,7 @@ differs from those of the other datasets.
 | Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 41 | 104 | 2 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
-| United Arab Emirates | United Arab Emirates | 58 | 150 | 11 | 2004 | 2024 |
+| United Arab Emirates | United Arab Emirates | 73 | 196 | 12 | 2004 | 2024 |
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
 | United Kingdom | British Virgin Islands | 26 | 72 | 2 | 1997 | 2012 |
@@ -608,7 +609,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-01-12
+     date     2025-01-16
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
