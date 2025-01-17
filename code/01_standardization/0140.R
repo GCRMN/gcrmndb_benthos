@@ -51,19 +51,18 @@ map_dfr(1:nrow(data_path), ~combine_0140(i = .)) %>%
                                    measurementValue >= 75 & measurementValue <= 94.5 ~ 4,
                                    TRUE ~ NA),
            code = str_replace_all(code, "NIC", "NIA")) %>% 
-  group_by(locality, decimalLatitude, decimalLongitude, verbatimDepth, parentEventID, eventDate, code) %>% 
+  group_by(locality, decimalLatitude, decimalLongitude, verbatimDepth, parentEventID, eventDate, code, year) %>% 
   count() %>% 
   ungroup() %>% 
   # Generate 0 values
   tidyr::complete(code, nesting(locality, parentEventID, eventDate,
-                                decimalLatitude, decimalLongitude, verbatimDepth),
+                                decimalLatitude, decimalLongitude, verbatimDepth, year),
                   fill = list(n = 0)) %>% 
-  group_by(locality, decimalLatitude, decimalLongitude, verbatimDepth, parentEventID, eventDate) %>% 
+  group_by(locality, decimalLatitude, decimalLongitude, verbatimDepth, parentEventID, eventDate, year) %>% 
   mutate(total = sum(n)) %>% 
   ungroup() %>% 
   mutate(measurementValue = (n*100)/total,
          datasetID = dataset,
-         year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate),
          samplingProtocol = "Point intersect transect, 10 m transect length, every 50 cm") %>% 
