@@ -63,12 +63,29 @@ convert_data_080 <- function(index_i, sheet_i = "cobertura"){
   
   data_files_i <- data_files[index_i]
   
+  if(index_i != 8){ # Expressed in percentage
+  
   data <- read_xlsx(data_files_i, sheet = sheet_i) %>% 
     pivot_longer("Acropora cervicornis":ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
     filter(!(organismID %in% c("Cobertura alga", "Cobertura coral vivo", "Suma"))) %>% 
     select(Site, Transect, organismID, measurementValue) %>% 
     rename(locality = Site, parentEventID = Transect) %>% 
     mutate(time = str_split_fixed(data_files_i, n = 5, pattern = "_")[,3])
+  
+  }else{ # Expressed in number of points
+    
+    data <- read_xlsx(data_files_i, sheet = 1) %>% 
+      pivot_longer("Acropora cervicornis":ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
+      select(Site, Transect, organismID, measurementValue) %>% 
+      rename(locality = Site, parentEventID = Transect) %>% 
+      group_by(locality, parentEventID) %>% 
+      mutate(total = sum(measurementValue)) %>% 
+      ungroup() %>% 
+      mutate(measurementValue = (measurementValue*100)/total,
+             time = str_split_fixed(data_files_i, n = 5, pattern = "_")[,3]) %>% 
+      select(-total)
+    
+  }
   
   return(data)
   
