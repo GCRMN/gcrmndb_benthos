@@ -12,6 +12,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(data_path) %>% 
   pull() %>% 
   read_xlsx(.) %>% 
+  mutate(across(c(Latitud, Longitud), ~round(.x, 4))) %>% # Correct issue of slightly different coordinates
   rename(locality = Site, decimalLatitude = Latitud, decimalLongitude = Longitud,
          verbatimDepth = 'Average Depth (m)', day = Day, month = Month, year = Year,
          parentEventID = Transect, eventID = Image, organismID = 'spp Name',
