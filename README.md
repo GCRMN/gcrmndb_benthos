@@ -367,12 +367,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0142 | [Benkwitt et al. (a)](https://www.science.org/doi/10.1126/sciadv.adj0390) | upon request | Sh. | 2025-01-12 | JW |
 | 0143 | Benkwitt et al. (b) | upon request | Sh. | 2025-01-12 | JW |
 | 0144 | [UAE_2006-2014](https://dashboard.datamermaid.org/?project=UAE_2006-2014) | upon request | Me. | 2025-01-16 | JW |
+| 0145 | Steneck and Torres | upon request | Sh. | 2025-01-20 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-01-19, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,912,031 observations** (*i.e* rows) representing **23,877
-sites** and **51,729 surveys**. The distribution of monitoring sites in
+On the 2025-01-21, the `gcrmndb_benthos` synthetic dataset contains a
+total of **21,017,409 observations** (*i.e* rows) representing **23,645
+sites** and **51,555 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -401,7 +402,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,618 |       8,229 |            7 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     9,794 |      17,916 |           49 |    1973    |   2024    |
+|            Caribbean |     9,562 |      17,742 |           50 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
@@ -409,7 +410,7 @@ that differs from those of the other datasets.
 |                ROPME |       310 |         629 |           23 |    1997    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       307 |         565 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,877 |      51,729 |          142 |    1973    |   2024    |
+| Global (all regions) |    23,645 |      51,555 |          143 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -440,7 +441,7 @@ differs from those of the other datasets.
 | Cuba | Cuba | 196 | 205 | 3 | 1999 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 31 | 46 | 2 | 2004 | 2018 |
-| Dominican Republic | Dominican Republic | 402 | 651 | 5 | 1999 | 2024 |
+| Dominican Republic | Dominican Republic | 157 | 414 | 5 | 1999 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
 | Ecuador | Galapagos | 69 | 69 | 1 | 2008 | 2012 |
 | Egypt | Egypt | 182 | 491 | 2 | 1997 | 2024 |
@@ -520,7 +521,7 @@ differs from those of the other datasets.
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
 | United Kingdom | British Virgin Islands | 26 | 72 | 2 | 1997 | 2012 |
-| United Kingdom | Cayman Islands | 57 | 164 | 4 | 1997 | 2024 |
+| United Kingdom | Cayman Islands | 70 | 227 | 5 | 1997 | 2024 |
 | United Kingdom | Montserrat | 87 | 109 | 2 | 2005 | 2017 |
 | United Kingdom | Pitcairn | 6 | 12 | 2 | 2009 | 2023 |
 | United Kingdom | Turks and Caicos Islands | 77 | 134 | 4 | 1999 | 2023 |
@@ -609,7 +610,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-01-19
+     date     2025-01-21
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
