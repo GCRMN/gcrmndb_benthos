@@ -7,7 +7,7 @@ dataset <- "0087" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
   select(data_path) %>% 
   pull() %>% 
@@ -40,6 +40,13 @@ data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(datasetID = dataset,
          year = year(eventDate),
          month = month(eventDate),
-         day = day(eventDate)) %>% 
+         day = day(eventDate),
+         # Correct site coordinates (based on email from data owner)
+         decimalLatitude = case_when(locality == "Petite-Terre - NE Passe" ~ 16.17443,
+                                     locality == "Petite-Terre - Passe" ~ 16.17427,
+                                     TRUE ~ NA),
+         decimalLongitude = case_when(locality == "Petite-Terre - NE Passe" ~ -61.10583,
+                                      locality == "Petite-Terre - Passe" ~ -61.10637,
+                                      TRUE ~ NA)) %>% 
   filter(organismID != "") %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
