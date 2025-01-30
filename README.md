@@ -373,12 +373,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0148 | Maréchal et al. | upon request | Sh. | 2025-01-22 | JW |
 | 0149 | [Mallela 2007](https://doi.org/10.18475/cjos.v46i1.a10) | upon request | Sh. | 2025-01-24 | JW |
 | 0150 | Mallela CI-CKI | upon request | Sh. | 2025-01-29 | JW |
+| 0151 | [pre-NCRMP](https://doi.org/10.25921/rt0s-ty25) | open | Rp. | 2025-01-30 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-01-29, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,112,824 observations** (*i.e* rows) representing **23,709
-sites** and **51,795 surveys**. The distribution of monitoring sites in
+On the 2025-01-30, the `gcrmndb_benthos` synthetic dataset contains a
+total of **21,166,943 observations** (*i.e* rows) representing **29,071
+sites** and **57,190 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -407,7 +408,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,634 |       8,319 |            8 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |     9,610 |      17,892 |           55 |    1973    |   2024    |
+|            Caribbean |    14,972 |      23,287 |           56 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
@@ -415,7 +416,7 @@ that differs from those of the other datasets.
 |                ROPME |       310 |         629 |           23 |    1997    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       307 |         565 |           11 |    1997    |   2024    |
-| Global (all regions) |    23,709 |      51,795 |          149 |    1973    |   2024    |
+| Global (all regions) |    29,071 |      57,190 |          150 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -538,9 +539,9 @@ differs from those of the other datasets.
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
-| United States | Puerto Rico | 1,055 | 1,353 | 6 | 1986 | 2024 |
-| United States | United States | 1,734 | 3,985 | 9 | 1986 | 2024 |
-| United States | United States Virgin Islands | 2,551 | 3,525 | 7 | 1986 | 2024 |
+| United States | Puerto Rico | 2,973 | 3,284 | 7 | 1986 | 2024 |
+| United States | United States | 1,856 | 4,108 | 10 | 1986 | 2024 |
+| United States | United States Virgin Islands | 5,873 | 6,866 | 8 | 1986 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
 | Venezuela | Venezuela | 50 | 57 | 3 | 1999 | 2018 |
@@ -615,7 +616,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-01-29
+     date     2025-01-30
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
