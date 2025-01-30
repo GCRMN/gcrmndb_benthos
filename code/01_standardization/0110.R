@@ -40,7 +40,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          samplingProtocol = "Point intercept transect") %>% 
   select(locality, parentEventID, year, parentEventID, organismID, measurementValue, datasetID, samplingProtocol) %>% 
   left_join(., data_site) %>% 
-  mutate(locality = str_remove_all(locality, " \\(PNN Corales del Rosario y San Bernardo\\)")) %>% 
+  mutate(locality = str_remove_all(locality, " \\(PNN Corales del Rosario y San Bernardo\\)"),
+         organismID = ifelse(organismID == "Turbinaria sp.", "Algae - Turbinaria sp.", organismID)) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----

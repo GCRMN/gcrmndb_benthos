@@ -71,7 +71,8 @@ map_dfr(1:nrow(data_paths), ~convert_data_086(index_i = .)) %>%
          parentEventID = str_split_fixed(eventID, "_|\\.", 8)[,6],
          parentEventID = as.numeric(str_remove_all(parentEventID, "TR")),
          eventID = str_split_fixed(eventID, "_|\\.", 8)[,7],
-         eventID = as.numeric(str_remove_all(eventID, "FC"))) %>% 
+         eventID = as.numeric(str_remove_all(eventID, "FC")),
+         organismID = ifelse(organismID == "Turbinaria sp.", "Algae - Turbinaria sp.", organismID)) %>% 
   select(-path) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 

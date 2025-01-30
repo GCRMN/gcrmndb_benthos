@@ -110,7 +110,8 @@ map_dfr(1:7, ~convert_data_080(index_i = .)) %>%
                               locality == "Palmata" ~ "Palmatas",
                               str_detect(locality, "Dominicus") == TRUE ~ "Dominicus Reef",
                               str_detect(locality, "Fundemar|FUNDEMAR") == TRUE ~ "Vivero FUNDEMAR",
-                              TRUE ~ locality)) %>% 
+                              TRUE ~ locality),
+         organismID = ifelse(organismID == "Turbinaria sp.", "Algae - Turbinaria sp.", organismID)) %>% 
   left_join(., data_site) %>% 
   left_join(., data_date) %>%
   select(-time) %>% 

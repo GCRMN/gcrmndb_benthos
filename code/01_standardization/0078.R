@@ -23,6 +23,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          datasetID = dataset,
          samplingProtocol	= "Photo-quadrat") %>% 
   group_by(locality, decimalLatitude, decimalLongitude, parentEventID, eventDate) %>% 
-  mutate(eventID = as.numeric(as.factor(eventID))) %>% 
+  mutate(eventID = as.numeric(as.factor(eventID)),
+         organismID = ifelse(organismID == "Turbinaria sp.", "Algae - Turbinaria sp.", organismID)) %>% 
   ungroup() %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
