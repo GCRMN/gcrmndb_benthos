@@ -108,7 +108,7 @@ rm(current_unique_organismID, old_unique_organismID)
 # ---------------------------------------------------------------------------------------------- #
 # /!\          Before to run the next chunk code, fill the exported csv file:                /!\ #
 # /!\          Manually complete empty tax. variables for each unique organismID             /!\ #
-# /!\  The text of the column "organismID" must not be changed: it's the grouping variable   /!\ #
+# /!\  The text of the column "organismID" must not be changed: it's the joining variable    /!\ #
 # ---------------------------------------------------------------------------------------------- #
 
 ```
