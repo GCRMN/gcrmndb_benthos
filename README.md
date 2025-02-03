@@ -374,12 +374,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0149 | [Mallela 2007](https://doi.org/10.18475/cjos.v46i1.a10) | upon request | Sh. | 2025-01-24 | JW |
 | 0150 | Mallela CI-CKI | upon request | Sh. | 2025-01-29 | JW |
 | 0151 | [pre-NCRMP](https://doi.org/10.25921/rt0s-ty25) | open | Rp. | 2025-01-30 | JW |
+| 0152 | Forrester | upon request | Sh. | 2025-02-03 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-01-30, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,166,943 observations** (*i.e* rows) representing **29,071
-sites** and **57,190 surveys**. The distribution of monitoring sites in
+On the 2025-02-03, the `gcrmndb_benthos` synthetic dataset contains a
+total of **21,191,773 observations** (*i.e* rows) representing **29,094
+sites** and **57,669 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -408,7 +409,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,634 |       8,319 |            8 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    14,972 |      23,287 |           56 |    1973    |   2024    |
+|            Caribbean |    14,995 |      23,766 |           57 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
@@ -416,7 +417,7 @@ that differs from those of the other datasets.
 |                ROPME |       310 |         629 |           23 |    1997    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       307 |         565 |           11 |    1997    |   2024    |
-| Global (all regions) |    29,071 |      57,190 |          150 |    1973    |   2024    |
+| Global (all regions) |    29,094 |      57,669 |          151 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -457,12 +458,12 @@ differs from those of the other datasets.
 | France | Collectivity of Saint Martin | 12 | 83 | 2 | 2007 | 2022 |
 | France | Europa Island | 1 | 1 | 1 | 2002 | 2002 |
 | France | French Polynesia | 229 | 2,191 | 8 | 1987 | 2024 |
-| France | Guadeloupe | 27 | 191 | 4 | 2002 | 2023 |
-| France | Martinique | 27 | 120 | 3 | 2001 | 2024 |
+| France | Guadeloupe | 27 | 209 | 4 | 2002 | 2024 |
+| France | Martinique | 42 | 323 | 3 | 2001 | 2024 |
 | France | Mayotte | 20 | 87 | 1 | 2003 | 2017 |
 | France | New Caledonia | 873 | 3,616 | 9 | 1997 | 2023 |
 | France | Réunion | 32 | 133 | 1 | 2003 | 2016 |
-| France | Saint-Barthélemy | 4 | 41 | 2 | 2002 | 2020 |
+| France | Saint-Barthélemy | 4 | 43 | 2 | 2002 | 2024 |
 | France | Wallis and Futuna | 12 | 12 | 1 | 2019 | 2019 |
 | Grenada | Grenada | 99 | 239 | 3 | 2004 | 2024 |
 | Guatemala | Guatemala | 24 | 49 | 2 | 2006 | 2023 |
@@ -526,7 +527,7 @@ differs from those of the other datasets.
 | United Arab Emirates | United Arab Emirates | 73 | 196 | 12 | 2004 | 2024 |
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
-| United Kingdom | British Virgin Islands | 26 | 72 | 2 | 1997 | 2012 |
+| United Kingdom | British Virgin Islands | 34 | 328 | 3 | 1992 | 2024 |
 | United Kingdom | Cayman Islands | 70 | 227 | 5 | 1997 | 2024 |
 | United Kingdom | Montserrat | 87 | 109 | 2 | 2005 | 2017 |
 | United Kingdom | Pitcairn | 6 | 12 | 2 | 2009 | 2023 |
@@ -616,7 +617,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-01-30
+     date     2025-02-03
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
 
     ─ Packages ───────────────────────────────────────────────────────────────────
