@@ -375,12 +375,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0150 | Mallela CI-CKI | upon request | Sh. | 2025-01-29 | JW |
 | 0151 | [pre-NCRMP](https://doi.org/10.25921/rt0s-ty25) | open | Rp. | 2025-01-30 | JW |
 | 0152 | Forrester | upon request | Sh. | 2025-02-03 | JW |
+| 0154 | McField, 1997 | upon request | Sh. | 2025-02-03 | JW |
+| 0155 | MCField, 1999 | upon request | Sh. | 2025-02-03 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-02-03, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,191,773 observations** (*i.e* rows) representing **29,094
-sites** and **57,669 surveys**. The distribution of monitoring sites in
+total of **21,199,487 observations** (*i.e* rows) representing **29,106
+sites** and **57,687 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -409,7 +411,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,634 |       8,319 |            8 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    14,995 |      23,766 |           57 |    1973    |   2024    |
+|            Caribbean |    15,007 |      23,784 |           59 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
@@ -417,7 +419,7 @@ that differs from those of the other datasets.
 |                ROPME |       310 |         629 |           23 |    1997    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       307 |         565 |           11 |    1997    |   2024    |
-| Global (all regions) |    29,094 |      57,669 |          151 |    1973    |   2024    |
+| Global (all regions) |    29,106 |      57,687 |          153 |    1973    |   2024    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -437,7 +439,7 @@ differs from those of the other datasets.
 | Bahrain | Bahrain | 23 | 33 | 3 | 1997 | 2022 |
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
 | Barbados | Barbados | 80 | 349 | 3 | 1982 | 2022 |
-| Belize | Belize | 472 | 760 | 4 | 1985 | 2024 |
+| Belize | Belize | 484 | 778 | 6 | 1985 | 2024 |
 | Brazil | Brazil | 138 | 189 | 2 | 2002 | 2012 |
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
