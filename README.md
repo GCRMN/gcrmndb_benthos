@@ -375,6 +375,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0150 | Mallela CI-CKI | upon request | Sh. | 2025-01-29 | JW |
 | 0151 | [pre-NCRMP](https://doi.org/10.25921/rt0s-ty25) | open | Rp. | 2025-01-30 | JW |
 | 0152 | Forrester | upon request | Sh. | 2025-02-03 | JW |
+| 0153 | Iberostar | upon request | Sh. | 2025-02-12 | JW |
 | 0154 | McField, 1997 | upon request | Sh. | 2025-02-03 | JW |
 | 0155 | McField, 1999 | upon request | Sh. | 2025-02-03 | JW |
 | 0156 | [Al-Abdulkader et al, 2019](https://www.researchgate.net/publication/334811093_Chapter_310_Coral_Reef_Ecosystem_-The_Hermatypic_Scleractinian_Hard_Corals) | open | Ar. | 2025-02-10 | JW |
@@ -387,9 +388,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-02-10, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,201,226 observations** (*i.e* rows) representing **29,235
-sites** and **57,985 surveys**. The distribution of monitoring sites in
+On the 2025-02-12, the `gcrmndb_benthos` synthetic dataset contains a
+total of **21,203,822 observations** (*i.e* rows) representing **29,240
+sites** and **58,004 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -418,7 +419,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,634 |       8,319 |            8 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    15,007 |      23,784 |           59 |    1973    |   2024    |
+|            Caribbean |    15,012 |      23,803 |           60 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
@@ -426,7 +427,7 @@ that differs from those of the other datasets.
 |                ROPME |       331 |         784 |           25 |    1985    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    29,235 |      57,985 |          160 |    1973    |   2025    |
+| Global (all regions) |    29,240 |      58,004 |          161 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -457,7 +458,7 @@ differs from those of the other datasets.
 | Cuba | Cuba | 196 | 205 | 3 | 1999 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 31 | 46 | 2 | 2004 | 2018 |
-| Dominican Republic | Dominican Republic | 168 | 452 | 6 | 1999 | 2024 |
+| Dominican Republic | Dominican Republic | 169 | 458 | 7 | 1999 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
 | Ecuador | Galapagos | 69 | 69 | 1 | 2008 | 2012 |
 | Egypt | Egypt | 182 | 491 | 2 | 1997 | 2024 |
@@ -484,7 +485,7 @@ differs from those of the other datasets.
 | Indonesia | Indonesia | 676 | 1,123 | 2 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
-| Jamaica | Jamaica | 303 | 785 | 5 | 1986 | 2023 |
+| Jamaica | Jamaica | 304 | 790 | 6 | 1986 | 2024 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
 | Jordan | Jordan | 3 | 3 | 1 | 2008 | 2008 |
 | Kenya | Kenya | 96 | 104 | 7 | 2003 | 2023 |
@@ -496,7 +497,7 @@ differs from those of the other datasets.
 | Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
 | Maldives | Maldives | 192 | 284 | 4 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 503 | 1,075 | 5 | 1997 | 2024 |
+| Mexico | Mexico | 506 | 1,083 | 6 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 17 | 19 | 2 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
@@ -618,7 +619,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpQHXLRT/file35d4583f349e -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpU5qNUR/file31c4795523bb -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -630,7 +631,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-02-10
+     date     2025-02-12
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
