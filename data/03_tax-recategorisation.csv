@@ -356,6 +356,7 @@
 "aplysina insularis";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";"Aplysina insularis";TRUE
 "aplysina lacunosa";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";"Aplysina lacunosa";TRUE
 "aplysina sp";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";NA;TRUE
+"aplysina species i";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";NA;TRUE
 "aplysina spp";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";NA;TRUE
 "aplysina vaginalis";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";NA;TRUE
 "aplysinia cauliformis";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";"Aplysina cauliformis";TRUE
@@ -366,6 +367,7 @@
 "aplysisna lacunosa";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";"Aplysina lacunosa";TRUE
 "aplyysina archeri";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aplysina";"Aplysina archeri";TRUE
 "arena";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"arolochroia crassa";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aiolochroia";"Aiolochroia crassa";TRUE
 "artemisina melana";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Poecilosclerida";"Microcionidae";"Artemisina";"Artemisina melana";TRUE
 "artifact";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "ascidiacea";NA;NA;NA;"Chordata";"Ascidiacea";NA;NA;NA;NA;NA;TRUE
@@ -595,6 +597,7 @@
 "callithamnion";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Ceramiales";"Callithamniaceae";"Callithamnion";NA;TRUE
 "callyspogia vaginalis";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Callyspongiidae";"Callyspongia";"Callyspongia aculeata";TRUE
 "callyspongia";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Callyspongiidae";"Callyspongia";NA;TRUE
+"callyspongia aculeata";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Callyspongiidae";"Callyspongia";"Callyspongia aculeata";TRUE
 "callyspongia armigera";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Callyspongiidae";"Callyspongia";"Callyspongia armigera";TRUE
 "callyspongia callyspongia fallax";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Callyspongiidae";"Callyspongia";"Callyspongia fallax";TRUE
 "callyspongia falax";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Callyspongiidae";"Callyspongia";"Callyspongia fallax";TRUE
@@ -663,8 +666,10 @@
 "chondria";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";NA;TRUE
 "chondria cf nucula";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";"Chondrilla nucula";TRUE
 "chondria nucula";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";"Chondrilla nucula";TRUE
+"chondrilla brown";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";NA;TRUE
 "chondrilla caribensis";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";"Chondrilla caribensis";TRUE
 "chondrilla cf nucula";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";"Chondrilla nucula";TRUE
+"chondrilla light brown";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";NA;TRUE
 "chondrilla nucula";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrillida";"Chondrillidae";"Chondrilla";"Chondrilla nucula";TRUE
 "chondrosia collectrix";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Chondrosiida";"Chondrosiidae";"Chondrosia";"Chondrosia chucalla";TRUE
 "chribochalina vasculum";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Niphatidae";"Cribrochalina";"Cribrochalina vasculum";TRUE
@@ -754,9 +759,11 @@
 "colpomenia spp";NA;NA;NA;"Ochrophyta";"Phaeophyceae";NA;"Fucales";"Scytosiphonaceae";"Colpomenia";NA;TRUE
 "colpophillya natans";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";"Colpophyllia natans";TRUE
 "colpophyllia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";NA;TRUE
+"colpophyllia amaranthus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";"Colpophyllia natans";TRUE
 "colpophyllia breviserialis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";"Colpophyllia breviserialis";TRUE
 "colpophyllia nanatns";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";"Colpophyllia natans";TRUE
 "colpophyllia natans";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";"Colpophyllia natans";TRUE
+"colpophyllia sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";NA;TRUE
 "colpophyllia spp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";NA;TRUE
 "colpophyllya natans";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";"Colpophyllia natans";TRUE
 "colpopyllia natans";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Colpophyllia";"Colpophyllia natans";TRUE
@@ -833,6 +840,7 @@
 "corallimorpharia indet";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";NA;NA;NA;TRUE
 "corallimorpharian";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";NA;NA;NA;TRUE
 "corallimorpharians";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";NA;NA;NA;TRUE
+"corallinaceae";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Corallinophycidae";"Corallinales";"Corallinaceae";NA;NA;TRUE
 "corallinales";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coralline algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "corallinealgae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -875,6 +883,7 @@
 "crustose coralline";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "crustose coralline alga";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "crustose coralline algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"crustous coralline algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "cryptonemia";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Halymeniales";"Halymeniaceae";"Cryptonemia";NA;TRUE
 "ctenactis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Ctenactis";NA;TRUE
 "ctenactis sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Fungiidae";"Ctenactis";NA;TRUE
@@ -1172,6 +1181,7 @@
 "ellisella";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Scleralcyonacea";"Ellisellidae";"Ellisella";NA;TRUE
 "ellisellidae";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Scleralcyonacea";"Ellisellidae";NA;NA;TRUE
 "enc gorg/erythropodium caribaeorum";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Gorgoniidae";NA;NA;TRUE
+"encructing sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "encrusters";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "encrusting algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "encrusting calcareous algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1250,6 +1260,7 @@
 "eusmilia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Meandrinidae";"Eusmilia";NA;TRUE
 "eusmilia fastigata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Meandrinidae";"Eusmilia";"Eusmilia fastigiata";TRUE
 "eusmilia fastigiata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Meandrinidae";"Eusmilia";"Eusmilia fastigiata";TRUE
+"eusmilia sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Meandrinidae";"Eusmilia";NA;TRUE
 "eusmillia fastigiata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Meandrinidae";"Eusmilia";"Eusmilia fastigiata";TRUE
 "exposedcaprock";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "eythropodium caibbaeorum";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Scleralcyonacea";"Erythropodiidae";"Erythropodium";"Erythropodium caribaeorum";TRUE
@@ -1305,9 +1316,11 @@
 "filamentous rock-attached algae";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "fimbriaphyllia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Euphylliidae";"Fimbriaphyllia";NA;TRUE
 "fine sediment";"Abiotic";"Silt";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"fine turf";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "fire coral";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
 "firecoral";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
 "firecoral-millepora";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
+"fireworm";NA;NA;NA;"Annelida";"Polychaeta";NA;NA;NA;NA;NA;TRUE
 "fish";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "fish - fish";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "fishing gear";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1384,6 +1397,7 @@
 "gellidium pusilum";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Gelidiales";"Gelidiaceae";"Gelidium";"Gelidium pusillum";TRUE
 "gellidium pussilum";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Gelidiales";"Gelidiaceae";"Gelidium";"Gelidium pusillum";TRUE
 "geniculate coralline algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"geodia gibberosa";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Tetractinellida";"Geodiidae";"Geodia";"Geodia gibberosa";TRUE
 "geodia neptuni";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Tetractinellida";"Geodiidae";"Geodia";"Geodia neptuni";TRUE
 "giant clam";NA;NA;NA;"Mollusca";"Bivalvia";"Autobranchia";"Cardiida";"Cardiidae";"Tridacna";NA;TRUE
 "globular/irregular sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
@@ -2116,13 +2130,16 @@
 "macrootherfleshy";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "mad decactus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis decactis";TRUE
 "madracis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";NA;TRUE
+"madracis asperula";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis asperula";TRUE
 "madracis auratenra i e mirabilis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis auretenra";TRUE
 "madracis aurentendra";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis auretenra";TRUE
 "madracis aurentenra";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis auretenra";TRUE
 "madracis auretenra";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis auretenra";TRUE
 "madracis auretenra and m decactis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";NA;TRUE
 "madracis auretenra mirabilis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis auretenra";TRUE
+"madracis brueggemanni";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis brueggemanni";TRUE
 "madracis carmabi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis carmabi";TRUE
+"madracis cf formosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis formosa";TRUE
 "madracis deactus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis decactis";TRUE
 "madracis decactie";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis decactis";TRUE
 "madracis decactis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis decactis";TRUE
@@ -2133,6 +2150,7 @@
 "madracis formosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis formosa";TRUE
 "madracis kirbyi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis kirbyi";TRUE
 "madracis mirabilis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis myriaster";TRUE
+"madracis myriaster";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis myriaster";TRUE
 "madracis pharensis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis pharensis";TRUE
 "madracis senaria";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis senaria";TRUE
 "madracis sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";NA;TRUE
@@ -2144,12 +2162,15 @@
 "madracsi decactus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis decactis";TRUE
 "madracsis auretenra";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis auretenra";TRUE
 "madracsis pheroensis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Pocilloporidae";"Madracis";"Madracis pharensis";TRUE
+"madrepora carolina";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Madreporidae";"Madrepora";"Madrepora carolina";TRUE
+"madrepora sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Madreporidae";"Madrepora";NA;TRUE
 "magnoliophyta";"Seagrass";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "magnoliophyta spp";NA;NA;NA;"Tracheophyta";"Magnoliopsida";NA;NA;NA;NA;NA;TRUE
 "manicina";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Faviidae";"Manicina";NA;TRUE
 "manicina aerolata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Faviidae";"Manicina";"Manicina areolata";TRUE
 "manicina areolata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Faviidae";"Manicina";"Manicina areolata";TRUE
 "marine debris";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"maroon sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "martensia";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Ceramiales";"Delesseriaceae";"Martensia";NA;TRUE
 "martensia pavonia";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Ceramiales";"Delesseriaceae";"Martensia";"Martensia pavonia";TRUE
 "mass error cdg sin definir";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -2260,6 +2281,7 @@
 "montastraea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Montastraeidae";"Montastraea";NA;TRUE
 "montastraea annularis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Orbicella";"Orbicella annularis";TRUE
 "montastraea annularis complex";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Orbicella";"Orbicella annularis";TRUE
+"montastraea annularis species complex";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Orbicella";"Orbicella annularis";TRUE
 "montastraea cavernosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Montastraeidae";"Montastraea";"Montastraea cavernosa";TRUE
 "montastraea faveolata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Orbicella";"Orbicella faveolata";TRUE
 "montastraea franksi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Orbicella";"Orbicella franksi";TRUE
@@ -2624,6 +2646,8 @@
 "oxipora encroutant";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Lobophylliidae";"Oxypora";NA;TRUE
 "oxypora";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Lobophylliidae";"Oxypora";NA;TRUE
 "oxypora lacerae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Lobophylliidae";"Oxypora";"Oxypora lacera";TRUE
+"oxysmilia rotundifolia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Caryophylliidae";"Oxysmilia";"Oxysmilia rotundifolia";TRUE
+"oxysmilia sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Caryophylliidae";"Oxysmilia";NA;TRUE
 "p asteroides";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites astreoides";TRUE
 "p divericata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites divaricata";TRUE
 "p porites";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites porites";TRUE
@@ -2659,6 +2683,7 @@
 "palythoa tuberculosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";"Sphenopidae";"Palythoa";"Palythoa tuberculosa";TRUE
 "pandaros acanthifolia";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Poecilosclerida";"Microcionidae";"Pandaros";"Pandaros acanthifolium";TRUE
 "paraclavarina";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Merulina";NA;TRUE
+"paracyanthus pulchellus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Caryophylliidae";"Paracyathus";"Paracyathus pulchellus";TRUE
 "paragoniastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Paragoniastrea";NA;TRUE
 "paramontastraea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Paramontastraea";NA;TRUE
 "paramontastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Paramontastraea";NA;TRUE
@@ -2709,6 +2734,7 @@
 "petrosia weinbergi";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Petrosiidae";"Petrosia";"Petrosia weinbergi";TRUE
 "peudodiploria strigosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Faviidae";"Pseudodiploria";"Pseudodiploria strigosa";TRUE
 "peysonenelia boergesenii";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";"Peyssonnelia boergesenii";TRUE
+"peysonnelia sp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";NA;TRUE
 "peysonnellia";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";NA;TRUE
 "peyssonelid algal crust";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";NA;NA;TRUE
 "peyssonellia spp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Peyssonnelia";NA;TRUE
@@ -2739,6 +2765,8 @@
 "pinctada maxima";NA;NA;NA;"Mollusca";"Bivalvia";"Autobranchia";"Ostreida";"Margaritidae";"Pinctada";"Pinctada maxima";TRUE
 "pincushion starfish";NA;NA;NA;"Echinodermata";"Asteroidea";"Ambuloasteroidea";"Valvatida";NA;NA;NA;TRUE
 "pink calcareous algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"placospongia melobesioides";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Clionaida";"Placospongiidae";"Placospongia";"Placospongia melobesioides";TRUE
+"placospongia spp";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Clionaida";"Placospongiidae";"Placospongia";NA;TRUE
 "plakorstis angulospiculatus";NA;NA;NA;"Porifera";"Homoscleromorpha";NA;"Homosclerophorida";"Plakinidae";"Plakortis";"Plakortis angulospiculatus";TRUE
 "plakortis angulospiculatu";NA;NA;NA;"Porifera";"Homoscleromorpha";NA;"Homosclerophorida";"Plakinidae";"Plakortis";"Plakortis angulospiculatus";TRUE
 "plakortis angulospiculatus";NA;NA;NA;"Porifera";"Homoscleromorpha";NA;"Homosclerophorida";"Plakinidae";"Plakortis";"Plakortis angulospiculatus";TRUE
@@ -2836,6 +2864,7 @@
 "porites annae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites annae";TRUE
 "porites arnaudi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites arnaudi";TRUE
 "porites arnaudi bleached";NA;NA;"Bleached";"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites arnaudi";TRUE
+"porites astereoides";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites astreoides";TRUE
 "porites asteroides";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites astreoides";TRUE
 "porites asteroides and porites colonensis";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";NA;TRUE
 "porites astreoides";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Poritidae";"Porites";"Porites astreoides";TRUE
@@ -3029,6 +3058,7 @@
 "rhizophora detritus";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "rhizophora roots";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "rhizopsammia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Rhizopsammia";NA;TRUE
+"rhizosmilia maculata";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Caryophylliidae";"Rhizosmilia";"Rhizosmilia maculata";TRUE
 "rhodactis osculifera";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";"Discosomidae";"Rhodactis";"Rhodactis osculifera";TRUE
 "rhodactis sancti-thomae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";"Discosomidae";"Rhodactis";"Rhodactis osculifera";TRUE
 "rhodolith";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -3266,6 +3296,7 @@
 "spirastrella coccinea";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Clionaida";"Spirastrellidae";"Spirastrella";"Spirastrella coccinea";TRUE
 "spirastrella hartmani";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Clionaida";"Spirastrellidae";"Spirastrella";"Spirastrella hartmani";TRUE
 "spirastrella sp";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Clionaida";"Spirastrellidae";"Spirastrella";NA;TRUE
+"spirastrelle cunctatrix";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Clionaida";"Spirastrellidae";"Spirastrella";"Spirastrella cunctatrix";TRUE
 "spiridia hypnoides";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Ceramiales";"Callithamniaceae";"Spyridia";"Spyridia hypnoides";TRUE
 "spirobranche";NA;NA;NA;"Annelida";"Polychaeta";"Sedentaria";"Sabellida";"Serpulidae";"Spirobranchus";NA;TRUE
 "spirobranchius sp";NA;NA;NA;"Annelida";"Polychaeta";"Sedentaria";"Sabellida";"Serpulidae";"Spirobranchus";NA;TRUE
@@ -3320,6 +3351,7 @@
 "stephanocoenia michelinii";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Astrocoeniidae";"Stephanocoenia";"Stephanocoenia intersepta";TRUE
 "stephanocoenia sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Astrocoeniidae";"Stephanocoenia";NA;TRUE
 "stephanocoenoa intersepta";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Astrocoeniidae";"Stephanocoenia";"Stephanocoenia intersepta";TRUE
+"stephaocoenia sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Astrocoeniidae";"Stephanocoenia";NA;TRUE
 "stepnanocoenia intersepta";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Astrocoeniidae";"Stephanocoenia";"Stephanocoenia intersepta";TRUE
 "stereonephthya";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Nephtheidae";"Stereonephthya";NA;TRUE
 "stichodactyla helianthus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Actiniaria";"Stichodactylidae";"Stichodactyla";"Stichodactyla helianthus";TRUE
@@ -3360,6 +3392,7 @@
 "substrat corallien";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "substrat dur nu / roche nue";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "substrate";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"substrate rubble";"Abiotic";"Rubble";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "substrate with no live cover raw points";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "svenzea cristinae";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Scopalinida";"Scopalinidae";"Svenzea";"Svenzea cristinae";TRUE
 "svenzea zeai";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Scopalinida";"Scopalinidae";"Svenzea";"Svenzea zeai";TRUE
@@ -3422,6 +3455,7 @@
 "tubastraea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";NA;TRUE
 "tubastraea aurea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";"Tubastraea aurea";TRUE
 "tubastraea coccinea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";"Tubastraea coccinea";TRUE
+"tubastraea spp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";NA;TRUE
 "tubastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";NA;TRUE
 "tubastrea coccinea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";"Tubastraea coccinea";TRUE
 "tubastrea sp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";NA;TRUE
@@ -3467,6 +3501,7 @@
 "turf algae >> sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "turf algae free of sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "turf algae mat";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"turf algae matrix";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "turf algae sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "turf algae with sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "turf algae without sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -3510,13 +3545,39 @@
 "unknown";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown coral bleached";"Hard coral";NA;"Bleached";NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown coral i";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown coral ii";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown coral iii";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown coral iv";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown coral v";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown coral vi";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown encrusting sponge i";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown encrusting sponge ii";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown encrusting sponge iii";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "unknown gorgonian";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Gorgoniidae";NA;NA;TRUE
+"unknown macro algae i";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown macro algae ii";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown macroalgae i";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown macroalgae ii";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown macroalgae iii";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown morphospecies 1";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown orange flat leafy";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown orange morphospecies 2";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown slime";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown sp of live coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknown species";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown species i";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown species ii";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown species iii";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge i";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge ii";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge iii";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge iv";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge v";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge vi";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge vii";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"unknown sponge viii";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "unknown white branching morphospecies 3";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "unknowns";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "upright macroalga";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -3564,6 +3625,7 @@
 "zoanthaire - palythoa caribaeorum";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";"Sphenopidae";"Palythoa";"Palythoa caribaeorum";TRUE
 "zoanthaire - zoanthus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";"Zoanthidae";"Zoanthus";NA;TRUE
 "zoantharia";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
+"zoantharia and xeniidae spp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "zoantharia indet";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "zoanthidae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";"Zoanthidae";NA;NA;TRUE

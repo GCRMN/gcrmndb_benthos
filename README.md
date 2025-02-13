@@ -385,12 +385,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0160 | [BAF](https://dashboard.datamermaid.org/?project=BAF) | upon request | Me. | 2025-02-10 | JW |
 | 0161 | [Vibrant Ocean Initiative 2022](https://dashboard.datamermaid.org/?project=Vibrant%20Ocean%20Initiative%202022) | upon request | Me. | 2025-02-10 | JW |
 | 0162 | [GFCR Survey 2022](https://dashboard.datamermaid.org/?project=GFCR%20Survey%202022) | upon request | Me. | 2025-02-10 | JW |
+| 0163 | FGB LTMP - Random Transect | upon request | Sh. | 2025-02-13 | JW |
+| 0164 | FGB LTMP - Repetitive Quadrat | upon request | Sh. | 2025-02-13 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-02-12, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,203,822 observations** (*i.e* rows) representing **29,240
-sites** and **58,004 surveys**. The distribution of monitoring sites in
+On the 2025-02-13, the `gcrmndb_benthos` synthetic dataset contains a
+total of **21,326,828 observations** (*i.e* rows) representing **29,419
+sites** and **59,154 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -419,7 +421,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,634 |       8,319 |            8 |    1980    |   2024    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    15,012 |      23,803 |           60 |    1973    |   2024    |
+|            Caribbean |    15,191 |      24,953 |           62 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
@@ -427,7 +429,7 @@ that differs from those of the other datasets.
 |                ROPME |       331 |         784 |           25 |    1985    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    29,240 |      58,004 |          161 |    1973    |   2025    |
+| Global (all regions) |    29,419 |      59,154 |          163 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -551,7 +553,7 @@ differs from those of the other datasets.
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
 | United States | Puerto Rico | 2,973 | 3,284 | 7 | 1986 | 2024 |
-| United States | United States | 1,856 | 4,108 | 10 | 1986 | 2024 |
+| United States | United States | 2,035 | 5,258 | 12 | 1986 | 2024 |
 | United States | United States Virgin Islands | 5,873 | 6,866 | 8 | 1986 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
@@ -619,7 +621,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpU5qNUR/file31c4795523bb -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpYrjIyM/file49646597276a -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -631,7 +633,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-02-12
+     date     2025-02-13
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
