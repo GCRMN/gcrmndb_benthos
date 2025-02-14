@@ -19,31 +19,33 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 
 ### 2.1.2 Main data ----
 
+data_main <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+  filter(datasetID == dataset & data_type == "main") %>% 
+  filter(row_number() == 2) %>% 
+  select(data_path) %>% 
+  pull() %>% 
+  read_xlsx(., sheet = 2)
+
+### 2.1.3 Hard coral species data ----
+
 data_main_coral <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
   filter(row_number() == 1) %>% 
   select(data_path) %>% 
   pull() %>% 
-  read_xlsx(., sheet = 2) %>% 
-  pivot_longer("ACER":ncol(.), names_to = "code", values_to = "measurementValue")
+  read_xlsx(., sheet = 2)
 
-data_main_algae <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "main") %>% 
-  filter(row_number() == 2) %>% 
-  select(data_path) %>% 
-  pull() %>% 
-  read_xlsx(., sheet = 2) %>% 
-  pivot_longer("NQ":ncol(.), names_to = "code", values_to = "measurementValue") %>% 
-  filter(!(code %in% c("NQ", "MH", "MI", "FH", "FMI", "CH", "CMI", "M")))
+### 2.1.4 Combine data ----
 
-data_main_1_0 <- bind_rows(data_main_coral, data_main_algae) %>% 
+data_main_1_0 <- left_join(data_main, data_main_coral) %>% 
+  select(-LC, -TOTAL) %>% 
+  pivot_longer("SAND":ncol(.), names_to = "code", values_to = "measurementValue") %>% 
+  rename(locality = Site, parentEventID = Trans, eventDate = Date, decimalLatitude = Latitude,
+         decimalLongitude = Longitude, verbatimDepth = Depth) %>% 
+  select(locality, decimalLatitude, decimalLongitude, eventDate, parentEventID,
+         verbatimDepth, code, measurementValue) %>% 
   left_join(., data_code) %>% 
-  mutate(locality = ifelse(is.na(Site), Code, Site)) %>% 
-  rename(decimalLatitude = Latitude, decimalLongitude = Longitude, verbatimDepth = Depth, eventDate = Date,
-         parentEventID = Trans, recordedBy = Surveyor, habitat = Zone) %>% 
-  select(-Batch, -Code, -Site, -Subregion, -Shelf, -Ecoregion, -Length, -code)
-
-rm(data_code, data_main_algae, data_main_coral)
+  select(-code)
 
 ## 2.2 Benthic cover 2.0 ----
 
