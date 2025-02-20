@@ -37,7 +37,8 @@ data_main_coral <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 
 ### 2.1.4 Combine data ----
 
-data_main_1_0 <- left_join(data_main, data_main_coral) %>% 
+data_main_1_0 <- left_join(data_main, data_main_coral) %>% # *
+  # The HCC data before 2007 are discarded, but its needed to not regenerate false 0 values
   select(-LC, -TOTAL) %>% 
   pivot_longer("SAND":ncol(.), names_to = "code", values_to = "measurementValue") %>% 
   rename(locality = Site, parentEventID = Trans, eventDate = Date, decimalLatitude = Latitude,
