@@ -29,6 +29,7 @@ options(knitr.duplicate.label = "allow")
 source("00_functions/graphical_par.R")
 source("00_functions/theme_graph.R")
 source("00_functions/render_rmd.R")
+source("00_functions/convert_classification.R")
 
 # 2. Required packages ----
 
@@ -41,7 +42,8 @@ sf_use_s2(FALSE)
 library(rmarkdown)
 library(plotly)
 library(kableExtra)
-require(prettydoc)
+library(prettydoc)
+library(taxize)
 
 # 3. Set theme_graph() as the default ggplot theme ----
 
@@ -88,7 +90,7 @@ synthetic_data <- synthetic_data %>%
                                                     "\\." = " ")), # Convert some special characters
          organismID = str_squish(organismID)) # Remove duplicated space and space before and after
 
-# 2. Add new organismID levels to the tax-recategorisation file ----
+# 2. Use WoRMS API to pre-fill the new levels ----
 
 current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() %>% pull() # vector
 
@@ -97,7 +99,17 @@ old_unique_organismID <- read.csv2("./../data/03_tax-recategorisation.csv") %>%
   
 current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() # tibble
   
-anti_join(current_unique_organismID, old_unique_organismID, by = c("organismID")) %>% 
+current_unique_organismID <- anti_join(current_unique_organismID, old_unique_organismID, by = c("organismID")) %>% 
+  select(organismID) %>% 
+  pull() %>% 
+  taxize::classification(., db = "worms", return_id = FALSE)
+
+current_unique_organismID <- map_dfr(1:length(current_unique_organismID),
+                                     ~convert_classification(data = current_unique_organismID, i = .x))
+
+# 3. Add new organismID levels to the tax-recategorisation file ----
+
+current_unique_organismID %>% 
   mutate(checked = FALSE) %>% 
   bind_rows(old_unique_organismID, .) %>% 
   arrange(organismID) %>%  
