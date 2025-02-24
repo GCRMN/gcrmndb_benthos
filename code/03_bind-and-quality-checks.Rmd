@@ -487,4 +487,4 @@ synthetic_data %>%
 ```
 
 ---
-Jeremy WICQUART | jeremywicquart@gmail.com | `r format(Sys.time())`
+[gcrmndb_benthos](https://github.com/GCRMN/gcrmndb_benthos) | `r format(Sys.Date())`

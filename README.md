@@ -389,13 +389,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0164 | FGB LTMP - Repetitive Quadrat | upon request | Sh. | 2025-02-13 | JW |
 | 0164 | FGB LTMP - Random Transect | upon request | Sh. | 2025-02-13 | JW |
 | 0165 | McLeod et al. | upon request | Sh. | 2025-02-20 | JW |
-| 0166 | [FUNDEMAR (2011-2016)](https://www.fundemardr.org/) | upon request | Sh. | 2024-09-23 | JW |
+| 0166 | [FUNDEMAR (2011-2016)](https://www.fundemardr.org/) | upon request | Sh. | 2025-02-20 | JW |
+| 0167 | [Leduc](https://dashboard.datamermaid.org/?project=Oman_2022_Leduc) | upon request | Sh. | 2025-02-24 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-02-20, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,802,890 observations** (*i.e* rows) representing **28,438
-sites** and **57,941 surveys**. The distribution of monitoring sites in
+On the 2025-02-24, the `gcrmndb_benthos` synthetic dataset contains a
+total of **20,802,901 observations** (*i.e* rows) representing **28,439
+sites** and **57,942 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -429,10 +430,10 @@ that differs from those of the other datasets.
 |                  ETP |       257 |         313 |            2 |    1998    |   2018    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
 |              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
-|                ROPME |       331 |         784 |           25 |    1985    |   2024    |
+|                ROPME |       332 |         785 |           26 |    1985    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    28,438 |      57,941 |          165 |    1973    |   2025    |
+| Global (all regions) |    28,439 |      57,942 |          166 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -515,7 +516,7 @@ differs from those of the other datasets.
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 23 | 23 | 1 | 2011 | 2015 |
-| Oman | Oman | 123 | 266 | 8 | 2003 | 2022 |
+| Oman | Oman | 124 | 267 | 9 | 2003 | 2022 |
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
 | Panama | Panama | 125 | 250 | 3 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
@@ -624,7 +625,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpkzgoWC/file49c04622259 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpuSHLzd/file368820f135bd -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -636,7 +637,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-02-20
+     date     2025-02-24
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
@@ -655,7 +656,7 @@ The following organizations have funded the realization of the
      cellranger          1.1.0   2016-07-27 [1] CRAN (R 4.4.1)
      class               7.3-23  2025-01-01 [1] CRAN (R 4.4.2)
      classInt            0.4-11  2025-01-08 [1] CRAN (R 4.4.2)
-     cli                 3.6.3   2024-06-21 [1] CRAN (R 4.4.1)
+     cli                 3.6.4   2025-02-13 [1] CRAN (R 4.4.2)
      clipr               0.8.0   2022-02-22 [1] CRAN (R 4.4.1)
      colorspace          2.1-1   2024-07-26 [1] CRAN (R 4.4.1)
      conflicted          1.2.0   2023-02-01 [1] CRAN (R 4.4.1)
@@ -663,7 +664,7 @@ The following organizations have funded the realization of the
      crayon              1.5.3   2024-06-20 [1] CRAN (R 4.4.1)
      credentials         2.0.2   2024-10-04 [1] CRAN (R 4.4.2)
      crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.4.2)
-     curl                6.2.0   2025-01-23 [1] CRAN (R 4.4.2)
+     curl                6.2.1   2025-02-19 [1] CRAN (R 4.4.2)
      data.table          1.16.4  2024-12-06 [1] CRAN (R 4.4.2)
      DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.4.1)
      dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.4.1)
@@ -703,7 +704,7 @@ The following organizations have funded the realization of the
      ini                 0.3.1   2018-05-20 [1] CRAN (R 4.4.2)
      isoband             0.2.7   2022-12-20 [1] CRAN (R 4.4.1)
      jquerylib           0.1.4   2021-04-26 [1] CRAN (R 4.4.1)
-     jsonlite            1.8.9   2024-09-20 [1] CRAN (R 4.4.1)
+     jsonlite            1.9.0   2025-02-19 [1] CRAN (R 4.4.2)
      kableExtra          1.4.0   2024-01-24 [1] CRAN (R 4.4.2)
      KernSmooth          2.23-26 2025-01-01 [1] CRAN (R 4.4.2)
      knitr             * 1.49    2024-11-08 [1] CRAN (R 4.4.2)
@@ -737,9 +738,9 @@ The following organizations have funded the realization of the
      progress            1.2.3   2023-12-06 [1] CRAN (R 4.4.1)
      promises            1.3.2   2024-11-28 [1] CRAN (R 4.4.2)
      proxy               0.4-27  2022-06-09 [1] CRAN (R 4.4.1)
-     ps                  1.8.1   2024-10-28 [1] CRAN (R 4.4.1)
+     ps                  1.9.0   2025-02-18 [1] CRAN (R 4.4.2)
      purrr             * 1.0.4   2025-02-05 [1] CRAN (R 4.4.2)
-     R6                  2.5.1   2021-08-19 [1] CRAN (R 4.4.1)
+     R6                  2.6.1   2025-02-15 [1] CRAN (R 4.4.2)
      ragg                1.3.3   2024-09-11 [1] CRAN (R 4.4.1)
      rappdirs            0.3.3   2021-01-31 [1] CRAN (R 4.4.1)
      raster              3.6-31  2025-01-16 [1] CRAN (R 4.4.2)
@@ -767,14 +768,14 @@ The following organizations have funded the realization of the
      svglite             2.1.3   2023-12-08 [1] CRAN (R 4.4.2)
      sys                 3.4.3   2024-10-04 [1] CRAN (R 4.4.1)
      systemfonts         1.2.1   2025-01-20 [1] CRAN (R 4.4.2)
-     terra               1.8-15  2025-01-24 [1] CRAN (R 4.4.2)
+     terra               1.8-21  2025-02-10 [1] CRAN (R 4.4.2)
      textshaping         1.0.0   2025-01-20 [1] CRAN (R 4.4.2)
      tibble            * 3.2.1   2023-03-20 [1] CRAN (R 4.4.1)
      tidyr             * 1.3.1   2024-01-24 [1] CRAN (R 4.4.1)
      tidyselect          1.2.1   2024-03-11 [1] CRAN (R 4.4.1)
      tidyverse         * 2.0.0   2023-02-22 [1] CRAN (R 4.4.1)
      timechange          0.3.0   2024-01-18 [1] CRAN (R 4.4.1)
-     tinytex             0.54    2024-11-01 [1] CRAN (R 4.4.1)
+     tinytex             0.55    2025-02-19 [1] CRAN (R 4.4.2)
      tzdb                0.4.0   2023-05-12 [1] CRAN (R 4.4.1)
      units               0.8-5   2023-11-28 [1] CRAN (R 4.4.1)
      usethis             3.1.0   2024-11-26 [1] CRAN (R 4.4.2)
@@ -786,7 +787,7 @@ The following organizations have funded the realization of the
      whisker             0.4.1   2022-12-05 [1] CRAN (R 4.4.2)
      withr               3.0.2   2024-10-28 [1] CRAN (R 4.4.1)
      wk                  0.9.4   2024-10-11 [1] CRAN (R 4.4.1)
-     xfun                0.50    2025-01-07 [1] CRAN (R 4.4.2)
+     xfun                0.51    2025-02-19 [1] CRAN (R 4.4.2)
      xml2                1.3.6   2023-12-04 [1] CRAN (R 4.4.1)
      yaml                2.3.10  2024-07-26 [1] CRAN (R 4.4.1)
      zip                 2.3.2   2025-02-01 [1] CRAN (R 4.4.2)
