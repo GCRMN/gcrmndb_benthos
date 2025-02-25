@@ -104,8 +104,17 @@ current_unique_organismID <- anti_join(current_unique_organismID, old_unique_org
   pull() %>% 
   taxize::classification(., db = "worms", return_id = FALSE)
 
-current_unique_organismID <- map_dfr(1:length(current_unique_organismID),
+if(length(current_unique_organismID) != 0){
+  
+  current_unique_organismID <- map_dfr(1:length(current_unique_organismID),
                                      ~convert_classification(data = current_unique_organismID, i = .x))
+  
+}else{
+  
+  current_unique_organismID <- synthetic_data %>% select(organismID) %>% distinct() %>% 
+    anti_join(., old_unique_organismID, by = c("organismID"))
+  
+}
 
 # 3. Add new organismID levels to the tax-recategorisation file ----
 
@@ -146,7 +155,7 @@ unique_organismID <- read.csv("./../data/03_tax-recategorisation.csv", sep = ";"
                               phylum %in% c("Porifera", "Chordata", "Echinodermata", "Bryozoa") ~ "Other fauna",
                               phylum == "Cyanobacteria" ~ "Algae",
                               class %in% c("Ascidiacea", "Hydrozoa", "Crinoidea", 
-                                           "Bivalvia", "Echinoidea", "Anthozoa") ~ "Other fauna",
+                                           "Bivalvia", "Echinoidea", "Anthozoa", "Octocorallia") ~ "Other fauna",
                               order %in% c("Actiniaria", "Alcyonacea", "Zoantharia", 
                                            "Corallimorpharia", "Antipatharia") ~ "Other fauna",
                               subclass %in% c("Octocorallia") ~ "Other fauna",

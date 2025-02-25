@@ -391,12 +391,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0165 | McLeod et al. | upon request | Sh. | 2025-02-20 | JW |
 | 0166 | [FUNDEMAR (2011-2016)](https://www.fundemardr.org/) | upon request | Sh. | 2025-02-20 | JW |
 | 0167 | [Leduc](https://dashboard.datamermaid.org/?project=Oman_2022_Leduc) | upon request | Sh. | 2025-02-24 | JW |
+| 0168 | ETP regional dataset | upon request | Sh. | 2025-02-25 | JW |
+| 0169 | Moity | upon request | Sh. | 2025-02-25 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-02-24, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,802,901 observations** (*i.e* rows) representing **28,439
-sites** and **57,942 surveys**. The distribution of monitoring sites in
+On the 2025-02-25, the `gcrmndb_benthos` synthetic dataset contains a
+total of **20,993,284 observations** (*i.e* rows) representing **28,944
+sites** and **60,248 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -427,13 +429,13 @@ that differs from those of the other datasets.
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
 |            Caribbean |    14,210 |      23,740 |           64 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
-|                  ETP |       257 |         313 |            2 |    1998    |   2018    |
+|                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
 |              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
 |                ROPME |       332 |         785 |           26 |    1985    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    28,439 |      57,942 |          166 |    1973    |   2025    |
+| Global (all regions) |    28,944 |      60,248 |          168 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -458,15 +460,15 @@ differs from those of the other datasets.
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
 | China | China | 100 | 366 | 1 | 1997 | 2012 |
-| Colombia | Colombia | 188 | 403 | 5 | 1997 | 2024 |
+| Colombia | Colombia | 222 | 712 | 6 | 1997 | 2024 |
 | Comores | Comores | 50 | 104 | 4 | 2017 | 2024 |
-| Costa Rica | Costa Rica | 85 | 116 | 3 | 2004 | 2023 |
+| Costa Rica | Costa Rica | 217 | 405 | 4 | 2004 | 2023 |
 | Cuba | Cuba | 37 | 46 | 2 | 2001 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 19 | 33 | 1 | 2004 | 2018 |
 | Dominican Republic | Dominican Republic | 140 | 478 | 8 | 2004 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
-| Ecuador | Galapagos | 69 | 69 | 1 | 2008 | 2012 |
+| Ecuador | Galapagos | 256 | 1,523 | 3 | 1994 | 2024 |
 | Egypt | Egypt | 182 | 491 | 2 | 1997 | 2024 |
 | Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
 | Federal Republic of Somalia | Federal Republic of Somalia | 1 | 1 | 1 | 2005 | 2005 |
@@ -503,7 +505,7 @@ differs from those of the other datasets.
 | Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
 | Maldives | Maldives | 192 | 284 | 4 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 369 | 895 | 6 | 1997 | 2024 |
+| Mexico | Mexico | 386 | 949 | 7 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 17 | 19 | 2 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
@@ -515,10 +517,10 @@ differs from those of the other datasets.
 | Netherlands | Sint-Maarten | 12 | 59 | 2 | 2005 | 2024 |
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
-| Nicaragua | Nicaragua | 23 | 23 | 1 | 2011 | 2015 |
+| Nicaragua | Nicaragua | 44 | 63 | 2 | 2009 | 2015 |
 | Oman | Oman | 124 | 267 | 9 | 2003 | 2022 |
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
-| Panama | Panama | 125 | 250 | 3 | 1997 | 2024 |
+| Panama | Panama | 239 | 410 | 4 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
 | Philippines | Philippines | 842 | 1,136 | 3 | 1997 | 2023 |
 | Qatar | Qatar | 19 | 19 | 2 | 2014 | 2017 |
@@ -625,7 +627,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpuSHLzd/file368820f135bd -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpCMpJps/file33e4377b1482 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -637,7 +639,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-02-24
+     date     2025-02-25
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
