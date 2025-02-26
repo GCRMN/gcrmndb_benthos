@@ -387,7 +387,6 @@ considered. The column names (except *aggregator*) correspond to
 | 0162 | [GFCR Survey 2022](https://dashboard.datamermaid.org/?project=GFCR%20Survey%202022) | upon request | Me. | 2025-02-10 | JW |
 | 0163 | FGB LTMP - Random Transect | upon request | Sh. | 2025-02-13 | JW |
 | 0164 | FGB LTMP - Repetitive Quadrat | upon request | Sh. | 2025-02-13 | JW |
-| 0164 | FGB LTMP - Random Transect | upon request | Sh. | 2025-02-13 | JW |
 | 0165 | McLeod et al. | upon request | Sh. | 2025-02-20 | JW |
 | 0166 | [FUNDEMAR (2011-2016)](https://www.fundemardr.org/) | upon request | Sh. | 2025-02-20 | JW |
 | 0167 | [Leduc](https://dashboard.datamermaid.org/?project=Oman_2022_Leduc) | upon request | Sh. | 2025-02-24 | JW |
@@ -396,9 +395,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-02-25, the `gcrmndb_benthos` synthetic dataset contains a
-total of **20,993,284 observations** (*i.e* rows) representing **28,944
-sites** and **60,248 surveys**. The distribution of monitoring sites in
+On the 2025-02-26, the `gcrmndb_benthos` synthetic dataset contains a
+total of **13,436,592 observations** (*i.e* rows) representing **29,510
+sites** and **61,234 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -431,11 +430,11 @@ that differs from those of the other datasets.
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
 |               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
-|              Pacific |     7,849 |      14,745 |           52 |    1987    |   2024    |
+|              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       332 |         785 |           26 |    1985    |   2024    |
 |           South Asia |       314 |       1,862 |            8 |    1997    |   2024    |
 |                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    28,944 |      60,248 |          168 |    1973    |   2025    |
+| Global (all regions) |    29,510 |      61,234 |          168 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -472,7 +471,7 @@ differs from those of the other datasets.
 | Egypt | Egypt | 182 | 491 | 2 | 1997 | 2024 |
 | Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
 | Federal Republic of Somalia | Federal Republic of Somalia | 1 | 1 | 1 | 2005 | 2005 |
-| Fiji | Fiji | 654 | 1,001 | 12 | 1997 | 2024 |
+| Fiji | Fiji | 654 | 1,003 | 12 | 1997 | 2025 |
 | France | Collectivity of Saint Martin | 12 | 83 | 2 | 2007 | 2022 |
 | France | Europa Island | 1 | 1 | 1 | 2002 | 2002 |
 | France | French Polynesia | 229 | 2,191 | 8 | 1987 | 2024 |
@@ -550,9 +549,9 @@ differs from those of the other datasets.
 | United Kingdom | Montserrat | 87 | 109 | 2 | 2005 | 2017 |
 | United Kingdom | Pitcairn | 6 | 12 | 2 | 2009 | 2023 |
 | United Kingdom | Turks and Caicos Islands | 66 | 123 | 4 | 2004 | 2024 |
-| United States | American Samoa | 844 | 904 | 4 | 1997 | 2019 |
-| United States | Guam | 305 | 357 | 4 | 1997 | 2021 |
-| United States | Hawaii | 1,734 | 1,924 | 4 | 1997 | 2021 |
+| United States | American Samoa | 1,039 | 1,219 | 4 | 1997 | 2019 |
+| United States | Guam | 391 | 545 | 4 | 1997 | 2021 |
+| United States | Hawaii | 2,019 | 2,405 | 4 | 1997 | 2021 |
 | United States | Howland and Baker Islands | 150 | 150 | 1 | 2015 | 2017 |
 | United States | Jarvis Island | 222 | 222 | 1 | 2015 | 2017 |
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
@@ -627,7 +626,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpCMpJps/file33e4377b1482 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmpms29Wf/file2ff8358c1eb9 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -639,7 +638,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-02-25
+     date     2025-02-26
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
