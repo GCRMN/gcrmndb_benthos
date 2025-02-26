@@ -37,6 +37,11 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
                                                     "TOTAL SOFT CORALS" = "Soft corals",
                                                     "Ouloastrea?" = "Ouloastrea"))) %>% 
   drop_na(measurementValue) %>% 
+  mutate(parentEventID = paste0(parentEventID, verbatimDepth)) %>%
+  # Correct the issue of multiple depth per transect (will impact data analyses)
+  group_by(locality, year) %>% 
+  mutate(parentEventID = as.numeric(as.factor(parentEventID))) %>% 
+  ungroup() %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----

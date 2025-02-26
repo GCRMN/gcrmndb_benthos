@@ -18,7 +18,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          parentEventID = UE) %>% # Rename variables
   select(-"Total %", -"...42", -"Total % Corail vivant") %>% 
   pivot_longer(5:ncol(.), names_to = "organismID", values_to = "measurementValue") %>% 
-  mutate(organismID = str_replace_all(organismID, "Corail mort récent \\(< 1 an\\), compté en 2020, avant et après compté en turf", "Tuff"),
+  mutate(organismID = str_replace_all(organismID, c("Corail mort récent \\(< 1 an\\), compté en 2020, avant et après compté en turf" = "Tuff",
+                                                    "Turbinaria" = "Algae - Turbinaria")),
          measurementValue = as.numeric(measurementValue),
          measurementValue = replace_na(measurementValue, 0),
          eventDate = as.Date(as.numeric(eventDate), origin = "1899-12-30")) %>% 

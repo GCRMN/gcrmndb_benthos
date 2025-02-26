@@ -39,12 +39,6 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   summarise(n_points = n()) %>% 
   ungroup() %>% 
   # Calculate percentage cover
-  mutate(measurementValue = (n_points/total_points)*100) %>% 
+  mutate(measurementValue = (n_points*100)/total_points) %>% 
   select(-total_points, -n_points) %>% 
-  # Add 0 values for un-observed categories
-  tidyr::complete(organismID,
-                  nesting(datasetID, eventDate, locality, habitat, decimalLatitude, 
-                          decimalLongitude, parentEventID, eventID, verbatimDepth,
-                          year, month, day, samplingProtocol),
-                  fill = list(measurementValue = 0)) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)

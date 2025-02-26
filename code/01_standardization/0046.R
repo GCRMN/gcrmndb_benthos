@@ -15,8 +15,7 @@ project_id <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 
 # 3. Get data from the mermaidr API ----
 
-data <- mermaid_get_project_data(project = project_id, method = "benthicpit",
-                                 data = "observations")
+data <- mermaid_get_project_data(project = project_id, data = "observations", method = "benthicpit")
 
 # 4. Save raw data ----
 

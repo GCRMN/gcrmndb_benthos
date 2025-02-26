@@ -24,6 +24,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(datasetID = dataset,
          samplingProtocol = "Photo-quadrat, 50 m transect length",
          eventDate = as.Date(eventDate),
+         parentEventID = as.numeric(parentEventID),
          year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate)) %>% 

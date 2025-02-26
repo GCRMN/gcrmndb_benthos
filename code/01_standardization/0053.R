@@ -39,8 +39,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   group_by(locality, parentEventID, eventID, eventDate, decimalLatitude, decimalLongitude, verbatimDepth) %>% 
   mutate(total = sum(measurementValue)) %>% 
   ungroup() %>% 
-  mutate(measurementValue = measurementValue*100/total,
-         parentEventID = as.numeric(str_extract(parentEventID, "[1-9]")),
+  mutate(measurementValue = (measurementValue*100)/total,
+         parentEventID = parse_number(parentEventID),
          samplingProtocol = "Photo-quadrat",
          datasetID = dataset) %>% 
   select(-total) %>% 

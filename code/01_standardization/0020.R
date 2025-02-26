@@ -15,10 +15,6 @@ read_csv("data/01_raw-data/0020/tbl_Benthic_Cover.csv") %>%
   left_join(., read_csv("data/01_raw-data/0020/tbl_Locations.csv")) %>% 
   left_join(., read_csv("data/01_raw-data/0020/tbl_Sites.csv")) %>% 
   # 2. Rename and select variables
-  mutate(Taxon_Name = if_else(Bleaching == "Yes", 
-                              paste(Taxon_Name, "bleached", sep = " "), 
-                              Taxon_Name)) %>% 
-  drop_na(Taxon_Name) %>% 
   rename(decimalLatitude = Latitude, decimalLongitude = Longitude, verbatimDepth = Depth,
          organismID = Taxon_Name, eventDate = Start_Date, parentEventID	= Loc_Name,
          eventID = Frame, locality = Island, recordedBy = FramdIder) %>% 
@@ -36,6 +32,9 @@ read_csv("data/01_raw-data/0020/tbl_Benthic_Cover.csv") %>%
   ungroup() %>% 
   mutate(measurementValue = (n_points*100)/total_points) %>% 
   select(-n_points, -total_points) %>% 
+  group_by(decimalLatitude, decimalLongitude, locality, eventDate) %>%
+  mutate(parentEventID = as.numeric(as.factor(parentEventID))) %>% 
+  ungroup() %>% 
   # 4. Add additional variables
   mutate(datasetID = dataset,
          eventDate = ymd(eventDate),
