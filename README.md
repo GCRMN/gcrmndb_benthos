@@ -395,12 +395,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0170 | [Sannassy Pilly et al, 2024](https://doi.org/10.1098/rsos.231246) | upon request | Sh. | 2025-02-28 | JW |
 | 0171 | [Benzoni et al, 2006](https://www.researchgate.net/publication/292031854_The_coral_reefs_of_the_Northern_Arabian_Gulf_Stability_over_time_in_extreme_environmental_conditions) | open | Ar. | 2025-03-03 | JW |
 | 0172 | [Vousden, 1995](https://research.bangor.ac.uk/portal/en/theses/bahrain-marine-habitats-and-some-environmental-effects-on-seagrass-beds--a-study-of-the-marine-habitats-of-bahrain-with-particular-reference-to-the-effects-of-water-temperature-depth-and-salinity-on-seagrass-biomass-and-distribution(106e2056-14e0-4b61-9251-aa54eeb8b585).html) | open | Ar. | 2025-03-03 | JW |
+| 0173 | Attalla, 2024 | upon request | Sh. | 2025-03-17 | JW |
+| 0174 | One Ocean LLC | upon request | Sh. | 2025-03-17 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-03, the `gcrmndb_benthos` synthetic dataset contains a
-total of **13,613,806 observations** (*i.e* rows) representing **29,567
-sites** and **61,411 surveys**. The distribution of monitoring sites in
+On the 2025-03-17, the `gcrmndb_benthos` synthetic dataset contains a
+total of **13,614,378 observations** (*i.e* rows) representing **29,608
+sites** and **61,452 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -432,12 +434,12 @@ that differs from those of the other datasets.
 |            Caribbean |    14,210 |      23,740 |           64 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
 |                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
-|               PERSGA |       251 |         570 |            2 |    1997    |   2024    |
+|               PERSGA |       292 |         611 |            4 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       351 |         809 |           28 |    1985    |   2024    |
 |           South Asia |       352 |       2,015 |            9 |    1997    |   2024    |
 |                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    29,567 |      61,411 |          171 |    1973    |   2025    |
+| Global (all regions) |    29,608 |      61,452 |          173 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -471,7 +473,7 @@ differs from those of the other datasets.
 | Dominican Republic | Dominican Republic | 140 | 478 | 8 | 2004 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
 | Ecuador | Galapagos | 256 | 1,523 | 3 | 1994 | 2024 |
-| Egypt | Egypt | 182 | 491 | 2 | 1997 | 2024 |
+| Egypt | Egypt | 206 | 515 | 3 | 1997 | 2024 |
 | Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
 | Federal Republic of Somalia | Federal Republic of Somalia | 1 | 1 | 1 | 2005 | 2005 |
 | Fiji | Fiji | 654 | 1,003 | 12 | 1997 | 2025 |
@@ -532,7 +534,7 @@ differs from those of the other datasets.
 | Saint Lucia | Saint Lucia | 21 | 61 | 1 | 1999 | 2014 |
 | Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 42 | 60 | 3 | 2004 | 2024 |
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
-| Saudi Arabia | Saudi Arabia | 48 | 197 | 4 | 1985 | 2024 |
+| Saudi Arabia | Saudi Arabia | 65 | 214 | 5 | 1985 | 2024 |
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
 | Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 5 | 6 | 1 | 2001 | 2005 |
@@ -629,7 +631,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpaUQijP/file6fc79207d4b -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpkxLgwT/file3d80acc316b -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -641,7 +643,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-03
+     date     2025-03-17
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 

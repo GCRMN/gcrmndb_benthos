@@ -290,6 +290,7 @@
 "algae-turf-mat";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algae-turf-sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algal assemblage";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algal cover";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algal turf";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algas calcareas";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algas calcareas incrustantes";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -447,6 +448,7 @@
 "asparagopsis taxiformis on ramicrusta";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Bonnemaisoniales";"Bonnemaisoniaceae";"Asparagopsis";"Asparagopsis taxiformis";TRUE
 "aspargopsis spp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Bonnemaisoniales";"Bonnemaisoniaceae";"Asparagopsis";NA;TRUE
 "assemblage d'algues";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"associated fauna";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "asteroidea";NA;NA;NA;"Echinodermata";"Asteroidea";NA;NA;NA;NA;NA;TRUE
 "asteroidea - acanthaster sp";NA;NA;NA;"Echinodermata";"Asteroidea";"Ambuloasteroidea";"Valvatida";"Acanthasteridae";"Acanthaster";NA;TRUE
 "asteroidea sea star";NA;NA;NA;"Echinodermata";"Asteroidea";NA;NA;NA;NA;NA;TRUE
@@ -1139,6 +1141,8 @@
 "dead acropora table";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead calcareous algae";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead cca";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"dead components";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"dead compounet";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead coral - recently killed";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead coral bleached";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -3179,6 +3183,7 @@
 "parasimplastrea sheppardi";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Plerogyridae";"Blastomussa";"Blastomussa loyae";TRUE
 "parazoanthus darwini";NA;NA;NA;"Cnidaria";"Hexacorallia";NA;"Zoantharia";"Parazoanthidae";"Parazoanthus";"Parazoanthus darwini";TRUE
 "parazoanthus spp";NA;NA;NA;"Cnidaria";"Hexacorallia";NA;"Zoantharia";"Parazoanthidae";"Parazoanthus";NA;TRUE
+"partially live coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "parvocaulis parvulus";NA;NA;NA;"Chlorophyta";"Ulvophyceae";NA;"Dasycladales";"Polyphysaceae";"Parvocaulis";"Parvocaulis parvulus";TRUE
 "pavement";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "pavona";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Agariciidae";"Pavona";NA;TRUE
