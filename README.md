@@ -398,12 +398,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0173 | Attalla, 2024 | upon request | Sh. | 2025-03-17 | JW |
 | 0174 | One Ocean LLC | upon request | Sh. | 2025-03-17 | JW |
 | 0175 | [GBRMPA](https://www2.gbrmpa.gov.au/) | upon request | Sh. | 2025-03-18 | JW |
+| 0176 | [Operation Wallacea](https://www.opwall.com/) | upon request | Sh. | 2025-03-18 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-03-18, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,336,207 observations** (*i.e* rows) representing **29,700
-sites** and **62,557 surveys**. The distribution of monitoring sites in
+total of **17,366,695 observations** (*i.e* rows) representing **29,736
+sites** and **62,791 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -432,15 +433,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,726 |       9,424 |            9 |    1980    |   2025    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    14,210 |      23,740 |           64 |    1973    |   2024    |
-|                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
+|            Caribbean |    14,237 |      23,864 |           65 |    1973    |   2024    |
+|                  EAS |     3,042 |       6,812 |            7 |    1997    |   2024    |
 |                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
 |               PERSGA |       292 |         611 |            4 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       351 |         809 |           28 |    1985    |   2024    |
 |           South Asia |       352 |       2,015 |            9 |    1997    |   2024    |
-|                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    29,700 |      62,557 |          174 |    1973    |   2025    |
+|                  WIO |       421 |         717 |           17 |    1997    |   2025    |
+| Global (all regions) |    29,736 |      62,791 |          175 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -492,10 +493,10 @@ differs from those of the other datasets.
 | Guatemala | Guatemala | 21 | 45 | 2 | 2006 | 2023 |
 | Haiti | Haiti | 96 | 109 | 2 | 2003 | 2018 |
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
-| Honduras | Honduras | 379 | 669 | 2 | 1997 | 2024 |
+| Honduras | Honduras | 400 | 787 | 3 | 1997 | 2024 |
 | India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
 | India | India | 85 | 1,473 | 2 | 1998 | 2023 |
-| Indonesia | Indonesia | 676 | 1,123 | 2 | 1997 | 2024 |
+| Indonesia | Indonesia | 679 | 1,224 | 3 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 226 | 712 | 6 | 1986 | 2024 |
@@ -506,11 +507,11 @@ differs from those of the other datasets.
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
 | Kuwait | Kuwait | 18 | 33 | 4 | 2002 | 2014 |
-| Madagascar | Madagascar | 43 | 55 | 1 | 2001 | 2019 |
+| Madagascar | Madagascar | 49 | 64 | 2 | 2001 | 2024 |
 | Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
 | Maldives | Maldives | 192 | 284 | 4 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 386 | 949 | 7 | 1997 | 2024 |
+| Mexico | Mexico | 392 | 955 | 8 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 17 | 19 | 2 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
@@ -632,7 +633,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp8OkKsz/file383460751695 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpKoVoPE/file3a24317e6544 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
