@@ -397,12 +397,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0172 | [Vousden, 1995](https://research.bangor.ac.uk/portal/en/theses/bahrain-marine-habitats-and-some-environmental-effects-on-seagrass-beds--a-study-of-the-marine-habitats-of-bahrain-with-particular-reference-to-the-effects-of-water-temperature-depth-and-salinity-on-seagrass-biomass-and-distribution(106e2056-14e0-4b61-9251-aa54eeb8b585).html) | open | Ar. | 2025-03-03 | JW |
 | 0173 | Attalla, 2024 | upon request | Sh. | 2025-03-17 | JW |
 | 0174 | One Ocean LLC | upon request | Sh. | 2025-03-17 | JW |
+| 0175 | [GBRMPA](https://www2.gbrmpa.gov.au/) | upon request | Sh. | 2025-03-18 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-17, the `gcrmndb_benthos` synthetic dataset contains a
-total of **13,614,378 observations** (*i.e* rows) representing **29,608
-sites** and **61,452 surveys**. The distribution of monitoring sites in
+On the 2025-03-18, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,336,207 observations** (*i.e* rows) representing **29,700
+sites** and **62,557 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -429,7 +430,7 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,634 |       8,319 |            8 |    1980    |   2024    |
+|            Australia |     1,726 |       9,424 |            9 |    1980    |   2025    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
 |            Caribbean |    14,210 |      23,740 |           64 |    1973    |   2024    |
 |                  EAS |     3,039 |       6,711 |            6 |    1997    |   2024    |
@@ -439,7 +440,7 @@ that differs from those of the other datasets.
 |                ROPME |       351 |         809 |           28 |    1985    |   2024    |
 |           South Asia |       352 |       2,015 |            9 |    1997    |   2024    |
 |                  WIO |       415 |         708 |           16 |    1997    |   2025    |
-| Global (all regions) |    29,608 |      61,452 |          173 |    1973    |   2025    |
+| Global (all regions) |    29,700 |      62,557 |          174 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -452,7 +453,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,597 | 8,172 | 7 | 1980 | 2024 |
+| Australia | Australia | 1,689 | 9,277 | 8 | 1980 | 2025 |
 | Australia | Christmas Island | 25 | 84 | 3 | 2003 | 2023 |
 | Australia | Cocos Islands | 27 | 85 | 2 | 1997 | 2023 |
 | Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
@@ -631,7 +632,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpkxLgwT/file3d80acc316b -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp8OkKsz/file383460751695 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -643,7 +644,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-17
+     date     2025-03-18
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 

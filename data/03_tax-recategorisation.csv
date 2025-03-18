@@ -12,6 +12,7 @@
 "abiotic - boulder";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "abiotic - dead coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "abiotic - hard substrate";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"abiotic - other anything";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "abiotic - rock";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "abiotic - rubble";"Abiotic";"Rubble";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "abiotic - sand";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -2380,6 +2381,8 @@
 "lithothamnion";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Corallinophycidae";"Corallinales";"Hapalidiaceae";"Lithothamnion";NA;TRUE
 "lithothamnion spp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Corallinophycidae";"Corallinales";"Hapalidiaceae";"Lithothamnion";NA;TRUE
 "live coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"live coral rock/crustose coraline algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"live coral rock/turf";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "live coral-mud";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "live corals";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "live hard coral";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -3061,6 +3064,15 @@
 "other invertebrates - tunicate";NA;NA;NA;"Chordata";NA;NA;NA;NA;NA;NA;TRUE
 "other invertebrates - zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "other inverts";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"other life - burrowing clams";NA;NA;NA;"Mollusca";"Bivalvia";NA;NA;NA;NA;NA;TRUE
+"other life - christmas tree worms";NA;NA;NA;"Annelida";"Polychaeta";NA;NA;NA;NA;NA;TRUE
+"other life - cots";NA;NA;NA;"Echinodermata";"Asteroidea";"Ambuloasteroidea";"Valvatida";"Acanthasteridae";"Acanthaster";NA;TRUE
+"other life - drupella";NA;NA;NA;"Mollusca";"Gastropoda";"Caenogastropoda";"Neogastropoda";"Muricidae";"Drupella";NA;TRUE
+"other life - holothurians";NA;NA;NA;"Echinodermata";"Holothuroidea";NA;NA;NA;NA;NA;TRUE
+"other life - other burrowers";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"other life - seagrass";"Seagrass";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"other life - tridacna clams";NA;NA;NA;"Mollusca";"Bivalvia";"Autobranchia";"Cardiida";"Cardiidae";"Tridacna";NA;TRUE
+"other life - urchins";NA;NA;NA;"Echinodermata";"Echinoidea";NA;NA;NA;NA;NA;TRUE
 "other lifeforms non coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other live";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other live coral";"Hard coral";NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
@@ -3592,6 +3604,9 @@
 "reb branching";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently dead coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently killed coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"recently killed coral - no algae";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"recently killed coral - slime algae";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"recently killed coral - turf algae";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently killed hard coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "reckilledcoral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "red calcareous macro algae";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -3836,6 +3851,7 @@
 "silt";"Abiotic";"Silt";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "silt and sand";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "silt/clay";"Abiotic";"Silt";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"silt/mud";"Abiotic";"Silt";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "simplastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Euphylliidae";"Simplastrea";NA;TRUE
 "sinularia";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Alcyoniidae";"Sinularia";NA;TRUE
 "sinularia blanchi";NA;NA;"Bleached";"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Alcyoniidae";"Sinularia";NA;TRUE
@@ -3850,17 +3866,22 @@
 "smenospongia aurea";NA;NA;NA;"Porifera";"Demospongiae";"Keratosa";"Dictyoceratida";"Thorectidae";"Smenospongia";"Smenospongia aurea";TRUE
 "smenospongia conulosa";NA;NA;NA;"Porifera";"Demospongiae";"Keratosa";"Dictyoceratida";"Thorectidae";"Smenospongia";"Smenospongia conulosa";TRUE
 "smenospongia sp";NA;NA;NA;"Porifera";"Demospongiae";"Keratosa";"Dictyoceratida";"Thorectidae";"Smenospongia";NA;TRUE
+"sof coral - carnation";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
+"soft coral - anemone";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Actiniaria";NA;NA;NA;TRUE
 "soft coral - bleached soft coral";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - corallimoprh";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Corallimorpharia";NA;NA;NA;TRUE
 "soft coral - dendronepthea";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Nephtheidae";"Dendronephthya";NA;TRUE
+"soft coral - fire corals";NA;NA;NA;"Cnidaria";"Hydrozoa";"Hydroidolina";"Anthoathecata";"Milleporidae";"Millepora";NA;TRUE
 "soft coral - gorgonian";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Gorgoniidae";NA;NA;TRUE
 "soft coral - leather coral";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"soft coral - leathery";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - lobophytum";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Alcyoniidae";"Lobophytum";NA;TRUE
 "soft coral - octocoral";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - octocorallia";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - other";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
+"soft coral - others";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - plume form";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - rod form";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - sarcophyton";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Sarcophytidae";"Sarcophyton";NA;TRUE
@@ -3869,6 +3890,7 @@
 "soft coral - soft coral";"Other fauna";NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - whip form";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral - xenia";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Xeniidae";"Xenia";NA;TRUE
+"soft coral - zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "soft coral alcyonacea";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";"Malacalcyonacea";"Alcyoniidae";NA;NA;TRUE
 "soft coral bushy";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
 "soft coral other";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
@@ -3915,6 +3937,9 @@
 "spondylus princeps";NA;NA;NA;"Mollusca";"Bivalvia";"Autobranchia";"Pectinida";"Spondylidae";"Spondylus";"Spondylus crassisquama";TRUE
 "spongaire sp";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"sponge - encrusting";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"sponge - erect";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
+"sponge - massive";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "sponge - other";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "sponge - sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "sponge bioeroding";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
