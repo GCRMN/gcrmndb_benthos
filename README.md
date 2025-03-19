@@ -279,7 +279,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0054 | [100 Island Challenge (SLI)](https://sandinlab.ucsd.edu/100-island-challenge/) | upon request | Sh. |  | JW |
 | 0055 | [Samoa Ocean Strategy](https://www.samoaocean.org/) | upon request | Sh. |  | JW |
 | 0056 | [SBN_UAE_2023](https://dashboard.datamermaid.org/?project=SBN_UAE_2023) | open (summary) | Me. |  | JW |
-| 0057 | [Kuwait_2010](https://dashboard.datamermaid.org/?project=Kuwait_2010) | open (summary) | Me. |  | JW |
+| 0057 | Montefalcone et al. | upon request | Sh. | 2025-03-19 | JW |
 | 0058 | [Kuwait_2014](https://dashboard.datamermaid.org/?project=Kuwait_2014) | open (summary) | Me. |  | JW |
 | 0059 | [Bahrain_2011](https://dashboard.datamermaid.org/?project=Bahrain_2011) | open (summary) | Me. |  | JW |
 | 0060 | [Ankay Conservation](https://ankayconservation.com) | upon request | Sh. | 2024-07-08 | JW |
@@ -402,9 +402,9 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-18, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,366,695 observations** (*i.e* rows) representing **29,736
-sites** and **62,791 surveys**. The distribution of monitoring sites in
+On the 2025-03-19, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,388,031 observations** (*i.e* rows) representing **29,914
+sites** and **63,097 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -438,10 +438,10 @@ that differs from those of the other datasets.
 |                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
 |               PERSGA |       292 |         611 |            4 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
-|                ROPME |       351 |         809 |           28 |    1985    |   2024    |
-|           South Asia |       352 |       2,015 |            9 |    1997    |   2024    |
+|                ROPME |       350 |         799 |           27 |    1985    |   2024    |
+|           South Asia |       531 |       2,331 |           10 |    1997    |   2024    |
 |                  WIO |       421 |         717 |           17 |    1997    |   2025    |
-| Global (all regions) |    29,736 |      62,791 |          175 |    1973    |   2025    |
+| Global (all regions) |    29,914 |      63,097 |          175 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -506,10 +506,10 @@ differs from those of the other datasets.
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
-| Kuwait | Kuwait | 18 | 33 | 4 | 2002 | 2014 |
+| Kuwait | Kuwait | 17 | 23 | 3 | 2002 | 2014 |
 | Madagascar | Madagascar | 49 | 64 | 2 | 2001 | 2024 |
 | Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
-| Maldives | Maldives | 192 | 284 | 4 | 1997 | 2024 |
+| Maldives | Maldives | 371 | 600 | 5 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 392 | 955 | 8 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
@@ -633,7 +633,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpKoVoPE/file3a24317e6544 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpQ7AiqE/file239c45b06a90 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -645,7 +645,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-18
+     date     2025-03-19
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
