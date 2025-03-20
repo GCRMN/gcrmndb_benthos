@@ -1,5 +1,7 @@
 convert_coords <- base::Vectorize(function(x){
   
+  require(tidyverse)
+  
   x <- str_squish(x)
   
   degree <- as.numeric(str_split_fixed(x, "°|’|'|”|\"", 4)[,1])
