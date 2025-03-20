@@ -262,28 +262,30 @@ data_eez <- st_read("data/07_data-eez/02_clean/eez_v12.shp") %>%
   st_difference(correction_polygon) %>% 
   st_transform(crs_selected)
 
-# 3. Extract site coordinates ----
+# 3. Load site coordinates and number of monitoring years ----
 
 data_benthos_coords <- data_benthos %>% 
-  select(decimalLatitude, decimalLongitude, year) %>% 
+  select(datasetID, decimalLatitude, decimalLongitude, year) %>% 
   distinct() %>% 
-  group_by(decimalLatitude, decimalLongitude) %>% 
-  summarise(interval_years = max(year) - min(year)) %>%
+  group_by(datasetID, decimalLatitude, decimalLongitude) %>% 
+  count(name = "nb_years") %>% 
   ungroup() %>% 
-  mutate(interval_class = cut(interval_years, 
-                              breaks = c(-Inf, 1, 5, 10, 15, Inf),
-                              labels = c("1", "2-5", "6-10", "11-15", ">15"))) %>%
-  arrange(interval_class) %>% 
+  mutate(int_class = cut(nb_years, 
+                         breaks = c(-Inf, 1, 5, 10, 15, Inf),
+                         labels = c("1 year", "2-5 years", "6-10 years", "11-15 years", ">15 years")),
+         int_class = as.factor(int_class)) %>% 
+  arrange(int_class) %>% 
+  select(-nb_years) %>% 
   st_as_sf(coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) %>% 
-  st_transform(., crs = crs_selected)
-  
+  st_transform(crs_selected)
+
 # 4. Make the plot ----
 
 plot_map <- ggplot() +
   geom_sf(data = data_eez, fill = NA, col = "lightgrey") +
   geom_sf(data = data_land) +
   geom_sf(data = data_country) +
-  geom_sf(data = data_benthos_coords, aes(color = interval_class), size = 1) +
+  geom_sf(data = data_benthos_coords, aes(color = int_class), size = 1) +
   # Graphical aspects
   coord_sf(ylim = c(-5000000, 5000000), expand = FALSE) +
   guides(colour = guide_legend(title.position = "top", title.hjust = 0.5, override.aes = list(size = 5))) +

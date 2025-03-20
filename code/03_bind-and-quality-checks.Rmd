@@ -491,13 +491,13 @@ synthetic_data %>%
   select(datasetID, decimalLatitude, decimalLongitude, year) %>% 
   distinct() %>% 
   group_by(datasetID, decimalLatitude, decimalLongitude) %>% 
-  summarise(interval_years = max(year, na.rm = TRUE) - min(year, na.rm = TRUE)) %>%
+  count(name = "nb_years") %>% 
   ungroup() %>% 
-  mutate(int_class = cut(interval_years, 
-                              breaks = c(-Inf, 1, 5, 10, 15, Inf),
-                              labels = c("1 year", "2-5 years", "6-10 years", "11-15 years", ">15 years")),
+  mutate(int_class = cut(nb_years, 
+                         breaks = c(-Inf, 1, 5, 10, 15, Inf),
+                         labels = c("1 year", "2-5 years", "6-10 years", "11-15 years", ">15 years")),
          int_class = as.factor(int_class)) %>% 
-  select(-interval_years) %>% 
+  select(-nb_years) %>% 
   st_as_sf(coords = c("decimalLongitude", "decimalLatitude"), crs = 4326) %>% 
   # Use getwd to get the directory because gdal use a different relative path
   st_write(.,
