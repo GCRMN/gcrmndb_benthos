@@ -399,12 +399,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0174 | One Ocean LLC | upon request | Sh. | 2025-03-17 | JW |
 | 0175 | [GBRMPA](https://www2.gbrmpa.gov.au/) | upon request | Sh. | 2025-03-18 | JW |
 | 0176 | [Operation Wallacea](https://www.opwall.com/) | upon request | Sh. | 2025-03-18 | JW |
+| 0177 | Al-Tawaha | upon request | Sh. | 2025-03-20 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-19, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,388,031 observations** (*i.e* rows) representing **29,914
-sites** and **63,097 surveys**. The distribution of monitoring sites in
+On the 2025-03-20, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,388,831 observations** (*i.e* rows) representing **29,923
+sites** and **63,128 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -436,12 +437,12 @@ that differs from those of the other datasets.
 |            Caribbean |    14,237 |      23,864 |           65 |    1973    |   2024    |
 |                  EAS |     3,042 |       6,812 |            7 |    1997    |   2024    |
 |                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
-|               PERSGA |       292 |         611 |            4 |    1997    |   2024    |
+|               PERSGA |       301 |         642 |            5 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
 |           South Asia |       531 |       2,331 |           10 |    1997    |   2024    |
 |                  WIO |       421 |         717 |           17 |    1997    |   2025    |
-| Global (all regions) |    29,914 |      63,097 |          175 |    1973    |   2025    |
+| Global (all regions) |    29,923 |      63,128 |          176 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -501,7 +502,7 @@ differs from those of the other datasets.
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 226 | 712 | 6 | 1986 | 2024 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
-| Jordan | Jordan | 3 | 3 | 1 | 2008 | 2008 |
+| Jordan | Jordan | 12 | 34 | 2 | 2008 | 2024 |
 | Kenya | Kenya | 96 | 104 | 7 | 2003 | 2023 |
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
@@ -633,7 +634,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpQ7AiqE/file239c45b06a90 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpU56eE4/file3b6418432f3c -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -645,7 +646,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-19
+     date     2025-03-20
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
