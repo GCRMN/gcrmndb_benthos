@@ -46,13 +46,17 @@ list_sheets <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   
 ## 2.4 Combine Excel sheets ----
 
-map_dfr(list_sheets, ~read_xlsx(path = read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-                                                  filter(datasetID == dataset & data_type == "main") %>% 
-                                                  select(data_path) %>% 
-                                                  pull(),
-                                                sheet = .,
-                                                range = "A1:V217")) %>% 
-  select(-...22) %>% 
+map(list_sheets, ~read_xlsx(path = read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+                              filter(datasetID == dataset & data_type == "main") %>% 
+                              select(data_path) %>% 
+                              pull(),
+                            sheet = .,
+                            range = "A1:U229",
+                            col_types = "text")) %>% 
+  list_rbind() %>% 
+  mutate(across(c("LIT_Number","Site_Number","Year", "ACB", "ACT", "ACD", "ACF", "ACE", 
+                  "CM", "CS", "CB", "CF", "CE", "LCC", "Soft coral", "Algae", "CCA", "Others", "Abiotic"), ~as.numeric(.x)),
+         LIT_Number = rep(c(1,2,3), nrow(.)/3)) %>%
   pivot_longer("ACB":ncol(.), names_to = "code", values_to = "measurementValue") %>% 
   filter(code != "LCC") %>% 
   rename(parentEventID = LIT_Number, year = Year) %>% 
