@@ -297,6 +297,7 @@
 "algae-turf";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algae-turf-mat";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algae-turf-sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algaecover";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algal assemblage";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algal cover";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algal turf";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1012,6 +1013,7 @@
 "coral submassive";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral tubastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";NA;TRUE
 "coral unknown";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"coralcover";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "corales duros foliaceos";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "corales duros incrustantes";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "corales duros masivos";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE

@@ -363,7 +363,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0138 | Hawkins and Roberts, 1995 | upon request | Sh. | 2024-12-18 | JW |
 | 0139 | Raghunathan and Mondal | upon request | Sh. | 2025-01-02 | JW |
 | 0140 | Fairoz | upon request | Sh. | 2025-01-02 | JW |
-| 0141 | SDMRI | upon request | Sh. | 2025-01-09 | JW |
+| 0141 | SDMRI | upon request | Sh. | 2025-03-21 | JW |
 | 0142 | [Benkwitt et al. (a)](https://www.science.org/doi/10.1126/sciadv.adj0390) | upon request | Sh. | 2025-01-12 | JW |
 | 0143 | Benkwitt et al. (b) | upon request | Sh. | 2025-01-12 | JW |
 | 0144 | [UAE_2006-2014](https://dashboard.datamermaid.org/?project=UAE_2006-2014) | upon request | Me. | 2025-01-16 | JW |
@@ -400,12 +400,16 @@ considered. The column names (except *aggregator*) correspond to
 | 0175 | [GBRMPA](https://www2.gbrmpa.gov.au/) | upon request | Sh. | 2025-03-18 | JW |
 | 0176 | [Operation Wallacea](https://www.opwall.com/) | upon request | Sh. | 2025-03-18 | JW |
 | 0177 | Al-Tawaha | upon request | Sh. | 2025-03-20 | JW |
+| 0178 | [Antonius and Weiner, 1982](https://doi.org/10.1111/j.1439-0485.1982.tb00113.x) | open | Ar. | 2025-03-21 | JW |
+| 0179 | [Bright et al, 1984](https://www.ingentaconnect.com/content/umrsmas/bullmar/1984/00000034/00000003/art00012) | open | Ar. | 2025-03-21 | JW |
+| 0180 | [Dodge et al, 1982](https://www.ingentaconnect.com/content/umrsmas/bullmar/1982/00000032/00000003/art00009) | open | Ar. | 2025-03-21 | JW |
+| 0181 | [Edmunds and Bruno, 1996](https://www.int-res.com/abstracts/meps/v143/p165-171) | open | Ar. | 2025-03-21 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-20, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,388,831 observations** (*i.e* rows) representing **29,923
-sites** and **63,128 surveys**. The distribution of monitoring sites in
+On the 2025-03-21, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,393,482 observations** (*i.e* rows) representing **29,957
+sites** and **63,268 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -434,15 +438,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,726 |       9,424 |            9 |    1980    |   2025    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    14,237 |      23,864 |           65 |    1973    |   2024    |
+|            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
 |                  EAS |     3,042 |       6,812 |            7 |    1997    |   2024    |
 |                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
 |               PERSGA |       301 |         642 |            5 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
-|           South Asia |       531 |       2,331 |           10 |    1997    |   2024    |
+|           South Asia |       531 |       2,437 |           10 |    1997    |   2024    |
 |                  WIO |       421 |         717 |           17 |    1997    |   2025    |
-| Global (all regions) |    29,923 |      63,128 |          176 |    1973    |   2025    |
+| Global (all regions) |    29,957 |      63,268 |          180 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -496,11 +500,11 @@ differs from those of the other datasets.
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
 | Honduras | Honduras | 400 | 787 | 3 | 1997 | 2024 |
 | India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
-| India | India | 85 | 1,473 | 2 | 1998 | 2023 |
+| India | India | 85 | 1,579 | 2 | 1998 | 2024 |
 | Indonesia | Indonesia | 679 | 1,224 | 3 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
-| Jamaica | Jamaica | 226 | 712 | 6 | 1986 | 2024 |
+| Jamaica | Jamaica | 230 | 716 | 7 | 1986 | 2024 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
 | Jordan | Jordan | 12 | 34 | 2 | 2008 | 2024 |
 | Kenya | Kenya | 96 | 104 | 7 | 2003 | 2023 |
@@ -551,7 +555,7 @@ differs from those of the other datasets.
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
 | United Arab Emirates | United Arab Emirates | 73 | 196 | 12 | 2004 | 2024 |
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
-| United Kingdom | Bermuda | 40 | 88 | 1 | 2015 | 2021 |
+| United Kingdom | Bermuda | 43 | 91 | 2 | 1982 | 2021 |
 | United Kingdom | British Virgin Islands | 28 | 322 | 2 | 1992 | 2024 |
 | United Kingdom | Cayman Islands | 28 | 185 | 4 | 1997 | 2024 |
 | United Kingdom | Montserrat | 87 | 109 | 2 | 2005 | 2017 |
@@ -565,9 +569,9 @@ differs from those of the other datasets.
 | United States | Johnston Atoll | 46 | 46 | 1 | 2015 | 2015 |
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
-| United States | Puerto Rico | 2,956 | 3,267 | 6 | 1986 | 2024 |
-| United States | United States | 1,964 | 5,187 | 11 | 1986 | 2024 |
-| United States | United States Virgin Islands | 5,859 | 6,848 | 7 | 1986 | 2024 |
+| United States | Puerto Rico | 2,968 | 3,279 | 7 | 1982 | 2024 |
+| United States | United States | 1,967 | 5,190 | 12 | 1984 | 2024 |
+| United States | United States Virgin Islands | 5,871 | 6,860 | 9 | 1982 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
 | Venezuela | Venezuela | 38 | 45 | 2 | 2004 | 2018 |
@@ -634,7 +638,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpigGuxj/filee2c67f55732 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp4YrxG4/file2de0503f4719 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -646,7 +650,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-20
+     date     2025-03-21
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
