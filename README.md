@@ -404,12 +404,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0179 | [Bright et al, 1984](https://www.ingentaconnect.com/content/umrsmas/bullmar/1984/00000034/00000003/art00012) | open | Ar. | 2025-03-21 | JW |
 | 0180 | [Dodge et al, 1982](https://www.ingentaconnect.com/content/umrsmas/bullmar/1982/00000032/00000003/art00009) | open | Ar. | 2025-03-21 | JW |
 | 0181 | [Edmunds and Bruno, 1996](https://www.int-res.com/abstracts/meps/v143/p165-171) | open | Ar. | 2025-03-21 | JW |
+| 0182 | [AIMS Western Australia](https://www.aims.gov.au/) | upon request | Sh. | 2025-03-26 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-21, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,393,482 observations** (*i.e* rows) representing **29,957
-sites** and **63,268 surveys**. The distribution of monitoring sites in
+On the 2025-03-26, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,443,291 observations** (*i.e* rows) representing **30,013
+sites** and **63,808 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -436,7 +437,7 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,726 |       9,424 |            9 |    1980    |   2025    |
+|            Australia |     1,782 |       9,964 |           10 |    1980    |   2025    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
 |            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
 |                  EAS |     3,042 |       6,812 |            7 |    1997    |   2024    |
@@ -446,7 +447,7 @@ that differs from those of the other datasets.
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
 |           South Asia |       531 |       2,437 |           10 |    1997    |   2024    |
 |                  WIO |       421 |         717 |           17 |    1997    |   2025    |
-| Global (all regions) |    29,957 |      63,268 |          180 |    1973    |   2025    |
+| Global (all regions) |    30,013 |      63,808 |          181 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -459,7 +460,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
-| Australia | Australia | 1,689 | 9,277 | 8 | 1980 | 2025 |
+| Australia | Australia | 1,745 | 9,817 | 9 | 1980 | 2025 |
 | Australia | Christmas Island | 25 | 84 | 3 | 2003 | 2023 |
 | Australia | Cocos Islands | 27 | 85 | 2 | 1997 | 2023 |
 | Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
@@ -638,7 +639,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp4YrxG4/file2de0503f4719 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpeUlmd2/file13a41e2c6e50 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -650,7 +651,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-21
+     date     2025-03-26
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
