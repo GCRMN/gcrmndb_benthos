@@ -488,6 +488,7 @@ save(synthetic_data, file = "../data/09_gcrmndb_benthos.RData")
 # 2. Site coordinates ----
 
 synthetic_data %>% 
+  filter(!(datasetID %in% c("0009", "0183"))) %>% 
   select(datasetID, decimalLatitude, decimalLongitude, year) %>% 
   distinct() %>% 
   group_by(datasetID, decimalLatitude, decimalLongitude) %>% 
