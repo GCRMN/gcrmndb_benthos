@@ -407,12 +407,22 @@ considered. The column names (except *aggregator*) correspond to
 | 0182 | [AIMS Western Australia](https://www.aims.gov.au/) | upon request | Sh. | 2025-03-26 | JW |
 | 0183 | [SHAMS](https://shams.gov.sa/) | upon request | Sh. | 2025-03-27 | JW |
 | 0184 | Saad et al. | upon request | Sh. | 2025-03-27 | JW |
+| 0185 | Sh Aba et al. | upon request | Sh. | 2025-03-28 | JW |
+| 0186 | [ORI](https://saambr.org.za/oceanographic-research-institute-ori/) | upon request | Sh. | 2025-03-28 | JW |
+| 0187 | [Innoceana](https://innoceana.org/) | upon request | Sh. | 2025-03-31 | JW |
+| 0188 | IMS | upon request | Sh. | 2025-03-28 | JW |
+| 0189 | CORDIO (Tanzania) | upon request | Sh. | 2025-03-28 | JW |
+| 0190 | CHICOP | upon request | Sh. | 2025-03-28 | JW |
+| 0191 | SUZA | upon request | Sh. | 2025-03-28 | JW |
+| 0192 | Eylem | upon request | Sh. | 2025-03-28 | JW |
+| 0193 | Under the Wave | upon request | Sh. | 2025-03-28 | JW |
+| 0194 | Rajan et al. | upon request | Sh. | 2025-03-28 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-27, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,485,456 observations** (*i.e* rows) representing **30,117
-sites** and **63,914 surveys**. The distribution of monitoring sites in
+On the 2025-03-31, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,480,329 observations** (*i.e* rows) representing **30,254
+sites** and **64,735 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -441,15 +451,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,782 |       9,964 |           10 |    1980    |   2025    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
+|            Caribbean |    14,271 |      23,898 |           70 |    1973    |   2024    |
 |                  EAS |     3,042 |       6,812 |            7 |    1997    |   2024    |
-|                  ETP |       762 |       2,619 |            4 |    1994    |   2024    |
-|               PERSGA |       405 |         748 |            7 |    1997    |   2024    |
+|                  ETP |       776 |       2,689 |            5 |    1994    |   2025    |
+|               PERSGA |       406 |         755 |            9 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
-|           South Asia |       531 |       2,437 |           10 |    1997    |   2024    |
-|                  WIO |       421 |         717 |           17 |    1997    |   2025    |
-| Global (all regions) |    30,117 |      63,914 |          183 |    1973    |   2025    |
+|           South Asia |       557 |       2,523 |           11 |    1997    |   2024    |
+|                  WIO |       517 |       1,375 |           25 |    1987    |   2025    |
+| Global (all regions) |    30,254 |      64,735 |          194 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -475,9 +485,9 @@ differs from those of the other datasets.
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
 | China | China | 100 | 366 | 1 | 1997 | 2012 |
 | Colombia | Colombia | 222 | 712 | 6 | 1997 | 2024 |
-| Comores | Comores | 50 | 104 | 4 | 2017 | 2024 |
-| Costa Rica | Costa Rica | 217 | 405 | 4 | 2004 | 2023 |
-| Cuba | Cuba | 37 | 46 | 2 | 2001 | 2023 |
+| Comores | Comores | 35 | 94 | 4 | 1999 | 2022 |
+| Costa Rica | Costa Rica | 231 | 475 | 5 | 2004 | 2025 |
+| Cuba | Cuba | 37 | 46 | 3 | 2001 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 19 | 33 | 1 | 2004 | 2018 |
 | Dominican Republic | Dominican Republic | 140 | 478 | 8 | 2004 | 2024 |
@@ -485,7 +495,7 @@ differs from those of the other datasets.
 | Ecuador | Galapagos | 256 | 1,523 | 3 | 1994 | 2024 |
 | Egypt | Egypt | 206 | 515 | 3 | 1997 | 2024 |
 | Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
-| Federal Republic of Somalia | Federal Republic of Somalia | 1 | 1 | 1 | 2005 | 2005 |
+| Federal Republic of Somalia | Federal Republic of Somalia | 4 | 4 | 2 | 2005 | 2024 |
 | Fiji | Fiji | 654 | 1,003 | 12 | 1997 | 2025 |
 | France | Collectivity of Saint Martin | 12 | 83 | 2 | 2007 | 2022 |
 | France | Europa Island | 1 | 1 | 1 | 2002 | 2002 |
@@ -503,14 +513,14 @@ differs from those of the other datasets.
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
 | Honduras | Honduras | 400 | 787 | 3 | 1997 | 2024 |
 | India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
-| India | India | 85 | 1,579 | 2 | 1998 | 2024 |
+| India | India | 111 | 1,665 | 3 | 1998 | 2024 |
 | Indonesia | Indonesia | 679 | 1,224 | 3 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 230 | 716 | 7 | 1986 | 2024 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
 | Jordan | Jordan | 12 | 34 | 2 | 2008 | 2024 |
-| Kenya | Kenya | 96 | 104 | 7 | 2003 | 2023 |
+| Kenya | Kenya | 138 | 548 | 7 | 1987 | 2023 |
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
@@ -547,11 +557,11 @@ differs from those of the other datasets.
 | Saudi Arabia | Saudi Arabia | 158 | 307 | 6 | 1985 | 2024 |
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
 | Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
-| South Africa | South Africa | 5 | 6 | 1 | 2001 | 2005 |
+| South Africa | South Africa | 6 | 37 | 2 | 1993 | 2023 |
 | Sri Lanka | Sri Lanka | 10 | 32 | 2 | 2003 | 2024 |
 | Sudan | Sudan | 22 | 27 | 2 | 2004 | 2022 |
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
-| Tanzania | Tanzania | 122 | 168 | 7 | 1997 | 2025 |
+| Tanzania | Tanzania | 187 | 358 | 13 | 1992 | 2025 |
 | Thailand | Thailand | 150 | 248 | 1 | 1998 | 2024 |
 | Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
@@ -579,7 +589,7 @@ differs from those of the other datasets.
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
 | Venezuela | Venezuela | 38 | 45 | 2 | 2004 | 2018 |
 | Vietnam | Vietnam | 182 | 356 | 1 | 1998 | 2011 |
-| Yemen | Yemen | 5 | 5 | 1 | 2008 | 2008 |
+| Yemen | Yemen | 6 | 12 | 3 | 1999 | 2017 |
 
 ## 7. Sponsors
 
@@ -641,7 +651,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpCGLUfi/file32d07333290a -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp4Ol21W/file307461036c7 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -653,7 +663,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-27
+     date     2025-03-31
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
