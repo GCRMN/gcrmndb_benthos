@@ -417,12 +417,21 @@ considered. The column names (except *aggregator*) correspond to
 | 0192 | Eylem | upon request | Sh. | 2025-03-28 | JW |
 | 0193 | Under the Wave | upon request | Sh. | 2025-03-28 | JW |
 | 0194 | Rajan et al. | upon request | Sh. | 2025-03-28 | JW |
+| 0195 | CNRO | upon request | Sh. | 2025-03-31 | JW |
+| 0196 | Blue Ventures | upon request | Sh. | 2025-03-31 | JW |
+| 0197 | PRÎSM | upon request | Sh. | 2025-03-31 | JW |
+| 0198 | YSO | upon request | Sh. | 2025-03-31 | JW |
+| 0199 | IHSM | upon request | Sh. | 2025-03-31 | JW |
+| 0200 | WWF Madagascar | upon request | Sh. | 2025-03-31 | JW |
+| 0201 | CORDIO (Madagascar) | upon request | Sh. | 2025-03-31 | JW |
+| 0202 | KORAI | upon request | Sh. | 2025-03-31 | JW |
+| 0203 | MMRI | upon request | Sh. | 2025-03-31 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-03-31, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,480,329 observations** (*i.e* rows) representing **30,254
-sites** and **64,735 surveys**. The distribution of monitoring sites in
+total of **17,481,472 observations** (*i.e* rows) representing **30,399
+sites** and **65,187 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -451,15 +460,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,782 |       9,964 |           10 |    1980    |   2025    |
 |               Brazil |       138 |         189 |            2 |    2002    |   2012    |
-|            Caribbean |    14,271 |      23,898 |           70 |    1973    |   2024    |
+|            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
 |                  EAS |     3,042 |       6,812 |            7 |    1997    |   2024    |
 |                  ETP |       776 |       2,689 |            5 |    1994    |   2025    |
 |               PERSGA |       406 |         755 |            9 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
-|           South Asia |       557 |       2,523 |           11 |    1997    |   2024    |
-|                  WIO |       517 |       1,375 |           25 |    1987    |   2025    |
-| Global (all regions) |    30,254 |      64,735 |          194 |    1973    |   2025    |
+|           South Asia |       630 |       2,745 |           12 |    1997    |   2024    |
+|                  WIO |       589 |       1,605 |           33 |    1987    |   2025    |
+| Global (all regions) |    30,399 |      65,187 |          202 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -487,7 +496,7 @@ differs from those of the other datasets.
 | Colombia | Colombia | 222 | 712 | 6 | 1997 | 2024 |
 | Comores | Comores | 35 | 94 | 4 | 1999 | 2022 |
 | Costa Rica | Costa Rica | 231 | 475 | 5 | 2004 | 2025 |
-| Cuba | Cuba | 37 | 46 | 3 | 2001 | 2023 |
+| Cuba | Cuba | 37 | 46 | 2 | 2001 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 19 | 33 | 1 | 2004 | 2018 |
 | Dominican Republic | Dominican Republic | 140 | 478 | 8 | 2004 | 2024 |
@@ -525,9 +534,9 @@ differs from those of the other datasets.
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
 | Kuwait | Kuwait | 17 | 23 | 3 | 2002 | 2014 |
-| Madagascar | Madagascar | 49 | 64 | 2 | 2001 | 2024 |
+| Madagascar | Madagascar | 121 | 294 | 10 | 1998 | 2024 |
 | Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
-| Maldives | Maldives | 371 | 600 | 5 | 1997 | 2024 |
+| Maldives | Maldives | 444 | 822 | 6 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 392 | 955 | 8 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
@@ -651,7 +660,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp4Ol21W/file307461036c7 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpAjf0wt/file12fc59f88cd -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
