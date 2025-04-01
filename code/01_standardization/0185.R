@@ -27,12 +27,14 @@ data_path <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(data_path) %>% 
   pull()
 
-data <- bind_rows(read_xlsx(path = data_path, sheet = 1, range = "A2:M33") %>% 
+bind_rows(read_xlsx(path = data_path, sheet = 1, range = "A2:M33") %>% 
                     mutate(locality = "Curubo Beach"),
                   read_xlsx(path = data_path, sheet = 1, range = "A65:M99") %>% 
                     mutate(locality = "Adale"),
                   read_xlsx(path = data_path, sheet = 1, range = "A132:M165") %>% 
-                    mutate(locality = "Warsheekh")) %>% 
+                    mutate(locality = "Warsheekh"),
+                  read_xlsx(path = data_path, sheet = 1, range = "A241:M277") %>% 
+                    mutate(locality = "Jaziira")) %>% 
   drop_na("Growth form") %>% 
   filter(!(`Growth form` %in% c("Hard coral", "Algae", "Other inverts", "Substrate", "Total"))) %>% 
   select(`Growth form`, locality, `% Rep-1`, `% Rep-2`, `% Rep-3`) %>% 
