@@ -429,18 +429,20 @@ considered. The column names (except *aggregator*) correspond to
 | 0204 | [Memba-Mossuril Baseline](https://dashboard.datamermaid.org/?project=Memba-Mossuril%20Baseline) | upon request | Me. | 2025-04-01 | JW |
 | 0205 | PSESPA Monitoring2WWF | upon request | Me. | 2025-04-01 | JW |
 | 0206 | [Inhambane LMMAs](https://dashboard.datamermaid.org/?project=Inhambane%20LMMAs%20Monitoring%20Program) | upon request | Me. | 2025-04-01 | JW |
-| 0207 | Vamizi | upon request | Sh. | 2025-04-01 | JW |
+| 0207 | [Vamizi Island Monitoring](https://dashboard.datamermaid.org/?project=Vamizi%20Island%20Monitoring) | upon request | Me. | 2025-04-01 | JW |
 | 0208 | RCBrasil | upon request | Sh. | 2025-04-01 | JW |
 | 0209 | Cordeiro | upon request | Sh. | 2025-04-01 | JW |
 | 0210 | Nair et al. (1998-2023) | upon request | Sh. | 2025-04-01 | JW |
 | 0211 | Nair et al. (2007-2020) | upon request | Sh. | 2025-04-01 | JW |
 | 0212 | Nair et al. (2024) | upon request | Sh. | 2025-04-01 | JW |
+| 0213 | PSESPA 2019 | upon request | Sh. | 2025-04-01 | JW |
+| 0214 | CTV | upon request | Sh. | 2025-04-01 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-04-01, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,515,006 observations** (*i.e* rows) representing **30,551
-sites** and **65,783 surveys**. The distribution of monitoring sites in
+total of **17,517,309 observations** (*i.e* rows) representing **30,560
+sites** and **65,809 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -476,8 +478,8 @@ that differs from those of the other datasets.
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
-|                  WIO |       691 |       1,720 |           37 |    1987    |   2025    |
-| Global (all regions) |    30,551 |      65,783 |          211 |    1973    |   2025    |
+|                  WIO |       700 |       1,746 |           39 |    1987    |   2025    |
+| Global (all regions) |    30,560 |      65,809 |          213 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -550,7 +552,7 @@ differs from those of the other datasets.
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 392 | 955 | 8 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
-| Mozambique | Mozambique | 118 | 133 | 6 | 1997 | 2024 |
+| Mozambique | Mozambique | 127 | 159 | 8 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
 | Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Netherlands | Bonaire | 159 | 623 | 6 | 1973 | 2023 |
@@ -670,7 +672,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp6LAK1s/file2e0836b44291 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp6bzfUt/file2ab412354fd -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
