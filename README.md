@@ -431,12 +431,16 @@ considered. The column names (except *aggregator*) correspond to
 | 0206 | [Inhambane LMMAs](https://dashboard.datamermaid.org/?project=Inhambane%20LMMAs%20Monitoring%20Program) | upon request | Me. | 2025-04-01 | JW |
 | 0207 | Vamizi | upon request | Sh. | 2025-04-01 | JW |
 | 0208 | RCBrasil | upon request | Sh. | 2025-04-01 | JW |
+| 0209 | Cordeiro | upon request | Sh. | 2025-04-01 | JW |
+| 0210 | Nair et al. (1998-2023) | upon request | Sh. | 2025-04-01 | JW |
+| 0211 | Nair et al. (2007-2020) | upon request | Sh. | 2025-04-01 | JW |
+| 0212 | Nair et al. (2024) | upon request | Sh. | 2025-04-01 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-04-01, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,494,751 observations** (*i.e* rows) representing **30,533
-sites** and **65,658 surveys**. The distribution of monitoring sites in
+total of **17,515,006 observations** (*i.e* rows) representing **30,551
+sites** and **65,783 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -464,16 +468,16 @@ that differs from those of the other datasets.
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,782 |       9,964 |           10 |    1980    |   2025    |
-|               Brazil |       170 |         545 |            3 |    2002    |   2025    |
+|               Brazil |       182 |         590 |            4 |    2002    |   2025    |
 |            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
 |                  EAS |     3,042 |       6,812 |            7 |    1997    |   2024    |
 |                  ETP |       776 |       2,689 |            5 |    1994    |   2025    |
 |               PERSGA |       406 |         755 |            9 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
-|           South Asia |       630 |       2,745 |           12 |    1997    |   2024    |
+|           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |       691 |       1,720 |           37 |    1987    |   2025    |
-| Global (all regions) |    30,533 |      65,658 |          207 |    1973    |   2025    |
+| Global (all regions) |    30,551 |      65,783 |          211 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -494,7 +498,8 @@ differs from those of the other datasets.
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
 | Barbados | Barbados | 80 | 349 | 3 | 1982 | 2022 |
 | Belize | Belize | 340 | 536 | 6 | 1985 | 2024 |
-| Brazil | Brazil | 170 | 545 | 3 | 2002 | 2025 |
+| Brazil | Brazil | 178 | 580 | 4 | 2002 | 2025 |
+| Brazil | Trindade | 4 | 10 | 1 | 2022 | 2024 |
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
 | China | China | 100 | 366 | 1 | 1997 | 2012 |
@@ -527,7 +532,7 @@ differs from those of the other datasets.
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
 | Honduras | Honduras | 400 | 787 | 3 | 1997 | 2024 |
 | India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
-| India | India | 111 | 1,665 | 3 | 1998 | 2024 |
+| India | India | 117 | 1,745 | 6 | 1998 | 2024 |
 | Indonesia | Indonesia | 679 | 1,224 | 3 | 1997 | 2024 |
 | Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
@@ -665,7 +670,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpyQIawZ/file3fcc3ca5a8e -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp6LAK1s/file2e0836b44291 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
