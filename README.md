@@ -426,12 +426,16 @@ considered. The column names (except *aggregator*) correspond to
 | 0201 | CORDIO (Madagascar) | upon request | Sh. | 2025-03-31 | JW |
 | 0202 | KORAI | upon request | Sh. | 2025-03-31 | JW |
 | 0203 | MMRI | upon request | Sh. | 2025-03-31 | JW |
+| 0204 | [Memba-Mossuril Baseline](https://dashboard.datamermaid.org/?project=Memba-Mossuril%20Baseline) | upon request | Me. | 2025-04-01 | JW |
+| 0205 | PSESPA Monitoring2WWF | upon request | Me. | 2025-04-01 | JW |
+| 0206 | [Inhambane LMMAs](https://dashboard.datamermaid.org/?project=Inhambane%20LMMAs%20Monitoring%20Program) | upon request | Me. | 2025-04-01 | JW |
+| 0207 | Vamizi | upon request | Sh. | 2025-04-01 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-03-31, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,481,472 observations** (*i.e* rows) representing **30,399
-sites** and **65,187 surveys**. The distribution of monitoring sites in
+On the 2025-04-01, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,488,661 observations** (*i.e* rows) representing **30,500
+sites** and **65,301 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -467,8 +471,8 @@ that differs from those of the other datasets.
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
 |           South Asia |       630 |       2,745 |           12 |    1997    |   2024    |
-|                  WIO |       589 |       1,605 |           33 |    1987    |   2025    |
-| Global (all regions) |    30,399 |      65,187 |          202 |    1973    |   2025    |
+|                  WIO |       690 |       1,719 |           37 |    1987    |   2025    |
+| Global (all regions) |    30,500 |      65,301 |          206 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -540,7 +544,7 @@ differs from those of the other datasets.
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 392 | 955 | 8 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
-| Mozambique | Mozambique | 17 | 19 | 2 | 1997 | 2024 |
+| Mozambique | Mozambique | 118 | 133 | 6 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
 | Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Netherlands | Bonaire | 159 | 623 | 6 | 1973 | 2023 |
@@ -660,7 +664,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpAjf0wt/file12fc59f88cd -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpCsYXFK/file35687ef05aae -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -672,7 +676,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-03-31
+     date     2025-04-01
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
