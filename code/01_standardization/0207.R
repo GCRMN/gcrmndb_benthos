@@ -1,76 +1,32 @@
 # 1. Required packages ----
 
 library(tidyverse) # Core tidyverse packages
-library(readxl)
+library(mermaidr) # API to mermaid data. To install -> remotes::install_github("data-mermaid/mermaidr")
+source("code/00_functions/mermaid_converter_observations.R")
 
 dataset <- "0207" # Define the dataset_id
 
-# 2. Import, standardize and export the data ----
+# 2. Get the MERMAID project ID ----
 
-## 2.1 Site coordinates ----
+project_id <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+  filter(datasetID == dataset) %>% 
+  select(project_id) %>% 
+  pull()
 
-data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "site") %>%
-  select(data_path) %>% 
-  pull() %>% 
-  read_xlsx() %>% 
-  rename(decimalLatitude = Latitude, decimalLongitude = Longitude,
-         locality = `Site name`) %>% 
-  select(-Location)
+# 3. Get data from the mermaidr API ----
 
-## 2.2 Path of files to combine ----
+data <- mermaid_get_project_data(project = project_id, method = "benthicpqt", data = "observations")
 
-list_files <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
-  filter(datasetID == dataset & data_type == "main") %>%
-  select(data_path) %>% 
-  pull() %>% 
-  list.files(., recursive = TRUE, full.names = TRUE) %>% 
-  as_tibble() %>% 
-  filter(str_detect(value, "code|coordinates") == FALSE)
+# 4. Save raw data ----
 
-## 2.3 Function to combine the files ----
+write.csv(data, file = paste0("data/01_raw-data/", dataset, "/mermaid_", project_id, "_", lubridate::date(Sys.time()), ".csv"),
+          row.names = FALSE)
 
-convert_data_207 <- function(path_i){
+# 5. Standardize data ----
 
-  if(str_detect(path_i, "2014") == TRUE){
-    
-    data <- read_xlsx(path = path_i, range = "A21:D64",
-                      col_names = c("organismID", "T1", "T2", "T3"),
-                      sheet = "Data Summary") %>% 
-      drop_na(T1) %>% 
-      pivot_longer(2:ncol(.), names_to = "parentEventID", values_to = "measurementValue") %>% 
-      mutate(parentEventID = parse_number(parentEventID),
-             locality = str_split_fixed(path_i, "Vamizi_2014/", 2)[,2],
-             locality = str_remove_all(locality, "\\.xls"),
-             year = 2014)
-    
-  }else{
-    
-    data <- read_xlsx(path = path_i, range = "A21:B64",
-                      col_names = c("organismID", "measurementValue"),
-                      sheet = "Data Summary") %>% 
-      drop_na(measurementValue) %>% 
-      mutate(locality = str_split_fixed(path_i, "Vamizi_2006/", 2)[,2],
-             locality = str_remove_all(locality, "\\.xls"),
-             parentEventID = as.numeric(str_sub(locality, 6, 6)),
-             locality = str_sub(locality, 1,4),
-             year = 2006)
-    
-  }
-  
-  return(data)
-  
-}
-
-## 2.4 Map over the function ----
-
-map(list_files$value, ~convert_data_207(path_i = .x)) %>% 
-  list_rbind() %>% 
-  mutate(locality = str_replace_all(locality, "R", "_"),
-         datasetID = dataset) %>% 
-  left_join(., data_site) %>% 
+mermaid_converter_observations(data = data, method = "Photo-quadrat", dataset = dataset) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
-  
-# 3. Remove useless objects ----
 
-rm(data_site, list_files, convert_data_207)
+# 6. Remove useless objects ----
+
+rm(data, project_id, mermaid_converter_observations)
