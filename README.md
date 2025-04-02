@@ -437,12 +437,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0212 | Nair et al. (2024) | upon request | Sh. | 2025-04-01 | JW |
 | 0213 | PSESPA 2019 | upon request | Sh. | 2025-04-01 | JW |
 | 0214 | CTV | upon request | Sh. | 2025-04-01 | JW |
+| 0215 | [BECA](https://dashboard.datamermaid.org/?project=Blue%20Economy%20for%20Conservation%20Areas) | upon request | Me. | 2025-04-02 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-04-01, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,517,309 observations** (*i.e* rows) representing **30,560
-sites** and **65,809 surveys**. The distribution of monitoring sites in
+On the 2025-04-02, the `gcrmndb_benthos` synthetic dataset contains a
+total of **17,518,971 observations** (*i.e* rows) representing **30,578
+sites** and **65,828 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -478,8 +479,8 @@ that differs from those of the other datasets.
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       350 |         799 |           27 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
-|                  WIO |       700 |       1,746 |           39 |    1987    |   2025    |
-| Global (all regions) |    30,560 |      65,809 |          213 |    1973    |   2025    |
+|                  WIO |       718 |       1,765 |           40 |    1987    |   2025    |
+| Global (all regions) |    30,578 |      65,828 |          214 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -552,7 +553,7 @@ differs from those of the other datasets.
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 392 | 955 | 8 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
-| Mozambique | Mozambique | 127 | 159 | 8 | 1997 | 2024 |
+| Mozambique | Mozambique | 135 | 167 | 8 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
 | Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Netherlands | Bonaire | 159 | 623 | 6 | 1973 | 2023 |
@@ -582,7 +583,7 @@ differs from those of the other datasets.
 | Sri Lanka | Sri Lanka | 10 | 32 | 2 | 2003 | 2024 |
 | Sudan | Sudan | 22 | 27 | 2 | 2004 | 2022 |
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
-| Tanzania | Tanzania | 187 | 358 | 13 | 1992 | 2025 |
+| Tanzania | Tanzania | 197 | 369 | 14 | 1992 | 2025 |
 | Thailand | Thailand | 150 | 248 | 1 | 1998 | 2024 |
 | Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
@@ -672,7 +673,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp6bzfUt/file2ab412354fd -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpawrSUM/file389876df4459 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -684,7 +685,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-04-01
+     date     2025-04-02
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
