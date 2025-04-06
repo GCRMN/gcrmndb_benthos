@@ -443,12 +443,19 @@ considered. The column names (except *aggregator*) correspond to
 | 0218 | Elamin et al. 2018 (b) | upon request | Sh. | 2025-04-03 | JW |
 | 0219 | Abaker 2021 | upon request | Sh. | 2025-04-03 | JW |
 | 0220 | Voolstra et al. | upon request | Sh. | 2025-04-04 | JW |
+| 0221 | Ghazilou, 2024 | upon request | Sh. | 2025-04-06 | JW |
+| 0222 | Leduc, 2024 | upon request | Sh. | 2025-04-06 | JW |
+| 0223 | Qatar, 2022 | upon request | Sh. | 2025-04-06 | JW |
+| 0224 | Al Harthi, 2024 | upon request | Sh. | 2025-04-06 | JW |
+| 0225 | Al Mealla, 2024 | upon request | Sh. | 2025-04-06 | JW |
+| 0226 | [Kuwait_1987](https://dashboard.datamermaid.org/?project=Kuwait_1987) | upon request | Me. | 2025-04-06 | JW |
+| 0227 | UAE_2023-2024 | upon request | Sh. | 2025-04-06 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-04-04, the `gcrmndb_benthos` synthetic dataset contains a
-total of **17,521,731 observations** (*i.e* rows) representing **30,646
-sites** and **65,928 surveys**. The distribution of monitoring sites in
+On the 2025-04-06, the `gcrmndb_benthos` synthetic dataset contains a
+total of **18,993,930 observations** (*i.e* rows) representing **30,675
+sites** and **65,992 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -482,10 +489,10 @@ that differs from those of the other datasets.
 |                  ETP |       776 |       2,689 |            5 |    1994    |   2025    |
 |               PERSGA |       470 |         851 |           13 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
-|                ROPME |       350 |         799 |           27 |    1985    |   2024    |
+|                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |       718 |       1,765 |           40 |    1987    |   2025    |
-| Global (all regions) |    30,646 |      65,928 |          219 |    1973    |   2025    |
+| Global (all regions) |    30,675 |      65,992 |          226 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -502,7 +509,7 @@ differs from those of the other datasets.
 | Australia | Christmas Island | 25 | 84 | 3 | 2003 | 2023 |
 | Australia | Cocos Islands | 27 | 85 | 2 | 1997 | 2023 |
 | Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
-| Bahrain | Bahrain | 37 | 47 | 4 | 1985 | 2022 |
+| Bahrain | Bahrain | 45 | 55 | 5 | 1985 | 2024 |
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
 | Barbados | Barbados | 80 | 349 | 3 | 1982 | 2022 |
 | Belize | Belize | 340 | 536 | 6 | 1985 | 2024 |
@@ -542,7 +549,7 @@ differs from those of the other datasets.
 | India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
 | India | India | 117 | 1,745 | 6 | 1998 | 2024 |
 | Indonesia | Indonesia | 683 | 1,228 | 4 | 1997 | 2024 |
-| Iran | Iran | 45 | 70 | 2 | 1999 | 2021 |
+| Iran | Iran | 46 | 71 | 3 | 1999 | 2024 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 230 | 716 | 7 | 1986 | 2024 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
@@ -551,7 +558,7 @@ differs from those of the other datasets.
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
-| Kuwait | Kuwait | 17 | 23 | 3 | 2002 | 2014 |
+| Kuwait | Kuwait | 18 | 27 | 4 | 1987 | 2014 |
 | Madagascar | Madagascar | 121 | 294 | 10 | 1998 | 2024 |
 | Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
 | Maldives | Maldives | 444 | 822 | 6 | 1997 | 2024 |
@@ -569,12 +576,12 @@ differs from those of the other datasets.
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 44 | 63 | 2 | 2009 | 2015 |
-| Oman | Oman | 124 | 267 | 9 | 2003 | 2022 |
+| Oman | Oman | 131 | 277 | 12 | 2003 | 2024 |
 | Palau | Palau | 112 | 381 | 3 | 1997 | 2022 |
 | Panama | Panama | 239 | 410 | 4 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
 | Philippines | Philippines | 842 | 1,136 | 3 | 1997 | 2023 |
-| Qatar | Qatar | 19 | 19 | 2 | 2014 | 2017 |
+| Qatar | Qatar | 26 | 26 | 4 | 2014 | 2024 |
 | Republic of Mauritius | Chagos Archipelago | 63 | 224 | 3 | 2010 | 2023 |
 | Republic of Mauritius | Republic of Mauritius | 10 | 12 | 1 | 1999 | 2003 |
 | Saint Kitts and Nevis | Saint Kitts and Nevis | 38 | 55 | 2 | 2004 | 2024 |
@@ -593,7 +600,7 @@ differs from those of the other datasets.
 | Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
-| United Arab Emirates | United Arab Emirates | 73 | 196 | 12 | 2004 | 2024 |
+| United Arab Emirates | United Arab Emirates | 78 | 230 | 13 | 2004 | 2024 |
 | United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
 | United Kingdom | Bermuda | 43 | 91 | 2 | 1982 | 2021 |
 | United Kingdom | British Virgin Islands | 28 | 322 | 2 | 1992 | 2024 |
@@ -678,7 +685,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpemfFxR/file3298400961c1 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpgfEChU/file3604788a8b5 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -690,7 +697,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-04-04
+     date     2025-04-06
      pandoc   3.2 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
