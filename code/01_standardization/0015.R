@@ -44,7 +44,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(total = sum(measurementValue)) %>% 
   ungroup() %>% 
   # Remove site falling in the middle of lands
-  filter(locality != "Garden Eel Cove") %>% 
+  filter(!(locality %in% c("Garden Eel Cove", "Playa Blanca Reef"))) %>% 
   mutate(measurementValue = (measurementValue*100)/total) %>% 
   left_join(., data_code) %>% 
   select(-code, -coordinates_in_decimal_degree_format, -total) %>% 
