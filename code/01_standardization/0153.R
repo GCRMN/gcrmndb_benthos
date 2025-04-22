@@ -105,8 +105,8 @@ data_dr_2023 <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(locality, parentEventID, organismID, measurementValue) %>% 
   filter(!(organismID %in% c("Cobertura coral vivo", "Cobertura alga", "Suma"))) %>% 
   mutate(year = 2023,
-         day = 11,
-         month = 24,
+         day = 24,
+         month = 11,
          eventDate = as.Date("2023-11-24"))
 
 ### 2.1.5 Dominican Republic 2024 (1) ----
