@@ -451,13 +451,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0226 | [Kuwait_1987](https://dashboard.datamermaid.org/?project=Kuwait_1987) | upon request | Me. | 2025-04-06 | JW |
 | 0227 | UAE_2023-2024 | upon request | Sh. | 2025-04-06 | JW |
 | 0228 | Likhulu | upon request | Sh. | 2025-04-08 | JW |
-| 0229 | CSIRO | upon request | Sh. | 2025-06-23 | JW |
+| 0229 | [CSIRO](https://shiny.csiro.au/UVSeeR/) | upon request | Sh. | 2025-06-23 | JW |
 | 0230 | [UTOPIAN](https://www.seanoe.org/data/00935/104728/) | open | Rp. | 2025-06-23 | JW |
 | 0231 | GCRMN Réunion | upon request | Sh. | 2025-06-23 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-06-23, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2025-06-24, the `gcrmndb_benthos` synthetic dataset contains a
 total of **19,042,628 observations** (*i.e* rows) representing **34,820
 sites** and **71,134 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
@@ -689,7 +689,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmpe87AWu/file50e833da21a6 -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp4G8FaP/file8d06f88449c -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -701,7 +701,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-06-23
+     date     2025-06-24
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
