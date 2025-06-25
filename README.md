@@ -454,12 +454,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0229 | [CSIRO](https://shiny.csiro.au/UVSeeR/) | upon request | Sh. | 2025-06-23 | JW |
 | 0230 | [UTOPIAN](https://www.seanoe.org/data/00935/104728/) | open | Rp. | 2025-06-23 | JW |
 | 0231 | GCRMN Réunion | upon request | Sh. | 2025-06-23 | JW |
+| 0232 | Mayfield, 2024 | upon request | Sh. | 2025-06-25 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-06-24, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,042,628 observations** (*i.e* rows) representing **34,820
-sites** and **71,134 surveys**. The distribution of monitoring sites in
+On the 2025-06-25, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,042,708 observations** (*i.e* rows) representing **34,871
+sites** and **71,205 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -491,12 +492,12 @@ that differs from those of the other datasets.
 |            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
 |                  EAS |     3,046 |       6,816 |            8 |    1997    |   2024    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
-|               PERSGA |       470 |         851 |           13 |    1997    |   2024    |
+|               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
-|                  WIO |     4,729 |       6,130 |           43 |    1987    |   2025    |
-| Global (all regions) |    34,820 |      71,134 |          230 |    1973    |   2025    |
+|                  WIO |     4,749 |       6,150 |           44 |    1987    |   2025    |
+| Global (all regions) |    34,871 |      71,205 |          231 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -531,7 +532,7 @@ differs from those of the other datasets.
 | Dominican Republic | Dominican Republic | 140 | 478 | 8 | 2004 | 2024 |
 | East Timor | East Timor | 11 | 13 | 2 | 2004 | 2017 |
 | Ecuador | Galapagos | 256 | 1,523 | 3 | 1994 | 2024 |
-| Egypt | Egypt | 206 | 515 | 3 | 1997 | 2024 |
+| Egypt | Egypt | 216 | 527 | 4 | 1997 | 2024 |
 | Eritrea | Eritrea | 2 | 2 | 1 | 2000 | 2000 |
 | Federal Republic of Somalia | Federal Republic of Somalia | 5 | 5 | 2 | 2005 | 2024 |
 | Fiji | Fiji | 654 | 1,003 | 12 | 1997 | 2025 |
@@ -558,7 +559,7 @@ differs from those of the other datasets.
 | Jamaica | Jamaica | 230 | 716 | 7 | 1986 | 2024 |
 | Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
 | Jordan | Jordan | 12 | 34 | 2 | 2008 | 2024 |
-| Kenya | Kenya | 138 | 548 | 7 | 1987 | 2023 |
+| Kenya | Kenya | 158 | 568 | 8 | 1987 | 2024 |
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
 | Kiribati | Line Group | 97 | 125 | 3 | 2009 | 2023 |
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
@@ -592,7 +593,7 @@ differs from those of the other datasets.
 | Saint Lucia | Saint Lucia | 21 | 61 | 1 | 1999 | 2014 |
 | Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 42 | 60 | 3 | 2004 | 2024 |
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
-| Saudi Arabia | Saudi Arabia | 158 | 307 | 6 | 1985 | 2024 |
+| Saudi Arabia | Saudi Arabia | 179 | 346 | 7 | 1985 | 2024 |
 | Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
 | Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 6 | 37 | 2 | 1993 | 2023 |
@@ -689,7 +690,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/Rtmp4G8FaP/file8d06f88449c -V'
+    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpWIPnIO/file354871463a99 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -701,7 +702,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-06-24
+     date     2025-06-25
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
