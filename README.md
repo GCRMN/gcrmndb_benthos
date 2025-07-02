@@ -455,12 +455,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0230 | [UTOPIAN](https://www.seanoe.org/data/00935/104728/) | open | Rp. | 2025-06-23 | JW |
 | 0231 | GCRMN Réunion | upon request | Sh. | 2025-06-23 | JW |
 | 0232 | Mayfield, 2024 | upon request | Sh. | 2025-06-25 | JW |
+| 0233 | Mies, 2024 | upon request | Sh. | 2025-07-02 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-06-25, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,042,708 observations** (*i.e* rows) representing **34,871
-sites** and **71,205 surveys**. The distribution of monitoring sites in
+On the 2025-07-02, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,043,212 observations** (*i.e* rows) representing **34,881
+sites** and **71,223 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -488,7 +489,7 @@ that differs from those of the other datasets.
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,917 |      10,742 |           11 |    1980    |   2025    |
-|               Brazil |       182 |         590 |            4 |    2002    |   2025    |
+|               Brazil |       192 |         608 |            5 |    2002    |   2025    |
 |            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
 |                  EAS |     3,046 |       6,816 |            8 |    1997    |   2024    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
@@ -497,7 +498,7 @@ that differs from those of the other datasets.
 |                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,749 |       6,150 |           44 |    1987    |   2025    |
-| Global (all regions) |    34,871 |      71,205 |          231 |    1973    |   2025    |
+| Global (all regions) |    34,881 |      71,223 |          232 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -518,7 +519,7 @@ differs from those of the other datasets.
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
 | Barbados | Barbados | 80 | 349 | 3 | 1982 | 2022 |
 | Belize | Belize | 340 | 536 | 6 | 1985 | 2024 |
-| Brazil | Brazil | 178 | 580 | 4 | 2002 | 2025 |
+| Brazil | Brazil | 188 | 598 | 5 | 2002 | 2025 |
 | Brazil | Trindade | 4 | 10 | 1 | 2022 | 2024 |
 | Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
 | Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
@@ -690,19 +691,19 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jwicquart/AppData/Local/Temp/RtmpWIPnIO/file354871463a99 -V'
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp2lHHXs/file6dec735a517d -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
-     version  R version 4.5.0 (2025-04-11 ucrt)
-     os       Windows 11 x64 (build 22631)
+     version  R version 4.5.1 (2025-06-13 ucrt)
+     os       Windows 11 x64 (build 26100)
      system   x86_64, mingw32
      ui       RTerm
      language (EN)
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-06-25
+     date     2025-07-02
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
@@ -719,7 +720,7 @@ The following organizations have funded the realization of the
        cachem              1.1.0   2024-05-16 [1] CRAN (R 4.5.0)
        callr               3.7.6   2024-03-25 [1] CRAN (R 4.5.0)
        cellranger          1.1.0   2016-07-27 [1] CRAN (R 4.5.0)
-       class               7.3-23  2025-01-01 [1] CRAN (R 4.5.0)
+       class               7.3-23  2025-01-01 [2] CRAN (R 4.5.1)
        classInt            0.4-11  2025-01-08 [1] CRAN (R 4.5.0)
        cli                 3.6.5   2025-04-23 [1] CRAN (R 4.5.0)
        clipr               0.8.0   2022-02-22 [1] CRAN (R 4.5.0)
@@ -727,8 +728,8 @@ The following organizations have funded the realization of the
        cpp11               0.5.2   2025-03-03 [1] CRAN (R 4.5.0)
        crayon              1.5.3   2024-06-20 [1] CRAN (R 4.5.0)
        crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.5.0)
-       curl                6.2.2   2025-03-24 [1] CRAN (R 4.5.0)
-       data.table          1.17.0  2025-02-22 [1] CRAN (R 4.5.0)
+       curl                6.4.0   2025-06-22 [1] CRAN (R 4.5.0)
+       data.table          1.17.6  2025-06-17 [1] CRAN (R 4.5.0)
        DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.5.0)
        dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.5.0)
        digest              0.6.37  2024-08-19 [1] CRAN (R 4.5.0)
@@ -736,8 +737,7 @@ The following organizations have funded the realization of the
        DT                  0.33    2024-04-04 [1] CRAN (R 4.5.0)
        dtplyr              1.3.1   2023-03-22 [1] CRAN (R 4.5.0)
        e1071               1.7-16  2024-09-16 [1] CRAN (R 4.5.0)
-       evaluate            1.0.3   2025-01-10 [1] CRAN (R 4.5.0)
-       fansi               1.0.6   2023-12-08 [1] CRAN (R 4.5.0)
+       evaluate            1.0.4   2025-06-18 [1] CRAN (R 4.5.0)
        farver              2.1.2   2024-05-13 [1] CRAN (R 4.5.0)
        fastmap             1.2.0   2024-05-15 [1] CRAN (R 4.5.0)
        fontawesome         0.5.3   2024-11-16 [1] CRAN (R 4.5.0)
@@ -751,7 +751,7 @@ The following organizations have funded the realization of the
        googledrive         2.1.1   2023-06-11 [1] CRAN (R 4.5.0)
        googlesheets4       1.1.1   2023-06-11 [1] CRAN (R 4.5.0)
        gtable              0.3.6   2024-10-25 [1] CRAN (R 4.5.0)
-       haven               2.5.4   2023-11-30 [1] CRAN (R 4.5.0)
+       haven               2.5.5   2025-05-30 [1] CRAN (R 4.5.0)
        highr               0.11    2024-05-26 [1] CRAN (R 4.5.0)
        hms                 1.1.3   2023-03-21 [1] CRAN (R 4.5.0)
        htmltools           0.5.8.1 2024-04-04 [1] CRAN (R 4.5.0)
@@ -763,35 +763,35 @@ The following organizations have funded the realization of the
        jquerylib           0.1.4   2021-04-26 [1] CRAN (R 4.5.0)
        jsonlite            2.0.0   2025-03-27 [1] CRAN (R 4.5.0)
        kableExtra          1.4.0   2024-01-24 [1] CRAN (R 4.5.0)
-       KernSmooth          2.23-26 2025-01-01 [1] CRAN (R 4.5.0)
+       KernSmooth          2.23-26 2025-01-01 [2] CRAN (R 4.5.1)
        knitr             * 1.50    2025-03-16 [1] CRAN (R 4.5.0)
        labeling            0.4.3   2023-08-29 [1] CRAN (R 4.5.0)
        later               1.4.2   2025-04-08 [1] CRAN (R 4.5.0)
-       lattice             0.22-7  2025-04-02 [1] CRAN (R 4.5.0)
+       lattice             0.22-7  2025-04-02 [2] CRAN (R 4.5.1)
        lazyeval            0.2.2   2019-03-15 [1] CRAN (R 4.5.0)
        leaflet             2.2.2   2024-03-26 [1] CRAN (R 4.5.0)
        leaflet.providers   2.0.0   2023-10-17 [1] CRAN (R 4.5.0)
        lifecycle           1.0.4   2023-11-07 [1] CRAN (R 4.5.0)
        lubridate         * 1.9.4   2024-12-08 [1] CRAN (R 4.5.0)
        magrittr            2.0.3   2022-03-30 [1] CRAN (R 4.5.0)
-       MASS                7.3-65  2025-02-28 [1] CRAN (R 4.5.0)
-       Matrix              1.7-3   2025-03-11 [1] CRAN (R 4.5.0)
+       MASS                7.3-65  2025-02-28 [2] CRAN (R 4.5.1)
+       Matrix              1.7-3   2025-03-11 [2] CRAN (R 4.5.1)
        memoise             2.0.1   2021-11-26 [1] CRAN (R 4.5.0)
      R mermaidr            <NA>    <NA>       [?] <NA>
-       mgcv                1.9-3   2025-04-04 [1] CRAN (R 4.5.0)
+       mgcv                1.9-3   2025-04-04 [2] CRAN (R 4.5.1)
        mime                0.13    2025-03-17 [1] CRAN (R 4.5.0)
        modelr              0.1.11  2023-03-22 [1] CRAN (R 4.5.0)
-       nlme                3.1-168 2025-03-31 [1] CRAN (R 4.5.0)
-       openssl             2.3.2   2025-02-03 [1] CRAN (R 4.5.0)
+       nlme                3.1-168 2025-03-31 [2] CRAN (R 4.5.1)
+       openssl             2.3.3   2025-05-26 [1] CRAN (R 4.5.0)
        pillar              1.10.2  2025-04-05 [1] CRAN (R 4.5.0)
        pkgconfig           2.0.3   2019-09-22 [1] CRAN (R 4.5.0)
-       plotly              4.10.4  2024-01-13 [1] CRAN (R 4.5.0)
+       plotly              4.11.0  2025-06-19 [1] CRAN (R 4.5.0)
        png                 0.1-8   2022-11-29 [1] CRAN (R 4.5.0)
        prettydoc           0.4.1   2021-01-10 [1] CRAN (R 4.5.0)
        prettyunits         1.2.0   2023-09-24 [1] CRAN (R 4.5.0)
        processx            3.8.6   2025-02-21 [1] CRAN (R 4.5.0)
        progress            1.2.3   2023-12-06 [1] CRAN (R 4.5.0)
-       promises            1.3.2   2024-11-28 [1] CRAN (R 4.5.0)
+       promises            1.3.3   2025-05-29 [1] CRAN (R 4.5.0)
        proxy               0.4-27  2022-06-09 [1] CRAN (R 4.5.0)
        ps                  1.9.1   2025-04-12 [1] CRAN (R 4.5.0)
        purrr             * 1.0.4   2025-02-05 [1] CRAN (R 4.5.0)
@@ -810,20 +810,20 @@ The following organizations have funded the realization of the
        rmarkdown           2.29    2024-11-04 [1] CRAN (R 4.5.0)
        rstudioapi          0.17.1  2024-10-22 [1] CRAN (R 4.5.0)
        rvest               1.0.4   2024-02-12 [1] CRAN (R 4.5.0)
-       s2                  1.1.7   2024-07-17 [1] CRAN (R 4.5.0)
+       s2                  1.1.9   2025-05-23 [1] CRAN (R 4.5.0)
        sass                0.4.10  2025-04-11 [1] CRAN (R 4.5.0)
        scales              1.4.0   2025-04-24 [1] CRAN (R 4.5.0)
        selectr             0.4-2   2019-11-20 [1] CRAN (R 4.5.0)
-       sf                * 1.0-20  2025-03-24 [1] CRAN (R 4.5.0)
+       sf                * 1.0-21  2025-05-15 [1] CRAN (R 4.5.0)
        sp                  2.2-0   2025-02-01 [1] CRAN (R 4.5.0)
        stringi             1.8.7   2025-03-27 [1] CRAN (R 4.5.0)
        stringr           * 1.5.1   2023-11-14 [1] CRAN (R 4.5.0)
-       svglite             2.2.0   2025-05-07 [1] CRAN (R 4.5.0)
+       svglite             2.2.1   2025-05-12 [1] CRAN (R 4.5.0)
        sys                 3.4.3   2024-10-04 [1] CRAN (R 4.5.0)
        systemfonts         1.2.3   2025-04-30 [1] CRAN (R 4.5.0)
-       terra               1.8-50  2025-05-09 [1] CRAN (R 4.5.0)
+       terra               1.8-54  2025-06-01 [1] CRAN (R 4.5.0)
        textshaping         1.0.1   2025-05-01 [1] CRAN (R 4.5.0)
-       tibble            * 3.2.1   2023-03-20 [1] CRAN (R 4.5.0)
+       tibble            * 3.3.0   2025-06-08 [1] CRAN (R 4.5.0)
        tidyr             * 1.3.1   2024-01-24 [1] CRAN (R 4.5.0)
        tidyselect          1.2.1   2024-03-11 [1] CRAN (R 4.5.0)
        tidyverse         * 2.0.0   2023-02-22 [1] CRAN (R 4.5.0)
@@ -831,7 +831,7 @@ The following organizations have funded the realization of the
        tinytex             0.57    2025-04-15 [1] CRAN (R 4.5.0)
        tzdb                0.5.0   2025-03-15 [1] CRAN (R 4.5.0)
        units               0.8-7   2025-03-11 [1] CRAN (R 4.5.0)
-       utf8                1.2.5   2025-05-01 [1] CRAN (R 4.5.0)
+       utf8                1.2.6   2025-06-08 [1] CRAN (R 4.5.0)
        uuid                1.2-1   2024-07-29 [1] CRAN (R 4.5.0)
        vctrs               0.6.5   2023-12-01 [1] CRAN (R 4.5.0)
        viridisLite         0.4.2   2023-05-02 [1] CRAN (R 4.5.0)
@@ -842,7 +842,8 @@ The following organizations have funded the realization of the
        xml2                1.3.8   2025-03-14 [1] CRAN (R 4.5.0)
        yaml                2.3.10  2024-07-26 [1] CRAN (R 4.5.0)
 
-     [1] C:/Users/jwicquart/AppData/Local/Programs/R/R-4.5.0/library
+     [1] C:/Users/jerem/AppData/Local/R/win-library/4.5
+     [2] C:/Program Files/R/R-4.5.1/library
 
      * ── Packages attached to the search path.
      R ── Package was removed from disk.
