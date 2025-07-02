@@ -152,6 +152,7 @@ unique_organismID <- read.csv("./../data/03_tax-recategorisation.csv", sep = ";"
                                  TRUE ~ subcategory)) %>% 
   # Assign "category"
   mutate(category = case_when(order == "Scleractinia" ~ "Hard coral",
+                              family %in% c("Milleporidae", "Helioporidae") ~ "Hard coral",
                               phylum %in% c("Porifera", "Chordata", "Echinodermata", "Bryozoa") ~ "Other fauna",
                               phylum == "Cyanobacteria" ~ "Algae",
                               class %in% c("Ascidiacea", "Hydrozoa", "Crinoidea", "Hexacorallia",
@@ -160,7 +161,6 @@ unique_organismID <- read.csv("./../data/03_tax-recategorisation.csv", sep = ";"
                                            "Corallimorpharia", "Antipatharia") ~ "Other fauna",
                               subclass %in% c("Octocorallia") ~ "Other fauna",
                               phylum %in% c("Annelida", "Mollusca", "Arthropoda") ~ "Other fauna",
-                              family %in% c("Milleporidae", "Helioporidae") ~ "Hard coral",
                               class %in% c("Ulvophyceae", "Florideophyceae", "Phaeophyceae") ~ "Algae",
                               phylum %in% c("Chlorophyta", "Rhodophyta", "Ochrophyta", "Foraminifera") ~ "Algae",
                               phylum == "Tracheophyta" ~ "Seagrass",
