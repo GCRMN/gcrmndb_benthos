@@ -15,7 +15,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   read.csv(., fileEncoding = "Latin1") %>% 
   rename(locality = SiteCode, parentEventID = StationID,
          decimalLatitude = latDD, decimalLongitude = lonDD,
-         verbatimDepth = offshoreDepth.ft.) %>% 
+         verbatimDepth = OffshoreDepth.ft.) %>% 
   select(locality, parentEventID, decimalLatitude, decimalLongitude,
          verbatimDepth)
 
@@ -27,7 +27,7 @@ data_main_a <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   filter(row_number() == 1) %>% 
   pull() %>% 
   read.csv() %>% 
-  rename(organismID = "Taxa")
+  pivot_longer(10:ncol(.), names_to = "organismID", values_to = "measurementValue")
 
 ## 2.3 Main data B (stony corals) ----
 
@@ -37,14 +37,14 @@ data_main_b <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   filter(row_number() == 2) %>% 
   pull() %>% 
   read.csv() %>% 
-  rename(organismID = "SCOR_SPP")
+  pivot_longer(10:ncol(.), names_to = "organismID", values_to = "measurementValue")
 
 ## 2.4 Merge data ----
 
 bind_rows(data_main_a, data_main_b) %>% 
   filter(organismID != "StonyCoral") %>% 
   rename(eventDate = ImageDate, locality = SiteCode, parentEventID = StationID,
-         eventID = points, measurementValue = PercentCover) %>% 
+         eventID = points) %>% 
   select(eventDate, locality, parentEventID, eventID, organismID, measurementValue) %>% 
   drop_na(measurementValue) %>% 
   left_join(., data_site) %>% 
