@@ -457,12 +457,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0232 | Mayfield, 2024 | upon request | Sh. | 2025-06-25 | JW |
 | 0233 | Mies, 2024 | upon request | Sh. | 2025-07-02 | JW |
 | 0234 | [Graham et al, 2024](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14454) | open | Rp. | 2025-07-03 | JW |
+| 0235 | [Caballero‐Aragón et al, 2022](https://doi.org/10.1016/j.dib.2022.108253) | open | Pa. | 2025-07-16 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-07-16, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,067,101 observations** (*i.e* rows) representing **34,902
-sites** and **71,385 surveys**. The distribution of monitoring sites in
+total of **19,067,770 observations** (*i.e* rows) representing **34,909
+sites** and **71,392 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -491,7 +492,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,917 |      10,742 |           11 |    1980    |   2025    |
 |               Brazil |       192 |         608 |            5 |    2002    |   2025    |
-|            Caribbean |    14,271 |      23,920 |           69 |    1973    |   2024    |
+|            Caribbean |    14,278 |      23,927 |           70 |    1973    |   2024    |
 |                  EAS |     3,046 |       6,816 |            8 |    1997    |   2024    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
@@ -499,7 +500,7 @@ that differs from those of the other datasets.
 |                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,770 |       6,290 |           45 |    1987    |   2025    |
-| Global (all regions) |    34,902 |      71,385 |          233 |    1973    |   2025    |
+| Global (all regions) |    34,909 |      71,392 |          234 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -570,7 +571,7 @@ differs from those of the other datasets.
 | Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
 | Maldives | Maldives | 444 | 822 | 6 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 392 | 955 | 8 | 1997 | 2024 |
+| Mexico | Mexico | 399 | 962 | 9 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 153 | 204 | 9 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
@@ -692,8 +693,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp4mTLxy/file27dcf366051 -V' renvoie
-    un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpU3T2nc/file299462ff7d60 -V'
+    renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.1 (2025-06-13 ucrt)

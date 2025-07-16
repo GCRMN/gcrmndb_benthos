@@ -500,6 +500,7 @@
 "arena";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "arolochroia crassa";NA;NA;NA;"Porifera";"Demospongiae";"Verongimorpha";"Verongiida";"Aplysinidae";"Aiolochroia";"Aiolochroia crassa";TRUE
 "artemisina melana";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Poecilosclerida";"Microcionidae";"Artemisina";"Artemisina melana";TRUE
+"articulate calcareous algae";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "artifact";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "arturia canariensis";NA;NA;NA;"Porifera";"Calcarea";"Calcinea";"Clathrinida";"Clathrinidae";"Arturia";"Arturia canariensis";TRUE
 "ascidia cf trididemnum sp";NA;NA;NA;"Chordata";"Ascidiacea";NA;NA;NA;NA;NA;TRUE
@@ -1171,6 +1172,7 @@
 "corallinales";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coralline algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coralline algae/turf";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"coralline crust algae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "corallinealgae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "corallines %";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "corals";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -3521,6 +3523,7 @@
 "oculina spp";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Oculinidae";"Oculina";NA;TRUE
 "oculina varicosa";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Oculinidae";"Oculina";"Oculina varicosa";TRUE
 "oculinidae";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Oculinidae";NA;NA;TRUE
+"old coral mortality";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "old dead coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "olive sponge";NA;NA;NA;"Porifera";NA;NA;NA;NA;NA;NA;TRUE
 "ophiactis spp";NA;NA;NA;"Echinodermata";"Ophiuroidea";"Myophiuroida";"Amphilepidida";"Ophiactidae";"Ophiactis";NA;TRUE
@@ -4298,6 +4301,7 @@
 "ralfsia sp";NA;NA;NA;"Ochrophyta";"Phaeophyceae";"Fucophycidae";"Ralfsiales";"Ralfsiaceae";"Ralfsia";"Ralfsia spongiocarpa";TRUE
 "ramicrusta spp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";"Ramicrusta";NA;TRUE
 "reb branching";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"recent coral mortality";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently dead coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently dead coral grown over by turf algae";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "recently died coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
