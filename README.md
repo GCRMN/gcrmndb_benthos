@@ -319,7 +319,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0094 | CECIMAR | upon request | Sh. | 2024-10-21 | JW |
 | 0095 | CIMAR - UCR | upon request | Sh. | 2024-10-22 | JW |
 | 0096 | Bouchon and Bouchon | upon request | Sh. | 2024-10-28 | JW |
-| 0097 | [SECREMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0280596) | open | Rp. | 2024-10-28 | JW |
+| 0097 | [SECREMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0280596) | open | Rp. | 2025-07-16 | JW |
 | 0098 | Steneck | upon request | Sh. | 2024-10-28 | JW |
 | 0099 | Meesters et al. | upon request | Sh. | 2024-10-30 | JW |
 | 0100 | [Abu Dhabi 2017-2019](https://dashboard.datamermaid.org/?project=Abu%20Dhabi%202017-2019) | open (summary) | Me. | 2024-10-31 | JW |
@@ -456,12 +456,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0231 | GCRMN Réunion | upon request | Sh. | 2025-06-23 | JW |
 | 0232 | Mayfield, 2024 | upon request | Sh. | 2025-06-25 | JW |
 | 0233 | Mies, 2024 | upon request | Sh. | 2025-07-02 | JW |
+| 0234 | [Graham et al, 2024](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14454) | open | Rp. | 2025-07-03 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-07-02, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,043,212 observations** (*i.e* rows) representing **34,881
-sites** and **71,223 surveys**. The distribution of monitoring sites in
+On the 2025-07-16, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,067,101 observations** (*i.e* rows) representing **34,902
+sites** and **71,385 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -490,15 +491,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     1,917 |      10,742 |           11 |    1980    |   2025    |
 |               Brazil |       192 |         608 |            5 |    2002    |   2025    |
-|            Caribbean |    14,271 |      23,898 |           69 |    1973    |   2024    |
+|            Caribbean |    14,271 |      23,920 |           69 |    1973    |   2024    |
 |                  EAS |     3,046 |       6,816 |            8 |    1997    |   2024    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
-|                  WIO |     4,749 |       6,150 |           44 |    1987    |   2025    |
-| Global (all regions) |    34,881 |      71,223 |          232 |    1973    |   2025    |
+|                  WIO |     4,770 |       6,290 |           45 |    1987    |   2025    |
+| Global (all regions) |    34,902 |      71,385 |          233 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -595,7 +596,7 @@ differs from those of the other datasets.
 | Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 42 | 60 | 3 | 2004 | 2024 |
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 179 | 346 | 7 | 1985 | 2024 |
-| Seychelles | Seychelles | 19 | 19 | 2 | 1997 | 2012 |
+| Seychelles | Seychelles | 40 | 159 | 3 | 1994 | 2022 |
 | Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 6 | 37 | 2 | 1993 | 2023 |
 | Sri Lanka | Sri Lanka | 10 | 32 | 2 | 2003 | 2024 |
@@ -623,7 +624,7 @@ differs from those of the other datasets.
 | United States | Northern Mariana Islands | 680 | 924 | 3 | 1999 | 2020 |
 | United States | Palmyra Atoll | 194 | 298 | 2 | 2009 | 2019 |
 | United States | Puerto Rico | 2,968 | 3,279 | 7 | 1982 | 2024 |
-| United States | United States | 1,967 | 5,190 | 12 | 1984 | 2024 |
+| United States | United States | 1,967 | 5,212 | 12 | 1984 | 2024 |
 | United States | United States Virgin Islands | 5,871 | 6,860 | 9 | 1982 | 2024 |
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
@@ -691,8 +692,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp2lHHXs/file6dec735a517d -V'
-    renvoie un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp4mTLxy/file27dcf366051 -V' renvoie
+    un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.1 (2025-06-13 ucrt)
@@ -703,7 +704,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-07-02
+     date     2025-07-16
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 

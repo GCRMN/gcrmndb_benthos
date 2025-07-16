@@ -1129,6 +1129,7 @@
 "coral indet muerto";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral juvenile";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral massive";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"coral massives";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral muerto";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral mushroom";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral rock";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1136,7 +1137,9 @@
 "coral rubble with turf/encrusting algae";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral skeleton";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral spp";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"coral sub-massives";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral submassive";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"coral tables";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coral tubastrea";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Dendrophylliidae";"Tubastraea";NA;TRUE
 "coral unknown";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "coralcover";"Hard coral";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1334,6 +1337,7 @@
 "dead";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead acropora branching";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead acropora table";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"dead branching";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead calcareous algae";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead cca";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead components";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1356,13 +1360,15 @@
 "dead corals";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead gorgonian";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead hard coral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
-"dead hidrocoral";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"dead hidrocoral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"dead massives";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead octocoral";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead pavement";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead porites massive";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead shell";"Abiotic";"Rubble";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead sponge";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "dead standing coral white";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"dead sub-massives";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "deadcoral";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "deadcoral rubble";"Abiotic";"Rubble";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "debis coralliens";"Abiotic";"Rubble";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
