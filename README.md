@@ -458,12 +458,15 @@ considered. The column names (except *aggregator*) correspond to
 | 0233 | Mies, 2024 | upon request | Sh. | 2025-07-02 | JW |
 | 0234 | [Graham et al, 2024](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14454) | open | Rp. | 2025-07-03 | JW |
 | 0235 | [Caballero‐Aragón et al, 2022](https://doi.org/10.1016/j.dib.2022.108253) | open | Pa. | 2025-07-16 | JW |
+| 0236 | Bee Ecological |  |  |  | NA |
+| 0237 | Island Conservation Society |  |  |  | NA |
+| 0238 | Love the Ocean |  |  |  | NA |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-07-16, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,067,770 observations** (*i.e* rows) representing **34,909
-sites** and **71,392 surveys**. The distribution of monitoring sites in
+On the 2025-07-28, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,072,215 observations** (*i.e* rows) representing **34,917
+sites** and **71,561 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -499,8 +502,8 @@ that differs from those of the other datasets.
 |              Pacific |     8,415 |      15,731 |           52 |    1987    |   2025    |
 |                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
-|                  WIO |     4,770 |       6,290 |           45 |    1987    |   2025    |
-| Global (all regions) |    34,909 |      71,392 |          234 |    1973    |   2025    |
+|                  WIO |     4,778 |       6,459 |           46 |    1987    |   2025    |
+| Global (all regions) |    34,917 |      71,561 |          235 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -513,6 +516,7 @@ differs from those of the other datasets.
 | Country | Territory | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
+| Aruba | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Australia | Australia | 1,880 | 10,595 | 10 | 1980 | 2025 |
 | Australia | Christmas Island | 25 | 84 | 3 | 2003 | 2023 |
 | Australia | Cocos Islands | 27 | 85 | 2 | 1997 | 2023 |
@@ -530,6 +534,7 @@ differs from those of the other datasets.
 | Comores | Comores | 35 | 94 | 4 | 1999 | 2022 |
 | Costa Rica | Costa Rica | 231 | 475 | 5 | 2004 | 2025 |
 | Cuba | Cuba | 37 | 46 | 2 | 2001 | 2023 |
+| Curaçao | Curaçao | 146 | 431 | 3 | 1973 | 2023 |
 | Djibouti | Djibouti | 23 | 23 | 1 | 2005 | 2008 |
 | Dominica | Dominica | 19 | 33 | 1 | 2004 | 2018 |
 | Dominican Republic | Dominican Republic | 140 | 478 | 8 | 2004 | 2024 |
@@ -573,14 +578,11 @@ differs from those of the other datasets.
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 399 | 962 | 9 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
-| Mozambique | Mozambique | 153 | 204 | 9 | 1997 | 2024 |
+| Mozambique | Mozambique | 161 | 373 | 10 | 1997 | 2024 |
 | Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
-| Netherlands | Aruba | 6 | 7 | 1 | 2003 | 2009 |
 | Netherlands | Bonaire | 159 | 623 | 6 | 1973 | 2023 |
-| Netherlands | Curaçao | 146 | 431 | 3 | 1973 | 2023 |
 | Netherlands | Saba | 18 | 56 | 2 | 1994 | 2024 |
 | Netherlands | Sint-Eustatius | 27 | 62 | 2 | 2005 | 2023 |
-| Netherlands | Sint-Maarten | 12 | 59 | 2 | 2005 | 2024 |
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 44 | 63 | 2 | 2009 | 2015 |
@@ -598,6 +600,7 @@ differs from those of the other datasets.
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 179 | 346 | 7 | 1985 | 2024 |
 | Seychelles | Seychelles | 40 | 159 | 3 | 1994 | 2022 |
+| Sint-Maarten | Sint-Maarten | 12 | 59 | 2 | 2005 | 2024 |
 | Solomon Islands | Solomon Islands | 147 | 245 | 5 | 2005 | 2021 |
 | South Africa | South Africa | 6 | 37 | 2 | 1993 | 2023 |
 | Sri Lanka | Sri Lanka | 10 | 32 | 2 | 2003 | 2024 |
@@ -693,7 +696,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpU3T2nc/file299462ff7d60 -V'
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpAdHpya/file81602c676bd0 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -705,7 +708,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-07-16
+     date     2025-07-28
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
@@ -811,7 +814,7 @@ The following organizations have funded the realization of the
        rlang               1.1.6   2025-04-11 [1] CRAN (R 4.5.0)
        rmarkdown           2.29    2024-11-04 [1] CRAN (R 4.5.0)
        rstudioapi          0.17.1  2024-10-22 [1] CRAN (R 4.5.0)
-       rvest               1.0.4   2024-02-12 [1] CRAN (R 4.5.0)
+       rvest               1.0.4   2024-02-12 [1] CRAN (R 4.5.1)
        s2                  1.1.9   2025-05-23 [1] CRAN (R 4.5.0)
        sass                0.4.10  2025-04-11 [1] CRAN (R 4.5.0)
        scales              1.4.0   2025-04-24 [1] CRAN (R 4.5.0)

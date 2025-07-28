@@ -266,7 +266,12 @@ rm(data_gcrmn_regions, data_gcrmn_subregions, data_gcrmn_ecoregions)
 
 # 1.1 Load EEZ data --
 
-data_eez <- st_read("../data/07_data-eez/02_clean/eez_v12.shp")
+data_eez <- st_read("../data/07_data-eez/02_clean/eez_v12.shp") %>% 
+  # Correct sovereignty issues
+  mutate(SOVEREIGN1 = case_when(TERRITORY1 == "Aruba" ~ "Aruba",
+                                TERRITORY1 == "Curaçao" ~ "Curaçao",
+                                TERRITORY1 == "Sint-Maarten" ~ "Sint-Maarten",
+                                TRUE ~ SOVEREIGN1))
 
 # 1.2 Make the spatial join --
 
@@ -281,7 +286,12 @@ synthetic_data <- st_join(synthetic_data_coords, data_eez) %>%
 
 # 2.1 Load EEZ buffer data (1 km) --
 
-data_eez_buffer <- st_read("../data/07_data-eez/03_buffer/eez_v12_buffer.shp")
+data_eez_buffer <- st_read("../data/07_data-eez/03_buffer/eez_v12_buffer.shp") %>% 
+  # Correct sovereignty issues
+  mutate(SOVEREIGN1 = case_when(TERRITORY1 == "Aruba" ~ "Aruba",
+                                TERRITORY1 == "Curaçao" ~ "Curaçao",
+                                TERRITORY1 == "Sint-Maarten" ~ "Sint-Maarten",
+                                TRUE ~ SOVEREIGN1))
 
 # 2.2 Extract sites with missing assignations (country and territory) --
 
