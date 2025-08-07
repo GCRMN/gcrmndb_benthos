@@ -461,12 +461,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0236 | [Love the Oceans](https://lovetheoceans.org/) | upon request | Sh. | 2025-07-30 | JW |
 | 0237 | NGS - Solomon Islands | upon request | Sh. | 2025-07-31 | JW |
 | 0238 | NGS - Palau | upon request | Sh. | 2025-08-06 | JW |
+| 0239 | Smallhorn-West et al, 2025 | upon request | Rc. | 2025-08-07 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-08-06, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,077,387 observations** (*i.e* rows) representing **34,965
-sites** and **71,651 surveys**. The distribution of monitoring sites in
+On the 2025-08-07, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,246,176 observations** (*i.e* rows) representing **35,059
+sites** and **72,041 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -499,11 +500,11 @@ that differs from those of the other datasets.
 |                  EAS |     3,046 |       6,816 |            8 |    1997    |   2024    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
-|              Pacific |     8,462 |      15,818 |           54 |    1987    |   2025    |
+|              Pacific |     8,556 |      16,208 |           55 |    1987    |   2025    |
 |                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,779 |       6,462 |           46 |    1987    |   2025    |
-| Global (all regions) |    34,965 |      71,651 |          237 |    1973    |   2025    |
+| Global (all regions) |    35,059 |      72,041 |          238 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -608,7 +609,7 @@ differs from those of the other datasets.
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
 | Tanzania | Tanzania | 197 | 369 | 14 | 1992 | 2025 |
 | Thailand | Thailand | 150 | 248 | 1 | 1998 | 2024 |
-| Tonga | Tonga | 529 | 575 | 7 | 2002 | 2022 |
+| Tonga | Tonga | 623 | 965 | 8 | 2002 | 2024 |
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
 | United Arab Emirates | United Arab Emirates | 78 | 230 | 13 | 2004 | 2024 |
@@ -696,7 +697,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpG6DNg7/file95e875a74872 -V'
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp40TJGr/filece8c64a15f9f -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -708,7 +709,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-08-06
+     date     2025-08-07
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
