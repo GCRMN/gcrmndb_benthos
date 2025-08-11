@@ -462,12 +462,21 @@ considered. The column names (except *aggregator*) correspond to
 | 0237 | NGS - Solomon Islands | upon request | Sh. | 2025-07-31 | JW |
 | 0238 | NGS - Palau | upon request | Sh. | 2025-08-06 | JW |
 | 0239 | Smallhorn-West et al, 2025 | upon request | Rc. | 2025-08-07 | JW |
+| 0240 | EAS regional dataset - Brunei | upon request | Sh. | 2025-08-11 | JW |
+| 0241 | EAS regional dataset - Cambodia | upon request | Sh. | 2025-08-11 | JW |
+| 0242 | EAS regional dataset - China | upon request | Sh. | 2025-08-11 | JW |
+| 0243 | EAS regional dataset - Korea | upon request | Sh. | 2025-08-11 | JW |
+| 0244 | EAS regional dataset - Myanmar | upon request | Sh. | 2025-08-11 | JW |
+| 0245 | EAS regional dataset - Singapore | upon request | Sh. | 2025-08-11 | JW |
+| 0246 | EAS regional dataset - Thailand | upon request | Sh. | 2025-08-11 | JW |
+| 0247 | EAS regional dataset - Vietnam | upon request | Sh. | 2025-08-11 | JW |
+| 0248 | [Citizens of the Reef](https://citizensgbr.org/) | upon request | Sh. | 2025-08-11 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-08-07, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,246,176 observations** (*i.e* rows) representing **35,059
-sites** and **72,041 surveys**. The distribution of monitoring sites in
+On the 2025-08-11, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,191,704 observations** (*i.e* rows) representing **35,754
+sites** and **73,029 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -494,17 +503,17 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     1,917 |      10,742 |           11 |    1980    |   2025    |
+|            Australia |     2,307 |      11,132 |           12 |    1980    |   2025    |
 |               Brazil |       192 |         608 |            5 |    2002    |   2025    |
 |            Caribbean |    14,278 |      23,927 |           70 |    1973    |   2024    |
-|                  EAS |     3,046 |       6,816 |            8 |    1997    |   2024    |
+|                  EAS |     3,423 |       7,697 |           15 |    1986    |   2025    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
-|              Pacific |     8,556 |      16,208 |           55 |    1987    |   2025    |
+|              Pacific |     8,484 |      15,925 |           55 |    1987    |   2025    |
 |                ROPME |       379 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,779 |       6,462 |           46 |    1987    |   2025    |
-| Global (all regions) |    35,059 |      72,041 |          238 |    1973    |   2025    |
+| Global (all regions) |    35,754 |      73,029 |          246 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -518,7 +527,7 @@ differs from those of the other datasets.
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
 | Aruba | Aruba | 6 | 7 | 1 | 2003 | 2009 |
-| Australia | Australia | 1,880 | 10,595 | 10 | 1980 | 2025 |
+| Australia | Australia | 2,270 | 10,985 | 11 | 1980 | 2025 |
 | Australia | Christmas Island | 25 | 84 | 3 | 2003 | 2023 |
 | Australia | Cocos Islands | 27 | 85 | 2 | 1997 | 2023 |
 | Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
@@ -528,9 +537,9 @@ differs from those of the other datasets.
 | Belize | Belize | 340 | 536 | 6 | 1985 | 2024 |
 | Brazil | Brazil | 188 | 598 | 5 | 2002 | 2025 |
 | Brazil | Trindade | 4 | 10 | 1 | 2022 | 2024 |
-| Brunei | Brunei | 38 | 45 | 1 | 1997 | 2016 |
-| Cambodia | Cambodia | 98 | 105 | 2 | 1998 | 2013 |
-| China | China | 100 | 366 | 1 | 1997 | 2012 |
+| Brunei | Brunei | 48 | 60 | 2 | 1997 | 2024 |
+| Cambodia | Cambodia | 199 | 311 | 3 | 1998 | 2024 |
+| China | China | 138 | 427 | 2 | 1997 | 2024 |
 | Colombia | Colombia | 221 | 711 | 6 | 1997 | 2024 |
 | Comores | Comores | 35 | 94 | 4 | 1999 | 2022 |
 | Costa Rica | Costa Rica | 231 | 475 | 5 | 2004 | 2025 |
@@ -580,7 +589,7 @@ differs from those of the other datasets.
 | Mexico | Mexico | 399 | 962 | 9 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 162 | 376 | 10 | 1997 | 2024 |
-| Myanmar | Myanmar | 22 | 29 | 1 | 2001 | 2013 |
+| Myanmar | Myanmar | 52 | 59 | 2 | 2001 | 2025 |
 | Netherlands | Bonaire | 159 | 623 | 6 | 1973 | 2023 |
 | Netherlands | Saba | 18 | 56 | 2 | 1994 | 2024 |
 | Netherlands | Sint-Eustatius | 27 | 62 | 2 | 2005 | 2023 |
@@ -591,7 +600,7 @@ differs from those of the other datasets.
 | Palau | Palau | 116 | 425 | 4 | 1997 | 2024 |
 | Panama | Panama | 239 | 410 | 4 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
-| Philippines | Philippines | 842 | 1,136 | 3 | 1997 | 2023 |
+| Philippines | Philippines | 846 | 1,140 | 4 | 1997 | 2023 |
 | Qatar | Qatar | 26 | 26 | 4 | 2014 | 2024 |
 | Republic of Mauritius | Chagos Archipelago | 63 | 224 | 3 | 2010 | 2023 |
 | Republic of Mauritius | Republic of Mauritius | 10 | 12 | 1 | 1999 | 2003 |
@@ -601,6 +610,7 @@ differs from those of the other datasets.
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 179 | 346 | 7 | 1985 | 2024 |
 | Seychelles | Seychelles | 40 | 159 | 3 | 1994 | 2022 |
+| Singapore | Singapore | 37 | 249 | 1 | 1986 | 2024 |
 | Sint-Maarten | Sint-Maarten | 12 | 59 | 2 | 2005 | 2024 |
 | Solomon Islands | Solomon Islands | 190 | 288 | 6 | 2005 | 2024 |
 | South Africa | South Africa | 6 | 37 | 2 | 1993 | 2023 |
@@ -608,8 +618,8 @@ differs from those of the other datasets.
 | Sudan | Sudan | 86 | 123 | 6 | 2004 | 2022 |
 | Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
 | Tanzania | Tanzania | 197 | 369 | 14 | 1992 | 2025 |
-| Thailand | Thailand | 150 | 248 | 1 | 1998 | 2024 |
-| Tonga | Tonga | 623 | 965 | 8 | 2002 | 2024 |
+| Thailand | Thailand | 219 | 317 | 2 | 1998 | 2024 |
+| Tonga | Tonga | 551 | 682 | 8 | 2002 | 2024 |
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
 | United Arab Emirates | United Arab Emirates | 78 | 230 | 13 | 2004 | 2024 |
@@ -634,7 +644,7 @@ differs from those of the other datasets.
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
 | Venezuela | Venezuela | 38 | 45 | 2 | 2004 | 2018 |
-| Vietnam | Vietnam | 182 | 356 | 1 | 1998 | 2011 |
+| Vietnam | Vietnam | 270 | 603 | 2 | 1998 | 2024 |
 | Yemen | Yemen | 6 | 12 | 3 | 1999 | 2017 |
 
 ## 7. Sponsors
@@ -697,8 +707,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp40TJGr/filece8c64a15f9f -V'
-    renvoie un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpmWzIQ6/file79e0d1a63c7 -V' renvoie
+    un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.1 (2025-06-13 ucrt)
@@ -709,7 +719,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-08-07
+     date     2025-08-11
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 

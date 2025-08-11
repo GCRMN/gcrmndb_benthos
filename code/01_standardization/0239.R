@@ -13,5 +13,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   pull() %>% 
   read.csv() %>% 
   reefcloud_converter() %>% 
+  # Remove year before 2018 (already included in datasetID 0040)
+  filter(year > 2018) %>% 
   filter(measurementValue != 0) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
