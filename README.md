@@ -278,19 +278,19 @@ considered. The column names (except *aggregator*) correspond to
 | 0053 | [Vava’u Ocean Initiative 2022](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/) | upon request | Sh. |  | JW |
 | 0054 | [100 Island Challenge (SLI)](https://sandinlab.ucsd.edu/100-island-challenge/) | upon request | Sh. |  | JW |
 | 0055 | [Samoa Ocean Strategy](https://www.samoaocean.org/) | upon request | Sh. |  | JW |
-| 0056 | [SBN_UAE_2023](https://dashboard.datamermaid.org/?project=SBN_UAE_2023) | open (summary) | Me. |  | JW |
+| 0056 | [SBN_UAE_2023](https://dashboard.datamermaid.org/?project=FB_SBN_UAE_2023_Burt) | open (summary) | Me. |  | JW |
 | 0057 | Montefalcone et al. | upon request | Sh. | 2025-03-19 | JW |
-| 0058 | [Kuwait_2014](https://dashboard.datamermaid.org/?project=Kuwait_2014) | open (summary) | Me. |  | JW |
-| 0059 | [Bahrain_2011](https://dashboard.datamermaid.org/?project=Bahrain_2011) | open (summary) | Me. |  | JW |
+| 0058 | [Kuwait_2014](https://dashboard.datamermaid.org/?project=B_Kuwait_2014_Burt) | open (summary) | Me. |  | JW |
+| 0059 | [Bahrain_2011](https://dashboard.datamermaid.org/?project=B_Bahrain_2011_Burt) | open (summary) | Me. |  | JW |
 | 0060 | [Ankay Conservation](https://ankayconservation.com) | upon request | Sh. | 2024-07-08 | JW |
 | 0061 | [C<sub>2</sub>O Pacific (b)](https://c2o.net.au/our-work-in-the-pacific/) | upon request | Sh. | 2024-07-09 | JW |
 | 0062 | [Reef Renewal Bonaire](https://www.reefrenewalbonaire.org/) | upon request | Sh. | 2024-07-16 | JW |
-| 0063 | [Qatar_2015-2017](https://dashboard.datamermaid.org/?project=Qatar_2015-2017) | open (summary) | Me. | 2024-07-24 | JW |
-| 0064 | [UAE_Musandam](https://dashboard.datamermaid.org/?project=UAE_Musandam_Multiproject_2019-2020) | open (summary) | Me. | 2024-07-24 | JW |
-| 0065 | [SBNvsKF_UAE_2021-2022](https://dashboard.datamermaid.org/?project=SBNvsKF_UAE_2021-2022) | open (summary) | Me. | 2024-07-25 | JW |
+| 0063 | [Qatar_2015-2017](https://dashboard.datamermaid.org/?project=B_Qatar_2015-2017_Range) | open (summary) | Me. | 2024-07-24 | JW |
+| 0064 | [UAE_Musandam](https://dashboard.datamermaid.org/?project=FB_UAE_Musandam_Multiproject_2019-2020_Burt) | open (summary) | Me. | 2024-07-24 | JW |
+| 0065 | [SBNvsKF_UAE_2021-2022](https://dashboard.datamermaid.org/?project=B_SBNvsKF_UAE_2021-2022_Burt) | open (summary) | Me. | 2024-07-25 | JW |
 | 0066 | [Nature Foundation SXM](https://naturefoundationsxm.org/) | upon request | Sh. | 2024-07-25 | JW |
 | 0067 | [ODE Martinique](https://www.eaumartinique.fr/oe-accueil) | upon request | Sh. | 2024-07-31 | JW |
-| 0068 | [AlHiel_UAE_2023](https://dashboard.datamermaid.org/?project=AlHiel_UAE_2023) | open (summary) | Me. | 2024-07-25 | JW |
+| 0068 | [AlHiel_UAE_2023](https://dashboard.datamermaid.org/?project=FB_AlHiel_UAE_2023_Burt) | open (summary) | Me. | 2024-07-25 | JW |
 | 0069 | [UAE_Musandam_2022](https://dashboard.datamermaid.org/?project=UAE_Musandam_2022) | open (summary) | Me. | 2024-08-02 | JW |
 | 0070 | Claereboudt, 2015 | upon request | Sh. | 2024-08-25 | JW |
 | 0071 | Aeby et al, 2022 | upon request | Sh. | 2024-08-25 | JW |
@@ -322,12 +322,12 @@ considered. The column names (except *aggregator*) correspond to
 | 0097 | [SECREMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0280596) | open | Rp. | 2025-07-16 | JW |
 | 0098 | Steneck | upon request | Sh. | 2024-10-28 | JW |
 | 0099 | Meesters et al. | upon request | Sh. | 2024-10-30 | JW |
-| 0100 | [Abu Dhabi 2017-2019](https://dashboard.datamermaid.org/?project=Abu%20Dhabi%202017-2019) | open (summary) | Me. | 2024-10-31 | JW |
+| 0100 | [Abu Dhabi 2017-2019](https://dashboard.datamermaid.org/?project=B_AbuDhabi_2017-2019_Burt) | open (summary) | Me. | 2024-10-31 | JW |
 | 0101 | [NCRMP - FGB](https://doi.org/10.7289/v5vd6wts) | open | Rp. | 2024-11-04 | JW |
 | 0102 | [NCRMP - Puerto Rico](https://doi.org/10.7289/v5pg1q23) | open | Rp. | 2024-11-04 | JW |
 | 0103 | [NCRMP - USVI](https://doi.org/10.7289/v5ww7fqk) | open | Rp. | 2024-11-04 | JW |
 | 0104 | [NCRMP - Florida](https://doi.org/10.7289/v5xw4h4z) | open | Rp. | 2024-11-04 | JW |
-| 0105 | [UAE_Oman_2008-2012](https://dashboard.datamermaid.org/?project=UAE_Oman_2008-2012) | open (summary) | Me. | 2024-11-04 | JW |
+| 0105 | [UAE_Oman_2008-2012](https://dashboard.datamermaid.org/?project=FB_UAE_Oman_2008-2012_FearyBauman) | open (summary) | Me. | 2024-11-04 | JW |
 | 0106 | [DTCREMP](https://geodata.myfwc.com/documents/797abdd95d4146e1b7546d7df6a1ecf5/about) | open | Rp. | 2024-11-05 | JW |
 | 0107 | [CREMP](https://geodata.myfwc.com/documents/2ab2e706c83d4247855f8e4e689c7cba/about) | open | Rp. | 2024-11-05 | JW |
 | 0108 | WLC | upon request | Sh. | 2024-11-06 | JW |
@@ -341,8 +341,8 @@ considered. The column names (except *aggregator*) correspond to
 | 0116 | [SFS](https://fieldstudies.org/center/tci/) | upon request | Sh. | 2024-12-02 | JW |
 | 0117 | González Díaz et al. | upon request | Sh. | 2024-12-02 | JW |
 | 0118 | [Tebbett et al, 2022](https://doi.org/10.1016/j.marenvres.2021.105537) | upon request | Sh. | 2024-12-05 | JW |
-| 0119 | [UAE_2019_Mateos](https://dashboard.datamermaid.org/?project=UAE_2019_Mateos) | upon request | Me. | 2024-12-05 | JW |
-| 0120 | [Oman_2017_2020](https://dashboard.datamermaid.org/?project=Oman_2017_2020) | upon request | Me. | 2024-12-05 | JW |
+| 0119 | [UAE_2019_Mateos](https://dashboard.datamermaid.org/?project=B_UAE_2019_Mateos) | upon request | Me. | 2024-12-05 | JW |
+| 0120 | [Oman_2017_2020](https://dashboard.datamermaid.org/?project=B_Oman_2017-2020_Marshell) | upon request | Me. | 2024-12-05 | JW |
 | 0121 | [CORDIO (Kenya)](https://cordioea.net/) | upon request | Sh. | 2024-12-06 | JW |
 | 0122 | [A Rocha Kenya](https://www.arocha.or.ke/) | upon request | Sh. | 2024-12-06 | JW |
 | 0123 | [REEFolution](https://reefolution.org/) | upon request | Sh. | 2024-12-06 | JW |
@@ -359,14 +359,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0134 | Kimberley Marine Parks | upon request | Sh. | 2024-12-13 | JW |
 | 0135 | Garza et al, 2022 | upon request | Sh. | 2024-12-14 | JW |
 | 0136 | Coral Sea Marine Park | upon request | Sh. | 2024-12-17 | JW |
-| 0137 | [Qatar_2014](https://dashboard.datamermaid.org/?project=Qatar_2014) | upon request | Me. | 2024-12-18 | JW |
+| 0137 | [Qatar_2014](https://dashboard.datamermaid.org/?project=B_Qatar_2014_Burt) | upon request | Me. | 2024-12-18 | JW |
 | 0138 | Hawkins and Roberts, 1995 | upon request | Sh. | 2024-12-18 | JW |
 | 0139 | Raghunathan and Mondal | upon request | Sh. | 2025-01-02 | JW |
 | 0140 | Fairoz | upon request | Sh. | 2025-01-02 | JW |
 | 0141 | SDMRI | upon request | Sh. | 2025-03-21 | JW |
 | 0142 | [Benkwitt et al. (a)](https://www.science.org/doi/10.1126/sciadv.adj0390) | upon request | Sh. | 2025-01-12 | JW |
 | 0143 | Benkwitt et al. (b) | upon request | Sh. | 2025-01-12 | JW |
-| 0144 | [UAE_2006-2014](https://dashboard.datamermaid.org/?project=UAE_2006-2014) | upon request | Me. | 2025-01-16 | JW |
+| 0144 | [UAE_2006-2014](https://dashboard.datamermaid.org/?project=B_UAE_2006-2014_Burt) | upon request | Me. | 2025-01-16 | JW |
 | 0145 | Steneck and Torres | upon request | Sh. | 2025-01-20 | JW |
 | 0146 | STINAPA Bonaire | upon request | Sh. | 2025-01-21 | JW |
 | 0147 | USF | upon request | Sh. | 2025-01-22 | JW |
@@ -389,7 +389,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0164 | FGB LTMP - Repetitive Quadrat | upon request | Sh. | 2025-02-13 | JW |
 | 0165 | McLeod et al. | upon request | Sh. | 2025-02-20 | JW |
 | 0166 | [FUNDEMAR (2011-2016)](https://www.fundemardr.org/) | upon request | Sh. | 2025-02-20 | JW |
-| 0167 | [Leduc](https://dashboard.datamermaid.org/?project=Oman_2022_Leduc) | upon request | Sh. | 2025-02-24 | JW |
+| 0167 | [Leduc](https://dashboard.datamermaid.org/?project=B_Oman_2022-2024_Leduc) | upon request | Sh. | 2025-02-24 | JW |
 | 0168 | ETP regional dataset | upon request | Sh. | 2025-02-25 | JW |
 | 0169 | Moity | upon request | Sh. | 2025-02-25 | JW |
 | 0170 | [Sannassy Pilly et al, 2024](https://doi.org/10.1098/rsos.231246) | upon request | Sh. | 2025-02-28 | JW |
@@ -448,7 +448,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0223 | Qatar, 2022 | upon request | Sh. | 2025-04-06 | JW |
 | 0224 | Al Harthi, 2024 | upon request | Sh. | 2025-04-06 | JW |
 | 0225 | Al Mealla, 2024 | upon request | Sh. | 2025-04-06 | JW |
-| 0226 | [Kuwait_1987](https://dashboard.datamermaid.org/?project=Kuwait_1987) | upon request | Me. | 2025-04-06 | JW |
+| 0226 | [Kuwait_1987](https://dashboard.datamermaid.org/?project=B_Kuwait_1987_Downing) | upon request | Me. | 2025-04-06 | JW |
 | 0227 | UAE_2023-2024 | upon request | Sh. | 2025-04-06 | JW |
 | 0228 | Likhulu | upon request | Sh. | 2025-04-08 | JW |
 | 0229 | [CSIRO](https://shiny.csiro.au/UVSeeR/) | upon request | Sh. | 2025-06-23 | JW |
@@ -474,7 +474,7 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-08-11, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2025-08-18, the `gcrmndb_benthos` synthetic dataset contains a
 total of **19,191,704 observations** (*i.e* rows) representing **35,754
 sites** and **73,029 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
@@ -707,7 +707,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpmWzIQ6/file79e0d1a63c7 -V' renvoie
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp6n8fOd/file10082f12548 -V' renvoie
     un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -719,149 +719,160 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-08-11
+     date     2025-08-18
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
     ─ Packages ───────────────────────────────────────────────────────────────────
-     ! package           * version date (UTC) lib source
-       askpass             1.2.1   2024-10-04 [1] CRAN (R 4.5.0)
-       backports           1.5.0   2024-05-23 [1] CRAN (R 4.5.0)
-       base64enc           0.1-3   2015-07-28 [1] CRAN (R 4.5.0)
-       bit                 4.6.0   2025-03-06 [1] CRAN (R 4.5.0)
-       bit64               4.6.0-1 2025-01-16 [1] CRAN (R 4.5.0)
-       blob                1.2.4   2023-03-17 [1] CRAN (R 4.5.0)
-       broom               1.0.8   2025-03-28 [1] CRAN (R 4.5.0)
-       bslib               0.9.0   2025-01-30 [1] CRAN (R 4.5.0)
-       cachem              1.1.0   2024-05-16 [1] CRAN (R 4.5.0)
-       callr               3.7.6   2024-03-25 [1] CRAN (R 4.5.0)
-       cellranger          1.1.0   2016-07-27 [1] CRAN (R 4.5.0)
-       class               7.3-23  2025-01-01 [2] CRAN (R 4.5.1)
-       classInt            0.4-11  2025-01-08 [1] CRAN (R 4.5.0)
-       cli                 3.6.5   2025-04-23 [1] CRAN (R 4.5.0)
-       clipr               0.8.0   2022-02-22 [1] CRAN (R 4.5.0)
-       conflicted          1.2.0   2023-02-01 [1] CRAN (R 4.5.0)
-       cpp11               0.5.2   2025-03-03 [1] CRAN (R 4.5.0)
-       crayon              1.5.3   2024-06-20 [1] CRAN (R 4.5.0)
-       crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.5.0)
-       curl                6.4.0   2025-06-22 [1] CRAN (R 4.5.0)
-       data.table          1.17.6  2025-06-17 [1] CRAN (R 4.5.0)
-       DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.5.0)
-       dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.5.0)
-       digest              0.6.37  2024-08-19 [1] CRAN (R 4.5.0)
-       dplyr             * 1.1.4   2023-11-17 [1] CRAN (R 4.5.0)
-       DT                  0.33    2024-04-04 [1] CRAN (R 4.5.0)
-       dtplyr              1.3.1   2023-03-22 [1] CRAN (R 4.5.0)
-       e1071               1.7-16  2024-09-16 [1] CRAN (R 4.5.0)
-       evaluate            1.0.4   2025-06-18 [1] CRAN (R 4.5.0)
-       farver              2.1.2   2024-05-13 [1] CRAN (R 4.5.0)
-       fastmap             1.2.0   2024-05-15 [1] CRAN (R 4.5.0)
-       fontawesome         0.5.3   2024-11-16 [1] CRAN (R 4.5.0)
-       forcats           * 1.0.0   2023-01-29 [1] CRAN (R 4.5.0)
-       formattable         0.2.1   2021-01-07 [1] CRAN (R 4.5.0)
-       fs                  1.6.6   2025-04-12 [1] CRAN (R 4.5.0)
-       gargle              1.5.2   2023-07-20 [1] CRAN (R 4.5.0)
-       generics            0.1.4   2025-05-09 [1] CRAN (R 4.5.0)
-       ggplot2           * 3.5.2   2025-04-09 [1] CRAN (R 4.5.0)
-       glue                1.8.0   2024-09-30 [1] CRAN (R 4.5.0)
-       googledrive         2.1.1   2023-06-11 [1] CRAN (R 4.5.0)
-       googlesheets4       1.1.1   2023-06-11 [1] CRAN (R 4.5.0)
-       gtable              0.3.6   2024-10-25 [1] CRAN (R 4.5.0)
-       haven               2.5.5   2025-05-30 [1] CRAN (R 4.5.0)
-       highr               0.11    2024-05-26 [1] CRAN (R 4.5.0)
-       hms                 1.1.3   2023-03-21 [1] CRAN (R 4.5.0)
-       htmltools           0.5.8.1 2024-04-04 [1] CRAN (R 4.5.0)
-       htmlwidgets         1.6.4   2023-12-06 [1] CRAN (R 4.5.0)
-       httpuv              1.6.16  2025-04-16 [1] CRAN (R 4.5.0)
-       httr                1.4.7   2023-08-15 [1] CRAN (R 4.5.0)
-       ids                 1.0.1   2017-05-31 [1] CRAN (R 4.5.0)
-       isoband             0.2.7   2022-12-20 [1] CRAN (R 4.5.0)
-       jquerylib           0.1.4   2021-04-26 [1] CRAN (R 4.5.0)
-       jsonlite            2.0.0   2025-03-27 [1] CRAN (R 4.5.0)
-       kableExtra          1.4.0   2024-01-24 [1] CRAN (R 4.5.0)
-       KernSmooth          2.23-26 2025-01-01 [2] CRAN (R 4.5.1)
-       knitr             * 1.50    2025-03-16 [1] CRAN (R 4.5.0)
-       labeling            0.4.3   2023-08-29 [1] CRAN (R 4.5.0)
-       later               1.4.2   2025-04-08 [1] CRAN (R 4.5.0)
-       lattice             0.22-7  2025-04-02 [2] CRAN (R 4.5.1)
-       lazyeval            0.2.2   2019-03-15 [1] CRAN (R 4.5.0)
-       leaflet             2.2.2   2024-03-26 [1] CRAN (R 4.5.0)
-       leaflet.providers   2.0.0   2023-10-17 [1] CRAN (R 4.5.0)
-       lifecycle           1.0.4   2023-11-07 [1] CRAN (R 4.5.0)
-       lubridate         * 1.9.4   2024-12-08 [1] CRAN (R 4.5.0)
-       magrittr            2.0.3   2022-03-30 [1] CRAN (R 4.5.0)
-       MASS                7.3-65  2025-02-28 [2] CRAN (R 4.5.1)
-       Matrix              1.7-3   2025-03-11 [2] CRAN (R 4.5.1)
-       memoise             2.0.1   2021-11-26 [1] CRAN (R 4.5.0)
-     R mermaidr            <NA>    <NA>       [?] <NA>
-       mgcv                1.9-3   2025-04-04 [2] CRAN (R 4.5.1)
-       mime                0.13    2025-03-17 [1] CRAN (R 4.5.0)
-       modelr              0.1.11  2023-03-22 [1] CRAN (R 4.5.0)
-       nlme                3.1-168 2025-03-31 [2] CRAN (R 4.5.1)
-       openssl             2.3.3   2025-05-26 [1] CRAN (R 4.5.0)
-       pillar              1.10.2  2025-04-05 [1] CRAN (R 4.5.0)
-       pkgconfig           2.0.3   2019-09-22 [1] CRAN (R 4.5.0)
-       plotly              4.11.0  2025-06-19 [1] CRAN (R 4.5.0)
-       png                 0.1-8   2022-11-29 [1] CRAN (R 4.5.0)
-       prettydoc           0.4.1   2021-01-10 [1] CRAN (R 4.5.0)
-       prettyunits         1.2.0   2023-09-24 [1] CRAN (R 4.5.0)
-       processx            3.8.6   2025-02-21 [1] CRAN (R 4.5.0)
-       progress            1.2.3   2023-12-06 [1] CRAN (R 4.5.0)
-       promises            1.3.3   2025-05-29 [1] CRAN (R 4.5.0)
-       proxy               0.4-27  2022-06-09 [1] CRAN (R 4.5.0)
-       ps                  1.9.1   2025-04-12 [1] CRAN (R 4.5.0)
-       purrr             * 1.0.4   2025-02-05 [1] CRAN (R 4.5.0)
-       R6                  2.6.1   2025-02-15 [1] CRAN (R 4.5.0)
-       ragg                1.4.0   2025-04-10 [1] CRAN (R 4.5.0)
-       rappdirs            0.3.3   2021-01-31 [1] CRAN (R 4.5.0)
-       raster              3.6-32  2025-03-28 [1] CRAN (R 4.5.0)
-       RColorBrewer        1.1-3   2022-04-03 [1] CRAN (R 4.5.0)
-       Rcpp                1.0.14  2025-01-12 [1] CRAN (R 4.5.0)
-       readr             * 2.1.5   2024-01-10 [1] CRAN (R 4.5.0)
-       readxl            * 1.4.5   2025-03-07 [1] CRAN (R 4.5.0)
-       rematch             2.0.0   2023-08-30 [1] CRAN (R 4.5.0)
-       rematch2            2.1.2   2020-05-01 [1] CRAN (R 4.5.0)
-       reprex              2.1.1   2024-07-06 [1] CRAN (R 4.5.0)
-       rlang               1.1.6   2025-04-11 [1] CRAN (R 4.5.0)
-       rmarkdown           2.29    2024-11-04 [1] CRAN (R 4.5.0)
-       rstudioapi          0.17.1  2024-10-22 [1] CRAN (R 4.5.0)
-       rvest               1.0.4   2024-02-12 [1] CRAN (R 4.5.1)
-       s2                  1.1.9   2025-05-23 [1] CRAN (R 4.5.0)
-       sass                0.4.10  2025-04-11 [1] CRAN (R 4.5.0)
-       scales              1.4.0   2025-04-24 [1] CRAN (R 4.5.0)
-       selectr             0.4-2   2019-11-20 [1] CRAN (R 4.5.0)
-       sf                * 1.0-21  2025-05-15 [1] CRAN (R 4.5.0)
-       sp                  2.2-0   2025-02-01 [1] CRAN (R 4.5.0)
-       stringi             1.8.7   2025-03-27 [1] CRAN (R 4.5.0)
-       stringr           * 1.5.1   2023-11-14 [1] CRAN (R 4.5.0)
-       svglite             2.2.1   2025-05-12 [1] CRAN (R 4.5.0)
-       sys                 3.4.3   2024-10-04 [1] CRAN (R 4.5.0)
-       systemfonts         1.2.3   2025-04-30 [1] CRAN (R 4.5.0)
-       terra               1.8-54  2025-06-01 [1] CRAN (R 4.5.0)
-       textshaping         1.0.1   2025-05-01 [1] CRAN (R 4.5.0)
-       tibble            * 3.3.0   2025-06-08 [1] CRAN (R 4.5.0)
-       tidyr             * 1.3.1   2024-01-24 [1] CRAN (R 4.5.0)
-       tidyselect          1.2.1   2024-03-11 [1] CRAN (R 4.5.0)
-       tidyverse         * 2.0.0   2023-02-22 [1] CRAN (R 4.5.0)
-       timechange          0.3.0   2024-01-18 [1] CRAN (R 4.5.0)
-       tinytex             0.57    2025-04-15 [1] CRAN (R 4.5.0)
-       tzdb                0.5.0   2025-03-15 [1] CRAN (R 4.5.0)
-       units               0.8-7   2025-03-11 [1] CRAN (R 4.5.0)
-       utf8                1.2.6   2025-06-08 [1] CRAN (R 4.5.0)
-       uuid                1.2-1   2024-07-29 [1] CRAN (R 4.5.0)
-       vctrs               0.6.5   2023-12-01 [1] CRAN (R 4.5.0)
-       viridisLite         0.4.2   2023-05-02 [1] CRAN (R 4.5.0)
-       vroom               1.6.5   2023-12-05 [1] CRAN (R 4.5.0)
-       withr               3.0.2   2024-10-28 [1] CRAN (R 4.5.0)
-       wk                  0.9.4   2024-10-11 [1] CRAN (R 4.5.0)
-       xfun                0.52    2025-04-02 [1] CRAN (R 4.5.0)
-       xml2                1.3.8   2025-03-14 [1] CRAN (R 4.5.0)
-       yaml                2.3.10  2024-07-26 [1] CRAN (R 4.5.0)
+     package           * version date (UTC) lib source
+     askpass             1.2.1   2024-10-04 [1] CRAN (R 4.5.0)
+     backports           1.5.0   2024-05-23 [1] CRAN (R 4.5.0)
+     base64enc           0.1-3   2015-07-28 [1] CRAN (R 4.5.0)
+     bit                 4.6.0   2025-03-06 [1] CRAN (R 4.5.0)
+     bit64               4.6.0-1 2025-01-16 [1] CRAN (R 4.5.0)
+     blob                1.2.4   2023-03-17 [1] CRAN (R 4.5.0)
+     broom               1.0.9   2025-07-28 [1] CRAN (R 4.5.1)
+     bslib               0.9.0   2025-01-30 [1] CRAN (R 4.5.0)
+     cachem              1.1.0   2024-05-16 [1] CRAN (R 4.5.0)
+     callr               3.7.6   2024-03-25 [1] CRAN (R 4.5.0)
+     cellranger          1.1.0   2016-07-27 [1] CRAN (R 4.5.0)
+     class               7.3-23  2025-01-01 [2] CRAN (R 4.5.1)
+     classInt            0.4-11  2025-01-08 [1] CRAN (R 4.5.0)
+     cli                 3.6.5   2025-04-23 [1] CRAN (R 4.5.0)
+     clipr               0.8.0   2022-02-22 [1] CRAN (R 4.5.0)
+     conflicted          1.2.0   2023-02-01 [1] CRAN (R 4.5.0)
+     cpp11               0.5.2   2025-03-03 [1] CRAN (R 4.5.0)
+     crayon              1.5.3   2024-06-20 [1] CRAN (R 4.5.0)
+     credentials         2.0.2   2024-10-04 [1] CRAN (R 4.5.0)
+     crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.5.0)
+     curl                6.4.0   2025-06-22 [1] CRAN (R 4.5.0)
+     data.table          1.17.8  2025-07-10 [1] CRAN (R 4.5.1)
+     DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.5.0)
+     dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.5.0)
+     desc                1.4.3   2023-12-10 [1] CRAN (R 4.5.0)
+     digest              0.6.37  2024-08-19 [1] CRAN (R 4.5.0)
+     dplyr             * 1.1.4   2023-11-17 [1] CRAN (R 4.5.0)
+     DT                  0.33    2024-04-04 [1] CRAN (R 4.5.0)
+     dtplyr              1.3.1   2023-03-22 [1] CRAN (R 4.5.0)
+     e1071               1.7-16  2024-09-16 [1] CRAN (R 4.5.0)
+     evaluate            1.0.4   2025-06-18 [1] CRAN (R 4.5.0)
+     farver              2.1.2   2024-05-13 [1] CRAN (R 4.5.0)
+     fastmap             1.2.0   2024-05-15 [1] CRAN (R 4.5.0)
+     fontawesome         0.5.3   2024-11-16 [1] CRAN (R 4.5.0)
+     forcats           * 1.0.0   2023-01-29 [1] CRAN (R 4.5.0)
+     formattable         0.2.1   2021-01-07 [1] CRAN (R 4.5.0)
+     fs                  1.6.6   2025-04-12 [1] CRAN (R 4.5.0)
+     gargle              1.5.2   2023-07-20 [1] CRAN (R 4.5.0)
+     generics            0.1.4   2025-05-09 [1] CRAN (R 4.5.0)
+     gert                2.1.5   2025-03-25 [1] CRAN (R 4.5.0)
+     ggplot2           * 3.5.2   2025-04-09 [1] CRAN (R 4.5.0)
+     gh                  1.5.0   2025-05-26 [1] CRAN (R 4.5.0)
+     gitcreds            0.1.2   2022-09-08 [1] CRAN (R 4.5.0)
+     glue                1.8.0   2024-09-30 [1] CRAN (R 4.5.0)
+     googledrive         2.1.1   2023-06-11 [1] CRAN (R 4.5.0)
+     googlesheets4       1.1.1   2023-06-11 [1] CRAN (R 4.5.0)
+     gtable              0.3.6   2024-10-25 [1] CRAN (R 4.5.0)
+     haven               2.5.5   2025-05-30 [1] CRAN (R 4.5.0)
+     highr               0.11    2024-05-26 [1] CRAN (R 4.5.0)
+     hms                 1.1.3   2023-03-21 [1] CRAN (R 4.5.0)
+     htmltools           0.5.8.1 2024-04-04 [1] CRAN (R 4.5.0)
+     htmlwidgets         1.6.4   2023-12-06 [1] CRAN (R 4.5.0)
+     httpuv              1.6.16  2025-04-16 [1] CRAN (R 4.5.0)
+     httr                1.4.7   2023-08-15 [1] CRAN (R 4.5.0)
+     httr2               1.2.1   2025-07-22 [1] CRAN (R 4.5.1)
+     ids                 1.0.1   2017-05-31 [1] CRAN (R 4.5.0)
+     ini                 0.3.1   2018-05-20 [1] CRAN (R 4.5.0)
+     isoband             0.2.7   2022-12-20 [1] CRAN (R 4.5.0)
+     jquerylib           0.1.4   2021-04-26 [1] CRAN (R 4.5.0)
+     jsonlite            2.0.0   2025-03-27 [1] CRAN (R 4.5.0)
+     kableExtra          1.4.0   2024-01-24 [1] CRAN (R 4.5.0)
+     KernSmooth          2.23-26 2025-01-01 [2] CRAN (R 4.5.1)
+     knitr             * 1.50    2025-03-16 [1] CRAN (R 4.5.0)
+     labeling            0.4.3   2023-08-29 [1] CRAN (R 4.5.0)
+     later               1.4.2   2025-04-08 [1] CRAN (R 4.5.0)
+     lattice             0.22-7  2025-04-02 [2] CRAN (R 4.5.1)
+     lazyeval            0.2.2   2019-03-15 [1] CRAN (R 4.5.0)
+     leaflet             2.2.2   2024-03-26 [1] CRAN (R 4.5.0)
+     leaflet.providers   2.0.0   2023-10-17 [1] CRAN (R 4.5.0)
+     lifecycle           1.0.4   2023-11-07 [1] CRAN (R 4.5.0)
+     lubridate         * 1.9.4   2024-12-08 [1] CRAN (R 4.5.0)
+     magrittr            2.0.3   2022-03-30 [1] CRAN (R 4.5.0)
+     MASS                7.3-65  2025-02-28 [2] CRAN (R 4.5.1)
+     Matrix              1.7-3   2025-03-11 [2] CRAN (R 4.5.1)
+     memoise             2.0.1   2021-11-26 [1] CRAN (R 4.5.0)
+     mermaidr            1.2.5   2025-08-18 [1] Github (data-mermaid/mermaidr@3b2fb12)
+     mgcv                1.9-3   2025-04-04 [2] CRAN (R 4.5.1)
+     mime                0.13    2025-03-17 [1] CRAN (R 4.5.0)
+     modelr              0.1.11  2023-03-22 [1] CRAN (R 4.5.0)
+     nlme                3.1-168 2025-03-31 [2] CRAN (R 4.5.1)
+     openssl             2.3.3   2025-05-26 [1] CRAN (R 4.5.0)
+     openxlsx            4.2.8   2025-01-25 [1] CRAN (R 4.5.0)
+     pillar              1.11.0  2025-07-04 [1] CRAN (R 4.5.1)
+     pkgconfig           2.0.3   2019-09-22 [1] CRAN (R 4.5.0)
+     plotly              4.11.0  2025-06-19 [1] CRAN (R 4.5.0)
+     png                 0.1-8   2022-11-29 [1] CRAN (R 4.5.0)
+     prettydoc           0.4.1   2021-01-10 [1] CRAN (R 4.5.0)
+     prettyunits         1.2.0   2023-09-24 [1] CRAN (R 4.5.0)
+     processx            3.8.6   2025-02-21 [1] CRAN (R 4.5.0)
+     progress            1.2.3   2023-12-06 [1] CRAN (R 4.5.0)
+     promises            1.3.3   2025-05-29 [1] CRAN (R 4.5.0)
+     proxy               0.4-27  2022-06-09 [1] CRAN (R 4.5.0)
+     ps                  1.9.1   2025-04-12 [1] CRAN (R 4.5.0)
+     purrr             * 1.1.0   2025-07-10 [1] CRAN (R 4.5.1)
+     R6                  2.6.1   2025-02-15 [1] CRAN (R 4.5.0)
+     ragg                1.4.0   2025-04-10 [1] CRAN (R 4.5.0)
+     rappdirs            0.3.3   2021-01-31 [1] CRAN (R 4.5.0)
+     raster              3.6-32  2025-03-28 [1] CRAN (R 4.5.0)
+     RColorBrewer        1.1-3   2022-04-03 [1] CRAN (R 4.5.0)
+     Rcpp                1.1.0   2025-07-02 [1] CRAN (R 4.5.1)
+     readr             * 2.1.5   2024-01-10 [1] CRAN (R 4.5.0)
+     readxl            * 1.4.5   2025-03-07 [1] CRAN (R 4.5.0)
+     rematch             2.0.0   2023-08-30 [1] CRAN (R 4.5.0)
+     rematch2            2.1.2   2020-05-01 [1] CRAN (R 4.5.0)
+     reprex              2.1.1   2024-07-06 [1] CRAN (R 4.5.0)
+     rlang               1.1.6   2025-04-11 [1] CRAN (R 4.5.0)
+     rmarkdown           2.29    2024-11-04 [1] CRAN (R 4.5.0)
+     rprojroot           2.1.0   2025-07-12 [1] CRAN (R 4.5.1)
+     rstudioapi          0.17.1  2024-10-22 [1] CRAN (R 4.5.0)
+     rvest               1.0.4   2024-02-12 [1] CRAN (R 4.5.1)
+     s2                  1.1.9   2025-05-23 [1] CRAN (R 4.5.0)
+     sass                0.4.10  2025-04-11 [1] CRAN (R 4.5.0)
+     scales              1.4.0   2025-04-24 [1] CRAN (R 4.5.0)
+     selectr             0.4-2   2019-11-20 [1] CRAN (R 4.5.0)
+     sf                * 1.0-21  2025-05-15 [1] CRAN (R 4.5.0)
+     snakecase           0.11.1  2023-08-27 [1] CRAN (R 4.5.1)
+     sp                  2.2-0   2025-02-01 [1] CRAN (R 4.5.0)
+     stringi             1.8.7   2025-03-27 [1] CRAN (R 4.5.0)
+     stringr           * 1.5.1   2023-11-14 [1] CRAN (R 4.5.0)
+     svglite             2.2.1   2025-05-12 [1] CRAN (R 4.5.0)
+     sys                 3.4.3   2024-10-04 [1] CRAN (R 4.5.0)
+     systemfonts         1.2.3   2025-04-30 [1] CRAN (R 4.5.0)
+     terra               1.8-60  2025-07-21 [1] CRAN (R 4.5.1)
+     textshaping         1.0.1   2025-05-01 [1] CRAN (R 4.5.0)
+     tibble            * 3.3.0   2025-06-08 [1] CRAN (R 4.5.0)
+     tidyr             * 1.3.1   2024-01-24 [1] CRAN (R 4.5.0)
+     tidyselect          1.2.1   2024-03-11 [1] CRAN (R 4.5.0)
+     tidyverse         * 2.0.0   2023-02-22 [1] CRAN (R 4.5.0)
+     timechange          0.3.0   2024-01-18 [1] CRAN (R 4.5.0)
+     tinytex             0.57    2025-04-15 [1] CRAN (R 4.5.0)
+     tzdb                0.5.0   2025-03-15 [1] CRAN (R 4.5.0)
+     units               0.8-7   2025-03-11 [1] CRAN (R 4.5.0)
+     usethis             3.1.0   2024-11-26 [1] CRAN (R 4.5.0)
+     utf8                1.2.6   2025-06-08 [1] CRAN (R 4.5.0)
+     uuid                1.2-1   2024-07-29 [1] CRAN (R 4.5.0)
+     vctrs               0.6.5   2023-12-01 [1] CRAN (R 4.5.0)
+     viridisLite         0.4.2   2023-05-02 [1] CRAN (R 4.5.0)
+     vroom               1.6.5   2023-12-05 [1] CRAN (R 4.5.0)
+     whisker             0.4.1   2022-12-05 [1] CRAN (R 4.5.0)
+     withr               3.0.2   2024-10-28 [1] CRAN (R 4.5.0)
+     wk                  0.9.4   2024-10-11 [1] CRAN (R 4.5.0)
+     xfun                0.52    2025-04-02 [1] CRAN (R 4.5.0)
+     xml2                1.3.8   2025-03-14 [1] CRAN (R 4.5.0)
+     yaml                2.3.10  2024-07-26 [1] CRAN (R 4.5.0)
+     zip                 2.3.3   2025-05-13 [1] CRAN (R 4.5.0)
 
      [1] C:/Users/jerem/AppData/Local/R/win-library/4.5
      [2] C:/Program Files/R/R-4.5.1/library
-
      * ── Packages attached to the search path.
-     R ── Package was removed from disk.
 
     ──────────────────────────────────────────────────────────────────────────────
