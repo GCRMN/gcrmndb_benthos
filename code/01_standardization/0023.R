@@ -7,7 +7,7 @@ dataset <- "0023" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-# 2.1 Site data --
+## 2.1 Site data ----
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "site") %>% 
@@ -18,7 +18,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(-Zone) %>% 
   rename(station = Station, decimalLatitude = Latitude, decimalLongitude = Longitude)
 
-# 2.2 Main data --
+## 2.2 Main data ----
 
 read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 

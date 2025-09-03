@@ -8,7 +8,7 @@ dataset <- "0017" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-# 2.1 Site data --
+## 2.1 Site data ----
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "site") %>% 
@@ -23,7 +23,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   rename(locality = Station) %>% 
   st_drop_geometry()
 
-# 2.2 Code data --
+## 2.2 Code data ----
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -35,7 +35,7 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   distinct() %>% 
   rename(Code_LIT_SOPRONER = CODE_LIT_SOPRONER, organismID = All)
 
-# 2.3 Main data --
+## 2.3 Main data ----
 
 read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 

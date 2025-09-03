@@ -8,7 +8,7 @@ dataset <- "0019" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-# 2.1 Site data --
+## 2.1 Site data ----
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "site") %>% 
@@ -27,7 +27,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          locality = str_to_title(locality)) %>% 
   select(-Site, -Station)
 
-# 2.2 Code data --
+## 2.2 Code data ----
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -39,7 +39,7 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(code, organismID) %>% 
   distinct()
 
-# 2.3 Main data --
+## 2.3 Main data ----
 
 read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -47,11 +47,11 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   pull() %>% 
   # Read the file
   read_xlsx(., sheet = "LIT") %>% 
-  select(-Campagne, -Client, -Dist, -Lineaire) %>% 
+  select(-Campagne, -Client, -Ruban, -Lineaire) %>% 
   rename(eventDate = Date, parentEventID = "T", recordedBy = Obs,
-         measurementValue = Couverture, code = Code_LIT) %>% 
+         measurementValue = Couverture, code = Code_LIT_SOPRONER) %>% 
   mutate(datasetID = dataset,
-         eventDate = as_date(eventDate, origin = "1900-01-01"),
+         eventDate = as.Date(eventDate),
          year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate),
@@ -62,7 +62,7 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          parentEventID = as.numeric(str_sub(parentEventID, 3, 3))) %>% 
   left_join(., data_site) %>% 
   left_join(., data_code) %>% 
-  select(-Site, -Station, -code) %>% 
+  select(-Site, -Station, -code, -General, -Formes, -Acroporidae, -Famille, -Genre) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
