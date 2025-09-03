@@ -239,13 +239,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0014 | [NCRMP - PRIA](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:NCRMP-StRS-Images-PRIA) | open | Rp. | 2021-07-30 | JW |
 | 0015 | [Reef Check Foundation](https://www.reefcheck.org/tropical-program/tropical-monitoring-instruction/) | upon request | Db. | 2024-10-16 | JW |
 | 0016 | Biosphere Foundation | upon request | Sh. |  | JW |
-| 0017 | KNS | upon request | Sh. | 2022-12-27 | JW |
+| 0017 | KNS | upon request | Sh. | 2025-09-03 | JW |
 | 0018 | Kiribati | upon request | Sh. | 2020-03-05 | JW |
-| 0019 | SLN | upon request | Sh. | 2022-05-12 | JW |
+| 0019 | SLN | upon request | Sh. | 2025-09-03 | JW |
 | 0020 | [PACN](https://www.nps.gov/im/pacn/benthic.htm) | upon request | Sh. |  | JW |
 | 0021 | RORC NC | upon request | Sh. |  | JW |
 | 0022 | [MCRMP](https://micronesiareefmonitoring.com/) | upon request | Sh. |  | JW |
-| 0023 | PA-NC | upon request | Sh. |  | JW |
+| 0023 | PA-NC | upon request | Sh. | 2025-09-03 | JW |
 | 0024 | [Laurent WANTIEZ](https://scholar.google.fr/citations?user=4H_FTE0AAAAJ&hl=fr&oi=ao) | upon request | Sh. |  | JW |
 | 0025 | [2011_Southern Bua](https://dashboard.datamermaid.org/?project=2011_Southern%20Bua) | open (summary) | Me. | 2021-09-08 | JW |
 | 0026 | [2012_Western Bua](https://dashboard.datamermaid.org/?project=2012_Western%20Bua) | open (summary) | Me. | 2021-09-10 | JW |
@@ -471,12 +471,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0246 | EAS regional dataset - Thailand | upon request | Sh. | 2025-08-11 | JW |
 | 0247 | EAS regional dataset - Vietnam | upon request | Sh. | 2025-08-11 | JW |
 | 0248 | [Citizens of the Reef](https://citizensgbr.org/) | upon request | Sh. | 2025-08-11 | JW |
+| 0249 | [Sea Women of Melanesia](https://www.seawomen.net/) | upon request | Rc. | 2025-09-03 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-08-18, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,191,704 observations** (*i.e* rows) representing **35,754
-sites** and **73,029 surveys**. The distribution of monitoring sites in
+On the 2025-09-03, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,326,534 observations** (*i.e* rows) representing **35,944
+sites** and **73,623 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -509,11 +510,11 @@ that differs from those of the other datasets.
 |                  EAS |     3,423 |       7,697 |           15 |    1986    |   2025    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
-|              Pacific |     8,484 |      15,925 |           55 |    1987    |   2025    |
-|                ROPME |       379 |         863 |           34 |    1985    |   2024    |
+|              Pacific |     8,673 |      16,519 |           56 |    1987    |   2025    |
+|                ROPME |       380 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,779 |       6,462 |           46 |    1987    |   2025    |
-| Global (all regions) |    35,754 |      73,029 |          246 |    1973    |   2025    |
+| Global (all regions) |    35,944 |      73,623 |          247 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -560,7 +561,7 @@ differs from those of the other datasets.
 | France | Guadeloupe | 27 | 209 | 4 | 2002 | 2024 |
 | France | Martinique | 42 | 323 | 3 | 2001 | 2024 |
 | France | Mayotte | 20 | 87 | 1 | 2003 | 2017 |
-| France | New Caledonia | 873 | 3,616 | 9 | 1997 | 2023 |
+| France | New Caledonia | 873 | 3,941 | 9 | 1997 | 2025 |
 | France | Réunion | 4,025 | 4,461 | 3 | 1998 | 2025 |
 | France | Saint-Barthélemy | 4 | 43 | 2 | 2002 | 2024 |
 | France | Wallis and Futuna | 12 | 12 | 1 | 2019 | 2019 |
@@ -596,10 +597,10 @@ differs from those of the other datasets.
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
 | New Zealand | Niue | 7 | 7 | 1 | 2011 | 2011 |
 | Nicaragua | Nicaragua | 44 | 63 | 2 | 2009 | 2015 |
-| Oman | Oman | 131 | 277 | 12 | 2003 | 2024 |
+| Oman | Oman | 132 | 277 | 12 | 2003 | 2024 |
 | Palau | Palau | 116 | 425 | 4 | 1997 | 2024 |
 | Panama | Panama | 239 | 410 | 4 | 1997 | 2024 |
-| Papua New Guinea | Papua New Guinea | 91 | 267 | 4 | 1998 | 2019 |
+| Papua New Guinea | Papua New Guinea | 280 | 536 | 5 | 1998 | 2025 |
 | Philippines | Philippines | 846 | 1,140 | 4 | 1997 | 2023 |
 | Qatar | Qatar | 26 | 26 | 4 | 2014 | 2024 |
 | Republic of Mauritius | Chagos Archipelago | 63 | 224 | 3 | 2010 | 2023 |
@@ -707,7 +708,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp6n8fOd/file10082f12548 -V' renvoie
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpukVaPO/file408cf5858 -V' renvoie
     un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -719,7 +720,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-08-18
+     date     2025-09-03
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
@@ -744,8 +745,8 @@ The following organizations have funded the realization of the
      cpp11               0.5.2   2025-03-03 [1] CRAN (R 4.5.0)
      crayon              1.5.3   2024-06-20 [1] CRAN (R 4.5.0)
      credentials         2.0.2   2024-10-04 [1] CRAN (R 4.5.0)
-     crosstalk           1.2.1   2023-11-23 [1] CRAN (R 4.5.0)
-     curl                6.4.0   2025-06-22 [1] CRAN (R 4.5.0)
+     crosstalk           1.2.2   2025-08-26 [1] CRAN (R 4.5.1)
+     curl                7.0.0   2025-08-19 [1] CRAN (R 4.5.1)
      data.table          1.17.8  2025-07-10 [1] CRAN (R 4.5.1)
      DBI                 1.2.3   2024-06-02 [1] CRAN (R 4.5.0)
      dbplyr              2.5.0   2024-03-19 [1] CRAN (R 4.5.0)
@@ -755,7 +756,7 @@ The following organizations have funded the realization of the
      DT                  0.33    2024-04-04 [1] CRAN (R 4.5.0)
      dtplyr              1.3.1   2023-03-22 [1] CRAN (R 4.5.0)
      e1071               1.7-16  2024-09-16 [1] CRAN (R 4.5.0)
-     evaluate            1.0.4   2025-06-18 [1] CRAN (R 4.5.0)
+     evaluate            1.0.5   2025-08-27 [1] CRAN (R 4.5.1)
      farver              2.1.2   2024-05-13 [1] CRAN (R 4.5.0)
      fastmap             1.2.0   2024-05-15 [1] CRAN (R 4.5.0)
      fontawesome         0.5.3   2024-11-16 [1] CRAN (R 4.5.0)
@@ -789,7 +790,7 @@ The following organizations have funded the realization of the
      KernSmooth          2.23-26 2025-01-01 [2] CRAN (R 4.5.1)
      knitr             * 1.50    2025-03-16 [1] CRAN (R 4.5.0)
      labeling            0.4.3   2023-08-29 [1] CRAN (R 4.5.0)
-     later               1.4.2   2025-04-08 [1] CRAN (R 4.5.0)
+     later               1.4.4   2025-08-27 [1] CRAN (R 4.5.1)
      lattice             0.22-7  2025-04-02 [2] CRAN (R 4.5.1)
      lazyeval            0.2.2   2019-03-15 [1] CRAN (R 4.5.0)
      leaflet             2.2.2   2024-03-26 [1] CRAN (R 4.5.0)
@@ -832,7 +833,7 @@ The following organizations have funded the realization of the
      reprex              2.1.1   2024-07-06 [1] CRAN (R 4.5.0)
      rlang               1.1.6   2025-04-11 [1] CRAN (R 4.5.0)
      rmarkdown           2.29    2024-11-04 [1] CRAN (R 4.5.0)
-     rprojroot           2.1.0   2025-07-12 [1] CRAN (R 4.5.1)
+     rprojroot           2.1.1   2025-08-26 [1] CRAN (R 4.5.1)
      rstudioapi          0.17.1  2024-10-22 [1] CRAN (R 4.5.0)
      rvest               1.0.4   2024-02-12 [1] CRAN (R 4.5.1)
      s2                  1.1.9   2025-05-23 [1] CRAN (R 4.5.0)
@@ -857,7 +858,7 @@ The following organizations have funded the realization of the
      tinytex             0.57    2025-04-15 [1] CRAN (R 4.5.0)
      tzdb                0.5.0   2025-03-15 [1] CRAN (R 4.5.0)
      units               0.8-7   2025-03-11 [1] CRAN (R 4.5.0)
-     usethis             3.1.0   2024-11-26 [1] CRAN (R 4.5.0)
+     usethis             3.2.0   2025-08-28 [1] CRAN (R 4.5.1)
      utf8                1.2.6   2025-06-08 [1] CRAN (R 4.5.0)
      uuid                1.2-1   2024-07-29 [1] CRAN (R 4.5.0)
      vctrs               0.6.5   2023-12-01 [1] CRAN (R 4.5.0)
@@ -866,8 +867,8 @@ The following organizations have funded the realization of the
      whisker             0.4.1   2022-12-05 [1] CRAN (R 4.5.0)
      withr               3.0.2   2024-10-28 [1] CRAN (R 4.5.0)
      wk                  0.9.4   2024-10-11 [1] CRAN (R 4.5.0)
-     xfun                0.52    2025-04-02 [1] CRAN (R 4.5.0)
-     xml2                1.3.8   2025-03-14 [1] CRAN (R 4.5.0)
+     xfun                0.52    2025-04-02 [1] CRAN (R 4.5.1)
+     xml2                1.4.0   2025-08-20 [1] CRAN (R 4.5.1)
      yaml                2.3.10  2024-07-26 [1] CRAN (R 4.5.0)
      zip                 2.3.3   2025-05-13 [1] CRAN (R 4.5.0)
 
