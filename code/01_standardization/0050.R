@@ -8,7 +8,7 @@ dataset <- "0050" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-# 2.1 Site data --
+## 2.1 Site data ----
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "site") %>% 
@@ -20,7 +20,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          longitude = -(convert_coords(longitude))) %>% 
   rename(decimalLatitude = latitude, decimalLongitude = longitude, locality = station)
 
-# 2.2 Code data --
+## 2.2 Code data ----
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "code") %>% 
@@ -29,18 +29,17 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   # Read the file
   read.csv2(file = .)
 
-# 2.3 Main data --
+## 2.3 Main data ----
 
 read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
   select(data_path) %>% 
   pull() %>% 
   # Read the file
-  read_xlsx(path = ., sheet = 1, na = c("", "NA")) %>% 
-  drop_na(Campagne, Secteur) %>% 
-  select(-SITE, -CV, -RS) %>% 
+  read_xls(path = ., sheet = 1, na = c("", "NA")) %>% 
+  select(-Site) %>% 
   rename(year = Campagne, locality = Station, parentEventID = Secteur) %>% 
-  pivot_longer(HCB:ncol(.), names_to = "code", values_to = "measurementValue") %>% 
+  pivot_longer("RC":"HCO", names_to = "code", values_to = "measurementValue") %>% 
   left_join(., data_code) %>% 
   left_join(., data_site) %>% 
   select(-code) %>% 

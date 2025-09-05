@@ -8,7 +8,7 @@ dataset <- "0021" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-# 2.1 Site data --
+## 2.1 Site data ----
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "site") %>% 
@@ -45,7 +45,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
                                               "Recif barriere \\(passe\\)" = "Barrier reef",
                                               "Massif oceanique" = "Platform reef")))
 
-# 2.2 Code data --
+## 2.2 Code data ----
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "code") %>% 
@@ -59,9 +59,9 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
                                                     "Roches, blocs > 15 cm et dalle" = "rock",
                                                     "Débris, blocs < 15 cm" = "rubble")))
 
-# 2.3 Main data --
+## 2.3 Main data ----
 
-# 2.3.1 Get list of sheets -
+### 2.3.1 Get list of sheets -----
 
 list_sheets <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -69,29 +69,42 @@ list_sheets <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   pull() %>% 
   excel_sheets() %>% 
   as_tibble() %>% 
-  filter(!(value %in% c("2023")))
+  filter(!(value %in% c("2024")))
   
-# 2.3.2 Get the path of the file -
+### 2.3.2 Get the path of the file ----
 
 file_path <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
   select(data_path) %>% 
   pull()
 
-# 2.3.3 Combine data -
+### 2.3.3 Create a function to combine the files ----
 
-map_dfr(list_sheets$value, ~read_xls(file_path, sheet = ., col_types = "text", na = "NI")) %>% 
-  drop_na(Site) %>% 
-  select(-"CV", -starts_with("...")) %>% 
-  pivot_longer("HCB":"OT", names_to = "Code", values_to = "measurementValue") %>% 
-  left_join(., data_code) %>% 
-  select(-Code, -Site) %>% 
+convert_0021 <- function(sheet_i ){
+  
+  data_results <- read_xlsx(file_path, sheet = sheet_i, col_types = "text") %>% 
+    select(1:"CV") %>% 
+    drop_na(Campagne) %>% 
+    pivot_longer(5:ncol(.), names_to = "Code", values_to = "measurementValue")
+  
+  return(data_results)
+  
+}
+
+### 2.3.4 Map over the function ----
+
+map(list_sheets$value, ~convert_0021(sheet_i = .)) %>% 
+  list_rbind() %>% 
+  rename(year = Campagne, locality = Station, parentEventID = Transect) %>% 
+  select(-Site) %>% 
+  mutate(across(c("parentEventID", "measurementValue"), ~as.numeric(.x)),
+         Code = str_split_fixed(Code, "\\.", 2)[,1]) %>% 
+  filter(Code != "CV") %>% # CV is Corail vivant, the sum of HCB, HCM, HCO, and HCT
   drop_na(measurementValue) %>% 
-  rename(locality = Station, parentEventID = Transect, year = Campagne) %>% 
+  left_join(., data_code) %>% 
+  select(-Code) %>% 
   mutate(datasetID = dataset,
-         measurementValue = as.numeric(measurementValue),
          samplingProtocol = "Point intersect transect, 20 m transect length, every 50 cm",
-         parentEventID = as.numeric(parentEventID),
          locality = str_to_sentence(locality),
          locality = iconv(locality, from = 'UTF-8', to = 'ASCII//TRANSLIT'), # Convert accent letters
          locality = str_replace_all(locality, c("N'goni" = "Ngoni",
@@ -107,8 +120,7 @@ map_dfr(list_sheets$value, ~read_xls(file_path, sheet = ., col_types = "text", n
                                         "2018-1" = "2018",
                                         "2018-2" = "2018")),
          year = as.numeric(year),
-         year = case_when(!is.na(date) ~ year(date),
-                          TRUE ~ year)) %>% 
+         year = case_when(!is.na(date) ~ year(date), TRUE ~ year)) %>% 
   select(-date) %>% 
   left_join(., data_site) %>% 
   group_by(year, month, locality, parentEventID) %>% 
