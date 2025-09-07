@@ -35,7 +35,3 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
          datasetID = dataset) %>% 
   drop_na(measurementValue) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
-
-
-
-

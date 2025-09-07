@@ -243,7 +243,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0018 | Kiribati | upon request | Sh. | 2020-03-05 | JW |
 | 0019 | SLN | upon request | Sh. | 2025-09-03 | JW |
 | 0020 | [PACN](https://www.nps.gov/im/pacn/benthic.htm) | upon request | Sh. |  | JW |
-| 0021 | RORC NC | upon request | Sh. |  | JW |
+| 0021 | RORC NC | upon request | Sh. | 2025-09-05 | JW |
 | 0022 | [MCRMP](https://micronesiareefmonitoring.com/) | upon request | Sh. |  | JW |
 | 0023 | PA-NC | upon request | Sh. | 2025-09-03 | JW |
 | 0024 | [Laurent WANTIEZ](https://scholar.google.fr/citations?user=4H_FTE0AAAAJ&hl=fr&oi=ao) | upon request | Sh. |  | JW |
@@ -272,7 +272,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0047 | Kayal and Dromard | upon request | Sh. |  | JW |
 | 0048 | Kayal, Penin, and Adjeroud (NC) | upon request | Sh. |  | JW |
 | 0049 | Kayal, Penin, and Adjeroud (Mo.) | upon request | Sh. |  | JW |
-| 0050 | FEO | upon request | Sh. | 2020-02-12 | JW |
+| 0050 | FEO | upon request | Sh. | 2025-09-03 | JW |
 | 0051 | Phoenix Islands | upon request | Sh. |  | JW |
 | 0052 | [Vava’u Ocean Initiative 2017](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/) | upon request | Sh. |  | JW |
 | 0053 | [Vava’u Ocean Initiative 2022](https://vavauenvironment.org/portfolio/vavau-ocean-initiative/) | upon request | Sh. |  | JW |
@@ -368,7 +368,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0143 | Benkwitt et al. (b) | upon request | Sh. | 2025-01-12 | JW |
 | 0144 | [UAE_2006-2014](https://dashboard.datamermaid.org/?project=B_UAE_2006-2014_Burt) | upon request | Me. | 2025-01-16 | JW |
 | 0145 | Steneck and Torres | upon request | Sh. | 2025-01-20 | JW |
-| 0146 | STINAPA Bonaire | upon request | Sh. | 2025-01-21 | JW |
+| 0146 | STINAPA Bonaire | upon request | Sh. | 2025-09-03 | JW |
 | 0147 | USF | upon request | Sh. | 2025-01-22 | JW |
 | 0148 | Maréchal et al. | upon request | Sh. | 2025-01-22 | JW |
 | 0149 | [Mallela 2007](https://doi.org/10.18475/cjos.v46i1.a10) | upon request | Sh. | 2025-01-24 | JW |
@@ -462,22 +462,35 @@ considered. The column names (except *aggregator*) correspond to
 | 0237 | NGS - Solomon Islands | upon request | Sh. | 2025-07-31 | JW |
 | 0238 | NGS - Palau | upon request | Sh. | 2025-08-06 | JW |
 | 0239 | Smallhorn-West et al, 2025 | upon request | Rc. | 2025-08-07 | JW |
-| 0240 | EAS regional dataset - Brunei | upon request | Sh. | 2025-08-11 | JW |
-| 0241 | EAS regional dataset - Cambodia | upon request | Sh. | 2025-08-11 | JW |
-| 0242 | EAS regional dataset - China | upon request | Sh. | 2025-08-11 | JW |
-| 0243 | EAS regional dataset - Korea | upon request | Sh. | 2025-08-11 | JW |
-| 0244 | EAS regional dataset - Myanmar | upon request | Sh. | 2025-08-11 | JW |
-| 0245 | EAS regional dataset - Singapore | upon request | Sh. | 2025-08-11 | JW |
-| 0246 | EAS regional dataset - Thailand | upon request | Sh. | 2025-08-11 | JW |
-| 0247 | EAS regional dataset - Vietnam | upon request | Sh. | 2025-08-11 | JW |
+| 0240 | EAS 2025 - Brunei | upon request | Sh. | 2025-08-11 | JW |
+| 0241 | EAS 2025 - Cambodia | upon request | Sh. | 2025-08-11 | JW |
+| 0242 | EAS 2025 - China | upon request | Sh. | 2025-08-11 | JW |
+| 0243 | EAS 2025 - Korea | upon request | Sh. | 2025-08-11 | JW |
+| 0244 | EAS 2025 - Myanmar | upon request | Sh. | 2025-08-11 | JW |
+| 0245 | EAS 2025 - Singapore | upon request | Sh. | 2025-08-11 | JW |
+| 0246 | EAS 2025 - Thailand | upon request | Sh. | 2025-08-11 | JW |
+| 0247 | EAS 2025 - Vietnam | upon request | Sh. | 2025-08-11 | JW |
 | 0248 | [Citizens of the Reef](https://citizensgbr.org/) | upon request | Sh. | 2025-08-11 | JW |
 | 0249 | [Sea Women of Melanesia](https://www.seawomen.net/) | upon request | Rc. | 2025-09-03 | JW |
+| 0250 | EAS 2020 - Hong Kong | upon request | Sh. | 2025-09-07 | JW |
+| 0251 | EAS 2025 - Hong Kong | upon request | Sh. | 2025-09-07 | JW |
+| 0252 | EAS 2020 - Taiwan | upon request | Sh. | 2025-09-07 | JW |
+| 0253 | EAS 2025 - Taiwan | upon request | Sh. | 2025-09-07 | JW |
+| 0254 | EAS 2025 - Indonesia | upon request | Sh. | 2025-09-07 | JW |
+| 0256 | EAS 2020 - Brunei | upon request | Sh. | 2025-09-07 | JW |
+| 0257 | EAS 2020 - Cambodia | upon request | Sh. | 2025-09-07 | JW |
+| 0258 | EAS 2020 - Korea | upon request | Sh. | 2025-09-07 | JW |
+| 0260 | EAS 2020 - Singapore | upon request | Sh. | 2025-09-07 | JW |
+| 0261 | EAS 2020 - Thailand | upon request | Sh. | 2025-09-07 | JW |
+| 0262 | EAS 2020 - Vietnam | upon request | Sh. | 2025-09-07 | JW |
+| 0263 | EAS 2020 - Japan | upon request | Sh. | 2025-09-07 | JW |
+| 0265 | EAS 2020 - Malaysia | upon request | Sh. | 2025-09-07 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-09-03, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,326,534 observations** (*i.e* rows) representing **35,944
-sites** and **73,623 surveys**. The distribution of monitoring sites in
+On the 2025-09-07, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,425,825 observations** (*i.e* rows) representing **36,953
+sites** and **81,372 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -506,15 +519,15 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     2,307 |      11,132 |           12 |    1980    |   2025    |
 |               Brazil |       192 |         608 |            5 |    2002    |   2025    |
-|            Caribbean |    14,278 |      23,927 |           70 |    1973    |   2024    |
-|                  EAS |     3,423 |       7,697 |           15 |    1986    |   2025    |
+|            Caribbean |    14,278 |      23,938 |           70 |    1973    |   2025    |
+|                  EAS |     4,433 |      15,253 |           26 |    1983    |   2025    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
-|              Pacific |     8,673 |      16,519 |           56 |    1987    |   2025    |
+|              Pacific |     8,672 |      16,701 |           56 |    1987    |   2025    |
 |                ROPME |       380 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,779 |       6,462 |           46 |    1987    |   2025    |
-| Global (all regions) |    35,944 |      73,623 |          247 |    1973    |   2025    |
+| Global (all regions) |    36,953 |      81,372 |          258 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -538,9 +551,9 @@ differs from those of the other datasets.
 | Belize | Belize | 340 | 536 | 6 | 1985 | 2024 |
 | Brazil | Brazil | 188 | 598 | 5 | 2002 | 2025 |
 | Brazil | Trindade | 4 | 10 | 1 | 2022 | 2024 |
-| Brunei | Brunei | 48 | 60 | 2 | 1997 | 2024 |
-| Cambodia | Cambodia | 199 | 311 | 3 | 1998 | 2024 |
-| China | China | 138 | 427 | 2 | 1997 | 2024 |
+| Brunei | Brunei | 84 | 103 | 3 | 1997 | 2024 |
+| Cambodia | Cambodia | 229 | 484 | 4 | 1998 | 2024 |
+| China | China | 179 | 625 | 4 | 1997 | 2024 |
 | Colombia | Colombia | 221 | 711 | 6 | 1997 | 2024 |
 | Comores | Comores | 35 | 94 | 4 | 1999 | 2022 |
 | Costa Rica | Costa Rica | 231 | 475 | 5 | 2004 | 2025 |
@@ -561,10 +574,10 @@ differs from those of the other datasets.
 | France | Guadeloupe | 27 | 209 | 4 | 2002 | 2024 |
 | France | Martinique | 42 | 323 | 3 | 2001 | 2024 |
 | France | Mayotte | 20 | 87 | 1 | 2003 | 2017 |
-| France | New Caledonia | 873 | 3,941 | 9 | 1997 | 2025 |
+| France | New Caledonia | 873 | 4,113 | 9 | 1997 | 2025 |
 | France | Réunion | 4,025 | 4,461 | 3 | 1998 | 2025 |
 | France | Saint-Barthélemy | 4 | 43 | 2 | 2002 | 2024 |
-| France | Wallis and Futuna | 12 | 12 | 1 | 2019 | 2019 |
+| France | Wallis and Futuna | 11 | 22 | 1 | 2019 | 2024 |
 | Grenada | Grenada | 86 | 225 | 3 | 2004 | 2024 |
 | Guatemala | Guatemala | 21 | 45 | 2 | 2006 | 2023 |
 | Haiti | Haiti | 96 | 109 | 2 | 2003 | 2018 |
@@ -576,7 +589,7 @@ differs from those of the other datasets.
 | Iran | Iran | 46 | 71 | 3 | 1999 | 2024 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 230 | 716 | 7 | 1986 | 2024 |
-| Japan | Japan | 52 | 110 | 2 | 1997 | 2015 |
+| Japan | Japan | 550 | 5,428 | 3 | 1983 | 2018 |
 | Jordan | Jordan | 12 | 34 | 2 | 2008 | 2024 |
 | Kenya | Kenya | 158 | 568 | 8 | 1987 | 2024 |
 | Kiribati | Gilbert Islands | 18 | 18 | 2 | 2011 | 2018 |
@@ -584,14 +597,14 @@ differs from those of the other datasets.
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
 | Kuwait | Kuwait | 18 | 27 | 4 | 1987 | 2014 |
 | Madagascar | Madagascar | 121 | 294 | 10 | 1998 | 2024 |
-| Malaysia | Malaysia | 736 | 2,956 | 2 | 1997 | 2023 |
+| Malaysia | Malaysia | 1,003 | 4,192 | 3 | 1997 | 2023 |
 | Maldives | Maldives | 444 | 822 | 6 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 399 | 962 | 9 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 162 | 376 | 10 | 1997 | 2024 |
 | Myanmar | Myanmar | 52 | 59 | 2 | 2001 | 2025 |
-| Netherlands | Bonaire | 159 | 623 | 6 | 1973 | 2023 |
+| Netherlands | Bonaire | 159 | 634 | 6 | 1973 | 2025 |
 | Netherlands | Saba | 18 | 56 | 2 | 1994 | 2024 |
 | Netherlands | Sint-Eustatius | 27 | 62 | 2 | 2005 | 2023 |
 | New Zealand | Cook Islands | 191 | 246 | 5 | 2005 | 2023 |
@@ -611,15 +624,15 @@ differs from those of the other datasets.
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 179 | 346 | 7 | 1985 | 2024 |
 | Seychelles | Seychelles | 40 | 159 | 3 | 1994 | 2022 |
-| Singapore | Singapore | 37 | 249 | 1 | 1986 | 2024 |
+| Singapore | Singapore | 53 | 276 | 2 | 1986 | 2024 |
 | Sint-Maarten | Sint-Maarten | 12 | 59 | 2 | 2005 | 2024 |
 | Solomon Islands | Solomon Islands | 190 | 288 | 6 | 2005 | 2024 |
 | South Africa | South Africa | 6 | 37 | 2 | 1993 | 2023 |
 | Sri Lanka | Sri Lanka | 10 | 32 | 2 | 2003 | 2024 |
 | Sudan | Sudan | 86 | 123 | 6 | 2004 | 2022 |
-| Taiwan | Taiwan | 103 | 195 | 1 | 1997 | 2020 |
+| Taiwan | Taiwan | 186 | 459 | 3 | 1997 | 2024 |
 | Tanzania | Tanzania | 197 | 369 | 14 | 1992 | 2025 |
-| Thailand | Thailand | 219 | 317 | 2 | 1998 | 2024 |
+| Thailand | Thailand | 250 | 512 | 3 | 1998 | 2024 |
 | Tonga | Tonga | 551 | 682 | 8 | 2002 | 2024 |
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
@@ -645,7 +658,7 @@ differs from those of the other datasets.
 | United States | Wake Island | 146 | 146 | 1 | 2014 | 2017 |
 | Vanuatu | Vanuatu | 75 | 114 | 3 | 2004 | 2023 |
 | Venezuela | Venezuela | 38 | 45 | 2 | 2004 | 2018 |
-| Vietnam | Vietnam | 270 | 603 | 2 | 1998 | 2024 |
+| Vietnam | Vietnam | 278 | 705 | 3 | 1998 | 2024 |
 | Yemen | Yemen | 6 | 12 | 3 | 1999 | 2017 |
 
 ## 7. Sponsors
@@ -708,8 +721,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpukVaPO/file408cf5858 -V' renvoie
-    un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmpo3MD5k/file56e02afd1541 -V'
+    renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.1 (2025-06-13 ucrt)
@@ -720,7 +733,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-09-03
+     date     2025-09-07
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 

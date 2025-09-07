@@ -23,8 +23,8 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   mutate(organismID = str_remove_all(organismID, "_percent"),
          samplingProtocol = str_replace_all(samplingProtocol, "LIT", "Line intercept transect"),
          measurementValue = measurementValue*100,
-         datasetID = dataset,
          month = as.numeric(month),
-         verbatimDepth = as.numeric(verbatimDepth)) %>% 
+         verbatimDepth = as.numeric(verbatimDepth),
+         datasetID = dataset) %>% 
   drop_na(measurementValue) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
