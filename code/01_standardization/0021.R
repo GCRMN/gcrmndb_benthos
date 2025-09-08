@@ -15,7 +15,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   select(data_path) %>% 
   pull() %>% 
   # Read the file
-  read_xlsx(range = "A4:K98") %>% 
+  read_xlsx(range = "A4:K106") %>% 
   rename(habitat = "Type de récif", decimalLatitude = "Latitude Sud", decimalLongitude = "Longitude Est",
          recordedBy = "Observateurs", locality = "Station", verbatimDepth = "Profondeur maximale (m)") %>% 
   select(locality, habitat, decimalLatitude, decimalLongitude, recordedBy, verbatimDepth) %>% 
@@ -109,7 +109,9 @@ map(list_sheets$value, ~convert_0021(sheet_i = .)) %>%
          locality = iconv(locality, from = 'UTF-8', to = 'ASCII//TRANSLIT'), # Convert accent letters
          locality = str_replace_all(locality, c("N'goni" = "Ngoni",
                                                 "Bordure faille de poe" = "Faille de poe",
-                                                "Signal" = "Ilot signal")),
+                                                "Signal" = "Ilot signal",
+                                                "We jouo" = "We jouo - passe de toemo",
+                                                "Mwaremwa" = "Mwaremwa - paradis")),
          date = case_when(str_length(year) == 5 ~ as.Date(as.numeric(year), origin = "1899-12-31"),
                           TRUE ~ NA),
          month = case_when(year == "2021 post-cyclones" ~ 5,
@@ -132,4 +134,4 @@ map(list_sheets$value, ~convert_0021(sheet_i = .)) %>%
 
 # 3. Remove useless objects ----
 
-rm(data_code, data_site, list_sheets, file_path, convert_coords)
+rm(data_code, data_site, list_sheets, file_path, convert_coords, convert_0021)
