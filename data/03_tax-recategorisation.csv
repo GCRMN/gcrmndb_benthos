@@ -1324,6 +1324,17 @@
 "coscinoderma mathewsi";NA;NA;NA;"Porifera";"Demospongiae";"Keratosa";"Dictyoceratida";"Spongiidae";"Coscinoderma";"Coscinoderma mathewsi";TRUE
 "coscinoderma sp brown";NA;NA;NA;"Porifera";"Demospongiae";"Keratosa";"Dictyoceratida";"Spongiidae";"Coscinoderma";NA;TRUE
 "crambe sp";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Poecilosclerida";"Crambeidae";"Crambe";NA;TRUE
+"cred-cca growing on hard substrate";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-cca growing on rubble";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-fine sediment";"Abiotic";"Sand";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-hard substrate";"Abiotic";"Rock";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-mobile fauna";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-octocoral";NA;NA;NA;"Cnidaria";"Anthozoa";"Octocorallia";NA;NA;NA;NA;TRUE
+"cred-rubble substrate";"Abiotic";"Rubble";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-turf growing on hard substrate";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-turf growing on rubble";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-unclassified sessile invertebrate";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"cred-unclassified/unknown";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "crevasse";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "cribochalina vasculum";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Niphatidae";"Cribrochalina";"Cribrochalina vasculum";TRUE
 "cribrochalina vasculum";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Haplosclerida";"Niphatidae";"Cribrochalina";"Cribrochalina vasculum";TRUE
@@ -1338,6 +1349,7 @@
 "crouania sp";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Ceramiales";"Callithamniaceae";"Crouania";NA;TRUE
 "crown of thorns sea star";NA;NA;NA;"Echinodermata";"Asteroidea";"Ambuloasteroidea";"Valvatida";"Acanthasteridae";"Acanthaster";NA;TRUE
 "crown of thorns seastars";NA;NA;NA;"Echinodermata";"Asteroidea";"Ambuloasteroidea";"Valvatida";"Acanthasteridae";"Acanthaster";NA;TRUE
+"crown of thorns starfish";NA;NA;NA;"Echinodermata";"Asteroidea";"Ambuloasteroidea";"Valvatida";"Acanthasteridae";"Acanthaster";NA;TRUE
 "crustacea barnacles";NA;NA;NA;"Arthropoda";NA;NA;NA;NA;NA;NA;TRUE
 "crustacean";NA;NA;NA;"Arthropoda";NA;NA;NA;NA;NA;NA;TRUE
 "crusto croline alagae";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -1785,6 +1797,7 @@
 "echinoderm";NA;NA;NA;"Echinodermata";NA;NA;NA;NA;NA;NA;TRUE
 "echinodermes";NA;NA;NA;"Echinodermata";NA;NA;NA;NA;NA;NA;TRUE
 "echinoderms sea urchin";NA;NA;NA;"Echinodermata";"Echinoidea";NA;NA;NA;NA;NA;TRUE
+"echinoderms: sea urchin";NA;NA;NA;"Echinodermata";"Echinoidea";NA;NA;NA;NA;NA;TRUE
 "echinoidea";NA;NA;NA;"Echinodermata";"Echinoidea";NA;NA;NA;NA;NA;TRUE
 "echinoidea - diadema spp";NA;NA;NA;"Echinodermata";"Echinoidea";"Euechinoidea";"Diadematoida";"Diadematidae";"Diadema";NA;TRUE
 "echinoidea sea urchin";NA;NA;NA;"Echinodermata";"Echinoidea";NA;NA;NA;NA;NA;TRUE
@@ -1985,6 +1998,7 @@
 "favia favus";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Merulinidae";"Dipsastraea";"Dipsastraea favus";TRUE
 "favia fragum";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";"Mussidae";"Favia";"Favia fragum";TRUE
 "favia gravida";NA;NA;NA;"Cnidaria";"Hexacorallia";NA;"Scleractinia";"Faviidae";"Favia";"Favia gravida";TRUE
+"favia indo-pacific";NA;NA;NA;"Cnidaria";"Hexacorallia";NA;"Scleractinia";"Faviidae";"Favia";NA;TRUE
 "favia laxa";NA;NA;NA;"Cnidaria";"Hexacorallia";NA;"Scleractinia";"Faviidae";"Favia";"Favia laxa";TRUE
 "favia leptophylla";NA;NA;NA;"Cnidaria";"Hexacorallia";NA;"Scleractinia";"Faviidae";"Favia";"Favia leptophylla";TRUE
 "favia maritima";NA;NA;NA;"Cnidaria";"Hexacorallia";NA;"Scleractinia";"Faviidae";"Favia";"Favia maritima";TRUE

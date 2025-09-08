@@ -485,12 +485,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0262 | EAS 2020 - Vietnam | upon request | Sh. | 2025-09-07 | JW |
 | 0263 | EAS 2020 - Japan | upon request | Sh. | 2025-09-07 | JW |
 | 0265 | EAS 2020 - Malaysia | upon request | Sh. | 2025-09-07 | JW |
+| 0266 | [Bee Ecological](https://www.beeecological.com/) | upon request | Sh. | 2025-09-08 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-09-07, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,425,825 observations** (*i.e* rows) representing **36,953
-sites** and **81,372 surveys**. The distribution of monitoring sites in
+On the 2025-09-08, the `gcrmndb_benthos` synthetic dataset contains a
+total of **19,433,106 observations** (*i.e* rows) representing **37,045
+sites** and **81,465 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -523,11 +524,11 @@ that differs from those of the other datasets.
 |                  EAS |     4,433 |      15,253 |           26 |    1983    |   2025    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
-|              Pacific |     8,672 |      16,701 |           56 |    1987    |   2025    |
+|              Pacific |     8,679 |      16,709 |           56 |    1987    |   2025    |
 |                ROPME |       380 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
-|                  WIO |     4,779 |       6,462 |           46 |    1987    |   2025    |
-| Global (all regions) |    36,953 |      81,372 |          258 |    1973    |   2025    |
+|                  WIO |     4,864 |       6,547 |           47 |    1987    |   2025    |
+| Global (all regions) |    37,045 |      81,465 |          259 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -574,7 +575,7 @@ differs from those of the other datasets.
 | France | Guadeloupe | 27 | 209 | 4 | 2002 | 2024 |
 | France | Martinique | 42 | 323 | 3 | 2001 | 2024 |
 | France | Mayotte | 20 | 87 | 1 | 2003 | 2017 |
-| France | New Caledonia | 873 | 4,113 | 9 | 1997 | 2025 |
+| France | New Caledonia | 880 | 4,121 | 9 | 1997 | 2025 |
 | France | Réunion | 4,025 | 4,461 | 3 | 1998 | 2025 |
 | France | Saint-Barthélemy | 4 | 43 | 2 | 2002 | 2024 |
 | France | Wallis and Futuna | 11 | 22 | 1 | 2019 | 2024 |
@@ -623,7 +624,7 @@ differs from those of the other datasets.
 | Saint Vincent and the Grenadines | Saint Vincent and the Grenadines | 42 | 60 | 3 | 2004 | 2024 |
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 179 | 346 | 7 | 1985 | 2024 |
-| Seychelles | Seychelles | 40 | 159 | 3 | 1994 | 2022 |
+| Seychelles | Seychelles | 125 | 244 | 4 | 1994 | 2024 |
 | Singapore | Singapore | 53 | 276 | 2 | 1986 | 2024 |
 | Sint-Maarten | Sint-Maarten | 12 | 59 | 2 | 2005 | 2024 |
 | Solomon Islands | Solomon Islands | 190 | 288 | 6 | 2005 | 2024 |
@@ -721,7 +722,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmpo3MD5k/file56e02afd1541 -V'
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpovRj81/file2d683ab515e8 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -733,7 +734,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-09-07
+     date     2025-09-08
      pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
