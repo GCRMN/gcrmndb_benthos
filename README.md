@@ -454,7 +454,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0229 | [CSIRO](https://shiny.csiro.au/UVSeeR/) | upon request | Sh. | 2025-06-23 | JW |
 | 0230 | [UTOPIAN](https://www.seanoe.org/data/00935/104728/) | open | Rp. | 2025-06-23 | JW |
 | 0231 | GCRMN Réunion | upon request | Sh. | 2025-06-23 | JW |
-| 0232 | [RedSea_WIO_Oman_2024_bleach](www.coralreefdiagnostics.com/coral-health-maptm) | upon request | Sh. | 2025-06-25 | JW |
+| 0232 | [RedSea_WIO_Oman_2024_bleach](https://www.coralreefdiagnostics.com/coral-health-maptm) | upon request | Sh. | 2025-06-25 | JW |
 | 0233 | Mies, 2024 | upon request | Sh. | 2025-07-02 | JW |
 | 0234 | [Graham et al, 2024](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14454) | open | Rp. | 2025-07-03 | JW |
 | 0235 | [Caballero‐Aragón et al, 2022](https://doi.org/10.1016/j.dib.2022.108253) | open | Pa. | 2025-07-16 | JW |
@@ -722,8 +722,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmpmmyp9I/file66c6ac01289 -V' renvoie
-    un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp2Z2ynv/file8918110a2221 -V'
+    renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.1 (2025-06-13 ucrt)
