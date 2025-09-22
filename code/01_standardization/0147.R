@@ -48,7 +48,8 @@ convert_0147 <- function(path){
 
 ### 2.2.3 Map over the function ----
 
-map_dfr(data_path, ~convert_0147(path = .x)) %>% 
+map(data_path, ~convert_0147(path = .x)) %>% 
+  list_rbind() %>% 
   pivot_longer("Acropora cervicornis (AC) - coral":ncol(.),
                names_to = "organismID", values_to = "measurementValue") %>% 
   rename(locality = "Location:", parentEventID = "Transect Number:",
@@ -61,10 +62,12 @@ map_dfr(data_path, ~convert_0147(path = .x)) %>%
                                      " - coral| - maca| -other| - spo| - go| - dca| - zo| - calg"),
          eventDate = as.Date(eventDate, origin = "1899-12-30"),
          year = year(eventDate),
+         year = case_when(year == 2014 ~ 2024,
+                          TRUE ~ year),
          month = month(eventDate),
          day = day(eventDate),
          datasetID = dataset) %>% 
-  left_join(., data_site) %>% 
+  left_join(., data_site) %>%
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
