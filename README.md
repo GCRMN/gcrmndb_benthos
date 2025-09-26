@@ -486,12 +486,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0263 | EAS 2020 - Japan | upon request | Sh. | 2025-09-07 | JW |
 | 0265 | EAS 2020 - Malaysia | upon request | Sh. | 2025-09-07 | JW |
 | 0266 | [Bee Ecological](https://www.beeecological.com/) | upon request | Sh. | 2025-09-08 | JW |
+| 0267 | Anguilla | upon request | Sh. | 2025-09-26 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-09-11, the `gcrmndb_benthos` synthetic dataset contains a
-total of **19,433,106 observations** (*i.e* rows) representing **37,045
-sites** and **81,465 surveys**. The distribution of monitoring sites in
+On the 2025-09-26, the `gcrmndb_benthos` synthetic dataset contains a
+total of **20,126,365 observations** (*i.e* rows) representing **37,180
+sites** and **83,269 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -518,9 +519,9 @@ that differs from those of the other datasets.
 
 |         GCRMN region | Sites (n) | Surveys (n) | Datasets (n) | First year | Last year |
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
-|            Australia |     2,307 |      11,132 |           12 |    1980    |   2025    |
+|            Australia |     2,433 |      12,805 |           12 |    1988    |   2025    |
 |               Brazil |       192 |         608 |            5 |    2002    |   2025    |
-|            Caribbean |    14,278 |      23,938 |           70 |    1973    |   2025    |
+|            Caribbean |    14,287 |      24,069 |           71 |    1973    |   2025    |
 |                  EAS |     4,433 |      15,253 |           26 |    1983    |   2025    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
@@ -528,7 +529,7 @@ that differs from those of the other datasets.
 |                ROPME |       380 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,864 |       6,547 |           47 |    1987    |   2025    |
-| Global (all regions) |    37,045 |      81,465 |          259 |    1973    |   2025    |
+| Global (all regions) |    37,180 |      83,269 |          260 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -542,7 +543,7 @@ differs from those of the other datasets.
 |---:|:---|---:|---:|---:|:--:|:--:|
 | Antigua and Barbuda | Antigua and Barbuda | 30 | 36 | 2 | 2003 | 2022 |
 | Aruba | Aruba | 6 | 7 | 1 | 2003 | 2009 |
-| Australia | Australia | 2,270 | 10,985 | 11 | 1980 | 2025 |
+| Australia | Australia | 2,396 | 12,658 | 11 | 1988 | 2025 |
 | Australia | Christmas Island | 25 | 84 | 3 | 2003 | 2023 |
 | Australia | Cocos Islands | 27 | 85 | 2 | 1997 | 2023 |
 | Bahamas | Bahamas | 466 | 682 | 3 | 1986 | 2024 |
@@ -638,7 +639,7 @@ differs from those of the other datasets.
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
 | United Arab Emirates | United Arab Emirates | 78 | 230 | 13 | 2004 | 2024 |
-| United Kingdom | Anguilla | 1 | 1 | 1 | 2002 | 2002 |
+| United Kingdom | Anguilla | 10 | 132 | 2 | 2002 | 2023 |
 | United Kingdom | Bermuda | 43 | 91 | 2 | 1982 | 2021 |
 | United Kingdom | British Virgin Islands | 28 | 322 | 2 | 1992 | 2024 |
 | United Kingdom | Cayman Islands | 28 | 185 | 4 | 1997 | 2024 |
@@ -722,7 +723,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpUT7qiE/file55802b02311c -V'
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpGsJWcv/file324868ff514f -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -734,8 +735,8 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-09-11
-     pandoc   3.4 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
+     date     2025-09-26
+     pandoc   3.6.3 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
     ─ Packages ───────────────────────────────────────────────────────────────────
