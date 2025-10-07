@@ -51,6 +51,8 @@ map(data_sheets, ~read_xlsx(path = data_path, sheet = .x, col_types = "text", na
   mutate(measurementValue = as.numeric(measurementValue),
          eventDate = case_when(str_detect(eventDate, "/") == TRUE ~ as.Date(eventDate, format = "%m/%d/%Y"),
                                TRUE ~ as.Date(as.numeric(eventDate), origin = "1899-12-30")),
+         eventDate = case_when(eventDate == "1980-01-01" ~ as.Date("2016-01-31"), # See email from Claire Ross
+                               TRUE ~ eventDate),
          year = case_when(is.na(eventDate) == TRUE ~ as.numeric(Year),
                           TRUE ~ year(eventDate)),
          organismID = case_when(organismID == "Turbinaria spp." ~ paste0(Type, " - ", organismID),
