@@ -490,12 +490,13 @@ considered. The column names (except *aggregator*) correspond to
 | 0268 | RSRC_Heron_LTM | upon request | Rc. | 2025-10-06 | JW |
 | 0269 | EAS 2025 - Japan | upon request | Sh. | 2025-10-07 | JW |
 | 0270 | [AGRRA 2.0](https://www.agrra.org/) | upon request | Db. | 2024-10-17 | JW |
+| 0271 | EAS 2025 - Malaysia | upon request | Sh. | 2025-10-08 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2025-10-08, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,144,136 observations** (*i.e* rows) representing **38,795
-sites** and **87,787 surveys**. The distribution of monitoring sites in
+total of **21,157,546 observations** (*i.e* rows) representing **39,121
+sites** and **89,215 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -525,14 +526,14 @@ that differs from those of the other datasets.
 |            Australia |     2,643 |      13,249 |           13 |    1988    |   2025    |
 |               Brazil |       192 |         608 |            5 |    2002    |   2025    |
 |            Caribbean |    15,291 |      25,355 |           72 |    1973    |   2025    |
-|                  EAS |     4,834 |      18,041 |           27 |    1983    |   2025    |
+|                  EAS |     5,160 |      19,469 |           28 |    1983    |   2025    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
 |              Pacific |     8,679 |      16,709 |           56 |    1987    |   2025    |
 |                ROPME |       380 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,864 |       6,547 |           47 |    1987    |   2025    |
-| Global (all regions) |    38,795 |      87,787 |          263 |    1973    |   2025    |
+| Global (all regions) |    39,121 |      89,215 |          264 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -602,7 +603,7 @@ differs from those of the other datasets.
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
 | Kuwait | Kuwait | 18 | 27 | 4 | 1987 | 2014 |
 | Madagascar | Madagascar | 121 | 294 | 10 | 1998 | 2024 |
-| Malaysia | Malaysia | 1,003 | 4,192 | 3 | 1997 | 2023 |
+| Malaysia | Malaysia | 1,329 | 5,620 | 4 | 1997 | 2024 |
 | Maldives | Maldives | 444 | 822 | 6 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 536 | 1,150 | 10 | 1997 | 2024 |
@@ -726,8 +727,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpaSQM5K/file4b0500d172 -V' renvoie
-    un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpYdZo3w/file78b85e864072 -V'
+    renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.1 (2025-06-13 ucrt)
