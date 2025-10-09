@@ -39,4 +39,3 @@ read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
                                        as.numeric(str_split_fixed(decimalLongitude, " ", 3)[,2])/60 +
                                        as.numeric(str_split_fixed(decimalLongitude, " ", 3)[,3])/3600)) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
-
