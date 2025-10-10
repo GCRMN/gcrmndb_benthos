@@ -313,7 +313,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0088 | Grand Cayman | upon request | Sh. | 2024-10-11 | JW |
 | 0089 | [Coral Cay Conservation](https://www.coralcay.org/) | upon request | Sh. | 2024-10-14 | JW |
 | 0090 | [Montilla et al, 2021](https://doi.org/10.1016/j.dib.2021.107235) | open | Pa. | 2024-10-15 | JW |
-| 0091 | [AGRRA 1.0](https://www.agrra.org/) | upon request | Db. | 2024-10-17 | JW |
+| 0091 | [AGRRA 1.0](https://www.agrra.org/) | upon request | Db. | 2025-10-10 | JW |
 | 0092 | CZMU | upon request | Sh. | 2024-10-18 | JW |
 | 0093 | [Puerto Rico CRMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0204647) | open | Rp. | 2024-10-18 | JW |
 | 0094 | CECIMAR | upon request | Sh. | 2024-10-21 | JW |
@@ -489,15 +489,15 @@ considered. The column names (except *aggregator*) correspond to
 | 0267 | Anguilla | upon request | Sh. | 2025-09-26 | JW |
 | 0268 | RSRC_Heron_LTM | upon request | Rc. | 2025-10-06 | JW |
 | 0269 | EAS 2025 - Japan | upon request | Sh. | 2025-10-07 | JW |
-| 0270 | [AGRRA 2.0](https://www.agrra.org/) | upon request | Db. | 2024-10-17 | JW |
+| 0270 | [AGRRA 2.0](https://www.agrra.org/) | upon request | Db. | 2025-10-08 | JW |
 | 0271 | EAS 2025 - Malaysia | upon request | Sh. | 2025-10-08 | JW |
 | 0272 | [Coral Reef Health - LHI and NI](https://coralreefhealth.com/) | upon request | Sh. | 2025-10-09 | JW |
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-10-09, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,157,618 observations** (*i.e* rows) representing **39,129
-sites** and **89,223 surveys**. The distribution of monitoring sites in
+On the 2025-10-10, the `gcrmndb_benthos` synthetic dataset contains a
+total of **21,306,400 observations** (*i.e* rows) representing **39,118
+sites** and **89,202 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -526,7 +526,7 @@ that differs from those of the other datasets.
 |---------------------:|----------:|------------:|-------------:|:----------:|:---------:|
 |            Australia |     2,651 |      13,257 |           14 |    1988    |   2025    |
 |               Brazil |       192 |         608 |            5 |    2002    |   2025    |
-|            Caribbean |    15,291 |      25,355 |           72 |    1973    |   2025    |
+|            Caribbean |    15,280 |      25,334 |           72 |    1973    |   2025    |
 |                  EAS |     5,160 |      19,469 |           28 |    1983    |   2025    |
 |                  ETP |       775 |       2,688 |            5 |    1994    |   2025    |
 |               PERSGA |       501 |         902 |           14 |    1997    |   2024    |
@@ -534,7 +534,7 @@ that differs from those of the other datasets.
 |                ROPME |       380 |         863 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,864 |       6,547 |           47 |    1987    |   2025    |
-| Global (all regions) |    39,129 |      89,223 |          265 |    1973    |   2025    |
+| Global (all regions) |    39,118 |      89,202 |          265 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -551,11 +551,11 @@ differs from those of the other datasets.
 | Australia | Australia | 2,614 | 13,110 | 13 | 1988 | 2025 |
 | Australia | Christmas Island | 25 | 84 | 3 | 2003 | 2023 |
 | Australia | Cocos Islands | 27 | 85 | 2 | 1997 | 2023 |
-| Bahamas | Bahamas | 543 | 813 | 3 | 1986 | 2024 |
+| Bahamas | Bahamas | 542 | 808 | 3 | 1986 | 2024 |
 | Bahrain | Bahrain | 45 | 55 | 5 | 1985 | 2024 |
 | Bangladesh | Bangladesh | 2 | 2 | 1 | 2005 | 2006 |
 | Barbados | Barbados | 80 | 349 | 3 | 1982 | 2022 |
-| Belize | Belize | 484 | 778 | 7 | 1985 | 2024 |
+| Belize | Belize | 483 | 776 | 7 | 1985 | 2024 |
 | Brazil | Brazil | 188 | 598 | 5 | 2002 | 2025 |
 | Brazil | Trindade | 4 | 10 | 1 | 2022 | 2024 |
 | Brunei | Brunei | 84 | 103 | 3 | 1997 | 2024 |
@@ -589,7 +589,7 @@ differs from those of the other datasets.
 | Guatemala | Guatemala | 24 | 49 | 3 | 2006 | 2023 |
 | Haiti | Haiti | 96 | 109 | 2 | 2003 | 2018 |
 | Haiti | Navassa Island | 15 | 15 | 1 | 2012 | 2012 |
-| Honduras | Honduras | 411 | 856 | 4 | 1997 | 2024 |
+| Honduras | Honduras | 405 | 848 | 4 | 1997 | 2024 |
 | India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
 | India | India | 117 | 1,745 | 6 | 1998 | 2024 |
 | Indonesia | Indonesia | 683 | 1,228 | 4 | 1997 | 2024 |
@@ -607,7 +607,7 @@ differs from those of the other datasets.
 | Malaysia | Malaysia | 1,329 | 5,620 | 4 | 1997 | 2024 |
 | Maldives | Maldives | 444 | 822 | 6 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
-| Mexico | Mexico | 536 | 1,150 | 10 | 1997 | 2024 |
+| Mexico | Mexico | 533 | 1,144 | 10 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 162 | 376 | 10 | 1997 | 2024 |
 | Myanmar | Myanmar | 52 | 59 | 2 | 2001 | 2025 |
@@ -728,7 +728,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpUrgXHk/file2b6c30c15b50 -V'
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpWyCu1g/file5ea03add70d3 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
@@ -740,7 +740,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-10-09
+     date     2025-10-10
      pandoc   3.6.3 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 

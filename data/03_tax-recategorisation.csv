@@ -397,6 +397,15 @@
 "algae ncc";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algae other";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algae unid";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-crustose";"Algae";"Coralline algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-crustose-newly dead";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-macro";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-macro-calcareous";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-macro-fleshy";"Algae";"Macroalgae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-peyssonnelid";NA;NA;NA;"Rhodophyta";"Florideophyceae";"Rhodymeniophycidae";"Peyssonneliales";"Peyssonneliaceae";NA;NA;TRUE
+"algae-turf";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-turf-mat";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"algae-turf-sediment";"Algae";"Turf algae";NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algaecover";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algal assemblage";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "algal cover";"Algae";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -709,6 +718,7 @@
 "biemna caribea";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Biemnida";"Biemnidae";"Biemna";"Biemna caribea";TRUE
 "biemna spp";NA;NA;NA;"Porifera";"Demospongiae";"Heteroscleromorpha";"Biemnida";"Biemnidae";"Biemna";NA;TRUE
 "biflustra arborescens";NA;NA;NA;"Bryozoa";"Gymnolaemata";NA;"Cheilostomatida";"Membraniporidae";"Biflustra";"Biflustra arborescens";TRUE
+"biofilm";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "biotic unknown";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "bispira sp";NA;NA;NA;"Annelida";"Polychaeta";"Sedentaria";"Sabellida";"Sabellidae";"Bispira";NA;TRUE
 "bivalve";NA;NA;NA;"Mollusca";"Bivalvia";NA;NA;NA;NA;NA;TRUE
@@ -3006,6 +3016,8 @@
 "invertebrate - zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";NA;NA;NA;TRUE
 "invertebrate other";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "invertebrates - other";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"invertebrates-aggressive";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
+"invertebrates-other";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "invertebres";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "invisible in a hole";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "invisibly deep in a crevice";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
@@ -4074,6 +4086,7 @@
 "other polychaete";NA;NA;NA;"Annelida";"Polychaeta";NA;NA;NA;NA;NA;TRUE
 "other rhodophyta calcareous algae";NA;NA;NA;"Rhodophyta";NA;NA;NA;NA;NA;NA;TRUE
 "other rhodophyta fleshy algae";NA;NA;NA;"Rhodophyta";NA;NA;NA;NA;NA;NA;TRUE
+"other rubble hole unknown etc but not sand/mud/seagrass";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other scleractinian";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "other scleractinian branching";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
 "other scleractinian encrusting";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Scleractinia";NA;NA;NA;TRUE
@@ -4097,6 +4110,7 @@
 "other substrate";"Abiotic";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other tape/shadow";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other zoanthid";NA;NA;NA;"Cnidaria";"Anthozoa";"Hexacorallia";"Zoantharia";"Zoanthidae";NA;NA;TRUE
+"other-calcifiers gypsina calcified worm tubes";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "other/fish";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "otherinvert notid";"Other fauna";NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
 "others";NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;TRUE
