@@ -318,7 +318,7 @@ considered. The column names (except *aggregator*) correspond to
 | 0093 | [Puerto Rico CRMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0204647) | open | Rp. | 2024-10-18 | JW |
 | 0094 | CECIMAR | upon request | Sh. | 2024-10-21 | JW |
 | 0095 | CIMAR - UCR | upon request | Sh. | 2024-10-22 | JW |
-| 0096 | Bouchon and Bouchon | upon request | Sh. | 2024-10-28 | JW |
+| 0096 | Bouchon and Bouchon-Navaro | upon request | Sh. | 2024-10-28 | JW |
 | 0097 | [SECREMP](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0280596) | open | Rp. | 2025-07-16 | JW |
 | 0098 | Steneck | upon request | Sh. | 2024-10-28 | JW |
 | 0099 | Meesters et al. | upon request | Sh. | 2024-10-30 | JW |
@@ -495,7 +495,7 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2025-10-10, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2025-10-13, the `gcrmndb_benthos` synthetic dataset contains a
 total of **21,306,400 observations** (*i.e* rows) representing **39,118
 sites** and **89,202 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
@@ -728,8 +728,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpWyCu1g/file5ea03add70d3 -V'
-    renvoie un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpYbTYYu/file5d3419b7aaa -V' renvoie
+    un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.1 (2025-06-13 ucrt)
@@ -740,7 +740,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2025-10-10
+     date     2025-10-13
      pandoc   3.6.3 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
