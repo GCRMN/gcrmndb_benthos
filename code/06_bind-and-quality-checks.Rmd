@@ -61,7 +61,8 @@ files_list <- list.files(path = "./../data/02_standardized-data", full.names = T
 
 # 2. Bind all files together ----
 
-synthetic_data <- map_dfr(files_list, ~read_csv(., show_col_types = FALSE))
+synthetic_data <- map(files_list, ~read_csv(., show_col_types = FALSE)) %>% 
+  list_rbind()
 
 # 3. Check incorrect variable names ----
 
@@ -106,8 +107,9 @@ current_unique_organismID <- anti_join(current_unique_organismID, old_unique_org
 
 if(length(current_unique_organismID) != 0){
   
-  current_unique_organismID <- map_dfr(1:length(current_unique_organismID),
-                                     ~convert_classification(data = current_unique_organismID, i = .x))
+  current_unique_organismID <- map(1:length(current_unique_organismID),
+                                     ~convert_classification(data = current_unique_organismID, i = .x)) %>% 
+    list_rbind()
   
 }else{
   
@@ -367,7 +369,7 @@ synthetic_data <- synthetic_data %>%
 
 # 2. Quality check number 4 ----
 
-reef_buffer <- st_read("../data/08_quality-checks-buffer/reefs-buffer_gee/reef_buffer.shp") %>% 
+reef_buffer <- st_read("../data/08_quality-checks-buffer/03_reefs-buffer/reef_buffer_100.shp") %>% 
   st_transform(crs = 4326) %>% 
   st_wrap_dateline() %>% 
   st_make_valid()

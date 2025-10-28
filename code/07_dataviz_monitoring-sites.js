@@ -4,14 +4,14 @@ Map.setOptions('TERRAIN');
 
 // 2. Import and show WRI coral reef distribution data ----
 
-var reef = ee.FeatureCollection("users/jeremywicquart/data_reefs");
+var reef = ee.FeatureCollection("users/jeremywicquart/gcrmndb_benthos/reefs_corrected");
 Map.addLayer(reef, {color: '#2c82c9'}, 'Coral reefs');
 
 // 3. Import and show gcrmndb_benthos monitoring sites ----
 
 // 3.1 Add the layers ----
 
-var site_coords = ee.FeatureCollection("users/jeremywicquart/gcrmndb-benthos_site-coords");
+var site_coords = ee.FeatureCollection("users/jeremywicquart/gcrmndb_benthos/gcrmndb-benthos_site-coords");
 
 var site_coords_1 = site_coords.filter("int_class == '1 year'");
 Map.addLayer(site_coords_1, {color: '#fac484'}, '1 year');
