@@ -7,7 +7,34 @@ dataset <- "0085" # Define the dataset_id
 
 # 2. Import, standardize and export the data ----
 
-## 2.1 Site data ----
+## 2.1 2003-2012 data ----
+
+data_path <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
+  filter(datasetID == dataset & data_type == "main") %>% 
+  filter(row_number() == 4) %>% 
+  select(data_path) %>% 
+  pull()
+
+data_site <- read_xlsx(data_path, sheet = "sites_master") %>% 
+  rename(year = YearSurveyd, verbatimDepth = `max depth (ft)`, decimalLatitude = lat, decimalLongitude = lon, locality = `Site Name`) %>% 
+  select(BREAM_ID, year, locality, decimalLatitude, decimalLongitude, verbatimDepth)
+
+data_main_2003 <- read_xlsx(data_path, sheet = "transects_master") %>% 
+  left_join(., data_site) %>% 
+  select(-transect_ID, -BREAM_ID, -Observer, -GSB, -CTB_2) %>% 
+  rename(parentEventID = "Transect #") %>% 
+  mutate(across(c("Coral", "Sand", "CTB", "FMA", "CMA"), ~as.numeric(.x))) %>% 
+  pivot_longer("Coral":"CMA", names_to = "organismID", values_to = "measurementValue") %>% 
+  drop_na(measurementValue) %>% 
+  mutate(organismID = case_when(organismID == "CMA" ~ "Calcified macroalgae",
+                                organismID == "FMA" ~ "Fleshy macroalgae",
+                                TRUE ~ organismID))
+
+rm(data_path, data_site)
+
+## 2.2 2015-2021 data ----
+
+### 2.2.1 Site data ----
 
 data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "site") %>% 
@@ -20,7 +47,7 @@ data_site <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   # Add missing site (obtained from the file Bermuda2021Monitoring_Smith_SPAW_RAQ2024)
   add_row(locality = 60, decimalLatitude = 32.4014, decimalLongitude = -64.8093, verbatimDepth = 12)
 
-## 2.2 Code data ----
+### 2.2.2 Code data ----
 
 data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -32,9 +59,9 @@ data_code <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   bind_rows(., tibble(code = c("LopVar", "SIDRAD", "CMOR"),
                       organismID = NA))
 
-## 2.3 Main data ----
+### 2.2.3 Main data ----
 
-### 2.3.1 2015 data ----
+#### 2.2.3.1 2015 data ----
 
 data_main_2015 <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -56,7 +83,7 @@ data_main_2015 <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   left_join(., data_site) %>% 
   mutate(year = 2015)
   
-### 2.3.2 2016 data ----
+#### 2.2.3.2 2016 data ----
 
 data_main_2016 <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -78,7 +105,7 @@ data_main_2016 <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   left_join(., data_site) %>% 
   mutate(year = 2016)
 
-### 2.3.3 2021 data ----
+#### 2.2.3.3 2021 data ----
 
 data_main_2021 <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>% 
   filter(datasetID == dataset & data_type == "main") %>% 
@@ -105,15 +132,18 @@ data_main_2021 <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
   left_join(., data_site) %>% 
   mutate(year = 2021)
 
-### 2.3.4 Bind datasets ----
+## 2.2.3 Bind datasets ----
+
+#### 2.2.3.4 Bind datasets ----
 
 bind_rows(data_main_2015, data_main_2016, data_main_2021) %>% 
   left_join(., data_code) %>% 
   select(-code) %>% 
-  mutate(datasetID = dataset,
-         locality = paste0("S", locality)) %>% 
+  mutate(locality = paste0("S", locality)) %>% 
+  bind_rows(data_main_2003, .) %>% 
+  mutate(datasetID = dataset) %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 3. Remove useless objects ----
 
-rm(data_main_2015, data_main_2016, data_main_2021, data_code, data_site)
+rm(data_main_2003, data_main_2015, data_main_2016, data_main_2021, data_code, data_site)

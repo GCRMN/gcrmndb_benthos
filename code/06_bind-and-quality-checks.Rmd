@@ -240,15 +240,11 @@ synthetic_data_coords <- synthetic_data %>%
 
 # 1. Load data ----
 
-load("../data/gcrmn_regions.RData")
-load("../data/gcrmn_subregions.RData")
 load("../data/gcrmn_ecoregions.RData")
 
 # 2. Make the spatial join ----
 
-synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>% 
-  st_join(., data_gcrmn_subregions %>% select(-region)) %>% 
-  st_join(., data_gcrmn_ecoregions) %>% 
+synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_ecoregions) %>% 
   bind_cols(., st_coordinates(.)) %>% 
   rename(decimalLatitude = Y, decimalLongitude = X) %>% 
   st_drop_geometry() %>% 
@@ -256,7 +252,7 @@ synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_regions) %>%
 
 # 3. Remove useless data sets and variables ----
 
-rm(data_gcrmn_regions, data_gcrmn_subregions, data_gcrmn_ecoregions)
+rm(data_gcrmn_ecoregions)
 
 ```
 
