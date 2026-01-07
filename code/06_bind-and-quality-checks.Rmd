@@ -248,7 +248,8 @@ synthetic_data <- st_join(synthetic_data_coords, data_gcrmn_ecoregions) %>%
   bind_cols(., st_coordinates(.)) %>% 
   rename(decimalLatitude = Y, decimalLongitude = X) %>% 
   st_drop_geometry() %>% 
-  left_join(synthetic_data, .)
+  left_join(synthetic_data, .) %>% 
+  select(-subregion_name)
 
 # 3. Remove useless data sets and variables ----
 
