@@ -97,7 +97,7 @@ list_files <- read_csv("data/01_raw-data/benthic-cover_paths.csv") %>%
 
 convert_data_231 <- function(path_i){
   
-    data <- read_xlsx(path = path_i, sheet = 2, skip = 8) %>% 
+    data <- read_xlsx(path = path_i, sheet = 1, skip = 8) %>% 
       mutate(name_2020 = path_i)
     
   return(data)
@@ -108,15 +108,16 @@ convert_data_231 <- function(path_i){
 
 data_2020 <- map(list_files$value, ~convert_data_231(path_i = .x)) %>% 
   list_rbind() %>% 
-  drop_na(Date) %>% 
-  select(-`Année`, -`Années`, -`Identifiant`, -"% corail vivant", -"% Algues",
-         -"Vérification %", -"% coraux vivants", -"% d'algues") %>% 
-  mutate(name_2020 = str_remove_all(name_2020, "data/01_raw-data/0231/GCRMN Réunion | de 2020 à 2024.xlsx| 2020 à 2024.xlsx")) %>% 
-  pivot_longer("Corail Acropora spp.":"Abiotique", values_to = "measurementValue", names_to = "organismID") %>% 
-  rename(eventDate = Date) %>% 
-  mutate(year = year(eventDate),
-         month = month(eventDate),
-         day = day(eventDate))
+  drop_na(`Code Benthos`) %>% 
+  rename(code = `Code Benthos`) %>% 
+  select(1:name_2020) %>% 
+  pivot_longer("2020":"2024", names_to = "year", values_to = "measurementValue") %>% 
+  drop_na(measurementValue) %>% 
+  mutate(name_2020 = str_remove_all(name_2020, 
+                                    "data/01_raw-data/0231/GCRMN Réunion | de 2020 à 2024.xlsx| 2020 à 2024.xlsx"),
+         year = as.numeric(year)) %>% 
+  left_join(., data_code) %>% 
+  select(-code)
 
 # 4. Bind datasets and export ----
 
@@ -135,7 +136,7 @@ bind_rows(data_1998 %>% left_join(., data_site),
   select(-name_1998, -name_2020) %>% 
   mutate(datasetID = dataset,
          locality = paste(locality, habitat, sep = " "),
-         samplingProtocol = "LIT, 20 m length transect") %>% 
+         samplingProtocol = "Line intersect transect, 20 m transect length") %>% 
   write.csv(., file = paste0("data/02_standardized-data/", dataset, ".csv"), row.names = FALSE)
 
 # 5. Remove useless objects ----
