@@ -492,13 +492,14 @@ considered. The column names (except *aggregator*) correspond to
 | 0270 | [AGRRA 2.0](https://www.agrra.org/) | upon request | Db. | 2025-10-08 | JW |
 | 0271 | EAS 2025 - Malaysia | upon request | Sh. | 2025-10-08 | JW |
 | 0272 | [Coral Reef Health - LHI and NI](https://coralreefhealth.com/) | upon request | Sh. | 2025-10-09 | JW |
-| 0273 | [PNMM](https://parc-marin-mayotte.fr/) | upon request | Sh. | 2025-02-13 | JW |
+| 0273 | [PNMM](https://parc-marin-mayotte.fr/) | upon request | Sh. | 2026-02-13 | JW |
+| 0274 | ASEAN - AUS | upon request | Sh. | 2026-02-16 | JW |
 
 ## 6. Description of the synthetic dataset
 
 On the 2026-02-16, the `gcrmndb_benthos` synthetic dataset contains a
-total of **21,246,578 observations** (*i.e* rows) representing **39,331
-sites** and **89,680 surveys**. The distribution of monitoring sites in
+total of **21,260,433 observations** (*i.e* rows) representing **39,532
+sites** and **90,208 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
 map is available on [Google Earth
 Engine](https://jeremywicquart.users.earthengine.app/view/gcrmndbbenthos).
@@ -528,14 +529,14 @@ that differs from those of the other datasets.
 |            Australia |     2,655 |      13,276 |           14 |    1988    |   2025    |
 |               Brazil |       213 |         690 |            5 |    2002    |   2025    |
 |            Caribbean |    15,440 |      25,498 |           72 |    1973    |   2025    |
-|                  EAS |     5,160 |      19,469 |           28 |    1983    |   2025    |
+|                  EAS |     5,361 |      19,997 |           29 |    1983    |   2025    |
 |                  ETP |       784 |       2,685 |            5 |    1994    |   2025    |
 |               PERSGA |       502 |         903 |           14 |    1997    |   2024    |
 |              Pacific |     8,679 |      16,709 |           56 |    1987    |   2025    |
 |                ROPME |       379 |         862 |           34 |    1985    |   2024    |
 |           South Asia |       636 |       2,825 |           15 |    1997    |   2024    |
 |                  WIO |     4,883 |       6,763 |           48 |    1987    |   2025    |
-| Global (all regions) |    39,331 |      89,680 |          266 |    1973    |   2025    |
+| Global (all regions) |    39,532 |      90,208 |          267 |    1973    |   2025    |
 
 **Table 7.** Summary of the content of the `gcrmndb_benthos` synthetic
 dataset per country and territory. The total number of datasets
@@ -596,7 +597,7 @@ differs from those of the other datasets.
 | Honduras | Honduras | 405 | 848 | 4 | 1997 | 2024 |
 | India | Andaman and Nicobar | 29 | 29 | 1 | 2021 | 2022 |
 | India | India | 117 | 1,745 | 6 | 1998 | 2024 |
-| Indonesia | Indonesia | 683 | 1,228 | 4 | 1997 | 2024 |
+| Indonesia | Indonesia | 726 | 1,320 | 5 | 1987 | 2024 |
 | Iran | Iran | 46 | 71 | 3 | 1999 | 2024 |
 | Israel | Israel | 4 | 4 | 1 | 1997 | 2001 |
 | Jamaica | Jamaica | 308 | 794 | 7 | 1986 | 2024 |
@@ -608,13 +609,13 @@ differs from those of the other datasets.
 | Kiribati | Phoenix Group | 58 | 123 | 1 | 2009 | 2018 |
 | Kuwait | Kuwait | 18 | 27 | 4 | 1987 | 2014 |
 | Madagascar | Madagascar | 121 | 294 | 10 | 1998 | 2024 |
-| Malaysia | Malaysia | 1,329 | 5,620 | 4 | 1997 | 2024 |
+| Malaysia | Malaysia | 1,351 | 5,711 | 5 | 1987 | 2024 |
 | Maldives | Maldives | 444 | 822 | 6 | 1997 | 2024 |
 | Marshall Islands | Marshall Islands | 147 | 174 | 3 | 2002 | 2020 |
 | Mexico | Mexico | 709 | 2,321 | 10 | 1997 | 2024 |
 | Micronesia | Federated States of Micronesia | 217 | 555 | 3 | 2000 | 2020 |
 | Mozambique | Mozambique | 162 | 376 | 10 | 1997 | 2024 |
-| Myanmar | Myanmar | 52 | 59 | 2 | 2001 | 2025 |
+| Myanmar | Myanmar | 53 | 62 | 3 | 1990 | 2025 |
 | Netherlands | Bonaire | 165 | 640 | 7 | 1973 | 2025 |
 | Netherlands | Saba | 30 | 68 | 3 | 1994 | 2024 |
 | Netherlands | Sint-Eustatius | 37 | 72 | 3 | 1999 | 2023 |
@@ -625,7 +626,7 @@ differs from those of the other datasets.
 | Palau | Palau | 116 | 425 | 4 | 1997 | 2024 |
 | Panama | Panama | 308 | 480 | 5 | 1997 | 2024 |
 | Papua New Guinea | Papua New Guinea | 280 | 536 | 5 | 1998 | 2025 |
-| Philippines | Philippines | 846 | 1,140 | 4 | 1997 | 2023 |
+| Philippines | Philippines | 922 | 1,289 | 5 | 1986 | 2023 |
 | Qatar | Qatar | 26 | 26 | 4 | 2014 | 2024 |
 | Republic of Mauritius | Chagos Archipelago | 63 | 224 | 3 | 2010 | 2023 |
 | Republic of Mauritius | Republic of Mauritius | 10 | 12 | 1 | 1999 | 2003 |
@@ -635,7 +636,7 @@ differs from those of the other datasets.
 | Samoa | Samoa | 50 | 90 | 4 | 2012 | 2022 |
 | Saudi Arabia | Saudi Arabia | 179 | 346 | 7 | 1985 | 2024 |
 | Seychelles | Seychelles | 125 | 244 | 4 | 1994 | 2024 |
-| Singapore | Singapore | 53 | 276 | 2 | 1986 | 2024 |
+| Singapore | Singapore | 65 | 362 | 3 | 1986 | 2024 |
 | Sint-Maarten | Sint-Maarten | 14 | 61 | 3 | 1999 | 2024 |
 | Solomon Islands | Solomon Islands | 190 | 288 | 6 | 2005 | 2024 |
 | South Africa | South Africa | 6 | 37 | 2 | 1993 | 2023 |
@@ -643,7 +644,7 @@ differs from those of the other datasets.
 | Sudan | Sudan | 86 | 123 | 6 | 2004 | 2022 |
 | Taiwan | Taiwan | 186 | 459 | 3 | 1997 | 2024 |
 | Tanzania | Tanzania | 197 | 369 | 14 | 1992 | 2025 |
-| Thailand | Thailand | 250 | 512 | 3 | 1998 | 2024 |
+| Thailand | Thailand | 297 | 619 | 4 | 1988 | 2024 |
 | Tonga | Tonga | 551 | 682 | 8 | 2002 | 2024 |
 | Trinidad and Tobago | Trinidad and Tobago | 52 | 115 | 3 | 2007 | 2023 |
 | United Arab Emirates | Abu musa, Greater and Lesser Tunb | 7 | 7 | 1 | 2016 | 2017 |
@@ -732,7 +733,7 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpAJcl1U/file415443661c51 -V'
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpwLr8wy/file6e10369e1ed2 -V'
     renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
