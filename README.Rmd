@@ -305,7 +305,7 @@ plot_map <- ggplot() +
         legend.key.size = unit(1.2, "lines"), 
         legend.key.height = NULL, 
         legend.key.width = NULL) +
-  labs(col = "Monitoring duration (years)")
+  labs(col = "Number of years with data")
 
 # 5. Save the plot ----
 

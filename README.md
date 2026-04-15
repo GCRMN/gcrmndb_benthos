@@ -497,7 +497,7 @@ considered. The column names (except *aggregator*) correspond to
 
 ## 6. Description of the synthetic dataset
 
-On the 2026-02-26, the `gcrmndb_benthos` synthetic dataset contains a
+On the 2026-04-15, the `gcrmndb_benthos` synthetic dataset contains a
 total of **21,260,433 observations** (*i.e* rows) representing **39,532
 sites** and **90,208 surveys**. The distribution of monitoring sites in
 time and space is shown in **Figure 2**. An interactive version of this
@@ -733,8 +733,8 @@ The following organizations have funded the realization of the
 
     Warning in system2("quarto", "-V", stdout = TRUE, env = paste0("TMPDIR=", :
     l'exécution de la commande '"quarto"
-    TMPDIR=C:/Users/jerem/AppData/Local/Temp/Rtmp6p6XoN/file77c65726dde -V' renvoie
-    un statut 1
+    TMPDIR=C:/Users/jerem/AppData/Local/Temp/RtmpiWNR24/file710c3e2c1f10 -V'
+    renvoie un statut 1
     ─ Session info ───────────────────────────────────────────────────────────────
      setting  value
      version  R version 4.5.2 (2025-10-31 ucrt)
@@ -745,7 +745,7 @@ The following organizations have funded the realization of the
      collate  French_France.utf8
      ctype    French_France.utf8
      tz       Europe/Paris
-     date     2026-02-26
+     date     2026-04-15
      pandoc   3.6.3 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
      quarto   NA @ C:\\PROGRA~1\\RStudio\\RESOUR~1\\app\\bin\\quarto\\bin\\quarto.exe
 
